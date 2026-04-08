@@ -1,0 +1,3 @@
+[submodule "submodules/astro-theme-anu"]
+	path = submodules/astro-theme-anu
+	url = git@gitlab.anu.edu.au:u2548636/astro-theme-anu.git
