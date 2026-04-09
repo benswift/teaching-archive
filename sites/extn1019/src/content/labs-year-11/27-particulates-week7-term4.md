@@ -2,7 +2,7 @@
 title: "Lab 27: Particulate Matters"
 tagline: "Classification of Particle Systems"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-27
-image: /images/labs-year-11/year-11-lab-27.png
+image: ./images/year-11-lab-27.png
 ---
 
 ## Administrivia

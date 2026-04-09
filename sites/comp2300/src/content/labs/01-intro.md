@@ -113,7 +113,7 @@ only caveat is that if you unenroll from the course **before** the census date
 When you get your board, the tutor will also take note of the serial number
 (down the bottom on the "back" side of the board).
 
-![Discoboard](/images/labs/lab-1/board-upside-down.jpg)
+![Discoboard](./images/lab-1/board-upside-down.jpg)
 
 :::tip
 Handing all the boards out might take a bit of time, though, so thanks for your
@@ -127,7 +127,7 @@ know and talk to them instead.)
 
 ## Exercise 2: connecting the board to the computer {#connecting-the-board}
 
-![Boxed](/images/labs/lab-1/boxed-discoboard.jpg)
+![Boxed](./images/lab-1/boxed-discoboard.jpg)
 
 The discoboard connects to the lab computer (or your personal laptop) via
 a [mini-USB](https://en.wikipedia.org/wiki/USB#Mini_and_micro_connectors) cable.
@@ -137,7 +137,7 @@ need to be careful with it when you're handling it and carting it around. That's
 why you got it in a plastic container---keep it and your cable together in
 there. If you're not used to handling electronics, here are a few tips:
 
-![Holding](/images/labs/lab-1/holding-discoboard.jpg)
+![Holding](./images/lab-1/holding-discoboard.jpg)
 
 - handle it by the edges (as in the photo)
 - don't touch any of the pins or little microchips on the board
@@ -200,7 +200,7 @@ cloned the repo some other way, you'll need to open the folder yourself with
 `File: Open...` in the command palette. Once you've done that you should see
 something like this:
 
-![VSCode](/images/labs/lab-1/vscode-open-workspace.png)
+![VSCode](./images/lab-1/vscode-open-workspace.png)
 
 Again, the VSCode docs have a [good explanation of the user
 interface](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
@@ -227,7 +227,7 @@ should just uninstall it.
 Now, in the **Explorer** view, open the `src/main.S` file, you should see
 something like this:
 
-![](/images/labs/lab-1/vscode-main-S.png)
+![](./images/lab-1/vscode-main-S.png)
 
 :::tip
 Even if you've never seen any assembly language before, what do you think this
@@ -266,7 +266,7 @@ You'll see some stuff printed to the
 the bottom of your VSCode window), and when it's done it should look *something*
 like this:
 
-![View](/images/labs/lab-1/vscode-after-build-command.png)
+![View](./images/lab-1/vscode-after-build-command.png)
 
 :::tip
 The compilation process takes all the code (text files), **translates** them
@@ -283,7 +283,7 @@ You've built the program **on your laptop/desktop**. To run it **on your
 discoboard** you need to upload it with the **Upload** (`PlatformIO: Upload`)
 command. Again, afterward it should look something like this:
 
-![View](/images/labs/lab-1/vscode-after-upload-command.png)
+![View](./images/lab-1/vscode-after-upload-command.png)
 
 If you get errors at this point, then they'll be printed (probably in red) in
 the terminal. Try and figure out what's going wrong yourself, also checkout the
@@ -304,11 +304,11 @@ and make sure the
 *ARM On-Chip Debug* configuration is selected in the drop-down menu (if you
 select a different config, e.g. the PlatformIO config, then it won't work):
 
-![Debug](/images/labs/lab-1/vscode-select-debug-config.png)
+![Debug](./images/lab-1/vscode-select-debug-config.png)
 
 Click the green play button to run your program, pausing ("breaking") on entry.
 
-![Debugging](/images/labs/lab-1/vscode-debugging-in-progress.png)
+![Debugging](./images/lab-1/vscode-debugging-in-progress.png)
 
 The highlighted yellow line of assembly code (shown in the above screenshot)
 represents where the program is "up" to (next instruction to execute).
@@ -320,7 +320,7 @@ stops and waits for further instructions (from you!).
 At this point, you can **step** through the code one instruction at a time using the
 debug controls:
 
-![Debugger](/images/labs/lab-1/vscode-debugger-arrows.png)
+![Debugger](./images/lab-1/vscode-debugger-arrows.png)
 
 :::tip
 Discuss with your lab neighbour---what do all these debug control buttons do?
@@ -350,13 +350,13 @@ You can also examine the values of your registers in the **CORTEX REGISTERS**
 viewlet under the Debug View (see the bottom left corner in the below
 screenshot):
 
-![VSCode](/images/labs/lab-1/vscode-register-view.png)
+![VSCode](./images/lab-1/vscode-register-view.png)
 
 If you want to control exactly *where* the system pauses for debugging, you can
 set a new breakpoint by clicking in the left-hand "gutter" (or margin) of
 the code view in the IDE. You should see a little red dot appear:
 
-![A](/images/labs/lab-1/vscode-breakpoint.png)
+![A](./images/lab-1/vscode-breakpoint.png)
 
 :::tip
 The program isn't running on the lab computer on the desktop---it's running on
@@ -421,7 +421,7 @@ builds fine, and you have satisfied some basic requirement for the lab/assignmen
 You can see the CI pipelines and build jobs at the "CI / CD" sidebar in your GitLab repo.
 After clicking on it, you will see a page like this:
 
-![CI](/images/labs/lab-1/ci-pipeline.png)
+![CI](./images/lab-1/ci-pipeline.png)
 
 You can see the jobs run by clicking on the *Stages* dropdown button, and whether they are successful of not.
 You can click on the job to see the details and captured output, which will help to figure out what might have gone wrong.

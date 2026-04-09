@@ -17,19 +17,19 @@ At the moment, I have three main software systems that all interact with each ot
 
 So far I have made decent progress with the reporter, its structure so far is two loops, one for the send/recv for networking, the other is a read-delay-read  loop for the sensor. The plan is to able to set the read-rate as a command from the server, so it can be as frequent as the user likes. In its current state, the reporter generates a random number (in place of actually reading from the sensor) and sends it via MQTT to the server every 5 seconds.
 
-![reporter](/images/posts/sam/reporter.png)
+![reporter](./images/sam/reporter.png)
 
 - **Server** - handles the incoming data and stores it
 
 At the moment, the server is a passive consumer of data, all it does is listen on a MQTT topic and saves any messages to the database. The database solution I have chosen is called [tinydb](https://tinydb.readthedocs.io/en/latest/), it is a very lightweight and dependencyless database that uses JSON files to store data. Given the simplicity of the data stored in this project, it is an excellent solution.
 
-![server](/images/posts/sam/server.png)
+![server](./images/sam/server.png)
 
 - **Interface** - a flask app that serves a simple web page used for controlling and monitoring the sensors, also send out commands for the reporter to act on.
 
 The interface in its current state does nothing but display a graph to test the incoming values from the reporter that are stored in the database. I decided to use [plotly](https://plot.ly/) to graph the data as it is a very polished interactive graphing platform with many great features.
 
-![flow graph](/images/posts/sam/stub-flow-graph.png)
+![flow graph](./images/sam/stub-flow-graph.png)
 
 ### Software Issues
 

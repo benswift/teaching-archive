@@ -26,11 +26,11 @@ I made a local host server on my computer and outfitted it with a PHP script tha
 - score: The score itself encoded in a string
 - Date: The date that the data was uploaded on, this information is provided by the server itself.
 
-![Local MySQL database containing the data sent so far](/images/posts/will/sql_table.png)
+![Local MySQL database containing the data sent so far](./images/will/sql_table.png)
 
 I used URL strings to upload the data with because security is not an issue with this project and the moment, and it's by far the simplest option all the data is send in the URL request.
 
 I then used the port forwarding service **ngrok** to make it so that anyone can easily send HTTP requests to my local server, including of course the ESP32.
 
-![ngrok Port Forwarding Service](/images/posts/will/ngrok_server.png)
+![ngrok Port Forwarding Service](./images/will/ngrok_server.png)
 

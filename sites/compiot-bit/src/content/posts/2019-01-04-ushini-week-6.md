@@ -21,7 +21,7 @@ I had no plans to waste any time in this shop so this had to be quick; I was goi
 - a battery charger
 - a fondness for the inefficiency and disarray inside this shop; and in Sri Lanka in general.
 
-![goods](/images/posts/ushini/goods.jpg)
+![goods](./images/ushini/goods.jpg)
 
 ## Mo Drivers Mo Problems
 

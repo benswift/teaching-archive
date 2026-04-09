@@ -27,7 +27,7 @@ As I don't want to make own heating devices considering the safety problem, the 
 
 To make the function more daily efficient, I add an **"OLED screen"** to the final version. Thus, the owner can easily read precious current temperature if they're at home. :)
 
-![Temperature with OLED](/images/posts/kathleen/temperature-oled.jpg)
+![Temperature with OLED](./images/kathleen/temperature-oled.jpg)
 
 ### Feeding
 
@@ -35,8 +35,8 @@ The function is set as **fixed-time feeding**: I use a real-time clock module an
 
 Here are two “serial monitor” screen shots: the 1st shows whether it's time to feed, the 2nd is meant to show the "too turbid to feed" situation *(if it's too turbid, time will not be judged then~)*.
 
-![Exact time to feed](/images/posts/kathleen/exact-time-to-feed.jpg)
-![Too turbid to feed](/images/posts/kathleen/too-turbid-to-feed.jpg)
+![Exact time to feed](./images/kathleen/exact-time-to-feed.jpg)
+![Too turbid to feed](./images/kathleen/too-turbid-to-feed.jpg)
 
 Two extra points need to mention here. One is the feeding time point is better not to be precious to single second, otherwise, we must ensure the "real-time clock module" reads data at the exact second! (It is a bit annoying to count the exact "delay" in codes, also the program needs to begin at exact time and never be interrupted... Surprises always come in life...) So I finally **keep the feeding time as a 30-second period** in the test~ Another thing is the **turbidity data** from the sensor is very **unstable**: every time I use clean water, while the "reference value" changes a lot. It's still a problem for me to decide the final bound for "turbidity judgement".
 

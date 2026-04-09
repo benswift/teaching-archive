@@ -21,15 +21,15 @@ The BOSS-proof desk is a Motion detection' workstation developed by Nissan that 
 
 Whether it's checking Facebook or playing games online, there are times when being warned your boss is nearby could have its benefits. Car-manufacturer Nissan has created what its calling a 'crossover' workstation that brings technology typically found in its cars to the office. This includes Moving Object Detection (MOD) which sounds an alarm when a colleague approaches your desk from any direction, with a radius of up to 16 feet (5 metres).
 The way it works is detailed in the image below.
-![Boss-proof Desk](/images/posts/david-flores/nissanDetection.jpg)
+![Boss-proof Desk](./images/david-flores/nissanDetection.jpg)
 
 I thought it is incredibly humorous and facsinating to see a similar artifact from the perspective of the employee.
 
 ### PHP in Microsoft Azure
 I have also been researching how to use the Microsoft Azure App Service on Linux to provide a highly scalable, self-patching web hosting service using the Linux operating system, and how to integrate it remotely with Git. This was quite a nuiscance because  lot of the documentation/topics online on this are outdated and relating to a previous version of Microsoft Azure.
-![Azure Meme](/images/posts/david-flores/azureUpdate.jpg)
+![Azure Meme](./images/david-flores/azureUpdate.jpg)
 This made it annoying and I resulted in just playing around & experimenting until i got some results.
-![Azure Deployment](/images/posts/david-flores/azure.png)
+![Azure Deployment](./images/david-flores/azure.png)
 
 ### What i've been working on
  This week i've been programming the Arduino Uno alongside the Infrared Sensor. I've been trying to connect the arduino UNO to the internet to send the infrared sensor data to my firebase cloud realtime database. I have also been using Microsoft Azure to host a PHP Web App that will send the Arduino Data to the database and display it aswell.
@@ -45,7 +45,7 @@ disconnecting.
 To solve this I decided to just go back to my previous idea of hosting it on Microsoft Azure because it doesn't have that javascript security which free f2p hosting sites have in order to stop bots spamming.
 
 Another problem I encountered was that for some reason I couldn't push remotely to the Azure File Directory, i was able to do it once and then afterwards it just kept saying everything is up to date even though that my local files are ahead by 2 commits.
-![Git Screenshot](/images/posts/david-flores/gitFailure.png)
+![Git Screenshot](./images/david-flores/gitFailure.png)
 I am still actively trying to isolate why this problem keeps persisiting however after some research and testing I believe that the problem is related to my Git Branch "arduino-firebase", I should've created a new repository instead of just a new branch which has complicated things.
 
 ## Warm Regards
@@ -53,4 +53,4 @@ To conclude this post, I look forward to my progress next week in continuing pro
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

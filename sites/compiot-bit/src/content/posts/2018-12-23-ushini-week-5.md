@@ -8,7 +8,7 @@ week: 5
 
 <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
 
-![Kermy](/images/posts/ushini/rainbow_connection.jpg)
+![Kermy](./images/ushini/rainbow_connection.jpg)
 
 That's right friends, I am going to use my bare hands to create a device that lets you control the music around you. And not just any music, live music created with [code](https://www.youtube.com/watch?v=G1m0aX9Lpts). I want the audience at a live coding gig to collectively affect the code and therefore the music it generates. There can sometimes be a disconnect between an improvisational performer and the audience experiencing their music. You rarely get an indication of whether the audience is enjoying the music during the performance. Granted, a live coder may not always value the audiences' enjoyment highly, but in some settings, like in a club, this information can be very valuable. In a club, you are coding to keep people dancing. I think guaging the activity/motion of dancers in a club can help club-goers collaborate with the live coder, or at the very least, inform the live coder of which music they like dancing to. So, I'm proposing a wearable device which can collect motion/temperature/pulse data from each person and uses the data to control parameters which dictate e.g. the tempo or rhythm of the music. Ok, you get the picture, now let's get on with the design.
 </br>
@@ -16,7 +16,7 @@ That's right friends, I am going to use my bare hands to create a device that le
 #### Plan A (B, C, D, E, F, G)
 When I say design, I mean it in the loosest possible sense. I have no idea what could go wrong and I struggle to settle on one idea. So lets, you and me, accept the mess which follows for what it is; a very very very rough initial design.
 
-![I am artist](/images/posts/ushini/IamArtist.jpg)
+![I am artist](./images/ushini/IamArtist.jpg)
 
 I want the device to be a wristband. Its lightweight and will hopefully be cheap, making it convenient to distribute at da club.
 There are a few basic components I will need; A battery, a wifi module, a microcontroller (possibly), an accelerometer, fabric/material for the band. I want to start with just collecting motion data and see where that gets me. There are two options I can take with the interpretation of the data. One option is to determine the variation of the motion and use this to classify the level of activity. e.g. If the average readings are staying above some threshold, the activity level of that person would be classed as high. If I find the motion alone isn't enough to make this classification, I might add a temperature/pulse sensor, but at this stage I can't see it helping. Based on the activity level, the live coder can thicken/thin the music to make the music more interesting or the mellow out the vibe. The other option is to use the data to deduce rhythms the dancers are making with their body. As a dancer tires, they might slow their movement down. Spikes or changes in the accelerometer readings will be used to extract a rhythm (no idea how I'll do this yet) wihch will be used to change rhythm parameters in the code.

@@ -20,20 +20,20 @@ For **LIT** photos documenting my work see below ↓
 Sigfox is an IoT company focusing on building smart office spaces and supplying smart office equipment. Relating to my artifact are two of its solutions, 1st being their smart desk:
 Smart desk monitoring solutions based on infrared technology and temperature sensors are the ideal solution for mapping and monitoring occupancy rates for your office space (desks and meeting rooms) and facilitating the move to these new ways of working. Occupancy rates will increase and real estate costs optimized as available space can be sold, rented or repurposed.
 
-![Smart Building](/images/posts/david-flores/smartBuilding.png)
+![Smart Building](./images/david-flores/smartBuilding.png)
 
 The 2nd is their employee monitoring solution:
 This solution includes time clocks connected to the Internet through the Sigfox global IoT network which allow you to monitor the attendance of your workers on remote job sites. This allows to forget the hassle of SIM cards for tracking employee comings and goings with constant and real-time connected monitoring.
 They're solution is very similar to mine however it is more focussed on remote job sites as opposed to just pure employee working monitoring, although the results are almost the same.
 
-![IoT Meme](/images/posts/david-flores/sell-platform-meme.jpg)
+![IoT Meme](./images/david-flores/sell-platform-meme.jpg)
 
 ### What i've been working on
  This week i've been trying to fix the readings the infrared sensor has been sending to my database aswell as polishing the front-end aspect of the web display. I also started working on the gamification that will be between the employees determined by the infrared sensors.
 
 ### Problems Faced
 This week the problem I faced was that my Infrared Sensor was sending "strange" readings to my firebase database. After some analysing I narrowed down the problem to my solution so the only thing I could do was to debug by stepping through the code. I did this in the simplest way possible.. by grabbing a pen & paper and stepping through it myself.
-![test case](/images/posts/david-flores/testCase.jpg)
+![test case](./images/david-flores/testCase.jpg)
 Unfortunately this yielded no results and i realised i had to do a more complicated in depths analysis of the code which tested intercombinations of when there was motion detected and not detected. I will be performing these tests as soon as possible.
 
 ### Reflection on IoT
@@ -53,11 +53,11 @@ At the moment I am focusing on the development of my artifact and have set aside
 Security threats are also now encompassing Artificial Intelligence-based devices and services. I found that Experts are suggesting that malware is now becoming better at evading detection via AI. At a contrast, some are arguing that AI is limited due to the lack of human intervention in its activities, which also affects its performance when it comes to identifying cause and effect in an investigation. So, AI might not be equipped enough yet to deal with the rapidly increasing problems that are facing the cloud and IoT in the face of cyber-attacks. The bottomline is that cyber security threats are rising and I believe we need to start prioritising security and start investing more in security as well as development.
 
 To not end on a serious note:
-![Password Meme](/images/posts/david-flores/passwordMeme.png)
+![Password Meme](./images/david-flores/passwordMeme.png)
 
 ## Warm Regards
 To conclude this post, I look forward to my progress next week in continuing programming and building my artifact.
 
 Ciao..
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

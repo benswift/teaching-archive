@@ -85,7 +85,7 @@ The finish of "land-water swap" functions ***marks the end of my initial complet
 
 From the picture of last night's final test, you may find the line connections are quite messy! :( While ignore how complex and inconvenient it looks like, at least, currently, it works as expected...
 
-![Messy Line Connection](/images/posts/kathleen/messy-line-connection.jpg)
+![Messy Line Connection](./images/kathleen/messy-line-connection.jpg)
 
 Actually, I'm also excited to show my **website page**! While it's also always my style to keep it mysterious in the current stage~ You will have chance to see it later. (Although it's very simple without any specific layout, I feel satisfied enough as my first attempt. ;) )
 

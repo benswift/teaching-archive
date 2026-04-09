@@ -55,7 +55,7 @@ This idea is quite malleable, and would easily be adopted as an app for a smart 
 ##### *More Design Specifics*
 [In the last blog](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/07/brents-china-update-01/#the-smart-body-pillow), I mentioned the idea of creating a smart body pillow to imitate certain characteristics of a person so that partners wouldn't feel as lonely sleeping by themselves when their partner is away. It would replicate parameters such as pulse, breathing, temperature and so on. The diagram below shows some more specifics about how this could be achieved and what it may look like in the end.
 
-![Body Pillow Diagram](/images/posts/brent/brent-pillow-diagram.png)
+![Body Pillow Diagram](./images/brent/brent-pillow-diagram.png)
 
 Collecting the data on the other hand will be a different story, parameters such as heartbeat and temperature are easy enough to read from devices such as a smart band etc. however coming back to reading things like respiration and noise provides some extra challenges.  
 If we want to accurately measure a person's respiration, we are going to need some kind of strap to be placed around their chest, this is not exactly going to be comfortable to wear, especially when trying to sleep. However, if we are okay stepping back from the accuracy of the rate of inflation etc. it may be possible to infer this data from the pulse or potentially even from the sounds of breathing in the microphone.  

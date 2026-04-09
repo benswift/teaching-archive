@@ -15,7 +15,7 @@ It **combines 5 main functions** -- *(not in significance order)* ***temperature
 
 Besides remote control and setting, our **website** also shows **some real-time sensors' data and actuators‘ condition**.
 
-![Completed Website](/images/posts/kathleen/completed-website.jpg)
+![Completed Website](./images/kathleen/completed-website.jpg)
 
 ## Inspiration & Broad Theme Relation
 

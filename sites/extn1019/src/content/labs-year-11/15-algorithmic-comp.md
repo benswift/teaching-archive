@@ -2,7 +2,7 @@
 title: "Lab 15: Algorithmic Composition"
 tagline: "collaborating with your computer"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-15
-image: /images/labs/lab-15/complete-markov.jpg
+image: ./images/labs/lab-15/complete-markov.jpg
 ---
 
 ## Outline
@@ -111,7 +111,7 @@ In this example, it is as though you are rolling a weighted die each time you ma
 
 Since it's kind of a pain to keep updating our `sequences` array each time you make a selection, we can alternatively represent the "rules" for our sequences selection as an _array of arrays_. This _array of arrays_ is what we will refer to as a _Markov Chain_.
 
-![incomplete markov](/images/labs/lab-15/incomplete-markov.jpg)
+![incomplete markov](./images/labs/lab-15/incomplete-markov.jpg)
 
 ```js
 markovChain = [[S1, S2, S3, S3, S3],
@@ -126,7 +126,7 @@ The first element of the Markov Chain above is the array `[S1, S2, S3, S3, S3]` 
 
 The `markovChain` array above is kind of incomplete. This is because the first element is associated with `S1`, the second element is associated with `S2` but there is no element associated withe `S3`. This means that if the last sequence we picked was `S3`, there is no element in our `markovChain` we can use to select the next sequence. The diagram below depicts the Markov Chain in it's complete form (note: some sequences have a zero probability of being selected twice in a row).
 
-![complete markov](/images/labs/lab-15/complete-markov.jpg)
+![complete markov](./images/labs/lab-15/complete-markov.jpg)
 
 **do:** In your code, modify the `markovChain` array so that it reflects the completed Markov Chain diagram above.
 

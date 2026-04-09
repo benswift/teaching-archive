@@ -17,7 +17,7 @@ This week I set up my second board that I will be using to communicate the infor
 
 This week I also got the wifi connection set up on the boards. There are two types : station and softAP. SoftAP is the one that sources the access point of the internet and the station is the one thats using the internet. I used the station to connect the boards to the wifi. I had to initially set my laptop up so it was connected to my mobile hotspot and then change the ssid and password on the given code and then finally got it to connect. Below is a screenshot of the output:
 
-![wifi](/images/posts/namitha/stationwifi.jpeg)
+![wifi](./images/namitha/stationwifi.jpeg)
 
 ## Hardware
 

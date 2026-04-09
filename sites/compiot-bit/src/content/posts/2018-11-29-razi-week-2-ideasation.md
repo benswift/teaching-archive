@@ -211,7 +211,7 @@ week: 2
 	<body>
 	<div id= "homePicture">
 
-		![Idea Image taken by Harrison Turton](/images/posts/razi/imageBlog.jpg)
+		![Idea Image taken by Harrison Turton](./images/razi/imageBlog.jpg)
 		<div class="textOnPicture">
 			<p> IDEAS </p>
 		</div>

@@ -15,6 +15,9 @@ catalog:
   "@animotion/core": "^1.2.2"
   astromotion: "github:benswift/astromotion"
 
+  # Image processing
+  sharp: "^0.34.2"
+
   # Runtime deps
   p5: "^2.2.3"
 

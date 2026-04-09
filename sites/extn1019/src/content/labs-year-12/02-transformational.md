@@ -2,7 +2,7 @@
 title: "Lab 2: Transformational"
 tagline: "transformations in 3D spaces"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-2
-image: /images/labs-year-12/year-12-lab-02.png
+image: ./images/year-12-lab-02.png
 ---
 
 ## Outline
@@ -62,7 +62,7 @@ There are 2 possibilities for 3D coordinate systems based on which way the Z-axi
 
 ![The 2 alternatives for z-axis orientation](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cartesian_coordinate_system_handedness.svg/1280px-Cartesian_coordinate_system_handedness.svg.png)
 
-![Using hands](/images/labs/year-12-lab-2/coordinate-system-rules.jpeg)
+![Using hands](./images/labs/year-12-lab-2/coordinate-system-rules.jpeg)
 
 When you use models imported from other systems, you need to be aware of the sizes (how big is the model in units in the original system), the handedness, and the fact that Y points down. You will need to scale and reflect or rotate your imported model to match p5.js.
 

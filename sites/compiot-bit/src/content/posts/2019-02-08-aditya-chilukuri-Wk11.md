@@ -11,17 +11,17 @@ Before we start, PSA: Yes — we consumed alcohol for science, and no — it was
 
 Chinmay and I read through the MQ3-sensor [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) documentation this week to find more information on the sensor. We found that the datasheet was scarce on information, but noticed that the sensor is rated for use at 5V, while the ESP32 only offers 3.3V output. As a temporary solution, we connected a 5V Arduino to provide power to the sensor. The setup we used for the testing that follows is:
 
-![Setup for 5V Sensor Power](/images/posts/aditya-chilukuri/Wk11/5V_Sensor_Power_Setup.jpg)
+![Setup for 5V Sensor Power](./images/aditya-chilukuri/Wk11/5V_Sensor_Power_Setup.jpg)
 
 The final prototype will need a 5V power supply to power the ESP32 and the sensor in parallel.
 
 This week, a friend and I drank measured standard drinks of alcohol and took sensor readings after 15 minutes — the time it takes for alcohol to enter the bloodstream. As the sensor readings reached a different "stable value" throughout the testing time, Chinmay and I decided to measure the difference in the raw value measured between when blowing and when not blowing on the sensor surface.
 
-![Setup for Getting Sensor Readings](/images/posts/aditya-chilukuri/Wk11/Getting_Sensor_Readings.png)
+![Setup for Getting Sensor Readings](./images/aditya-chilukuri/Wk11/Getting_Sensor_Readings.png)
 
 Here's the data we collected:
 
-![Alcohol Readings Data](/images/posts/aditya-chilukuri/Wk11/Alcohol_Readings.png)
+![Alcohol Readings Data](./images/aditya-chilukuri/Wk11/Alcohol_Readings.png)
 
 The trend we found isn't as simple as expected — in my case, the difference in BAC reading increases as I have more standard drinks, but this trend isn't found so cleanly in my friends' data. We're limited by the small sample space of data we could collect, and also by the absence of an industrial/police quality breathalyser readings to compare our raw readings to.
 

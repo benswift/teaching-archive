@@ -3,7 +3,7 @@ title: "Lab 10: Layers Upon Layers"
 tagline: "constructing effects using layered graphics and compositional techniques"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-10
 portfolio_templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-2
-image: /images/labs-year-12/year-12-lab-10.png
+image: ./images/year-12-lab-10.png
 ---
 
 ## Outline

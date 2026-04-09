@@ -2,7 +2,7 @@
 title: "Lab 19: Project Prototyping + Interaction Design"
 tagline: "Getting Interactive"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-mini-project
-image: /images/banners/remainders-by-jason-xu.jpg
+image: ../images/banners/remainders-by-jason-xu.jpg
 ---
 
 ## Outline

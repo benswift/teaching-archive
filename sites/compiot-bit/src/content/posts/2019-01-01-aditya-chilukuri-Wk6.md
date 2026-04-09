@@ -11,7 +11,7 @@ Parts ordered — the breathalyser sensor modules have arrived already and the b
 
 The sensing technique used by Kim et al. uses a two stage process to measure sweat alcohol content. A patch consisting of sensor and inducer cathodes and anodes are placed on the person's skin. In the first stage, pilocarpine, a sweat inducing compound, is absorbed by the skin in a process called iontophoresis — where a small current is applied to the skin to speed up absorption. After a few minutes, sweat has been induced on the skin covered by the patch, and a small voltage is applied. The amperometric response (the current induced) is measured and this current proportional to the blood alcohol content.
 
-![Sweat Based Alcohol Monitoring](/images/posts/aditya-chilukuri/Wk6/Sweat-Based-Alcohol-Sensing.JPG)
+![Sweat Based Alcohol Monitoring](./images/aditya-chilukuri/Wk6/Sweat-Based-Alcohol-Sensing.JPG)
 
 I have analysed the specific sensor technology Kim et al. used, and have listed my thoughts for each of the components Kim et al. used for their prototype — to answer the question: Can we build this thing ourselves as two undergrads without a formal chemistry/biology background?
 

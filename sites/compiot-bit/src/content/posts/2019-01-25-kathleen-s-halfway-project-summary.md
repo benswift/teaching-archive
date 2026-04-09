@@ -16,7 +16,7 @@ In last weekend and the first few days of the week, I was trying hard to search 
 In theory, the development board also has a Wi-Fi module, thus I thought if the Arduino board can connect directly with ESP32 Wi-Fi module, I could use the Wi-Fi function of the board separately as well. But the reality does not affirm “my theory”:(.
 
 Although I could not find direct instruction about how to link these 2 boards, I find some instruments about ESP32 environment setup. I [downloaded](https://github.com/espressif/arduino-esp32.git) esp32 setup file and moved it to Arduino contents "hardware/espressif/esp32", thus "ESP32 Dev Module" (look same as my bought version) can be chosen in "Board" list. However, no program can be uploaded as the instruction shown next:
-![ESP32 connection error](/images/posts/kathleen/esp32-connection-error.jpg)
+![ESP32 connection error](./images/kathleen/esp32-connection-error.jpg)
 
 As majority of online instructions are in Windows system, I try to setup on Windows as well, but it comes to the same error. I'm not sure why this happened, I think it may due to the mismatching for actual "Board" and "Port", while "permutation & combination" also does not work...
 
@@ -44,19 +44,19 @@ When comparing separate function with my [W5 "artefact planned design"](https://
 
 Considering **the direction of electric current determines the rotating direction of engine for the pulley system**, I designed to use 2 relays together with 2 battery packs to control the engine:
 
-![Relay design for land-water swap](/images/posts/kathleen/land-water-swap-relay-design.jpg)
+![Relay design for land-water swap](./images/kathleen/land-water-swap-relay-design.jpg)
 
 As design, brightness value is first got through photoresistor (light sensor), and if the environment is brighter than the original brightness level (i.e. the got value is smaller than prescribed), the "up relay" will turn on for a little while and pull the board up; if the environment is darker, the "down relay" will be on a while and drop board down. We only need to guarantee that, if the board is already up, it cannot be pulled up for a second time, and vice versa.
 
 The testing "serial monitor" is shown below, and we only need connect the relays with the pulley system to finish the whole *land-water swap* function finally.
 
-![Serial monitor for 'land-water swap' codes](/images/posts/kathleen/land-water-swap-serial-monitor.jpg)
+![Serial monitor for 'land-water swap' codes](./images/kathleen/land-water-swap-serial-monitor.jpg)
 
 ### Water Changing
 
 Another good news is I handled last-week problem for pump:) ! With the successful connection between pump and MOS module, I am now able to **control the pump corresponding to data from the turbidity sensor**: if the water is more turbid than usual (i.e. got small turbidity voltage), the pump will work.
 
-![Water changing device](/images/posts/kathleen/water-changing-device.jpg)
+![Water changing device](./images/kathleen/water-changing-device.jpg)
 
 The only unexpected thing in the test is, MOS module switches correctly without connecting to a pump, while whenever the pump is added, the I/O signal of MOS module and pump toggles a lot. With further research, I find it's due to the limited power supply~ Then, that's fine ;)
 

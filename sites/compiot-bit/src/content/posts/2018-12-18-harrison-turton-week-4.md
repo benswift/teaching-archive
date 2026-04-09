@@ -31,7 +31,7 @@ I'm not doing a CS or math PhD, nor am I producing a real product. Even if it wo
 
 Instead of embracing pure practicality in my artifact, I've decided to demonstrate the concepts of decentralised networks in an interactive display.
 
-![Diagram of my artifact](/images/posts/harrison/initial-artifact-diagram.png)
+![Diagram of my artifact](./images/harrison/initial-artifact-diagram.png)
 
 I envision a set of nodes, connected by LED strips. When a message is passed between two nodes, the LED strip lights up. The user can:
 

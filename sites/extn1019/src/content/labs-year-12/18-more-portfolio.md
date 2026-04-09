@@ -2,7 +2,7 @@
 title: "Lab 18: portfolio! portfolio! portfolio! "
 tagline: "continue to develop your portfolio"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-3
-image: /images/banners/wobbling-circles.jpg
+image: ../images/banners/wobbling-circles.jpg
 hidden: false
 ---
 

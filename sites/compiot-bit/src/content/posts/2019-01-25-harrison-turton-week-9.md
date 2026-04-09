@@ -59,7 +59,7 @@ handle the message itself.
 Since it's often good to model our architecture against the real-world requirements, we can interpret this (almost) literally, and plan
 for 3 concurrent processes:
 
-![Diagram of my artifact](/images/posts/harrison/preliminary_architecture_diagram.png)
+![Diagram of my artifact](./images/harrison/preliminary_architecture_diagram.png)
 
 The node has a message queue, which it's neighbours can directly deposit data into. The "dequeue process" will quickly determine (perhaps by the message header?) whether
 the message has reached its destination (and so we need to handle it directly), or whether it needs to be passed along.

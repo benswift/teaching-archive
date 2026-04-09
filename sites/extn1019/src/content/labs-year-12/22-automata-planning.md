@@ -4,7 +4,7 @@ tagline: "Planning out your project implementation"
 project_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-22
 fractal_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-21
-image: /images/labs-year-12/year-12-lab-22.png
+image: ./images/year-12-lab-22.png
 ---
 
 ## Outline
@@ -36,7 +36,7 @@ But first, let's have a quick look at ***Cellular Automata*** and revisit ***Fra
 ### Part 1A: Revisiting Fractals from Lab 21
 
 Here's a Romanesco Broccoli spotted in Canberra over the weekend (fractals in the wild):
-![Broccoli](/images/resources/romanesco_broccoli.jpg)
+![Broccoli](../resources/images/romanesco_broccoli.jpg)
 
 Follow the demonstration. Try some changes.
 

@@ -7,7 +7,7 @@ week: 13
 
 We finally reach the end of the course, and the (formal) development of this artefact. It's been a long ride, with a lot of potholes!
 
-![Final artefact](/images/posts/harrison/photo-display.jpg)
+![Final artefact](./images/harrison/photo-display.jpg)
 
 [Here is the final Github Repo](github.com/tztimlee/meshlight)
 

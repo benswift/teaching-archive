@@ -23,13 +23,13 @@ https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/network/esp_
 
 Getting my sensor working was the highlight for this week. I used the website that I had included in last weeks post which was a very helpful guide to help with the getting the values from the accelerometer. The following image shows a screenshot of the output that I got:
 
-![sensor](/images/posts/namitha/SensorValues.jpeg)
+![sensor](./images/namitha/SensorValues.jpeg)
 
 The ADC driver supports two ADC channels (ADC1 AND ADC2). I used ADC1(GPIO pins 33 and 34) for my sensor since ADC2 has restrictions including not being able to operate at the same time as the Wifi driver. I initialised the gpio pins, configured the channels and outputted the raw values obtained which are the x and the y values from the accelerometer. At the moment, all I'm doing is printing these values on the terminal but I will be working more with these once I get the communication working.
 
 This week I also began to explore the wifi protocols on the ESP 32 and how to get started with some code. I looked through the sample code available on the ESP-IDF repository and ran the code that was given which worked and was able to the connect to the wifi. Below is a snippet of the output.
 
-![wifi](/images/posts/namitha/WifiOutput.jpeg)
+![wifi](./images/namitha/WifiOutput.jpeg)
 
 ## Hardware
 

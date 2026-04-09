@@ -19,7 +19,7 @@ The process using ADH requires a co-enzyme (NAD+) and needs to be close to the A
 
 Now the first thing that occurs when AOx, the enzyme that must come as part of the party-safe band skin patch, comes in contact with sweat is the oxidation of the alcohol:
 
-![Catalysis of Alcohol Oxidation using AOx](/images/posts/aditya-chilukuri/Wk7/AOx-Catalysis-of-Alcohol-Oxidation.JPG)
+![Catalysis of Alcohol Oxidation using AOx](./images/aditya-chilukuri/Wk7/AOx-Catalysis-of-Alcohol-Oxidation.JPG)
 
 Based on this reaction, we can measure the alcohol content indirectly in two ways — either we measure the decrease in concentration of dissolved O<sub>2</sub> or the increase in concentration of H<sub>2</sub>O<sub>2</sub> around the site of AOx application.
 

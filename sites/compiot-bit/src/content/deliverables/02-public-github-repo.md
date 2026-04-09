@@ -4,7 +4,7 @@ summary: "A (public) GitHub repo where you share your project with the world"
 date: 2019-02-12
 ---
 
-![GitHub octocat](/images/deliverables/github-octocat.png)
+![GitHub octocat](./images/github-octocat.png)
 
 ## Outline
 

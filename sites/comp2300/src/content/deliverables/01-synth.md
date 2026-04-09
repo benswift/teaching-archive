@@ -102,7 +102,7 @@ per second) out of the headphone jack.
 
 All of these properties are shown in the this picture:
 
-![Square](/images/deliverables/01-synth/square-wave.jpg)
+![Square](./images/01-synth/square-wave.jpg)
 
 Using the `init` function provided, the audio output is configured to use signed
 16-bit values for the signal, so a value of `0x8000` represents the "bottom" of

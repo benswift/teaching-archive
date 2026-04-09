@@ -9,7 +9,7 @@ Welcome to the great chapter of 2018 IoT@BIT study tour in Beijing, China. I am 
 
 Nah I am kidding. Who would be the narrator if he/she could be the protagonist.
 
-![surprise](/images/posts/yuze/surprise.jpg)
+![surprise](./images/yuze/surprise.jpg)
 
 Alright, enough jokes. Let's get started.
 

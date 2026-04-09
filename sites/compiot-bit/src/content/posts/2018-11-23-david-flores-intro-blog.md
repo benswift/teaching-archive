@@ -22,7 +22,7 @@ This got me thinking to what other home appliance could make use of IoT to impro
 ## Brief Initial Ideas
 
 thank u, next
-![Sassy Ariana Grande](/images/posts/david-flores/sassyAriana.jpg)
+![Sassy Ariana Grande](./images/david-flores/sassyAriana.jpg)
 
 But seriously,
 I am primarily interested in building an artifact that combines regular household appliances with IoT. Who knows, perhaps I could be contributing to the development of a smart toilet that checks your bowel health (which i would call ANUs, which would be short for ANU SmartToilet © David Flores).
@@ -35,4 +35,4 @@ To sum up my first post, I would like to wish you all a safe trip to Beijing and
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

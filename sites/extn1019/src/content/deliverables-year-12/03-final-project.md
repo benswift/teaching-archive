@@ -1,7 +1,7 @@
 ---
 title: Final Project
 tagline: "a final creative artefact/performance to be presented in the end-of-year exhibition"
-image: /images/deliverables/final-project-thumbnail-placeholders/random8.jpg
+image: ../deliverables-year-11/images/final-project-thumbnail-placeholders/random8.jpg
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
 ---
 

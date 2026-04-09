@@ -143,7 +143,7 @@ summary: "Mark distributions and program averages"
     <td>13% of the final mark - Average mark: 57.2 (arithmetic mean)</td>
   </tr>
   <tr>
-    <td><div align="center">![Mid-semester](/images/exam_stats/Mid-semester_COPE-2019.png)</div></td>
+    <td><div align="center">![Mid-semester](./images/exam_stats/Mid-semester_COPE-2019.png)</div></td>
   </tr>
   <tr>
     <td class="small">Bars accumulate over five marks. Special considerations adjustments and special exams are not reflected in this raw data graph. </td>
@@ -157,7 +157,7 @@ summary: "Mark distributions and program averages"
     <td>12% of the final mark - Average mark: 68.6 (arithmetic mean)</td>
   </tr>
   <tr>
-    <td><div align="center">![Assignment](/images/exam_stats/Assignment-1_COPE-2019.png)</div></td>
+    <td><div align="center">![Assignment](./images/exam_stats/Assignment-1_COPE-2019.png)</div></td>
   </tr>
   <tr>
     <td class="small">Bars accumulate over five marks. Special considerations adjustments and special exams are not reflected in this raw data graph. </td>

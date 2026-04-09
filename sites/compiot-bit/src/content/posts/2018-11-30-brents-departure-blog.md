@@ -9,7 +9,7 @@ date: 2018-11-30
 
 ### A slow start
 
-![Traffic backed up down Northbourne](/images/posts/brent/canberra-traffic.jpg)
+![Traffic backed up down Northbourne](./images/brent/canberra-traffic.jpg)
 
 I boarded the bus for Sydney (from Canberra) at 3pm, this was mostly uneventful, however leaving Canberra turned out to be quite a painfully slow experience, with traffic being backed up (heading North on Northbourne) all the way back to Dickson area. As best as I could tell the lightrail construction was to blame, so it's not something that would happen too often, but it was enough to start the journey off on the wrong foot.
 
@@ -19,12 +19,12 @@ Wrong, the flight boarded and then changed to "Last Call" and I still hadn't rec
 
 ### No information (#thelostbois)
 
-![Flight Screen](/images/posts/brent/flight-screen.jpg)
+![Flight Screen](./images/brent/flight-screen.jpg)
 
 The flight from Sydney to Chengdu started off well enough (once I had boarded that is), departing roughly on time at 9:43pm local time. On the flight I probably only got about an hours sleep, not that that's too unusual, but here is about where things start to go south.  
 We were told that we would be landing in about 30 minutes, however after a considerably longer length of time, an announcement came over the intercom in mandarin, now obviously I can't understand that, but the sudden groans and general mood shift was enough to tell me something was off. The english announcement came next, however it was too fast and muffled for me to make out, so I checked the flight map, we had been circling Chengdu and were now flying away from it.
 
-![Kunming Airport](/images/posts/brent/kunming-airport.jpg)
+![Kunming Airport](./images/brent/kunming-airport.jpg)
 
 After about an hour, we landed in Kunming however the plane did not dock at the airport and we were told we would be staying in the plane. Hours dragged by with no updates, only announcements that "we have still not received any information".  
 After 5 or so hours, we finally depart the Kunming airport for Chengdu and after yet another hour we finally arrive in Chengdu.
@@ -34,20 +34,20 @@ Arriving this late in Chengdu presented a new problem, we had completely missed 
 Thankfully we had a native speaker, otherwise we would've been shit outta luck (thanks @Zoey, literally saved our asses). The manager put us on a flight that was originally due to leave at 8 in the morning but was still awaiting a departure time at 2:30pm and he wasn't sure when it would have one (read: it might leave at any time, so we needed to hurry).  
 We rushed through security (where I had my beard swabbed for explosives) and made it to the gate to be greeted by an angry crowd of people, next thing we know a big line formed by the counter at the gate. Turns out (paraphrasing) the people on the flight complained and said the flight was being mean to them and asked for money to make it better. So we lined up and sure enough...  
 
-![Free Money ft. Ushini's shoes](/images/posts/brent/free-money.jpg)
+![Free Money ft. Ushini's shoes](./images/brent/free-money.jpg)
 
 ### Business class
 In the final twist of fate today, when I went to my seat on the flight someone was already sitting in it (a girl next to her boyfriend), she asked if I'd be okay swapping seats, and not being one to get in the way of love I said sure, a flight attendant lead me to my new seat... which was in business class.  
 
-![Business Class](/images/posts/brent/business-class-01.jpg)
+![Business Class](./images/brent/business-class-01.jpg)
 
-![Business Class](/images/posts/brent/business-class-02.jpg)
+![Business Class](./images/brent/business-class-02.jpg)
 
-![Business Class](/images/posts/brent/business-class-03.jpg)
+![Business Class](./images/brent/business-class-03.jpg)
 
-![Business Class](/images/posts/brent/business-class-04.jpg)
+![Business Class](./images/brent/business-class-04.jpg)
 
-![Business Class](/images/posts/brent/business-class-05.jpg)
+![Business Class](./images/brent/business-class-05.jpg)
 
 ## IoT Artefact Ideas
 Anyway... onto IoT stuff.  

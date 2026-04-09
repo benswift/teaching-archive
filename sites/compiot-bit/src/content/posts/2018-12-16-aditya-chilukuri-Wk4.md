@@ -7,7 +7,7 @@ week: 4
 ## Travel
 Thus concludes our last week in Beijing. The Great Wall is a World Wonder, and I was so excited and very happy to visit it on Wednesday.
 
-![Great Wall Photo](/images/posts/aditya-chilukuri/Wk4/Great_Wall.jpeg)
+![Great Wall Photo](./images/aditya-chilukuri/Wk4/Great_Wall.jpeg)
 
 This is a short blogpost as I spent most of the last two days travelling and sleeping out the jet lag. Chinmay and I are planning to discuss our ideas further early this week and I'll make a blogpost on the idea, when we decide on it.
 

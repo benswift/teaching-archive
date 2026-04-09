@@ -16,7 +16,7 @@ I will summarise what has happened so far by addressing the schedule, then going
 #### Interrupts
 This is primarily Zoey's area, so I suggest reading her blog for more information.
 But on my side of the development, I have successfully configured an interrupt on one of the ESP32's GPIO pin. Although the interrupt is firing correctly, I have not implemented the actual algorithm for testing.
-![Touch sensor linked to system interrupts](/images/posts/will/interrupt_firing.png)
+![Touch sensor linked to system interrupts](./images/will/interrupt_firing.png)
 
 (Though as seen in the diagram shown in last weeks blog, I am not expecting it be too difficult to accomplish) Though that is only the basic model which will serve for most of the testing purposes, we will hopefully be able to expand it to allow it to record more complex drum patterns.
 

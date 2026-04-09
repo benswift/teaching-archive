@@ -33,7 +33,7 @@ __Warning:__ Spoilers for There Will Be Blood.
 
 Unfortunately, because of just how tiny the Raspberry Pi and Pi Cam are, the setup looks more adorable than creepy.
 
-![Isn't it adorable](/images/posts/chocolatier/robo.jpg)
+![Isn't it adorable](./images/chocolatier/robo.jpg)
 
 So I have been thinking of how I can amplify the impact.
 

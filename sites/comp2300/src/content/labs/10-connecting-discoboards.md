@@ -248,7 +248,7 @@ probably don't *need* separate interrupt triggers on all the pins. Here's an
 example of what this looks like for EXTI0---pin zero from *all* ports goes in
 there, and the EXTI controller can only listen to one at a time.
 
-![GPIO](/images/labs/lab-10/GPIO-EXTI-mapping.png)
+![GPIO](./images/lab-10/GPIO-EXTI-mapping.png)
 
 Secondly (and more confusingly) the EXTI controller only has 7 GPIO interrupt
 lines into the NVIC, and since there are more than 7 pins in each GPIO port
@@ -258,7 +258,7 @@ have to share the `EXTI9_5` interrupt, and 10--15 have to share the `EXTI15_10`
 interrupt. Here's a picture to make things clearer (the extra number in the NVIC
 column is the *position* of the interrupt in the NVIC vector table):
 
-![EXTI](/images/labs/lab-10/EXTI-NVIC-mapping.png)
+![EXTI](./images/lab-10/EXTI-NVIC-mapping.png)
 
 This is all shown (along with the names, positions & priorities) of all the
 other interrupts in your discoboard in Table 42, Section 11.3 on p321 of the

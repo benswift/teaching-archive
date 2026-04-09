@@ -3,7 +3,7 @@ title: "Creative Computing Process Blog"
 tagline: >-
   an audiovisual diary to help you practice your skills, reflect on your work of other
   creative coders to develop your own style
-image: /images/deliverables/visual-diary/koushik-chowdavarapu-QNj_dwdljY8-unsplash.jpg
+image: ./images/visual-diary/koushik-chowdavarapu-QNj_dwdljY8-unsplash.jpg
 ---
 
 ## Outline {#outline}

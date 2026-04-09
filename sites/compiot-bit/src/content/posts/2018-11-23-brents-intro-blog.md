@@ -7,7 +7,7 @@ date: 2018-11-23
 
 ## I'm just gonna write down my first thoughts, and see where this takes me...
 
-![Me performing with the Laptop Ensemble](/images/posts/brent/brent-lens.jpg)
+![Me performing with the Laptop Ensemble](./images/brent/brent-lens.jpg)
 ### A little about this blog and myself
 Hey everyone, my name is Brent Schuetze and this is my first (of many) blog posts in a series surrounding my trip to Beijing for my first dip into the world of IoT and other related topics.
 I was born and raised in New Zealand and moved to Australia and began UNI in 2016.

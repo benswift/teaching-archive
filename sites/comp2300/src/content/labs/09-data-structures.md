@@ -58,7 +58,7 @@ morse code signals by blinking the red LED on your discoboard in short (dot) and
 long (dash) bursts. Here's the full morse alphabet (courtesy of
 [Wikipedia](https://en.wikipedia.org/wiki/Morse_code))
 
-![Morse](/images/labs/lab-8/morse-code.svg)
+![Morse](./images/lab-8/morse-code.svg)
 
 :::tip
 Discuss with your neighbour---have you ever seen (or even used!) morse code
@@ -147,7 +147,7 @@ the letter E is just a single dot `.`. You could store this in memory in several
 different ways, but one way to do it is to use a data structure which looks like
 this:
 
-![Morse](/images/labs/lab-8/morse-data-structure.png)
+![Morse](./images/lab-8/morse-data-structure.png)
 
 Each "slot" in the data structure is one full word (32 bits/4 bytes), so the
 total size of the codepoint data structure is 4*6=24 bytes. The first word is an
@@ -162,11 +162,11 @@ is one 32-bit word in size, but that memory addresses go up in **bytes** (8 bits
 
 Here are a couple of examples... codepoint B (`_...`):
 
-![Morse](/images/labs/lab-8/morse-data-structure-B.png)
+![Morse](./images/lab-8/morse-data-structure-B.png)
 
 and codepoint E (`.`)
 
-![Morse](/images/labs/lab-8/morse-data-structure-E.png)
+![Morse](./images/lab-8/morse-data-structure-E.png)
 
 In each case, the "end" slots in the data structure might be unused, e.g. if the
 codepoint only has 2 dots/dashes then the final 3 slots will be unused, and it

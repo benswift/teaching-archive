@@ -2,7 +2,7 @@
 title: Creative Computing Project Prototype
 tagline: A work-in-progress prototype of your final collection of music/artwork project, delivered as a video demo
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-11/extn1019-2023-year-11-prototype
-image: /images/deliverables/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
+image: ./images/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
 ---
 
 ## Outline
@@ -142,7 +142,7 @@ you've read through that archive as well.
 
 Your project page in GitLab might look something like this:
 
-![screenshot of a project with a red X indicating the CI job had failed](/images/deliverables/ci-failed-red-x-screenshot.png)
+![screenshot of a project with a red X indicating the CI job had failed](./images/ci-failed-red-x-screenshot.png)
 
 This red ❌ (highlighted with a purple box in the screenshot) doesn't mean that your code hasn't been pushed to GitLab, or that your code is bad, or anything like that.
 

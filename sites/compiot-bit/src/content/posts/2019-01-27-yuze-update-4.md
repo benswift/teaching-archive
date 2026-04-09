@@ -5,7 +5,7 @@ title: Straight ? Left ? Right ?
 week: 9
 ---
 
-![CrossRoad](/images/posts/yuze/CrossRoad.jpg)
+![CrossRoad](./images/yuze/CrossRoad.jpeg)
 
 <sup>Go straight ahead, it's STC. Turn left, it's Arduino Mega 2560. Turn right, it's ESP32.</sup>
 
@@ -15,11 +15,11 @@ Meanwhile I've found out that Arduino has a pretty good library on serial commun
 
 On the other side, I have successfully controlled the RFID module via one of the serial utility software on pc.
 
-![Serial Utility Software to RFID Module](/images/posts/yuze/SerialUtilityRFID.png)
+![Serial Utility Software to RFID Module](./images/yuze/SerialUtilityRFID.png)
 
 I have also successfully configured HC-05 module. The process it's a bit confusing before I've found out the official manual.
 
-![Configuring HC-05 Module](/images/posts/yuze/HC-05.png)
+![Configuring HC-05 Module](./images/yuze/HC-05.png)
 
 While I was searching for the HC-05 Manual, I've found out that the main feature of Bluetooth 4.2, the Bluetooth Low Energy has something that's quite nice. It could be set in a mode where it keep advertising about itself and reject any device that wants to setup an conncetion with it.
 

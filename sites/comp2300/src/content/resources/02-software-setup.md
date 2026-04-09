@@ -74,7 +74,7 @@ To set this all up on a new machine (e.g. your own laptop) here are the steps:
 5. reload the VSCode window (using the [command
    palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)),
    then **wait until PlatformIO Core installation finishes**, follow the prompt and reload window
-   ![PlatformIO](/images/resources/platformio-install.png)
+   ![PlatformIO](./images/platformio-install.png)
 
 6. *Windows users only*: download & install the
     [ST-Link Windows Driver](/assets/resources/setup/stlink-windows-driver.zip/).
@@ -147,7 +147,7 @@ pallete, run the **Developer: Toggle Developer Tools** command and you'll see a
 new pane pop up in VSCode. Switch to the **Console** tab (top-right of the
 screenshot) and you'll see something like this:
 
-![VSCode](/images/resources/setup/vscode-developer-tools.png)
+![VSCode](./images/setup/vscode-developer-tools.png)
 
 Now, the messages in this Console view aren't really meant for VSCode users, so
 there will be a lot of stuff here, and a lot of it probably isn't relevant.
@@ -336,7 +336,7 @@ extensions. This will reinstall Cortex Debug extension.
 
 #### [macOS] Installation crash --- PIP: Exception
 On some macOS machines when installing PlatformIO it might crash like the
-following: ![PIP](/images/resources/setup/macOS-pip-ssl-crash.png)
+following: ![PIP](./images/setup/macOS-pip-ssl-crash.png)
 
 This is because the SSL library is too old. So the solution is to install a
 newer version of OpenSSL library, and upgrade Python to make sure it uses this

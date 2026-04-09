@@ -11,11 +11,11 @@ This week, I have finally had all the resources I needed to begin work on the ha
 
 As for the other hardware, as in the tubes that route water through the system sensor and solenoid, I have that all fitted and I have been testing it manually.
 
-![tubes](/images/posts/sam/tubes.jpg)
+![tubes](./images/sam/tubes.jpg)
 
 Before attempting to implement a circuit to power and control the components, I decided to do a mock up to refer to as I go.
 
-![schematic](/images/posts/sam/water_monitor_schematic.png)
+![schematic](./images/sam/water_monitor_schematic.png)
 
 It is definitely not fully correct and will require some more tweaking to get it to function properly in reality.
 

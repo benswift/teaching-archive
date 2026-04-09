@@ -24,7 +24,7 @@ Once I had successfully used the refresh token, I did a little research on [time
 #### Favicon
 If you don't know, a favicon is the little image in your browser tab that gives you a bit of a hint as to what site you're on. I didn't have one on the pages in my nodeJS server so I did a little digging and found [this package](https://www.npmjs.com/package/serve-favicon). It requires an `npm install serve-favicon`, and then you simply wrap your server code in the favicon call, and then it will add the icon to all of your pages.  
 Here is the icon I made for my site:  
-![](/images/posts/brent/favicon.png)  
+![](./images/brent/favicon.png)  
 
 ### Reducing code
 As I am writing a lot of the client side pages in javascript *(specifically in [p5](https://p5js.org/))* and the server side is nodeJS, I have a lot of functions which are exactly the same across the two, so not wanting to make updates in one location and not the other, and then run in to a bunch of inconsistency later on, I set out to find out how I can throw all this code in 1 file, and use it across both applications.  
@@ -78,20 +78,20 @@ Here are the basic steps to accomplish it:
 *Note: If you are already seeing python3.X in this list then skip to 6*  
 3. Assuming default install location, check what python versions you have available:  
 `ls -al /usr/bin | grep python`  
-![](/images/posts/brent/python-list.png)  
+![](./images/brent/python-list.png)  
 4. As you can see in my result, I have `python2.7` and `python3.5` installed on my system, but they are not listed as alternatives yet  
 5. Using the above result, I can install them as alternatives:  
 `update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1`  
 `update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2`  
 6. We can then check the alternatives available for python again to make sure this was successful  
 `update-alternatives --list python`  
-![](/images/posts/brent/python-list-2.png)  
+![](./images/brent/python-list-2.png)  
 7. Now we check the current version with `python --version` and with any luck it will be showing 3.X  
-![](/images/posts/brent/python-version.png)  
+![](./images/brent/python-version.png)  
 8. To change between the options (or if it isn't showing 3.X), we can use:  
 `update-alternatives --config python`  
 to update and switch our current alternative  
-![](/images/posts/brent/python-config-a.png)  
+![](./images/brent/python-config-a.png)  
 
 ### Setting up a new Python environment
 Pipenv! a great tool to handle your python environment needs, use it!
@@ -152,8 +152,8 @@ And with that... (and some extra handling on the server side... and some bugfixe
 
 **YAY COMMUNICATION**  
 *Python*  
-![](/images/posts/brent/python-pixel-test.png)  
+![](./images/brent/python-pixel-test.png)  
 *NodeJS*  
-![](/images/posts/brent/nodejs-pixel-test.png)
+![](./images/brent/nodejs-pixel-test.png)
 
 Until next time...

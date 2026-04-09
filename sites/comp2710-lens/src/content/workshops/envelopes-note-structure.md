@@ -20,7 +20,7 @@ structured and recognisable musical elements like notes, bars, choruses, and
 movements.
 
 ![The effect of applying an envelope to a carrier
-wave.](/images/digital-synthesis/envelope-sound.png)
+wave.](./images/envelope-sound.png)
 
 ## Goals for this week
 
@@ -38,7 +38,7 @@ wave.](/images/digital-synthesis/envelope-sound.png)
   `metro` objects for triggering your envelopes
 
 ![Anatomy of a vline
-message](/images/digital-synthesis/pd-using-vline.png)
+message](./images/pd-using-vline.png)
 
 ## Things to think about
 

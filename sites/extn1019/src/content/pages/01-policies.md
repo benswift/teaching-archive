@@ -11,7 +11,7 @@ Everyone in this course is responsible for:
 
 More broadly: be excellent to each other
 
-![...and party on, dudes!](/images/resources/be-excellent-to-each-other.png)
+![...and party on, dudes!](../resources/images/be-excellent-to-each-other.png)
 
 **We reject behaviour that strays into harassment, no matter how mild.**
 Harassment refers to offensive verbal or written comments in reference to

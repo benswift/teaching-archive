@@ -3,7 +3,7 @@ title: "Lab 13: neural network noise"
 tagline: "Generating drone music with machine learning"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-13
 project_templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-3
-image: /images/banners/sound-flowers-by-lily-campbell.jpg
+image: ../images/banners/sound-flowers-by-lily-campbell.jpg
 hidden: false
 ---
 

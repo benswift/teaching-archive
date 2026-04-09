@@ -26,7 +26,7 @@ This week I had a meeting with Ben regarding my idea for my IoT thing. This meet
 
 I have been doing some concept work on how the sensor would connect to the micro-controller and that to the network.
 
-![Concept](/images/posts/david-flores/scan.png)
+![Concept](./images/david-flores/scan.png)
 
 ### OccupEye
 
@@ -36,7 +36,7 @@ OccupEye is a fully integrated system that enables users to capture and analyse 
 The solution comprises an unlimited number of wireless workplace utilisation sensors which transmit utilisation data to a small number of strategically positioned network receivers, which in turn feed the ‘raw’ occupancy logs back to client specific cloud-based analytics systems.
 Find out more here: (https://www.occupeye.com/what-is-occupeye/)
 
-![OccupEye](/images/posts/david-flores/OccupEye.png)
+![OccupEye](./images/david-flores/OccupEye.png)
 
 Basically a very similar artifact has been created but not for the use of monitoring employees or incentivising employees to work more but instead for providing administrators with a live feed of workplace occupancy, especially among companies that employ “hot desking”, a workspace sharing practice in which employees don’t have a set workstation but log in at any desk that’s available. The OccupEye system can supply employers and their workers with a map of all seats and color code the ones that are free. Universities also use the technology to inform students of open study spaces.
 
@@ -82,4 +82,4 @@ To conclude this post, this 3rd & last week in Beijing was a great way to end th
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

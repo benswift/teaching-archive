@@ -64,4 +64,4 @@ representing happiness.)*
 
 ***Overall, welcome to China!***
 
-![welcome to china](/images/posts/kathleen/welcome-to-china.jpg)
+![welcome to china](./images/kathleen/welcome-to-china.jpg)

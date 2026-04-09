@@ -3,7 +3,7 @@ title: "Lab 23: Project Sketching and Reaction Diffusion Systems"
 tagline: "First sketches for your project, and a look at Reaction Diffusion Systems"
 project_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-23
-image: /images/labs-year-12/year-12-lab-23.png
+image: ./images/year-12-lab-23.png
 ---
 
 ## Outline

@@ -5,7 +5,7 @@ title: chocolatier's Project Diary - Part 6
 week: 11
 ---
 
-![Tatlin at Home](/images/posts/chocolatier/tatlin.jpg)
+![Tatlin at Home](./images/chocolatier/tatlin.jpg)
 
 Tatlin at Home by Raoul Hausmann. 
 
@@ -89,12 +89,12 @@ However, the end result was the same - I was unable to test how Google Speech to
 
 Now, to work around the lack of space, I've decided to mount the Pi on the back of the screen and the Mic Hat on top of the Pi Screen. Like So. 
 
-![mount top](/images/posts/chocolatier/mount.jpg)
+![mount top](./images/chocolatier/mount.jpg)
 
-![mount side](/images/posts/chocolatier/mountside.jpg)
+![mount side](./images/chocolatier/mountside.jpg)
 
 I would then put it in a frame, and mount that frame on the rover, but the frame arrived broken.
 
-![broken](/images/posts/chocolatier/broken.jpg)
+![broken](./images/chocolatier/broken.jpg)
 
 So I have to wait for the replacement to arrive before I can mount the setup on the robot and get it to self drive. 

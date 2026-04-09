@@ -33,7 +33,7 @@ With some searches, I found that people developed a lot IoT applications for hum
 
 As a girl who have kept tortoises and goldfish as my pets since I was 4 years old, I know it is indeed not an easy work to take good care of them, even if they live in a relatively fixed place. As I am also familiar with their habits. I hope I could make a multi-functional tool to help monitor their living environment in a common home level.
 
-![my tortoises](/images/posts/kathleen/tortoises.jpg)
+![my tortoises](./images/kathleen/tortoises.jpg)
 
 Happily, this time my idea is showed in a more detailed and completed version~
 

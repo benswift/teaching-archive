@@ -1,14 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Card from "astro-theme-anu/components/Card.astro";
 import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+import heroImg from "../assets/images/louis-reed-747404-unsplash.jpg";
 ---
 
 <SiteLayout title="Home">
   <h1>(dis)connecting together</h1>
   <h2>IoT@BIT China Study Tour 2018</h2>
 
-  <img src={`${import.meta.env.BASE_URL}images/louis-reed-747404-unsplash.jpg`} alt="Laptop & microcontroller" style="width:100%;" />
+  <Image src={heroImg} alt="Laptop & microcontroller" style="width:100%;" />
 
   <p>
     In this course students headed to Beijing in November/December 2018 to study

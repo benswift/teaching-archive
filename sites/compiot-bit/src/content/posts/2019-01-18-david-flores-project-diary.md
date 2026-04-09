@@ -16,7 +16,7 @@ For **LIT** photos documenting my work see below ↓
 ### Research done this week
  This week has been tedious as I've been reading through the firebase documentation, involving the firebase API Reference and the methods/interface of the realtime database & how to connect to it.
 
- ![Firebase](/images/posts/david-flores/google-firebase.jpg)
+ ![Firebase](./images/david-flores/google-firebase.jpg)
 
 ### What i've been working on
  While I wait for my shields to arrive, i've been working on connecting the fireabse database to my front-end page which will display all the data from the Infrared Sensor. I have been using the React framework alongside node and ajax, and just testing it out on a localhost through my pc. You can check my progress in my GitHub page under the development branch: https://github.com/davidflorescondezo/office-eye
@@ -31,4 +31,4 @@ To conclude this post, I look forward to my progress next week in continuing pro
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

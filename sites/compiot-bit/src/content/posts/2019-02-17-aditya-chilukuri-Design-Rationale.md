@@ -34,7 +34,7 @@ Chinmay and I thought about the theoretical approaches, and found that the relat
 
 We decided on the network architecture shown below.
 
-![Chosen Network Architecture](/images/posts/aditya-chilukuri/Design_Rationale/Network_Architecture.jpg)
+![Chosen Network Architecture](./images/aditya-chilukuri/Design_Rationale/Network_Architecture.jpg)
 
 As a simpler alternative, we considered a BlueTooth-only mesh network between the ESP32 microcontrollers. But we decided against this as the range of BLE is around [100m](https://blog.nordicsemi.com/getconnected/things-you-should-know-about-bluetooth-range), but can be much lower in crowded environments—we didn't want to risk losing connectivity between any users in a friend group.
 
@@ -44,7 +44,7 @@ I wanted to put most effort into thoroughly following through on the network arc
 
 We needed to design our app to reduce the possibility of people using the app in drinking games. We decided that displaying classifications of drunkenness as opposed to numerical values would make it difficult for users to create a race for who's the most drunk.
 
-![Comparing App UI Designs](/images/posts/aditya-chilukuri/Design_Rationale/App_Dev_Comparison.jpg)
+![Comparing App UI Designs](./images/aditya-chilukuri/Design_Rationale/App_Dev_Comparison.jpg)
 
 The design on the left was our aim for this project — we are able to get the core elements of this user interface working by presentation date, but a final product will fully implement the design shown, as well as push notifications for alcohol sensing and for when people enter the red zone.
 

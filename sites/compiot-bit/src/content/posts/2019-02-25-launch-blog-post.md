@@ -15,7 +15,7 @@ Going into panic mode and realising the the exhibition was literally in less tha
 
 Buuuut, it's finally done. We, more or less, implemented the idea I had envisioned a few weeks ago after coming back from Beijing, and while it may not be perfect, it's still a prototype :)
 
-![Testing the sensor](/images/posts/chinmay/Week11SensorTest.jpg)
+![Testing the sensor](./images/chinmay/Week11SensorTest.jpg)
 
 ## GitHub Repo
 

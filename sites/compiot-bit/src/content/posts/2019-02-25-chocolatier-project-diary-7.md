@@ -5,7 +5,7 @@ title: chocolatier's Project Diary - Bonus Post
 week: 13
 ---
 
-![cocteau](/images/posts/chocolatier/fron_shot.jpg)
+![cocteau](./images/chocolatier/fron_shot.jpg)
 
 ## Nightmare on venv Street
 
@@ -21,7 +21,7 @@ when I tried to run their Direction of Arrival example. I had tried all the obvi
 
 Needless to say, this exact same error popped up again when I needed to use OpenCV for the video. Cue another 24 hours of trouble shooting. Most of it just repeating what I had done previously. Obviously, this made no difference. That is until I accidentally ran the script without sourcing my virtualenv. And viola, my script worked. Well, not worked, but failed due to a different error. run `source ~/venv/cocteau/bin/activate` and then my script, it fails due to the import error. 
 
-![mood](/images/posts/chocolatier/magic.gif)
+![mood](/images/gifs/magic.gif)
 
 I've installed all the dependencies present in the virtualenv in the "normal" environment, and my code still works. Both venv and non-venv have the version of Python. All the venv packages are present in non-venv. I don't see any package present in non-venv that has anything to do with numpy. The only real difference between the two environments is that `python` calls Python 3 outside the venv, and only Python 3 within. It is unlikely that *this* is the cause of the import error. So I have no clue why the code was failing when run in a virtual environment. 
 
@@ -84,13 +84,13 @@ I finally finished the build. Instead of relying on prefabricated frames or 3D p
 
 So the Pi-Screen Assembly is zip-tied to a pair of L Brackets, which is then zip-tied onto the top plate of the rover.
 
-![Side View](/images/posts/chocolatier/side_shot.jpg)
+![Side View](./images/chocolatier/side_shot.jpg)
 
 In order to create a mounting for the front IR sensor, I literally just folded some cardboard into a triangle, and taped the IR sensor onto it. Before taping the cardboard triangle onto the sensor plate. 
 
 Similarly, I just taped the pan and tilt kit onto the sensor plate, and zip tied the precipice detection sensor to the bottom of the plate. 
 
-![Side View](/images/posts/chocolatier/sensor_plate.jpg)
+![Side View](./images/chocolatier/sensor_plate.jpg)
 
 # To Infinity and Beyond!
 

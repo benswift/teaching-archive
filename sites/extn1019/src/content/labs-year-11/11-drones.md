@@ -2,7 +2,7 @@
 title: "Lab 11: Drones"
 tagline: "Creating and Playing Drone Instruments"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-10
-image: /images/labs-year-11/year-11-lab-11.png
+image: ./images/year-11-lab-11.png
 ---
 
 ## Outline

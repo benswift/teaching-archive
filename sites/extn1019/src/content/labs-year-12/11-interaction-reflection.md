@@ -2,7 +2,7 @@
 title: "Lab 11: Human-Computer Interaction"
 tagline: "reviewing interaction, and introducing HCI"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-12/extn1019-2024-year-12-portfolio-1
-image: /images/banners/sound-flowers-by-lily-campbell.jpg
+image: ../images/banners/sound-flowers-by-lily-campbell.jpg
 hidden: false
 ---
 

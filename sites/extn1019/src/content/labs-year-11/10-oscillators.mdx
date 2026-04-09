@@ -3,7 +3,7 @@ title: "Lab 10: Oscillators"
 tagline: "Making your first oscillators with Tone.js"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-10
 qanda_channel: https://teams.microsoft.com/l/channel/19%3A92a9fa31089d4197a3442d77474bf90f%40thread.tacv2/Q%20and%20A?groupId=07301f82-67c5-4aa9-b0ac-44e6fde06627&tenantId=e37d725c-ab5c-4624-9ae5-f0533e486437
-image: /images/labs-year-11/year-11-lab-10.png
+image: ./images/year-11-lab-10.png
 ---
 
 import FillInTheBlank from "astro-theme-anu/components/FillInTheBlank.svelte";
@@ -293,7 +293,7 @@ repo](), open it in VSCode and start the live server.
 
 Oscillators can be thought of as signals which have a repeating shape. The shape of an oscillator can be sinusoidal (like a sine wave), triangular, square or sawtooth. We are about to 'produce' our own oscillator signal to feed to the speakers in your computer.
 
-![Oscillator shapes](/images/labs/lab-11/waveforms.jpg)
+![Oscillator shapes](./images/labs/lab-11/waveforms.jpg)
 
 :::tip
 **NOTE:** When making sounds with code, you may accidentally increase the volume, or the power, of the sound beyond what it is safe to listen to (especially when using headphones). Ensure you set the system volume low prior to running any code - and slowly increase.
@@ -319,7 +319,7 @@ Now that we know how to access and modify the frequency of the oscillator, we ca
 
 Additive synthesis is a technique where multiple audio waves are combined together by _adding_ the corresponding output values of each wave together. In Tone.js we can indirectly add several oscillators together by simply connecting them all to the master audio output i.e. using `toDestination()`. If we compare our standard sine oscillator at frequency 440hz (which is equivalent to an _A_ note) to if we were to hold an A on an instrument like a clarinet, the waveform of a clarinet is not as smooth and produces a richer tone. We can mimic this 'harmonic richness' by adding multiple oscillators with various frequencies together.
 
-![Instrument waveforms](/images/labs/lab-11/add-synth.png)
+![Instrument waveforms](./images/labs/lab-11/add-synth.png)
 
 **do:** Create a second oscillator and connect it to the master audio using `toDestination()`. This oscillator should have a fixed frequency of 220hz. You can look at how the `osc` oscillator was created and follow it as an example. Once you've done this, use your mouse to change the frequency of the original `osc` oscillator and see what the effect is on the wave drawn on your screen.
 

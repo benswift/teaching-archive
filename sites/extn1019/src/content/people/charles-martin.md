@@ -2,7 +2,7 @@
 name: Charles Martin
 position:
   - Course Convenor
-image: /images/people/charles.jpg
+image: ./images/charles.jpg
 email: charles.martin@anu.edu.au
 ---
 

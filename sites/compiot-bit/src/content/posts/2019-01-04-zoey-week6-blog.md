@@ -15,7 +15,7 @@ MiniSense 100 Vibration Sensor is an excellent accelerometer with an affordable 
 1. The voltage the sensor produces could be higher than the voltage threshold(5V) of the micro controller. Depends on the resonance or not, the voltage sensitivity could be 1.1V/g or 6V/g (proportional to the acceleration). The voltage could be more than 50V depends on the vibration which is way higher than 5V. The vibration of the surface of the drum may not be strong enough to produce a voltage higher than 5V, but if it does, we need to deal with it.
 
 2. The off-axis sensitivity of the sensor is really low.
-  ![Off-Axis Sensitivity Image](/images/posts/zoey/week6-Off-Axis-Sensitivity.png)
+  ![Off-Axis Sensitivity Image](./images/zoey/week6-Off-Axis-Sensitivity.png)
   Which suggests that the position of how we put the sensor is really essential for the sensitivity. That means we are not able to put the sensor anywhere we want. But at the same time this might but a possible way to fix up problem one - find a position where detecting the vibration is possible and at the same time voltage is not too high.
 
 3. Old problem talked about in the previous post. The measuring method of this sensor is using acceleration and the vibration of the drum may not be strong enough in acceleration sense.
@@ -27,7 +27,7 @@ I used the drum kit in Lena Karmel Lodge to test how the drums vibrate. Here is 
 - They all create a synthetic sound wave combined by waves of very different frequencies.
 - Some drums' sound wave and vibration vanish really quick and some are relatively slower. This might affect the accuracy of the sensing - when the drums are hit really fast it is highly possible that they would overlap with each other.
 
-      ![Testing the Drums](/images/posts/zoey/week6-DrumTesting.png)
+      ![Testing the Drums](./images/zoey/week6-DrumTesting.png)
 
 Resources:
 [MiniSense_100.pdf](https://www.sparkfun.com/datasheets/Sensors/Flex/MiniSense_100.pdf)

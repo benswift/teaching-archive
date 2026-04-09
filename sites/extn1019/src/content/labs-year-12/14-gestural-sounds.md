@@ -3,7 +3,7 @@ title: "Lab 14: gestural sounds"
 tagline: "explore ml5's HandPose model"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-14
 portfolio_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-3
-image: /images/banners/sound-flowers-by-lily-campbell.jpg
+image: ../images/banners/sound-flowers-by-lily-campbell.jpg
 hidden: false
 ---
 

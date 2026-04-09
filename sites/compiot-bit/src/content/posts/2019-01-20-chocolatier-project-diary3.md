@@ -5,7 +5,7 @@ title: chocolatier's Project Diary - Part 3
 week: 8
 ---
 
-![I have no idea what I'm doing](/images/posts/chocolatier/no_clue.jpg)
+![I have no idea what I'm doing](./images/chocolatier/no_clue.jpg)
 
 ## All Wired Up, and No Place to go.
 
@@ -13,7 +13,7 @@ I spent most of my time mucking around on the hardware side. The setup turned ou
 
 The wiring turned out to be simple enough that I should not have need a breadboard to prototype it. But my first attempt at wiring did end up melting the wires and the plastic around the power strip on the breadboard. But better melting a breadboard than frying an Arduino.
 
-![I have no idea what I'm doing](/images/posts/chocolatier/gore_shot.jpg)
+![I have no idea what I'm doing](./images/chocolatier/gore_shot.jpg)
 
 Turns out that if nothing is happening, increasing the number of batteries pumping juice in is __not__ a good idea.
 
@@ -21,7 +21,7 @@ This is what it everything looked like when connected[^staged].
 
 [^staged]: This is a staged shot taken after Ben's feedback that I should include more images. At no point during actual development was everything actually wired up like this.
 
-![All wired up, and no place to go](/images/posts/chocolatier/all-wired-up.jpg)
+![All wired up, and no place to go](./images/chocolatier/all-wired-up.jpg)
 
 ### Wiring
 
@@ -35,7 +35,7 @@ This is what it everything looked like when connected[^staged].
 
 Here's a closer look[^staged-obv] at the wiring for the Arduino.
 
-![A closer look at wiring](/images/posts/chocolatier/closer-look.jpg)
+![A closer look at wiring](./images/chocolatier/closer-look.jpg)
 
 Note: I might not even include the screen in the final set up. I'm considering displaying some information, but I don't know if displaying it on robot will be better than displaying it on laptop/projected.
 

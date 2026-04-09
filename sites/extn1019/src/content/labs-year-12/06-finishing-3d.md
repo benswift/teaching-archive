@@ -3,7 +3,7 @@ title: "Lab 6: Finishing 3D"
 tagline: "the end of 3D, finalising your research project, exploring possibilities"
 project_templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-1
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-6
-image: /images/labs-year-12/year-12-lab-06.png
+image: ./images/year-12-lab-06.png
 ---
 
 ## Outline

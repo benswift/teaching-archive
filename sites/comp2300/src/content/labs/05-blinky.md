@@ -259,7 +259,7 @@ Can you find the string "Computer Organisation & Program Execution" in memory?
 Try and find it in the [memory view](/labs/02-first-machine-code/#reverse-engineering).
 :::
 
-![Discoboard](/images/labs/lab-5/address-space.jpg)
+![Discoboard](./images/lab-5/address-space.jpg)
 
 You can interleave the sections in your program if it makes sense:
 
@@ -305,7 +305,7 @@ discoboard do useful work. The basic idea is this:
    instruction)
 3. store this new value from the register back into memory
 
-![load-twiddle-store](/images/labs/lab-5/load-twiddle-store.jpg)
+![load-twiddle-store](./images/lab-5/load-twiddle-store.jpg)
 
 ``` ARM
 main:
@@ -375,7 +375,7 @@ The GPIO pins are grouped into 8 ports (port A to port E) and each port has 16
 pins (pin). It's worth pointing out that the pin numbering starts at 0, so the
 first pin in port A is PA0.
 
-![Ports](/images/labs/lab-5/ports-and-pins.jpg)
+![Ports](./images/lab-5/ports-and-pins.jpg)
 
 From the
 [reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf):
@@ -404,7 +404,7 @@ memory address `0x40021000`. The specific register which controls the clock for
 GPIO ports is the `RCC_AHB2ENR` 32-bit register, which lives at an offset of
 `0x4C` from the RCC base address and looks like this:
 
-![RCC_AHB2ENR](/images/labs/lab-5/AHB2ENR.png)
+![RCC_AHB2ENR](./images/lab-5/AHB2ENR.png)
 
 As you can see, the clock for GPIO port B (where your red LED is) is controlled
 through bit 1 (i.e. the *second* bit from the right, because the rightmost bit
@@ -413,7 +413,7 @@ the gory details.
 
 Note that in debug view you can conveniently see this information in the 
 **Cortex Peripherals** pane:
-![Peripheral](/images/labs/lab-5/peripheral-view.png)
+![Peripheral](./images/lab-5/peripheral-view.png)
 
 This is your chance to see the **load-twiddle-store** pattern from Exercise 1 in
 action. To turn on GPIO port B, you must:
@@ -468,7 +468,7 @@ set pin 2 of GPIO port B to output mode, you need to set the `MODE2` bits (4 and
 from the GPIO base address of `0x48000400` (see Section 7.4.1 of the manual for
 more info). Here's what the `GPIOB_MODER` looks like:
 
-![GPIOx_MODER](/images/labs/lab-5/GPIOx_MODER.png)
+![GPIOx_MODER](./images/lab-5/GPIOx_MODER.png)
 
 To configure pin 2 for output mode to power the LED, you need to ensure the mode
 bits for pin 2 (`MODE2` in the diagram) are `01` for output mode (i.e. clear bit
@@ -485,7 +485,7 @@ to actually send an "on" signal to it by setting a `1` into bit 2 (for pin 2) of
 the port B Output Data Register `GPIOB_ODR`, which lives at offset `0x14` from
 the GPIOB base address and looks like this:
 
-![GPIOx_ODR](/images/labs/lab-5/GPIOx_ODR.png)
+![GPIOx_ODR](./images/lab-5/GPIOx_ODR.png)
 
 :::info
 Following the steps above, write a program which turns on the red LED on your

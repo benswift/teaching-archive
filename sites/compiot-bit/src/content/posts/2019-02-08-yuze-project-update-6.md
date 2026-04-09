@@ -5,7 +5,7 @@ title: 新年好！祝大家在新的一年里面猪事如意、猪事吉祥，�
 week: 11
 ---
 
-![](/images/posts/yuze/Here\'s\)
+![](./images/yuze/Here\'s\)
 
 <small>The cover photo is one of my favourite comedy piece of the "2019 Spring Festival Gala" produced by China Central Television. The meaning of the title is to wish you to have good days in the Pig Zodiac Chinese Lunar New Year XD. F.Y.I., don't tranlate it with google</small>
 

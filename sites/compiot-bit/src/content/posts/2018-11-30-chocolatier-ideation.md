@@ -5,7 +5,7 @@ title: chocolatier's Artefact Ideation
 week: 2
 ---
 
-![Too Much Information Age](/images/posts/chocolatier/TMIA.png)
+![Too Much Information Age](./images/chocolatier/TMIA.png)
 
 Comic licensed under CC-BY-NC 3.0 USA. By Abstruse Goose https://abstrusegoose.com/553
 

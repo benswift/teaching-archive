@@ -15,7 +15,7 @@ Up to this point I do have the most important things done, everything is communi
 
 I have spent the last few hours of work on this project developing the web interface to monitor the device and send commands. So far I have a dashboard screen that has some stubbed data, but it also includes a live graph of the output of the reporter (though the data is not real, it still comes from a real source).
 
-![dashboard](/images/posts/sam/dashboard.png)
+![dashboard](./images/sam/dashboard.png)
 
 There are some empty boxes that I hope to fill with useful information and controls, but time will tell how many of them I can get working properly, they may also end up being stubbed in place of a feature planned for the future if development were to continue. I will outline any shortcomings in my design rationale, especially if they do not work and are there just for show.
 

@@ -11,7 +11,7 @@ It is a very very late post.(sorry) I didn't submit my post last week on time be
 
 This is a low-cost wifi module that has multiple usages. It has 8 pins in total and I am using 6 of them. There are a lot of online tutorials teaching people how to use it. I watched some of them and found there were multiple ways to connect the wires. I have tried but not all of them worked for me. After a long time of trying and searching, I decided on this way of connecting.
  
-![board](/images/posts/michelle/wificonnected.jpg)
+![board](./images/michelle/wificonnected.jpg)
 
 ### some difficulties 
 

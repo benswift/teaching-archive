@@ -13,7 +13,7 @@ date: 2018-12-22
 ## Parley
 ##### *- an external voice encrypting communication device*
 
-![Parley](/images/posts/brent/parley.png)  
+![Parley](./images/brent/parley.png)  
 
 ### The Concept:
 
@@ -29,16 +29,16 @@ Nowadays, in the hyper-connected age, it's almost impossible to say who can list
 While Parley will, for the most part, require components similar to what a normal bluetooth headset has, to achieve the encryption in a suitable time for voice communication a more powerful processing unit will most likely be required. A prototype running on a computer will provide me with more information on this, however as it stands, here is the proposed equipment list:  
 
 **- Processing**
-![Raspberry Pi 3 B+](/images/posts/brent/raspberry-pi-3-b+.jpg)  
+![Raspberry Pi 3 B+](./images/brent/raspberry-pi-3-b+.jpg)  
 As this is just a prototype, parameters such as portability and efficiency aren't as important as showing that the project is feasible and will actually work. As such a model such as the Raspberry Pi 3 B+ may be used to show that Parley is in fact something that can work, and this chip should provide all the necessary processing power (hopefully) and connectivity (bluetooth, wifi and usb peripheral support) that this project will require.  
 *Note: after running a prototype on a computer, this chip/board may change to something with a lower power requirement depending on how intense the encryption turns out to be.*  
 
 **- Audio**  
 *Out:* A simple 3.5 mm audio jack (already present on the pi) to allow the use of headphones (or also included in option below)  
-![Raspberry Pi Audio Jack](/images/posts/brent/pi-audio-jack.jpg)  
+![Raspberry Pi Audio Jack](./images/brent/pi-audio-jack.jpg)  
 
 *In:* The raspberry pi does not have an audio-in interface present on the device, so alternative options such as a usb soundcard must be used (this includes 3.5mm audio in and out, so can possibly be used for both)  
-![USB Sound Card](/images/posts/brent/volans-usb-card.jpg)  
+![USB Sound Card](./images/brent/volans-usb-card.jpg)  
 
 **- Encryption**  
 *This area is going to require some research, here are some of initial ideas on how this can work:*  

@@ -2,7 +2,7 @@
 title: "Lab 9: Data Visualisation"
 tagline: "visualise data of your choosing"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-9
-image: /images/labs-year-11/beads-by-amelia-bobbin.png
+image: ./images/beads-by-amelia-bobbin.png
 ---
 
 ## Outline

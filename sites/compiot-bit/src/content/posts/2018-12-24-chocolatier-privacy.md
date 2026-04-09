@@ -6,7 +6,7 @@ title: "chocolatier's thoughts on Privacy (and artefact plan)"
 week: 5
 ---
 
-![The Watchers](/images/posts/chocolatier/missing_the_point.png)
+![The Watchers](./images/chocolatier/missing_the_point.png)
 
 Comic licensed under CC-BY-NC 3.0 USA. By Abstruse Goose https://abstrusegoose.com/433
 
@@ -66,7 +66,7 @@ Everything except the camera and mic can probably be placed in the chassis, givi
 
 #### Form Factor
 
-![STALK-E](/images/posts/chocolatier/STALK-E.png)
+![STALK-E](./images/chocolatier/STALK-E.png)
 
 Name and outward appearence subject to change.
 

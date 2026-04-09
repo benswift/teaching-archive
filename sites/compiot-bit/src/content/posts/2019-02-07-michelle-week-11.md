@@ -11,7 +11,7 @@ This week I am trying to connect all the electronics together. I have three part
 
 The following picture shows the expansion boards. Since more wires are connected, it looks a bit messy.
 
-![board](/images/posts/michelle/expansionboard.jpg)
+![board](./images/michelle/expansionboard.jpg)
 
 ## goals, progress, and problems
 

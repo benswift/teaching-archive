@@ -1,7 +1,7 @@
 ---
 title: "Lab 18: Project Prototyping"
 tagline: "Week 9, Term 3 - Prototyping"
-image: /images/banners/remainders-by-jason-xu.jpg
+image: ../images/banners/remainders-by-jason-xu.jpg
 ---
 
 ## Outline

@@ -8,7 +8,7 @@ week: 3
 ## Yum food
 We have been staying in Beijing for two weeks. The biggest problem that I am faced with everyday is that of which restaurant I should go to. There are many different types of Chinese food from many different provinces. I have listed the food that I prefer below. Some of them are located on campus and some of them are from the tourist attractions myself and the rest of the people on the tour have visited.
 
-![food](/images/posts/michelle/food.jpg)
+![food](./images/michelle/food.jpg)
 
 I will introduce them from top left to bottom right.
 - Peking duck from Canteen No.7. The ducks are pretty good, and it's quite popular in BIT. Though I think it would be better if they can provide more vegetables because the last two wraps I ate was comprised solely of duck.

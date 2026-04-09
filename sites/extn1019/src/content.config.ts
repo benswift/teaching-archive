@@ -3,28 +3,30 @@ import { glob } from "astro/loaders";
 
 const labsYear11 = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/labs-year-11" }),
-  schema: z
-    .object({
-      title: z.string(),
-      tagline: z.string().nullish(),
-      published: z.coerce.boolean().default(true),
-      templateRepo: z.string().nullish(),
-      image: z.string().nullish(),
-    })
-    .passthrough(),
+  schema: ({ image }) =>
+    z
+      .object({
+        title: z.string(),
+        tagline: z.string().nullish(),
+        published: z.coerce.boolean().default(true),
+        templateRepo: z.string().nullish(),
+        image: image().optional(),
+      })
+      .passthrough(),
 });
 
 const labsYear12 = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/content/labs-year-12" }),
-  schema: z
-    .object({
-      title: z.string(),
-      tagline: z.string().nullish(),
-      published: z.coerce.boolean().default(true),
-      templateRepo: z.string().nullish(),
-      image: z.string().nullish(),
-    })
-    .passthrough(),
+  schema: ({ image }) =>
+    z
+      .object({
+        title: z.string(),
+        tagline: z.string().nullish(),
+        published: z.coerce.boolean().default(true),
+        templateRepo: z.string().nullish(),
+        image: image().optional(),
+      })
+      .passthrough(),
 });
 
 const deliverablesYear11 = defineCollection({
@@ -70,14 +72,15 @@ const resources = defineCollection({
 
 const people = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/content/people" }),
-  schema: z
-    .object({
-      name: z.string(),
-      position: z.array(z.string()).nullish(),
-      image: z.string().nullish(),
-      email: z.string().nullish(),
-    })
-    .passthrough(),
+  schema: ({ image }) =>
+    z
+      .object({
+        name: z.string(),
+        position: z.array(z.string()).nullish(),
+        image: image().optional(),
+        email: z.string().nullish(),
+      })
+      .passthrough(),
 });
 
 const pages = defineCollection({

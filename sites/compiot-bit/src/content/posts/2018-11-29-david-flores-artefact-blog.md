@@ -15,7 +15,7 @@ For **LIT** photos documenting this trip follow me on Instagram @despacitoflores
 
 You see, thats where the trouble began. That Plane. That damned Plane.
 
-![Plane Meme](/images/posts/david-flores/planeDAMNED.jpg)
+![Plane Meme](./images/david-flores/planeDAMNED.jpg)
 
 I arrived at the airport at 12pm on the 24th any my plane was to start boarding at 1:05pm. I proceeded to line up to get my boarding passes however I was faced with an enormous line with just 1 worker at the front desk who was stuck helping some person. As time passed it was 12:50pm and I was still nowhere near the front of the line. As I kept looking at the line I started to get anxious and nervous about my flight, however in the next few minutes the line cleared up and i managed to get my boarding passes, only to find out my plane was being delayed by 1 hour. After an hr the plane finally arrived and all was well.
 
@@ -43,4 +43,4 @@ To sum up my post, I've had an amazing and educating time this week learning the
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

@@ -4,7 +4,7 @@ summary: "A chance to reflect on what the thing you built means in the world."
 date: 2019-02-18
 ---
 
-![Reflection of a tree](/images/deliverables/faye-cornish-553422-unsplash.jpg)
+![Reflection of a tree](./images/faye-cornish-553422-unsplash.jpg)
 
 ## Outline {#outline}
 

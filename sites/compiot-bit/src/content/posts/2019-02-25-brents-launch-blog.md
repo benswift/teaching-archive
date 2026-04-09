@@ -9,14 +9,14 @@ date: 2019-02-25
 
 ## Let's just SEND IT (#LaunchPost)
 
-![](/images/posts/brent/catalyst.png)  
+![](./images/brent/catalyst.png)  
 
 So the project has finally come to an end and everything is finished (well that's not true, nor is it ever the case, but the deadline is here and I have got a working prototype).  
 It has been an amazing experience and I'm so excited to see what I can do with everything I've learned during my time on this project. But for now, let's talk about the launch of 'Catalyst Jukebox'.
 
 ### What is it?
 
-![](/images/posts/brent/jukebox-prototype.png)  
+![](./images/brent/jukebox-prototype.png)  
 
 Catalyst Jukebox is a Raspberry Pi based, socailly driven jukebox for the modern era, utilising Spotify to provide the music library. It is a re-imagining and update on the jukeboxes of old, using IoT devices to encourage and provide social engagement around all topics music (and beyond).  
 

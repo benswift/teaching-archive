@@ -274,14 +274,14 @@ discoboard. Configuring interrupts requires (at a minimum) enabling the
 interrupt and creating an **interrupt handler**---the function which gets called
 when the interrupt is triggered.
 
-![Single-interrupt](/images/labs/lab-9/single-interrupt-timeline.png)
+![Single-interrupt](./images/lab-9/single-interrupt-timeline.png)
 
 In this exercise we're going to configure an interrupt based on the GPIO pins.
 In this lab, we're going to be using our GPIO pins as **input** devices to
 register a "click" on the discoboard's blue diamond-shaped joystick (pictured
 below). Finally, you can give (physical) input to your discoboard!
 
-![Discoboard](/images/labs/lab-9/disco-button.jpg)
+![Discoboard](./images/lab-9/disco-button.jpg)
 
 Compared to the SysTick interrupt, there's a slightly different process in
 configuring GPIO pins as sources of interrupts. This is because SysTick
@@ -432,7 +432,7 @@ Do you remember that the **N** in **N**VIC stands for *nested*? This means that
 the interrupts can happen inside of one another. Here's a diagram to show what
 it might look like:
 
-![Multi-interrupt](/images/labs/lab-9/multi-interrupt-timeline.png)
+![Multi-interrupt](./images/lab-9/multi-interrupt-timeline.png)
 
 This isn't the full story, though---the discoboard doesn't always "kick out" the
 currently running interrupt for the new one, it depends on the priority. On the

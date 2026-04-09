@@ -37,7 +37,7 @@ More directly, I took inspiration from cyberpunk and cypherpunk ideals from the 
 
 [^NF]: While Chaum did coin the term, the concept is older. For example, it is a part of the aforementioned book The Trial, by Franz Kafka. We even real life examples like the KGB and Stasi. The main difference Cyber/Cypherpunk texts have is that it involves corporations doing the spying, instead of/along with the government. 
 
-![Dossier Society](/images/posts/chocolatier/dossier.png)
+![Dossier Society](./images/chocolatier/dossier.png)
 
 Illustration taken from [Security without Identification](https://www.cs.umd.edu/class/fall2015/cmsc414-0201/papers/chaum-identification), by David Chaum. 
 

@@ -38,7 +38,7 @@ marked **P**XY (where X is the *port number* from A to F and Y is the *pin
 number* from 0 to 15) are GPIO pins as well, and you can connect them up using
 jumper wires like so:
 
-![Discoboard](/images/deliverables/03-networked-instrument/discoboard-wires.jpg)
+![Discoboard](./images/03-networked-instrument/discoboard-wires.jpg)
 
 :::info
 You have to be a little bit careful when configuring your GPIO pins as inputs
@@ -92,7 +92,7 @@ a **receiver** device. P2300 is a simplex 2-wire protocol, which means:
 
 Here's a high-level diagram of the information flow:
 
-![P2300](/images/deliverables/03-networked-instrument/p2300-high-level.png)
+![P2300](./images/03-networked-instrument/p2300-high-level.png)
 
 The two lines[^line] (wires) used in P2300 are:
 
@@ -213,7 +213,7 @@ then send the next note on message.
 
 Here's an example of the P2300 protocol in action.
 
-![P2300](/images/deliverables/03-networked-instrument/p2300-example-timeline.png)
+![P2300](./images/03-networked-instrument/p2300-example-timeline.png)
 
 The diagram shows an example "communication timeline " for the P2300 protocol.
 It shows the way the voltage (either `0` or `1`) on both the **note on/off**
@@ -467,7 +467,7 @@ arbitrary length. If you're stuck on coming up with an idea for a better protoco
 then this is a good starting point, but it's just a shell, so things like the length and 
 content of the message is up to you! (You can also add / remove wires etc.)
 
-![Serial](/images/deliverables/03-networked-instrument/2017-p2300-high-level.png)
+![Serial](./images/03-networked-instrument/2017-p2300-high-level.png)
 
 The three lines[^line] are:
 
@@ -530,7 +530,7 @@ The basic outline of sending a message follow this structure:
 
 Here's an example of what a 32 bit message transmission using this will look like:
 
-![Serial](/images/deliverables/03-networked-instrument/2017-p2300-physical-layer.png)
+![Serial](./images/03-networked-instrument/2017-p2300-physical-layer.png)
 
 ## FAQ
 

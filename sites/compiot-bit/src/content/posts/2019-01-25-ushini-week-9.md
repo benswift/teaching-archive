@@ -7,7 +7,7 @@ week: 9
 
 It's a well known fact that hot weather induces lethargy. My internal temperature regulation system has exploded and glucose levels are dangerously low. So, I think its completely reasonable for me to blame the slow progress I have made on the heatwave hitting Australia. Justified!
 
-![A meme?](/images/posts/ushini/panic_on_the_inside.jpg)
+![A meme?](./images/ushini/panic_on_the_inside.jpg)
 
 Ok, it wasn't the weather, it was me. I feel like I have been working consistently over the last few weeks, but lets just say that my understanding of computer networks has a few 'structural holes' in it and it has really slowed down debugging. So I'm severly behind schedule. How about I just recall the events of last week, hmm? Aight, walk with me.
 

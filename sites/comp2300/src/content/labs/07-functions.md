@@ -35,7 +35,7 @@ student's assignments and exams, but the marks for these individual pieces of
 assessment are just scribbled around your friend's apartment on whatever piece
 of paper (or wall) was closest at the time.
 
-![what](/images/labs/lab-7/scribbles-on-wall.jpg)
+![what](./images/lab-7/scribbles-on-wall.jpg)
 
 There's only so much you can do to help your friend out, but one thing you can
 do is to help them add up the marks for each student's assignments and exam to
@@ -371,7 +371,7 @@ not the self assessment version)
 If you've implemented it correctly, your memory at the results array should 
 look like this afterwards:  
 
-![final](/images/labs/lab-7/array-in-memory.png)
+![final](./images/lab-7/array-in-memory.png)
 
 *note: the final grades are stored in the 00 offset 
 column, starting from 20000010*

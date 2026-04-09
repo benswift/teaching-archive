@@ -7,7 +7,7 @@ week: 12
 
 ## Design Rationale
 
-![cover](/images/posts/sam/cover.png)
+![cover](./images/sam/cover.png)
 
 The design and implementation of my water flow monitoring system was carried out in early 2019, the design process and iterations are presented here. The project consists of a number of systems, both hardware and software;
 
@@ -48,7 +48,7 @@ The way it is meant to be used should require little interaction, it collects st
 
 ### Implementation
 
-![system](/images/posts/sam/system.jpg)
+![system](./images/sam/system.jpg)
 
 The implementation of the water monitoring system has three distinct subsystems to consider. The software, the electronics and the water loop. Each within their own paradigm, presenting their own challenges.
 

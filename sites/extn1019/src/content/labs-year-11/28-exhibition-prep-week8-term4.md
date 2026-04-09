@@ -2,7 +2,7 @@
 title: "Lab 28: Exhibition [and Year 12] Prep"
 tagline: "Finalising your exhibition pieces"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-27-solution
-image: /images/labs-year-11/year-11-lab-28.png
+image: ./images/year-11-lab-28.png
 ---
 
 ## Almost Done

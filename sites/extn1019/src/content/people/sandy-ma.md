@@ -2,7 +2,7 @@
 name: Sandy Ma
 position:
   - Term 2 Teacher
-image: /images/people/sandy.jpg
+image: ./images/sandy.jpg
 email: sandy.ma@anu.edu.au
 ---
 

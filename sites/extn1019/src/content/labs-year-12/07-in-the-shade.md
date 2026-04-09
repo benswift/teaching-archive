@@ -2,7 +2,7 @@
 title: "Lab 7: In the Shade"
 tagline: "starting to explore the world of shaders"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-7
-image: /images/labs-year-12/year-12-lab-07.png
+image: ./images/year-12-lab-07.png
 ---
 
 ## Outline

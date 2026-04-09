@@ -2,7 +2,7 @@
 title: "Lab 1: Putting a Circle on the Internet"
 tagline: "setting up the tools to make art in EXTN1019"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-1
-image: /images/labs-year-11/year-11-lab-01.png
+image: ./images/year-11-lab-01.png
 ---
 
 ## Outline
@@ -126,7 +126,7 @@ exactly the same, but the repo is now attached to *your* GitLab account, rather
 than the `extn1019/2024-2025` GitLab account, so you can change the files and push
 things up to the GitLab server without messing up anyone else's starting point.
 
-![success!](/images/labs/lab-1/success_forked.JPG/)
+![success!](./images/labs/lab-1/success_forked.JPG/)
 
 ## Part 3: cloning the lab 1 template {#cloning}
 
@@ -145,11 +145,11 @@ computer you're working on.
    hand side, click that box and select it. Now click on the right hand side box
    to copy the URL to your clipboard.)
 
-   ![Url Box](/images/labs/lab-1/cloning.JPG/)
+   ![Url Box](./images/labs/lab-1/cloning.JPG/)
 
 4. Back in VSCode, paste the url into the prompt box and hit enter --- making sure that the "Clone from URL" option is highlighted.
 
-   ![Don't click "Clone in GitHub"](/images/labs/lab-1/paste_url_vscode.JPG/)
+   ![Don't click "Clone in GitHub"](./images/labs/lab-1/paste_url_vscode.JPG/)
 
 5. A window will open asking you where to save the files. If this is your own
    computer it might be a good idea to create a `extn1019` folder and clone all
@@ -211,7 +211,7 @@ sketch in).
 It might not look like much, but you've made your first p5 sketch, and you
 should take a moment to enjoy your success.
 
-![success!](/images/labs/lab-1/success-kid.jpg)
+![success!](./images/labs/lab-1/success-kid.jpg)
 
 ## Part 5: committing & pushing the changes {#committing}
 
@@ -252,12 +252,12 @@ for your fork (i.e.
 `https://gitlab.cecs.anu.edu.au/uXXXXXXX/extn1019-2024-year-11-lab-1.git`, where `uXXXXXXX` should be replaced with your UID) you should see
 the first line of that commit message as shown:
 
-![GitLab server after new commit is pushed](/images/labs/lab-1/first_commit.JPG/)
+![GitLab server after new commit is pushed](./images/labs/lab-1/first_commit.JPG/)
 
 And if you click on the `sketch.js` filename further down you should see the new
 version with your `ellipse` line in there. Hooray!
 
-![GitLab server file view](/images/labs/lab-1/modified_code.JPG/)
+![GitLab server file view](./images/labs/lab-1/modified_code.JPG/)
 
 ## Part 6: putting your circle on the internet {#pushing}
 

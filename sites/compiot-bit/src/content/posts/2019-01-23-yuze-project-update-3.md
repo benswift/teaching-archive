@@ -26,7 +26,7 @@ I've bought tons of hardware since my last post.  Here's all of them
 
 And here's a picture that attempts to capture all the hardware I've owned at the moment.
 
-![A Photo attempts to capture all of my hardware](/images/posts/yuze/Hardwares.jpg)
+![A Photo attempts to capture all of my hardware](./images/yuze/Hardwares.jpg)
 
 I bought the **TX-1C STC89C52** Experiment Board because I had a textbook that's about MCS-51 MCU and the TX-1C Experiment Board is its teaching board. I bought the **soldering kit** because the GPIO pins weren't soldered on the board when I got the **STC12C5A60S2**. I bought those **Led Light Bulb Spare Parts** to practice soldering because I don't know hot to solder properly...
 
@@ -40,7 +40,7 @@ Luckily on the next day when I was browsing some forum for tips on soldering, so
 
 Here's what I've accomplished after practising soldering for 2 hours
 
-![Solder Led Bulb Spare Parts](/images/posts/yuze/Soldering.jpg)
+![Solder Led Bulb Spare Parts](./images/yuze/Soldering.jpg)
 
 After I've gained enough confidence, I soldered the pins to the **STC12C5A60S2** Minimal Board and then moved onto the next part.
 
@@ -63,11 +63,11 @@ STC89C52 is one of the most popular MCS-51 MCU among China's university because 
 
 It was quite interesting and encouraging at the start. They show you how to control the led lights or 7-segment display by sending *1* or *0* to specific registers, which are wired to those components and you need to read the provided Circuit diagram in order to find out which is which. I was quite enjoying this.
 
-![BUT](/images/posts/yuze/BUT.jpg)
+![BUT](./images/yuze/BUT.jpg)
 
-![Didn't they tell you it's a 8bit MCU](/images/posts/yuze/8bit.jpg)
+![Didn't they tell you it's a 8bit MCU](./images/yuze/8bit.jpg)
 
-![WHAT???](/images/posts/yuze/WHAT.jpg)
+![WHAT???](./images/yuze/WHAT.jpg)
 
 I didn't find this out until recently 😑. I was thinking why doesn't COMP2300 use something like this to teach. Although it turns out that MCS-51 MCU will be more friendly to freshers, the hardware capability and architecture is seriously out of date....... Now I can understand why they choose STM32L476Discovery as the teach board.
 
@@ -85,4 +85,4 @@ That's exactly what the title of this week's blog is -- explore more then find y
 
 Let's end this with a photo of my (not working yet) prototype...;)
 
-![First picture of my prototype](/images/posts/yuze/Prototype1.jpg)
+![First picture of my prototype](./images/yuze/Prototype1.jpg)

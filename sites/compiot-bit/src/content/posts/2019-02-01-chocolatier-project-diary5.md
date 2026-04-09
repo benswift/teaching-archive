@@ -5,7 +5,7 @@ title: chocolatier's Project Diary - Part 5
 week: 10
 ---
 
-![FIRE](/images/posts/chocolatier/spongebob.jpg)
+![FIRE](./images/chocolatier/spongebob.jpg)
 
 ## sudo apt-get break-everything 
 
@@ -25,9 +25,9 @@ So I unplugged the hat to see what was going on, find out that I had simply not 
 
 As the following staged shots show, it wasn't possible to see that the CSI cable wasn't connected properly. 
 
-![Cable behind hat](/images/posts/chocolatier/with_hat.jpg)
+![Cable behind hat](./images/chocolatier/with_hat.jpg)
 
-![Cable behind hat](/images/posts/chocolatier/without_hat.jpg)
+![Cable behind hat](./images/chocolatier/without_hat.jpg)
 
 Out of sight and out of mind.  So this shoudl have been an easy fix, right?
 

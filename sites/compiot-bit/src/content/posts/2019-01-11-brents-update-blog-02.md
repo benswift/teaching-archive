@@ -23,7 +23,7 @@ Before we being we'll need some packages etc. on the Pi to make sure things run 
 Screen allows us to have multiple command lines when ssh'd on to the Pi, for example with a screen I am still able to access git while also running the webserver. [Below](#screen-how-to) is a simple how-to.
 * Forward a port for your Pi if needed
     * for me this did require port forwarding and this will be different for everyone, I logged in to my router at `192.168.0.1` and navigated to the port forwarding menu and added a rule to forward a specific port to the local IP of my PI  
-    ![port forward](/images/posts/brent/port-forward.jpg)  
+    ![port forward](./images/brent/port-forward.jpg)  
 * Clone my [example repo](https://github.com/bschuetze/catalyst-jukebox/tree/1fa674a91809496fc218b12b1ec05d131edfd0fb) or find some other [example web servers](https://www.w3schools.com/nodejs/nodejs_raspberrypi_webserver_websocket.asp)
 * cd into the repo directory and run the server with:  
 `node webserver-test.js`
@@ -54,11 +54,11 @@ On the Pi:
   
 At this point the Pi should be all ready to go, now plug in the screen via the header like so:  
 *Note: the following 2 images were provided in some of the 'documentation' with the screen and are not my own*  
-![Pi Screen Pins](/images/posts/brent/display-pins.jpg)  
+![Pi Screen Pins](./images/brent/display-pins.jpg)  
 and then attach the included hdmi connector:  
-![Pi Screen HDMI](/images/posts/brent/display-hdmi.jpg)  
+![Pi Screen HDMI](./images/brent/display-hdmi.jpg)  
 and you should have display!  
-![Pi Screen On](/images/posts/brent/display-on.jpg)  
+![Pi Screen On](./images/brent/display-on.jpg)  
 
 #### Calibrating the display
 * If not already, boot into the visual display from headless mode with `startx`

@@ -2,7 +2,7 @@
 title: "Lab 16: sentimental words"
 tagline: "explore the ml5 sentiment model"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-16
-image: /images/banners/sound-flowers-by-lily-campbell.jpg
+image: ../images/banners/sound-flowers-by-lily-campbell.jpg
 hidden: false
 ---
 

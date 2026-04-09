@@ -11,7 +11,7 @@ This is my artefact plan for final IoT individual project.
 
 Luckily, I kept my initial idea in Week 3 until now about the ***Intelligent Pet Tortoises Feeding***.
 
-![feeding my tortoises](/images/posts/kathleen/tortoise-feeding.jpg)
+![feeding my tortoises](./images/kathleen/tortoise-feeding.jpg)
 
 In the current stage, the theme and most detailed functions for the project are both *fixed* through the past three weeks... The **inspired background introduction** and my **expected functions** for the final project can be found in [my Week 3 Rough Project Idea post](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/06/kathleen-w3-project-idea/) **"Happy Aquarium" Project** section~
 
@@ -89,7 +89,7 @@ Detailed timeline is shown below: [ *Stage* is used as "intermediate milestones"
 
 Looking forward to the artefact design / build process in the future! See u next year~ All best wishes!  ^_−☆
 
-![merry christmas](/images/posts/kathleen/merry-christmas.jpg)
+![merry christmas](./images/kathleen/merry-christmas.jpg)
 
 ---
 

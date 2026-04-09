@@ -1,7 +1,7 @@
 ---
 title: "Lab 19: Reflective practice & zine making"
 tagline: "Working on your submission for Portfolio Item 2"
-image: /images/banners/wobbling-circles.jpg
+image: ../images/banners/wobbling-circles.jpg
 hidden: false
 ---
 

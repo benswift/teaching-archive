@@ -46,7 +46,7 @@ fetch(url, { // Provide the url to visit
   
 ### Authorizing your Spotify account and app
 
-![Who are you?](/images/posts/brent/spiderman.jpg)  
+![Who are you?](./images/brent/spiderman.jpg)  
 *Note: image [sauce](https://knowyourmeme.com/memes/spider-man-pointing-at-spider-man)*  
 Before you start on this, you need to have a registered application, [here](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) is a guide on how to do this if you have not already.  
 Once you have an application, and its client ID, you can now proceed with one of the authorization flows.  

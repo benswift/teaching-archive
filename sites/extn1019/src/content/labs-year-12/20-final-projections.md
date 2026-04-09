@@ -2,7 +2,7 @@
 title: "Lab 20: Brainstorming Final Project Ideas"
 tagline: "getting started on your final project"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
-image: /images/labs-year-12/year-12-lab-25.png
+image: ./images/year-12-lab-25.png
 ---
 
 ## Outline

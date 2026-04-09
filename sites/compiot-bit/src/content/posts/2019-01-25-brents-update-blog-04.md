@@ -69,24 +69,24 @@ This has also led me to investigating what I will need to replicate the behaviou
 
 *Update:*  
 They arrived!  
-![](/images/posts/brent/parts.jpg)  
+![](./images/brent/parts.jpg)  
 
 ### The technical
 #### Small technical notes  
 *Note: I needed to write this down before I forgot about it, while it may seem splat in the middle of this blog, it is important*  
 To have a working detection of the USB line in the ESP32, I plan to connect the VUSB pin to a GPIO pin so that we can see when the pin is high / low, indicating whether the usb is connected or not.  
-![](/images/posts/brent/esp32-thing-graphical-datasheet-v02.png)  
+![](./images/brent/esp32-thing-graphical-datasheet-v02.png)  
 *Note: [sauce](https://www.sparkfun.com/products/13907)*  
 However, as the VUSB pin is 5V if I connect it straight to another GPIO pin then bad things will happen (as the GPIO pins are rated at ~3V). To stop the bad things from happening, we need a [voltage divider](https://en.wikipedia.org/wiki/Voltage_divider), specifically, we need to hook up a 2k2 resistor to the VUSB source, and a 3k3 resistor connecting that to ground, and then from the middle of these two resistors we will produce the goal of ~3 volts.  
 Like so:  
-![](/images/posts/brent/voltage-divider.png)  
+![](./images/brent/voltage-divider.png)  
 
 ### Javascript to server communication  
 So as of last blog I was working on some [Spotify authorization](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/19/brents-update-blog-03/#authorizing-your-spotify-account-and-app) code, in that post I was using the temporary method that requires a refresh every hour (which requires the user to be there and interacting with the API). After some more thought, I decided that this would be tiresome and annoying during the rest of the project, so I decided so just build the infrastructure for the refreshable token and use that instead.  
 
 This follows the first method on the [Spotify authorization guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/), and the main differences between what I have worked on this week vs. last is a much higher level of automation when compared to what I was doing with the second method.  
 The new method has a basic (mobile and small screen compatible) login page:  
-![](/images/posts/brent/login-page.png)  
+![](./images/brent/login-page.png)  
 The user enters their client ID and Client Secret and clicks submit, after some basic checks and sanitization a new web request is made to the nodeJS webserver with the information present in the body.  
 The web server checks the details of the request and makes sure it came from where it expects before responding with the authentication URL. This is then parsed by the login page and redirects the view to this URL, the user must login and accept the relevant permissions for the app at which point they are redirected back to the login page.  
 The page then detects the authorization data in the URL and makes another web request to the webserver to pass this one. The webserver then saves these details in files locally on the Pi as they will be used to make subsequent requests when refreshing the token, it then makes another connection to a different location on the Spotify authorization API passing the parameters that were just acquired, which if all is well, responds with a temporary token to use for authorization.  

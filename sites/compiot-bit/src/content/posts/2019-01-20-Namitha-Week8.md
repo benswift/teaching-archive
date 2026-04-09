@@ -31,7 +31,7 @@ http://www.esp32learning.com/code/esp32-and-adxl345-sensor-example.php
 
 Then I realised I need to solder the I/O port piece into the accelerometer. I do not have a soldering kit so that is something else I will need to look into next week.
 
-![setup](/images/posts/namitha/blogpost8.jpeg)
+![setup](./images/namitha/blogpost8.jpeg)
 
 ## Inspiration
 

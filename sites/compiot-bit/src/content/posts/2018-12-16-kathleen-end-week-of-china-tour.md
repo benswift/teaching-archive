@@ -17,7 +17,7 @@ In academic part, the most valuable section is Friday's final group presentation
 
 For **car demo**, it's very lucky that, in the last hour of our project course, our group has all nodes communicating correctly. We combine the initial lighting and temperature sensors' codes with the nodes communication codes, enable the car controlled by PC, and use car node as a medium to finally read sensing data from another PC.
 
-![car project requirement](/images/posts/kathleen/car-project.jpg)
+![car project requirement](./images/kathleen/car-project.jpg)
 
 We become the only group that finish all required tasks in the end! (^~^) The only pity is that, through LEDs twinkling in RFID and car nodes, we can know the RFID message is partially transferring successfully in the end. But after we compiled all provided Car Node codes, we cannot read RFID message from central monitor PC.
 
@@ -55,7 +55,7 @@ I thought the group party would be the largest surprise for my 21st birthday, bu
 
 Well, I really want to keep the whole process mysterious~ ;)  ...
 
-![surprising birthday](/images/posts/kathleen/cake.jpg)
+![surprising birthday](./images/kathleen/cake.jpg)
 
 Grateful for all your efforts to make everything proceed smoothly and naturally~ Thank Adi C to keep talking with me and transferring my attention, or it won't be such a surprise~ Thank David F to try hard to hide the cake, he did really a wonderful job! Thank Chinmay to lead me to his room as the most wonderful place for surprise [grateful for Brent as well :)] and grateful for the cake idea! Thank Zoey for her most brilliant passionfruit idea, it is the bridge to happiness! Thank Razi for all his words and wishes when he took the cake out, it is one of the happiest moments through my life~ Thank Ushini as being my 5-star roommate, she brings the highlight through my BIT tour~
 

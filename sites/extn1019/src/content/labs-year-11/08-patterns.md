@@ -2,7 +2,7 @@
 title: "Lab 8: Patterns"
 tagline: "create your own wallpaper or screensaver"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-8
-image: /images/labs-year-11/year-11-lab-08.png
+image: ./images/year-11-lab-08.png
 ---
 
 ## Outline

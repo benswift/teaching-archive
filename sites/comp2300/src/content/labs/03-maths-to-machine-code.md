@@ -172,7 +172,7 @@ How can you deal with this problem? The answer lies is in the program status
 register in every ARMv7 CPU (including our little discoboard). You can see it in
 the *cortex registers* viewlet in VSCode under `cpsr`:
 
-![Current](/images/lectures/week-2/cpsr-viewlet.png)
+![Current](./images/lectures/week-2/cpsr-viewlet.png)
 
 Remember we talked about these status flags in the [week 2
 lectures](/_lectures/02-alu-operations/#program-status-register) (go and have a look if you need to refresh your
@@ -236,7 +236,7 @@ If you're getting bored of stepping through every instruction, don't forget you
 can set breakpoints, these control exactly where your debugger will pause after clicking 
 'continue' (the green button). You can do this by clicking in the left-hand 
 “gutter” (or margin) of the code view. You should see a little red dot appear:  
-![A](/images/labs/lab-1/vscode-breakpoint.png)
+![A](./images/lab-1/vscode-breakpoint.png)
 :::
 
 :::info

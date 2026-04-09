@@ -7,7 +7,7 @@ date: 2019-02-22
 <picture>
   <a href="https://superuser.com/questions/982867/how-linux-can-be-installed-on-potato-toaster">
   <img style="width:100%;"
-       src="/images/deliverables/linux-potato.jpg"
+       src="./images/linux-potato.jpg"
 	   alt="installing Linux on a potato">
   </a>
 </picture>

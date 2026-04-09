@@ -4,7 +4,7 @@ tagline: A sub-project leading up to your final project [2023-2024 cohort only]
 template_repo1: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-12/extn1019-2024-year-12-portfolio-1
 template_repo2: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-12/extn1019-2024-year-12-portfolio-2
 template_repo3: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-12/extn1019-2024-year-12-portfolio-3
-image: /images/deliverables/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
+image: ../deliverables-year-11/images/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
 ---
 
 ## Outline

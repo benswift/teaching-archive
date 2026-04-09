@@ -35,7 +35,7 @@ Does that remind you something? It reminds me of the COMP2310 Swarm Assignment w
 
 One of my friends uses a "global table" to store the positions of all vehicles, a bit like how router updates and shared its table with its reachable neighbours. Inspired by these, my first thought was actually to let everyone to act as a beacon and at the meantime, record all other beacons that's visible to them at the time. And Bluetooth technology would be quite handy for this kind of task -- it's very mature, has standard protocol, the communication range is suitable, and most important it's very convenient -- you don't need to rely on any external cables/network. As long as a device supports Bluetooth, it would be able to join the "Internet" of "Things". 
 
-![But I didn't go that way](/images/posts/yuze/NotThatWay.jpg)
+![But I didn't go that way](./images/yuze/NotThatWay.jpg)
 
 The reason is actually quite irrational when I looked back from today's point of view. Bluetooth is so much mature, usable and stable compared to the technology I am using now. But there was only one thing in my mind back at that time, and that's **MONEY**. 
 

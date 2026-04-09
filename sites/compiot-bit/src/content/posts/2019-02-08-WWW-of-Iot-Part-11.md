@@ -31,7 +31,7 @@ Now we are going to focus on what I consider at the moment to be the most import
 ### Handling General Queries
 In order to see the MySQL records, there is a button on the website which when pressed sends a query to the MySQL server and processes the response into a table. The table is pretty standard, and only contains meta-data, time being the most important feature for the musican. Though it would be great to put something akin to a commit message with every recording, this is simply too impractical with the ESP32.
 
-![Table Rendered](/images/posts/will/table_rendered.png)
+![Table Rendered](./images/will/table_rendered.png)
 
 The above is an example of a generated table containing the data in the MySQL database.
 
@@ -39,9 +39,9 @@ The above is an example of a generated table containing the data in the MySQL da
 
 To do this I used the JavaScript library [VexFlow](http://www.vexflow.com/) to render the muscial score that a client requests.
 
-![Musical Notes](/images/posts/will/fancy_request.png)
+![Musical Notes](./images/will/fancy_request.png)
 
 Fortunately, VexFlow contains a module they call 'EasyScore' which can convert a whole bar of notes at once. The notes are encoded into a small (4 char or less) string in an array. This is particulary useful as it is in a convenient form to process large sets of musical sheets automatically.
 
-![Snippet of EasyScore](/images/posts/will/easyscore_snippet.png)
+![Snippet of EasyScore](./images/will/easyscore_snippet.png)
 

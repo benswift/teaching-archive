@@ -670,7 +670,7 @@ The Plot Samples command will:
 If the command was successful, then it will open a new document panel like which
 looks like this:
 
-![Plot](/images/deliverables/02-sequencer/samplot.png)
+![Plot](../deliverables/images/02-sequencer/samplot.png)
 
 ### I've run the sample plotter, but how do I interpret the results?
 

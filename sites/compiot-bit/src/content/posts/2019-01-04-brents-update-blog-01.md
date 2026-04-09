@@ -24,7 +24,7 @@ To remedy issues like these, I propose two additions that hope to create some qu
   
 **#1**  
 When requesting a song, the user will be given a small device, very similar to the 'food ready' notification discs you get at some restaurants / pubs etc. *(restaurant pager/buzzer)*  
-![Buzzer](/images/posts/brent/restaurant-buzzer.jpg)  
+![Buzzer](./images/brent/restaurant-buzzer.jpg)  
 *Note: image [sauce](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)*  
 The user will keep this with them for two reasons, one will be explained in the second point below, and the other is that there will be a button on the jukebox that will make the buzzer of the person who added the currently playing song light up. The idea behind this is that it will act as a conversation starter and aims to bring people together, even if the method for requesting the song isn't the same as an older jukebox, the device will fill in the disconnect between requester and song, for example:  
 * if you want to know what the current song is
@@ -79,7 +79,7 @@ I chose to use Raspbian desktop for this project as it has the ability to run he
 * download the [Raspbian Desktop](https://www.raspberrypi.org/downloads/raspbian/) image from the [Raspberry Pi Website](https://www.raspberrypi.org/)
 * (windows) download and install [etcher](https://www.balena.io/etcher/)
 * flash the raspbian image to a microsd card (preferrably 8GB+) using etcher  
-![Etcher](/images/posts/brent/etcher.png)
+![Etcher](./images/brent/etcher.png)
 * boot the Raspberry Pi
     * update software
     * enable ssh, set hostname, enable networking, locale etc.  

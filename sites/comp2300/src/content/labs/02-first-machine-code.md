@@ -62,7 +62,7 @@ Remember from last week's lab that you can see the values in your discoboard's
 registers (assuming there's a debugging session running and the execution is
 paused) in the registers pane:
 
-![Register](/images/labs/lab-2/register-viewlet.png)
+![Register](./images/lab-2/register-viewlet.png)
 
 :::info
 You can set the numeric format for a specific register in the register view.
@@ -187,7 +187,7 @@ palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-pa
 VSCode will then ask you to input the **starting address** and the **number of
 bytes** to read (e.g. `42` bytes).
 
-![Memory](/images/labs/lab-2/memory-view.png)
+![Memory](./images/lab-2/memory-view.png)
 
 This might look overwhelming, but the 2D "grid" layout is pretty simple: the hex
 numbers down the left hand side are the base memory addresses, and the
@@ -254,7 +254,7 @@ Here's an example: suppose we have the number `0x01` stored at a lower memory
 address (e.g. `0x000001e0`), and the number `0xF1` stored at a higher memory
 address (`0x000001e1`), as shown below:
 
-![Endian](/images/labs/lab-2/endian-example.png)
+![Endian](./images/lab-2/endian-example.png)
 
 Under the **little-endian** format, when these two 8-bit numbers are read as one
 16-bit half-word number by the CPU, it represents `0xF101` (the `0x01` at the
@@ -267,7 +267,7 @@ half-words, or as one 32-bit word. The endianness format applies everytime when
 combining bytes into bigger words. The following diagram illustrates this using
 the little-endian format:
 
-![Little-endian](/images/labs/lab-2/little-endian.jpg)
+![Little-endian](./images/lab-2/little-endian.jpg)
 
 You need to be aware of this byte ordering to make sense of the memory view. It
 might be painful and confusing at the start, but you'll get used to it.
@@ -396,7 +396,7 @@ during an active debug session (thus you need to first compile, upload your code
 and start a debug session). It will then ask for which function to disassemble,
 type the function name (e.g. `main`). It will look something like this:
 
-![Disassembly](/images/labs/lab-2/disassembly-view.png)
+![Disassembly](./images/lab-2/disassembly-view.png)
 
 Bring up the disassembler view for `main`---you're now looking at the program as
 it will be understood by the CPU. You can even do step debugging in disassembly

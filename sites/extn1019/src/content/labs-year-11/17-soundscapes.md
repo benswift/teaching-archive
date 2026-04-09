@@ -2,7 +2,7 @@
 title: "Lab 17: Soundscapes"
 tagline: "compose a soundscape algorithmically"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-17
-image: /images/labs-year-11/year-11-lab-17.png
+image: ./images/year-11-lab-17.png
 ---
 
 ## Outline

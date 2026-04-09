@@ -50,7 +50,7 @@ Once the underlying framework is complete, the last two weeks of the project wil
 
 #### Gant Chart
 
-![chart](/images/posts/tim/gant_chart.png)
+![chart](./images/tim/gant_chart.png)
 
 #### Summary of Milestones
 All the dates for the milestones are approximate as the dates are more based on when different items or people arrive in Canberra

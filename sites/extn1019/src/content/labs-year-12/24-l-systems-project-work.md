@@ -3,7 +3,7 @@ title: "Lab 24: L-Systems and Project Process"
 tagline: "A look at L-Systems (Lindenmayer Systems) and Progress on your Project"
 project_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-24
-image: /images/labs-year-12/year-12-lab-24.png
+image: ./images/year-12-lab-24.png
 ---
 
 ## Outline

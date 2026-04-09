@@ -53,11 +53,11 @@ The position where the sensor is placed is extremely important. When we put the 
 We modified [Serial_Plotter](https://gitlab.com/2b-a2/serial-plotter
 ) and plotted the sensor value. From the plot, we used math to analyse the wave.
 
-![Value Graphe](/images/posts/zoey/dr-value.png)
+![Value Graphe](./images/zoey/dr-value.png)
 
 In order to make the hits more obvious and easy to distinguish from white noise, we choose to process the raw data. By taking the derivative and the integral of the wave we introduced 2-point-hit-detection method(2PHD), 3-point-hit-detection method(3PHD) and 4-point-hit-detection method(4PHD) to detect a wave change of an actual hit on the drum. The analysis is focused on hit detection rather than drum technique distinguishing because the hit detection is the more fundamental problem.
 
-![Derivative and Integral of sensor value](/images/posts/zoey/dr-dev_int_hit.png)
+![Derivative and Integral of sensor value](./images/zoey/dr-dev_int_hit.png)
 
 ##### 2-point-hit-detection 
 Register (start) the current hit when both integral and derivative go to 0 (point 1 on the graph) and sets the flags. Record (end) the hit when the derivative goes higher than the integral (point 2 on the graph) and flip both the flags back (the derivative always higher than the integral when there is nothing playing). 
@@ -68,7 +68,7 @@ Register (start) the current hit when both integral and derivative go to 0 (poin
 ##### Dealing with Noise
 - 4PHD: One extra step was added to 3PHD to pick up the noise by recognising the pattern below. We can see that the integral goes much higher than the derivative when it is a stepping noise compared to when it is a hit. The extra step recognises this fact and reports the 'hit' as noise, recovering all the flags and does not record it as a hit.
  
-![Comparison of hit and noise](/images/posts/zoey/dr-dev+int_hit_noise.png)
+![Comparison of hit and noise](./images/zoey/dr-dev+int_hit_noise.png)
 
 - One failed attempt was putting one sensor on the drum and one sensor at the foot of the drum or on the floor, subtracting each other and try to get rid of the noise. It didn't work because the noise level received is different for each of them and by subtracting, it breaks the patterns between integral and derivative, which breaks the algorithm of the detecting hit.
 

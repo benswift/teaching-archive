@@ -23,7 +23,7 @@ I am looking into a data transmitting technique called [ambient backscatter](htt
 
 We received the alcohol sensors on Wednesday (2/1/19) and will begin expirementing with it next week.
 
-![Alcohol Sensor](/images/posts/chinmay/Week6AlcoholSensor.png)
+![Alcohol Sensor](./images/chinmay/Week6AlcoholSensor.png)
 
 ## Microcontroller
 
@@ -31,6 +31,6 @@ In the last blog, I mentioned that we were looking at using Adafruit ESP32 Feath
 
 Therefore, we decided to go with [NodeMCU-32S](https://docs.platformio.org/en/latest/boards/espressif32/nodemcu-32s.html#id1) which was shipped from Sydney instead and expect them to delivered by early next week.
 
-![NodeMCU-32S](/images/posts/chinmay/NodeMCU-32S_3-500x500.jpg)
+![NodeMCU-32S](./images/chinmay/NodeMCU-32S_3-500x500.jpg)
 
 ### cu next week..

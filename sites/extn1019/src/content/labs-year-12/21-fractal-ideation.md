@@ -3,7 +3,7 @@ title: "Lab 21: Ideation Phase and Fractals"
 tagline: "workshop your project ideas"
 project_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-final-project
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-21
-image: /images/labs-year-12/year-12-lab-21.png
+image: ./images/year-12-lab-21.png
 ---
 
 ## Outline

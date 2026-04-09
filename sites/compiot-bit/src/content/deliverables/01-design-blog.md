@@ -4,7 +4,7 @@ summary: "Take us on a journey as you concieve, design and build your artefact"
 date: 2018-11-23
 ---
 
-![photos on a clothesline](/images/deliverables/s-a-r-a-h-s-h-a-r-p-765326-unsplash.jpg)
+![photos on a clothesline](./images/s-a-r-a-h-s-h-a-r-p-765326-unsplash.jpg)
 
 ## Outline
 
@@ -424,7 +424,7 @@ so (you should replace the `posts/ben/2017-iot-bit-crew.jpg` with the path to
 your image, and replace the `alt` text with whatever description you like, but
 keep the `style="width:100%;"` part the same):
 
-![Here's the 2017 IoT @ BIT crew](/images/posts/ben/2017-iot-bit-crew.jpg)
+![Here's the 2017 IoT @ BIT crew](../posts/images/ben/2017-iot-bit-crew.jpg)
 
 if the image you want to link to *is* already on the internet, then you can do
 it with [markdown's image

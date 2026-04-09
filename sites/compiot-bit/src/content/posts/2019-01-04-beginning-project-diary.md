@@ -19,7 +19,7 @@ With the help of real-time clock (to decide whether feeding is needed), I design
 
 I drew my current idea as below:
 
-![feeding](/images/posts/kathleen/feeding-idea-w6.jpg)
+![feeding](./images/kathleen/feeding-idea-w6.jpg)
 
 *Graph 1* shows how the food could drop into the tank.
 
@@ -37,7 +37,7 @@ I found "filament lamp" and *"bright LED"* (whose usage mainly shown in [shop ow
 
 It's my first function to work on as planning. While I am still deciding the final plan to realise the "swap":
 
-![land-water swap](/images/posts/kathleen/landwaterswap-all-ideas.jpg)
+![land-water swap](./images/kathleen/landwaterswap-all-ideas.jpg)
 
 Currently, I prefer the 2nd idea to **raise part of the board inside the tank** and better to separate the **ladder** part and the **flat roof** part. It is my *next week's* job to make the decision and work on that~
 

@@ -3,7 +3,7 @@ title: "Lab 9: Extra Shady"
 tagline: "filters, base colours, materials, normals, stroke shaders"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-9
 portfolio_templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-portfolio-item-2
-image: /images/labs-year-12/year-12-lab-09.png
+image: ./images/year-12-lab-09.png
 ---
 
 ## Outline

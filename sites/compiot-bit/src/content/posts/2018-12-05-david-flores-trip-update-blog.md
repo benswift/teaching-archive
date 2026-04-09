@@ -18,7 +18,7 @@ Don't get me wrong I scored 2 pairs of shoes, 1 Nike Airs & a pair of Gucci Shoe
 
 On Wednesday we had to get up really early and be ready at the hotel lobby by 7:45am, as a result I only got close to 7hrs of sleep. It was rough....
 
-![Sleep Deprived Meme](/images/posts/david-flores/sleep.jpg)
+![Sleep Deprived Meme](./images/david-flores/sleep.jpg)
 
 When we got to IBM we were greeted by a spokeswoman and took a photo at the main building and then headed to the building on the side. Once inside we got guest passes and then headed inside to a small classroom. Here we got a short presentation on
 ### Accelerating value in the API Economy with IBM Z.
@@ -57,7 +57,7 @@ Lastly they gave a short presentation on Software roles and the skills required 
 
 ## Haircut in China
 
-![Haircut Meme](/images/posts/david-flores/hurt.jpg)
+![Haircut Meme](./images/david-flores/hurt.jpg)
 
 I forgot to get a haircut before I came to China and as a result my hair was getting very long and I walked past a barber and decided to get the full chinese experience by getting a haircut. Thankfully Zoey came along to help me communicate with the barber otheriwise I would've made a terrible desciion like dyring my hair.. oh wait I did dye my hair. LOL. It was a great cheap experience.
 
@@ -77,4 +77,4 @@ To conclude this post, this 2nd week in Beijing was an amazing experience of foo
 
 Ciao.
 
-![Beijing](/images/posts/david-flores/Beijing.jpg)
+![Beijing](./images/david-flores/Beijing.jpg)

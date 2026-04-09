@@ -102,7 +102,7 @@ stack before & after the interrupt looks *something* like this (obviously the
 actual values in memory will be different, but it's the position of each value
 on the stack that's the important part):
 
-![Stack](/images/labs/lab-11/exeption-stack.png)
+![Stack](./images/lab-11/exeption-stack.png)
 
 [^gory-details]:
     *Section B1.5.6: Exception entry behavior* on p587 of
@@ -322,7 +322,7 @@ processes which execute concurrently, and push it up to GitLab.
 
 ## Exercise 4: pimp your OS {#exercise-4}
 
-![xzibit](/images/labs/lab-11/xzibit.jpg)
+![xzibit](./images/lab-11/xzibit.jpg)
 
 <div id="yourname-OS-v2" class="extension-box" markdown="1" style="margin-bottom: 20px;">
 

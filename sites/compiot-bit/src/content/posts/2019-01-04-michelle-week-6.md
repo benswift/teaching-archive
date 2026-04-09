@@ -13,7 +13,7 @@ For the last two weeks, I took an online course on [mooc](https://www.icourse163
 
 At the time when I was taking the online course, I have tried some basic experiments. I have used Arduino board, breadboard, USB cable, LEDs, wires, light sensor, resistors, piezo speaker, potentiometer, and so on.
 
-![board](/images/posts/michelle/experiments.jpg)
+![board](./images/michelle/experiments.jpg)
 
 Use light sensor to control the LEDs
 - I connect light sensor with a resistor and two LEDs, and set up the parameters. When the the light is blocked from the light sensor, the LEDs are on. So the light sensor here can be worked as a button that when we touch it, the LEDs are on. The LEDs are off when we take back our hands.

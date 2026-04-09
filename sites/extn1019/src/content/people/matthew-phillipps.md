@@ -2,7 +2,7 @@
 name: Matthew Phillipps
 position:
   - Year 11 & 12 Co-ordinator
-image: /images/people/matthew.jpg
+image: ./images/matthew.jpg
 email: matthew.phillipps@anu.edu.au
 ---
 

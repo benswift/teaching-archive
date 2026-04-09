@@ -17,4 +17,4 @@ getting in touch or discussing any of these projects, get in touch with
 Not much has happened yet, but to kick things off here's a photo of the 2017
 IoT@BIT crew:
 
-![the 2017 crew](/images/posts/ben/2017-iot-bit-crew.jpg)
+![the 2017 crew](./images/ben/2017-iot-bit-crew.jpg)

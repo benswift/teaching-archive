@@ -19,7 +19,7 @@ Some of the ideas below will attempt to tackle these points without the person b
 ### Location Mapping
 This idea is somewhat inspired from a few different places. One of which is *Kieran Browne's* National Gallery installation, *(in a nutshell)* this artwork would draw the movements of the art gallery attendees as they moved around the room in real time, hereby etching a person's presence into a work of art.  
 
-![Stranger Things](/images/posts/brent/stranger-things.jpg)
+![Stranger Things](./images/brent/stranger-things.jpg)
 
 The other comes from the hit series **Stranger Things**, *(Season one spoiler ahead)* in this show a young boy is stuck in a shadow realm which is a mirror of earth, in this shadow realm he is able to turn on light bulb(s) on earth accurately to communicate with his mother, thus projecting his presence, or existence into the real world.  
 While these instances are interesting in their own right, they are not without issues:  
@@ -30,7 +30,7 @@ This poses an issue for my idea as I will need to map between two rooms that are
 Building on these foundations, I came up with an implementation using camera(s) to track where each person is in a room, and to project that into the other person's room using a series of lights places around the room. These lights will grow and fade as the other person moves around their room *(growing in intensity the closer they are to the light source, and fading to nothing as they move away)*. This portrays the other person's location in such a way that it does not need to be the main thing that the person is focusing on, it can happen in the background and still be felt and observed passively.
 
 Here's a small sketch of the idea:  
-![Light Sketch](/images/posts/brent/light-sketch.jpg)  
+![Light Sketch](./images/brent/light-sketch.jpg)  
 As you can see, the location of person A and person B is translated to the corresponding locations in each room, even if they aren't the same size or shape.
 
 #### Is this what we want though?

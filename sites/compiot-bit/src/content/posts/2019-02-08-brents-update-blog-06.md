@@ -37,7 +37,7 @@ There are two ideas that have surfaced from this, one option is to play a song t
 *Status: __adjusted__*  
   
 #### Phone lock boxes
-![](/images/posts/brent/lock-box.png)  
+![](./images/brent/lock-box.png)  
 Initially, I had planned to have lockable boxes (automated with motors) that required the restaurant pager token to be returned before the locks would open. This would act as both a security measure (no one steals your phone) and an extra way to ensure people kept their restaurant pager on them so that the song requester can be identified.  
 The lock boxes could be considered somewhat important to the central theme of the project for a few reasons:
 * reluctance by users to leave phone unattended
@@ -48,7 +48,7 @@ However, despite these points I don't think that it is a critical component for 
 *Status: __on the back burner__*  
   
 #### Restaurant pagers
-![](/images/posts/brent/restaurant-pager-diagram.png)  
+![](./images/brent/restaurant-pager-diagram.png)  
 This idea initially started off as a simple modification to the restaurant buzzers you find at take-aways and various other food related places. Unfortunately they are a very closed system and are not cheap, so I [purchased my own series of components](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/25/brents-update-blog-04/#shopping) and decided to make one myself.  
 The concept behind them, was that they would be able to wirelessly and immediately identify who requested the currently playing song and also work as a key for the lock boxes. The notification / identification aspect is crucial to the success of the theme of *connection over shared music interests*, if it didn't exist then there would be no way to identify anyone unless you saw them putting the song on and there were no other songs in the queue.  
 As a result of this being so crucial, it is not something I am willing to remove or change drastically as it would significantly detract from the theme if I did.  
@@ -65,7 +65,7 @@ So, in researching for traits of traditional jukeboxes, I found out that there a
 I can see the appeal behind apps like this, and why they are monetized, but it certainly doesn't fit my theme and would not be applicable to my use case.
 
 ### A-synchronous Hell
-![](/images/posts/brent/remove-songs.png)  
+![](./images/brent/remove-songs.png)  
 A lot of my work on the nodeJS server (and in fact all of the javascript coding) involves a large amount of HTTP requests, it's how I interact with the Spotify API, it's how I communicate between the server and other javascript clients and it's also how I communicate locally between the nodeJS server and my python script.  
 Now, one of the benefits of using the fetch API (javascript API for HTTP requests) is that the requests and responses are all done asynchronously. This is really great for performance and multi-tasking as it means that you are not blocking execution waiting for a response etc.  
 However, this does create an issue when you rely on a response from a request to know what to do next or need them to be completed in order. For example, to remove every song from a playlist, I need to know what songs are in the playlist, to do that I need to make a fetch call. Oh... I can only get 100 songs at a time, okay well I'll get those 100 songs and then remove them, and after that? there's still more songs, so I need remove them too... But to remove the next lot of 100 songs I need to know what songs are on the playlist, so I need to get what songs are on the playlist, but if my previous delete isn't done yet then I will end up in an inconsistent state, what happens if one of the songs in the list of songs I try to delete isn't in the playlist? It will error and the entire request will fail *(I'm not saying this is a bad solution, but still)*.  
@@ -85,7 +85,7 @@ It however, wasn't all good news.
 I was having MAJOR issues on my Pi where the MQTT library was not making a callback when it was making connection. I spent **HOURS** trying to fix it, and in the end? The issue was that I simply had not cast an object when doing a string concatenation inside a print statement within the callback function. And that in turn was failing silently, not giving any error messages or anything...  
 WEW.  
 I did get it working in the end though, here is a small capture of my Pi receiving a message from the pager with the pager's ID:  
-![](/images/posts/brent/python-mqtt.png)  
+![](./images/brent/python-mqtt.png)  
 To get this working, you do need a broker tunning on the Pi.
 * Install the modules:
     * `sudo apt install mosquitto`

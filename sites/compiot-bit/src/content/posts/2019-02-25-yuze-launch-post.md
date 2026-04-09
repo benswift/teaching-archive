@@ -7,4 +7,4 @@ week: 13
 
 [https://github.com/GodfreyGyz/Attendance-Device](https://github.com/GodfreyGyz/Attendance-Device)
 
-![Have Fun!](/images/posts/yuze/have-fun.jpg)
+![Have Fun!](./images/yuze/have-fun.jpg)

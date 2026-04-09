@@ -2,7 +2,7 @@
 title: Mini Project
 tagline: a smaller project leading up to your final project
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-mini-project
-image: /images/deliverables/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
+image: ./images/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
 ---
 
 ## Outline

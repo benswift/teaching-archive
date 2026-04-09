@@ -14,9 +14,9 @@ Here is a run down of what I have accomplished so far:
 #### on the server (my laptop)
 
 - Installed and configured [mosquitto](https://mosquitto.org)
-![mosquitto setup](/images/posts/sam/mosquitto_setup.png)
+![mosquitto setup](./images/sam/mosquitto_setup.png)
 - Reserved a local ip address on my network so it doesn't change later
-![ip reservation](/images/posts/sam/reserved_ip.png)
+![ip reservation](./images/sam/reserved_ip.png)
 - setup a basic MQTT client ([paho MQTT](https://pypi.org/project/paho-mqtt/)) to view (subscribe to) messages sent from the raspberry pi.
 
 #### on the IoT device (rapsberry pi)
@@ -67,6 +67,6 @@ while True:
 
 and here is what all that looks like:
 
-![mqtt in action](/images/posts/sam/MQTT_in_action.gif)
+![mqtt in action](/images/gifs/MQTT_in_action.gif)
 
 So now I have a broker that sits between my services, on side is the raspberry pi measuring the flow of water and reporting back and the other is a server that takes that data and does something with it (store, display, collect stats, automated actions) etc.).

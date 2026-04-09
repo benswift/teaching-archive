@@ -2,7 +2,7 @@
 title: "Lab 22: Final Project Ideation"
 tagline: "Week 3, Term 4 – Starting Your Final Project"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-final-project
-image: /images/banners/remainders-by-jason-xu.jpg
+image: ../images/banners/remainders-by-jason-xu.jpg
 ---
 
 ## Outline

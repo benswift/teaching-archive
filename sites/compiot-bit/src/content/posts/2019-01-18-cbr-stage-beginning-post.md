@@ -27,7 +27,7 @@ To conclude, for various single components, the *untouched things* are:
 - diaphragm pressure sensor *(may use)*
 
 The other left problem is I still do not know how to control pump with my Arduino board~ (Now, I only test to use Arduino board as power supply. A pump broke through the process btw :( ) When I bought the pump online, the shop owner suggested me to buy a **“MOS field-effect tube electronic switch module”** (ignore the terrible translating...) to link pump for control. But I am still not sure how to use it even seeing its circuit diagram. I think it may need to have 5V extra power on the controlled side, while still wondering how to get the special level power. :(
-![pump](/images/posts/kathleen/pump.jpg)
+![pump](./images/kathleen/pump.jpg)
 
 Overall, I may not spare extra time on these things (especially for the untouched part), but will continue studying on them in the later function combination process. So it can be seen as an end for my single components study part :)
 
@@ -41,7 +41,7 @@ While trying to add new Internet part, I found large problems with my bought thi
 
 My bought Arduino set has a Wi-Fi module itself, and can be linked with the Arduino board. It has its own APPs to remotely control specific sensors and to connect with peripheral Wi-Fi. But I have different sensors and cannot directly used the existing apps. I contacted the shop, while they are lazy in contacting the technique department and the communication is much harder with the jet lag :( So finally, I only got the reply said that, the board is already combined with the shop's server. And I don't think I could use it by rewriting something.
 
-![confusing esp boards](/images/posts/kathleen/esp-boards.jpg)
+![confusing esp boards](./images/kathleen/esp-boards.jpg)
 
 I have another **ESP32 development board**. But it is an ESP32 board, rather than a single Wi-Fi or Bluetooth module... I think Arduino board and it can be combined to connect to the Internet, while I am still on my way to research the way... For this part, I need to do some urgent research and make final decision quickly, but I'm not sure about anything due to my basic knowledge deficiency... Thanks to Yuze a lot, I accidently found he did relevant research and faced some similar problems as me. Through chatting with him, I make up some professional knowledge for ESP32 board and board communication, which I could not found exact answer through own research.
 

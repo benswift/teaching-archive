@@ -19,7 +19,7 @@ Now, some rare IRL footage of me climbing the Great Wall of China.
 
 On the study side, it was much the same as last week. Except for the Transfer Learning in IoT lecuture.
 
-![delicious. Finally some good fucking food](/images/posts/chocolatier/food.jpg)
+![delicious. Finally some good fucking food](./images/chocolatier/food.jpg)
 
 We also had a presentation, where [I spoke on privacy issues](https://www.youtube.com/watch?v=_nTpsv9PNqo).
 

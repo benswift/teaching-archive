@@ -13,7 +13,7 @@ This post will outline the idea that I spent the most time on, but eventually sc
 
 #### E-Ink displays
 For a while now I have really liked the idea of e-ink displays.
-![e paper display](/images/posts/sam/e-paper.jpg)
+![e paper display](./images/sam/e-paper.jpg)
 You may have seen them before, they are used primarily in ebook readers like the [Kindle](https://www.amazon.com.au/s/?ie=UTF8&keywords=kindle), but they have also been used in the Pebble Smart Watch ([RIP](https://www.theverge.com/2018/1/24/16928792/fitbit-smartwatch-pebble-end-support-date-june)), one of my favourite products.
 
 I am interested in the displays for a few reasons:

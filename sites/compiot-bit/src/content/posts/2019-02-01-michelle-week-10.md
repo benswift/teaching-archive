@@ -28,11 +28,11 @@ The main task for water pump to control its status. It stays working while conne
 
 [This](http://www.circuitbasics.com/setting-up-a-5v-relay-on-the-arduino/) website gives some information about the usage of the relay. I connected the wires like the following picture and it works. Notice that there is a pin on the relay that I haven't used. It is a pin for input, for which in my later experiments I will use to control the status of the relay by sending some commands. 
 
-![board](/images/posts/michelle/relay.jpg)
+![board](./images/michelle/relay.jpg)
 
 This picture was taken when the relay was on, which means the water pump was working. We can see the water moves from the pump and comes to the other side of the tube.
 
-![board](/images/posts/michelle/waterpump.jpg)
+![board](./images/michelle/waterpump.jpg)
 
 The water pump and relay look working well. But when I had a discussion with Kathleen, she said that the voltage on Arduino is not enough for the water pump to work properly when more electronics are connected to the board. I will combine some tasks and see whether same problem arises later on. 
 
@@ -44,5 +44,5 @@ Celebrating the Chinese lunar new year is a very important tradition in China. E
 
 Here is a picture of my family's dinner. Happy new year!˙Ꙫ˙
 
-![board](/images/posts/michelle/newyearfood.jpg)
+![board](./images/michelle/newyearfood.jpg)
 

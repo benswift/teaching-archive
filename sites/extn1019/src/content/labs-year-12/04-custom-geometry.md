@@ -2,7 +2,7 @@
 title: "Lab 4: Custom Geometry"
 tagline: "build your own 3D shapes"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-12/extn1019-2025-year-12-lab-4
-image: /images/labs-year-12/year-12-lab-04.png
+image: ./images/year-12-lab-04.png
 ---
 
 ## Outline

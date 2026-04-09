@@ -19,7 +19,7 @@ But there are still some problems when I uploaded the program to Arduino IDE. I 
 
 The good news is that the soil sensor works good now. I have read an online [instruction](https://blog.csdn.net/ling3ye/article/details/51416786) about the usage of the soil moisture sensor and the connection of the wires. The following picture is my connection and it works well.
 
-![board](/images/posts/michelle/sensorconnection.jpg)
+![board](./images/michelle/sensorconnection.jpg)
 
 To get the data from the soil moisture sensor is not complicated. But I still met the problem when trying to get it working. At first I got some errors when I uploaded my code. It was the same error as the time when I uploaded my code for the wifi module. Later I found out that I should use back the Arduino board rather than the Arduino Uno Wifi in the board selection of IDE. I chose back to Arduino board and it worked.
 
@@ -27,11 +27,11 @@ The other problem I met is the port in the IDE is grey for me so when I uploaded
 
 These are some screenshots of the data shown on the serial monitor from the soil moisture sensor.
 
-![board](/images/posts/michelle/soilsensor.png)
+![board](./images/michelle/soilsensor.png)
 
 We can see the current voltage and another value that can represent the moisture. The value gets higher when it senses the place is dryer. 1023 is the value in the air. We can see the value gets lower when I put the sensor in the water.
 
-![board](/images/posts/michelle/soilsensor2.png)
+![board](./images/michelle/soilsensor2.png)
 
 When I put the sensor in an actual plant, it just changes for a little bit. Perhaps the plant is very dry at the moment because I can feel the soil is very hard. It shows that the sensor still works good. It can tell the difference between the air and a very dry plant.
 

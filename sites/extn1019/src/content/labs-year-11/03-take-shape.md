@@ -2,7 +2,7 @@
 title: "Lab 3: Take Shape"
 tagline: "geometric album/poster art + blog posts"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-3
-image: /images/labs-year-11/year-11-lab-03.png
+image: ./images/year-11-lab-03.png
 ---
 
 ## Outline
@@ -18,7 +18,7 @@ We'll start over this week: covering some essential items we've neglected or mis
 
 ### Acknowledgements
 
-![Booroomba Rocks](/images/labs/lab-3/booroomba-rocks.jpg)
+![Booroomba Rocks](./images/labs/lab-3/booroomba-rocks.jpg)
 Sovereignty of this land was never ceded.
 
 ### Unit Outline and ANU Course
@@ -26,7 +26,7 @@ This course is designed to meet both ANU Course structures and ACT BSSS Unit req
 
 There are subtle differences.
 
-Here is the [Unit Outline which meets ACT BSSS Requirements!](/images/resources/Creative_Computing_EXTN1019A_ANU_Ext_Yr_11_2024_Unit_Outline.pdf)
+Here is the [Unit Outline which meets ACT BSSS Requirements!](../resources/images/Creative_Computing_EXTN1019A_ANU_Ext_Yr_11_2024_Unit_Outline.pdf)
 
 Here is the [ANU Course Information!](https://programsandcourses.anu.edu.au/course/extn1019A)
 
@@ -34,7 +34,7 @@ And here is the front entry page for [EXTN1019 Creative Computing website](/inde
 
 ### Assessment
 
-Assessment is covered in both the [course](/outline/) and [unit](/images/resources/Creative_Computing_EXTN1019A_ANU_Ext_Yr_11_2024_Unit_Outline.pdf) outlines, and through the [deliverables page](/deliverables-year-11/) for the EXTN1019 course website.
+Assessment is covered in both the [course](/outline/) and [unit](../resources/images/Creative_Computing_EXTN1019A_ANU_Ext_Yr_11_2024_Unit_Outline.pdf) outlines, and through the [deliverables page](/deliverables-year-11/) for the EXTN1019 course website.
 
 This year assessment will be comprised of:
 
@@ -54,7 +54,7 @@ Every other week in this class, you will have the opportunity to make creative c
 
 You will then share something you made during class in your blog posts which are due every other week. The blog posts **are assessed**, but we are not assessing the quality or the polish of your code sketches (or your code for that matter); hence the term "sketches". It’s just a way for you to practice making cool visuals with code regularly. All you have to do is post a screenshot/screen recording of what you made on the Teams `CC blog` channel and write a few paragraphs about how you interpreted the provocations, the approaches (coding and artistic) you took to create your design, where you found inspiration, what you found challenging, and what you could improve on.
 
-![CC blog channel](/images/labs/lab-3/blog-channel.png)
+![CC blog channel](./images/labs/lab-3/blog-channel.png)
 
 ### Wattle Courses
 
@@ -78,7 +78,7 @@ For the most part, you will have freedom to create whatever you like during the 
 **think:** Your provocation for this week is to create a album cover/film poster to represent an artist, band, movie or album using only simple shapes (i.e. nothing photo-like) and typography. You should include the title of your chosen album/film as type in your design using _variables_. See some examples of vintage albums below which use simple shapes. p5.js provides [functions for drawing a range of simple shapes](https://p5js.org/reference/#group-Shape).
 :::
 
-![Geometric album art](/images/labs/lab-3/vintage-album-covers.jpeg)
+![Geometric album art](./images/labs/lab-3/vintage-album-covers.jpeg)
 
 ### Part 1: Titles
 
@@ -99,7 +99,7 @@ Not sure where to start with the design process? Well...
 2. Look at the original album art/movie posters for inspiration (you can include these in your blog post).
 3. Look at the works of minimalistic designers for inspiration. Saul Bass designed some awesome movie posters in this minimalistic style (have a look below) - although he admittedly did use some intricate shapes at times. Here is a link to the [p5.js shape references](https://p5js.org/reference/#group-Shape) and the [p5.js typography references](https://p5js.org/reference/#group-Typography) page where you can find all of the different shape/color/line/ functions to use in your code sketches.
 
-![Saul Bass](/images/labs/lab-3/saul-bass.png)
+![Saul Bass](./images/labs/lab-3/saul-bass.png)
 
 :::tip
 **extension:** At this stage we have mostly been talking about static sketches. If you’re up for a challenge and you have more experience with programming, try to write your code such that, each time you refresh the page, the elements in your sketch change slightly. Your sketch shouldn’t change so much that it no longer represents the album/film you’re trying to depict - it should just generate some subtle variation. The [random](https://p5js.org/reference/#/p5/random) function might come in handy here, but there are heaps of ways to introduce variation.

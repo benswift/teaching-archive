@@ -12,13 +12,13 @@ However, even with services like this so readily available, the ability to share
 
 Even when considering more private settings, things such as the art of creating a mixtape have died, replaced by playlists on streaming services that, when compared to creating a mixtape, take much less time and effort to make and are still changeable after the fact. And while this is very convenient, it removes a lot the care and thought that goes in to the process, “It’s not supposed to be easy, or I would have emailed you an MP3”[[1]](#point-1).  
 
-![](/images/posts/brent/walkman.jpg)
+![](./images/brent/walkman.jpg)
 
 Drawing on existing projects for inspiration, I found [this project](https://www.cnet.com/news/rewind-this-raspberry-pi-cassette-player-plays-spotify-tunes-on-actual-tapes/) by [Matt Brailsford](https://circuitbeard.co.uk/).  
 The device is a cassette player that streams Spotify. It accomplishes this with NFC tags embedded in the tapes that link to a specific playlist and the player simply reads these tags when inserted, and then the existing controls are linked back to the Spotify player.  
 This project showed me that people are interested in bringing back these older technologies in new ways, by integrating them with things we use in the modern day or reimagining them in a modern setting, and that gave me the confidence to pursue my idea further.
 
-![](/images/posts/brent/spotify-cassette.png)  
+![](./images/brent/spotify-cassette.png)  
 
 When I had decided on re-creating a jukebox style *IoT thing*, I used these older devices *(mix tapes and jukeboxes)* as inspiration. I wanted to recreate the same feelings and interactions that they did, but at the same time I didn’t want this to just be a nostalgic device, it needed to be relevant for the modern age so that it would be used, but not as uninspired and boring as something like a collaborative bluetooth speaker, it needed to be its own unique device to create the experiences I was seeking.
   

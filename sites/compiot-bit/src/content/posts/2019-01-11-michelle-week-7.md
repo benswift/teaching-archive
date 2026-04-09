@@ -17,17 +17,17 @@ This week I mainly worked on connecting electronics and got them work together. 
 
 [KY-028](http://sensorkit.en.joy-it.net/index.php?title=KY-028_Temperature_Sensor_module_(Thermistor)) is the temperature sensor module that I am using. The connection of the wires can be found in the given website. I tried to print out the current temperature in the serial monitor in the Arduino IDE, but the numbers are around 300. I guessed that it might has a conversion from the output values and the actual temperature. So I searched online, and find out that the values are something related to the voltage. I couldn't find a conversion between this value and the temperature so I printed the voltage directly.
 
-![board](/images/posts/michelle/temperature-sensor.jpg)
+![board](./images/michelle/temperature-sensor.jpg)
 
 As we can see in the picture below, the signal is inverted. When I put my finger on the sensor, which has a higher temperature, it shows a low voltage value at the analog output.(from above to below 400)
 
-![board](/images/posts/michelle/voltage.png)
+![board](./images/michelle/voltage.png)
 
 ### wifi module
 
 The wifi module comes with the package of Arduino. It is very small and unnoticeable, so it took me a long time to find it.TT
 
-![board](/images/posts/michelle/wifi-module.jpg)
+![board](./images/michelle/wifi-module.jpg)
 
 Following some of the online tutorials, I connect the wifi module with the Arduino board, and a led on the board. There is an app on Android that specifically for connecting the phone with the wifi module. When everything is connected well, I can use the app on my phone to control the light on the board.
 

@@ -17,13 +17,13 @@ Another part I am also considering doing is to build a auto-watering device, whi
 
 ### Arduino Uno
 
-![board](/images/posts/michelle/arduinouno.jpg)
+![board](./images/michelle/arduinouno.jpg)
 
 Since I don't have much experience in hardware, I plan to use Arduino Uno because it is a good board to get started with electronics and coding. Arduino Uno is a micro-controller board based on the ATmega328P. It communicates using the original STK500 protocol. It contains everything needed to support the micro-controller; we can get started by simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery. [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno/) has its own website and a software IDE to write programs and upload it on the board. There are [language reference](https://www.arduino.cc/reference/en/) and [example tutorials](https://www.arduino.cc/en/Tutorial/HomePage) to explain how to use the various features on the board.
 
 ### Moisture sensor
 
-![sensor](/images/posts/michelle/moisturesensor.jpg)
+![sensor](./images/michelle/moisturesensor.jpg)
 
 This is a sensor that can be used to sense the moisture in the soil. I ordered it from Taobao and it can be connected with the board.
 

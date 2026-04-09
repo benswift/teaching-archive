@@ -47,7 +47,7 @@ Pd is freely available and works on Windows, macOS & Linux. To install it, go to
 the [Pd downloads page](https://puredata.info/downloads) and get the latest
 version of "vanilla" Pd for your platform (as shown in the screenshot).
 
-![download box on the Pd website](/images/resources/pd-download-box.png)
+![download box on the Pd website](./images/pd-download-box.png)
 
 #### Example code/patches
 
