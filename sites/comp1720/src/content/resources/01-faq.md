@@ -11,7 +11,7 @@ This is the page with the answers to your questions, well, as long as they have 
 
 Here's a checklist:
 
-1. make sure you can log in to [the forum]({{ site.forum.url }}) 
+1. make sure you can log in to [the forum]({{site.forum.url}}) 
 
 2. read the course [policies page](/policies/)
    carefully
@@ -24,15 +24,14 @@ Here's a checklist:
 
 0. attend all lectures and labs and engage with all learning activities
 
-1. watch & ask questions on [the forum]({{ site.forum.url }})
+1. watch & ask questions on [the forum]({{site.forum.url}})
 
 2. read the weekly lab material *ahead of time*, complete pre-lab tasks and attend your scheduled lab
    session
 
 3. start the assignments *early*
 
-4. ask questions (in lectures, during labs and on [the forum]({{ site.forum.url
-   }})) if you don't understand anything---there are no silly questions in this course.
+4. ask questions (in lectures, during labs and on [the forum]({{site.forum.url}})) if you don't understand anything---there are no silly questions in this course.
 
 ### I need a permission code to enrol, can I have one? {#permission-code}
 
@@ -61,7 +60,7 @@ You'll write JavaScript code to run in the web browser using the `p5.js` framewo
 
 ### How do I check if my submission has been pushed to the GitLab server properly? {#is-it-pushed}
 
-You can check through the [GitLab website]({{ site.gitlab_url }}). Look at the
+You can check through the [GitLab website]({{site.gitlab_url}}). Look at the
 GitLab page for **your fork** of the assignment repo: the files shown there are
 the ones we'll mark.
 
@@ -118,8 +117,7 @@ Here are a few examples of places you might have taken
 code/images/music/words/videos/ideas from: other students, lectures, lab
 content, videos online, tutorial websites, books, artworks.
 
-If you're unsure, check with your tutor or ask on the [forum]({{ site.forum.url
-}}). In general if anybody asks "should I cite this?" on the forum, the answer is "YES!"
+If you're unsure, check with your tutor or ask on the [forum]({{site.forum.url}}). In general if anybody asks "should I cite this?" on the forum, the answer is "YES!"
 
 ### What reference style should I use? {#what-style}
 
@@ -279,7 +277,7 @@ Yes, if you like. Although it won't have any effect on your grade and may cause 
 
 ### I can't access GitLab---what should I do? {#I-cant-access-gitlab-what-should-i-do}
 
-The [COMP1720 GitLab server]({{ site.gitlab_url }}) is part of the official CECS
+The [COMP1720 GitLab server]({{site.gitlab_url}}) is part of the official CECS
 teaching infrastructure, so you can ask for help at the CECS Teaching & Learning
 support office (N117) on the ground floor of the CSIT building.
 
@@ -318,8 +316,7 @@ of this size.
 ### What's the difference between git & GitLab?
 
 [git](https://git-scm.com) is a program (like Microsoft Word) for keeping track
-of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{
-site.gitlab_url }}) is a website (running on a computer at the ANU) which uses
+of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
 git to keep track of your snapshots somewhere other than your own computer. The
 GitLab server never adds any new files to your snapshots, it just keeps track of
 the changes (commits) you've made once you push them to the server.

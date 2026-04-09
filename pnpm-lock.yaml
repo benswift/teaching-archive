@@ -37,7 +37,7 @@ catalogs:
       specifier: ^2.2.3
       version: 2.2.3
     sharp:
-      specifier: ^0.34.2
+      specifier: ^0.34.5
       version: 0.34.5
     stylelint:
       specifier: ^17.6.0
@@ -55,6 +55,10 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      sharp:
+        specifier: 'catalog:'
+        version: 0.34.5
     devDependencies:
       oxfmt:
         specifier: latest
@@ -85,10 +89,10 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       astromotion:
         specifier: 'catalog:'
-        version: https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
+        version: https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
       p5:
         specifier: 'catalog:'
         version: 2.2.3
@@ -131,10 +135,10 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       astromotion:
         specifier: 'catalog:'
-        version: https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
+        version: https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
       sharp:
         specifier: 'catalog:'
         version: 0.34.5
@@ -174,10 +178,10 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       astromotion:
         specifier: 'catalog:'
-        version: https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
+        version: https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
       sharp:
         specifier: 'catalog:'
         version: 0.34.5
@@ -214,7 +218,7 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       sharp:
         specifier: 'catalog:'
         version: 0.34.5
@@ -254,7 +258,7 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       p5:
         specifier: 'catalog:'
         version: 2.2.3
@@ -291,7 +295,7 @@ importers:
         version: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
       astro-theme-anu:
         specifier: file:../../submodules/astro-theme-anu/packages/astro-theme-anu
-        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
+        version: file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2)
       svelte:
         specifier: 'catalog:'
         version: 5.55.2
@@ -1551,8 +1555,8 @@ packages:
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
-  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3:
-    resolution: {tarball: https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3}
+  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843:
+    resolution: {tarball: https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843}
     version: 0.1.0
     peerDependencies:
       '@astrojs/svelte': ^8.0.0
@@ -4517,7 +4521,7 @@ snapshots:
       node-html-parser: 7.1.0
       p-limit: 7.3.0
 
-  astro-theme-anu@file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2):
+  astro-theme-anu@file:submodules/astro-theme-anu/packages/astro-theme-anu(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2))(svelte@5.55.2):
     dependencies:
       '@astro-community/astro-embed-youtube': 0.5.10
       astro: 6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
@@ -4532,7 +4536,7 @@ snapshots:
       svelte: 5.55.2
       unist-util-visit: 5.1.0
     optionalDependencies:
-      astromotion: https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
+      astromotion: https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2)
     transitivePeerDependencies:
       - '@noble/hashes'
       - canvas
@@ -4632,7 +4636,7 @@ snapshots:
       - uploadthing
       - yaml
 
-  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/549f66552b7e2f9ae21891bdd77341b763a516f3(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2):
+  astromotion@https://codeload.github.com/benswift/astromotion/tar.gz/2bdf94ff725e8337aa39560095f0580c7de2b843(@astrojs/svelte@8.0.4(@types/node@24.12.2)(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(svelte@5.55.2)(typescript@5.9.3)(yaml@2.8.3))(astro@6.1.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))(svelte@5.55.2):
     dependencies:
       '@qrgrid/core': 0.2.4
       '@shikijs/rehype': 3.23.0

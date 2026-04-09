@@ -1,7 +1,7 @@
 ---
 title: "Lab 1: Putting a Circle on the Internet"
 tagline: "setting up the tools to make art in EXTN1019"
-templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-1
+template_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-lab-1
 image: ./images/year-11-lab-01.png
 ---
 
@@ -116,7 +116,7 @@ This template is a starting point for everyone who wants to complete this lab,
 so before _you_ can start working on it you need to create your own "copy". This
 is called **forking**, and creates a new repo (your "fork").
 
-To fork the [lab 1 template]({{ page.template_repo }}), click the fork button on
+To fork the [lab 1 template]({{page.template_repo}}), click the fork button on
 the GitLab page in your web browser (I've circled it in red).
 
 Once you've done that, you should see a page like the one below---you now have

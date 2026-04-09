@@ -1,7 +1,7 @@
 ---
 title: "Synth"
 summary: "Generate a sequence of values to make a (musical) noise"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-1
+template_repo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-1
 ---
 
 ## Outline
@@ -232,7 +232,7 @@ of my completed project have been
 
 ## FAQ
 
-You can ask a question on the [COMP2300 forum]({{ site.forum_url }}) and if it's
+You can ask a question on the [COMP2300 forum]({{site.forum_url}}) and if it's
 popular enough I'll put it up here.
 
 :::info

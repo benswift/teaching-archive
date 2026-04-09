@@ -1,7 +1,7 @@
 ---
 title: "Creative Computing Final Project"
 tagline: "a final creative artefact/performance to be presented in the end-of-year exhibition"
-templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-final-project
+template_repo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-final-project
 image: ./images/final-project-thumbnail-placeholders/random6.jpg
 ---
 
@@ -219,7 +219,7 @@ You need to make the most of these remaining class sessions! That means:
 
 - working hard outside of class until you get stuck, and then bringing your
   problem to class (although you can also post questions in the main [Teams
-  channel]({{ site.teams_url_2024 }})) at any time, as per the [class communication
+  channel]({{site.teams_url_2024}})) at any time, as per the [class communication
   policy](/policies/#communication)
 
 - taking the time after a class to finish off any work you didn't get done, and

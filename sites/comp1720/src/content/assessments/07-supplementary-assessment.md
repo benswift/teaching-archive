@@ -26,7 +26,7 @@ Your supplementary assessment task for COMP1720/6720 is to:
 
 Your improved major project is due by **23:59 Friday 17/2/2022 AEDT** and should be submitted on GitLab. 
 
-Your explanation of how your project meets the marking criteria should be [submitted on Wattle (link)]({{ page.wattlelink }}).
+Your explanation of how your project meets the marking criteria should be [submitted on Wattle (link)]({{page.wattlelink}}).
 
 No late submissions will be accepted.
 
@@ -61,7 +61,7 @@ In **up to 200** words **explain** why your major project meets **all** of the f
 
 If you do not submit an improvement to your project by the deadline above, your evaluation will not be graded and you will fail the supplementary assessment.
 
-Your self-evaluation should be [submitted on Wattle (link)]({{ page.wattlelink }})
+Your self-evaluation should be [submitted on Wattle (link)]({{page.wattlelink}})
 
 ## N.B.:
 

@@ -32,7 +32,29 @@ export default defineConfig({
       extensions: [".svelte"],
       preprocess: [deckPreprocessor()],
     }),
-    anuTheme({ checkLinks: false, checkA11y: false }),
+    anuTheme({
+      checkLinks: false,
+      checkA11y: false,
+      site: {
+        gitlab_url: "https://gitlab.cecs.anu.edu.au/comp1720/2024",
+        year: "2024",
+        forum: {
+          name: "Ed",
+          url: "https://edstem.org/au/join/dswwXs",
+        },
+        extension: {
+          name: "COMP1720 Extension Pack",
+          id: "anucecsit.comp1720-extension-pack",
+          vscode_url:
+            "https://marketplace.visualstudio.com/items?itemName=anucecsit.comp1720-extension-pack",
+          vscodium_url:
+            "https://open-vsx.org/extension/anucecsit/comp1720-extension-pack",
+        },
+        contacts: {
+          page_contact: { email: "COMP1720@anu.edu.au" },
+        },
+      },
+    }),
     astromotion({ theme: "./src/decks/theme.css" }),
     sitemap(),
   ],

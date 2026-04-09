@@ -1,7 +1,10 @@
 ---
 title: "A1: monster"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-assignment-1
+template_repo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-assignment-1
 hidden: False
+deadline: 12 August 2024, 9:00 pm
+weighting: 20%
+available_marks: "20"
 ---
 
 In this assignment you will create a monster that moves in p5.js.
@@ -21,7 +24,7 @@ completely on top of coding yet to have a great submission.
 ## Outline
 
 - **Due:** {{ page.deadline }}
-- **Assignment template:** [available on GitLab (link)]({{ page.template_repo }})
+- **Assignment template:** [available on GitLab (link)]({{page.template_repo}})
 - **Specification:** keep reading 🙂
 - **Weighting:** {{ page.weighting }}
 - **Marked out of:** _ / {{ page.available_marks }}
@@ -82,7 +85,7 @@ Here's the process for working on the assignment:
 
 4. when you're happy with your `monster.png`, copy it into your assignment 1
    folder (this will overwrite the previous version) and commit the new version
-   to the repo (and push it up to the [GitLab server]({{ site.gitlab_url }}))
+   to the repo (and push it up to the [GitLab server]({{site.gitlab_url}}))
 
 :::info
 If you're new to Git and you'd like a helping hand, there are some [git help

@@ -104,8 +104,7 @@ on your computer, in particular:
 
 There are lots of other resources on the web for setting up git on your machine,
 so you can google around for tips on solving the specific error messages you're
-seeing. As always, if you get stuck you can reach out for help on [Teams]({{
-site.teams_url }}).
+seeing. As always, if you get stuck you can reach out for help on [Teams]({{site.teams_url}}).
 
 :::warning
 After installing Git, you'll need to close and re-open VSCode!
@@ -113,7 +112,7 @@ After installing Git, you'll need to close and re-open VSCode!
 
 ## Microsoft Teams {#teams}
 
-EXTN1019 has a dedicated [Microsoft Teams]({{ site.teams_url }}) channel. You
+EXTN1019 has a dedicated [Microsoft Teams]({{site.teams_url}}) channel. You
 can access Microsoft Teams through the [ANU Office 365
 homepage](https://services.anu.edu.au/information-technology/software-systems/microsoft-office-365),
 just click "Login to Office 365" on that page and sign in with you uni ID and
@@ -144,7 +143,7 @@ things which might be causing it, and it's too hard to list them all.
 Here's a list of issues you might come across, depending on the specific details
 of your machine. A small word of warning: it's always try to understand the
 problem first before you try randomly copy-pasting the various solutions listed.
-If you're totally lost, remember to hit us up on [Teams]({{ site.teams_url }})
+If you're totally lost, remember to hit us up on [Teams]({{site.teams_url}})
 and we can help you out.
 
 ### VSCode {#troubleshooting-vscode-plugins}
@@ -167,8 +166,7 @@ VSCode which you don't need to understand, and that's normal. What might be a
 worry, however, is if there are a bunch of angry-looking red error messages.
 They still might not make any sense, but that's the best place to see exactly
 what VSCode is complaining about, and at least it gives you something to paste
-into Google or post on the [forum]({{ site.forum_url }}) so that we can figure
-out exactly what's going wrong and help you out.
+into Google so that we can figure out exactly what's going wrong.
 
 If you're curious as to why the VSCode console looks quite a lot like the
 [Firefox developer console](#firefox-developer-console) it's because VSCode is
@@ -271,7 +269,7 @@ If you're on Windows and it still isn't working then you either need to:
 1. try follow along with the [instructions
    here](https://stackoverflow.com/questions/26620312/installing-git-in-path-with-github-client-for-windows#26620861)
 
-2. ask on [Teams]({{ site.teams_url }}) the forum or ask your teacher during the
+2. ask on [Teams]({{site.teams_url}}) the forum or ask your teacher during the
    next class
 
 ### Git is saying it "doesn't know who I am"---what do I do?

@@ -159,7 +159,7 @@ VSCode which you don't need to understand, and that's normal. What might be a
 worry, however, is if there are a bunch of angry-looking red error messages.
 They still might not make any sense, but that's the best place to see exactly
 what VSCode is complaining about, and at least it gives you something to paste
-into Google or post on the [forum]({{ site.forum.url }}) so that we can figure
+into Google or post on the [forum]({{site.forum.url}}) so that we can figure
 out exactly what's going wrong and help you out.
 
 If you're curious as to why the VSCode console looks quite a lot like the

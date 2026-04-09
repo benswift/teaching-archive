@@ -6,7 +6,7 @@ summary: Short definitions & examples for key concepts in the course
 This glossary provides short definitions & examples for some of the key concepts
 in the course. There's not much here at the moment, but it'll grow as time goes
 by. If you have suggestions, improvements, or if you want to write a glossary
-entry yourself, then let us know on [the COMP2300 forum]({{ site.forum_url }}) using the
+entry yourself, then let us know on [the COMP2300 forum]({{site.forum_url}}) using the
 `glossary` label.
 
 These glossary entries aren't meant to be exhaustive technical definitions,

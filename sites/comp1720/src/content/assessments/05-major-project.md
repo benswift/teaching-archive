@@ -1,8 +1,10 @@
 ---
 title: "Major project"
 summary: "this is the big one"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-major-project
+template_repo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-major-project
 hidden: False
+deadline: 28 October 2024, 9:00 pm
+weighting: 40%
 ---
 
 A p5.js artwork for our class, and your biggest challenge yet.
@@ -34,7 +36,7 @@ about this!
 ## Outline
 
 - **Due:** {{ page.deadline }}
-- **Assignment template:** [available on GitLab (link)]({{ page.template_repo }})
+- **Assignment template:** [available on GitLab (link)]({{page.template_repo}})
 - **Specification:** keep reading 🙂
 - **Weighting:** {{ page.weighting }}
 - **Submission:** submit your assignment through
@@ -186,8 +188,7 @@ statement are more than 10% over the word limit, you will start to lose marks.
 ### Can I get feedback on how my major project is going?
 
 The lab sessions from week 9 onwards are **all about your major
-project**. You could also ask a question on the [COMP1720 forum]({{
-site.forum.url }}) using the `major-project` tag.
+project**. You could also ask a question on the [COMP1720 forum]({{site.forum.url}}) using the `major-project` tag.
 
 ### Can I use stuff from previous assignments? 
 

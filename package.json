@@ -26,6 +26,12 @@
     "overrides": {
       "astro-theme-anu": "file:./submodules/astro-theme-anu/packages/astro-theme-anu"
     },
-    "onlyBuiltDependencies": ["esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "dependencies": {
+    "sharp": "catalog:"
   }
 }

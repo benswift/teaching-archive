@@ -1,6 +1,6 @@
 ---
 title: "Week 1: Putting a circle on the internet"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-labs
+template_repo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-labs
 ---
 
 ## Lab Tasks
@@ -19,7 +19,7 @@ In this week's lab you will:
 
 1. meet the tools you'll need in this course, including
    [VSCode](https://code.visualstudio.com/) and the [GitLab code
-   server]({{ site.gitlab_url }}).
+   server]({{site.gitlab_url}}).
 
 2. go through the steps you'll need to submit assignments in this course
 

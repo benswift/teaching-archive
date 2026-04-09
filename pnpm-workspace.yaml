@@ -3,27 +3,27 @@ packages:
 
 catalog:
   # Framework
-  astro: "^6.1.1"
-  svelte: "^5.55.1"
+  
+  # Deck support
+  "@animotion/core": "^1.2.2"
 
   # Astro integrations
   "@astrojs/mdx": "^5.0.3"
   "@astrojs/sitemap": "^3.3.1"
   "@astrojs/svelte": "^8.0.4"
-
-  # Deck support
-  "@animotion/core": "^1.2.2"
+  astro: "^6.1.1"
   astromotion: "github:benswift/astromotion"
-
-  # Image processing
-  sharp: "^0.34.2"
-
-  # Runtime deps
-  p5: "^2.2.3"
 
   # Dev tools
   lightningcss: "^1.32.0"
   oxfmt: "latest"
   oxlint: "^1.58.0"
+
+  # Runtime deps
+  p5: "^2.2.3"
+
+  # Image processing
+  sharp: "^0.34.5"
   stylelint: "^17.6.0"
   stylelint-config-standard: "^40.0.0"
+  svelte: "^5.55.1"

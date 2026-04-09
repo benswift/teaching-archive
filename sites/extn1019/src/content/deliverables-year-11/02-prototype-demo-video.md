@@ -1,7 +1,7 @@
 ---
 title: Creative Computing Project Prototype
 tagline: A work-in-progress prototype of your final collection of music/artwork project, delivered as a video demo
-templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-11/extn1019-2023-year-11-prototype
+template_repo: https://gitlab.cecs.anu.edu.au/extn1019/2023-2024/year-11/extn1019-2023-year-11-prototype
 image: ./images/prototype/alvaro-reyes-qWwpHwip31M-unsplash.jpg
 ---
 
@@ -46,11 +46,11 @@ Your prototype demo video must be:
   - `prototype-demo.mkv`
 
 You must also submit the code for your prototype (through your fork of the
-[GitLab template repo]({{ page.template_repo }})).
+[GitLab template repo]({{page.template_repo}})).
 
 ## Submission process {#submission-process}
 
-You must submit your video _and_ code by **committing and pushing** it to GitLab by **11:59pm Friday 22 September**. You must push it to _your fork_ of the [template]({{ page.template_repo }}) (the same process we use every week in the labs).
+You must submit your video _and_ code by **committing and pushing** it to GitLab by **11:59pm Friday 22 September**. You must push it to _your fork_ of the [template]({{page.template_repo}}) (the same process we use every week in the labs).
 
 Remember: a video file is just a file like all the other files (e.g. `.js`, `.html`) you've had in your template folder every week. To add the video to your project, you just drag the video file into the folder, run the "Commit all changes" command through the command palette in VSCode, and then push it up to GitLab as usual.
 

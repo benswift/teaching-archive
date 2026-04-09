@@ -117,7 +117,7 @@ don't have to read it in detail now, in fact it's probably more important that
 you head to the lab 1 content and make sure that you can actually get this stuff
 working for yourself. However, it's good to know that this information is here,
 so that if you have problems you know where to look (and it's helpful for asking
-good questions on [the forum]({{ site.forum_url }}) as well).
+good questions on [the forum]({{site.forum_url}}) as well).
 :::
 
 ## Troubleshooting {#troubleshooting}
@@ -127,8 +127,7 @@ details of your machine. As always, be careful with copy-pasting random code you
 found on the internet (even in a university course!), and try to *understand*
 the problem first before you try the solutions listed.
 
-If there are new problems which come up often enough on [the COMP2300 forum]({{
-site.forum_url }}) I'll add them here.
+If there are new problems which come up often enough on [the COMP2300 forum]({{site.forum_url}}) I'll add them here.
 
 ### Un-plug & re-plug --- "Have you tried turning it off & on again?"
 

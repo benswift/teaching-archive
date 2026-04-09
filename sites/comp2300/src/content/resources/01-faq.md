@@ -61,7 +61,7 @@ In 2019 it's Uwe Zimmer. Ben's [on parental leave](#ben).
 
 Here's a checklist:
 
-1. make sure you can log in to [the COMP2300 forum]({{ site.forum_url }}) ([let
+1. make sure you can log in to [the COMP2300 forum]({{site.forum_url}}) ([let
    me know **asap** if you can't](mailto:comp2300@anu.edu.au))
 
 2. read the course [policies page](/policies/)
@@ -74,15 +74,14 @@ Here's a checklist:
 As well as the usual stuff (attending labs & lectures), to keep on top of this
 course you'll need to:
 
-1. watch & ask questions on [the COMP2300 forum]({{ site.forum_url }})
+1. watch & ask questions on [the COMP2300 forum]({{site.forum_url}})
 
 2. read the weekly lab material *ahead of time*, and attend your scheduled lab
    session
 
 3. start the assignments *early*
 
-4. ask questions (in lectures, during labs and on [the COMP2300 forum]({{ site.forum_url
-   }})) if you don't understand anything---there are no dumb questions in
+4. ask questions (in lectures, during labs and on [the COMP2300 forum]({{site.forum_url}})) if you don't understand anything---there are no dumb questions in
    COMP2300, and if you're ever made to feel this isn't the case then [let me
    know](mailto:comp2300@anu.edu.au)
 
@@ -240,7 +239,7 @@ lab enrolments open Monday, week 1, 12:00.
 
 ### How do I sign up for labs?
 
-Lab sign-ups happen through [streams]({{ site.streams_url }})---you just log in
+Lab sign-ups happen through [streams]({{site.streams_url}})---you just log in
 with your usual uni ID and password and it's pretty straightforward.
 
 ### I can *only* attend (insert specific lab time here)---can you move me into that lab? {#can-you-move-me-into-a-specific-lab}
@@ -311,8 +310,7 @@ No.
 
 ### Can I post my code on the forum to get help? {#can-i-post-my-code-on-the-forum}
 
-You can't post your full assignment code publicly on the [COMP2300 forum]({{
-site.forum_url }}), or even significant sections of it. If it turns out that you
+You can't post your full assignment code publicly on the [COMP2300 forum]({{site.forum_url}}), or even significant sections of it. If it turns out that you
 submit the same code as someone else, then the usual [academic
 misconduct](01-policies.md %}#academic-integrity) rules apply---it's up to you
 to make sure no-one else sees your code for any reason.
@@ -770,12 +768,12 @@ website, which means that I expect you to use it---but I make it as easy as I
 can to find things.
 
 If anything on here is confusing or you have any ideas for how to make the
-content better, then ask a question on [the COMP2300 forum]({{ site.forum_url }}) and we
+content better, then ask a question on [the COMP2300 forum]({{site.forum_url}}) and we
 can make it even better.
 
 ### I've found some inconsistent info between the website and *some other place*---which one is correct?
 
-Firstly, you should raise the issue on [the COMP2300 forum]({{ site.forum_url }})---this is
+Firstly, you should raise the issue on [the COMP2300 forum]({{site.forum_url}})---this is
 the sort of thing we need to get fixed up right away.
 
 If in doubt, the information on the course website is the authoritative version.
@@ -801,7 +799,7 @@ I'm sorry that we can't do this (I want you to get the problems sorted out as
 well!) but there's just not enough time in the labs and it's not fair to the
 other students.
 
-Finally, there's always [the COMP2300 forum]({{ site.forum_url }}), although
+Finally, there's always [the COMP2300 forum]({{site.forum_url}}), although
 when you ask on the COMP2300 forum it's really important to provide as much
 information as possible about what's going wrong, what you've tried already and
 what you think might be the cause (otherwise it's hard to figure out what the
@@ -909,7 +907,7 @@ unless you've got explicit written permission from the course convenor.
 
 ### How do I check if my submission has been pushed to the GitLab server properly? {#is-it-pushed}
 
-You can check through the [GitLab website]({{ site.gitlab_url }}). Look at the
+You can check through the [GitLab website]({{site.gitlab_url}}). Look at the
 GitLab page for **your fork** of the assignment repo: the files shown there are
 the ones we'll mark.
 
@@ -985,8 +983,7 @@ another name for terminal).
 ### What's the difference between git & GitLab?
 
 [git](https://git-scm.com) is a program (like Microsoft Word) for keeping track
-of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{
-site.gitlab_url }}) is a website (running on a computer at the ANU) which uses
+of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
 git to keep track of your snapshots somewhere other than your own computer. The
 GitLab server never adds any new files to your snapshots, it just keeps track of
 the changes (commits) you've made once you push them to the server.

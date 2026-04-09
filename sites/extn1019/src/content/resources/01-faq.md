@@ -12,7 +12,7 @@ tagline: Some questions which come up, well... frequently
 As well as the usual stuff (attending labs & lectures), to keep on top of this
 course you'll need to:
 
-1. watch & ask questions on [Teams channel]({{ site.teams_url }})
+1. watch & ask questions on [Teams channel]({{site.teams_url}})
 
 2. have a look at the weekly lab material _ahead of time_, and attend your
    scheduled lab session
@@ -21,7 +21,7 @@ course you'll need to:
    platitude, but you'll really get the most out of this course by making things
    all the time (start small, be kind to yourself, but make things!)
 
-4. ask questions (during labs and on [Teams channel]({{ site.teams_url }})) if
+4. ask questions (during labs and on [Teams channel]({{site.teams_url}})) if
    you don't understand anything---there are no dumb questions in EXTN1019, and
    if you're ever made to feel this isn't the case then [let me
    know](mailto:matthew.phillipps@anu.edu.au)
@@ -262,7 +262,7 @@ can blog about, though.
 
 You can join online! How does that work?
 
-Message Matthew (on [Teams]({{ site.teams_url }})) when you know you're not
+Message Matthew (on [Teams]({{site.teams_url}})) when you know you're not
 going to be attending online so that we know to expect you online.
 
 We'll make a post at the start of lab in the _General_ channel with a small

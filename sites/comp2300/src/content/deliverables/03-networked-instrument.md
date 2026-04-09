@@ -1,7 +1,7 @@
 ---
 title: Networked instrument
 summary: "Wire up your discoboard to build a networked instrument"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-3
+template_repo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-3
 ---
 
 ## Outline
@@ -56,7 +56,7 @@ labs over the last few weeks. These libraries are there so that you can skip
 over the stuff you've already done in the previous assignments and spend your
 energy on actually implementing the P2300 protocol. It's still crucial that you
 understand what this code does, though, so if you're not sure about anything
-then ask a question on [the COMP2300 forum]({{ site.forum_url }}) using the `assignment3`
+then ask a question on [the COMP2300 forum]({{site.forum_url}}) using the `assignment3`
 tag.
 
 ## Background: the P2300 protocol {#p2300-protocol}

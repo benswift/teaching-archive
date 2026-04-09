@@ -35,20 +35,18 @@ are adapted from Dr. Lorena A. Barba.
 
 ## Communication {#communication}
 
-- In this course we will communicate with you through [MS Teams]({{
-  site.teams_url }}). You need to check [Teams]({{ site.teams_url }}) regularly
+- In this course we will communicate with you through [MS Teams]({{site.teams_url}}). You need to check [Teams]({{site.teams_url}}) regularly
   and set up your email preferences so that your notifications go somewhere that
   you will see them.
 
 - You will also receive important emails at your [ANU email
   account](https://anumail.anu.edu.au) (i.e. `uXXXXXXX@anu.edu.au`).
 
-- If you have a question about any aspect of the course, post it on [Teams]({{
-  site.teams_url }}).
+- If you have a question about any aspect of the course, post it on [Teams]({{site.teams_url}}).
 
 - We prefer you to use public (i.e. in the main channel) posts for any question
   so that other students can help and benefit from any discussions. Our
-  [Teams]({{ site.teams_url }}) channel is a great community, so make the most
+  [Teams]({{site.teams_url}}) channel is a great community, so make the most
   of it.
 
 - Disrespectful, harassing, or discriminatory posting or messaging in this

@@ -1,7 +1,10 @@
 ---
 title: "A2: workstation"
-templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-assignment-2
+template_repo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-assignment-2
 hidden: False
+deadline: 02 September 2024, 9:00 pm
+weighting: 20%
+available_marks: "20"
 ---
 
 In this assignment you will create an interactive workstation in p5.
@@ -13,7 +16,7 @@ You goal in this assignment is to create some kind of interactive workstation in
 ## Outline
 
 - **Due:** {{ page.deadline }}
-- **Assignment template:** [available on GitLab (link)]({{ page.template_repo }})
+- **Assignment template:** [available on GitLab (link)]({{page.template_repo}})
 - **Specification:** keep reading 🙂
 - **Weighting:** {{ page.weighting }}
 - **Marked out of:** _ / {{ page.available_marks }}
@@ -73,7 +76,7 @@ Here's the process for working on the assignment:
 
 4. when you're happy with your `thumbnail.png`, copy it into your assignment 
    folder (this will overwrite the previous version) and commit the new version
-   to the repo (and push it up to the [GitLab server]({{ site.gitlab_url }}))
+   to the repo (and push it up to the [GitLab server]({{site.gitlab_url}}))
 
 :::info
 If you're new to Git and you'd like a helping hand, there are some [git help
