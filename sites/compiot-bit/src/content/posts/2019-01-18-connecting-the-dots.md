@@ -15,7 +15,7 @@ At the moment, I have three main software systems that all interact with each ot
 
 - **Reporter** - reads sensor data and sends it to the server (also acts on commands from the server)
 
-So far I have made decent progress with the reporter, its structure so far is two loops, one for the send/recv for networking, the other is a read-delay-read  loop for the sensor. The plan is to able to set the read-rate as a command from the server, so it can be as frequent as the user likes. In its current state, the reporter generates a random number (in place of actually reading from the sensor) and sends it via MQTT to the server every 5 seconds.
+So far I have made decent progress with the reporter, its structure so far is two loops, one for the send/recv for networking, the other is a read-delay-read loop for the sensor. The plan is to able to set the read-rate as a command from the server, so it can be as frequent as the user likes. In its current state, the reporter generates a random number (in place of actually reading from the sensor) and sends it via MQTT to the server every 5 seconds.
 
 ![reporter](./images/sam/reporter.png)
 

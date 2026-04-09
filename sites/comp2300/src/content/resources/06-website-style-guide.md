@@ -13,12 +13,12 @@ you see them (and can think of easy ways to change them to bring them in line
 with the style guide) then feel free to do so.
 :::
 
-If you've got suggestions for the style guide *itself*, then probably best to
+If you've got suggestions for the style guide _itself_, then probably best to
 discuss with Ben first. It's certainly possible to make tweaks here, but we want
 to make sure that the content and the style guide stay in sync as much as
 possible, and having Ben as a gatekeeper will hopefully help to manage this.
 
-Finally, none of this stuff is *that* important. No-one's gonna die if you don't
+Finally, none of this stuff is _that_ important. No-one's gonna die if you don't
 follow it exactly. But it's nice to be consistent about it, and so we write this
 stuff down.
 
@@ -32,7 +32,7 @@ Use "Git" when talking about the version control tool in general, and `git` when
 referring to executing specific commands (at the CLI) with the `git` binary.
 
 :::info
-There are *heaps* of places in the site where this rule isn't followed (and the
+There are _heaps_ of places in the site where this rule isn't followed (and the
 lowercase "git" is used where it should say "Git" according to this style
 guide). If you see any of these, feel free to fix them up, but don't stress
 too much about it---we can fix it gradually.
@@ -66,7 +66,7 @@ than "Finally, **we're** going to push your changes to the GitLab server".
 
 ### Whitespace
 
-Leave spaces before *and* after headings in markdown content, e.g.
+Leave spaces before _and_ after headings in markdown content, e.g.
 
 ```md
 ... here's the end of some body text.

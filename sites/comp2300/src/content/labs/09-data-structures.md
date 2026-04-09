@@ -79,16 +79,16 @@ nice guy 😊). You can find it in the `src/led.S` file after you fork & clone t
 [lab 9 template]() from GitLab.
 
 Have a read through the code in `led.S`---you should now be at the stage where
-you can look at assembly code like this and at least get a *general* sense of
+you can look at assembly code like this and at least get a _general_ sense of
 what it does and how it works. Here are a couple of things to pay particular
 attention to as you look over it.
 
 - The code uses `push` (to store the value in a register onto the stack, and
-  *decrement* the stack pointer `sp`) and `pop` (to load the top value on the
-  stack into a register and *increment* the stack pointer `sp`). You can do this
+  _decrement_ the stack pointer `sp`) and `pop` (to load the top value on the
+  stack into a register and _increment_ the stack pointer `sp`). You can do this
   in other ways (e.g. `stmdb pc!, {lr}`) but `push` and `pop` are convenient
   when you want to want to use `sp` to keep track of the stack. You can see the
-  `push`/`pop` instructions in *Section A7.7* of your
+  `push`/`pop` instructions in _Section A7.7_ of your
   your
   [ARMv7 reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)
 
@@ -122,10 +122,10 @@ write three new **functions** in your `main.S` file:
    cycles---we'll call this the "dot length") and then pauses (delays) for one
    dot length before returning
 
-2. `blink_dash`, which blinks the led for *three* times the dot and then pauses
+2. `blink_dash`, which blinks the led for _three_ times the dot and then pauses
    (delays) for one dot length before returning
 
-3. `blink_space`, which doesn't blink the LED, but pauses (delays) for *seven*
+3. `blink_space`, which doesn't blink the LED, but pauses (delays) for _seven_
    dot lengths before returning
 
 Each of these function calls will contain nested function calls (i.e. calls to
@@ -141,7 +141,7 @@ GitLab.
 ## Exercise 2: a morse data structure
 
 Now it's time for the actual morse code part. In morse code, each letter (also
-called a **codepoint**) is encoded using *up to* five dots/dashes. For example,
+called a **codepoint**) is encoded using _up to_ five dots/dashes. For example,
 the codepoint for the letter B has 4 dots/dashes: `_...` while the codepoint for
 the letter E is just a single dot `.`. You could store this in memory in several
 different ways, but one way to do it is to use a data structure which looks like
@@ -150,7 +150,7 @@ this:
 ![Morse](./images/lab-8/morse-data-structure.png)
 
 Each "slot" in the data structure is one full word (32 bits/4 bytes), so the
-total size of the codepoint data structure is 4*6=24 bytes. The first word is an
+total size of the codepoint data structure is 4\*6=24 bytes. The first word is an
 integer which gives the total number of dots/dashes in the codepoint, while the
 remaining 5 boxes contain either a 0 (for a dot) or a 1 (for a dash).
 
@@ -205,7 +205,7 @@ When you start to use functions, the usefulness of the **step over** vs **step
 in** buttons in the debugger toolbar starts to become clear. When the debugger
 is paused at a function call (i.e. a `bl` instruction) then step **over** will
 branch, do the things without pausing, and then pause when the function
-*returns*, while step **in** will follow the branch, allowing you to step
+_returns_, while step **in** will follow the branch, allowing you to step
 through the called function as well. Sometimes you want to do one, sometimes you
 want to do the other, so it's useful to have both and to choose the right one
 for the job.
@@ -228,7 +228,7 @@ To save you the trouble of writing out the full morse code alphabet, you can
 copy-paste the following code into your editor. It includes a simple `morse`
 macro, and also a place to put the input string (using the `.asciz` directive).
 
-``` ARM
+```ARM
 @ morse code data structure
 .macro morse num d1 d2 d3 d4 d5
   .word \num, \d1, \d2, \d3, \d4, \d5
@@ -272,9 +272,9 @@ morse_table:
 ```
 
 :::tip
-The `morse` macro isn't very sophisticated, and isn't *necessary*; you could
+The `morse` macro isn't very sophisticated, and isn't _necessary_; you could
 just use `.word` instead. The main reasons for using it are a) to make that
-section of the code a bit more readable (it's clear that it's *morse* data, not
+section of the code a bit more readable (it's clear that it's _morse_ data, not
 just any old data) and also it will now give you an error if you give the wrong
 number of arguments. It's worth thinking through this as you learn to balance
 the pros and cons of macros (as discussed in the [week 6
@@ -312,6 +312,7 @@ program to GitLab.
 ## Exercise 4: choose-your-own-adventure {#exercise-4}
 
 :::tip
+
 <div class="extension-box" markdown="1" style="margin-bottom: 20px;">
 There are many ways you can extend this program. Here are a few things to try (pick which
 ones interest you---you don't have to do them in order):
@@ -330,8 +331,8 @@ ones interest you---you don't have to do them in order):
 5. this is **far** from the most space-efficient way to store the morse
    codepoints, can you implement a better scheme?
 6. can you modify the `led.S` library to set up and blink the [green
-   LED](/labs/05-blinky/#exercise-2) as well---how
-   can you use this in your morse blinking?
+LED](/labs/05-blinky/#exercise-2) as well---how
+can you use this in your morse blinking?
 </div>
 
 ### Summary

@@ -22,7 +22,7 @@ In this lab you will:
 
 3. **put a circle on the internet** (eew)
 
-## Hello and Welcome! 
+## Hello and Welcome!
 
 Hello and welcome to ANU Extension Creative Computing! We are all very excited
 to have you in our class and we hope you are too. You might have a few questions
@@ -32,9 +32,10 @@ throughout the course.
 We are going to start with a short activity (15 minutes).
 
 Turn to the person next to you. Introduce yourself. Discuss the following questions:
+
 - what artist have you been into recently? (Artist is not limited to visual
   artist, any musical, dance, video maker, etc counts too!)
-- what is unique about their art? 
+- what is unique about their art?
 
 Wait---isn't this a coding course? Why are we asking about artist? Well, this is
 a coding course but its also an art course so its good to think of different
@@ -48,7 +49,7 @@ Introduce your partner. Briefly explain what artist your partner has been intere
 
 ## Introduction: a pre-lab
 
-Lab 1 is a bit of a weird lab---it's more like a *pre-lab* before the normal lab
+Lab 1 is a bit of a weird lab---it's more like a _pre-lab_ before the normal lab
 material starts in week 2. You can work through it at any time, either on campus
 or at home (or wherever). If you get through it ok (and can show a circle in
 your browser) then you're ready to start the course. **If you get stuck that's
@@ -88,7 +89,7 @@ already installed on the lab machines at the ANU.
     need you to install the EXTN1019 extension each time you log in (a pain, but
     it only takes a second).
 
-## Part 2: forking the [lab 1 template]()  {#forking}
+## Part 2: forking the [lab 1 template]() {#forking}
 
 :::info
 From here, we'll use a few git-specific terms, and in general we'll explain
@@ -122,7 +123,7 @@ the GitLab page in your web browser (I've circled it in red).
 Once you've done that, you should see a page like the one below---you now have
 your **own** fork (copy) of these files on the server, as indicated that it
 shows your name in the top-left-hand corner (circled in green). The files are
-exactly the same, but the repo is now attached to *your* GitLab account, rather
+exactly the same, but the repo is now attached to _your_ GitLab account, rather
 than the `extn1019/2024-2025` GitLab account, so you can change the files and push
 things up to the GitLab server without messing up anyone else's starting point.
 
@@ -134,7 +135,7 @@ Your fork of the template repo is still on the GitLab server, though. To
 actually work on these files, you need to **clone** (download) this repo to the
 computer you're working on.
 
-1. In VSCode, open the *command palette* (*View > Command Palette*, or
+1. In VSCode, open the _command palette_ (_View > Command Palette_, or
    <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and a prompt will appear in
    the top.
 
@@ -155,9 +156,9 @@ computer you're working on.
    computer it might be a good idea to create a `extn1019` folder and clone all
    your repositories there. If this is a lab computer, make sure you save this
    to your university homedrive (it'll be called `u1234567`). When you've found
-   a good spot for you files hit *Enter* or click "Select Repository Location".
+   a good spot for you files hit _Enter_ or click "Select Repository Location".
 
-5. Now you'll be asked to enter your username and password. This will be the
+6. Now you'll be asked to enter your username and password. This will be the
    same uid and password you used to log into GitLab.
 
 7. If you entered your uid and password correctly, a popup will appear in the
@@ -180,9 +181,9 @@ You're getting close to creating the circle you've been thinking about all
 along. In the `draw` function (immediately below `// your "draw loop" code goes
 here`) add the following lines:
 
-``` javascript
+```javascript
 background(30);
-ellipse(200,200,200,200);
+ellipse(200, 200, 200, 200);
 ```
 
 Now save the file.
@@ -194,15 +195,15 @@ start the live server:
 We are working to get the live server ready for use by the first workshop. So if you're accessing this content before the workshop, it might not be ready for you.
 :::
 
-1. Open the command palette (*View > Command Palette*)
+1. Open the command palette (_View > Command Palette_)
 2. Type "Open with live server"
-3. Hit *Enter*
+3. Hit _Enter_
 
 Your default browser will open up and should show a white circle on a charcoal
 background.
 
 :::info
-As stated on the [software setup page](/resources/02-software-setup/#firefox) you should use Firefox 
+As stated on the [software setup page](/resources/02-software-setup/#firefox) you should use Firefox
 as your web browser for the course, and (for convenience) you could set it to be
 your default browser (since that's what the live server extension will open the
 sketch in).
@@ -220,12 +221,12 @@ internet it's important that you save your work and push it up to GitLab. This
 process is important to learn because it's the way you'll submit all your
 assignments for this course!
 
-The first thing to do is save your `sketch.js` the usual way (i.e. *File > Save*
-or *Ctrl-S*/*Cmd-S* depending on your OS).
+The first thing to do is save your `sketch.js` the usual way (i.e. _File > Save_
+or _Ctrl-S_/_Cmd-S_ depending on your OS).
 
 Now you want to upload your changes to the `sketch.js` file back to gitlab so
 it's safe and sound. This involves some more VSCode commands so open up the
-command palette using *View > Command Palette*.
+command palette using _View > Command Palette_.
 
 Type in `git commit all` and press enter. You'll get a popup which says "There
 are no staged changes to commit. Would you like to automatically stage all your
@@ -242,8 +243,8 @@ where everything was working. When working on assignments you'll want to commit
 your code regularly just to be safe.
 
 Now all you have to do is push (upload) these committed changes to GitLab with
-the **push** command. Open up the command palette using *View > Command
-Palette*, type `git push` and hit *Enter*. You might need to put your UID &
+the **push** command. Open up the command palette using _View > Command
+Palette_, type `git push` and hit _Enter_. You might need to put your UID &
 password in again at the push step. If you get an unauthorised message, try once
 more and if it still doesn't work seek help from a tutor or friend.
 
@@ -271,7 +272,7 @@ copying and pasting this link into your browser and replace `uXXXXXXX` with your
 university ID.
 
 :::info
-This link might not be accessible before the first workshop. 
+This link might not be accessible before the first workshop.
 :::
 
 `https://extn1019.cecs.anu.edu.au/uXXXXXXX/extn1019-2024-year-11-lab-1/`
@@ -305,9 +306,9 @@ done this version control thing before, or if you're just after a refresher):
 3. clone **your fork**[^own-fork] to the computer you want to work on
 
 4. open the folder in VSCode and start the p5 live server (`File > Command
-   Palette` type `Open with live server` and hit *Enter*)
+Palette` type `Open with live server` and hit _Enter_)
 
-6. to submit your work, commit and push the changes to your fork (you can do
+5. to submit your work, commit and push the changes to your fork (you can do
    this as many times as you like)
 
 [^own-fork]:

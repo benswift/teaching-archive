@@ -21,7 +21,7 @@ The first 3 assessment tasks this year are called "Portfolio Item 1", "Portfolio
 
 ## Theme: &#8230; endings &#8230; beginnings &#8230;
 
-The 2025 Creative Computing Final Project requires you to create an interpretation to the theme *"&#8230; endings &#8230; beginnings &#8230;"*.
+The 2025 Creative Computing Final Project requires you to create an interpretation to the theme _"&#8230; endings &#8230; beginnings &#8230;"_.
 
 :::info
 The ANU Extension Program is coming to an end. Your journey through secondary education is coming to an end. It may feel as though
@@ -30,7 +30,7 @@ generate new beginnings. Your project will implement your interpretation of this
 connective ellipsis **"&#8230;"** which represents cyclic processes of renewal.
 :::
 
-You will create one major artistic response related to this theme &mdash; but you are welcome to create a number of responses. You will need to explain how your responses align with the theme. In your project submission, you should have one major response and project documentation that reflects your exploration of the theme as represented in your major work. 
+You will create one major artistic response related to this theme &mdash; but you are welcome to create a number of responses. You will need to explain how your responses align with the theme. In your project submission, you should have one major response and project documentation that reflects your exploration of the theme as represented in your major work.
 
 ## Description
 
@@ -38,7 +38,7 @@ The end of the school year is approaching, and so is the EXTN1019 final project.
 As we've foreshadowed all along in this course, your final project deliverable
 is an interactive creative code artefact for an end-of-year creative code
 exhibition.
-  
+
 Your goal is to provide an **engaging** performance/user experience which communicates your interpretation of the theme: **&#8230; endings &#8230; beginnings &#8230;**.
 
 ## Specification {#specification}
@@ -72,16 +72,16 @@ Our project will try to address both definitions.
 
 Project documentation may include:
 
-* Statement of project goals, objectives or outputs
-* Declaration of start and end times
-* Project inputs and required resources
-* Scope of work (what is included and what is excluded)
-* Plan of work and delivery schedule
-* Critical or influential decisions and decision points
-* Designs, sketches, brain-storming, doodles
-* Screen shots of work-in-progress
-* Reflections on project progress, changes and outcomes
-* Your GitLab commit history
+- Statement of project goals, objectives or outputs
+- Declaration of start and end times
+- Project inputs and required resources
+- Scope of work (what is included and what is excluded)
+- Plan of work and delivery schedule
+- Critical or influential decisions and decision points
+- Designs, sketches, brain-storming, doodles
+- Screen shots of work-in-progress
+- Reflections on project progress, changes and outcomes
+- Your GitLab commit history
 
 You do not need to supply all of this: just ensure that you self-assess using the supplied rubric to ensure that you are meeting the requirements of this assessment task.
 
@@ -91,7 +91,7 @@ You must submit all the necessary files (code, image/audio/video files) by **com
 
 ## Marking criteria {#marking}
 
-The marking criteria are connected to the [course learning outcomes (LOs)](/outline/#learning-outcomes-a), and you will be assessed how well your project addresses the following criteria: 
+The marking criteria are connected to the [course learning outcomes (LOs)](/outline/#learning-outcomes-a), and you will be assessed how well your project addresses the following criteria:
 
 ### D1 Interaction design (connected to LO #1 & #2)
 
@@ -117,13 +117,13 @@ The marking criteria are connected to the [course learning outcomes (LOs)](/outl
 
 ## Year 12 Final Project Assessment Rubric
 
-| | A Grade<br>(9-10) | B Grade<br>(7-8) | C Grade<br>(5-6) | D Grade<br>(3-4) | E Grade<br>(0-2) |
-| :---     | :---    |  :---    | :---     | :---     | :---    |
-| **D1 [20%]<br/>Interaction Design<br/>LO #1 and #2**<br/>README.md and sketches | considers interaction/evolution/dynamic transformation as a feedback loop between user input and visuals/sound. Uses this feedback to design an engaging experience for the user/audience (relates to D3 and D4) | explores several interactions/modes of evolution/dynamic transformation over time, includes critical reflection of design (selection of appropriate interaction/responsiveness) | explores several interactions/modes of evolution/forms of dynamic transformation over time designs, but no critical reflection of alignment with theme | minimal exploration of interaction and/or evolution/dynamic transformation over time (only explores one interaction type) | very limited exploration of interaction or responsiveness or evolution or dynamic transformation over time |
-| **D2 [20%]<br/>Artistic Output<br/>LO #2**<br/>sketches | highly creative artistic output which includes sophisticated interactivity, or compelling dynamic transformation. Artefacts demonstrate clear evolution of design with well justified decision-making and critical exploration of the theme (below). (relates to D3 and D4) | great creativity in developing a response to the theme, including evolution/dynamism/interactivity. Artefacts show clear evolution of design with well justified decision making | satisfactory artistic output which includes several variations or stages of evolution | some visual output considered, but not much variation or evolution | very limited output, or no output |
-| **D3 [20%]<br/>Critical Exploration of Theme<br/>LO #1 and #3**<br/>interpretation.md and sketches | interacting with the work makes the viewer think differently about the theme---*wow* factor  | theme is explored through the artefact/experience, including references to prior art | theme is clearly presented, but is not deeply integrated into the overall artefact/experience | very superficial mention of the theme (e.g. theme is only represented by text on screen) | the theme is not represented in the artistic output or interaction design |
-| **D4 [20%]<br/>Technical Quality<br/>LO #1 and #3**<br/>sketches | no major bugs, significant evidence of work by the student including something right at the edge (or beyond) the techniques we covered in this course, good abstraction, deep understanding of coding structures and techniques | no major bugs, significant evidence of work by the student and engagement with techniques we covered in this course, coding techniques used effectively and efficiently | no major bugs, but lacks significant ambition on the technical side _or_, strong engagement with techniques through combining three (or fewer) code sources  without significant changes, satisfactory use of coding structures | it _sort of_ works, but it's super janky _or_ it works, but represents very limited changes to prior work, ad hoc use of coding structures and techniques | it doesn't work at all _or_ it is not the student's work, coding techniques and structures used inappropriately |
-| **D5 [20%]<br/>Project Documentation<br/>LO #2**<br/>project documentation files, gitlab commit history and internal program comments | project documentation illustrates the project design, conceptualisation, progress and outcomes achieved, including scope or direction changes, critically analysing the reasons for the changes with deep self-reflection, through a wide range of evidence | project documentation includes project design decisions, planning, progress and outcomes achieved, including scope or direction changes, analysing the reasons for the changes, through a solid range of evidence | project documentation shows the project goals, plan and outcomes achieved, noting any reasons for project changes, through a satisfactory range of evidence | project documentation describes the project goals, plan and outcomes, through a limited range of evidence | limited project documentation noting the project goals and limited planning, through a very limited range of evidence which may not be related to the project delivered |
+|                                                                                                                                       | A Grade<br>(9-10)                                                                                                                                                                                                                                                           | B Grade<br>(7-8)                                                                                                                                                                                                  | C Grade<br>(5-6)                                                                                                                                                                                                               | D Grade<br>(3-4)                                                                                                                                          | E Grade<br>(0-2)                                                                                                                                                        |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **D1 [20%]<br/>Interaction Design<br/>LO #1 and #2**<br/>README.md and sketches                                                       | considers interaction/evolution/dynamic transformation as a feedback loop between user input and visuals/sound. Uses this feedback to design an engaging experience for the user/audience (relates to D3 and D4)                                                            | explores several interactions/modes of evolution/dynamic transformation over time, includes critical reflection of design (selection of appropriate interaction/responsiveness)                                   | explores several interactions/modes of evolution/forms of dynamic transformation over time designs, but no critical reflection of alignment with theme                                                                         | minimal exploration of interaction and/or evolution/dynamic transformation over time (only explores one interaction type)                                 | very limited exploration of interaction or responsiveness or evolution or dynamic transformation over time                                                              |
+| **D2 [20%]<br/>Artistic Output<br/>LO #2**<br/>sketches                                                                               | highly creative artistic output which includes sophisticated interactivity, or compelling dynamic transformation. Artefacts demonstrate clear evolution of design with well justified decision-making and critical exploration of the theme (below). (relates to D3 and D4) | great creativity in developing a response to the theme, including evolution/dynamism/interactivity. Artefacts show clear evolution of design with well justified decision making                                  | satisfactory artistic output which includes several variations or stages of evolution                                                                                                                                          | some visual output considered, but not much variation or evolution                                                                                        | very limited output, or no output                                                                                                                                       |
+| **D3 [20%]<br/>Critical Exploration of Theme<br/>LO #1 and #3**<br/>interpretation.md and sketches                                    | interacting with the work makes the viewer think differently about the theme---_wow_ factor                                                                                                                                                                                 | theme is explored through the artefact/experience, including references to prior art                                                                                                                              | theme is clearly presented, but is not deeply integrated into the overall artefact/experience                                                                                                                                  | very superficial mention of the theme (e.g. theme is only represented by text on screen)                                                                  | the theme is not represented in the artistic output or interaction design                                                                                               |
+| **D4 [20%]<br/>Technical Quality<br/>LO #1 and #3**<br/>sketches                                                                      | no major bugs, significant evidence of work by the student including something right at the edge (or beyond) the techniques we covered in this course, good abstraction, deep understanding of coding structures and techniques                                             | no major bugs, significant evidence of work by the student and engagement with techniques we covered in this course, coding techniques used effectively and efficiently                                           | no major bugs, but lacks significant ambition on the technical side _or_, strong engagement with techniques through combining three (or fewer) code sources without significant changes, satisfactory use of coding structures | it _sort of_ works, but it's super janky _or_ it works, but represents very limited changes to prior work, ad hoc use of coding structures and techniques | it doesn't work at all _or_ it is not the student's work, coding techniques and structures used inappropriately                                                         |
+| **D5 [20%]<br/>Project Documentation<br/>LO #2**<br/>project documentation files, gitlab commit history and internal program comments | project documentation illustrates the project design, conceptualisation, progress and outcomes achieved, including scope or direction changes, critically analysing the reasons for the changes with deep self-reflection, through a wide range of evidence                 | project documentation includes project design decisions, planning, progress and outcomes achieved, including scope or direction changes, analysing the reasons for the changes, through a solid range of evidence | project documentation shows the project goals, plan and outcomes achieved, noting any reasons for project changes, through a satisfactory range of evidence                                                                    | project documentation describes the project goals, plan and outcomes, through a limited range of evidence                                                 | limited project documentation noting the project goals and limited planning, through a very limited range of evidence which may not be related to the project delivered |
 
 ## FAQ
 
@@ -137,6 +137,7 @@ Your Markdown should looks like this:
 Raji, et al[^Raji_2021], discuss the dangers of Artificial Intelligence ..
 
 ---
+
 **Bibliography**
 
 [^Raji_2021]: Raji, Inioluwa Deborah, Emily M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna. “AI and the Everything in the Whole Wide World Benchmark.” arXiv:2111.15366 [Cs], November 26, 2021. http://arxiv.org/abs/2111.15366.
@@ -147,6 +148,7 @@ Jekyll will render this as follows:
 Raji, et al[^Raji_2021], discuss the dangers of Artificial Intelligence ..
 
 ---
+
 **Bibliography**
 
 [^Raji_2021]: Raji, Inioluwa Deborah, Emily M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna. “AI and the Everything in the Whole Wide World Benchmark.” arXiv:2111.15366 [Cs], November 26, 2021. http://arxiv.org/abs/2111.15366.

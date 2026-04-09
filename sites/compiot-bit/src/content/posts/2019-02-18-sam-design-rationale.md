@@ -20,9 +20,9 @@ The design and implementation of my water flow monitoring system was carried out
 
 ### Hardware Systems
 
-- **Microcontroller** (network connected): a [Raspberry Pi](https://www.raspberrypi.org/) that interfaces with both software and other hardware systems, and acts and the *reporter*.
+- **Microcontroller** (network connected): a [Raspberry Pi](https://www.raspberrypi.org/) that interfaces with both software and other hardware systems, and acts and the _reporter_.
 - **Water flow system**: a network of tubes that route water through components used to measure and control the flow of water.
-    - Vinyl tube, water flow sensor, fluid solenoid and a pump to simulate water pressure for demo purposes.
+  - Vinyl tube, water flow sensor, fluid solenoid and a pump to simulate water pressure for demo purposes.
 - **Circuitry**: used to route power to components and connect data lines to the microcontroller.
 
 These systems come together to form a network connected and controlled water monitoring solution with a variety of use cases and benefits to users - such as whole-home leak detection, sprinkler monitoring, automated plant watering and many more.
@@ -32,9 +32,9 @@ These systems come together to form a network connected and controlled water mon
 The inspiration for and motivation for this project came from a few places. A conversation with a Downer engineer and home builder brought the initial idea. Their main motivation behind wanting something like this was to have the ability to detect leaks in their various water systems, to minimise the damage they can cause. The motivation behind pursuing the idea came from my own thoughts on what I want from an IoT device in my home. In previous blog posts, I have introduced the idea of "Home as a System". The main themes in that idea are:
 
 - Many systems underpin our lives, but they can become distracting or require time investment to get the most out of them.
-    - One of my goals was to create a system that can give you maximum benefit with no interaction.
+  - One of my goals was to create a system that can give you maximum benefit with no interaction.
 - The information available to us can help us to make better choices.
-    - I wanted to design a system that keeps people up to date on their water consumption, so they can make more informed decisions about their usage.
+  - I wanted to design a system that keeps people up to date on their water consumption, so they can make more informed decisions about their usage.
 
 The existing water monitoring systems on the market are mostly targeted towards specific use cases such as farming and irrigation. My water monitor is targeted for home use and is designed to be integrated into people lives to keep them informed of their usage and prevent damage by detecting leaks.
 
@@ -44,7 +44,7 @@ The way my project explores the theme - (dis)connecting together - is through it
 
 These ideas were the basis for the two main design criteria I decided to adopt in my design process, they are the goals for the finished product. The other criteria are all implemented with those two in mind. Initially my design included a platform software package, that would allow users to connect different kinds of monitoring devices that all report back to a central service. A kind of hub for home analytics. Some remnants of that exist in the interface design but due to time constraints a less feature-rich software package will be presented in the demonstration. Another sacrifice that was made relates the the level of configurability. For demo purposes the configuration and control options are fairly limited. If work were to continue, a full device configuration system would be implemented, allowing users to control remote devices and use analytical results or time of day to trigger actions. I understand the risks involved in having a device connected to the internet, and as such I know that it is important to take necessary security precautions to ensure that the system can not be used without authorization. For demonstration purposes, no security has been implemented but it is certainly a design requirement to consider. Time constrains were the main obstacle in achieving my design goals, but the underlying idea remains the same and it works well as a proof of concept. I did not want to compromise on my main two design criteria, so my work prioritised these criteria as those were overarching design goals.
 
-The way it is meant to be used should require little interaction, it collects statistics about water usage and makes them available to view. Users should be able to completely ignore the system if they wish. In the case of leak detection an alert would be given, but otherwise no time or effort is needed to operate or get benefit from the device. It is very much a background process, a user can monitor it as much as the like or use it to gain insight on their water usage. I hope that it would, in parallel with similar devices that monitor other usage, prompt people to be more environmentally conscious, be able to reduce their bills or even stop their house from flooding due to a leak. Some may think of it as a safety precaution, some as a tool to track their usage and associated costs (monetary and environmental) or both. 
+The way it is meant to be used should require little interaction, it collects statistics about water usage and makes them available to view. Users should be able to completely ignore the system if they wish. In the case of leak detection an alert would be given, but otherwise no time or effort is needed to operate or get benefit from the device. It is very much a background process, a user can monitor it as much as the like or use it to gain insight on their water usage. I hope that it would, in parallel with similar devices that monitor other usage, prompt people to be more environmentally conscious, be able to reduce their bills or even stop their house from flooding due to a leak. Some may think of it as a safety precaution, some as a tool to track their usage and associated costs (monetary and environmental) or both.
 
 ### Implementation
 
@@ -54,7 +54,7 @@ The implementation of the water monitoring system has three distinct subsystems 
 
 #### Water loop
 
-The water loop is a linear network of tubes with a flow sensor and solenoid, and a pump to simulate water pressure. For the purposes of the demonstration, the system is a closed loop, such that the water "used" returns to the tank so no continuous water input is required. In a real-world installation, the pump would not be needed as the water pressure would normally already exist form upstream sources (mains water, taps, tanks with their own pumps etc.)  
+The water loop is a linear network of tubes with a flow sensor and solenoid, and a pump to simulate water pressure. For the purposes of the demonstration, the system is a closed loop, such that the water "used" returns to the tank so no continuous water input is required. In a real-world installation, the pump would not be needed as the water pressure would normally already exist form upstream sources (mains water, taps, tanks with their own pumps etc.)
 
 #### Electronics
 
@@ -62,7 +62,7 @@ The electronic components route power and data between the water loop components
 
 - Pump power supply: dedicated variable voltage DC power supply
 - Water flow sensor: the flow sensor is powered with 5V, but the Raspberry Pi handles inputs of 3V3, so a logic level switcher was used to convert 5V to 3V3 on the data input line.
-- Solenoid: the solenoid requires 12V to close, se a DC→DC step up module was used to convert the available 5V supply to 12V. Since the solenoid is controlled by the micro controller,  a relay is used as an electronic switch to supply 12V to the solenoid. The relay is triggered by 5V, but the Raspberry Pi outputs 3V3 on GPIO pins, so the same logic level converter was used to convert the logical signal up to 5V.
+- Solenoid: the solenoid requires 12V to close, se a DC→DC step up module was used to convert the available 5V supply to 12V. Since the solenoid is controlled by the micro controller, a relay is used as an electronic switch to supply 12V to the solenoid. The relay is triggered by 5V, but the Raspberry Pi outputs 3V3 on GPIO pins, so the same logic level converter was used to convert the logical signal up to 5V.
 
 #### Software
 

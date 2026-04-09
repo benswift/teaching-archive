@@ -21,7 +21,7 @@ sound with a function call in your program you do it by sending a "message" as a
 change in voltage (an electrical signal) on the GPIO pins. This is a **live
 wire**---it's your job to make sure these electrical signals are sent & received
 to successfully play the sound. To illustrate[^acdc], here's AC/DC live in Paris
-(1979) playing *Live Wire*:
+(1979) playing _Live Wire_:
 
 [^acdc]:
     this doesn't really illustrate anything to do with the assignment, but it
@@ -34,8 +34,8 @@ lot of flexibility for transmitting data (`0`s and `1`s) as low and high
 voltages. In those labs, the pins were connected to LEDs & joysticks, but you
 might have noticed there are also a bunch of little gold-coloured pins sticking
 up on your board connected to nothing in particular. Any of these which are
-marked **P**XY (where X is the *port number* from A to F and Y is the *pin
-number* from 0 to 15) are GPIO pins as well, and you can connect them up using
+marked **P**XY (where X is the _port number_ from A to F and Y is the _pin
+number_ from 0 to 15) are GPIO pins as well, and you can connect them up using
 jumper wires like so:
 
 ![Discoboard](./images/03-networked-instrument/discoboard-wires.jpg)
@@ -73,11 +73,11 @@ wrote in assignment 2](/deliverables/02-sequencer/),
 except that this time the "messages" to trigger a new note are sent over a wire.
 
 To communicate over a wire (a network) it's not enough to just connect two GPIO
-pins together with a jumper wire. You need a *protocol*: a way of interpreting
+pins together with a jumper wire. You need a _protocol_: a way of interpreting
 the signals on the wire so that the sender and the receiver can understand one
 another. There are lots of protocols you could use (we'll cover some in lectures
 in week 9, and you'll get to create your own in Part 2) but in Part 1 of this
-assignment you need to implement the *P2300 protocol*.
+assignment you need to implement the _P2300 protocol_.
 
 ### Wires {#wires}
 
@@ -86,8 +86,8 @@ way that a **sender** device can control the playback of a
 [sequence](/deliverables/02-sequencer/) of notes on
 a **receiver** device. P2300 is a simplex 2-wire protocol, which means:
 
-- the information flows in one direction: *from* the device acting as the sender
-  *to* the device acting as the receiver
+- the information flows in one direction: _from_ the device acting as the sender
+  _to_ the device acting as the receiver
 - it requires two physical connections between the sender & the receiver
 
 Here's a high-level diagram of the information flow:
@@ -98,17 +98,17 @@ The two lines[^line] (wires) used in P2300 are:
 
 - a **note on/off** line which the sender uses to tell the receiver to begin
   playing the sound at the current pitch (frequency); i.e. to turn the sequencer
-  *on* or *off*
+  _on_ or _off_
 
 - a **pitch change** line which the sender uses to tell the receiver to change
   the current pitch of the note being played
 
 :::info
-Don't get confused between the terms *pitch* and *frequency*, in the context of
+Don't get confused between the terms _pitch_ and _frequency_, in the context of
 the P2300 protocol they mean the same thing.
 :::
 
-[^line]: wires are often called *lines* when we're talking about networking
+[^line]: wires are often called _lines_ when we're talking about networking
 
 In principle the P2300 connections can be made on any pair of GPIO pins on your
 discoboard. However, so that we can test your program easily you **must** use
@@ -121,18 +121,17 @@ these specific pins:
 
 Here is the full list of P2300 "messages" the sender may send to the receiver:
 
-1. a *rising edge* on the **on/off line** tells the receiver to begin making a
+1. a _rising edge_ on the **on/off line** tells the receiver to begin making a
    sound (the pitch of which is determined by the current [pitch sequence
    index](#p2300-pitch-sequence))
 
-2. a *falling edge* on the **on/off line** tells the receiver to immediately
+2. a _falling edge_ on the **on/off line** tells the receiver to immediately
    stop making any sound at all (i.e. to go quiet)
 
-3. a *rising edge* on the **pitch change** line tells the receiver to increment
+3. a _rising edge_ on the **pitch change** line tells the receiver to increment
    the current [pitch sequence index](#p2300-pitch-sequence) by 1 (regardless of
    whether the receiver is currently playing sound or not)
-   
-4. a *falling edge* on the **pitch change** line has no effect
+4. a _falling edge_ on the **pitch change** line has no effect
 
 The sender device doesn't generate the waveform itself (that's kinda the
 point). It expects that there's a [receiver](#receiver) listening on the other
@@ -150,7 +149,7 @@ P2300 receiver device must:
 1. make no sound (as if the last **note on/off** message was an "off" message)
 2. initialise the starting [pitch sequence index](#p2300-pitch-sequence) to 0
    (i.e. the first element in the P2300 pitch sequence)
-     
+
 Finally, between messages[^instantaneous] the receiver must either:
 
 1. continue to play a sawtooth wave at the current pitch (if the last **note
@@ -167,7 +166,7 @@ Finally, between messages[^instantaneous] the receiver must either:
 In P2300 a pitch change message does not specify an actual pitch (either in Hz
 or as a MIDI note number). Instead, P2300 specifies that the receiver will play
 a pitch from a pre-arranged sequence of pitches. Each pitch change message
-increments the pitch sequence index by 1 (wrapping back to 0 when it is asked 
+increments the pitch sequence index by 1 (wrapping back to 0 when it is asked
 to increment from 7), so that the receiver will play the next pitch in the sequence.
 
 This means that P2300 is a stateful protocol; you can't look at any particular
@@ -178,22 +177,22 @@ Here is the P2300 pitch sequence (remember that on startup the pitch sequence
 index must be initialised to 0, i.e. the starting pitch is 220Hz):
 
 | pitch sequence index | pitch (Hz) |
-|---------------------:|------------|
-|                    0 |     220.00 |
-|                    1 |     246.94 |
-|                    2 |     261.63 |
-|                    3 |     293.66 |
-|                    4 |     329.63 |
-|                    5 |     369.99 |
-|                    6 |     392.00 |
-|                    7 |     440.00 |
+| -------------------: | ---------- |
+|                    0 | 220.00     |
+|                    1 | 246.94     |
+|                    2 | 261.63     |
+|                    3 | 293.66     |
+|                    4 | 329.63     |
+|                    5 | 369.99     |
+|                    6 | 392.00     |
+|                    7 | 440.00     |
 
 In Part 1 you cannot change the pitch sequence---e.g. by adding new entries to
 the end of the table. If you do this, you're changing the P2300 protocol, and
 **you will lose marks accordingly**.
 
 If the current pitch sequence index is the last pitch in the pitch sequence
-(i.e. if the pitch sequence index is 7) and a *rising edge* is triggered on the
+(i.e. if the pitch sequence index is 7) and a _rising edge_ is triggered on the
 **pitch change** line, then the receiver should set the current pitch back to
 the first entry in the table. In other words, the pitch sequence should loop
 back to the beginning.
@@ -225,11 +224,11 @@ boxes).
 There are a few other things worth noting here:
 
 - the required ["starting state"](#receiver) is satisfied
-- pitch changes only happen on a *rising edge*; it doesn't matter when the
-  subsequent *falling edge* happens
+- pitch changes only happen on a _rising edge_; it doesn't matter when the
+  subsequent _falling edge_ happens
 - between messages (i.e. when there are no voltage changes on either line) the
   receiver keeps on playing (or being silent)
-   
+
 ## Part 1 (50%) {#part-1}
 
 In this assignment, you need to program your discoboard to implement both the
@@ -239,16 +238,16 @@ confused about how this works, [see the FAQ](#sender-and-receiver).
 
 In Part 1 you need to write an assembly program which uses
 [P2300](#p2300-protocol) to play the following song (the pitch sequence
-indexes that are shown come from the [table above](#p2300-pitch-sequence)) and 
-indicate what the current value of the [pitch sequence index](#p2300-pitch-sequence) 
-should be. As in assignment 2 a gap (silence) between notes is represented by a `-` 
+indexes that are shown come from the [table above](#p2300-pitch-sequence)) and
+indicate what the current value of the [pitch sequence index](#p2300-pitch-sequence)
+should be. As in assignment 2 a gap (silence) between notes is represented by a `-`
 in the pitch and pitch sequence index columns. The song must loop: when it gets to the end, it must
 loop back to the beginning. You must stick to the P2300 protocol and pitch
 sequence [exactly as described above](#p2300-pitch-sequence)---you cannot modify
 the receiver's pitch sequence/table to play the sequence.
 
 | pitch sequence index | pitch (Hz) | duration (s) |
-|---------------------:|-----------:|-------------:|
+| -------------------: | ---------: | -----------: |
 |                    0 |     220.00 |         0.25 |
 |                    - |          - |         0.25 |
 |                    2 |     261.63 |         0.25 |
@@ -290,6 +289,7 @@ the receiver's pitch sequence/table to play the sequence.
 
 If all goes well, it should sound like this:
 <audio controls>
+
   <source src="/courses/comp2300/assets/deliverables/03-networked-instrument/ass3-tune.m4a" type="audio/mp4">
 If you're reading this, then your browser does not support the audio element 😢
 </audio>
@@ -302,7 +302,7 @@ Marks will be awarded for:
   above, even for a split second)
 - code structure, readability & modularity (including comments & use of
   functions)
-- to be eligible for full marks in part-1, you must use a hardware timer 
+- to be eligible for full marks in part-1, you must use a hardware timer
   to control the timing of the sender.
 
 For Part 1, you **must** play the sequence by sending messages over the wire
@@ -317,27 +317,27 @@ particular, have a look in `src/libcomp2300/tim7.S` for some helper functions fo
 the tim7 timer (for the [sender](#sender) part), `src/libcomp2300/wave.S` for
 some helper functions for playing the sawtooth wave (i.e. the
 [receiver](#receiver) part).  
-In addition to this there are *plenty* of useful macros and functions in the 
-`src/libcomp2300/macros.S` and `src/libcomp2300/utils.S` files respectively 
+In addition to this there are _plenty_ of useful macros and functions in the
+`src/libcomp2300/macros.S` and `src/libcomp2300/utils.S` files respectively
 (e.g. setting up gpio pins, interrupts, priorities etc.).  
 Please do take the time to check them out.
 :::
 
 :::tip
-There is a lot going on in this assignment, so it's understandable that this 
-may seem a little overwhelming. To accommodate for this, the [FAQ](#faq) for 
+There is a lot going on in this assignment, so it's understandable that this
+may seem a little overwhelming. To accommodate for this, the [FAQ](#faq) for
 this assignment is quite extensive, please do take the time to read it all.  
 However, for your convenience here is a few of the points we'd like to highlight:  
  ---understand that interrupts [may not work as expected when debugging](#debugging-and-interrupts)  
- ---following from the above, you **NEED** to be resetting your board (click in the 
-  black stick to the left of the joystick) before stepping through a debugging session  
- ---think about [how to traverse the table (up and down)](#how-to-decrement) 
-  without [changing the pitch table in memory](#can-i-change-the-pitch-sequence-for-part-1)  
- ---ensure that there is [no implicit (or explicit) communication between 
-  sender and receiver](#separation) outside of the protocol, (no shared 
-  register or memory usage).  
- ---utilize the [common interrupt pitfalls](#interrupts-lmao) to check off 
-  possible issues with your code 
+ ---following from the above, you **NEED** to be resetting your board (click in the
+black stick to the left of the joystick) before stepping through a debugging session  
+ ---think about [how to traverse the table (up and down)](#how-to-decrement)
+without [changing the pitch table in memory](#can-i-change-the-pitch-sequence-for-part-1)  
+ ---ensure that there is [no implicit (or explicit) communication between
+sender and receiver](#separation) outside of the protocol, (no shared
+register or memory usage).  
+ ---utilize the [common interrupt pitfalls](#interrupts-lmao) to check off
+possible issues with your code
 :::
 
 ## Part 2 (50%) {#part-2}
@@ -346,10 +346,10 @@ In part 2, you get to implement a different network protocol for controlling the
 music over the wire. There are a few ways to do this:
 
 - extend the P2300 protocol in a meaningful way
-- implement a serial protocol using the [shell outline below](#serial-shell) 
+- implement a serial protocol using the [shell outline below](#serial-shell)
 - design an all-new protocol
 - implement an existing protocol (e.g. an industry standard)
-- *some combination of the above* (e.g. modify P2300 using ideas from an
+- _some combination of the above_ (e.g. modify P2300 using ideas from an
   existing industry-standard protocol)
 
 You also no longer have to play the specific note sequence from [Part
@@ -367,7 +367,7 @@ superficial change anyway). If you're unsure, check with your tutor or ask on
 If your Part 2 protocol requires a different wiring configuration from [Part
 1](#wires) then you should make it **really clear** in both your code and your
 design document exactly how the jumper wires should be wired up. As mentioned
-above, you don't *have* to use a different wiring configuration. See the [FAQ
+above, you don't _have_ to use a different wiring configuration. See the [FAQ
 for more details](#part-2-wires).
 
 Here are some ideas for Part 2:
@@ -396,26 +396,26 @@ Here are some ideas for Part 2:
   another pre-existing protocol (some of these are pretty hard---but they're a
   great challenge if you want to stretch yourself)
 
-Marks for Part 2 will be awarded for a 
-[**design document**](/resources/05-writing-a-design-document/) 
+Marks for Part 2 will be awarded for a
+[**design document**](/resources/05-writing-a-design-document/)
 describing what you're doing and how you implemented it in ARM assembly language. This means
-that it's ok if you don't do something *super*-complex, the more important thing
+that it's ok if you don't do something _super_-complex, the more important thing
 is how you explain what you've done. (although it's worth reading the
-[FAQ](/resources/01-faq/#ambition) as well). 
-Using images/diagrams in this document to help explain what you've done is 
-encouraged*. Your design document must be in **pdf** format 
-([no more than 2 pages](#can-my-design-document-be-longer-than-two-pages)) 
+[FAQ](/resources/01-faq/#ambition) as well).
+Using images/diagrams in this document to help explain what you've done is
+encouraged\*. Your design document must be in **pdf** format
+([no more than 2 pages](#can-my-design-document-be-longer-than-two-pages))
 with the filename `design-document.pdf` in top-level folder on the `part-2` branch.
 
-The design document for Part 2 is based on the protocol *you* implement 
-(what it is, why is it like that, how is it implemented). 
-That means don't write about the sequence of notes you choose to play, 
+The design document for Part 2 is based on the protocol _you_ implement
+(what it is, why is it like that, how is it implemented).
+That means don't write about the sequence of notes you choose to play,
 or how frequency etc. is calculated.  
-For more help on writing the design document, 
+For more help on writing the design document,
 [check out this page](/resources/05-writing-a-design-document/).
 
-*Note: any diagrams you submit must be of sufficient quality for academic writing 
-i.e no photos of the screen or hand drawn diagrams, with high quality screenshots as 
+\*Note: any diagrams you submit must be of sufficient quality for academic writing
+i.e no photos of the screen or hand drawn diagrams, with high quality screenshots as
 the minimum acceptable standard.
 
 ## Submission {#submission-process}
@@ -426,14 +426,14 @@ Here's the process for working on & submitting your assignment:
 
 1. fork the [assignment 3 template repository]()
 
-2. clone[^own-fork] & work on *your* fork of the major project repo
+2. clone[^own-fork] & work on _your_ fork of the major project repo
 
 3. regularly commit & [push](#push-all-branches) your changes to the GitLab
    server
 
 4. the last commits on the `part-1` and `part-2` branches [on the GitLab
-   server](#is-it-pushed) (not on your local machine!) *before the submission
-   deadline* will count as your submission
+   server](#is-it-pushed) (not on your local machine!) _before the submission
+   deadline_ will count as your submission
 
 [^own-fork]:
     make sure you clone **your own fork** (i.e. the one with your uni ID in the
@@ -451,20 +451,21 @@ Here's the process for working on & submitting your assignment:
 
 3. my `statement-of-originality.yml` files for both Part 1 and Part 2 include
    [all the necessary references/acknowledgements](#statement-of-originality),
-   and *everything* not mentioned in there is my own work
+   and _everything_ not mentioned in there is my own work
 
-4. [both branches](/resources/01-faq/#push-all-branches) 
+4. [both branches](/resources/01-faq/#push-all-branches)
    of my completed project have been
-   [pushed](/resources/01-faq/#is-it-pushed) 
+   [pushed](/resources/01-faq/#is-it-pushed)
    to the GitLab server
 
-5. [both branches](/resources/01-faq/#push-all-branches) 
+5. [both branches](/resources/01-faq/#push-all-branches)
    pass the Gitlab CI test (the pipeline does not fail)
 
 ## Serial shell {#serial-shell}
-This section outlines a 3-wire, 1-way serial protocol shell to send messages of 
-arbitrary length. If you're stuck on coming up with an idea for a better protocol than P2300, 
-then this is a good starting point, but it's just a shell, so things like the length and 
+
+This section outlines a 3-wire, 1-way serial protocol shell to send messages of
+arbitrary length. If you're stuck on coming up with an idea for a better protocol than P2300,
+then this is a good starting point, but it's just a shell, so things like the length and
 content of the message is up to you! (You can also add / remove wires etc.)
 
 ![Serial](./images/03-networked-instrument/2017-p2300-high-level.png)
@@ -474,7 +475,7 @@ The three lines[^line] are:
 - a **control** line which the sender uses to tell the receiver that it's
   sending data (as opposed to just waiting between messages)
 
-- a **clock** line which the sender uses to tell the receiver *when* to read
+- a **clock** line which the sender uses to tell the receiver _when_ to read
   each incoming bit from the data line
 
 - a **data** line which is used to send the actual data one-bit-at-a-time as
@@ -482,8 +483,8 @@ The three lines[^line] are:
 
 ### Implementation {#serial-implementation}
 
-This is just one way to do it, rising edges / falling edges etc. are mostly interchangeable 
-as long as you're consistent and say why one may be used over the other (also consider what 
+This is just one way to do it, rising edges / falling edges etc. are mostly interchangeable
+as long as you're consistent and say why one may be used over the other (also consider what
 happens when a wire is disconnected etc.)
 
 #### Sender
@@ -497,8 +498,8 @@ The basic outline of sending a message follow this structure:
    - first write the bit to the data line
    - then pulse (toggle) the clock line to trigger a read on the receiver's end
 
-3. step 3 must be repeated until all n bits in the message have been sent, 
-   and then finally the sender should trigger a falling edge on the control line 
+3. step 3 must be repeated until all n bits in the message have been sent,
+   and then finally the sender should trigger a falling edge on the control line
    to indicate that it has finished sending data
 
 4. when ready to send another message start again from step 1
@@ -511,9 +512,9 @@ The basic outline of sending a message follow this structure:
 2. when a rising edge is detected on the control line, the receiver starts
    paying attention to the clock line:
    - each time the clock line is pulsed (i.e. either a rising or falling edge),
-     the receiver must read a single bit off the *data line* by reading the
+     the receiver must read a single bit off the _data line_ by reading the
      appropriate input data register `GPIOx_IDR`
-   - the receiver must *store* the bit somewhere for later processing, and also
+   - the receiver must _store_ the bit somewhere for later processing, and also
      increment the count of how many bits have been received in this message
 
 3. step 2 must be repeated while the control line remains high
@@ -536,7 +537,7 @@ Here's an example of what a 32 bit message transmission using this will look lik
 
 ### Why isn't it working? the (non) comprehensive checklist {#interrupts-lmao}
 
-So you're program isn't working, perhaps you're ending up in the infinite 
+So you're program isn't working, perhaps you're ending up in the infinite
 loop handler, perhaps not. Here is a list of common pitfalls for you to check against:
 
 1. have you enabled the SYSCFG clock?
@@ -548,33 +549,34 @@ loop handler, perhaps not. Here is a list of common pitfalls for you to check ag
 7. have you written the interrupt handler function?
 8. is said handler function correctly declared?
 9. is said handler function globally visible?
-10. does said handler function name / label match **exactly** the characters and case 
-   of the corresponding vector table entry in the `startup` file?
+10. does said handler function name / label match **exactly** the characters and case
+    of the corresponding vector table entry in the `startup` file?
 11. does your interrupt handler function clear it's pending register before it
-   exits? (the `EXTI_PR_clear_pending` macro will probably help you out here)
-12. if interacting with wires / memory, are you using `bl sync` afterwards to allow 
-   some time for the operations to persist?
-13. if interacting between interrupts, then have you set priorities correctly? 
-   (`NVIC_IPR_set_priority` in the utils.S file will help you here)
+    exits? (the `EXTI_PR_clear_pending` macro will probably help you out here)
+12. if interacting with wires / memory, are you using `bl sync` afterwards to allow
+    some time for the operations to persist?
+13. if interacting between interrupts, then have you set priorities correctly?
+    (`NVIC_IPR_set_priority` in the utils.S file will help you here)
 
 ### Timers
 
 #### Which timer should I use?
 
-The helper code in `src/libcomp2300/tim7.S` provides template code for Timer 7. 
-You can also use the SysTick timer ([with a caveat](#using-systick)). Ultimately, it's up to you 
+The helper code in `src/libcomp2300/tim7.S` provides template code for Timer 7.
+You can also use the SysTick timer ([with a caveat](#using-systick)). Ultimately, it's up to you
 which one you use (or neither---you could structure your sender some other way).
 
 #### How to use the SysTick timer {#using-systick}
 
-If you want to use the SysTick timer then make sure you understand the 
+If you want to use the SysTick timer then make sure you understand the
 [point below](#systick-config) and agree to the following disclaimer before continuing.
 
-If you choose to use the SysTick interrupt and cause issues in the audio playback, then 
-you will lose marks as a result, so make sure whatever code you are running in the 
+If you choose to use the SysTick interrupt and cause issues in the audio playback, then
+you will lose marks as a result, so make sure whatever code you are running in the
 interrupt is not staying in there for long.
 
 To use SysTick, add the following code somewhere in your `src/main.S` file:
+
 ```ARM
 .global SysTick_Handler
 .type SysTick_Handler, %function
@@ -601,7 +603,7 @@ You **cannot** change the SysTick interrupt rate (every 1ms) because the audio
 playing code relies on that. So you shouldn't touch `SYST_RVR` or `SYST_CSR` or
 do the configuration stuff you did in [lab 8](/labs/08-input-through-interrupts/#exercise-1).
 
-You *can* put your own code in the `SysTick_Handler` function (at the place
+You _can_ put your own code in the `SysTick_Handler` function (at the place
 indicated by the "Your interrupt handler code goes here" comment) although the
 usual caveats apply (don't take too long in your handler function, etc.).
 
@@ -615,12 +617,12 @@ thing you can try is doing a hard reset (using the black cylindrical
 reset button on the discoboard) if things aren't quite working
 correctly---this can sometimes help.
 
-If that still doesn't work, using breakpoints (the red dots in the 
-left hand side of the IDE) can really help when debugging, use the 'continue' 
-button to run the code, and then wait for the code to reach the break 
+If that still doesn't work, using breakpoints (the red dots in the
+left hand side of the IDE) can really help when debugging, use the 'continue'
+button to run the code, and then wait for the code to reach the break
 points, you can then step through or continue as needed.
 
-#### I'm totally lost---where do I even *start*?
+#### I'm totally lost---where do I even _start_?
 
 Take a deep breath, it's going to be ok. The first thing you should do is **read
 this page carefully**. Then read it again. I've put heaps of detail in here to
@@ -648,35 +650,35 @@ properly](#is-it-working).
 
 #### I'm able to increment through the sequence, but how can I send the "decrement pitch index" messages? {#how-to-decrement}
 
-The pitch change message can only tell the receiver to *increment* (i.e. add 1)
-to the current pitch sequence index---it can't tell it to *decrement* the index
+The pitch change message can only tell the receiver to _increment_ (i.e. add 1)
+to the current pitch sequence index---it can't tell it to _decrement_ the index
 (i.e. subtract 1).
 
 However, you can still play the sequence using only the P2300 protocol. You just
 might have to send more than one message to get the receiver into the desired
 state.
 
-#### How can I be *sure* it's working? {#is-it-working}
+#### How can I be _sure_ it's working? {#is-it-working}
 
 Here's a simple test to convince yourself that you've implemented P2300
 correctly (we will do this when we test your program):
 
-First, upload the program using the 'upload' command (not running under debug), 
+First, upload the program using the 'upload' command (not running under debug),
 then click the black reset button (to the left of the blue joystick), then:
 
 - it successfully plays the [required sequence](#part-1) on a loop when all the
   jumper wires are [connected properly](#wires)
 
-- if you disconnect the **note on/off** line then the program will *either*
-  remain silent forever *or* make sound forever (while still responding to any
+- if you disconnect the **note on/off** line then the program will _either_
+  remain silent forever _or_ make sound forever (while still responding to any
   pitch change messages)
 
 - if you disconnect the **pitch change** line, the program will "beep" the
   current pitch as determined by the incoming messages on the **note on/off**
   line, but never change pitches
 
-- if you disconnect **both** lines, the program will *either* remain silent
-  forever *or* play the current pitch forever 
+- if you disconnect **both** lines, the program will _either_ remain silent
+  forever _or_ play the current pitch forever
 
 #### If I disconnect the **pitch change** line and re-connect it, won't the sequence be out of whack? {#pitch-change-line-disconnect-reconnect}
 
@@ -696,7 +698,7 @@ Yes! Here's an example:
    there's no way in P2300 for the sender to tell the receiver to "reset" the
    sequence
 
-5. as a result, the *relative* pitch steps in the sequence being played will be
+5. as a result, the _relative_ pitch steps in the sequence being played will be
    the same ([lock step up, then 7 down](#how-to-decrement)) but the
    starting point may be off (and this may cause the sequence to wrap around the
    top or bottom of the table)
@@ -707,7 +709,7 @@ I'm sure you can think of lots of ways to make things better in [Part
 
 #### I'm pretty sure that I've implemented the protocol correctly---why isn't it working? {#how-to-do-the-thing}
 
-This assignment is a bit trickier than the first two (it *is* assignment 3,
+This assignment is a bit trickier than the first two (it _is_ assignment 3,
 after all) because your program needs to have few different parts:
 
 1. a main loop which plays the sawtooth wave (as in previous assignments, you
@@ -720,7 +722,7 @@ after all) because your program needs to have few different parts:
    messages and change the sound (the sawtooth wave) accordingly
 
 How you implement these parts is up to you, but you'll probably want to make use
-of interrupts for the *receiver* stuff (e.g. listening for rising/falling edges
+of interrupts for the _receiver_ stuff (e.g. listening for rising/falling edges
 on the note on/off and pitch change lines). This doesn't mean that your
 interrupt handlers should be big functions, in fact if they are doing lots of
 things (including delaying/waiting for extended periods) then that's probably a
@@ -728,7 +730,7 @@ bad sign. Think about how you could re-factor your program so that the interrupt
 handlers just modify some memory or other state and then return to the main
 loop.
 
-You can also implement the *sender* part however you like, but we recommend that 
+You can also implement the _sender_ part however you like, but we recommend that
 you use the [timer interrupts](#timers) (e.g. tim7) to do this.
 
 #### Can I change the pitch sequence for Part 1? {#can-i-change-the-pitch-sequence-for-part-1}
@@ -736,11 +738,11 @@ you use the [timer interrupts](#timers) (e.g. tim7) to do this.
 No, because then it's not the P2300 protocol anymore---[see
 above](#p2300-pitch-sequence).
 
-#### Why do we have to implement both the sender *and* receiver? {#sender-and-receiver}
+#### Why do we have to implement both the sender _and_ receiver? {#sender-and-receiver}
 
-P2300 is a means by which two *different* devices can communicate over a pair of
+P2300 is a means by which two _different_ devices can communicate over a pair of
 wires to play music. The fact that your program for Part 1 needs to implement
-*both* of these parts doesn't mean that it's not a two-device protocol, it just
+_both_ of these parts doesn't mean that it's not a two-device protocol, it just
 means that in this specific instance the one discoboard is playing both roles.
 
 There are a few reasons for this:
@@ -782,7 +784,7 @@ separation:
    (assuming the receiver correctly interpreted the voltage changes on the note
    on/off and pitch change lines)?
 
-The sender & receiver can only *communicate* with each other over the wires.
+The sender & receiver can only _communicate_ with each other over the wires.
 There are no specific restrictions about which interrupts, etc. they can each
 use---it's just up to you to make sure that all the different parts don't
 interfere with each other (or the audio driver).
@@ -807,7 +809,7 @@ You can't write your program with another student---[the usual rules about
 collaboration](https://cs.anu.edu.au/courses/comp2300/01-assessment/#academic-integrity)
 apply to this assignment as well.
 
-However, you can *test* your program with others---in fact, this is a really
+However, you can _test_ your program with others---in fact, this is a really
 good way to make sure you're actually implementing the protocol properly.
 
 This means that you'll connect one end of each jumper wire to your board, and
@@ -846,12 +848,12 @@ simultaneously.
 
 When you wrote the program for Part 1, were there any bits of the protocol which
 you thought were dumb, or that you thought could have been done differently, or
-were there things you *wanted* to do but the protocol didn't allow you to? All
+were there things you _wanted_ to do but the protocol didn't allow you to? All
 those things might be useful inspiration for how to design your own protocol in
 Part 2.
 
 As always, the most important thing for Part 2 is that you explain in your
-design document what you did and *why*.
+design document what you did and _why_.
 
 #### What counts as a network protocol for Part 2? {#what-counts-as-a-network-protocol-for-part-2}
 
@@ -915,7 +917,7 @@ If you want to add a fourth (or fifth, etc.) wire, you can either:
 
 #### Can I use the FPU (or some other peripheral on the discoboard we haven't covered in class)?
 
-Your program can use *any* part of the discoboard---as long as it implements the
+Your program can use _any_ part of the discoboard---as long as it implements the
 network protocol you describe in your design document. However, if you decide to
 use any features we haven't yet covered (or don't cover at all) in the course
 (e.g. the floating-point unit, the timers, the accelerometer, etc.) then you're
@@ -930,9 +932,9 @@ For this assignment, there are a couple of other things to mention here:
 - your code must include clear instructions on how to set it up to test it
   (including how to show that it's not just calling functions in the receiver
   code to play the song)
-- you'll still be marked on what *you* did (and how you write it up in your DD)
+- you'll still be marked on what _you_ did (and how you write it up in your DD)
   rather than what the board does for you
 
-If you're up for a challenge then doing that can be a *great* learning
+If you're up for a challenge then doing that can be a _great_ learning
 experience, but you need to know what you're getting yourself in for---and you
 need to give yourself plenty of time (in case things don't work out as planned).

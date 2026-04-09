@@ -35,24 +35,24 @@ If you have any questions, [email Matthew](mailto:matthew.phillipps@anu.edu.au).
 
 </div>
 
-**Please note the *venue* for our *Exhibition of Works 2024* has *changed* from the original venue.**
+**Please note the _venue_ for our _Exhibition of Works 2024_ has _changed_ from the original venue.**
 
 It will now be in the Innovation Space of the Birch Building.
 
 ## Schedule of Classes
 
-Classes continue! 
+Classes continue!
 
-* Wednesday 4 December HN 1.23 (this week)
-* Wednesday 11 December Innovation Space (exhibition)
+- Wednesday 4 December HN 1.23 (this week)
+- Wednesday 11 December Innovation Space (exhibition)
 
 ## What will the Exhibition Look Like?
 
 We will have an "entry page" with each student listed with a link to their final project. There will also be a link to your portfolio PDF.
 
-* [Year 11 Projects 2023](https://comp.anu.edu.au/courses/extn1019/showcase-yr11-2023/)
-* [Year 12 Projects 2023](https://comp.anu.edu.au/courses/extn1019/showcase-yr12-2023/)
-* [Year 12 Projects 2024](https://comp.anu.edu.au/courses/extn1019/showcase-yr12/)
+- [Year 11 Projects 2023](https://comp.anu.edu.au/courses/extn1019/showcase-yr11-2023/)
+- [Year 12 Projects 2023](https://comp.anu.edu.au/courses/extn1019/showcase-yr12-2023/)
+- [Year 12 Projects 2024](https://comp.anu.edu.au/courses/extn1019/showcase-yr12/)
 
 ## What do I need to do to prepare?
 
@@ -60,21 +60,22 @@ To prepare for the exhibition you need to check a few things.
 
 ### Work Title
 
-Your work should have a name - check that your work has a name. 
+Your work should have a name - check that your work has a name.
 
-Your name should be on display - although subtly.  The place that this should be displayed is in the `index.html` file.
+Your name should be on display - although subtly. The place that this should be displayed is in the `index.html` file.
 
 Check `index.html`. You will see the following code at the top of `index.html`:
 
-````html
+```html
 <!DOCTYPE html>
 <html lang="">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Work Title :: Other Minds</title>
-```` 
+  </head>
+</html>
+```
 
 You should edit the words `My Work Title` to reflect the actual title of your work.
 
@@ -86,15 +87,16 @@ This is important, as this is where the thumbnail image will link to your projec
 
 ### Check for bugs / errors / improvements
 
-If there are issues with your code, your instructor will have let you know through the feedback for your Final Project. Please check feedback and address any issues. You may wish to incorporate changes to improve the look, feel, interactivity: but it is most important that your code works.  If you do make any changes - please stage, commit and push your code, and check that it is working as expected on the extn1019.cecs.anu.edu.au site.
+If there are issues with your code, your instructor will have let you know through the feedback for your Final Project. Please check feedback and address any issues. You may wish to incorporate changes to improve the look, feel, interactivity: but it is most important that your code works. If you do make any changes - please stage, commit and push your code, and check that it is working as expected on the extn1019.cecs.anu.edu.au site.
 
 Your computer may be more forgiving than the ANU web server. File names must match case (this is especially an issue with images, fonts and sounds which are loaded into your projects). AND **PLEASE** never have space characters in file names.
 
 ### Portfolios
 
-For Year 11 you are expected to have a single `portfolio\fp-portfolio.pdf` file. 
+For Year 11 you are expected to have a single `portfolio\fp-portfolio.pdf` file.
 
 This should include:
+
 1. Your Project Title
 2. Your Name
 3. An **Artist Statement**
@@ -104,22 +106,23 @@ This should include:
 
 Please consolidate your content into a single file.
 
-Please ensure you have all of the elements listed above, preferably in this order.  
+Please ensure you have all of the elements listed above, preferably in this order.
 
-The requirement for instructions is a change from what was requested for submission &mdash; it is expected that everyone will need to edit their PDFs. 
+The requirement for instructions is a change from what was requested for submission &mdash; it is expected that everyone will need to edit their PDFs.
 
 You must use path and filename `portfolio/fp-portfolio.pdf`.
 
-#### Presentation Matters 
+#### Presentation Matters
+
 Please present your portfolios creatively using appropriate backgrounds, fonts, images and layout. The screens are oriented in a landscape orientation for the exhibition, so you may wish to consider your page layout accordingly.
 
 Use a spell and grammar checker to ensure a professional presentation. VSCode has language checking extensions - I use [LTex Grammar Tool](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex).
 
 ### Thumbnail Images
 
-The exhibition web page will use thumbnail images for the hyperlink to your working code artefact.  If you would like to choose a thumbnail image - please either send it to me via email, or add a file `"assets\thumbnail.png"` to your project which is **300 pixels wide** by **240 pixels tall**.
+The exhibition web page will use thumbnail images for the hyperlink to your working code artefact. If you would like to choose a thumbnail image - please either send it to me via email, or add a file `"assets\thumbnail.png"` to your project which is **300 pixels wide** by **240 pixels tall**.
 
-If you do not choose a thumbnail before Friday 6 December, then your instructor will choose a thumbnail. 
+If you do not choose a thumbnail before Friday 6 December, then your instructor will choose a thumbnail.
 
 The thumbnail must be an image taken from your work (a screenshot), but it does not have to be the full screen &mdash; you can focus in on an area or element.
 
@@ -127,7 +130,7 @@ The thumbnail must be an image taken from your work (a screenshot), but it does 
 
 You may wish to fork and clone the Lab 27 template, or - if you would like to see Matthew's code, fork and clone the solution.
 
-**do:** `Fork` the [Lab 27 Template Solution]() and `clone` onto your computer.  
+**do:** `Fork` the [Lab 27 Template Solution]() and `clone` onto your computer.
 
 Once you have your template forked, you can test it locally using the live server. Once tested, `stage` the changed files, `commit` your changes, and `push` to gitlab.
 
@@ -137,7 +140,7 @@ Change u9999999 to your UniID!
 
 ### Effects
 
-You may wish to try rendering smoke, fire, fountains, fireworks, rain, bubbles, or something fun and unusual.  Investigate examples and see what you may need to generate something amazing. Play around with the code. Experiment.
+You may wish to try rendering smoke, fire, fountains, fireworks, rain, bubbles, or something fun and unusual. Investigate examples and see what you may need to generate something amazing. Play around with the code. Experiment.
 
 ## Getting Started with 3D
 
@@ -152,4 +155,3 @@ You are encouraged to build your familiarity with the concepts, through experime
 You can also follow the [3D chapter in Coding Train](https://codingtrain.github.io/website-archive/Tutorials/18-webgl/).
 
 Or you may wish to explore other concepts of algorithmic beauty through Daniel Shiffman's book ["The Nature of Code"](https://natureofcode.com/introduction/) &mdash; which is associated with content in [Coding Train](https://thecodingtrain.com/).
-

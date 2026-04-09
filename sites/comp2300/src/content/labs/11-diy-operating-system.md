@@ -23,14 +23,14 @@ In this week's lab you will:
 1. explore (and exploit) the way the NVIC saves & restores register values when
    an interrupt handler is executed
 
-2. construct the stack for a new *process*, then (manually) switch the stack
+2. construct the stack for a new _process_, then (manually) switch the stack
    pointer and watch the discoboard execute that process
 
 3. use multiple stacks to create your own multi-tasking operating system!
 
 ## Introduction
 
-Today you'll write your own operating system---you can call it *yournameOS*
+Today you'll write your own operating system---you can call it _yournameOS_
 (feel free to insert your own name in there). At the beginning of this course
 the possibility of writing your own OS may have seemed pretty far away, but
 you've now got all the tools to write a (basic) multitasking OS. This lab brings
@@ -38,7 +38,7 @@ together all the things you've learned in this course, especially if you have a
 crack at some of the extension challenges in [Exercise 4](#exercise-4).
 
 :::tip
-Discuss with your lab neighbour: how is it that your computer can do *heaps* of
+Discuss with your lab neighbour: how is it that your computer can do _heaps_ of
 things at once (check emails, have multiple programs and browser tabs open,
 check for OS updates, idle on Steam, etc.)? Is there just a giant `main` loop
 which does all those things one-at-a-time? Or is there some other way to achieve
@@ -47,7 +47,7 @@ this?
 
 The basic idea of today's lab is this: instead of just using the default stack
 (i.e. leaving the stack pointer `sp` pointing where it did at startup) you'll
-set up and use *multiple* different stacks. As you'll see, a stack is all you
+set up and use _multiple_ different stacks. As you'll see, a stack is all you
 need to preserve the **context** for a [process](/_lectures/11-operating-systems/#process-definition)---an independent
 sequence of execution---and switching between processes is as simple as changing
 the stack pointer `sp` to point to a different process's stack. The interrupt
@@ -61,18 +61,18 @@ template]() and let's get started.
 ## Exercise 1: anatomy of an interrupt handler stack frame {#exercise-1}
 
 In the first exercise it's time to have a close look at how the current
-*execution context* is preserved on the stack when an interrupt is triggered.
+_execution context_ is preserved on the stack when an interrupt is triggered.
 
 Using a simple `delay` loop and the the usual helper functions in `led.S`,
 modify your program so that after `main` it enters an infinite `redblink` loop
-which blinks the red LED on and off at a frequency of *about* 1Hz. The exact
+which blinks the red LED on and off at a frequency of _about_ 1Hz. The exact
 numbers aren't important in this exercise, so pick some timing values which seem
 about right to you.
 
 When the `redblink` loop is running, pause the execution using the debugger and
 have a look at the various register values---`lr`, `pc`, `sp` `r0`-`r3`---you
 should be starting to get a feel for the numbers you'll see in each one. These
-values make up the execution *context*---the "world" that the CPU sees when your
+values make up the execution _context_---the "world" that the CPU sees when your
 program (i.e. your `redblink` loop) is running.
 
 Then, enable and configure the SysTick timer to trigger an interrupt every
@@ -86,26 +86,25 @@ Once that's working, you should be able to set and trigger a breakpoint in the
 "do-nothing" `SysTick_Handler` at the bottom of `main.s`[^lab-9-refresher]. When
 this breakpoint is triggered, use the [memory view](/labs/02-first-machine-code/#reverse-engineering) to poke around on the
 stack---remember that `sp` points to the "top" of the stack, and the rest of the
-stack is at higher memory addresses than `sp` (which will appear *below* the
+stack is at higher memory addresses than `sp` (which will appear _below_ the
 `sp` memory cell on the screen in the Memory Browser because the addresses are
 ordered from lower addresses at the top to higher addresses at the bottom). Can
 you see any values which look similar to the values you saw when you were
 looking around the execution context earlier?
 
-[^lab-9-refresher]:
-    If you need a refresher on this stuff, [lab 9](/labs/08-input-through-interrupts/) is probably a good place to go.
+[^lab-9-refresher]: If you need a refresher on this stuff, [lab 9](/labs/08-input-through-interrupts/) is probably a good place to go.
 
 Here's what's happening: when the SysTick interrupt is triggered, as well as
 switching the currently-executing instruction to the `SysTick_Handler` function,
 the NVIC also saves the context state onto the stack[^gory-details], so that the
-stack before & after the interrupt looks *something* like this (obviously the
+stack before & after the interrupt looks _something_ like this (obviously the
 actual values in memory will be different, but it's the position of each value
 on the stack that's the important part):
 
 ![Stack](./images/lab-11/exeption-stack.png)
 
 [^gory-details]:
-    *Section B1.5.6: Exception entry behavior* on p587 of
+    _Section B1.5.6: Exception entry behavior_ on p587 of
     the
     [ARM reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)
 
@@ -137,11 +136,11 @@ need to do for Exercise 1, it's just laying the groundwork for what's to come.
 :::
 
 [^exc-return]:
-    The full set of *exception return* values recognised by the discoboard are
-    shown in *Table B1-9* on p596 of
+    The full set of _exception return_ values recognised by the discoboard are
+    shown in _Table B1-9_ on p596 of
     the
     [ARM reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf),
-    but for the moment the one you'll need is *thread mode, main stack pointer*
+    but for the moment the one you'll need is _thread mode, main stack pointer_
     which corresponds to the value `0xFFFFFFF9`.
 
 ## Exercise 2: a handcrafted context switch {#exercise-2}
@@ -151,7 +150,7 @@ Using a carefully-prepared stack, is it possible to call your `redblink` loop
 function without calling it directly using a `bl` instruction?
 :::
 
-The answer is *yes*, and that's what you're going to do in Exercise 2. Disable
+The answer is _yes_, and that's what you're going to do in Exercise 2. Disable
 (or just don't enable) your SysTick interrupt---you won't be needing it in this
 exercise.
 
@@ -195,7 +194,6 @@ To create stack frame, write a `create_process` function which:
 
 3. writes the correct values on the stack (see the picture above) to represent a
    running `redblink` loop
-
    - the status register (you can use the default value of `0x01000000`) goes at
      an offset of `28` from your new stack pointer
 
@@ -212,7 +210,7 @@ To create stack frame, write a `create_process` function which:
      does it not matter for how your `redblink` loop runs?)
 
 Once you've created the stack for your new process, write a `switch_context`
-function to actually *make* the switch. This function takes one argument (the
+function to actually _make_ the switch. This function takes one argument (the
 new stack pointer) and does the opposite of step 3 above, loading the "context"
 variables from the stack and putting them back into registers:
 
@@ -258,7 +256,7 @@ preserve the state of those registers?
 ## Exercise 3: writing a scheduler {#exercise-3}
 
 :::tip
-What's the *minimum* amount of data (of any type) that you need to store to keep
+What's the _minimum_ amount of data (of any type) that you need to store to keep
 track of a process?
 :::
 
@@ -267,7 +265,7 @@ multitasking OS, all you need is a scheduler function which runs regularly (in
 the `SysTick_Handler`) and makes the context switch as appropriate.
 
 In this exercise you'll put these pieces together to create version 1 of
-*yournameOS*. *yournameOS* is pretty basic as far as OSes go, it only supports
+_yournameOS_. _yournameOS_ is pretty basic as far as OSes go, it only supports
 two concurrent processes (for v1, at least). One of them blinks a red light, and
 the other one blinks a green one (but with a different blink period---time
 between blinks).
@@ -278,7 +276,7 @@ currently executing. You can the whole process table in the data section like
 this (note from the difference between the stack pointer values that the OS has
 a maximum stack size of about 4kB):
 
-``` ARM
+```ARM
 .data
 process_table:
 .word 0 @ index of currently-operating process
@@ -301,22 +299,22 @@ functionality you'll need:
 2. a `SysTick_Handler` (make sure you re-enable the SysTick interrupt) which
    will
 
-  - read the first entry in the process table to find out which process is
-    currently executing
+- read the first entry in the process table to find out which process is
+  currently executing
 
-  - pick the *other* process and swap *that* stack pointer into the `sp`
-    register (but don't change the `pc` yet!)
+- pick the _other_ process and swap _that_ stack pointer into the `sp`
+  register (but don't change the `pc` yet!)
 
-  - update the `process_table` so that it shows the new process as executing
+- update the `process_table` so that it shows the new process as executing
 
-  - trigger an interrupt return to get things moving again (make sure the
-    handler function still exits with a `bx` to the special value `0xFFFFFFF9`)
+- trigger an interrupt return to get things moving again (make sure the
+  handler function still exits with a `bx` to the special value `0xFFFFFFF9`)
 
 If you get stuck, remember to step through the program carefully to find out
 exactly what's going wrong.
 
 :::info
-Write *yournameOS* version 1, including both a `redblink` and `greenblink`
+Write _yournameOS_ version 1, including both a `redblink` and `greenblink`
 processes which execute concurrently, and push it up to GitLab.
 :::
 
@@ -326,7 +324,7 @@ processes which execute concurrently, and push it up to GitLab.
 
 <div id="yourname-OS-v2" class="extension-box" markdown="1" style="margin-bottom: 20px;">
 
-Once you've got your multi-process *yournameOS* up and running, there are
+Once you've got your multi-process _yournameOS_ up and running, there are
 several things you can try to add some polish for version 2. This exercise
 provides a few ideas---some of these are fairly simple additions to what you've
 got already, while others are quite advanced. Ask your tutor for help, read
@@ -334,35 +332,35 @@ got already, while others are quite advanced. Ask your tutor for help, read
 [manuals](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf),
 and try to stretch yourself!
 
-1. modify the scheduler to also save & restore the *other* registers
+1. modify the scheduler to also save & restore the _other_ registers
    (`r4`-`r11`) on a context switch (as mentioned [earlier](#what-about-r4-r11))
-   so that the processes are fully independent (currently, *yournameOS* v1
+   so that the processes are fully independent (currently, _yournameOS_ v1
    doesn't preserve those registers, so if your processes are using them then
    the context switch will stuff things up)
 
 2. add support for an arbitrary number of processes (not just two)
 
-3. add the ability for processes to *sleep*---to manually signal to the OS that
+3. add the ability for processes to _sleep_---to manually signal to the OS that
    they're ready to be switched out
 
-4. add the ability for processes to *finish*---to call their return address (in
+4. add the ability for processes to _finish_---to call their return address (in
    `lr`) and exit
 
-5. add process *priorities*, and a more complex scheduler which takes these
+5. add process _priorities_, and a more complex scheduler which takes these
    priorities into account
 
 6. add the ability to press the joystick and manually trigger a context switch,
-   but be careful---what happens if another interrupts occurs *while* the
+   but be careful---what happens if another interrupts occurs _while_ the
    scheduler function is executing?
 
 7. **advanced**: use the synchronization instructions `ldrex` and `strex` to add
-   a critical section so that each process can *share* a resource (e.g. a memory
+   a critical section so that each process can _share_ a resource (e.g. a memory
    location) without stepping on each other's toes (for reference, look at
    the [Asynchronism](/lectures/02-contents/#Chapter_6) lecture
    slides & recordings)
 
-8. **advanced**: use thread privileges & the Memory Protection Unit (*Section
-   B3.5* in
+8. **advanced**: use thread privileges & the Memory Protection Unit (_Section
+   B3.5_ in
    the
    [ARM reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf))
    to ensure that each process can only read & write to its own (independent)
@@ -393,7 +391,7 @@ In this week's lab you learned how to
 1. explore (and exploit) the way the NVIC preserves register values when an
    interrupt handler is executed
 
-2. construct the stack for a new *process*, then (manually) switch the stack
+2. construct the stack for a new _process_, then (manually) switch the stack
    pointer and watch the discoboard execute that process
 
 3. use multiple stacks to create your own multi-tasking operating system!
@@ -403,14 +401,14 @@ yourself---I bet you didn't think you'd be capable of writing an OS when you
 started the course in March. This lab material will remain online through the
 exam period (and beyond) in case you want to go back over and re-do things,
 perhaps doing some of the extension boxes you skipped over first time around,
-and perhaps even making up your *own* extension exercises to stretch yourself.
+and perhaps even making up your _own_ extension exercises to stretch yourself.
 If you come up with a cool idea for a new extension task, let me know on
 [the COMP2300 forum]({site.forum_url}) and I can incorporate it into the course material.
 
 :::info
 If you didn't get to the end of this lab material during the week 11 lab
 session, then don't panic---you'll have week 12 as well. You could use the week
-12 lab session to finish off *yournameOS*, go over the content from previous
+12 lab session to finish off _yournameOS_, go over the content from previous
 labs to brush up on any concepts you're still not 100% sure about, or explore a
 few "going further" suggestions for more advanced things you can do with your
 discoboard.

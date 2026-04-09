@@ -7,7 +7,12 @@ import { astromotion, deckPreprocessor } from "astromotion";
 export default defineConfig({
   site: "https://teaching.benswift.me",
   base: "/comp2710-lens/",
-  integrations: [svelte({ extensions: [".svelte"], preprocess: [deckPreprocessor()] }), anuTheme({ checkLinks: false, checkA11y: false }), astromotion({ theme: "./src/decks/theme.css" }), sitemap()],
+  integrations: [
+    svelte({ extensions: [".svelte"], preprocess: [deckPreprocessor()] }),
+    anuTheme({ checkLinks: false, checkA11y: false }),
+    astromotion({ theme: "./src/decks/theme.css" }),
+    sitemap(),
+  ],
   fonts: [
     {
       name: "Public Sans",

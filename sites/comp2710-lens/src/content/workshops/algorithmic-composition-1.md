@@ -103,7 +103,6 @@ direction.
 
 A few more places to get ideas for algorithmic composition:
 
-
 - [Brief History of Algorithmic Composition (John A. Maurer)](https://ccrma.stanford.edu/~blackrse/algorithm.html)
 
 - [Getting Starting with Algorithmic Composition: Donya Quick](http://donyaquick.com/algorithmic-composing-advice/)

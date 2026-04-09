@@ -24,9 +24,7 @@ export default function lab2(p: p5) {
 
     for (let i = 0; i < elements.length; i++) {
       elements[i].pos.add(elements[i].dir);
-      elements[i].dir.add(
-        p.createVector(p.random(-1, 1) * 0.1, p.random(-1, 1) * 0.1),
-      );
+      elements[i].dir.add(p.createVector(p.random(-1, 1) * 0.1, p.random(-1, 1) * 0.1));
 
       if (p.createVector(0, 0).dist(elements[i].pos) > 300) {
         elements[i].pos = p.createVector(0, 0);
@@ -41,12 +39,7 @@ export default function lab2(p: p5) {
               elements[i].pos.dist(elements[j].pos) / 40,
             ),
           );
-          p.line(
-            elements[i].pos.x,
-            elements[i].pos.y,
-            elements[j].pos.x,
-            elements[j].pos.y,
-          );
+          p.line(elements[i].pos.x, elements[i].pos.y, elements[j].pos.x, elements[j].pos.y);
         }
       }
     }

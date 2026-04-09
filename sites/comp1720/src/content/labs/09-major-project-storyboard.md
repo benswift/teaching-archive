@@ -17,7 +17,7 @@ This doesn't mean that your major project has to be completely planned out today
 
 :::warning
 This weeks task 0 is an important one, you should do this in your own time before the lab so that you have something to show for the rest.
-If you're reading this at the start of your week 9 lab and don't have anything to show (_oops_), very quickly sketch out a rough idea so that 
+If you're reading this at the start of your week 9 lab and don't have anything to show (_oops_), very quickly sketch out a rough idea so that
 you can work through the rest of the lab.
 :::
 
@@ -27,7 +27,7 @@ This weeks task 0 is to design a storyboard of your major project focussed on ho
 
 Find a group of 2 or 3 in your lab! Ask your tutor if you can't find one.
 
-This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab. 
+This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab.
 
 ## Task 1: interpreting the theme
 
@@ -35,11 +35,11 @@ In Task 0 you discussed:
 
 > your interpretation of the theme.
 
-Put this interpretation aside for a moment. For this task you and your group friends are going to come up with some _alternative theme interpretations_. 
+Put this interpretation aside for a moment. For this task you and your group friends are going to come up with some _alternative theme interpretations_.
 
 Major project themes are funny things. We can often think of interpretations that are **literal**, that is, they directly relate to the meaning of the words of the theme. For example if the theme was "the world in the palm of your hands", a literal interpretation could include a picture of planet earth held inside some celestially massive hands. We can also interpret themes in an **abstract** or **oblique** way, where the exact words aren't as important, but somehow informs a creative process. For example, an **abstract/oblique** interpretation of "the world in the palm of your hands" could be about microrganisms in your hands going about their everyday business or could be based on anagrams of the letters in the theme prompt.
 
-Here's your task: 
+Here's your task:
 
 > For each member of your group, come up with one theme interpretation which is **literal** and one interpretation which is **abstract/oblique**. For the abstract oblique one, feel free to get as crazy as you want as long as their is a definite connection to the theme.
 
@@ -66,9 +66,9 @@ In some of the best artworks, all the different aspects work together to enhance
 - movement
 - interpretation of the theme
 
-In this exercise you will analyse the coherence of your own storyboard.  Here's what to do:
+In this exercise you will analyse the coherence of your own storyboard. Here's what to do:
 
-> Write down at least one coherent aspect of your storyboard, that is, a set of elements of your planned artwork that will work particularly well together. Write down at least one element that you don't think quite fits yet. 
+> Write down at least one coherent aspect of your storyboard, that is, a set of elements of your planned artwork that will work particularly well together. Write down at least one element that you don't think quite fits yet.
 
 Share your coherent and incoherent aspects with your group. Do you agree with your colleagues? For the (so far) incoherent elements, make at least one suggestion for how each of your group mates could integrate the artwork elements more effectively.
 
@@ -95,8 +95,8 @@ more) drawings for each stage, and some notes & comments on how they fit
 together.
 
 :::info
-Your sketch doesn't have to have 'scenes', it can be just one setting, however it 
-will still need to be interactive and dynamic enough for 3 minutes, so you will still 
+Your sketch doesn't have to have 'scenes', it can be just one setting, however it
+will still need to be interactive and dynamic enough for 3 minutes, so you will still
 need multiple diagrams to show how it will evolve and develop over time.
 :::
 

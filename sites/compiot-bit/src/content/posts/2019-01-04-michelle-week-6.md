@@ -16,10 +16,13 @@ At the time when I was taking the online course, I have tried some basic experim
 ![board](./images/michelle/experiments.jpg)
 
 Use light sensor to control the LEDs
+
 - I connect light sensor with a resistor and two LEDs, and set up the parameters. When the the light is blocked from the light sensor, the LEDs are on. So the light sensor here can be worked as a button that when we touch it, the LEDs are on. The LEDs are off when we take back our hands.
 
 Use potentiometer to change the tone of the piezo speaker
+
 - I adjust the potentiometer to change the pitch of the piezo speaker.
 
 Gradually change the color of the RGB LED
+
 - I use the RGB LED to gradually change the light color.

@@ -15,30 +15,26 @@ In this blog I will talk about hardware/software requirements in more details as
 
 2. Microcontroller: Most likely ESP32 (thinking of [ESP32-WROOM-32D](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)) for [$5.38](https://au.mouser.com/ProductDetail/Espressif-Systems/ESP32-WROOM-32D?qs=MLItCLRbWszx2KabkKPu5A==), but might still consider using Will's microcontroller (built upon STM32F103C8) if we can add Wi-Fi component to his board because it is cheaper (~$2). (ESP32 can provide Wi-Fi and Bluetooth functionality through its SPI / SDIO or I2C / UART interfaces) Click [here](https://www.espressif.com/en/products/hardware/esp32/overview) for overview of ESP32.
 
-** If we are using one microcontroller to communicate with the internet and other boards only to collect data, it is possible for us to just use both boards.
+\*\* If we are using one microcontroller to communicate with the internet and other boards only to collect data, it is possible for us to just use both boards.
 
 3. [Vibration Sensors](https://blog.mide.com/vibration-sensor-types-and-where-to-buy-them):
-Need to do a few tests on the following vibration sensors to decide which one we want to go with.
-    1. Microphone
-        - Advantages: (1). Converts sound signals into an electrical signal, which is exactly what we want for this project. (2). Makes it possible for us to do noise cancelling by using an extra microphone to collect background noice.
-        - Problems: (1). Need to check if we can attach the microphone to the surface of the drum and still provide similar functionality - otherwise the microphone will collect the sound signals from all the drums but we only want to analyse the vibration of drums one by one. (2). Even if the microphone can be attached to the surface of the drum, since it collects sound signals, it might still can't help but take some sound waves from other drums as input data.
-    2. Accelerometer
-        - Advantages: Converts vibrations into an electrical signal. Definitely fine to be used for collecting vibration from the surface.
-        - Problems: (1). Might also take the vibration of the other drums as input because all the drums are really close to each other and it is possible for the vibration to be transmitted through the ground. The problem should be easier to deal with than the similar problem with microphone. (2). Will take in all the vibrations including non-audible ones, more difficult to clean up data. (3). Depends on how sensitive the accelerometer is but it is possible that it focuses more on how the object "moves" and not the subtle movements.
+   Need to do a few tests on the following vibration sensors to decide which one we want to go with. 1. Microphone - Advantages: (1). Converts sound signals into an electrical signal, which is exactly what we want for this project. (2). Makes it possible for us to do noise cancelling by using an extra microphone to collect background noice. - Problems: (1). Need to check if we can attach the microphone to the surface of the drum and still provide similar functionality - otherwise the microphone will collect the sound signals from all the drums but we only want to analyse the vibration of drums one by one. (2). Even if the microphone can be attached to the surface of the drum, since it collects sound signals, it might still can't help but take some sound waves from other drums as input data. 2. Accelerometer - Advantages: Converts vibrations into an electrical signal. Definitely fine to be used for collecting vibration from the surface. - Problems: (1). Might also take the vibration of the other drums as input because all the drums are really close to each other and it is possible for the vibration to be transmitted through the ground. The problem should be easier to deal with than the similar problem with microphone. (2). Will take in all the vibrations including non-audible ones, more difficult to clean up data. (3). Depends on how sensitive the accelerometer is but it is possible that it focuses more on how the object "moves" and not the subtle movements.
 
 4. Light Sensor: if we decide to take in only boolean inputs, we might need to use light sensor to determine how the same drum was hit by different techniques.
 
 ## Software
 
 ### Deal with Raw Data
+
 This part of design will be very different depends on which vibration sensor we use at the end.
 
 1. Microphone. Design will be similar to last blog post. Copied below for convenience.
-    1. Use Matlab to do the fourier transform, use other ways to determine the peaks if can not use Matlab. Different ways of hitting the same drum should produce different signal (need to be tested) thus we can distinguish them.
-    2. Filter out the background noise by subtracting M2 input from M1 input. Idealy the background noise should be canceled out and the sound of the insrument will be lower in amplitude but still the same pitch and we should be able to pick it up.
+   1. Use Matlab to do the fourier transform, use other ways to determine the peaks if can not use Matlab. Different ways of hitting the same drum should produce different signal (need to be tested) thus we can distinguish them.
+   2. Filter out the background noise by subtracting M2 input from M1 input. Idealy the background noise should be canceled out and the sound of the insrument will be lower in amplitude but still the same pitch and we should be able to pick it up.
 2. Accelerometer. Current idea is to only take in and transmit boolean inputs (hit/stand by).
 
 ### Connect to Internet
+
 Depends on the capacity of the board we will choose one of the following methods.
 
 1. Centralized Communication. Make one board (central board) to communicate with internet and the other boards only collect data and communicate with the central board.
@@ -46,10 +42,12 @@ Depends on the capacity of the board we will choose one of the following methods
 2. Distributed Commumication. Each board communicate to the internet by themselves.
 
 ### UI
+
 Design a software which enables the users to store, review, edit and share their music sheets that are generated by our device.
 More details discussed in [last week's blog](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/16/zoey-week4-blog/)
 
 ## Construction Plan
+
 The construction plan is planned out with my project partner William Cashman. His blog posts can be accessed from [here](https://cs.anu.edu.au/courses/china-study-tour/news/#william-cashman).
 
 **ASAP:**
@@ -62,11 +60,11 @@ Plan software design: find libraries and determine the control flow of the overa
 Decide to use either the continuous data or boolean data (or a mixture of both)
 
 **2 week - 4 weeks:**
-(***Milestone 1***) Get the data analyis software working well
+(**_Milestone 1_**) Get the data analyis software working well
 Have a good idea of how to connect with the centralised sever through the device and have the foundations of the software.
 
 **4 weeks - 5 weeks:**
-(***Milestone 2***) Get the device to convey the information to the centralised server well
+(**_Milestone 2_**) Get the device to convey the information to the centralised server well
 
 **5 weeks - Finish time:**
 Refine and debug

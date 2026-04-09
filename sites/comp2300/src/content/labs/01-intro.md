@@ -46,10 +46,10 @@ General notes & information will be highlighted in a blue box.
 Sometimes you need to **think** about stuff before you go ahead. If you see
 something in a pink box (because your brain is
 pink---[sortof](http://brainathlete.com/color-brain/)), that's your clue to
-pause and *think*---how do you expect the next part will work? Take a moment to
+pause and _think_---how do you expect the next part will work? Take a moment to
 think before you blaze away and start coding, because then you can check whether
 you really understand what's going on or whether you're just copy-pasting stuff
-without really understanding it. If you *don't* understand it perfectly, that's
+without really understanding it. If you _don't_ understand it perfectly, that's
 ok---ask your lab neighbour (or your tutor) to help you understand.
 :::
 
@@ -85,7 +85,7 @@ yourself.
 
 :::tip
 Computer organisation and program execution (hey, that's the name of this
-course!) are *huge* topics, and mastering them takes a lifetime. So the material
+course!) are _huge_ topics, and mastering them takes a lifetime. So the material
 in these lab sessions will only cover the fundamentals. However, sometimes there
 are interesting **extension** exercises you might try if you want to go deeper,
 and these will be in a purple box. If you don't know how to approach the
@@ -95,7 +95,7 @@ your lab mates and tutors and stretch yourself if you have time.
 :::
 
 These coloured boxes will be used consistently through the lab material, so take
-a moment to familiarise yourself with what the different colours *mean*, or at
+a moment to familiarise yourself with what the different colours _mean_, or at
 least remember that you can come back here and check at any time.
 
 ## Exercise 0: setting up the COMP2300 software environment
@@ -132,7 +132,7 @@ know and talk to them instead.)
 The discoboard connects to the lab computer (or your personal laptop) via
 a [mini-USB](https://en.wikipedia.org/wiki/USB#Mini_and_micro_connectors) cable.
 
-As far as electronics go, this board isn't *super* fragile, but you'll still
+As far as electronics go, this board isn't _super_ fragile, but you'll still
 need to be careful with it when you're handling it and carting it around. That's
 why you got it in a plastic container---keep it and your cable together in
 there. If you're not used to handling electronics, here are a few tips:
@@ -168,11 +168,11 @@ down into stages: clone, edit, build & run.
 ### Fork & clone
 
 In this course, you'll be using git a lot, and you'll have a lot of git
-repositories (*repos* for short). Don't fear: [you've done this
+repositories (_repos_ for short). Don't fear: [you've done this
 before](/resources/01-faq/#am-i-expected-to-know-how-to-use-git) (in COMP1100, one of the pre-requisites
 for this course) and it's the same process here. Since we're at the start of the
 course, here's a tip: it's probably a good idea to make a `comp2300` (or
-`comp6300`) directory somewhere on your computer where you can keep *all* of
+`comp6300`) directory somewhere on your computer where you can keep _all_ of
 your stuff for this course.
 
 Ok, now here goes:
@@ -263,15 +263,15 @@ program using the **Build** command (`PlatformIO: Build` in the [command
 palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)).
 You'll see some stuff printed to the
 [terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) (near
-the bottom of your VSCode window), and when it's done it should look *something*
+the bottom of your VSCode window), and when it's done it should look _something_
 like this:
 
 ![View](./images/lab-1/vscode-after-build-command.png)
 
 :::tip
 The compilation process takes all the code (text files), **translates** them
-into binary instructions for the target *Instruction Set Architecture* (ISA)---
-ARMv7 in this case---and **links** them together into a binary file (*image*).
+into binary instructions for the target _Instruction Set Architecture_ (ISA)---
+ARMv7 in this case---and **links** them together into a binary file (_image_).
 You can learn more about it
 [here](https://www.programcreek.com/2011/02/how-compiler-works/) if you want to
 read ahead, but you'll also get familiar with it throughout this course.
@@ -301,7 +301,7 @@ lead you through the basics in the labs over the next couple of weeks.
 
 Open up the [**Debug** view](https://code.visualstudio.com/docs/editor/debugging)
 and make sure the
-*ARM On-Chip Debug* configuration is selected in the drop-down menu (if you
+_ARM On-Chip Debug_ configuration is selected in the drop-down menu (if you
 select a different config, e.g. the PlatformIO config, then it won't work):
 
 ![Debug](./images/lab-1/vscode-select-debug-config.png)
@@ -325,11 +325,11 @@ debug controls:
 :::tip
 Discuss with your lab neighbour---what do all these debug control buttons do?
 Play around with them together---can you see what effect they're having on the
-program executing on your discoboard? Are you *pumped*?
+program executing on your discoboard? Are you _pumped_?
 :::
 
 If you want your program to keep running (i.e. to "unpause" the program) just
-hit the green play button (although it's called *continue* rather than *play*
+hit the green play button (although it's called _continue_ rather than _play_
 when you're debugging, because it continues after you last paused the
 execution). Once it's running, you can pause it again by hitting the pause
 button, and even stop it with the red stop button.
@@ -352,7 +352,7 @@ screenshot):
 
 ![VSCode](./images/lab-1/vscode-register-view.png)
 
-If you want to control exactly *where* the system pauses for debugging, you can
+If you want to control exactly _where_ the system pauses for debugging, you can
 set a new breakpoint by clicking in the left-hand "gutter" (or margin) of
 the code view in the IDE. You should see a little red dot appear:
 
@@ -360,7 +360,7 @@ the code view in the IDE. You should see a little red dot appear:
 
 :::tip
 The program isn't running on the lab computer on the desktop---it's running on
-your discoboard. What does that *mean*? What are the implications for the way
+your discoboard. What does that _mean_? What are the implications for the way
 you run & debug your program?
 :::
 
@@ -369,7 +369,7 @@ Make sure you understand what's going on!
 Of course this is the goal of this course, and you will get to learn more as you go.
 But just a warning before you embark on this journey:
 make sure you don't get tripped up at the final over some of these fundamental concepts,
-like *many* journey men before you did.
+like _many_ journey men before you did.
 Remember that your tutor is there for you to grill them with questions. ;)
 :::
 
@@ -396,7 +396,7 @@ As mentioned at the top of this lab content, in this course you will submit
 stuff (including work-in-progress versions) during your weekly lab session. This
 is a chance for you to keep track of your progress, and also (sometimes) for the
 tutors to give you feedback about how you're going. This is all a good
-thing---if you've got questions you want to get help *now*, not after you've
+thing---if you've got questions you want to get help _now_, not after you've
 bombed on the mid-semester exam.
 
 The submission process is also the same as the one you'll use to submit your
@@ -423,7 +423,7 @@ After clicking on it, you will see a page like this:
 
 ![CI](./images/lab-1/ci-pipeline.png)
 
-You can see the jobs run by clicking on the *Stages* dropdown button, and whether they are successful of not.
+You can see the jobs run by clicking on the _Stages_ dropdown button, and whether they are successful of not.
 You can click on the job to see the details and captured output, which will help to figure out what might have gone wrong.
 
 In lab 1, apart from checking whether your code **builds** fine, it also checks whether your `pledge-of-integrity.yml` is acceptable.
@@ -445,7 +445,7 @@ Congratulations! In this lab you
 4. pledged to be a person of integrity in this course
 
 Next week, you'll start thinking about what the assembly code you wrote does,
-and what it actually *looks like* in the memory of your discoboard.
+and what it actually _looks like_ in the memory of your discoboard.
 
 :::info
 Make sure you logout to terminate your session, and pack up your board and USB

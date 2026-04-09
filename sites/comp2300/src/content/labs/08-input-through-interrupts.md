@@ -18,7 +18,7 @@ in there to help you out if you get stuck.
 
 Before you attend this week's lab, make sure:
 
-1. you understand *control flow*---what factors influence the order in which
+1. you understand _control flow_---what factors influence the order in which
    instructions get executed in your program (we have been talking about this
    since week 2!)
 
@@ -37,7 +37,7 @@ In this week's lab you will:
    little blue diamond thingy) so that pressing down on the joystick triggers an
    interrupt
 
-3. write an interrupt handler function to *do something useful* when you press the
+3. write an interrupt handler function to _do something useful_ when you press the
    joystick button
 
 4. use interrupt priorities to control what happens when different interrupts
@@ -47,7 +47,7 @@ In this week's lab you will:
 
 :::tip
 Discuss with your neighbour---what does it mean for your program to have a "main
-loop"? On your discoboard, does your main loop have to *do* anything for the
+loop"? On your discoboard, does your main loop have to _do_ anything for the
 program to be useful?
 :::
 
@@ -55,16 +55,16 @@ So far, following the control flow through your program has been easy. In most
 cases, the execution (which you can track through the `pc` register) just flows
 from one assembly instruction (i.e. a line of assembly code) to the next.
 Sometimes you jump around with branch instructions (e.g. `b` and `bl`), and in
-certain cases you even make *conditional* branches using the condition flags in
+certain cases you even make _conditional_ branches using the condition flags in
 the status register (e.g. `beq`, `bgt` or `bmi`).
 
 In today's lab, this all changes. You're going to configure a **timer
 interrupt** which will periodically "interrupt" the flow of your program,
 execute a special interrupt handler function, and then return back to where your
 "main" program was executing. Then you'll go further by showing how the
-discoboard can handle *multiple* interrupts, each with their own handler
-function, and how each interrupt has a **priority** so that *interrupts can
-interrupt one another*. It *sounds* confusing... but it's not, really. You'll
+discoboard can handle _multiple_ interrupts, each with their own handler
+function, and how each interrupt has a **priority** so that _interrupts can
+interrupt one another_. It _sounds_ confusing... but it's not, really. You'll
 get the hang of it :)
 
 Plug in your discoboard, fork & clone the [lab 8
@@ -75,26 +75,26 @@ template]() and let's get started.
 A timer is a hardware component which holds a value (like a register) which
 counts down (or up) over time. Timers come in various shapes and sizes; some are
 simple and don't have much potential for configuration, while others are
-*extremely* configurable, e.g. counting down to zero vs counting up from zero,
+_extremely_ configurable, e.g. counting down to zero vs counting up from zero,
 counting at different rates, etc. Any given microcontroller can include many
 different timers, all with different names and configuration options, and
 multiple timers can be used simultaneously.
 
 Your discoboard has a timer called the **SysTick** timer, described in the [ARM
-reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) in *Section B3.3*.
+reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) in _Section B3.3_.
 As with all things on your discoboard, you configure the SysTick timer by
 reading and writing to special hardware registers. To configure and use the
 SysTick timer your program needs to:
 
-1. enable the timer using the *SysTick Control and Status Register* (`SYST_CSR`),
-    (also set the `CLKSOURCE` bit to use the processor clock);
+1. enable the timer using the _SysTick Control and Status Register_ (`SYST_CSR`),
+   (also set the `CLKSOURCE` bit to use the processor clock);
 
-2. set the *SysTick Reload Value Register* (`SYST_RVR`)---this is the value
+2. set the _SysTick Reload Value Register_ (`SYST_RVR`)---this is the value
    which gets loaded into the register when it is "reloaded", i.e. after it runs
    down to zero;
 
-3. read the current value of the timer register using the *SysTick Current Value
-   Register* (`SYST_CVR`).
+3. read the current value of the timer register using the _SysTick Current Value
+   Register_ (`SYST_CVR`).
 
 For example, if the SysTick timer is enabled (in `SYST_CSR`) and the value of
 `SYST_RVR` is `0x4000` then the timer will take 16384 cycles to count down to
@@ -103,7 +103,7 @@ zero. How long this takes in wall-clock time depends on the CPU frequency
 
 To configure the SysTick timer you'll need to use the
 [load-twiddle-store](/labs/05-blinky/#load-twiddle-store) pattern from lab 5 all over again. This time, the
-relevant information (addresses, offsets, bits) starts at *Section B3.3.2* on
+relevant information (addresses, offsets, bits) starts at _Section B3.3.2_ on
 page 677 of the [ARMv7 reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) and includes the
 next couple of sections as well.
 
@@ -116,9 +116,9 @@ a few things to be mindful of:
   instruction with the appropriate memory address
 
 - you can find the memory-mapped addresses for both of these registers in the
-  table in *Section B3.3.2*
+  table in _Section B3.3.2_
 
-- to enable the timer, you'll need to set the *enable* bit in `SYST_CSR` and also
+- to enable the timer, you'll need to set the _enable_ bit in `SYST_CSR` and also
   set the clock source to use the processor clock
 
 - even though the timer will count down automatically (once tick per clock
@@ -169,21 +169,21 @@ All interrupts on your discoboard have:
 2. a priority
 
 3. an entry in the **vector table**, which is a region of the discoboard's
-   memory where the addresses (i.e. the place to branch to) of the *handler*
+   memory where the addresses (i.e. the place to branch to) of the _handler_
    routine for each interrupt
 
-You might be wondering---*where* does my code branch to when the interrupt comes
+You might be wondering---_where_ does my code branch to when the interrupt comes
 in? Well, that's what the **vector table** is for. It's a special part of the
 [memory address space](/_lectures/03-memory-operations/#memory-address-space) (starting at `0x0`) where the addresses of the
 different interrupt handler functions are stored. Think of it like a bunch of
-"jump-off points"---the *code* for handling the interrupt will be stored
+"jump-off points"---the _code_ for handling the interrupt will be stored
 somewhere else, the vector table just has the address of the starting point for
 that code.
 
 You can see your program's vector table in the `src/startup_stm32l476xx.S` file
 starting at around line 150
 
-``` ARM
+```ARM
 g_pfnVectors:
 	.word	_estack
 	.word	Reset_Handler
@@ -211,8 +211,8 @@ What does it mean if there's a `0` in a particular "slot" in the vector table?
 :::
 
 Try and find the vector table for yourself in the startup file. Look for the
-`g_pfnVectors` label---can you see how it mirrors the table from *Section
-B1.5.2*? You can see that there's already a `SysTick_Handler` label in there in
+`g_pfnVectors` label---can you see how it mirrors the table from _Section
+B1.5.2_? You can see that there's already a `SysTick_Handler` label in there in
 the 16th slot in the vector table, but my "hot tip" to you is that the
 `SysTick_Handler` function isn't very interesting at the moment, it's just
 defined to be equal to the `Default_Handler` (which is just an infinite loop)
@@ -232,7 +232,7 @@ every time the counter gets to zero.
 Again, here are a couple of things to be careful of:
 
 - you'll need to declare `SysTick_Handler` as a label with `.global` visibility
-  so that the address of *your* `SysTick_Handler` function will get used in the
+  so that the address of _your_ `SysTick_Handler` function will get used in the
   vector table in `src/startup_stm32l476xx.S`, not the boring default one down
   the bottom of that file)
 
@@ -260,7 +260,7 @@ Using the `led.S` library provided, write a program which uses the
 :::tip
 Ok, so the `SysTick_Handler` looks after the SysTick timer interrupt, but what
 about the other peripherals on your discoboard? Is there a `Joystick_Handler`
-for handling presses on the joystick? If not, where *can* you put your code to
+for handling presses on the joystick? If not, where _can_ you put your code to
 be executed when the joystick is pressed?
 :::
 
@@ -269,7 +269,7 @@ bit of hardware which is responsible for watching the various bits of hardware
 (and software) which can trigger interrupts in your discoboard.
 
 A brief recap: remember that interrupts are a method of triggering an
-*interruption* to the sequence of assembly instructions being executed by the
+_interruption_ to the sequence of assembly instructions being executed by the
 discoboard. Configuring interrupts requires (at a minimum) enabling the
 interrupt and creating an **interrupt handler**---the function which gets called
 when the interrupt is triggered.
@@ -310,7 +310,7 @@ This means that raising a GPIO-triggered interrupt is really a two-stage process
   a timer event from one of the discoboard's many timers) and raises an
   interrupt line into the NVIC
 
-- the NVIC deals with that interrupt, *potentially* saving the current register
+- the NVIC deals with that interrupt, _potentially_ saving the current register
   context to the stack and switching to the handler function (depending on
   whether the interrupt is currently enabled, whether any higher priority
   interrupts are already running, etc.)
@@ -363,12 +363,12 @@ noticing:
 3. the central joystick button is connected to **PA0** which (at least as
    configured in the setup code) will trigger the `EXTI0_IRQHandler` you'll need
    to write---don't forget to declare the handler as `.type EXTI0_IRQHandler,
-   %function`
+%function`
 
 4. unlike the SysTick interrupt, the EXTI interrupts are not enabled by
    default---they must be enabled by setting the relevant bit in the interrupt
-   mask register `EXTI_IMR1` 
-   (described in *Section 12.5.1* of the **disco-board** reference manual,
+   mask register `EXTI_IMR1`
+   (described in _Section 12.5.1_ of the **disco-board** reference manual,
    mapped to address `0x40010400`)
 
 5. the EXTI controller can use either a **rising edge** (when the signal goes
@@ -378,7 +378,7 @@ noticing:
    set a falling edge trigger instead/as well?)
 
 6. once the interrupt handler function has done whatever it needs to do, it
-   needs to tell the EXTI controller that it's finished handling interrupt *n*
+   needs to tell the EXTI controller that it's finished handling interrupt _n_
    by writing the *n*th bit in the `EXTI_PR1` "pending" register (`0x40010414`)
 
 :::info
@@ -428,7 +428,7 @@ how interrupt priorities work.
 
 Now if you press the joystick button when the red LED is on, what happens?
 
-Do you remember that the **N** in **N**VIC stands for *nested*? This means that
+Do you remember that the **N** in **N**VIC stands for _nested_? This means that
 the interrupts can happen inside of one another. Here's a diagram to show what
 it might look like:
 
@@ -468,7 +468,7 @@ interrupt priorities in slightly different places:
   `=0xE000E404`)
 
 :::info
-Modify the priority of your SysTick interrupt handler so that it *does* get
+Modify the priority of your SysTick interrupt handler so that it _does_ get
 preempted by the EXTI0 handler and the green light comes on when the red LED is on.
 Commit and push your program to GitLab.
 Experiment with different priority values---what happens if they're the same?
@@ -491,14 +491,14 @@ make a game called **QuickClick**. It's a simple game:
 
 2. the player's goal is then to press the joystick button when the red LED is on
 
-3. if you get the timing right (i.e. the red LED *is* on when the button is
+3. if you get the timing right (i.e. the red LED _is_ on when the button is
    pressed) the green LED comes on
 
 4. each time you get it right, the red blink duration gets shorter (so that it's
    harder to get the timing right for the next round).
 
 :::info
-When you're clicking your joystick, try and be a *bit* gentle on your
+When you're clicking your joystick, try and be a _bit_ gentle on your
 discoboard. Make sure you're on a flat surface (and that none of the pins are
 likely to get bent). Don't get too carried away and smash your fist down on the
 joystick---it's not built to handle that :)
@@ -512,7 +512,6 @@ light on? if so, then clicking the button will turn on the green" logic:
    handler function) to use the joystick as an input device
 
 2. in your `SysTick_Handler`:
-
    - enable the joystick interrupt by setting the bit in the interrupt **set**
      enable register `NVIC_ISER0` (address: `0xE000E100`) The bit you are
      looking to set can be found in the position column of the interrupt vector
@@ -533,8 +532,8 @@ light on? if so, then clicking the button will turn on the green" logic:
 
 <div id="clear-enable-gotcha" class="info-box" markdown="1" style="margin-bottom: 20px;">
 
-There's one more "gotcha" to be aware of when dealing with the ***clear**
-enable* and ***clear** pending* NVIC control registers (e.g. `NVIC_ICER0` or
+There's one more "gotcha" to be aware of when dealing with the **\*clear**
+enable\* and **\*clear** pending\* NVIC control registers (e.g. `NVIC_ICER0` or
 `NVIC_ICPR0`). As described above, to disable an interrupt (ICER) or clear a
 pending interrupt (ICPR) you write a `1` to the corresponding bit (e.g. to
 disable the interrupt in position 6 of the NVIC you write a `1` to the 7th bit
@@ -546,22 +545,22 @@ the description for those registers it says:
 
 > **1**: On reads, interrupt enabled
 
-which means that if an interrupt is enabled, then a *read* from that
+which means that if an interrupt is enabled, then a _read_ from that
 (memory-mapped) register will show the corresponding bit as `1`.
 
 This is a problem for the [load-twiddle-store](/labs/05-blinky/#load-twiddle-store) pattern, because the point of the load
 twiddle store is to leave all the bits unchanged except for the one you're
 interested in. However, this means that all of the currently enabled interrupts
-(whose bits will read as `1` in the *load* phase) will be disabled when you
-write the bits back in the *store* phase---which (almost certainly) isn't what
+(whose bits will read as `1` in the _load_ phase) will be disabled when you
+write the bits back in the _store_ phase---which (almost certainly) isn't what
 you want!
 
 Again, here's an example: say there are 3 interrupts currently enabled, then a
 load from the corresponding register would have `1`s in those three positions,
 and `0`s elsewhere. If you load/twiddle/store the value, then all three of those
-interrupts would be *cleared* by the store operation.
+interrupts would be _cleared_ by the store operation.
 
-This means that for the ***clear** enable/pending* registers you should just
+This means that for the **\*clear** enable/pending\* registers you should just
 write a `1` for the particular interrupt you're interested in, and a `0` in all
 the other bits.
 
@@ -593,10 +592,10 @@ There are *heaps* of things you can do to stretch yourself further:
 - can you re-implement the QuickClick game without interrupts?
 
 - can you turn on the discoboard's random number generator (RNG) and use it so
-  that the red LED blinks on randomly, rather than at regular intervals? Hint:
-  *Section 24* of the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf) is the place to
-  find the configuration steps required to get the RNG working---it's not too
-  difficult.
+that the red LED blinks on randomly, rather than at regular intervals? Hint:
+_Section 24_ of the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf) is the place to
+find the configuration steps required to get the RNG working---it's not too
+difficult.
 </div>
 
 ## Summary
@@ -607,7 +606,7 @@ Congratulations! In this week's lab you learned how to
    little blue diamond thingy) so that pressing down on the joystick triggers an
    interrupt
 
-2. write an interrupt handler to *do something useful* when you press the
+2. write an interrupt handler to _do something useful_ when you press the
    joystick button
 
 3. use interrupt priorities to control what happens when different interrupts

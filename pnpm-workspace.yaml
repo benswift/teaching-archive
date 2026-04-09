@@ -3,7 +3,7 @@ packages:
 
 catalog:
   # Framework
-  
+
   # Deck support
   "@animotion/core": "^1.2.2"
 

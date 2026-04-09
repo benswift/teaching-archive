@@ -5,10 +5,10 @@ title: SASS and Ownership
 week: 10
 ---
 
-Development is *finally* underway. We still haven't received our final boards,
+Development is _finally_ underway. We still haven't received our final boards,
 but armed with our Discoboards & [Distance-Vector routing](), we can march on.
 
-I'm going to touch on two technical topics today - SASS & Rust. *SASS* is a CSS
+I'm going to touch on two technical topics today - SASS & Rust. _SASS_ is a CSS
 preprocesser, which makes stylesheet development much more enjoyable. I'll give
 a broad overview of the Rust borrow checker & variable lifetimes, because I
 think they're the most interesting parts of the language.
@@ -25,12 +25,12 @@ This blog post is kinda long, so here is a mini index:
 ## CSS Preprocessors
 
 Though I love styling websites, lets face it – CSS isn't great. The CSS
-standard only added native variables *in 2018!* Computer Science has worked
-with variables since FORTRAN, developed in *1956*. There is still no support
+standard only added native variables _in 2018!_ Computer Science has worked
+with variables since FORTRAN, developed in _1956_. There is still no support
 for style hierarchies, mixins, or color functions (except hacky stuff with
 `calc()`).
 
-To solve this, *CSS preprocessers* were developed. These are [mini-languages](https://en.wikipedia.org/wiki/Domain-specific_language)
+To solve this, _CSS preprocessers_ were developed. These are [mini-languages](https://en.wikipedia.org/wiki/Domain-specific_language)
 that compile to CSS. The preprocesser can give us all the fancy bells-and-whistles
 of a modern language, without having to wait for browser compatibility.
 
@@ -80,7 +80,7 @@ For this to work, you'll also need a layout file. Put this in
 
 <html>
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <title>{{ title }}</title>
   </head>
   <body>
@@ -93,18 +93,18 @@ For this to work, you'll also need a layout file. Put this in
 </html>
 ```
 
-This template that Jekyll uses to generate the webpage.  Jekyll interprets this
+This template that Jekyll uses to generate the webpage. Jekyll interprets this
 "template" to generate the webpage. It's not raw HTML - it includes a small
 templating language, called [Liquid](https://shopify.github.io/liquid/).
 
 Note the different variables, like `title` and `page.content`. `title` comes
 directly from the frontmatter we defined in our blog post markdown. `page` is a
-*global*, which holds page-specific information and frontmatter. You can read
+_global_, which holds page-specific information and frontmatter. You can read
 more about this [in the Jekyll
 documentation](https://jekyllrb.com/docs/variables/).
 
 Almost done – we're just missing a stylesheet. When Jekyll generates the webpage,
-it compiles the stylesheet into a seperate file with a hashed name. This makes it 
+it compiles the stylesheet into a seperate file with a hashed name. This makes it
 difficult to reference, since we don't know the name in advance. Initially, I just
 wrote my stylesheet in the `<head>` - super gross!
 
@@ -121,7 +121,7 @@ To my layout file, above `<!doctype HTML>`.
 
 ## Syntactically Awesome Stylesheets
 
-> Sass. noun. 
+> Sass. noun.
 > To be cheeky or rude to (someone).
 > "the kind of boy that wouldn't give you any sass"
 
@@ -158,7 +158,7 @@ font-size: $font-size-default;
 ```
 
 To each selector. This is repetitive, and in the future, we'd need to make
-changes in 3 different places. Instead, we can create a *mixin*:
+changes in 3 different places. Instead, we can create a _mixin_:
 
 ```
 @mixin withSansSerif($size) {
@@ -181,7 +181,7 @@ parameters!
 
 One of my favourite Sass features is nesting. Instead of littering
 `blockquote .author` or `ul li` around your code, you can give the styles
-*mental context* (by associating nested styles with their parents).
+_mental context_ (by associating nested styles with their parents).
 
 For example:
 
@@ -191,10 +191,10 @@ nav {
     margin: 0;
   }
   li {
-    display: inline-block; 
+    display: inline-block;
   }
   &::hover {
-    background-color: green; 
+    background-color: green;
   }
 }
 ```
@@ -226,7 +226,7 @@ Rust wants to minimize its runtime overhead, and so they decided not the
 include a garbage collector. Interestingly, the programmer is not forced to
 call `malloc` or `free`. How is this possible?
 
-Rust does it through something called *ownership* and *variable lifetimes*.
+Rust does it through something called _ownership_ and _variable lifetimes_.
 Ownership is a finicky beast, but it becomes natural over time. Consider the following snippet:
 
 ```
@@ -237,14 +237,14 @@ fn main() {
 }
 ```
 
-This fails! It *won't even compile*. This is frustrating at first - why do it
+This fails! It _won't even compile_. This is frustrating at first - why do it
 be like this?
 
 First, this is more efficient. `String::from()` puts the `string` data on the
 heap, and returns a smart pointer to the memory location. `new_message` then
-copies the *pointer*, not the data itself. The data is never copied.
+copies the _pointer_, not the data itself. The data is never copied.
 
-The *ownership* of `message` is transferred to `new_message`. To make this
+The _ownership_ of `message` is transferred to `new_message`. To make this
 compile, change the `println!` statement:
 
 ```
@@ -252,7 +252,7 @@ println!(new_message);
 ```
 
 But forget speed. That stuff is basic pointer concepts. The main motivation
-behind ownership is *safety*. Imagine if the `message` data was dropped (freed)
+behind ownership is _safety_. Imagine if the `message` data was dropped (freed)
 before `println!` used it:
 
 ```
@@ -265,6 +265,6 @@ fn main() {
 ```
 
 `println!` would be accessing unknown data. Strict ownership rules avoids these
-errors.  An un-owned variable is automatically freed by the Rust runtime. This
+errors. An un-owned variable is automatically freed by the Rust runtime. This
 has handy implications within standard programming, but also enables static
 compile-time guarantees about concurrency, which is fantastic.

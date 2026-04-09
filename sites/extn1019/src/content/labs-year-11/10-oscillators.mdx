@@ -15,14 +15,14 @@ In this lab you will:
 0. gain an understanding of Objects and Functions in JavaScript
 1. familiarise yourself with the [Tone.js](https://tonejs.github.io) library
 2. explore oscillators in Tone.js
-3. employ audio synthesis techniques like additive synthesis and 
+3. employ audio synthesis techniques like additive synthesis and
 4. modulation
 
 ## Pre-lab checklist
 
-Today's lab is to be completed online. 
+Today's lab is to be completed online.
 
-There is a video of your instructor demonstrating what you need to do and how to do it. 
+There is a video of your instructor demonstrating what you need to do and how to do it.
 
 Watch the video &mdash; your participation (i.e. attendance) for this lesson is dependent on you completing 3 tasks:
 
@@ -30,7 +30,7 @@ Watch the video &mdash; your participation (i.e. attendance) for this lesson is 
 2. Fork and Clone the lab repository. Complete all tasks. Stage, commit and push your changes to Gitlab
 3. Complete the quiz in Wattle
 
-Full participation is expected: you should complete all of these 3 tasks. Watch the video first. 
+Full participation is expected: you should complete all of these 3 tasks. Watch the video first.
 You can read this lab instruction with the video, or separately. You can complete tasks 2 and 3 in any order, programming first or quiz first.
 Note: there are no "correct" answers - you just have to answer all quiz questions and make changes to the code which you push to GitLab.
 
@@ -61,7 +61,7 @@ We've been using functions since the beginning of this course!
 
 ```js
 function setup() {
-    // sketch setup code
+  // sketch setup code
 }
 ```
 
@@ -69,7 +69,7 @@ and
 
 ```js
 function draw() {
-    // sketch drawing and interaction code
+  // sketch drawing and interaction code
 }
 ```
 
@@ -85,15 +85,16 @@ rect(mouseX, mouseY, 5, 5); // call the function which draws a rectangle at the 
 
 Functions are great because we can use them to simplify our code: instead of
 writing out the same code over and over again, we can store it in a function
-and save ourselves some typing! 
+and save ourselves some typing!
 
 They also:
-* encapsulate behaviour: they do just one job
-* parameterise behaviour: we don't need separate functions for `background_darkgrey()` and `background_blue()`. Adding colour as a parameter (aka _argument_), enables flexibility, and better code reuse.
-* code quality: breaking code down into functions _modularises_ the code. We can test each function separately to ensure that it behaves as expected under all conditions. 
-* communicating purpose: Effective modularisation and code naming strategies help communicate the meaning and purpose of the code.
-* abstraction: along with the quality comes trust. We don't need to design from scratch, we can build on existing libraries of functions, allowing us to conceptualise at a higher degree of abstraction
-* and much more...
+
+- encapsulate behaviour: they do just one job
+- parameterise behaviour: we don't need separate functions for `background_darkgrey()` and `background_blue()`. Adding colour as a parameter (aka _argument_), enables flexibility, and better code reuse.
+- code quality: breaking code down into functions _modularises_ the code. We can test each function separately to ensure that it behaves as expected under all conditions.
+- communicating purpose: Effective modularisation and code naming strategies help communicate the meaning and purpose of the code.
+- abstraction: along with the quality comes trust. We don't need to design from scratch, we can build on existing libraries of functions, allowing us to conceptualise at a higher degree of abstraction
+- and much more...
 
 In the following code we declare a function `doAssignment`. Note that we've only
 declared the function here, we haven't actually used it yet (or as we say in the
@@ -118,19 +119,27 @@ doAssignment("What I did on the weekend", "blog post about my life", "before nex
 Edit the following code to declare a function called `ringDoorbell` with two
 parameters, one named `address` and another named `time`.
 
-<FillInTheBlank client:load template={`function <name:ringDoorbell>(<p1:address>, <p2:time>) {
+<FillInTheBlank
+  client:load
+  template={`function <name:ringDoorbell>(<p1:address>, <p2:time>) {
   // code to ring the doorbell
-}`} group="functions" />
+}`}
+  group="functions"
+/>
 
 Now, fix this code so it calls the function we just wrote.
 
-<FillInTheBlank client:load template={`<name:ringDoorbell>("221B Baker St", "Nine in the afternoon");`} group="functions" />
+<FillInTheBlank
+  client:load
+  template={`<name:ringDoorbell>("221B Baker St", "Nine in the afternoon");`}
+  group="functions"
+/>
 
 ### Objects
 
 We use objects when we're coding because they allow us to group a bunch of
-variables (or, as we call them in the context of an object: properties) together, often with associated behaviours (methods). 
-The relationship between the variables is tied to the way we impose meaning on code: objects in programming relate to objects, things, or concepts that we understand as "things". 
+variables (or, as we call them in the context of an object: properties) together, often with associated behaviours (methods).
+The relationship between the variables is tied to the way we impose meaning on code: objects in programming relate to objects, things, or concepts that we understand as "things".
 
 The following code describes a variable called _toast_, with a value which is an
 object. This object contains four properties:
@@ -161,18 +170,22 @@ let toast = {
 Edit the following code to add a property called _milk_ which has the value
 _almond_ to the mug object.
 
-<FillInTheBlank client:load template={`let mug = {
+<FillInTheBlank
+  client:load
+  template={`let mug = {
   size: 300,
   filled: 200,
   coffee: 1,
   <name:milk>: '<value:almond>',
-};`} group="objects" />
+};`}
+  group="objects"
+/>
 
 It's important to remember that objects can have any properties in them---no one is
 going to tell you not to put a _pineapple_ property in your _pizza_
 object while you're writing JavaScript! An object is just a
 collection of properties & their values, and it's up to the programmer
-(i.e. you!) to create & use objects which are *useful*.
+(i.e. you!) to create & use objects which are _useful_.
 
 Obviously having all of these properties is great, but what if we want to do
 something with them? Well, we can access properties in objects using "dot
@@ -192,9 +205,13 @@ Can you edit the following code so it fills up partially drunk mugs? If you
 can't remember all the properties in the mug object, that's okay---take a look at
 the previous widget, it has the definition in it.
 
-<FillInTheBlank client:load template={`if (<var:mug>.<field:filled> < mug.size) {
+<FillInTheBlank
+  client:load
+  template={`if (<var:mug>.<field:filled> < mug.size) {
   fillMug(mug);
-}`} group="objects" />
+}`}
+  group="objects"
+/>
 
 We can use this syntax, along with the assignment operator (`=`) we've been
 using to set variables to update the values of objects after they've been
@@ -216,31 +233,34 @@ You haven't quite completed all the activities yet. Keep going, you're almost th
 In p5.js especially, it's handy to combine objects and functions together. It means we can do things like:
 
 1. Use the dot syntax mentioned previously to use a property from an object as a value in a function call
-    ```js
-    let shape = {
-      x: 100,
-      y: 200,
-    };
 
-    function drawShape(x, y) {
-      rect(x, y, 100);
-    }
+   ```js
+   let shape = {
+     x: 100,
+     y: 200,
+   };
 
-    drawShape(shape.x, shape.y);
-    ```
+   function drawShape(x, y) {
+     rect(x, y, 100);
+   }
+
+   drawShape(shape.x, shape.y);
+   ```
+
 2. Use objects themselves as values in a function call:
-    ```js
-    function clean(thing) {
-      thing.dirty = false;
-    }
 
-    let potato = {
-      weight: 300,
-      dirty: true,
-    };
+   ```js
+   function clean(thing) {
+     thing.dirty = false;
+   }
 
-    clean(potato);
-    ```
+   let potato = {
+     weight: 300,
+     dirty: true,
+   };
+
+   clean(potato);
+   ```
 
 Now, can you fix this code so it calls the `sayHiTo` function, with the `name`
 property of the `doggo` object as the first parameter?
@@ -262,13 +282,13 @@ the blob in the correct location with the correct size.
 };
 
 function draw() {
-  background(0);
-  drawBlob(aBlob);
+background(0);
+drawBlob(aBlob);
 }
 
 function drawBlob(blob) {
-  fill(255);
-  ellipse(blob.<x:x>, blob.<y:y>, blob.<size:size>);
+fill(255);
+ellipse(blob.<x:x>, blob.<y:y>, blob.<size:size>);
 }`} group="functions" />
 
 You haven't quite finished the exercises yet---finish them off before you continue. If you're stuck, ask on the [Teams Q and A Channel]()!
@@ -280,8 +300,7 @@ the fact that music and visuals work in different ways. Still, the starting
 "template" for this lab (and most of the music labs this term) will still use
 p5's `setup()`, `draw()`, `keyPressed()`[^keypress] etc functions as a starting point, so hopefully it'll be a bit familiar.
 
-[^keypress]:
-    Your browser requires some kind of user interaction to occur before any sound can be played. In labs for the computer music part of the course, we check if the spacebar has been pressed in the `keyPressed()` function before we initialize the audio context and start playing sounds.
+[^keypress]: Your browser requires some kind of user interaction to occur before any sound can be played. In labs for the computer music part of the course, we check if the spacebar has been pressed in the `keyPressed()` function before we initialize the audio context and start playing sounds.
 
 In today's lab, we will briefly introduce you to some important concepts in Tone.js,
 which are actually fundamental to any form of computer music. It won't be covered in the lab content (i.e. the text you're reading now), but we will go into these concepts at greater depth in the coming weeks. The lab content for this week will introduce you to oscillators in Tone.js and how they can be used to create a _synthetic instrument_.
@@ -309,11 +328,11 @@ osc.frequency.value = 261.63; // C4
 
 Now that we know how to access and modify the frequency of the oscillator, we can drive changes in the frequency based on user interactions.
 
-**do:** Do you choose to implement a *Notes* -based instrument, or a continuous tone *Theremin* -like instrument?  
+**do:** Do you choose to implement a _Notes_ -based instrument, or a continuous tone _Theremin_ -like instrument?
 
-**I Choose Notes:** Write a function `noteUp()` which will increase the oscillator frequency by one note. Write another function called `noteDown()`which decreases the oscillator frequency by one note. Inside your `keyPressed()` function, call `noteDown()` when LEFT_ARROW is pressed, and call `noteUp()` when RIGHT_ARROW is pressed. Once you've done this, use your keyboard to play the oscillator notes  -- you've just created your first interactive synthetic instrument!
+**I Choose Notes:** Write a function `noteUp()` which will increase the oscillator frequency by one note. Write another function called `noteDown()`which decreases the oscillator frequency by one note. Inside your `keyPressed()` function, call `noteDown()` when LEFT_ARROW is pressed, and call `noteUp()` when RIGHT_ARROW is pressed. Once you've done this, use your keyboard to play the oscillator notes -- you've just created your first interactive synthetic instrument!
 
-**I Choose Theremin:**  Write a function called `theremin()` which [map](https://p5js.org/reference/#/p5/map)s the `mouseX` value from [0,screen width] to your chosen [min frequency, max frequency]. Call this function on `mouseMoved()`.  You should use `osc.frequency.value` to access the oscillator's frequency. Ask your instructors if you need any help with this. Once you've done this, use your mouse to play the oscillator  -- you've just created your first interactive synthetic instrument!
+**I Choose Theremin:** Write a function called `theremin()` which [map](https://p5js.org/reference/#/p5/map)s the `mouseX` value from [0,screen width] to your chosen [min frequency, max frequency]. Call this function on `mouseMoved()`. You should use `osc.frequency.value` to access the oscillator's frequency. Ask your instructors if you need any help with this. Once you've done this, use your mouse to play the oscillator -- you've just created your first interactive synthetic instrument!
 
 ## Part 3: Additive Synthesis
 
@@ -330,11 +349,11 @@ Additive synthesis is a technique where multiple audio waves are combined togeth
 In the same way that we accessed and modified the frequency of our oscillator, we can access and modify the shape of our oscillator using `osc.type`. See the example code below.
 
 ```js
-// sets the oscillator's shape to triangle, regardless of the frequency 
-osc.type = 'triangle';
+// sets the oscillator's shape to triangle, regardless of the frequency
+osc.type = "triangle";
 
-// sets the first two partials of the oscillator to triangle 
-osc2.type = 'triangle2';
+// sets the first two partials of the oscillator to triangle
+osc2.type = "triangle2";
 ```
 
 **do:**Create a series of oscillators, making sure to plug them all into the master audio output using `toDestination()`. You can vary their frequency, shape, or any other properties you'd like. The [oscillators properties](https://tonejs.github.io/docs/14.7.77/Oscillator.html) in the documentation should help give you some ideas. Develop a custom tone and any time you like what you hear, `commit` and `push` your code to git.
@@ -346,10 +365,10 @@ Modulation is a technique where we can control certain parameters of an audio wa
 There is an oscillator in Tone.js which is specifically designated for low frequencies. In the biz, we call this an LFO or Low Frequency Oscillators (yeah, can you tell we reserve the creativity for the music making?). The LFO in Tone.js can take on a frequency anywhere between `0.1hz` and `10hz`.
 
 ```js
-    // creates a low freq oscillator with freq 0.1hz and max - 210, min value - 180
-    lfo = new Tone.LFO("0.1hz", 180, 210);
-    lfo.connect(/*modulated value*/);
-    lfo.start();
+// creates a low freq oscillator with freq 0.1hz and max - 210, min value - 180
+lfo = new Tone.LFO("0.1hz", 180, 210);
+lfo.connect(/*modulated value*/);
+lfo.start();
 ```
 
 **do:**Create a new variable to store your LFO oscillator and paste the code above at the bottom of your `setup()` function. You will need to replace `modulated value` with whatever value you want to modulate using your LFO -- one example of a value you can modulate is the frequency of an oscillator.

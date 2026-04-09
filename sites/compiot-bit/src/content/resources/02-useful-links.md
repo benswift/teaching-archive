@@ -30,7 +30,7 @@ Here are some links:
 
 ### Actuators
 
-Actuators are the things which allow your artefact to actually *do stuff* in/to
+Actuators are the things which allow your artefact to actually _do stuff_ in/to
 the world.
 
 - <https://www.thomasnet.com/articles/pumps-valves-accessories/types-of-actuators>
@@ -53,7 +53,7 @@ help thinking through the differences, seek the wisdom of
 
 If you're into bang-for-buck and don't need on-board wifi, then perhaps the [STM
 Black Pill](http://wiki.stm32duino.com/index.php?title=Black_Pill) is an option.
-You can get them for ~$2 each, and if your project involves a *lot* of compute
+You can get them for ~$2 each, and if your project involves a _lot_ of compute
 devices (perhaps spread over a large area) then it's an interesting choice. The
 documentation kindof sucks, but some folks (Will) have been working with this
 device for a semester already and can give some pointers to get started.

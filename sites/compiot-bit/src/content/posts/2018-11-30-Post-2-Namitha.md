@@ -6,6 +6,7 @@ week: 2
 ---
 
 # Week 1 in Beijing
+
 ## What did we do?
 
 Our first week in Beijing was amazing. I made so many new friends, explored different parts of this city, learned a bit of Chinese, and tried some Chinese food. Our days usually consist of classes during the day and then exploring different parts of Beijing at night.

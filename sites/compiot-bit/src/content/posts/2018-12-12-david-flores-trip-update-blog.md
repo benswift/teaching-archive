@@ -12,6 +12,7 @@ I look forward to our time together and to exchanging invaluable concepts. :)
 For **LIT** photos documenting this trip follow me on Instagram @despacitoflorescondezo
 
 ## Shaoxing
+
 A small group of us (Chinmay, Harry, Adi & Zoey) spent the weekend with Zoey's parents in Shaoxing. Here I got to see REAL SNOW for the first time in my life!!!! It was very exciting and I had an amazing time.
 
 We got tickets to see a Tragic Chinese Opera Show following the story of 2 lovers who get split up by the man's mother an later reuinte when she is already marrried and as a result dies of depression.
@@ -49,6 +50,7 @@ Machine/Transfer Learning
 Machine Learning refers to a system capable of the autonomous acquisition and integration of knowledge.
 
 Some Applications of Machine Learning
+
 - Self Driven Cars
 - Privacy Issues: 3rd Party will have constant access to your location..
 - Translating speech
@@ -59,15 +61,18 @@ Some Applications of Machine Learning
 - Intelligence increasing based on the amount used.
 
 Major types of Learning
+
 - Unsupervised Learning:
 - In machine learning, unsupervised learning is a class of problems in which one seeks to determine how the data are organized. It is distinguished from supervised learning (and reinforcement learning) in that the learner is given only unlabeled examples.
 - Supervised Learning:
 - A machine learning technique whereby a system uses a set of training examples to learn how to correctly perform a task
 
 Clustering
+
 - Clustering is the assignment of a set of observations into subsets (called clusters) so that observations in the same cluster are similar in some sense. Clustering is a method of unsupervised learning, and a common technique for statistical data analysis used in many fields.
 
 Regression
+
 - Regression allows you to make predictions from data by learning the relationship between features of your data and some observed, continuous-valued response. Regression is used in a massive number of applications ranging from predicting stock prices to understanding gene regulatory networks
 
 ## Final Dinner

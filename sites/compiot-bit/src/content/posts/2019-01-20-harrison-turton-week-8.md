@@ -10,7 +10,7 @@ We've yet to receive our boards, and so development has stalled slightly. Instea
 physical artefact, I'm going to explore some routing algorithms/protocols for the final product.
 
 [Prof. Olivier Bonaventure](https://inl.info.ucl.ac.be/obo) (Université catholique de Louvain, Belgium) authored a
-[fantastic overview](http://cnp3book.info.ucl.ac.be/principles/dv.html) of *Distance Vector Routing*.
+[fantastic overview](http://cnp3book.info.ucl.ac.be/principles/dv.html) of _Distance Vector Routing_.
 
 ## Distance Vector Routing
 
@@ -24,16 +24,16 @@ Node A > Node B > Node C
 Then `Node A` will consider itself "connected" to `Node C`, even though they are not immediate neighbours.
 
 Distance vector routing will also discover the "shortest path" between two nodes. "Shortest" doesn't necessarily mean physical
-distance, or even the number of hops. Each edge is associated with a *cost*. This could represent distance, or (for example), power
+distance, or even the number of hops. Each edge is associated with a _cost_. This could represent distance, or (for example), power
 draw. Perhaps we'll prefer routes with lower power requirements, despite them spanning a longer physical distance.
 
 **The Algorithm**
 
-Each node maintains a *routing table*. For each known destination *d*, the table stores the following information:
+Each node maintains a _routing table_. For each known destination _d_, the table stores the following information:
 
-* `link` as the outgoing edge the node is using to communicate towards the destination (but not necessarily the destination itself).
-* `cost` the sum cost of the shortest path to reach the destination.
-* `time` the timestamp of the last record containing the destination.
+- `link` as the outgoing edge the node is using to communicate towards the destination (but not necessarily the destination itself).
+- `cost` the sum cost of the shortest path to reach the destination.
+- `time` the timestamp of the last record containing the destination.
 
 The node regularly broadcasts its own routing table. This allows the network to continuously update their topology, and learn of
 shorter routes.

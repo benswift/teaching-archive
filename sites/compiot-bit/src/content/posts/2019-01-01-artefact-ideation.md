@@ -12,6 +12,7 @@ Hello again, so I've been thinking about what to do as my artefact for this cour
 This post will outline the idea that I spent the most time on, but eventually scrapped as it didn't come together as cohesively as I would have liked. Subsequent posts will continue noting my process and progress.
 
 #### E-Ink displays
+
 For a while now I have really liked the idea of e-ink displays.
 ![e paper display](./images/sam/e-paper.jpg)
 You may have seen them before, they are used primarily in ebook readers like the [Kindle](https://www.amazon.com.au/s/?ie=UTF8&keywords=kindle), but they have also been used in the Pebble Smart Watch ([RIP](https://www.theverge.com/2018/1/24/16928792/fitbit-smartwatch-pebble-end-support-date-june)), one of my favourite products.
@@ -35,7 +36,7 @@ Although the use cases for e-ink displays are few, I wanted to experiment with t
 
 #### Why it fell flat
 
-The idea didn't quite come together in my head and it felt a little impersonal. Supermarkets are an area of innovation I'm not particularly interested in, and this project seemed to be a bit more business strategy than engineering, which is *super* boring to me. The most interesting challenges in this project are about scaling. How do you network thousands of little screens in a small space? Meshing, routing and other networking infrastructure would be a really cool route to explore and it greatly interests me. However, given the budget and scope of work, it seems that the proof of concept would be a microcontroller with a screen attached to it that shows something, which isn't particularly interesting.
+The idea didn't quite come together in my head and it felt a little impersonal. Supermarkets are an area of innovation I'm not particularly interested in, and this project seemed to be a bit more business strategy than engineering, which is _super_ boring to me. The most interesting challenges in this project are about scaling. How do you network thousands of little screens in a small space? Meshing, routing and other networking infrastructure would be a really cool route to explore and it greatly interests me. However, given the budget and scope of work, it seems that the proof of concept would be a microcontroller with a screen attached to it that shows something, which isn't particularly interesting.
 
 I held onto this idea for a while, partly because it was the only one I had, and also because the technology did interest me and I was trying to find a way to apply it in an interesting way. Unfortunately I failed to do that.
 

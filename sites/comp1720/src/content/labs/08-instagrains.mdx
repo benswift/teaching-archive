@@ -9,23 +9,23 @@ import { scintillatingPixelsSketch } from "../../sketches/scintillating-pixels";
 ## Admin Update
 
 :::warning
-The following is super important for future labs, so make sure you read it and make a note to complete the 
+The following is super important for future labs, so make sure you read it and make a note to complete the
 task 0 for next weeks lab some time before the lab.
 :::
 
-The task 0s so far haven't been much more than discussion points. However, 
-[starting next week](/labs/09-major-project-storyboard/#task-0) they will 
+The task 0s so far haven't been much more than discussion points. However,
+[starting next week](/labs/09-major-project-storyboard/#task-0) they will
 be a much more integral part of the lab (and your major project) that we assume you have done **before-hand**.
 
-Have a read of the task 0 for next week and add it to your schedule so that you complete it before your 
-lab next week! 
+Have a read of the task 0 for next week and add it to your schedule so that you complete it before your
+lab next week!
 
 ## Lab Tasks
 
 We (humans) are visual creatures. We drew [pictures of
 antelopes](https://en.wikipedia.org/wiki/Cave_painting) on cave walls for a
-*long* time, and then we invented the internet and now we have
-[instagram](http://instagram.com)[^timeline]. And you know another thing that humans like doing? Eating breakfast cereal. 
+_long_ time, and then we invented the internet and now we have
+[instagram](http://instagram.com)[^timeline]. And you know another thing that humans like doing? Eating breakfast cereal.
 
 This week you will combine these two traditions by creating a new social-networking platform for **sharing pictures of cereal**.
 
@@ -59,9 +59,9 @@ This week's pre-lab task relates to the use of _sound_ in interactive art.
 
 ## Task 1: setting the scene
 
-Clone your fork of [the lab repository]() repo if you haven't 
-already, open it in VSCode, navigate to the week-08 folder and start the live server 
-as usual. 
+Clone your fork of [the lab repository]() repo if you haven't
+already, open it in VSCode, navigate to the week-08 folder and start the live server
+as usual.
 
 Once you've got the repo open in VSCode, paste the following into the week-08 `sketch.js`
 file:
@@ -76,8 +76,8 @@ var pictureFilenames = [
   "/images/milada-vigerova-348433.jpg",
   "/images/nirzar-pangarkar-28869.jpg",
   "/images/ryan-pouncy-52372.jpg",
-  "/images/yvens-banatte-71993.jpg"
-]
+  "/images/yvens-banatte-71993.jpg",
+];
 
 // this is the array we'll store our grains in
 var grains = [];
@@ -97,8 +97,8 @@ function draw() {
   // your "draw all the grains" code goes here
 
   // every second, create a new grain (if there are any pictures left)
-  if(frameCount%60==1 && pictureFilenames.length > 0){
-	grains.push(createGrain(pictureFilenames.pop(), random(width), random(height)));
+  if (frameCount % 60 == 1 && pictureFilenames.length > 0) {
+    grains.push(createGrain(pictureFilenames.pop(), random(width), random(height)));
   }
   // call this function at the end of the draw loop to draw the fps speedo in the bottom-right corner
   drawSpeedo();
@@ -106,36 +106,35 @@ function draw() {
 
 function createGrain(filename, x, y) {
   // your grain creation code goes here
-
   // make sure you return the grain object at the end
 }
 
 // just a helper function - no need to understand it all today
 function drawSpeedo() {
   let fr = round(frameRate());
-  let fractionOfMaxSpeed = fr/60;
+  let fractionOfMaxSpeed = fr / 60;
   // start a new drawing context (colours, etc.)
   push();
   // draw the coloured "speedo" bar
   noStroke();
   // make it red when we're fast, grey when we're slow
-  fill(255*fractionOfMaxSpeed, 50, 50);
-  rect(width-150, height-100, 100*fractionOfMaxSpeed, 50);
+  fill(255 * fractionOfMaxSpeed, 50, 50);
+  rect(width - 150, height - 100, 100 * fractionOfMaxSpeed, 50);
   // draw the framerate number
   stroke(0);
   fill(255);
   strokeWeight(3);
   textSize(50);
   textAlign(CENTER, CENTER);
-  text(fr, width-100, height-75);
+  text(fr, width - 100, height - 75);
   // restore the previous drawing context (colours, etc.)
   pop();
 }
 ```
 
-Once you've updated the `sketch.js` file, you'll notice there's a number in the 
-bottom-right corner of your sketch. It's showing the current frames per second 
-reading (FPS) so it's an indication of how smoothly your sketch is running. If 
+Once you've updated the `sketch.js` file, you'll notice there's a number in the
+bottom-right corner of your sketch. It's showing the current frames per second
+reading (FPS) so it's an indication of how smoothly your sketch is running. If
 everything's going fine, it'll hover around 60.
 
 Say hello to your neighbour and introduce yourself (if you don't know each other already!) There isn't going to be much actual
@@ -151,7 +150,7 @@ is:
 > Bringing people together. Through cereal.
 
 Inspiring stuff. Because the motto is about bringing people together, you're
-going to need a way to show where the people *are*---i.e. a map.
+going to need a way to show where the people _are_---i.e. a map.
 
 Using [Creative Commons Image Search](https://search.creativecommons.org), find
 a map of Canberra/Australia/the world (your choice) to use as a "backdrop" for
@@ -179,20 +178,20 @@ nicer for things which take a bit of time---they present the viewer with a
 "loading..." message, which is better than a blank screen.
 
 Once you've got your background image filling your whole canvas, remember that
-it's a *background* image, so you don't want it to stand out too much. One way
+it's a _background_ image, so you don't want it to stand out too much. One way
 to deal with this is to do a bit of image processing using one of p5's built-in
 [image filters](https://p5js.org/reference/#/p5.Image/filter). These are
-*methods* (functions which are properties of the object itself) so you'll need
+_methods_ (functions which are properties of the object itself) so you'll need
 to use the dot syntax to access them, e.g.
 
-``` javascript
+```javascript
 bgImage.filter(BLUR, 10);
 ```
 
 There are a few different filters available (and the parameters mean different
 things for each one). Have a look at the
 [reference](https://p5js.org/reference/#/p5/filter) for the full list, although
-remember that you want to call the filter *method* on a
+remember that you want to call the filter _method_ on a
 [p5.Image](https://p5js.org/reference/#/p5.Image) object (e.g.
 `bgImage.filter()`), not the plain `filter()` function (which applies the filter
 to the whole canvas)
@@ -202,7 +201,7 @@ interface it's time to move on to the next part.
 
 ## Task 2: share your cereal with the world
 
-The *basic* component of Instagrains v1.0 is called a **grain**, which is just:
+The _basic_ component of Instagrains v1.0 is called a **grain**, which is just:
 
 - a photo of some cereal
 - the location of the person who's eating it
@@ -291,7 +290,7 @@ make it happen if you're not sure how you'd do it.
 As you try things, watch the "speedo" in the bottom left-hand corner---are there
 some things in particular which make the frame rate drop?
 
-Make sure that your best instagrain code is  saved to `week-08/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+Make sure that your best instagrain code is saved to `week-08/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
 
 ## Extra Tasks
 
@@ -301,11 +300,11 @@ An alternate way to do image processing is to get and set the colours of the
 individual pixels directly. [`p5.Image`](https://p5js.org/reference/#/p5.Image)
 provides two methods for doing this:
 
-- [`.get(x, y)`](https://p5js.org/reference/#/p5.Image/get) *returns* the colour
+- [`.get(x, y)`](https://p5js.org/reference/#/p5.Image/get) _returns_ the colour
   of the pixel at position `x`, `y`
 
 - [`.set(x, y, color)`](https://p5js.org/reference/#/p5.Image/set) allows you to
-  *set* the colour of the pixel at position `x`, `y`
+  _set_ the colour of the pixel at position `x`, `y`
 
 **Scintillating Pixels** is a famous[^famous] sketch by Tim Brook which uses a couple of nested
 loops to create interesting pixel patterns:
@@ -327,18 +326,18 @@ approach vs the built-in image filters you used earlier in the lab?
 One of the challenges with image loading (or other heavy processing in p5) is
 that from a responsiveness perspective you want to do all the time-consuming
 "loading" work at the start (so that once the sketch is running then it runs
-smoothly). 
+smoothly).
 
 One problem with the
 [`preload()`](https://p5js.org/reference/#/p5/preload) and
 [`setup()`](https://p5js.org/reference/#/p5/setup) functions is that they're
-called *before* p5 knows the [`width`](https://p5js.org/reference/#/p5/width)
+called _before_ p5 knows the [`width`](https://p5js.org/reference/#/p5/width)
 and [`height`](https://p5js.org/reference/#/p5/height) of the canvas, so those
 variables are set to `0` at that time (this may have caused you problems in the
 past). One way around this is to use
 [`windowWidth`](https://p5js.org/reference/#/p5/windowWidth) and
-[`windowHeight`](https://p5js.org/reference/#/p5/windowHeight), which *are*
-defined in `preload()` and `setup()`. 
+[`windowHeight`](https://p5js.org/reference/#/p5/windowHeight), which _are_
+defined in `preload()` and `setup()`.
 
 Can you think of other solutions?
 

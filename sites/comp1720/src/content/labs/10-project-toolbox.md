@@ -32,7 +32,7 @@ After the first two tasks in this lab, we have a **long** list of extra revision
 **If you have a question about anything to do with the course (labs, major
 projects, etc.), ask your tutor---they _want_ to help you**
 
-This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab. 
+This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab.
 
 ### Task 1: Thinking about interaction
 
@@ -64,7 +64,7 @@ Here's your task:
 
 Talk with your group about your list of recent developments. Why are these developments part of "Art and Interaction Computing". If you're a 6720 student, make sure you talk to your tutor to make sure that you're on the right track.
 
-### Task 3: Recap 
+### Task 3: Recap
 
 The rest of this lab is a recap of things you've learned already, especially
 things which might be useful as you're putting your major project together.
@@ -98,14 +98,14 @@ A function in javascript has four main components:
 
 1. the `function` keyword: this lets javascript know that what follows is a
    function
-2. the *name* of the function
+2. the _name_ of the function
 3. the function's parameters, enclosed by brackets `(` and `)` and separated
    with commas (you need to include the parentheses even if the function takes
    no parameters)
-4. the *body* of the function: one or more lines of code that the function will
+4. the _body_ of the function: one or more lines of code that the function will
    perform enclosed by squiggly braces (`{}`)
 5. (optional) the function can include a final `return` statement, which makes
-   the function *return* a value
+   the function _return_ a value
 
 ```javascript
 function myFunction(x, y) {
@@ -150,7 +150,7 @@ Many p5 functions that you use regularly return a value, e.g.
 
 ### Functions that do things
 
-Functions don't *have* to return a value, though---they can be useful just for
+Functions don't _have_ to return a value, though---they can be useful just for
 the things that they do. For example, the
 [`ellipse()`](https://p5js.org/reference/#/p5/ellipse) function doesn't return
 an ellipse as a value (you don't write `var x = ellipse()`). Instead, it makes
@@ -165,8 +165,8 @@ function window(x, y, w, h) {
   rect(x, y, w, h);
   // draw window cross
   stroke(0);
-  line(x, y+h/2, x+w, y+h/2);
-  line(x+w/2, y, x+w/2, y+h);
+  line(x, y + h / 2, x + w, y + h / 2);
+  line(x + w / 2, y, x + w / 2, y + h);
 }
 ```
 
@@ -209,12 +209,12 @@ p5 can load fonts just like it can load images---here are the steps:
 ```javascript
 var myFont;
 function preload() {
-  myFont = loadFont('/images/my-font-file.otf');
+  myFont = loadFont("/images/my-font-file.otf");
 }
 
 function setup() {
   textFont(myFont);
-  text('p5*js', 10, 50);
+  text("p5*js", 10, 50);
 }
 ```
 
@@ -233,7 +233,7 @@ Text size also makes a big difference to how we understand text content. Use the
 heirarchy of content, i.e. the more important content should be larger than the
 less important content.
 
-Text style (bold and italics) can be used to *emphasise* certain **content**.
+Text style (bold and italics) can be used to _emphasise_ certain **content**.
 You can achieve this with the
 [`textStyle()`](https://p5js.org/reference/#/p5/textStyle) function:
 
@@ -246,7 +246,7 @@ Text is also useful for arranging textual content. For example, if you set the
 [`textAlign()`](https://p5js.org/reference/#/p5/textAlign) to:
 
 ```javascript
-textAlign(CENTER, CENTER)
+textAlign(CENTER, CENTER);
 ```
 
 this will mean that the position parameters will mark the centre point of your
@@ -255,7 +255,7 @@ reference for more alignment options.
 
 ## Buttons
 
-There are plenty of ways to make a button in p5, each has its own pros and cons. 
+There are plenty of ways to make a button in p5, each has its own pros and cons.
 If you have your own preferred way then feel free to skip over this section.
 
 We'll revise the method of button building from the lectures. This method is a
@@ -271,13 +271,9 @@ one (or more) `colour` parameters.
 function button(x, y, w, h, buttonText) {
   //draw the button
   rect(x, y, w, h);
-  text(buttonText, x+5, y+5);
+  text(buttonText, x + 5, y + 5);
   // return whether the button is pressed.
-  return mouseX > x &&
-         mouseX < x + w &&
-         mouseY > y &&
-         mouseY < y + h &&
-         mouseIsPressed;
+  return mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h && mouseIsPressed;
 }
 ```
 
@@ -294,13 +290,13 @@ To use our button we can simply put it inside an if statement. In the example
 below, the score variable is incremented every time the user clicks the button.
 
 ```javascript
-if(button(40, 40, 60, 20, "Click me")) {
+if (button(40, 40, 60, 20, "Click me")) {
   score = score + 1;
 }
 ```
 
 However, there are some downsides to this method. Because the button function
-draws *and* returns the value, the button will be drawn before the action the
+draws _and_ returns the value, the button will be drawn before the action the
 button triggers. This can cause problems---if you want to draw something (e.g. a
 different background) while the button is pressed you might end up drawing over
 the button itself.
@@ -309,7 +305,7 @@ The simplest solution to this kind of problem is to call the button function
 again at the end of the draw loop.
 
 ```javascript
-if(button(40, 40, 60, 20, "Click me")) {
+if (button(40, 40, 60, 20, "Click me")) {
   // call to background will draw over the button
   background(255, 0, 0);
 }
@@ -338,11 +334,11 @@ Here's the basic structure:
 var sceneCounter = 1;
 
 function draw() {
-  if (sceneCounter == 1){
+  if (sceneCounter == 1) {
     drawScene1();
-  } else if (sceneCounter == 2){
+  } else if (sceneCounter == 2) {
     drawScene2();
-  } 
+  }
 }
 
 function drawScene1() {
@@ -357,21 +353,22 @@ Now you need to define the conditions for changing the scene counter. This might
 happen after a certain number of frames or when a user clicks a button.
 
 ```javascript
-if(frameCount > 80 && sceneCounter == 1) {
+if (frameCount > 80 && sceneCounter == 1) {
   sceneCounter = 2;
 }
 ```
+
 The code above changes to scene two after 80 frames **if** the scene counter
-is still on 1. It would also be possible to set the scene counter back to zero 
-with another condition, for example if the user clicks a restart button. Because 
-our draw function just draws the scene based on the `sceneCounter` variable, we 
+is still on 1. It would also be possible to set the scene counter back to zero
+with another condition, for example if the user clicks a restart button. Because
+our draw function just draws the scene based on the `sceneCounter` variable, we
 don't need to do anything except change the value of `sceneCounter`.
 
 ## Responsive design {#responsive-design}
 
 "Responsive design" sounds fancy, but it really just means that your sketch will
-still look good regardless of what screen size it is viewed on, *including tiny
-smartphone screens!*. To make this work, the first thing you'll want to
+still look good regardless of what screen size it is viewed on, _including tiny
+smartphone screens!_. To make this work, the first thing you'll want to
 implement is the p5
 [`windowResized()`](https://p5js.org/reference/#/p5/windowResized) callback
 function which is called when the user resizes their window.
@@ -393,7 +390,7 @@ This means that the canvas size will change whenever you resize the browser
 window (try it and see!).
 
 That was pretty easy, but to make your sketches truly responsive you need to
-define *all* the sizes and positions in terms of `width` and `height`. You have
+define _all_ the sizes and positions in terms of `width` and `height`. You have
 already used p5's `width` and `height` variables to position things e.g. in the
 center of the canvas. It's a good idea to position and size all your elements as
 a fraction of the `width` or height`. Take for example a regular button:
@@ -414,9 +411,9 @@ You can fix this by defining the position in terms of the `width` variable:
 
 ```javascript
 function semiResponsiveButton() {
-  rect(width*0.1, width*0.1, width*0.3, width*0.1);
-  textSize(width*0.05);
-  text("CLICK ME", width*0.13, width*0.17);
+  rect(width * 0.1, width * 0.1, width * 0.3, width * 0.1);
+  textSize(width * 0.05);
+  text("CLICK ME", width * 0.13, width * 0.17);
 }
 ```
 
@@ -431,23 +428,25 @@ is resized to above or below a certain size.
 
 ```javascript
 function responsiveButton() {
-  if(width > 400) { // large screen breakpoint
-    rect(width*0.1, width*0.1, width*0.3,width*0.1);
-    textSize(width*0.05);
-    text("CLICK ME", width*0.13,width*0.17);
-  } else { // mobile screen breakpoint
-    rect(width*0.1, width*0.1, width*0.8,width*0.1);
-    textSize(width*0.05);
-    text("CLICK ME", width*0.36 ,width*0.17);
+  if (width > 400) {
+    // large screen breakpoint
+    rect(width * 0.1, width * 0.1, width * 0.3, width * 0.1);
+    textSize(width * 0.05);
+    text("CLICK ME", width * 0.13, width * 0.17);
+  } else {
+    // mobile screen breakpoint
+    rect(width * 0.1, width * 0.1, width * 0.8, width * 0.1);
+    textSize(width * 0.05);
+    text("CLICK ME", width * 0.36, width * 0.17);
   }
 }
 ```
 
-Going *all* the way with "responsive design" isn't 100% necessary for your major
+Going _all_ the way with "responsive design" isn't 100% necessary for your major
 project. The [requirements](/assessments/05-major-project/#requirements) state that your major project
 must
 
-> run smoothly in **fullscreen** at the [test URL](/resources/01-faq/#test-url) 
+> run smoothly in **fullscreen** at the [test URL](/resources/01-faq/#test-url)
 > on any canvas size from 1920x1080 (in the CSIT labs) to 2560x1440 (in the PK
 > iMac labs) **make sure you test it out in the labs**
 
@@ -472,7 +471,7 @@ collection of objects" technique that we've been using a lot in the labs, you've
 probably seen something like:
 
 ```javascript
-function drawMyObject(obj){
+function drawMyObject(obj) {
   fill(200);
   noStroke();
   translate(obj.x, obj.y);
@@ -491,7 +490,7 @@ another type of object in your sketch (and therefore a
 `drawMyOtherObject(otherObj)` function), then you may well need to reset all the
 drawing settings at the end of drawing each type of object.
 
-You *could* do this manually, by saving the previous colour/strokeWeight/etc. to
+You _could_ do this manually, by saving the previous colour/strokeWeight/etc. to
 variables and reset them when you're done. However, a much easier way is to use
 the [`push()`](https://p5js.org/reference/#/p5/push) and
 [`pop()`](https://p5js.org/reference/#/p5/pop) functions to do this for you
@@ -518,9 +517,10 @@ that the creator has released it under a licence which allows you to use it in
 that way.
 
 There are a number of websites that publish only Creative Commons content. In the Major project you are only permitted to use content from the following sources (unless you create it yourself):
+
 - [Unsplash](https://unsplash.com/) posts images which can be used freely.
 - [Freesound](http://freesound.org/) contains free audio files (e.g. sound
-  effects, background music)
+effects, background music)
 <!-- - [The Newgrounds Audio Portal](https://www.newgrounds.com/audio/) contains
   heaps of background music which can be used under various creative commons
   licences. The licence for each track can be viewed under the "Licensing Terms"

@@ -14,13 +14,13 @@ Before you attend your lab session, make sure:
 
 ## Task 0:
 
-This week's task 0 is about **affordances** and **interfaces** from Week 5's lecture. Your job 
-is to create  a "mock-up" of an interface, i.e., a picture of an interface, not the actual working 
+This week's task 0 is about **affordances** and **interfaces** from Week 5's lecture. Your job
+is to create a "mock-up" of an interface, i.e., a picture of an interface, not the actual working
 program (although you can make it work too if you want to).
 
-> Create a mock-up for an _unexpected_ interface for changing the background colour of a p5 sketch. 
-  You can use `p5` or any other method to make your mock-up. Show the mockup to your neighbour / tutor and
-  explain why it's _unexpected_ and what the affordances are of your interface.
+> Create a mock-up for an _unexpected_ interface for changing the background colour of a p5 sketch.
+> You can use `p5` or any other method to make your mock-up. Show the mockup to your neighbour / tutor and
+> explain why it's _unexpected_ and what the affordances are of your interface.
 
 ## Introduction
 
@@ -64,27 +64,32 @@ The following code describes a variable called "toast", with a value which is an
 let toast = {
   slicesOfCheese: 2,
   buttered: true,
-  spread: 'vegemite'
+  spread: "vegemite",
 };
 ```
 
 Edit the following code to add a field called 'milk' which has the value
 'almond' to the mug object.
 
-<FillInTheBlank client:load template={"var mug = {\n  size: 300,\n  filled: 200,\n  coffee: 1,\n  <name:milk>: '<value:almond>',\n};"} />
+<FillInTheBlank
+  client:load
+  template={
+    "var mug = {\n  size: 300,\n  filled: 200,\n  coffee: 1,\n  <name:milk>: '<value:almond>',\n};"
+  }
+/>
 
 It's important to remember that objects can have any fields in them---no one is
 going to tell you not to put a 'pineapple' field in your 'pizza' object while
 you're writing JavaScript! An object is just a collection of any old properties
 & their values, and it's up to the programmer (i.e. you!) to create & use
-objects which are *useful*.
+objects which are _useful_.
 
 Obviously having all of these fields is great, but what if we want to do
 something with them? Well, we can access fields in objects using "dot
 notation". This looks like the following:
 
 ```js
-if (toast.spread == 'vegemite') {
+if (toast.spread == "vegemite") {
   cutASliceOfCheeseAndPutOnToast(toast);
 }
 ```
@@ -97,14 +102,17 @@ Can you edit the following code so it fills up partially drunk mugs? If you
 can't remember all the fields in the mug object, that's okay---take a look at
 the previous widget, it has the definition in it.
 
-<FillInTheBlank client:load template={"if (<var:mug>.<field:filled> < mug.size) {\n  fillMug(mug);\n}"} />
+<FillInTheBlank
+  client:load
+  template={"if (<var:mug>.<field:filled> < mug.size) {\n  fillMug(mug);\n}"}
+/>
 
 We can use this syntax, along with the assignment operator ('=') we've been
 using to set variables to update the values of objects after they've been
 created.
 
 ```js
-toast.spread = 'jam';
+toast.spread = "jam";
 ```
 
 Can you fix the following code so it sets the `'milk'` field of the `mug` object to the value `'dairy'`.
@@ -135,53 +143,74 @@ To call our function, we need to make sure we provide values for each of the
 parameters we declared earlier.
 
 ```js
-doAssignment('The relationship between blue and red: a PhD thesis', 'blue and red', 'next monday');
-doAssignment('What I did on the weekend', 'blog post about my life', 'before next weekend');
+doAssignment("The relationship between blue and red: a PhD thesis", "blue and red", "next monday");
+doAssignment("What I did on the weekend", "blog post about my life", "before next weekend");
 ```
 
 Edit the following code to declare a function called `ringDoorbell` with two
 parameters, one named `address` and another named `time`.
 
-<FillInTheBlank client:load template={"function <name:ringDoorbell>(<p1:address>, <p2:time>) {\n  // code to ring the doorbell\n}"} />
+<FillInTheBlank
+  client:load
+  template={
+    "function <name:ringDoorbell>(<p1:address>, <p2:time>) {\n  // code to ring the doorbell\n}"
+  }
+/>
 
 Now, fix this code so it calls the function we just wrote.
 
-<FillInTheBlank client:load template={'<name:ringDoorbell>("221B Baker St", "Nine in the afternoon");'} />
+<FillInTheBlank
+  client:load
+  template={'<name:ringDoorbell>("221B Baker St", "Nine in the afternoon");'}
+/>
 
 In p5.js especially, it's handy to combine objects and functions together. It means we can do things like:
 
 1. Use the dot syntax mentioned previously to use a field from an object object as a value in a function call
-    ```js
-    let shape = {
-      x: 100,
-      y: 200,
-    };
 
-    function drawShape(x, y) {
-      rect(shape.x, shape.y, 100);
-    }
-    ```
+   ```js
+   let shape = {
+     x: 100,
+     y: 200,
+   };
+
+   function drawShape(x, y) {
+     rect(shape.x, shape.y, 100);
+   }
+   ```
+
 2. Use objects themselves as values in a function call:
-    ```js
-    function clean(thing) {
-      thing.dirty = false;
-    }
 
-    let potato = {
-      weight: 300,
-      dirty: true,
-    };
+   ```js
+   function clean(thing) {
+     thing.dirty = false;
+   }
 
-    clean(potato);
-    ```
+   let potato = {
+     weight: 300,
+     dirty: true,
+   };
+
+   clean(potato);
+   ```
 
 Now, can you fix this code so it calls the sayHiTo function, with the 'name' field of the 'doggo' object as the first parameter?
 
-<FillInTheBlank client:load template={"var doggo = {\n  name: 'Slinky',\n  age: 25,\n};\n\nsayHiTo(<object:doggo>.<field:name>);"} />
+<FillInTheBlank
+  client:load
+  template={
+    "var doggo = {\n  name: 'Slinky',\n  age: 25,\n};\n\nsayHiTo(<object:doggo>.<field:name>);"
+  }
+/>
 
 And now, finally, let's put it all together. Edit the following code so it draws the blob in the correct location with the correct size.
 
-<FillInTheBlank client:load template={"var aBlob = {\n  x: 200,\n  y: 150,\n  size: 50,\n};\n\nfunction draw() {\n  background(0);\n  drawBlob(aBlob);\n}\n\nfunction drawBlob(blob) {\n  fill(255);\n  ellipse(blob.<x:x>, blob.<y:y>, blob.<size:size>);\n}"} />
+<FillInTheBlank
+  client:load
+  template={
+    "var aBlob = {\n  x: 200,\n  y: 150,\n  size: 50,\n};\n\nfunction draw() {\n  background(0);\n  drawBlob(aBlob);\n}\n\nfunction drawBlob(blob) {\n  fill(255);\n  ellipse(blob.<x:x>, blob.<y:y>, blob.<size:size>);\n}"
+  }
+/>
 
 You haven't quite finished the exercises yet --- finish them off before you continue. If you're stuck, ask your tutor (they really really want to help you)!
 
@@ -191,8 +220,11 @@ Say hello to your neighbour and introduce yourself (if you don't know each other
 pair-work today, but it'll still be nice to have someone to bounce ideas off of while you're working!
 
 <figure>
-  <img style="width:100%;" src="./images/lab-6/pikalikes_by_happip_d4x2eor.jpg" alt=""/>
-  <figcaption>["Pikalikes" by happip](https://www.deviantart.com/happip/art/Pikalikes-297404379) on DeviantArt is licensed under CC BY-NC-ND 3.0</figcaption>
+  <img style="width:100%;" src="./images/lab-6/pikalikes_by_happip_d4x2eor.jpg" alt="" />
+  <figcaption>
+    ["Pikalikes" by happip](https://www.deviantart.com/happip/art/Pikalikes-297404379) on DeviantArt
+    is licensed under CC BY-NC-ND 3.0
+  </figcaption>
 </figure>
 
 Now, for the actual content of this lab we're going to make a simple Pokemon
@@ -203,10 +235,10 @@ Before we start coding, think with your partner: what sort of fields might a
 Pokemon object have? Come up with some examples and discuss them with your neighbour / tutor.
 :::
 
-Clone your fork of [the lab repository]() repo if you 
-haven't already, open it in VSCode, navigate to the week-06 folder. 
+Clone your fork of [the lab repository]() repo if you
+haven't already, open it in VSCode, navigate to the week-06 folder.
 
-For this week we'll be providing you with some code to get you started, go ahead 
+For this week we'll be providing you with some code to get you started, go ahead
 and copy the following into the week-06 `sketch.js` file:
 
 ```javascript
@@ -234,21 +266,21 @@ function drawPokemon(aPokemon) {
 
 function updatePokemon(aPokemon) {
   // this is just a bit of controlled randomness to make the pokemon move around the canvas
-  aPokemon.x += 0.05*width*cos(frameCount*0.01)*randomGaussian(0, 0.1);
-  aPokemon.y += 0.05*height*cos(frameCount*0.011)*randomGaussian(0, 0.1);
+  aPokemon.x += 0.05 * width * cos(frameCount * 0.01) * randomGaussian(0, 0.1);
+  aPokemon.y += 0.05 * height * cos(frameCount * 0.011) * randomGaussian(0, 0.1);
 }
 ```
 
-Now, when you start the live server and open the sketch you'll see the green 
-grass of the PokeGarden. This is the beginnings of the code for one Pokemon 
-in the garden---her name is Sally (see the variable declaration at the top of 
+Now, when you start the live server and open the sketch you'll see the green
+grass of the PokeGarden. This is the beginnings of the code for one Pokemon
+in the garden---her name is Sally (see the variable declaration at the top of
 the `sketch.js` file).
 
-Often in these labs you've started out with some *values* (e.g. numbers) and
-you've had to figure out which *functions* to call, passing the values in as
+Often in these labs you've started out with some _values_ (e.g. numbers) and
+you've had to figure out which _functions_ to call, passing the values in as
 parameters. In this part of the lab, the pattern is flipped around---the
-`drawPokemon()` *function* is already written, and your job is to give `sally`
-the right *value* (hint: it should be a javascript object) so that the
+`drawPokemon()` _function_ is already written, and your job is to give `sally`
+the right _value_ (hint: it should be a javascript object) so that the
 `drawPokemon()` function does something useful.
 
 To complete this part of the lab, you'll need to modify `sketch.js` in two places:
@@ -293,7 +325,7 @@ You can break this down into three main steps---you need to:
    free, but draws a pokeball if she's been captured
 
 4. add a [`mousePressed()`](https://p5js.org/reference/#/p5/mousePressed)
-   function (it has to have *exactly* that name) which contains some [hit
+   function (it has to have _exactly_ that name) which contains some [hit
    detection](/labs/04-interface/) code to figure
    out if Sally has been captured (and modify her properties if necessary)
 
@@ -343,17 +375,17 @@ parameter: the path (as a string) to an audio file. Since there's already a
 soundfile in the template repo (check the `/images/` folder) you can modify the
 "initialisation" code in your `setup()` function to something like this:
 
-``` javascript
+```javascript
 sally = {
   // some properties
 
-  captureSound: loadSound("/images/pokeball-catch.mp3")
-}
+  captureSound: loadSound("/images/pokeball-catch.mp3"),
+};
 ```
 
 Have a think about what you've done here: you've created a new `p5.SoundFile`
 object inside your `sally` object. There's nothing wrong with doing this
-"objects inside objects" thing---just remember that now you'll need *two*
+"objects inside objects" thing---just remember that now you'll need _two_
 "levels" of dots (or square brackets) to get at the properties of this "inner"
 object.
 
@@ -382,14 +414,14 @@ of the Pokemon itself, but some sort of diagram to explain the javascript
 object)?
 :::
 
-Make sure that your best pokegarden code is  saved to `week-06/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+Make sure that your best pokegarden code is saved to `week-06/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
 
 ## Task 5: Break it down!
 
 This pattern of mapping functions over arrays of objects is extremely useful!
 You can do all sorts of things with it! Above we've practiced making a simple
 interactive game. In the break it down this week I was inspired by the amazing
-painting [*Sydney Sun* by John
+painting [_Sydney Sun_ by John
 Olsen](https://artsearch.nga.gov.au/Detail.cfm?IRN=26102) which can be seen in
 this very city to show how this pattern can be applied to modern art.
 

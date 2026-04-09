@@ -16,7 +16,8 @@ As the world becomes more connected, people change the way they behave. The deci
 #### Technology
 
 ##### Microcontroller
- I will be using a raspberry pi 3B, because I already own it and it has everything I need in terms on I/O and networking.
+
+I will be using a raspberry pi 3B, because I already own it and it has everything I need in terms on I/O and networking.
 
 ##### Sensors
 
@@ -28,6 +29,7 @@ Small [submersible pump](https://www.ebay.com/itm/312146714365) to simulate wate
 [Fluid soleniod](https://www.ebay.com/itm/163428679876) to halt the flow of water if some condition is met (leak detected etc.)
 
 ##### Software
+
 - **Python** - the GPIO pins on the raspberry pi are easily [programmable using python](https://www.raspberrypi.org/documentation/usage/gpio/python/README.md).
 - **MQTT** - a network protocol that is very popular for IoT devices. I'll use [mosquitto](https://mosquitto.org) as the broker as I have experience with it from COMP3310
 - **Flask** - Python web framework to serve a web page, I'll have MQTT callbacks from button presses to communicate with the microcontroller as well as use the page to display device statistics and configuration.
@@ -45,5 +47,6 @@ I can get started with the software, and even nearly complete the software packa
 5. **Make sure everything works together** Testing and applying fixes to each part of the system will also take significant time but everything will come together in this stage.
 
 #### Intermediate Milestones
+
 - **By Jan 14**: Have the interface completed
 - **By Jan 21**: Have the embedded system up and running (without hardware)

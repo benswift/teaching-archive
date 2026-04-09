@@ -25,7 +25,7 @@ Extra books:
 
 ## Art and Interaction Bibliography
 
-Charles Martin maintains a bibliography of useful resources about interactive computer art and music: 
+Charles Martin maintains a bibliography of useful resources about interactive computer art and music:
 
 - <https://cpmpercussion.github.io/art-and-interaction-bibliography/>
 
@@ -38,7 +38,7 @@ The repo is [here](https://github.com/cpmpercussion/art-and-interaction-bibliogr
 Here's some extra references that you might find useful:
 
 - the [p5js reference](https://p5js.org/reference/) has all the details on
-  *every* function and variable you'll need to care about in the p5 library
+  _every_ function and variable you'll need to care about in the p5 library
 - the [p5js examples page](https://p5js.org/examples/) is a good place to see
   how different things can be done using p5
 - the [p5js learn page](https://p5js.org/learn/) has some useful tutorials and

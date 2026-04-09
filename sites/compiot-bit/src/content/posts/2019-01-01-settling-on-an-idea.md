@@ -17,7 +17,7 @@ I love the idea of a house that is doing things in the background, performing ch
 
 #### Motivation
 
-A big part of what I want out of a connected home is what I can do better to reduce my impact on the environment. Over the last few years more and more of my decisions have been influenced by how I perceive my actions will impact the environment. For example, trying to be less wasteful in reducing how much 'lazy' food I consume  ('lazy' food tends to have more plastic packaging - microwave meals, snacks in small individual packets etc.) I now think that if information or methods of brining this kind of environmentally motivated decision making to more people in a simple way would influence they way they live to the benefit of everyone.
+A big part of what I want out of a connected home is what I can do better to reduce my impact on the environment. Over the last few years more and more of my decisions have been influenced by how I perceive my actions will impact the environment. For example, trying to be less wasteful in reducing how much 'lazy' food I consume ('lazy' food tends to have more plastic packaging - microwave meals, snacks in small individual packets etc.) I now think that if information or methods of brining this kind of environmentally motivated decision making to more people in a simple way would influence they way they live to the benefit of everyone.
 
 So I have decided to go with the idea that best fits within these two parameters. **Bringing connected monitoring and measurement to household water usage**.
 

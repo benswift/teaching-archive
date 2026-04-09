@@ -254,4 +254,3 @@ published: false
 ### clarity of communication in your in-class demo presentation
 
 \newpage
-

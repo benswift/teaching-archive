@@ -19,17 +19,17 @@ In this lab you will:
 We will continue working on your Final Project!
 
 You can find all the details about the final project assessment task by visiting the [final project
-deliverables](/deliverables-year-12/03-final-project/) page. 
+deliverables](/deliverables-year-12/03-final-project/) page.
 
-**NOTE:** You **must Must MUST fork and clone** the project template repository. A number of students are still to fork and clone, and it is now Week 4 of 9 weeks for working on your project!!! You can find the [template repository for your final project submission here.]().  If there are [**blockers**](https://www.atlassian.com/blog/project-management/most-common-project-blockers) for working on your project we will work on identifying and [getting around these](https://services.unimelb.edu.au/counsel/resources/study-related-issues).
+**NOTE:** You **must Must MUST fork and clone** the project template repository. A number of students are still to fork and clone, and it is now Week 4 of 9 weeks for working on your project!!! You can find the [template repository for your final project submission here.](). If there are [**blockers**](https://www.atlassian.com/blog/project-management/most-common-project-blockers) for working on your project we will work on identifying and [getting around these](https://services.unimelb.edu.au/counsel/resources/study-related-issues).
 
-The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**. 
+The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**.
 
 ## Part 1: L-Systems [30 minutes]
 
-[Lindenmayer Systems](https://en.wikipedia.org/wiki/L-system) are [weirdly] a "parallel re-writing system", or a "type of formal grammar'. 
+[Lindenmayer Systems](https://en.wikipedia.org/wiki/L-system) are [weirdly] a "parallel re-writing system", or a "type of formal grammar'.
 
-L-systems were [introduced and developed a Hungarian biologist/botanist, Astrid Lindenmayer (1968)](https://doi.org/10.1016/0022-5193(68)90080-5). He created models of plant cells and plant growth. Simplifying complex structures to a grammar system, where components of the current sentence structure are replaced by new "grammatically correct" snippets through the "rewriting process" at each stage of growth (which I have called "generations" in the code). 
+L-systems were [introduced and developed a Hungarian biologist/botanist, Astrid Lindenmayer (1968)](<https://doi.org/10.1016/0022-5193(68)90080-5>). He created models of plant cells and plant growth. Simplifying complex structures to a grammar system, where components of the current sentence structure are replaced by new "grammatically correct" snippets through the "rewriting process" at each stage of growth (which I have called "generations" in the code).
 
 The lab template repository contains an example of the code with a few changes.
 
@@ -47,20 +47,20 @@ We start with an "axiom", which is a valid phrase or sentence written in the gra
 
 We repeat a process:
 
-* read the current sentence
-* for each symbol, refer to the rules:
-    - replace the symbol with the matching phrase from the rule book
-    - if not match is found, just put the current symbol back in
+- read the current sentence
+- for each symbol, refer to the rules:
+  - replace the symbol with the matching phrase from the rule book
+  - if not match is found, just put the current symbol back in
 
 We then use the current sentence to display the state of the L-System.
 
-Amazingly, the concept of [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) is best for this.  Our standard representation is:
+Amazingly, the concept of [turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) is best for this. Our standard representation is:
 
-* `F` == Draw a line forwards 1 unit
-* `-` == turn left
-* `+` == turn right
-* `[` == push the current transform state onto the stack
-* `]` == pop the transform state on the stack back
+- `F` == Draw a line forwards 1 unit
+- `-` == turn left
+- `+` == turn right
+- `[` == push the current transform state onto the stack
+- `]` == pop the transform state on the stack back
 
 `X` is not represented. It is a placeholder to allow different L-System transformation rules.
 
@@ -88,12 +88,12 @@ When you have finished your sketching for today, make sure you stage, commit and
 
 ## Part 4: Documenting [10 minutes]
 
-Write a short piece reflecting on the progress you have made. 
+Write a short piece reflecting on the progress you have made.
 
-* What did you achieve today?
-* How are you tracking against your plan?
-* What is working? 
-* What is not working/needs to be changed, scrapped, or tweaked?
+- What did you achieve today?
+- How are you tracking against your plan?
+- What is working?
+- What is not working/needs to be changed, scrapped, or tweaked?
 
 Adapt your plan if necessary.
 
@@ -107,6 +107,6 @@ Congratulations! In this lab you:
 
 1. learned a little about Lindenmayer Systems (L-Systems) and how they can be used
 2. explored ideas for interaction, critically examining the interaction used for L-Systems
-3. workshopped a sketch for this project 
+3. workshopped a sketch for this project
 
 Before you leave class today, make sure you commit and [push your work to GitLab]().

@@ -7,11 +7,11 @@ This is the page with the answers to your questions, well, as long as they have 
 
 ## Getting started {#getting-started}
 
-### What do I need to do when I *start* the course? {#course-start-checklist}
+### What do I need to do when I _start_ the course? {#course-start-checklist}
 
 Here's a checklist:
 
-1. make sure you can log in to [the forum]({{site.forum.url}}) 
+1. make sure you can log in to [the forum]({{site.forum.url}})
 
 2. read the course [policies page](/policies/)
    carefully
@@ -26,10 +26,10 @@ Here's a checklist:
 
 1. watch & ask questions on [the forum]({{site.forum.url}})
 
-2. read the weekly lab material *ahead of time*, complete pre-lab tasks and attend your scheduled lab
+2. read the weekly lab material _ahead of time_, complete pre-lab tasks and attend your scheduled lab
    session
 
-3. start the assignments *early*
+3. start the assignments _early_
 
 4. ask questions (in lectures, during labs and on [the forum]({{site.forum.url}})) if you don't understand anything---there are no silly questions in this course.
 
@@ -76,7 +76,7 @@ If you need a refresher, then [lab 1](/labs/01-intro/) is probably a good place 
 
 ### What's the COMP1720 test URL? {#test-url}
 
-Every time you push your code to GitLab for the [labs](/labs/) or [assessments](/assessments/) the latest version will also be visible at the 
+Every time you push your code to GitLab for the [labs](/labs/) or [assessments](/assessments/) the latest version will also be visible at the
 following URL (with `uXXXXXXX` replaced by your own uni ID and
 `major-project` replaced by e.g. `assignment-3` or `labs` depending on which
 project you're actually trying to look at):
@@ -98,7 +98,7 @@ the internet](/labs/01-intro/#pushing).
 ### Why is the `comp1720-2024-s2-marker` user listed as a member on my repo?
 
 This user is added automatically when you fork the template repo. It's there so
-that we can mark your submission and upload your feedback. 
+that we can mark your submission and upload your feedback.
 Don't remove this user (even after the assignment deadline is passed).
 
 ### What visibility settings should my assignment repo have?
@@ -137,7 +137,7 @@ Yes. You need to specifically specify every source in your references.
 
 ### What if base my submission on someone else's code, but I've made changes?
 
-You are not likely to get a good mark with this approach. In any case, you 
+You are not likely to get a good mark with this approach. In any case, you
 **must** credit the original author, even if you've made
 non-trivial changes. Otherwise, it's plagiarism---even though you've done
 some of your own work as well.
@@ -170,7 +170,7 @@ Yes.
 
 ### Where's the class forum/message board? {#where-is-the-forum}
 
-In  we use [{{site.forum.name}} as the main point of contact]({{site.forum.url}}). 
+In we use [{{site.forum.name}} as the main point of contact]({{site.forum.url}}).
 
 ### I can't access the forum---what should I do? {#I-cant-access-the-forum-what-should-i-do}
 
@@ -185,7 +185,7 @@ We will periodically add people to the forum in the lead-up, and early days of t
 When posting a question, simply tick the 'Anonymous' box.
 
 :::warning
-Anonymous posts only make you anonymous to other students, instructors will still be able 
+Anonymous posts only make you anonymous to other students, instructors will still be able
 to tell who you are.
 :::
 
@@ -194,7 +194,7 @@ to tell who you are.
 When posting a question, simply tick the 'Private' box.
 
 :::warning
-Private posts are visible to all teaching staff (tutors, lecturer(s) and convener). If 
+Private posts are visible to all teaching staff (tutors, lecturer(s) and convener). If
 you have a sensitive matter and only want the convener to see it, then [email the convener](mailto:{{site.contacts.page_contact.email}}) about it instead.
 :::
 
@@ -265,7 +265,7 @@ should have happened last time you pushed).
 ### I'm sick of getting these CI emails, can I disable them?
 
 Yes---if you want to disable this email notification, go to your account setting
-in GitLab (click on your profile picture, then select *Notifications*). Change
+in GitLab (click on your profile picture, then select _Notifications_). Change
 the notification level of your assignment repo to "Custom", then in the pop-up
 window de-select "Failed pipeline".
 
@@ -284,7 +284,7 @@ support office (N117) on the ground floor of the CSIT building.
 That's the place you need to go for help, because we don't administer the GitLab
 server ourselves (and can't easily give you access, fix issues etc).
 
-### What *is* git? {#what-is-git}
+### What _is_ git? {#what-is-git}
 
 [git](https://git-scm.com) is a version control program, which means that its
 job is to help you take "snapshots" of your files as you work on them. If you've
@@ -292,7 +292,7 @@ ever had to manually make "Save As..." copies of something (e.g. a Word
 document) with `-version-1`, `-version-2`... suffixes, you've used "version
 control" (a ghetto version of it, anyway). git is just a program to do this sort
 of thing automatically---to easily make (and keep track of) a bunch of snapshots
-of the files in a directory over time. 
+of the files in a directory over time.
 
 ### Do you have any videos demonstrating how to use git?
 
@@ -316,7 +316,7 @@ of this size.
 ### What's the difference between git & GitLab?
 
 [git](https://git-scm.com) is a program (like Microsoft Word) for keeping track
-of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
+of files (see [what _is_ git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
 git to keep track of your snapshots somewhere other than your own computer. The
 GitLab server never adds any new files to your snapshots, it just keeps track of
 the changes (commits) you've made once you push them to the server.
@@ -338,7 +338,7 @@ put in your password. This step isn't necessary, but it is super-handy.
 
 The basic idea is this: when you have trusted friends, you leave a key out for
 them so that they can get in to your house when you're not home. git allows you
-to do *sortof* the same thing.
+to do _sortof_ the same thing.
 
 This is so that the GitLab server knows that it's you (you don't want someone
 else submitting something on your behalf). Added bonus: no more passwords.

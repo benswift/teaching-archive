@@ -13,15 +13,15 @@ There are a few blogs that detail setting up and using the MQ-3 sensor. There ar
 
 We first implemented Pelayo's algorithm (see below), and consistently measured BAC readings of around 300% in clean air.
 
-````````` C++
+```C++
     sensor_volt = sensorValue/1024*5.0;
     RS = (5.0-sensor_volt)/sensor_volt; //RS is the resistance of the MQ3 sensor measuring alcohol
     R0 = RS/60.0; // 60 is found using interpolation; R0 is the resistance of the MQ3 sensor measuring air.
     Serial.print("R0 = ");
     Serial.println(R0);
-    
-    
-`````````
+
+
+```
 
 After some research, I found that most Arduino boards use only a 10-bit memory mapped register to read the voltage from an analog input, and so achieve raw readings between 0-1023, while the ESP-32 is capable of reading the input in 12-bit format (with a raw reading range of 0-4095). I updated the formula offered by Pelayo to suit our larger reading register, but still the readings were implausible.
 

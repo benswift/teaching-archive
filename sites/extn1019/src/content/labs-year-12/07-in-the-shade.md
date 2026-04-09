@@ -29,6 +29,7 @@ Note: shaders are also complex, use a different programming language to Javascri
 Shaders can be used in 2D graphics and 3D graphics! Either way, you must use WEBGL if you want to use shaders.
 
 ## Shader Resources
+
 The simplest and easiest way to use shaders is to find some shader resources and add them to your project.
 
 WEBGL shaders are written in the GLSL shader language.
@@ -36,11 +37,12 @@ WEBGL shaders are written in the GLSL shader language.
 P5.js requires 2 files/programs per shader: a vertex shader and a fragment shader. When searching for GLSL shaders you may find a shader which has the vertex and fragment shader in a single file: this must be separated into 2 files (vertex and fragment) if you want to use it in your sketch.
 
 Some good shader resources can be found at:
-* [p5.js shaders](https://itp-xstory.github.io/p5js-shaders/#/)
-* [Adam Ferris' p5.js Shader Repo](https://github.com/aferriss/p5jsShaderExamples)
-* [Shadertoy](https://www.shadertoy.com/)
-* [The Book of Shaders](https://thebookofshaders.com/)
-* [WebGL shader examples by Javier Gracia Carpio](https://webgl-shaders.com/)
+
+- [p5.js shaders](https://itp-xstory.github.io/p5js-shaders/#/)
+- [Adam Ferris' p5.js Shader Repo](https://github.com/aferriss/p5jsShaderExamples)
+- [Shadertoy](https://www.shadertoy.com/)
+- [The Book of Shaders](https://thebookofshaders.com/)
+- [WebGL shader examples by Javier Gracia Carpio](https://webgl-shaders.com/)
 
 ## How to Use a Shader
 
@@ -53,6 +55,7 @@ Follow along in the demonstration:
 5. run and enjoy
 
 ### loadShader()
+
 The function [`loadShader()`](https://p5js.org/reference/p5/loadShader/) creates a shader by loading the content of 2 separate shader files: one for the vertex shader and one for the fragment shader.
 
 ```js
@@ -61,11 +64,12 @@ let funkyShader;
 
 function preload() {
   // load the shader file
-  funkyShader = loadShader('/images/funky-shader.vert', '/images/funky-shader.frag');
+  funkyShader = loadShader("/images/funky-shader.vert", "/images/funky-shader.frag");
 }
 ```
 
 ### createShader()
+
 The function [`createShader()`](https://p5js.org/reference/p5/createShader/) creates a shader through defining the vertex shader and fragment shader as String variables within the JavaScript sketch.
 
 ```js
@@ -115,12 +119,12 @@ function setup() {
 function draw() {
   background(0);
   // pass any required data to the shader
-  funkyShader.setUniform("mxy",[mouseX/width, mouseY/height]);
+  funkyShader.setUniform("mxy", [mouseX / width, mouseY / height]);
 
   // shader() sets the active shader.  It is used what is drawn next (until no shader)
   shader(funkyShader);
-  // apply the shader to a rectangle 
-  rect(0,0,width,height);
+  // apply the shader to a rectangle
+  rect(0, 0, width, height);
 }
 ```
 
@@ -132,48 +136,50 @@ let shaderTexture;
 // Setting up a 3D Shader
 // Create a new canvas to match the browser size using WEBGL for rendering
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL); // WEBGL needed for shaders
-    // initialize the createGraphics layers (for the shader texture)
-    shaderTexture = createGraphics(width, height, WEBGL);
-    shaderTexture.noStroke();
+  createCanvas(windowWidth, windowHeight, WEBGL); // WEBGL needed for shaders
+  // initialize the createGraphics layers (for the shader texture)
+  shaderTexture = createGraphics(width, height, WEBGL);
+  shaderTexture.noStroke();
 }
 
 // Applying a Shader 3D
 function draw() {
-    // setup the shader and shader texture
-    // send information to the shader
-    shaderTexture.shader(funkyShader);
-    funkyShader.setUniform("u_time", millis()/1000);
-    // draw the shader (not on the screen, but in the texture layer)
-    shaderTexture.rect(-width/2, -height/2, width, height);  
+  // setup the shader and shader texture
+  // send information to the shader
+  shaderTexture.shader(funkyShader);
+  funkyShader.setUniform("u_time", millis() / 1000);
+  // draw the shader (not on the screen, but in the texture layer)
+  shaderTexture.rect(-width / 2, -height / 2, width, height);
 
-    background(0); // a black background 
-    // define which texture we will use for rendering our 3D surfaces
-    texture(shaderTexture);
+  background(0); // a black background
+  // define which texture we will use for rendering our 3D surfaces
+  texture(shaderTexture);
 
-    ambientLight(100, 100, 100);  // the lightness of the world
-    pointLight(180, 180, 180, 3*width/4, height / 4, 400);  // like a torch
+  ambientLight(100, 100, 100); // the lightness of the world
+  pointLight(180, 180, 180, (3 * width) / 4, height / 4, 400); // like a torch
 
-    push(); // save our transform state
-    translate(0, 300, 0); // move down the screen
-    rotateX(PI / 2); // rotate 1/4 of a circle around X-axis
-    ambientMaterial(250, 150, 200);  // create a material which is "flat" but responds to light
-    plane(1000, 1000);  // draw a 2D plane in 3D space of dimensions 1000 * 1000 units
-    pop();  // restore transforms to state prior to push()
+  push(); // save our transform state
+  translate(0, 300, 0); // move down the screen
+  rotateX(PI / 2); // rotate 1/4 of a circle around X-axis
+  ambientMaterial(250, 150, 200); // create a material which is "flat" but responds to light
+  plane(1000, 1000); // draw a 2D plane in 3D space of dimensions 1000 * 1000 units
+  pop(); // restore transforms to state prior to push()
 
-    translate(mouseX / 2 - width / 4, mouseY / 2 - height / 4, -20);
-    rotateZ(frameCount * 0.02); // rotate around the Z-axis with speed determined by frameCount
-    rotateY(frameCount * 0.004);
-    //specularMaterial(100, 200, 200); // create a shiny material with a colour
-    shininess(30); // define the level of glossiness of the material
-    torus(200, 40, 36, 20); // draw a torus(outside radius, tube radius, detail in X, detail in Y)
+  translate(mouseX / 2 - width / 4, mouseY / 2 - height / 4, -20);
+  rotateZ(frameCount * 0.02); // rotate around the Z-axis with speed determined by frameCount
+  rotateY(frameCount * 0.004);
+  //specularMaterial(100, 200, 200); // create a shiny material with a colour
+  shininess(30); // define the level of glossiness of the material
+  torus(200, 40, 36, 20); // draw a torus(outside radius, tube radius, detail in X, detail in Y)
 }
 ```
 
 ## Vertex Shader
-Vertex shaders define how the spatial components of the output will be rendered. They transform coordinate systems from the external application (in this case our p5.js sketch is the ***"external"*** application from the perspective of the shader) to normalized coordinate systems used in the GLSL program, and vice-versa. The spatial coordinate systems can be 2D or 3D. In a 2D context &mdash; vertex shaders convert from the canvas or shape coordinates to GLSL normalised coordinates. In a 3D context &mdash; vertex shaders transform 3D coordinates into different 3D coordinates: mapping from geometry to shader coordinates. 
+
+Vertex shaders define how the spatial components of the output will be rendered. They transform coordinate systems from the external application (in this case our p5.js sketch is the **_"external"_** application from the perspective of the shader) to normalized coordinate systems used in the GLSL program, and vice-versa. The spatial coordinate systems can be 2D or 3D. In a 2D context &mdash; vertex shaders convert from the canvas or shape coordinates to GLSL normalised coordinates. In a 3D context &mdash; vertex shaders transform 3D coordinates into different 3D coordinates: mapping from geometry to shader coordinates.
 
 ### Normalised coordinates
+
 In shader coordinate systems the minimum value is $$ -1.0 $$, and the maximum value is $$ 1.0 $$.  In a cartesian plane sense $$\left(0.0, 0.0\right)$$
 is the centre of the space, $$\left(1.0, 1.0\right)$$ is upper right, and $$\left(-1.0, -1.0\right)$$ is lower left.
 
@@ -198,7 +204,7 @@ void main() {
   vec4 viewModelPosition = uModelViewMatrix * vec4(aPosition, 1.0);
 
   // Tell WebGL where the vertex goes
-  gl_Position = uProjectionMatrix * viewModelPosition;  
+  gl_Position = uProjectionMatrix * viewModelPosition;
 
   // Pass along data to the fragment shader
   vTexCoord = aTexCoord;
@@ -214,6 +220,7 @@ The `void main()` function comes from the C-language family. `void` means it doe
 Vertex shaders require that `gl_Position` is assigned a value. Usually this is the last thing we do in the vertex shader. It is a proxy return value! This defines our map between the input aPosition and the shader coordinates.
 
 ## Fragment Shader
+
 Fragment shader determine how pixels (or, more correctly - positions on surfaces) are coloured. They require the vertex positions from the vertex shader, and a set of instructions about how to colour/shade each position at and between vertices.
 
 Fragment shaders **must** set a value to **`gl_FragColor`**. This is the proxy return value for a fragment shader, and is usually the last thing we do in the fragment shader.
@@ -237,11 +244,12 @@ void main() {
 **`varying`** means that the information acts as an automatic parameter (shared data) between the Vertex shader and the Fragment shader
 
 ## GLSL
+
 We have already seen some of [GLSL](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) looking at vertex shaders and fragment shaders above.
 
 **GLSL** stands for Open**GL** **S**hading **L**anguage.
 
-It is a high level shading language with a syntax based on the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)).
+It is a high level shading language with a syntax based on the [C programming language](<https://en.wikipedia.org/wiki/C_(programming_language)>).
 
 Technically, WebGL uses a subset of GLSL known as GLSL ES (embedded systems).
 
@@ -253,12 +261,12 @@ The most relevant types for us are:
 | Type | Description |
 | :--- | :--- |
 | `float` | a number with decimal points and an exponent |
-| `int` | whole numbers, 0 and  negative whole numbers |
+| `int` | whole numbers, 0 and negative whole numbers |
 | `bool` | a boolean value |
 | `vec2(x,y)` | a Vector of 2 floats |
 | `vec3(x,y,z)` | a Vector of 3 floats |
 | `vec4(r,g,b,a)` | a Vector of 4 floats |
-| `mat2(x0, y0, x1, y1)` | a 2*2 matrix |
+| `mat2(x0, y0, x1, y1)` | a 2\*2 matrix |
 | `sampler2D` | a reference to a texture object |
 
 Every statement **must** be separated by a semi-colon (end of line is acceptable in Javascript - not in C or GLSL)
@@ -283,4 +291,3 @@ Congratulations! In this lab you:
 2. Found some shaders and how to include them in your project
 3. Learned the difference between vertex and fragment shader files
 4. Started to experiment with the GLSL shader language
-

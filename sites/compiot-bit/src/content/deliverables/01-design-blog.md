@@ -17,7 +17,7 @@ Nobody reads (or writes) books these days, everything worth reading about comes
 in the form of a blog post.[^books] In this course you'll document everything
 you do through a series of blog posts.
 
-[^books]: this is *slight* hyperbole
+[^books]: this is _slight_ hyperbole
 
 ## Spec {#spec}
 
@@ -25,22 +25,22 @@ You'll write a blog post every week, according to the following schedule (dates
 in bold represent the [marking stages](#marking-schedule)):
 
 | date       | week | post topic                                                                                              |
-|------------|------|---------------------------------------------------------------------------------------------------------|
-| Nov 23     |    1 | intro blog post                                                                                         |
-| Nov 30     |    2 | artefact ideation                                                                                       |
-| Dec 7      |    3 | trip update (including evolving plans for your artefact)                                                |
-| Dec 16     |    4 | trip update (including evolving plans for your artefact)                                                |
-| **Dec 24** |    5 | [artefact plan](#artefact-plan) (hardware/software requirements, construction plan, etc.)               |
-| Dec 28     |    - | *no post required*                                                                                      |
-| Jan 4      |    6 | [project diary](#project-diary) (updates, photos, documentation, failures...)                           |
-| Jan 11     |    7 | [project diary](#project-diary)                                                                         |
-| Jan 20     |    8 | [project diary](#project-diary)                                                                         |
-| **Jan 25** |    9 | [project diary](#project-diary)                                                                         |
-| Feb 1      |   10 | [project diary](#project-diary)                                                                         |
-| Feb 8      |   11 | [project diary](#project-diary)                                                                         |
-| Feb 15     |    - | *no post required*                                                                                      |
-| Feb 18     |   12 | [design rationale](/deliverables/03-design-rationale/)                     |
-| **Feb 25** |   13 | public release of source code and documentation on GitHub (the ["launch" blog-post](#launch-blog-post)) |
+| ---------- | ---- | ------------------------------------------------------------------------------------------------------- |
+| Nov 23     | 1    | intro blog post                                                                                         |
+| Nov 30     | 2    | artefact ideation                                                                                       |
+| Dec 7      | 3    | trip update (including evolving plans for your artefact)                                                |
+| Dec 16     | 4    | trip update (including evolving plans for your artefact)                                                |
+| **Dec 24** | 5    | [artefact plan](#artefact-plan) (hardware/software requirements, construction plan, etc.)               |
+| Dec 28     | -    | _no post required_                                                                                      |
+| Jan 4      | 6    | [project diary](#project-diary) (updates, photos, documentation, failures...)                           |
+| Jan 11     | 7    | [project diary](#project-diary)                                                                         |
+| Jan 20     | 8    | [project diary](#project-diary)                                                                         |
+| **Jan 25** | 9    | [project diary](#project-diary)                                                                         |
+| Feb 1      | 10   | [project diary](#project-diary)                                                                         |
+| Feb 8      | 11   | [project diary](#project-diary)                                                                         |
+| Feb 15     | -    | _no post required_                                                                                      |
+| Feb 18     | 12   | [design rationale](/deliverables/03-design-rationale/)                                                  |
+| **Feb 25** | 13   | public release of source code and documentation on GitHub (the ["launch" blog-post](#launch-blog-post)) |
 
 Most of the topics listed above should be fairly self-explanatory. In the
 beginning it's a place to record your ongoing thought process behind the
@@ -84,18 +84,19 @@ to sketch out (in some detail) what you're actually going to build for your IoT
 artefact.
 
 This blog post needs to include:
+
 - a description of what you're planning to build (this is a sales pitch---make
   the reader excited to follow your journey as you build it!)
 - how your plan relates to the theme?
 - a discussion of the hardware (microcontroller, sensors, actuators) and
   software (frameworks, libraries, any server-side programming required) that
   you'll use to complete the project
-- a detailed timeline for the rest of the project (including *two* intermediate
+- a detailed timeline for the rest of the project (including _two_ intermediate
   miletstones during the summer so you can see how you're tracking)
 - a discussion of how you're going to collaborate and divide up the work (if
   you're working with a partner)
 
-The stuff you write in this post *can* change; in fact as you start to build
+The stuff you write in this post _can_ change; in fact as you start to build
 things it's inevitable that your ideas & materials will shift a bit. Still, it's
 crucial to make a plan at this stage, so that you've got a clear idea of what's
 ahead of you over the summer.
@@ -103,7 +104,7 @@ ahead of you over the summer.
 You should make the most of the opportunity to write a detailed plan. Don't
 think "if I'm super vague with my plan, then I won't be held to account and I
 can get away with changing things". That's not how it works (see previous
-paragraph). In fact, if things *do* go haywire it's even more important to have
+paragraph). In fact, if things _do_ go haywire it's even more important to have
 a plan, because it gives you an early indicator that you're falling behind (as
 the deadlines in your plan go whooshing by) and gives you the chance to correct
 things while there's still time. So treat this blog post as a real plan that
@@ -121,7 +122,7 @@ you've been working on that week:
 - some new inspiration that's hit you in the previous week, and how you're
   planning to incorporate it into your design
 
-- a discussion of the theme (*dis)connecting together*, and how your ideas about
+- a discussion of the theme (_dis)connecting together_, and how your ideas about
   the theme and your project are changing as you get further into the
   design/build process
 
@@ -162,11 +163,12 @@ We'll host the blog this website (on the [news page](/news/)).
 ### Schedule {#marking-schedule}
 
 The blog is worth 30% of your total grade. It's not the case that each post is
-worth 30÷*n* marks (where there are *n* blog posts); your blog will be assessed
+worth 30÷*n* marks (where there are _n_ blog posts); your blog will be assessed
 as a portfolio.
 
 However, because feedback is useful, we'll split the total 30% mark into 3
 stages. At each stage, you'll get a mark for what you've done in that stage:
+
 - 10% (after the Dec 24 post)
 - 10% (after the Jan 25 post)
 - 10% (at the end of the course)
@@ -203,7 +205,7 @@ Some of the things we're looking for in the blog posts are:
   alone
 
 - engaging with the theme; how do the ideas and projects discussed in the blog
-  relate to the theme of *(dis)connecting together*?
+  relate to the theme of _(dis)connecting together_?
 
 ## FAQ
 
@@ -238,11 +240,11 @@ they're done).
 
 Yes, in fact that's encouraged---especially in the early stages while you're
 still formulating your ideas on what you'll build. You might want to write one
-post which looks at a few IoT projects made by others (perhaps on *their* blogs)
+post which looks at a few IoT projects made by others (perhaps on _their_ blogs)
 and discusses what's interesting about them, then pulls some of the themes
 together in discussing what it means for the thing you want to build.
 
-### Can I write *more* posts than the ones [listed above](#spec)? {#can-i-write-more-posts}
+### Can I write _more_ posts than the ones [listed above](#spec)? {#can-i-write-more-posts}
 
 Yep, that's fine.
 
@@ -260,7 +262,7 @@ mark penalty for each late blog post in your overall blog portfolio.
 Yep, you can always go back and update links, add photos, fix mistakes, etc.
 
 If you're making big changes after the deadline (i.e. pushing an empty post
-before the deadline and then *substantially* fixing it later) this will be
+before the deadline and then _substantially_ fixing it later) this will be
 considered a late submission (the convenor's decision is final). Shenanigans
 will be called out, because otherwise it's not fair to the other students.
 
@@ -306,7 +308,7 @@ event), etc.
 
 ### How long should my posts be?
 
-How long's a piece of string? We're not going to put a "*n* words" requirement
+How long's a piece of string? We're not going to put a "_n_ words" requirement
 on the blog posts, because different posts will require different amounts of
 content to get the point across.
 
@@ -324,7 +326,7 @@ in there too.
 
 ### Do I need to include references, etc. the same as other written work I submit at uni?
 
-Of course! However, you don't *have* to include them in a separate "References"
+Of course! However, you don't _have_ to include them in a separate "References"
 section at the end of your blog post---if you just link to the particular things
 you're talking about/engaging with (or even embed them inline if it makes sense,
 e.g. YouTube videos) then that's fine.
@@ -339,7 +341,7 @@ you are so we can mark it :)
 Between you all, you should be able to figure this stuff out. Remember---you're
 a team 😊.
 
-If you break the website (be careful that you *don't*, obviously, but it
+If you break the website (be careful that you _don't_, obviously, but it
 happens) and it e.g. stops others being able to push their blog posts, then Ben
 will adjudicate extensions and/or late penalties on a case-by-case basis.
 
@@ -388,8 +390,8 @@ how your raw blog content should look in your markdown file.
 
 The "title" of your blog post is kindof special---jekyll automatically takes the
 text from the `title` key in your YAML frontmatter, and puts it at the top of
-your blog post in an `<h2>`. This is a good thing, and it means that you *do
-not* have to include the heading yourself:
+your blog post in an `<h2>`. This is a good thing, and it means that you _do
+not_ have to include the heading yourself:
 
 ```
 ---
@@ -417,7 +419,7 @@ website](https://cs.anu.edu.au/code-creativity-culture/).
 
 #### Images
 
-If the photo you want to include *isn't* already hosted on the internet, then
+If the photo you want to include _isn't_ already hosted on the internet, then
 you need to add it to your subfolder within the `_assets/` folder (make sure the
 image isn't too big!) and then use the Jekyll assets plugin to reference it like
 so (you should replace the `posts/ben/2017-iot-bit-crew.jpg` with the path to
@@ -426,7 +428,7 @@ keep the `style="width:100%;"` part the same):
 
 ![Here's the 2017 IoT @ BIT crew](../posts/images/ben/2017-iot-bit-crew.jpg)
 
-if the image you want to link to *is* already on the internet, then you can do
+if the image you want to link to _is_ already on the internet, then you can do
 it with [markdown's image
 syntax](https://daringfireball.net/projects/markdown/syntax#img).
 

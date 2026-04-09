@@ -15,6 +15,7 @@ In this lab you will:
 2. train your own ml model on a classification task of your choosing
 
 ## Introduction
+
 This term, we will be working with a new Javascript
 library called [ml5.js](https://ml5js.org/). It's a very approachable way to
 learn about machine learning and, more importantly, it integrates easily with
@@ -24,11 +25,12 @@ As you work through the lab, it'll be helpful to have the ml5.js [references](ht
 open in a new tab so you can refer to it easily.
 
 ## But first... Portfolio 2
+
 Portfolio 2 is due tonight!
 
 **Do:** If you haven't already, you must immediately fork, clone and open the [assignment template repository]():
 
-Today is your last chance to ask questions or get ***in person*** help with finishing your project.
+Today is your last chance to ask questions or get **_in person_** help with finishing your project.
 
 Please ensure you address all aspects of the specification, and self-assess using the rubric prior to submission.
 
@@ -90,7 +92,7 @@ operations. In this case, once the model has finished loading, it calls the
 'modelLoaded' function.
 
 ```js
-mnet = ml5.imageClassifier('MobileNet', modelLoaded)
+mnet = ml5.imageClassifier("MobileNet", modelLoaded);
 ```
 
 Copy the line of code above and paste it at the bottom of your `setup()` function.
@@ -118,7 +120,7 @@ stored in the `mnet` variable. This means we can call the `predict()` method
 using the dot operator `.` followed by the name of the method i.e. `predict()`.
 
 ```js
-mnet.predict(img_variable_name, gotResults)
+mnet.predict(img_variable_name, gotResults);
 ```
 
 The line of code above will print the results of the prediction to the console.

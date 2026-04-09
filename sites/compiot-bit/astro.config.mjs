@@ -6,11 +6,7 @@ import anuTheme from "astro-theme-anu";
 export default defineConfig({
   site: "https://teaching.benswift.me",
   base: "/compiot-bit/",
-  integrations: [
-    svelte(),
-    anuTheme({ checkLinks: false, checkA11y: false }),
-    sitemap(),
-  ],
+  integrations: [svelte(), anuTheme({ checkLinks: false, checkA11y: false }), sitemap()],
   fonts: [
     {
       name: "Public Sans",

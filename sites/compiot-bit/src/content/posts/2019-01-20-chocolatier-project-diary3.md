@@ -15,7 +15,7 @@ The wiring turned out to be simple enough that I should not have need a breadboa
 
 ![I have no idea what I'm doing](./images/chocolatier/gore_shot.jpg)
 
-Turns out that if nothing is happening, increasing the number of batteries pumping juice in is __not__ a good idea.
+Turns out that if nothing is happening, increasing the number of batteries pumping juice in is **not** a good idea.
 
 This is what it everything looked like when connected[^staged].
 

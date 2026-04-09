@@ -46,7 +46,7 @@ of it?
 You'll also submit today's lab code a bit differently. One of you (doesn't
 matter who) will submit the code you worked on together---this person should
 make a note at the top of their submission with both your names. The other
-partner's submission should just say e.g. "I worked with *Gladys* and she
+partner's submission should just say e.g. "I worked with _Gladys_ and she
 submitted our code under her name". If there are an odd number of students in
 your lab, then your tutor will put one of you into a group of three.
 
@@ -70,7 +70,7 @@ let's get started.
 
 ## Exercise 1: characters and health potions
 
-``` ARM
+```ARM
 .syntax unified
 .global main
 
@@ -85,7 +85,7 @@ end_loop:
 ```
 
 :::tip
-But before you write any more code, think: what are the *minimum* features that
+But before you write any more code, think: what are the _minimum_ features that
 you'll need to put in your program to create a game like this?
 :::
 
@@ -105,7 +105,7 @@ Given what you've covered so far, you probably decided to use a **register** to
 store the character's HP---good choice. Remember in last week's lab you used
 registers and instructions to perform your `2`+`2` operation? This is the same
 idea. From the computer's perspective the register is just a bunch of bits
-(well, a bunch of logic gates which store a bunch of bits) but as long as *you*
+(well, a bunch of logic gates which store a bunch of bits) but as long as _you_
 know that that particular register really represents your character's HP and
 treat it accordingly, then your game will play just fine.
 
@@ -118,16 +118,16 @@ everything up to GitLab.
 
 You're also hopefully by now starting to get the hang of the way things can go
 wrong in assembly programming. For example, if you try to write an instruction
-which branches to *itself*:
+which branches to _itself_:
 
-``` arm
+```arm
 my_label:
   b my_label
 ```
 
 then your board will stop talking to you (that's why we put a `nop` in the
 middle). And if you set a breakpoint on a label (like `my_label` above) then
-it may end up breaking one instruction *later* than you'd expect (this is a gdb bug). All of this stuff is a bit painful at first, but you get the hang of it.
+it may end up breaking one instruction _later_ than you'd expect (this is a gdb bug). All of this stuff is a bit painful at first, but you get the hang of it.
 
 If all else fails, un-plug and re-plug your board (but once you get used to the
 pitfalls you shouldn't have to do that too often).
@@ -170,7 +170,7 @@ What do you think is going on here?
 
 How can you deal with this problem? The answer lies is in the program status
 register in every ARMv7 CPU (including our little discoboard). You can see it in
-the *cortex registers* viewlet in VSCode under `cpsr`:
+the _cortex registers_ viewlet in VSCode under `cpsr`:
 
 ![Current](./images/lectures/week-2/cpsr-viewlet.png)
 
@@ -188,11 +188,11 @@ the `s` does---`add` and `adds` will leave the exact same result in the
 destination register, but `adds` will update the flags to leave some
 "breadcrumbs" about the result (which can be helpful, as you'll soon see).
 
-In addition to this, if you look at the *Tests* section of the 
-[cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf) then 
-you can see that there are some instructions specifically used to update the flags without 
+In addition to this, if you look at the _Tests_ section of the
+[cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf) then
+you can see that there are some instructions specifically used to update the flags without
 changing the values in the general purpose registers (`r0` - `r12`).  
-For example, `cmp r0, 10` is the same as `subs, r0, 10` except that the value in r0 is left 
+For example, `cmp r0, 10` is the same as `subs, r0, 10` except that the value in r0 is left
 untouched.
 
 :::info
@@ -213,7 +213,7 @@ into registers, then do an arithmetic operation on those registers) to set (a)
 the negative flag bit (b) the zero flag bit (c) the carry flag bit and (d) the
 overflow flag bit. Your program should look like this:
 
-``` arm
+```arm
 @ set the negative flag
 
 ... your instruction(s) go here ...
@@ -232,9 +232,9 @@ overflow flag bit. Your program should look like this:
 ```
 
 :::info
-If you're getting bored of stepping through every instruction, don't forget you 
-can set breakpoints, these control exactly where your debugger will pause after clicking 
-'continue' (the green button). You can do this by clicking in the left-hand 
+If you're getting bored of stepping through every instruction, don't forget you
+can set breakpoints, these control exactly where your debugger will pause after clicking
+'continue' (the green button). You can do this by clicking in the left-hand
 “gutter” (or margin) of the code view. You should see a little red dot appear:  
 ![A](./images/lab-1/vscode-breakpoint.png)
 :::
@@ -263,7 +263,7 @@ So understanding and checking the status flags really matters :)
 ## Exercise 3: enriching our game world
 
 At the moment, Hearthpebble is pretty boring. Let's add
-[mana](https://en.wikipedia.org/wiki/Magic_(gaming)) and stamina attributes to
+[mana](<https://en.wikipedia.org/wiki/Magic_(gaming)>) and stamina attributes to
 the character---pick a couple of registers (`r2` and `r3` are probably good
 choices) and initialise them to some values. Pick some values which seem good to
 you, you're the game designer now!
@@ -272,9 +272,9 @@ Even these small additions open up some interesting new actions, for example:
 
 - **fireball**: remove 20HP
 - **frenzy**: remove 20HP, but add 40 stamina
-- **magic poison**: do *double* the character's mana attributes in damage (hp := hp - 2 * mana)
+- **magic poison**: do _double_ the character's mana attributes in damage (hp := hp - 2 \* mana)
 - **strength from weariness**: (hp := hp + (mana - stamina)^2)
-- **eye of Zardok**: (stamina := (hp * stamina) / 100; mana := (mana / 16)^3)
+- **eye of Zardok**: (stamina := (hp \* stamina) / 100; mana := (mana / 16)^3)
 
 Write the assembly code for each of these actions.
 
@@ -286,7 +286,7 @@ things clearer. You can use whatever registers you like, but make sure that the
 important (like your HP!). For more complex mathematical expressions, you need
 to break it down into smaller steps. Use a pencil and paper if that helps.
 
-Now, create *at least* one action of your own. Give it a name, figure out what
+Now, create _at least_ one action of your own. Give it a name, figure out what
 it does to the game state and implement it in assembly code.
 
 :::info
@@ -306,7 +306,7 @@ of the "action sequences" don't accidentally clobber player 2's stuff. You can
 make the structure of the code by adding some labels to the code, something
 like:
 
-``` ARM
+```ARM
 main:
 
 player_1_init:
@@ -331,8 +331,8 @@ it wrong!
 
 :::tip
 Pair up with your partner and decide on some "house rules", e.g. no actions
-which are *too* powerful. Remember, it's not about winning, but about
-*understanding* what's going on.
+which are _too_ powerful. Remember, it's not about winning, but about
+_understanding_ what's going on.
 :::
 
 Once you've agreed on how your 2-player game will work, create your 2-player
@@ -347,7 +347,7 @@ a different outcome.
 :::info
 Commit and push your 2-player version of Hearthpebble.
 :::
- 
+
 ## Exercise 5: conditionals and branching
 
 You're probably getting good at watching registers in the register view to
@@ -365,7 +365,7 @@ Discuss with your partner: what does this instruction do? You can look at your
 cheat sheet if you like.
 :::
 
-``` ARM
+```ARM
 bne end_loop
 ```
 
@@ -373,7 +373,7 @@ Go back up to the top of your program (just under the `main` label) and add
 the following instructions. Keep the rest of your hearthstone code further down,
 as long as this stuff is at the top.
 
-``` ARM
+```ARM
 movs r0, #100
 beq end_loop  @ conditional branch 1
 subs r0, #200
@@ -448,7 +448,7 @@ need to step through a bunch more code (or, better yet, set a breakpoint on
 being aware of the fact that it'll be a bit different from your startup
 experiences with the week 1, 2 and 3 lab templates.
 
- **Remember that this is extension content at this stage---don't worry if you
- don't get to it in this lab.**
+**Remember that this is extension content at this stage---don't worry if you
+don't get to it in this lab.**
 
 </div>

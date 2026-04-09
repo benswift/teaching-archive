@@ -4,7 +4,8 @@ title: + Someday We'll Find It, The Sonic Connection...
 date: 2018-12-23
 week: 5
 ---
- *"... the lovers, the dreamers and me"*
+
+_"... the lovers, the dreamers and me"_
 
 <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
 
@@ -14,6 +15,7 @@ That's right friends, I am going to use my bare hands to create a device that le
 </br>
 
 #### Plan A (B, C, D, E, F, G)
+
 When I say design, I mean it in the loosest possible sense. I have no idea what could go wrong and I struggle to settle on one idea. So lets, you and me, accept the mess which follows for what it is; a very very very rough initial design.
 
 ![I am artist](./images/ushini/IamArtist.jpg)
@@ -24,6 +26,7 @@ There are a few basic components I will need; A battery, a wifi module, a microc
 As for the electronic componenets, well... I'll be travelling to some exotic places, so it all depends on whether I can find the electronics I'm looking for in the next two weeks.
 
 <span style="font-family:Courier; font-size:1.5em; color:purple">if</span><span style="font-family:Courier; font-size:1.5em">(lilypads_found_next_week){</span>
+
 <p class="indented">
 Since I'm potentially going to incorporate some temperature and pulse sensors, I want my device to be as flexible as possible so that the sensors can come into enough contact with the skin as required for accurate readings. So I have decided to go for Arduino Lilypad electronics. The Lilypad products allow you to sew on the components with conductive thread which will allow for a lot more flexibility. The only downside is the connections between components could be a bit loose. I should also think about what kind of material I want the bands to be. Ideally it should be thick and stretchy so that connections from the stitching don't come loose while still allowing for a snug fit on the arm. If the stretchyness of the fabric is going to become super problematic, then I'd opt for a non-stretchy fabric with an adjustable strap.</br>
 I will use the AMX3d Lilypad Arduino as the main controller and use the XBee 802.15.4 as the wifi module. It requires no manual configuration which I thought would be good since I'm just starting out. But man oh man is this going to be chownkey :( All of these components are fairly large and also aren't the cheapest option.
@@ -52,8 +55,8 @@ Here come some bullet points and dates :B
 
 - **January 15th:** By this time I reckon I should have a clear idea of how I want to aggregate the data and how it will affect the live coding code. I found a few Arduino OSC libraries for the ESP8266 on Github, so maybe that would be a good option. OSC works with [Extempore](https://extemporelang.github.io/), the live coding language I'll be working with. Again, I could be really unlucky with finding microcontrollers/components over the next two weeks, in which case I'll switch the completion dates for these two tasks.
 
-- **January 25th:** Prototype Baybeeee. All things going well, I hope to have an MVP finished. I'm talking bare minimum, I move my hand with the wristband on and it changes some part of the live coding music. I would love love love to have a few wristbands finished by this time  and maybe a few more sensors if its appropriate, but I have some (healthy) scepticism about whether I can aggregate the data and have it meaningfully
-affect the music. But that is the dream, that is the goal.
+- **January 25th:** Prototype Baybeeee. All things going well, I hope to have an MVP finished. I'm talking bare minimum, I move my hand with the wristband on and it changes some part of the live coding music. I would love love love to have a few wristbands finished by this time and maybe a few more sensors if its appropriate, but I have some (healthy) scepticism about whether I can aggregate the data and have it meaningfully
+  affect the music. But that is the dream, that is the goal.
 
 - **and beyond:** I really don't think I am capable of planning past January. I will have just under two weeks in Feb to cleans things up and it will act as a much needed cushion since I have a bad habit of changing my mind in the last minute. New year, new me?
 

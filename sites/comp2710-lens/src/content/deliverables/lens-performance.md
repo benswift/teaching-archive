@@ -90,4 +90,3 @@ marking criteria (based on the [course learning outcomes](/outline/)) are:
 
 - presentation and communication of your LENS artefact through performance
   materials
-

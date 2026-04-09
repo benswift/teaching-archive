@@ -8,15 +8,18 @@ week: 2
 Welcome to the second instalment in this blog series. In this I will outline my current thoughts surrounding the artefact that I intend to build, including some of my leading ideas and some things I intend to do next.
 
 #### General Direction
+
 Throughout the past week in the Beijing IoT Study Tour, we have attended numerous labs and lectures covering several of the basic foundations of IoT. However these unfortunately proved to not relate strongly with the kind of device I wish to build. They have so far seemed to be focusing more on privacy and security; whereas I'm looking to make something more novel and gadget-like in its intentions.
 At the moment I am considering building upon some aspects of a previous project of mine, in particular, some of the hardware. The project used a low-cost microcontroller to make a cheap but highly customisable lighting system that would create a real-time audio-visualisation of a given audio input. I would like to use some components of the hardware setup in this design to enable the artefact to perform some complex or even cloud based analysis of an audio input.
 
 I have a couple of ideas of where I could take this. The main candidates are
-* Creating an even more generic and internet-connected version of the previous project.
-* Making a educational music analyser. I could make a device that can receive the audio from the instrument either directly (via cable) or via a microphone. It would then analyse the signal and generate some feedback as to how well the person is playing.
-* In a completely different direction, I could make some sort of game in which people could interact with other people over the internet. It would be similar to the internet games played on smart phones today but using as bespoke artefact of some design rather than a phone.
+
+- Creating an even more generic and internet-connected version of the previous project.
+- Making a educational music analyser. I could make a device that can receive the audio from the instrument either directly (via cable) or via a microphone. It would then analyse the signal and generate some feedback as to how well the person is playing.
+- In a completely different direction, I could make some sort of game in which people could interact with other people over the internet. It would be similar to the internet games played on smart phones today but using as bespoke artefact of some design rather than a phone.
 
 #### Where to go from here
+
 The next step I believe is to ascertain exactly what I wish this project to achieve whilst taking into account the time constraint (a couple of months). Once I have a good idea of what I want the device to achieve I can begin to sift through the potential functions and features to see what would be feasible.
 
 While I decide which direction I want to take it, there are a couple of other things I could do now which would help me later down the track.

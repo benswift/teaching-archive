@@ -6,12 +6,12 @@ summary: Questions and other content from Study Event 1
 ### Digital Logic
 
 In the lectures, we've mentioned an equality between logical formulae, truth
-tables, and simple circuits.  All have inputs and outputs, and this gives us the
+tables, and simple circuits. All have inputs and outputs, and this gives us the
 foundations of hardware through digital logic.
 
 Let's start off with a simple formula, $$(a \lor b) \land c$$.
 
-1. Draw the truth table for this formula.  How many inputs columns will it have,
+1. Draw the truth table for this formula. How many inputs columns will it have,
    and how many output columns will it have?
 2. Draw the logical circuit for this formula.
 
@@ -19,16 +19,16 @@ This should be fairly straightforward.
 
 For a more involved example, try the following truth table:
 
-| A | B | C | Output |
-|---|---|---|--------|
-| 0 | 0 | 0 | 0      |
-| 0 | 0 | 1 | 1      |
-| 0 | 1 | 0 | 1      |
-| 0 | 1 | 1 | 0      |
-| 1 | 0 | 0 | 1      |
-| 1 | 0 | 1 | 0      |
-| 1 | 1 | 0 | 0      |
-| 1 | 1 | 1 | 1      |
+| A   | B   | C   | Output |
+| --- | --- | --- | ------ |
+| 0   | 0   | 0   | 0      |
+| 0   | 0   | 1   | 1      |
+| 0   | 1   | 0   | 1      |
+| 0   | 1   | 1   | 0      |
+| 1   | 0   | 0   | 1      |
+| 1   | 0   | 1   | 0      |
+| 1   | 1   | 0   | 0      |
+| 1   | 1   | 1   | 1      |
 
 Derive a formula that expresses this truth table, and then draw the circuit
 diagram for it.
@@ -41,8 +41,8 @@ diagram for it.
 
 Working at the ANU's embedded systems research team, you have received a
 shipment of portable ARM embedded boards codenamed NIGHTCLUB from an unknown
-source.  Rumours have it that they are a modernised version of the DISCO boards
-used in previous years.  However you suspect that these CPUs of these boards
+source. Rumours have it that they are a modernised version of the DISCO boards
+used in previous years. However you suspect that these CPUs of these boards
 are of significantly lower quality, manifesting itself as random byte flipping
 within certain special registers.
 
@@ -105,14 +105,13 @@ source_buffer:
 
 2. When this code is run, what will actually happen?
 
-3. Suppose you have control over the `source_buffer` block.  What would you
+3. Suppose you have control over the `source_buffer` block. What would you
    populate the buffer with in order to:
-
    - Avoid data corruption?
    - Send the program into an infinite loop?
    - Populate `r0` with the value `0xDEADBEEF`?
 
-4. How would you protect against this kind of attack?  What would be the
+4. How would you protect against this kind of attack? What would be the
    easiest solution?
 
 As alluded to by the title, this is known as a "buffer overrun/overflow attack".
@@ -125,31 +124,30 @@ memory, most commonly C.
 #### Arming the processor
 
 We've chosen to work with ARM assembly and architecture for this particular
-course, which is known for its simplicity and understandability.  In order to
+course, which is known for its simplicity and understandability. In order to
 demonstrate this concept, let's implement some of the other instructions from
 more complex x86 architecture.
 
 - The x86 `loop<c>` instruction family decrement the ECX register and branch to
-    a particular label, unless ECX became zero or the condition "c" is fulfilled.
+  a particular label, unless ECX became zero or the condition "c" is fulfilled.
 
-    Implement a `loop<c> <Rn>, <label>` "instruction" as a macro that decrements
-    `Rn` and jumps to `label` unless `Rn` became zero, or the condition `c` is
-    set.
+  Implement a `loop<c> <Rn>, <label>` "instruction" as a macro that decrements
+  `Rn` and jumps to `label` unless `Rn` became zero, or the condition `c` is
+  set.
 
--   In x86, the `cmpxchg` instruction compares the first argument with the "return
-    value register", setting flags, and then swaps the first argument with the
-    second argument.
+- In x86, the `cmpxchg` instruction compares the first argument with the "return
+  value register", setting flags, and then swaps the first argument with the
+  second argument.
 
-    Implement a `cmpxchg <Rs>, <Rc>, <Rd>` "instruction" as a macro that compares
-    the registers `Rs` and `Rc`, setting any flags, and then exchanges the values
-    in `Rs` and `Rd`.
+  Implement a `cmpxchg <Rs>, <Rc>, <Rd>` "instruction" as a macro that compares
+  the registers `Rs` and `Rc`, setting any flags, and then exchanges the values
+  in `Rs` and `Rd`.
 
-    Also implement a `cmpxchg <Rs>, <Rc>, [<Rb>{, #+/-<offset>}]` instruction that
-    does the same same thing, but affects memory instead.
-
-    - Does your "function" have any other side-effects?
-    - Would this have the same effect if your CPU had some degree of
-      parallelisation?
+  Also implement a `cmpxchg <Rs>, <Rc>, [<Rb>{, #+/-<offset>}]` instruction that
+  does the same same thing, but affects memory instead.
+  - Does your "function" have any other side-effects?
+  - Would this have the same effect if your CPU had some degree of
+    parallelisation?
 
 ### Functions
 
@@ -160,7 +158,7 @@ feel free to work through this content as-is, or figure it out after you've had
 some time to think things through.
 
 We've seen the `bl` "branch with link instruction, which allows you to execute
-subroutines, or smaller blocks of code.  While very useful for executing small
+subroutines, or smaller blocks of code. While very useful for executing small
 blocks of instructions, it somewhat falls apart when dealing with any complex
 control flow...
 
@@ -182,11 +180,11 @@ mult_done:
 
 Consider the following questions:
 
-- What will this code do?  What do you think it was intended to do?
+- What will this code do? What do you think it was intended to do?
 - What causes this code to break?
 
 Write a version of this `mult` function that is actually a function, that is, it
-places its arguments on the stack and can perform recursion.  We've provided
+places its arguments on the stack and can perform recursion. We've provided
 a template for you below.
 
 ```
@@ -199,5 +197,5 @@ mult:
 
 - What are the purposes of `fp` and `lr` in the above code snippet?
 - Simulate the effects of the `mult` function on the whiteboard with your
-  friends for different arguments.  For example, try 4x1, 3x5, and 5x3.  Is the
-  order of the arguments important?  What happens if you use a negative number?
+  friends for different arguments. For example, try 4x1, 3x5, and 5x3. Is the
+  order of the arguments important? What happens if you use a negative number?

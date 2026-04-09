@@ -18,13 +18,13 @@ I brushed it off mentioning that governments can still get hold of the data from
 
 But why should you, a person living in a country with strong free speech tradition, limitations on government power, and views that are largely within the acceptable range[^Nitschke] care about corporate privacy?
 
-One answer is that on some philosophical  level, it just "feels" wrong. I personally would prefer that corporations not have profiles on exactly when I'm awake, my location history, my hobbies etc.
+One answer is that on some philosophical level, it just "feels" wrong. I personally would prefer that corporations not have profiles on exactly when I'm awake, my location history, my hobbies etc.
 
 However, the threat posed by this is worth examining further.
 
 ## The Dossier Society
 
-The phrase "Dossier Society" was, I believe,  coined by David Chaum in his 1985 Article ["Security Without Identification"](https://www.cs.umd.edu/class/fall2015/cmsc414-0201/papers/chaum-identification.pdf), where he mentioned "computers could be used to infer individuals’ life-styles, habits, whereabouts, and associations from data collected in ordinary consumer
+The phrase "Dossier Society" was, I believe, coined by David Chaum in his 1985 Article ["Security Without Identification"](https://www.cs.umd.edu/class/fall2015/cmsc414-0201/papers/chaum-identification.pdf), where he mentioned "computers could be used to infer individuals’ life-styles, habits, whereabouts, and associations from data collected in ordinary consumer
 transactions.", and posited that this could have a chilling effect on individual behaviour.
 
 This has become especially pervasive today, with smartphones being widespread. Even without resorting to side channels, apps not only have our transaction history, but [location](https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html), [speech patterns](https://myactivity.google.com/), [social circles](https://facebook.com) ([even without explicit consent](https://theconversation.com/shadow-profiles-facebook-knows-about-you-even-if-youre-not-on-facebook-94804)), [browsing history](https://newsroom.fb.com/news/2018/04/data-off-facebook/) ([even in Private Browsing](https://panopticlick.eff.org/)) etc.
@@ -32,7 +32,7 @@ This has become especially pervasive today, with smartphones being widespread. E
 This data is typically used for targeted advertising which, [even if Facebook claims otherwise](https://www.nytimes.com/2018/12/12/opinion/facebook-data-privacy-advertising.html), is equivalent to selling your information to the individual advertiser.
 
 I posit that if this has not affected individual behaviour, it is due to people simply not being aware of the level of tracking present in their day to day lives. To back this claim, I point to the apparent shock in response to stories like [this](https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html), or even the fact that they are stories at all. You could adopt a consequentialist approach, and claim that showing you relevant ads does no harm, and even might be beneficial. After all, connecting you to say, an indie band that you might like benefits both. However such gross violations of privacy take on a tragedy of the commons element, as can be seen with it's [effects on elections in the United States](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) and elsewhere[^FilterBubble].
- And as Glenn Greenwald pointed out in his [privacy TED Talk ](https://www.youtube.com/watch?v=pcSlowAhvUk), people do value privacy even if the say otherwise. After all, you would not be willing to disclose your email passwords to me, even if I pinky promised to not do anything with that information.
+And as Glenn Greenwald pointed out in his [privacy TED Talk ](https://www.youtube.com/watch?v=pcSlowAhvUk), people do value privacy even if the say otherwise. After all, you would not be willing to disclose your email passwords to me, even if I pinky promised to not do anything with that information.
 
 Now, there have been legal attempts to enforce privacy, like the European GDPR. However, as the above New York Times piece shows, this is not sufficient. We simply cannot trust third parties to handle our data. While post-violations reprucussions might be helpful, they are but slaps on the wrists for corporations. And any actions you might take after, say, election results have been altered, is too little too late.
 
@@ -58,7 +58,7 @@ So it needs
 
 4. Ultrasonic Sensor: HC-SR04 - Backup obstacle avoidance system.
 
-5. USB Microphone  (optional) - If I can get speech recognition working without resorting to online APIs.
+5. USB Microphone (optional) - If I can get speech recognition working without resorting to online APIs.
 
 6. Battery - to power the whole thing
 
@@ -76,17 +76,17 @@ The software part is unfortunately hard to plan before hand, because most open s
 
 ### Milestones
 
-| date    | week | post topic                                                                                   |
-|---------|------|----------------------------------------------------------------------------------------------|
-| Dec 24  |    5 | Publish the artefact plan                                                                    |
-| Jan 4   |    6 |  Finalise part list, order. Basic Computer Vision expermentation on PC.                      |
-| Jan 11  |    7 | Build Physical robot. Have object tracking code working.                                     |
-| Jan 18  |    8 | Have robot physically follow object                                                          |
-| Jan 25  |    9 | Build second robot. Robot-Robot and Robot-Computer communications/data sharing.              |
-| Feb 1   |   10 | Voice recognition, if local experiments are successful. Ad serving based on inferred data.   |
-| Feb 8   |   11 | Buffer Week                                                                                  |
-| Feb 18  |   12 | Polish artefact, have it up for display.                                                     |
-| Feb 25  |   13 | Post code on GitHub.                                                                         |
+| date   | week | post topic                                                                                 |
+| ------ | ---- | ------------------------------------------------------------------------------------------ |
+| Dec 24 | 5    | Publish the artefact plan                                                                  |
+| Jan 4  | 6    | Finalise part list, order. Basic Computer Vision expermentation on PC.                     |
+| Jan 11 | 7    | Build Physical robot. Have object tracking code working.                                   |
+| Jan 18 | 8    | Have robot physically follow object                                                        |
+| Jan 25 | 9    | Build second robot. Robot-Robot and Robot-Computer communications/data sharing.            |
+| Feb 1  | 10   | Voice recognition, if local experiments are successful. Ad serving based on inferred data. |
+| Feb 8  | 11   | Buffer Week                                                                                |
+| Feb 18 | 12   | Polish artefact, have it up for display.                                                   |
+| Feb 25 | 13   | Post code on GitHub.                                                                       |
 
 (Table shamelessly stolen from Brent's Week 5 Blog source.)
 

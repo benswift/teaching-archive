@@ -8,7 +8,7 @@ summary: "tips on writing your design document for Part 2 of each assignment"
 Here's the [**TL;DR**](https://www.lifewire.com/what-is-tldr-2483633)
 
 - you document should answer the question "why?"; after reading it, your tutor
-  should understand not just *what* you did but *why* you did it that way
+  should understand not just _what_ you did but _why_ you did it that way
 - this is a formal piece of academic writing---treat it professionally and with
   respect (and don't hack something together at the last minute)
 - for the love of all that is good in this world **do not explain your code
@@ -32,7 +32,7 @@ struggling with this document and it should be considered a starting point
 and/or a sanity check.
 
 Finally, this isn't a checklist---you can't point to anything on this page and
-say "I did *X*, so I should receive full marks". That's [not how this sort of
+say "I did _X_, so I should receive full marks". That's [not how this sort of
 thing works](/deliverables/01-synth/#dd-marking-criteria). However, if you ignore the advice provided here, your
 tutor may point you to this page to explain why you didn't do as well as you
 hoped---so that you can learn for next time.
@@ -67,14 +67,14 @@ opens your assignment they don't know what they're looking at/listening to. Your
 job in the design document is to show/tell them the story of you've done, how
 you did it, and why it's interesting.
 
-Some *ideas* for sections (again, this is not a template!):
+Some _ideas_ for sections (again, this is not a template!):
 
 - **Overview**: it's usually a good idea to provide a short overview section
   which gives a "big picture" view of what you've done
 - **Implementation**: how did you do what you did? This description should be at
   an appropriate level of detail---don't be too
   vague (too high-level), but don't just explain your code line-by-line
-  *anywhere* in your document (too low-level)
+  _anywhere_ in your document (too low-level)
 - **Reflection**: what did you learn? What was tricky/interesting/confusing?
 
 Remember that you're telling a story in your DD---it can't just be a list of
@@ -105,7 +105,7 @@ isn't relevant).
 ## How/why did you do it?
 
 **I cannot stress this enough**: do not explain your code line-by-line in your
-DD. Your code is *already* the best line-by-line explanation of your code that
+DD. Your code is _already_ the best line-by-line explanation of your code that
 you can possibly give. Instead, consider the specific parts of your
 program---what design decisions have you made in structuring/organising it the
 way you did?
@@ -133,12 +133,12 @@ opinion, e.g.
 > Macros require `@` and `\` characters everywhere, which adds "visual noise" to
 > the code
 
-Again, notice that it *doesn't* say:
+Again, notice that it _doesn't_ say:
 
 > I wrote the macro `X` and it does Y by accessing variables in registers r0 and > r2...
 
 This doesn't tell your tutor anything that they won't know from looking at your
-code. It does *not* explain why you wrote macro `X`. Do not explain your code
+code. It does _not_ explain why you wrote macro `X`. Do not explain your code
 line-by-line!
 
 ## Pictures, graphs & diagrams
@@ -152,7 +152,7 @@ when printed at a4 size.
 
 Do not hand-draw a diagram and include a photo of it in your DD. That's not
 professional and shows a lack of care about your work.
- 
+
 ## Code snippets
 
 Even though you should not explain your code line-by-line, this does not mean
@@ -191,7 +191,7 @@ questions that you can answer that still address the idea that a function is
 ## What questions should I answer in my DD?
 
 Here are a few questions the tutor might be thinking of when they come to your
-design document (this is *not* a template for your document---just some
+design document (this is _not_ a template for your document---just some
 suggestions).
 
 1. what waveform does your program generate? why did you decide on this one?

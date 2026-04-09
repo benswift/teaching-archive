@@ -19,7 +19,7 @@ I've decided to go ahead with the [Google Cloud API](https://cloud.google.com/vi
 
 To that end, I'm planning to use Google's Vision API to tag objects from a photo feed, and sound and natural language API to try and transcribe what is being spoken, and and analyze it. The results will then be displayed on a screen.
 
-I have experimented with them on my laptop, and I don't really have anything to comment on from a technical perspective. Installation was as easy as ```pip install google-cloud-*``` and their API is pretty easy to use and well documented.
+I have experimented with them on my laptop, and I don't really have anything to comment on from a technical perspective. Installation was as easy as `pip install google-cloud-*` and their API is pretty easy to use and well documented.
 
 ### Pi-Arduino Communication
 

@@ -14,11 +14,11 @@ page](/getting-help/).
 
 In general, prerequisites are there for a reason, and you certainly won't get a
 permission code just because you ask for one. "I need to finish my degree by
-*date*" also isn't a valid reason: in fact if you take this course without the
+_date_" also isn't a valid reason: in fact if you take this course without the
 required background knowledge and fail it (a definite possiblity!) then you'll
-be even *further* behing in your completion plans.
+be even _further_ behing in your completion plans.
 
-However, in some situations you *might* be eligible for a permission code. You
+However, in some situations you _might_ be eligible for a permission code. You
 need to [email the course convenor (Uwe Zimmer)](mailto:comp2300@anu.edu.au) and
 explain:
 
@@ -38,10 +38,10 @@ Remember that there's an [hurdle oral exam in week 4](/labs/04-hurdle-lab/), so 
 then you'll need to make sure you can pass that assessment task (otherwise
 you'll fail the course).
 
-### I *want* to enrol, but I'm waiting on the result of a supplementary exam---what should I do? {#waiting-on-supp}
+### I _want_ to enrol, but I'm waiting on the result of a supplementary exam---what should I do? {#waiting-on-supp}
 
 You need to get in touch with the convenor **as soon as possible**. If you do
-this before the course starts (or *perhaps* in week 1) then we are willing to
+this before the course starts (or _perhaps_ in week 1) then we are willing to
 give you temporary access to the course materials, etc. so that you can
 participate in the course as normal. If you don't end up passing the
 supplementary exam for one of the prerequisite courses, then you can unenroll in
@@ -57,7 +57,7 @@ always take the course next year.
 
 In 2019 it's Uwe Zimmer. Ben's [on parental leave](#ben).
 
-### What do I need to do when I *start* the course? {#course-start-checklist}
+### What do I need to do when I _start_ the course? {#course-start-checklist}
 
 Here's a checklist:
 
@@ -76,10 +76,10 @@ course you'll need to:
 
 1. watch & ask questions on [the COMP2300 forum]({{site.forum_url}})
 
-2. read the weekly lab material *ahead of time*, and attend your scheduled lab
+2. read the weekly lab material _ahead of time_, and attend your scheduled lab
    session
 
-3. start the assignments *early*
+3. start the assignments _early_
 
 4. ask questions (in lectures, during labs and on [the COMP2300 forum]({{site.forum_url}})) if you don't understand anything---there are no dumb questions in
    COMP2300, and if you're ever made to feel this isn't the case then [let me
@@ -88,7 +88,7 @@ course you'll need to:
 ### Why do you keep calling it COMP2300 when I'm in COMP6300?
 
 Sorry about that---it's nothing personal, it's just that it's too much hassle to
-write the full *COMP2300/6300* each time. If there's any information which is
+write the full _COMP2300/6300_ each time. If there's any information which is
 specific to one course group or the other, I'll make it really clear.
 
 ### Is there a textbook for this course?
@@ -135,7 +135,7 @@ have to give it back.
 If you want another discoboard to give one to a loved one as a present (or any
 other reason) then you can purchase it on the
 [internet](https://en.wikipedia.org/wiki/Internet) using
-[money](https://en.wikipedia.org/wiki/Money). They're not *that*
+[money](https://en.wikipedia.org/wiki/Money). They're not _that_
 expensive---probably around 40AUD+shipping.
 
 You can get them from these places (or others---just make sure you've got the
@@ -143,7 +143,7 @@ correct model, because ST actually make a few different discoboards).
 
 - [Arrow](https://www.arrow.com/en/products/stm32l476g-disco/stmicroelectronics)
   (who also give an [education discount of
-  20%](https://www.arrow.com/en/campaigns/student-teacher-discount ))
+  20%](https://www.arrow.com/en/campaigns/student-teacher-discount))
 - [Digikey](http://www.digikey.com/product-detail/en/stmicroelectronics/STM32L476G-DISCO/497-15879-ND/5344355)
 - [Mouser](https://au.mouser.com/ProductDetail/STMicroelectronics/STM32L476G-DISCO/?qs=dHDuPHwQO7%2fdDimmoK%252bDRg==)
 
@@ -187,7 +187,7 @@ attempt will be made to provide you with a lecture recording, the only way to
 ### Will I (as a student) be recorded as part of the lectures?
 
 COMP2300 lectures are fun, interactive times of sharing and discussion (at least
-I hope). This means that if you answer a question in the lecture you *might* be
+I hope). This means that if you answer a question in the lecture you _might_ be
 captured on the audio recording. Just a heads up. If this is an issue, then [let
 me know](mailto:comp2300@anu.edu.au).
 
@@ -213,11 +213,11 @@ COMP2300 lectures will be recorded, so you could always watch the videos later
 
 You should talk to the other lecturer anyway (especially to see if those
 lectures will be recorded). You could alternate between them, and watch the
-video of the one you missed. I *hope* that the COMP2300 lectures will be so good
+video of the one you missed. I _hope_ that the COMP2300 lectures will be so good
 that you'll want to attend those ones, though :)
 
 The most important thing is that you attend your lab group---if you do that (and
-*engage* while you're there) then I think you'll be ok and able to keep up.
+_engage_ while you're there) then I think you'll be ok and able to keep up.
 
 ## Labs {#labs}
 
@@ -234,7 +234,7 @@ thing because the first lab happens before the first lecture anyway.
 
 ### When will lab sign-up open? {#lab-signup}
 
-As stated on the course website since before the start of semester, 
+As stated on the course website since before the start of semester,
 lab enrolments open Monday, week 1, 12:00.
 
 ### How do I sign up for labs?
@@ -242,9 +242,9 @@ lab enrolments open Monday, week 1, 12:00.
 Lab sign-ups happen through [streams]({{site.streams_url}})---you just log in
 with your usual uni ID and password and it's pretty straightforward.
 
-### I can *only* attend (insert specific lab time here)---can you move me into that lab? {#can-you-move-me-into-a-specific-lab}
+### I can _only_ attend (insert specific lab time here)---can you move me into that lab? {#can-you-move-me-into-a-specific-lab}
 
-If you [email me](mailto:comp2300@anu.edu.au) *before* [lab signup](#lab-signup)
+If you [email me](mailto:comp2300@anu.edu.au) _before_ [lab signup](#lab-signup)
 opens and explain your situation then I'll do my best to accommodate you. I know
 that there's lots of competing demands on your time these days, and I want to
 help you out if at all possible.
@@ -275,7 +275,7 @@ If this course isn't listed for you when you log in to streams, that means
 you're not enrolled in the course. You need to talk to student services as soon
 as possible to see why; it might be because you don't satisfy the
 [prerequisites](/outline/), it might be because
-you only *just* enrolled and you haven't showed up in the system yet, it might
+you only _just_ enrolled and you haven't showed up in the system yet, it might
 be for a whole bunch of other reasons. We can't enrol you in the course
 directly, so head to student services ASAP (probably best to go in person) to
 figure out what's going on.
@@ -283,11 +283,11 @@ figure out what's going on.
 ### Can I pick which tutor I want to have/want to avoid?
 
 Not without a good reason---it's really hard to schedule everyone into lab
-groups as it is, so there's really no room for *"I only want to be with this
-tutor..."* or *"I want to be in a lab with my friends"* constraints. We don't
+groups as it is, so there's really no room for _"I only want to be with this
+tutor..."_ or _"I want to be in a lab with my friends"_ constraints. We don't
 separate people deliberately, but we just can't promise to keep people together.
 
-However, if you've got a legitimate reason, then contact the course convenor and we'll *try* and
+However, if you've got a legitimate reason, then contact the course convenor and we'll _try_ and
 sort something out.
 
 ### Can I attend a different lab session? {#can-i-attend-a-different-lab-session}
@@ -338,7 +338,7 @@ question without giving away your code.
 Also, if you don't ask for help till the week (or day!) before the assignment
 then I might not have time to even do that. Sorry.
 
-### So are there *really* no late submissions allowed? {#no-late-submissions}
+### So are there _really_ no late submissions allowed? {#no-late-submissions}
 
 Yep, really. If you hand it in even a couple of minutes late, you'll get zero
 for the assignment. So push early and push often!
@@ -352,7 +352,7 @@ need to hear and remember this. You should probably get a neck tattoo.
 
 ### Does this include the [Statement of Originality](#statement-of-originality)? {#does-this-include-the-statement-of-originality}
 
-Yes, the "no late submissions" policy applies to *every* aspect of your
+Yes, the "no late submissions" policy applies to _every_ aspect of your
 submission---the code, the assets, the artist statement, the [statement of
 originality](#statement-of-originality). If it's part of your submission, you
 must push it before the deadline.
@@ -382,7 +382,7 @@ exceptions**](#can-you-make-an-exception-for-me).
 Seriously, don't leave this stuff to the last minute. Use the
 [checklist](#submission-checklist) to make sure that you've followed the rules.
 
-### I pushed things, but not until after the deadline---can you *please* accept my submission?
+### I pushed things, but not until after the deadline---can you _please_ accept my submission?
 
 See [above](#no-late-submissions).
 
@@ -391,7 +391,7 @@ See [above](#no-late-submissions).
 No. If you're working on your own machine, you **really** need to understand the
 course [own machine policy](/policies/#own-machine-policy).
 
-### My *actual* assignment code was in another commit (i.e. not in [HEAD](https://stackoverflow.com/questions/2304087/what-is-head-in-git)), can you mark that instead?
+### My _actual_ assignment code was in another commit (i.e. not in [HEAD](https://stackoverflow.com/questions/2304087/what-is-head-in-git)), can you mark that instead?
 
 No, sorry. Again, this is a fairness issue---at uni you're not allowed to submit
 multiple assignments and then pick the mark you like best. The last commit on
@@ -405,7 +405,7 @@ will be marked (that your submission will be judged based on how it works when
 viewed on [Chrome](/resources/02-software-setup/#google-chrome) at the [test URL](#test-url)).
 
 If we're marking your assignment and it's buggy or otherwise doesn't seem to
-work right we will do *some* basic debugging to try and get it to work. *If*
+work right we will do _some_ basic debugging to try and get it to work. _If_
 there's just a very small fix required to get something to work then you won't
 get zero, although we will apply a penalty depending on how far the project
 falls short of the requirements. If we can't get it to work (and unfortunately
@@ -426,16 +426,16 @@ submission to make sure this doesn't happen to you.
 No, sorry. I really can't.
 
 One of the things I'm most committed to in this course is being fair to all
-students. After *every* assignment I get emails asking for special treatment
+students. After _every_ assignment I get emails asking for special treatment
 outside of these rules. At this point I have two things in mind:
 
-- I have to be fair to the students who *did* follow the rules
+- I have to be fair to the students who _did_ follow the rules
 - I have to be fair to other students who have received penalties for not
-  following the rules (and who I'm *sure* would have liked special treatment
+  following the rules (and who I'm _sure_ would have liked special treatment
   themselves)
 
 Look, I don't enjoy enforcing these policies and giving penalties when students
-have obviously put in a lot of hard work, and I really *want* you to do well in
+have obviously put in a lot of hard work, and I really _want_ you to do well in
 this course. However, for the reasons above the only way to be fair is to say no
 to these requests every time (with the exception of legitimate reasons as
 described on the [policies](/policies/#extensions) page).
@@ -456,7 +456,7 @@ You don't have to understand what's going on in this part---the best option is
 to just set a breakpoint at `main` and then continue (green "play" button)
 through the setup code, pausing when you get to your `main.S` source file.
 
-### I hit pause in the debugger and my editor is showing a bunch of C code that I don't understand---how do I get back to *my* assembly code?
+### I hit pause in the debugger and my editor is showing a bunch of C code that I don't understand---how do I get back to _my_ assembly code?
 
 Getting dropped into the [C setup code](#setup-code) when you hit pause is
 normal---you're just inside the `BSP_AUDIO_OUT_Play_Sample` function (or one of
@@ -468,7 +468,7 @@ the breakpoint in your code.
 
 ### Can I write my assignment in C?
 
-No. This is an assembly programming course, and so you must write all of *your*
+No. This is an assembly programming course, and so you must write all of _your_
 code in ARM assembly language (just like in the labs). You will get zero for any
 C code you write. If there are any disputes about whether you've used C code in
 your assignment, the convenor's decision is final.
@@ -490,7 +490,7 @@ resources section](/resources/05-writing-a-design-document/).
 Writing a good design document isn't like writing code to pass a bunch of unit
 tests. There's no one "correct" design document. Instead, we will mark Part 2 of
 your assignment (i.e. your design document) on how well it communicates what you
-did in your "synth" program and *why*. If you're looking for a rough guide, here
+did in your "synth" program and _why_. If you're looking for a rough guide, here
 are the ANU rules on what level of work qualifies for the different letter
 grades (you can find it in [Table 2 on this
 page](https://policies.anu.edu.au/ppl/document/ANUP_004603)).
@@ -520,7 +520,7 @@ Your design document must be a pdf file, but how you create that pdf file is up
 to you.
 
 You can use LaTeX, MS Word, some sort of markdown→pdf workflow; it doesn't
-matter. Some things which *are* important are:
+matter. Some things which _are_ important are:
 
 1. it should be clearly laid out and well organised: use headings to provide
    structure
@@ -565,7 +565,7 @@ We'll try[^try-really-hard] to release marks & feedback for all assignments
 within two weeks of the submission deadline.
 
 [^try-really-hard]:
-    We'll try really hard---but in large classes it's not *always* possible to
+    We'll try really hard---but in large classes it's not _always_ possible to
     hit this two week deadline.
 
 ### Where can I find my marks & feedback for my assignment? {#where-can-i-find-marks-feedback}
@@ -597,7 +597,8 @@ things wrong with your assignment---it's just that it's more useful to give
 suggestions about how to do things better than to write pages and pages of
 non-specific "well done" comments.
 
-Your tutor has worked hard to give you *actionable* feedback, which might include:
+Your tutor has worked hard to give you _actionable_ feedback, which might include:
+
 - things you did well
 - things which you could have done better
 - ideas to consider for next time
@@ -618,7 +619,7 @@ You should talk to your tutor (at a time which is convenient to them) about your
 assignment and get more feedback on how to improve for next time. We want you to
 do better in the future, so we work hard to give good feedback when you ask.
 
-Remember that the tutors and I mark *a lot* of assignments, and we work hard to
+Remember that the tutors and I mark _a lot_ of assignments, and we work hard to
 make sure things are fair for all students.
 
 ### Can I get my assignment re-marked?
@@ -639,8 +640,8 @@ So even after the submission deadline has passed, don't remove this user.
 ## Sample Plotter {#sample-plotter}
 
 :::info
-Linux and Windows users: You will most likely need to 
-[update the timeout](https://piazza.com/class/js9iyij0aiy637?cid=133) setting 
+Linux and Windows users: You will most likely need to
+[update the timeout](https://piazza.com/class/js9iyij0aiy637?cid=133) setting
 to allow the sample plotter to collect all samples.
 :::
 
@@ -653,7 +654,7 @@ function and plots them. It's basically a virtual oscilloscope.
 First, make sure you can build your project successfully.
 
 If your COMP2300 extension version is `0.3.5+`, then you can run the sample
-plotter using the *COMP2300: Plot Samples* command in the command palette. It
+plotter using the _COMP2300: Plot Samples_ command in the command palette. It
 will ask you how many samples to skip at the beginning (default: `0`), and how
 many samples to plot (default: `220`).
 
@@ -672,7 +673,7 @@ looks like this:
 
 ### I've run the sample plotter, but how do I interpret the results?
 
-The horizontal axis is the *sample index*---a count of how many times the code
+The horizontal axis is the _sample index_---a count of how many times the code
 calls the `BSP_AUDIO_OUT_Play_Sample` function (starting at 0). The vertical
 axis is the value of the sample (interpreted as a 16-bit signed integer).
 
@@ -688,7 +689,7 @@ values which lie on a straight line (e.g. sawtooth, triangle, square wave etc.).
 This makes the plot cleaner, and improves the interactive performance of the
 plot (since there are fewer samples to process for each interaction).
 
-However, if you want to see *every* output sample on your plot, you can turn off
+However, if you want to see _every_ output sample on your plot, you can turn off
 this feature by adding the following config option to your user/workspace
 settings (`[Ctrl/Cmd + ,]`):
 
@@ -706,7 +707,7 @@ should be pretty good---so you shouldn't need to mess with the settings.
 ### How long should it take to run the plotter? {#how-long-should-it-take-to-run-the-plotter}
 
 Plotting can take a while, depending on the total sum of samples to skip and
-collect. Each sample takes *about* 0.0195 seconds depending on your machine, so
+collect. Each sample takes _about_ 0.0195 seconds depending on your machine, so
 skipping 200 samples and then collecting 4000 samples would take about
 (200 + 4000) x 0.0195s = 81.9 seconds.
 
@@ -716,7 +717,7 @@ song then you need to plan accordingly.
 
 ### Why isn't my sample plotter working?
 
-If there are errors with the *Plot Samples* command, you can view some debug
+If there are errors with the _Plot Samples_ command, you can view some debug
 output in the **OUTPUT** panel: run `View: Toggle Output` in command palette and
 select `COMP2300` channel in the drop down list.
 
@@ -743,7 +744,7 @@ whatever tools and support you need to get that job done.
 
 ### Why isn't COMP2300 showing up in my Wattle?
 
-COMP2300 doesn't use Wattle for *anything*. The course should still show up in
+COMP2300 doesn't use Wattle for _anything_. The course should still show up in
 your course list in Wattle, but the course page on Wattle should just have a
 link to the [main course website](/index/).
 
@@ -771,7 +772,7 @@ If anything on here is confusing or you have any ideas for how to make the
 content better, then ask a question on [the COMP2300 forum]({{site.forum_url}}) and we
 can make it even better.
 
-### I've found some inconsistent info between the website and *some other place*---which one is correct?
+### I've found some inconsistent info between the website and _some other place_---which one is correct?
 
 Firstly, you should raise the issue on [the COMP2300 forum]({{site.forum_url}})---this is
 the sort of thing we need to get fixed up right away.
@@ -793,7 +794,7 @@ page](/resources/02-software-setup/).
 The [labs](/labs/) are one of the most
 important times for learning the course material, and there's lots to learn!
 This means that while you can bring your own computer to labs, and the tutors
-*might* be able to give you some advice if you're having trouble, the labs
+_might_ be able to give you some advice if you're having trouble, the labs
 aren't a time where we can troubleshoot all the install issues on your machine.
 I'm sorry that we can't do this (I want you to get the problems sorted out as
 well!) but there's just not enough time in the labs and it's not fair to the
@@ -805,7 +806,7 @@ information as possible about what's going wrong, what you've tried already and
 what you think might be the cause (otherwise it's hard to figure out what the
 problem might be).
 
-### Do I *have* to use my own laptop/desktop machine?
+### Do I _have_ to use my own laptop/desktop machine?
 
 Nope, you're welcome to just use the computers in the CSIT labs and the Peter
 Karmel building. We'll make sure they've got all the software you need.
@@ -842,6 +843,7 @@ In this course we've enabled GitLab's [Continuous Integration
 (CI)](https://gitlab.cecs.anu.edu.au/help/ci/quick_start/README.md) feature.
 This means that every time you push to your fork of the GitLab template repo,
 the GitLab server will check things like:
+
 - your originality statement is properly formatted
 - you have added a design document for Part 2
 
@@ -861,7 +863,7 @@ fixing them up. As the submission deadline approaches and you finish off your
 assignment you should see fewer and fewer failures.
 
 If your final push [before the deadline](#no-late-submissions) still doesn't
-pass the checks, then that *is* a problem. It means that there was something
+pass the checks, then that _is_ a problem. It means that there was something
 seriously wrong with your submission, e.g. one of the parts didn't compile, or
 you didn't commit your artist statement to the repo. There's nothing you can do
 about it at that stage, so make sure you heed the warnings early and give
@@ -894,7 +896,7 @@ should have happened last time you pushed).
 ### I'm sick of getting these CI emails, can I disable them?
 
 Yes---if you want to disable this email notification, go to your account setting
-in GitLab (click on your profile picture, then select *Notifications*). Change
+in GitLab (click on your profile picture, then select _Notifications_). Change
 the notification level of your assignment repo to "Custom", then in the pop-up
 window de-select "Failed pipeline".
 
@@ -923,7 +925,7 @@ If you need a refresher, then [lab 1](/labs/01-intro/) is probably a good place 
 
 ## git {#git}
 
-### What *is* git? {#what-is-git}
+### What _is_ git? {#what-is-git}
 
 [git](https://git-scm.com) is a version control program, which means that its
 job is to help you take "snapshots" of your files as you work on them. If you've
@@ -977,13 +979,13 @@ you want to work in and select the `Git Bash Here` menu item.
 
 The [GitLab help
 page](https://gitlab.cecs.anu.edu.au/help/gitlab-basics/start-using-git.md#open-a-shell)
-has some more info if you get stuck (it uses the term *shell*, which is just
+has some more info if you get stuck (it uses the term _shell_, which is just
 another name for terminal).
 
 ### What's the difference between git & GitLab?
 
 [git](https://git-scm.com) is a program (like Microsoft Word) for keeping track
-of files (see [what *is* git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
+of files (see [what _is_ git?](#what-is-git) above). The [GitLab server]({{site.gitlab_url}}) is a website (running on a computer at the ANU) which uses
 git to keep track of your snapshots somewhere other than your own computer. The
 GitLab server never adds any new files to your snapshots, it just keeps track of
 the changes (commits) you've made once you push them to the server.
@@ -994,7 +996,7 @@ GitLab user interface in the web browser).
 
 ### How do I install git?
 
-You *might* already have it. [Open up the terminal
+You _might_ already have it. [Open up the terminal
 window](#opening-up-a-terminal) and type
 
     git --version
@@ -1019,15 +1021,15 @@ might find useful (but other ways are ok as well).
 
 Using version control software (and git in particular) isn't just a skill which
 is useful in this course, it'll also help you in other courses and also in the
-real world (e.g. places like [GitHub](https://github.com/)). You *may* never use
+real world (e.g. places like [GitHub](https://github.com/)). You _may_ never use
 it again (hey, I don't know what you're planning to do with your life after uni)
 but I suspect that most of you will.
 
 ### Everything's stuffed! Why is git so painful?
 
 Take a deep breath, it'll be ok. If everything really is stuffed, then the
-question to ask yourself is *are there any changes on my local machine (i.e.
-things I've done since I last pushed to the GitLab server)* that I really can't
+question to ask yourself is _are there any changes on my local machine (i.e.
+things I've done since I last pushed to the GitLab server)_ that I really can't
 do without? If the answer is no, then perhaps the simplest solution is to just
 delete the whole folder and re-clone from the GitLab server.
 
@@ -1060,7 +1062,7 @@ the deadline!" excuses.
 
 You can either push each branch individually as you go, or you can just do a
 
-``` shell
+```shell
 git push --all
 ```
 
@@ -1071,13 +1073,13 @@ to push all the branches on your local machine.
 In your terminal (where you normally do your git stuff for this project), enter
 the following command:
 
-``` shell
+```shell
 git status
 ```
 
 The first line of the output will say:
 
-``` shell
+```shell
 On branch <branch name>
 ```
 
@@ -1090,13 +1092,13 @@ You need to change which branch you're working on. Assuming that you've
 committed all your changes (i.e. that your working directory is clean) you can
 switch to the `part-2` branch with
 
-``` shell
+```shell
 git checkout part-2
 ```
 
 If you want to switch back, just do
 
-``` shell
+```shell
 git checkout part-1
 ```
 
@@ -1130,7 +1132,7 @@ put in your password. This step isn't necessary, but it is super-handy.
 
 The basic idea is this: when you have trusted friends, you leave a key out for
 them so that they can get in to your house when you're not home. git allows you
-to do *sortof* the same thing.
+to do _sortof_ the same thing.
 
 This is so that the GitLab server knows that it's you (you don't want someone
 else submitting something on your behalf). Added bonus: no more passwords.
@@ -1144,8 +1146,8 @@ There are lots of things which could have gone wrong, and without knowing what
 the exact error message is it's hard to say how to fix it.
 
 If you ask a question on [the COMP2300 forum]() then make sure you
-clearly state what the situation is, what behaviour you *expect*, and what
-behaviour you *see* (including any error messages).
+clearly state what the situation is, what behaviour you _expect_, and what
+behaviour you _see_ (including any error messages).
 
 ### Where can I learn more about git?
 
@@ -1275,12 +1277,14 @@ By using a **structured** data format like YAML, you can check (validate) the
 information (using the provided YAML plugin for VSCode) on the fly---before you
 even push your code. For example, you'll sometimes have to tell us your uni ID
 as part of your submission. We could just say "put your uni ID at the top of
-the file, you'll lose marks if it's incorrect/not present". *Or*, we can have
+the file, you'll lose marks if it's incorrect/not present". _Or_, we can have
 you enter it in a YAML file which is validated to check that it's correct. So if
 you put:
+
 ```yaml
 uid: u12546548 # whoops! too many numbers!
 ```
+
 you'll get an error right there in VSCode (which you can fix straight away)
 rather than getting marked down for incorrect information on your assignment.
 Pretty cool, huh?
@@ -1347,21 +1351,21 @@ misconduct---maybe there's an innocent explanation. You will get the chance to
 meet with the convenor to explain your situation. If you can't attend the
 meeting, you'll get a chance to explain the situation via email.
 
-However, if you want to argue that there's been a mistake (and that you're *not*
+However, if you want to argue that there's been a mistake (and that you're _not_
 guilty of the academic misconduct charge) then you need to make a strong case.
 If your code is exactly the same as another student's code (or some code from
 the internet) then "I've never seen that code before" isn't a likely
-explanation. If your code is *mostly* the same but a few bits have been
-re-arranged/changed (e.g. variable names) then that's even *more* suspicious,
+explanation. If your code is _mostly_ the same but a few bits have been
+re-arranged/changed (e.g. variable names) then that's even _more_ suspicious,
 and you'll need to have a good explanation for why this has happened.
 
-### I *did* plagiarise some code/words/assets, what can I do? {#I-did-plagiarise-some-code}
+### I _did_ plagiarise some code/words/assets, what can I do? {#I-did-plagiarise-some-code}
 
 If you did take code or assets from somewhere else without attribution then the
 best thing you can do is admit it, apologise, take the punishment and make sure
 you **never** do it again. Apologising isn't a magic "get out of jail card", but
-it does make it more likely that you'll received the lesser charge of *poor
-academic practice* rather than the more serious *academic misconduct*.
+it does make it more likely that you'll received the lesser charge of _poor
+academic practice_ rather than the more serious _academic misconduct_.
 
 ### Why is the email so formal-sounding?
 
@@ -1415,8 +1419,8 @@ No, for three reasons:
 
 However, if this is what happened, it's still good to tell the truth, because
 that will work in your favour when it comes to [determine whether it's a case of
-*poor academic practice* (rather than the more serious *academic
-misconduct*)](#difference-between-poor-academic-practice-and-academic-misconduct).
+_poor academic practice_ (rather than the more serious _academic
+misconduct_)](#difference-between-poor-academic-practice-and-academic-misconduct).
 
 ### I'm an honest person, this whole thing is really unfair---why do I have to go through it?
 
@@ -1450,7 +1454,7 @@ If you can't attend the meeting in person, then you can either:
 All of these other options are only possible if they are suitable for the course
 convenor.
 
-### Do I *have* to attend the meeting?
+### Do I _have_ to attend the meeting?
 
 No, you don't have to even respond to the email. If you don't, then the convenor
 will make a decision based on the evidence they have available.
@@ -1501,15 +1505,15 @@ function/class, etc. While the penalty for PAP is usually to get zero for that
 assessment item, there's no mathematical formula---the penalty will be
 determined by the convenor on a case-by-base basis.
 
-### But I just forgot to reference that *one* thing, why am I still guilty of academic misconduct?
+### But I just forgot to reference that _one_ thing, why am I still guilty of academic misconduct?
 
 Because that's what you already claimed in your [Statement of
 Originality](#statement-of-originality), which says right at the top:
 
 > I declare that everything I have submitted in this assignment is entirely my
-> own work, with the following exceptions: *...*
+> own work, with the following exceptions: _..._
 
-When you submitted your work with that statement you *told* us that everything
+When you submitted your work with that statement you _told_ us that everything
 else in your submission was yours.
 
 This is the reason why there are **so many** reminders about the importance of
@@ -1529,7 +1533,7 @@ the finding.
 ### Do you enjoy dealing with academic misconduct cases? {#ben-do-you-enjoy-dealing-with-academic-misconduct-cases}
 
 No, I really don't. It's not fun to see students stressed out, it's a whole
-bunch of paperwork, and it also makes me sad for the other students who *did* do
+bunch of paperwork, and it also makes me sad for the other students who _did_ do
 the right thing (since I could be using that time & energy to help them out).
 
 :::warning
@@ -1574,11 +1578,11 @@ You **must** credit the original author in your SoO, even if you've made
 non-trivial changes. Otherwise, it's still plagiarism---even though you've done
 some of your own work as well.
 
-### What about references for the design document in the assignment "Part 2"s---do they go in the SoO? 
+### What about references for the design document in the assignment "Part 2"s---do they go in the SoO?
 
 In Part 2, if you refer to or incorporate some existing literature (e.g.
 Wikipedia) in your design document you shouldn't put that in your SoO. Instead,
-you should list that in the *References* section at the end of your design
+you should list that in the _References_ section at the end of your design
 document.
 
 ### So do I have to submit a separate SoO for both Part 1 and Part 2?
@@ -1591,10 +1595,10 @@ the last minute).
 
 Yes, of course! That's why there's an `assets` section in the Statement of
 Originality (see [example below](#soo-example)). The whole point of the SoO is
-that you're claiming that *everything* in your major project is your own
+that you're claiming that _everything_ in your major project is your own
 original work except for the things you explicitly list in the SoO.
 
-### What happens if I don't change the SoO file from the version in the template? 
+### What happens if I don't change the SoO file from the version in the template?
 
 We'll assume that everything is your own work, and you'll receive a small (10%)
 penalty for your overall assignment mark.
@@ -1708,7 +1712,7 @@ won't just give extra marks because you ask for them.
 Note that appeals may take some time to resolve (potentially sometime in S1 next
 year). I know that you might be frustrated, but whatever the outcome I'd ask for
 your patience during this process (unless you're graduating in July 2019 there's
-no *huge* rush on getting marks/grades changed if that is the outcome).
+no _huge_ rush on getting marks/grades changed if that is the outcome).
 
 ## Ben
 

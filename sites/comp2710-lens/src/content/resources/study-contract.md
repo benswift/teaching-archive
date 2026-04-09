@@ -69,11 +69,11 @@ LENS concert at the end of the course.
 
 ### Assessment
 
-| task                                                                   | mark | due date                             | marker            |
-| ---------------------------------------------------------------------- | ---- | ------------------------------------ | ----------------- |
-| [AV diary portfolio](/deliverables/audiovisual-diary/) |  30% | Mar 26 (stage 1), April 30 (stage 2) | Ushini Attanayake |
-| [LENS demo](/deliverables/demo-day/)                   |  20% | Week ~~8~~ 9                         | Ushini Attanayake |
-| [LENS performance](/deliverables/lens-performance/)    |  50% | June 1                               | Ben Swift         |
+| task                                                   | mark | due date                             | marker            |
+| ------------------------------------------------------ | ---- | ------------------------------------ | ----------------- |
+| [AV diary portfolio](/deliverables/audiovisual-diary/) | 30%  | Mar 26 (stage 1), April 30 (stage 2) | Ushini Attanayake |
+| [LENS demo](/deliverables/demo-day/)                   | 20%  | Week ~~8~~ 9                         | Ushini Attanayake |
+| [LENS performance](/deliverables/lens-performance/)    | 50%  | June 1                               | Ben Swift         |
 
 ### Meeting Dates
 

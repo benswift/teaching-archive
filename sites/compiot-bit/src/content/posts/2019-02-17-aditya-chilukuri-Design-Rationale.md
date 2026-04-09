@@ -4,6 +4,7 @@ date: 2019-02-17
 title: Design Rationale
 week: 12
 ---
+
 In this design rationale, I discuss the development of our project: from inspiration to the final reveal, with reflections along the way.
 
 ## Inspiration
@@ -60,6 +61,7 @@ To present day, and the artefact is (nearly) finished. Here are some limitations
 - The artefact's UI isn't convenient or well-polished.
 
 **Successes:**
+
 - Succeeded in showcasing our network architecture—our design choices mean that we can keep devices connected regardless of distance, as long as internet connection is available.
 - We overcame the major social problem with our project implementation—we removed the possibility this product could be used for drinking games with our solution for converting BAC readings to presentable data.
 

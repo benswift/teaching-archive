@@ -117,7 +117,7 @@ on the ANU campus. In term 2 2022 (starting April 27), the time & location is:
 
 - 5pm--7pm Wednesday in the ground floor computer lab (Computer Lab 1.24) in the
   [Hanna Neumann Building
-#145](https://www.anu.edu.au/maps#show=102872).
+  #145](https://www.anu.edu.au/maps#show=102872).
 
 In addition, students are expected to do a few hours a week at home using the
 material we'll provide in the class.

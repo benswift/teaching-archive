@@ -18,7 +18,7 @@ We ran out of time before we got to programming the LCD display in COMP2300, but
 if you want to build your skills then have a look at the reference manual and
 try and build a "library" for displaying stuff on the LCD display.
 
-There's a *rumour* that some folks have already got this working. But there's
+There's a _rumour_ that some folks have already got this working. But there's
 also a rumour that the loch ness monster exists, so git repo or it didn't
 happen.
 
@@ -46,7 +46,7 @@ There are a couple of ways to do this:
 
 It's awesome to have a real discoboard to work on, but sometimes you don't have
 it handy and you just want to try some simple code ideas which would work on
-*any* ARM Cortex device.
+_any_ ARM Cortex device.
 
 One cool project would be to try and get a simple emulator (e.g.
 [Unicorn](http://www.unicorn-engine.org/)) working as a
@@ -61,7 +61,7 @@ validation of coding ideas.
 
 ## Experiment with other (similar) boards
 
-This isn't a discoboard project per. se., but there are *lots* of other
+This isn't a discoboard project per. se., but there are _lots_ of other
 microcontroller boards out there to explore (and new ones being released all the
 time).
 
@@ -70,4 +70,3 @@ pill](http://wiki.stm32duino.com/index.php?title=Black_Pill), a much smaller and
 cheaper ($2ish) board, although with fewer bells and whistles. If you wanted to
 buy a bunch of them and get them working then there are bunch of fun projects
 you could try. Perhaps you could actually build **TweetyPotato**?
-

@@ -9,6 +9,7 @@ There's this rickety little staircase on the edge of a dusty street (whose name 
 I had no plans to waste any time in this shop so this had to be quick; I was going to be in and out.
 
 1 hours after entering, I left a proud new owner of;
+
 - Two NodeMCU ESP-12E Wifi modules
 - an MPU6050 accelerometer
 - a breadboard
@@ -34,9 +35,9 @@ Last time, I mentioned that I wasn't sure whether I wanted the motion data to be
 
 - [Music via motion: transdomain mapping of motion and sound for interactive performances](https://www.researchgate.net/publication/270819549_Music_via_motion_transdomain_mapping_of_motion_and_sound_for_interactive_performances)
 - [Making Motion Musical:
-Gesture Mapping Strategies for Interactive Computer Music](http://www.brown.edu/Departments/Music/sites/winkler/research/papers/making_motion_musical_1995.pdf)
+  Gesture Mapping Strategies for Interactive Computer Music](http://www.brown.edu/Departments/Music/sites/winkler/research/papers/making_motion_musical_1995.pdf)
 - [MAPPING MOTION TO SOUND AND MUSIC
-IN COMPUTER ANIMATION AND VE
-](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.1826&rep=rep1&type=pdf)
+  IN COMPUTER ANIMATION AND VE
+  ](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.46.1826&rep=rep1&type=pdf)
 - [Shaping and Exploring Interactive Motion-Sound
-Mappings Using Online Clustering Techniques](https://hal.archives-ouvertes.fr/hal-01577806/document)
+  Mappings Using Online Clustering Techniques](https://hal.archives-ouvertes.fr/hal-01577806/document)

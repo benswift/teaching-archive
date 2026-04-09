@@ -35,10 +35,11 @@ Thus, I am now on the way waiting for the new board! I'll immediately try my bes
 On the same time waiting for the new board, I began writing completed codes for each function: through getting sensor's data and making corresponding judgement, the device can work as expected. I think when new board comes and the Wi-Fi environment is successfully setup, I can "paste" the codes to the following position with little edit. Time is what I'm mostly worried about!
 
 When **compared to my draft timeline** in [Week 5 post](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/24/kathleen-artefact-plan/), the most significant differences are:
-1. *[Good Change]* I planned to finish one function and then come to the next, while I actually designed all functions and work on them together, to ensure no problem left at last. Actually, for separate sensors and devices, the current progress is good (shown through the project diaries) :)
-2. *[Bad News]* It's my mistake to separate too little time on Wi-Fi connection part in initial plan! I included it in a finished function build line, while ignore it at last when staying in China. I finally found out it's a real challenge when coming back to CBR, and still on the way dealing with that. This part is very important, as it will become the framework for my final codes.
 
-When comparing separate function with my [W5 "artefact planned design"](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/24/kathleen-artefact-plan/) (*Multiple Functions* section), only few sensors and operators are changed through my further exploration. I also always share my detailed design for each function in previous project diaries~ I will then show some ***completed "separate function"*** I finished this week (although without Internet connection)~
+1. _[Good Change]_ I planned to finish one function and then come to the next, while I actually designed all functions and work on them together, to ensure no problem left at last. Actually, for separate sensors and devices, the current progress is good (shown through the project diaries) :)
+2. _[Bad News]_ It's my mistake to separate too little time on Wi-Fi connection part in initial plan! I included it in a finished function build line, while ignore it at last when staying in China. I finally found out it's a real challenge when coming back to CBR, and still on the way dealing with that. This part is very important, as it will become the framework for my final codes.
+
+When comparing separate function with my [W5 "artefact planned design"](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/24/kathleen-artefact-plan/) (_Multiple Functions_ section), only few sensors and operators are changed through my further exploration. I also always share my detailed design for each function in previous project diaries~ I will then show some **_completed "separate function"_** I finished this week (although without Internet connection)~
 
 ### Land-water Swap
 
@@ -48,7 +49,7 @@ Considering **the direction of electric current determines the rotating directio
 
 As design, brightness value is first got through photoresistor (light sensor), and if the environment is brighter than the original brightness level (i.e. the got value is smaller than prescribed), the "up relay" will turn on for a little while and pull the board up; if the environment is darker, the "down relay" will be on a while and drop board down. We only need to guarantee that, if the board is already up, it cannot be pulled up for a second time, and vice versa.
 
-The testing "serial monitor" is shown below, and we only need connect the relays with the pulley system to finish the whole *land-water swap* function finally.
+The testing "serial monitor" is shown below, and we only need connect the relays with the pulley system to finish the whole _land-water swap_ function finally.
 
 ![Serial monitor for 'land-water swap' codes](./images/kathleen/land-water-swap-serial-monitor.jpg)
 
@@ -64,7 +65,8 @@ In final test, I may need to find the common turbidity voltage value for clean w
 
 ### Left Functions
 
-Compared with my "artefact plan", except the above 2 completed functions, ***the following jobs left for other functions***:
+Compared with my "artefact plan", except the above 2 completed functions, **_the following jobs left for other functions_**:
+
 1. Real-time clock module to enable periodic feeding and accurate message record;
 2. Use of water-proof temperature sensor;
 3. Connection of LED lamp.

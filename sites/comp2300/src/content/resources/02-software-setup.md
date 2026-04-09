@@ -15,7 +15,7 @@ One such extension is called [PlatformIO](http://platformio.org/), which is an
 Sometimes we abbreviate PlatformIO to just "PIO".
 
 [^ecosystem]:
-    The *ecosystem* thing means that PlatformIO isn't just for writing a
+    The _ecosystem_ thing means that PlatformIO isn't just for writing a
     specific program on a specific board with a specific "framework". You can
     read more about it in the
     [documentaion](http://docs.platformio.org/en/latest/ide/vscode.html#ide-vscode)
@@ -53,8 +53,7 @@ The pre-packaged one `0.4.4` is already out of date (latest is `>=0.4.5`).
 You can click on "Extensions" in the side-bar of VSCode to manage the extensions.
 :::
 
-[^food-drink]:
-    Ha! Just kidding, no food & drink in the labs. Sorry.
+[^food-drink]: Ha! Just kidding, no food & drink in the labs. Sorry.
 
 ### On your own machine
 
@@ -76,10 +75,10 @@ To set this all up on a new machine (e.g. your own laptop) here are the steps:
    then **wait until PlatformIO Core installation finishes**, follow the prompt and reload window
    ![PlatformIO](./images/platformio-install.png)
 
-6. *Windows users only*: download & install the
-    [ST-Link Windows Driver](/assets/resources/setup/stlink-windows-driver.zip/).
-    - Extract the archive and run either `dpinst_amd64.exe` or `dpinst_x86.exe` depending on whether you are on a 64-bit machine or 32-bit machine.
-        Follow the displayed instructions.
+6. _Windows users only_: download & install the
+   [ST-Link Windows Driver](/assets/resources/setup/stlink-windows-driver.zip/).
+   - Extract the archive and run either `dpinst_amd64.exe` or `dpinst_x86.exe` depending on whether you are on a 64-bit machine or 32-bit machine.
+     Follow the displayed instructions.
 
 7. now clone a [lab repo](/labs/) and open it in a VSCode window
 8. [connect your board to the computer](/labs/01-intro/#connecting-the-board) and then run `Platform IO: Upload`, it will then download some additional tools
@@ -92,9 +91,11 @@ If things ever go seriously wrong with trying to install this stuff on your
 own machine, you can always "start again" by deleting the `~/.vscode` and
 `~/.platformio` folders in your home directory, e.g. with this terminal
 command:
+
 ```bash
 $ rm -rf ~/.vscode ~/.platformio
 ```
+
 :::
 
 ## Using VSCode & PlatformIO
@@ -122,9 +123,9 @@ good questions on [the forum]({{site.forum_url}}) as well).
 
 ## Troubleshooting {#troubleshooting}
 
-Here's a list of issues you *might* come across, depending on the specific
+Here's a list of issues you _might_ come across, depending on the specific
 details of your machine. As always, be careful with copy-pasting random code you
-found on the internet (even in a university course!), and try to *understand*
+found on the internet (even in a university course!), and try to _understand_
 the problem first before you try the solutions listed.
 
 If there are new problems which come up often enough on [the COMP2300 forum]({{site.forum_url}}) I'll add them here.
@@ -152,11 +153,13 @@ Now, the messages in this Console view aren't really meant for VSCode users, so
 there will be a lot of stuff here, and a lot of it probably isn't relevant.
 However, if you keep this view open while you do the PlatformIO command which
 isn't working for you, then it might output some error messages here (watch for
-*red* lines of text) which give you more detailed information about what's going
+_red_ lines of text) which give you more detailed information about what's going
 wrong.
 
 <!-- ********************************************************************* -->
+
 ### Breakpoint problems
+
 #### can't set a breakpoint by clicking in the left-hand "gutter" {#breakpoints-broken}
 
 If you suddenly lose the ability to set a breakpoint by clicking in the "gutter"
@@ -167,14 +170,17 @@ file.
 To see if this is the case, check the bottom-right hand corner of the VSCode
 window (just to the right of the smiley face ☻). If it says "Assembly", then
 click there and switch it to ARM (you should probably use the "Configure file
-association for .S" drop-down option to set this to ARM for *all* `.S` files
+association for .S" drop-down option to set this to ARM for _all_ `.S` files
 while you're there).
 
 ### OpenOCD Upload Problems
+
 #### connection problems
+
 ```text
 Error: open failed OR Error: failed to read version
 ```
+
 This means that OpenOCD fails to connect the board.
 First check whether you have connect your board to the computer.
 Then try unplug and re-plug the board.
@@ -184,15 +190,18 @@ If you are on Linux, it **could** also be a [permission
 issue](#linux-device-permission).
 
 #### flash failure
+
 ```text
 Error: init mode failed (unable to connect to target)
 ```
+
 Sometimes a fresh new board need to be flashed first before upload using OpenOCD can work
 (don't ask me why, it just seem to work this way...).
 This manual flash only need to be done once:
 
 First, build a program image by running the `PlatformIO: Build` command in VSCode,
 then use the following commands in the VSCode integrated terminal:
+
 ```bash
 $ ~/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objcopy -O binary .pioenvs/disco_l476vg/firmware.elf .pioenvs/disco_l476vg/firmware.bin
 $ ~/.platformio/packages/tool-stlink/bin/st-flash write .pioenvs/disco_l476vg/firmware.bin 0x08000000
@@ -201,22 +210,29 @@ $ ~/.platformio/packages/tool-stlink/bin/st-flash write .pioenvs/disco_l476vg/fi
 If flash is successful, the subsequent `PlatformIO: Upload` should work fine.
 
 #### libusb_open()
+
 ```text
 Error: libusb_open() failed with LIBUSB_ERROR_NOT_SUPPORTED
 ```
-This doesn't seem to be a problem *as long as* there are no other errors that causes the upload program to fail.
+
+This doesn't seem to be a problem _as long as_ there are no other errors that causes the upload program to fail.
 The cause of this problem is still unknown,
 but the uploading still seems to succeed in the cases seen so far.
 
 <!-- ********************************************************************* -->
+
 ### ST-Util & GDB Problems
+
 #### ENOENT
+
 ```text
 Failed to launch ST-Util GDB Server: Error: spawn C:\xxxxxx\xxxx\.platformio\packages\tool-stlink\st-util.exe ENOENT
 ```
+
 `ENOENT` is file not found error.
 If you got some sort of this error when trying to run the debugger,
 first make sure that the following are in place (re-install PlatformIO Core if necessary):
+
 - COMP2300 extension is of the latest version;
 - if it's the program image, make sure you have compiled/build the program source (`PlatformIO: Build`);
 - `~/.platformio/packages/bin/tool-stlink/bin/st-util` exists;
@@ -230,9 +246,11 @@ sometimes the path resolution will fail. In this case the easiest would be to
 create another user with an English user name, and do all the development there.
 
 #### device not found
+
 ```text
 Couldn't find any ST-Link/V2 device
 ```
+
 Check board connection; replug if necessary.
 
 If you are on Windows, check if you have [installed the driver](#win-driver). If
@@ -240,22 +258,28 @@ you are on Linux, it **could** also be a [permission
 issue](#linux-device-permission).
 
 #### failed to read core id
+
 ```text
 src/common.c: Failed to read core id
 ```
+
 Connection issue. Replug the board.
 
 #### time out
+
 ```text
 Failed to launch ST-Util GDB Server: Timeout.
 ```
+
 This is likely due to `st-util` failed to start properly.
 [Get more info from the Adapter Output](#more-info).
 
 #### this socket is closed
+
 ```text
 Failed to launch GDB: Error: this socket is closed
 ```
+
 This is probably because GDB failed to launch, check error output in DEBUG CONSOLE.
 
 One case we found is due to a path error made by an attempt to manually install
@@ -263,9 +287,11 @@ packages. Check the paths in the `settings.json`, and also actual paths on your
 system.
 
 #### remote communication error
+
 ```text
 Failed to launch GDB: Remote communication error. Target disconnected.: No error. (from target-select extended-remote localhost:50000）
 ```
+
 This has been found on Windows, however the same thing MAY happen also on other OS as well.
 
 The real problem is that the default debug port 50000 is being used by some
@@ -277,6 +303,7 @@ So the proper solution is to close the software that's using port 50000, then
 everything should work just fine.
 
 To find out the clue on what it is, do the following:
+
 - Open Command Prompt in Administrator mode (search "command prompt" in start
   menu -> right click and select "run with Administrator mode")
 - Run the command `netstat -a -b`, and look for the application with Local
@@ -288,26 +315,34 @@ If you can't find the application, it may also mean that port `50000` wasn't
 closed properly. Maybe try restart the computer in this case.
 
 #### remote connection closed
+
 ```text
 Failed to launch GDB: Remote connection closed (from target-select extended-remote localhost:50000)
 ```
+
 This seems to be a problem with GDB failing to connect with `st-util`.
 [Get more info from the Adapter Output](#more-info).
 
 #### connection refused
+
 ```text
 Failed to launch GDB: localhost:50000: No connection could be made because the target machine actively refused it.
 ```
+
 This could be caused by your anti-virus software. Please check and turn it off if necessary.
 It could be interfering and refusing connection to certain ports.
 
 #### get more debug information {#more-info}
+
 You can also view the output from `st-util` in the **Adapter Output** tab (check
 `OUTPUT` panel during debug -> select `Adapter Output` from the drop down list).
 
 <!-- ********************************************************************* -->
+
 ### Debug Config Problems
+
 #### Can't find ARM On-Chip Debug
+
 As explained in the [above section](#environ-explanation), COMP2300 should
 automatically initialise the debug config.
 
@@ -331,9 +366,11 @@ to uninstall the COMP2300 extension, and delete the
 extensions. This will reinstall Cortex Debug extension.
 
 <!-- ********************************************************************* -->
+
 ### OS Specific Problems
 
 #### [macOS] Installation crash --- PIP: Exception
+
 On some macOS machines when installing PlatformIO it might crash like the
 following: ![PIP](./images/setup/macOS-pip-ssl-crash.png)
 
@@ -342,39 +379,48 @@ newer version of OpenSSL library, and upgrade Python to make sure it uses this
 updated library.
 
 In the terminal, type:
+
 ```bash
 $ brew install openssl
 ```
+
 You will need [Homebrew](https://brew.sh/) if you haven't installed it.
 Then check the OpenSSL version in Python:
+
 ```bash
 $ python -c "import ssl; print(ssl.OPENSSL_VERSION)"
 ```
+
 The version should be the latest (`1.0.2n`).
 
 Otherwise you need to "re-"install Python
+
 ```bash
 $ brew install python
 ```
+
 Then open VSCode, press `Ctrl/Cmd + ,` to open up settings,
-put the following in *User settings*:
+put the following in _User settings_:
+
 ```json
 "terminal.integrated.env.osx": {"PATH": "/usr/local/opt/python/libexec/bin"}
 ```
+
 Then reload window and wait for PlatformIO to finish installing core.
 
 #### [Linux] Device permission issues {#linux-device-permission}
+
 On some Linux machines you might have read/write permission issues in connecting
 to your discoboard. As a result, PlatformIO fails to upload (`pio run --target
 upload`) with the following error message:
 
-``` shell
+```shell
 Couldn't find any ST-Link/V2 devices
 ```
 
 This problem can be solved by with the following commands:
 
-``` shell
+```shell
 #!/bin/sh
 
 sudo sh -c 'cat > /etc/udev/rules.d/49-stm32.rules' <<EOF
@@ -397,7 +443,7 @@ For your convenience, [here's a script](/assets/scripts/permission-fix.sh/) whic
 
 Note: the product ID is found by doing:
 
-``` shell
+```shell
 $ dmesg | grep 'New USB device found, idVendor=0483'
 [195436.094414] usb 1-1.3: New USB device found, idVendor=0483, idProduct=374b
 ```
@@ -410,6 +456,7 @@ Further reading:
 - <https://github.com/platformio/platform-ststm32/issues/74>
 
 #### [Windows] ST-Link Driver {#win-driver}
+
 On Windows you will need install ST-Link Debug Driver before Windows will
 connect to the discoboard. If you don't, you'll get an error like this:
 
@@ -421,6 +468,7 @@ You need to get the latest ST-Link driver. [Follow the instructions at this
 page](https://os.mbed.com/teams/ST/wiki/ST-Link-Driver).
 
 #### [Windows] package manager problems
+
 You might see the following error:
 
 ```
@@ -442,14 +490,17 @@ You should probably [try the linked
 solution](http://docs.platformio.org/en/latest/ide/vscode.html#packagemanager-is-unable-to-install-tool).
 
 Basically, run the following in system terminal (Start Menu -> `cmd`):
+
 ```bash
 "C:/Users/<your user name>/platformio/penv/Scripts/platformio.exe" run -d "<pio project dir>" --target upload
 ```
+
 replace `<your user name>` with your user name,
 and `<pio project dir>` with your cloned repository (probably `C:/Users/<your user name>/comp2300-2019-xxx`),
 leave the quotation marks in.
 
 #### [Windows] integrated terminal freezes
+
 On some Windows machine VSCode terminal tab freezes at start up. This happens
 irrespective of the shell selected. Because of this the debugger will not run.
 
@@ -457,8 +508,9 @@ This is a VSCode problem, unrelated to PlatformIO. The cause of the problem is
 still unclear. There is no fix at the moment.
 
 #### [Windows] Disappearing st-util.exe
+
 We have encountered some issue where the `st-util.exe` file is being removed. It
-*looks* like this is some strange interaction with
+_looks_ like this is some strange interaction with
 [Avast](https://en.wikipedia.org/wiki/Avast_Antivirus) but it's hard to tell for
 sure. If you're on Windows and you have errors mentioning `st-util.exe`, it is
 probably a good idea to check that the file is still there:
@@ -466,7 +518,7 @@ probably a good idea to check that the file is still there:
 1. navigate to `C:\Users\<your name>\.platformio\packages\tool-stlink`
 2. check if the `st-util.exe` file is present---if it is, your problem is
    elsewhere
-3. if it *is* missing, go back up one folder to `packages` and delete the
+3. if it _is_ missing, go back up one folder to `packages` and delete the
    `tool-stlink` folder
 4. run the PlatformIO upload command again to re-download the file (this may
    need to be done from command line---you'll need [platformio on your
@@ -476,10 +528,11 @@ If you still have issues after this, consider disabling your antivirus or
 changing to a different provider.
 
 #### [Windows] Adding platformio to windows path {#adding-platformio-to-windows-path}
+
 1. Open a file explorer
-2. right click *This PC* and select properties
-3. in the new window select *Advanced system settings* on the left
-4. select *Environment Variables*
+2. right click _This PC_ and select properties
+3. in the new window select _Advanced system settings_ on the left
+4. select _Environment Variables_
 5. under System variable select Path and click edit
 6. click New
 7. enter the location of your platformio Scripts file, it should look something

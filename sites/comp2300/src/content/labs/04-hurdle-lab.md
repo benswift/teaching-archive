@@ -102,8 +102,8 @@ thing is nobody's fault, and we're working around it as best we can.
 
 ### What if I can't make my lab session in week 4? {#which-lab-session}
 
-The usual policies apply---if you get in touch with the course convenor *ahead of time* and you
-*have a good reason* then we can figure something out. And if you miss it for
+The usual policies apply---if you get in touch with the course convenor _ahead of time_ and you
+_have a good reason_ then we can figure something out. And if you miss it for
 medical reasons you'll need a medical certificate.
 
 ### Will I receive my mark during the hurdle lab? {#receiving-marks}
@@ -139,7 +139,7 @@ a rough guide on how to interpret your result:
 ### I'm not happy with my mark---what should I do? {#unhappy-with-mark}
 
 There are no re-marks, you get what you get. As discussed
-[above](#interpreting-your-results), the actual mark *really* won't matter in
+[above](#interpreting-your-results), the actual mark _really_ won't matter in
 the end. You should consider your mark "useful feedback" and
 
 If, at the end of the course, you look back on all your results in the course
@@ -154,7 +154,7 @@ struggled with (because you were there!) and you absolutely can ask your tutor
 to explain that stuff to you in your next lab session. You [**cannot** ask them
 to change your mark](#unhappy-with-mark), though.
 
-### Can my tutor give me a *hint* as to whether I passed?
+### Can my tutor give me a _hint_ as to whether I passed?
 
 No.
 
@@ -184,7 +184,7 @@ Failing a course isn't the end of the world. By having this hurdle lab, it might
 be a chance for you to drop out of this course gracefully and focus on doing
 well in your other courses. You can always take COMP2300/6300 again in 2020.
 
-### I failed the hurdle exam, is there *really* no way I can pass the course? {#supplementary-assessment}
+### I failed the hurdle exam, is there _really_ no way I can pass the course? {#supplementary-assessment}
 
 According to the ANU rules, any student who fails a hurdle exam but otherwise
 [satisfies the course requirements](/policies/#final-marks-and-grades) (e.g. scores more than 45/100 overall) is eligible

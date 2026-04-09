@@ -27,7 +27,7 @@ During the live coding session at the beginning of class, you were introduced to
 For the rest of this class, we are going to build on the code we wrote during the live coding session.
 
 **do:** To begin, fork and clone the [lab 4 template repo]() from git. Then open it in VSCode, or p5.js web editor,
-and start the live server (click "Go Live!" in the bottom right corner) as usual. 
+and start the live server (click "Go Live!" in the bottom right corner) as usual.
 If you're not sure how to do this, ask one of your instructors.
 
 ## Part 1: Introduce vertical motion
@@ -45,10 +45,11 @@ If you're running the code which is already in your template repo, you'll see th
 :::
 
 **do:** Modify the code to make the circle move vertically as well as horizontally. Here are a few hints to get you started:
+
 1. You will need to create 2 variables in your code; our naming convention would suggest calling these `ypos` and `vspeed`.
 2. `ypos` should be used to keep track of the y-position of the circle
 3. `vspeed` should be used to keep track of the vertical speed or direction in which the circle is moving.
-You don't need to worry about making the circle bounce off of the edges of the screen just yet. Once you've finished, `commit` and `push` your code to git.
+   You don't need to worry about making the circle bounce off of the edges of the screen just yet. Once you've finished, `commit` and `push` your code to git.
 
 ## Part 2: When to bounce
 
@@ -79,8 +80,8 @@ We can use this expression as a way of checking if our circle has moved past the
 :::
 
 ```js
-if(boolean_expr){
-    conditional_statement
+if (boolean_expr) {
+  conditional_statement;
 }
 ```
 
@@ -115,7 +116,7 @@ This means that the _entire_ expression below will become **true** in the follow
 3. `ypos` has a value of 0 and `circ_colour` has a value of 150
 
 In logic, and in programming, **OR** is inclusive: it returns `true` if one or both of the expressions are `true`. In natural languages
-we often use ***or*** as an **exclusive** operation: for example: "_the weather in this town is rainy or it is sunny_" would be taken to mean that
+we often use **_or_** as an **exclusive** operation: for example: "_the weather in this town is rainy or it is sunny_" would be taken to mean that
 it is either raining, or the sun is shining, but not both at the same time.
 
 If we wish to use **Exclusive OR** or **XOR**, we must do so explicitly. Exclusive OR returns true if one of the two expressions provided are `true`, but not both.
@@ -123,14 +124,14 @@ If we wish to use **Exclusive OR** or **XOR**, we must do so explicitly. Exclusi
 JavaScript has a **binary XOR** operator only: `^`, and does NOT have a **logical XOR** operator.
 You can implement **XOR** as a logical operation through:
 
-1. `(bool_expr1 != bool_expr2) // compare results of 2 boolean expressions: XOR is true if the expressions do NOT evaluate the same` 
+1. `(bool_expr1 != bool_expr2) // compare results of 2 boolean expressions: XOR is true if the expressions do NOT evaluate the same`
 2. `(!expr1 != !expr2) // convert/coerce non-boolean expression to boolean and compare as per #1`
 3. `(!expr1 ^ !expr2) // convert/coerce non-boolean expression to boolean and use binary XOR`
 
-Getting back to the **standard  inclusive OR** we use **most** of the time:
+Getting back to the **standard inclusive OR** we use **most** of the time:
 
 ```js
-ypos == 0 || circ_colour == 150 // logical inclusive OR
+ypos == 0 || circ_colour == 150; // logical inclusive OR
 ```
 
 Similarly, a logical **AND** can be expressed using the symbol `&&`. The _entire_ expression below will only become **true** when:
@@ -138,30 +139,32 @@ Similarly, a logical **AND** can be expressed using the symbol `&&`. The _entire
 1. `ypos` has a value of 0 and `circ_colour` has a value of 150
 
 ```js
-ypos == 0 && circ_colour == 150 // logical AND
+ypos == 0 && circ_colour == 150; // logical AND
 ```
 
 **do:** Modify your code so that the bouncing circle changes direction if it either hits an edge of your screen **OR** it reaches the maximum or minimum colour value. Once you have finished, commit and push your code to git.
 
 :::tip
 **extension:** If you've worked through Part 1-4 of this lab, have a go at implementing some of the sketches described below:
+
 1. create a sketch with multiple circles bouncing off of each other as well as off of the edges of the screen
 2. create a sketch with multiple circles such that, under certain conditions, the several circles merge into each other **or** a circle splits into multiple circles
 3. create a sketch where the circles follow different trajectories of motions (e.g. circular, hyperbolic, quadratic) based on time
-4. what can be made dynamic in your sketch?  In other words: what is fixed and unchanging, and what can be changed over time?
-:::
+4. what can be made dynamic in your sketch? In other words: what is fixed and unchanging, and what can be changed over time?
+   :::
 
 :::tip
 **NOTE:** as mentioned previously, [p5.js](https://p5js.org/) is a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) implementation of the [Processing](https://processing.org/) language system.
-Processing imposes a specific way of working with code: we first [`setup()`](https://p5js.org/reference/#/p5/setup) our environment, 
-and then we [`draw()`](https://p5js.org/reference/#/p5/draw) the canvas repeatedly in a loop. 
-The specifics of this implementation are hidden from us. P5.js provides access to some [environment variables and functions](https://p5js.org/reference/#group-Environment) 
-which can be useful for directing and controlling animations: 
+Processing imposes a specific way of working with code: we first [`setup()`](https://p5js.org/reference/#/p5/setup) our environment,
+and then we [`draw()`](https://p5js.org/reference/#/p5/draw) the canvas repeatedly in a loop.
+The specifics of this implementation are hidden from us. P5.js provides access to some [environment variables and functions](https://p5js.org/reference/#group-Environment)
+which can be useful for directing and controlling animations:
+
 1. [frameCount](https://p5js.org/reference/#/p5/frameCount) tells us which frame of animation we are on;
 2. [deltaTime](https://p5js.org/reference/#/p5/deltaTime) tells us the number of milliseconds elapsed while drawing the last frame;
-3. [frameRate()](https://p5js.org/reference/#/p5/frameRate) sets the desired number of frames to draw per second (default is 60). 
-JavaScript also provides functions for measuring time: [`Date.now()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and [`Performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/High_precision_timing).
-:::
+3. [frameRate()](https://p5js.org/reference/#/p5/frameRate) sets the desired number of frames to draw per second (default is 60).
+   JavaScript also provides functions for measuring time: [`Date.now()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and [`Performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API/High_precision_timing).
+   :::
 
 ## Summary
 

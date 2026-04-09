@@ -15,7 +15,7 @@ I have created my github repository, click [here](https://github.com/Miizz/2019I
 
 This week I mainly worked on connecting electronics and got them work together. I was trying to work on the soil moisture sensor but there seemed to be some problems that I couldn't solved. Since I stayed in my grandparents' home and there was no plant for me to test, so I decided to work on the temperature sensor first, and work on the soil sensor later when it is more convenient to test.
 
-[KY-028](http://sensorkit.en.joy-it.net/index.php?title=KY-028_Temperature_Sensor_module_(Thermistor)) is the temperature sensor module that I am using. The connection of the wires can be found in the given website. I tried to print out the current temperature in the serial monitor in the Arduino IDE, but the numbers are around 300. I guessed that it might has a conversion from the output values and the actual temperature. So I searched online, and find out that the values are something related to the voltage. I couldn't find a conversion between this value and the temperature so I printed the voltage directly.
+[KY-028](<http://sensorkit.en.joy-it.net/index.php?title=KY-028_Temperature_Sensor_module_(Thermistor)>) is the temperature sensor module that I am using. The connection of the wires can be found in the given website. I tried to print out the current temperature in the serial monitor in the Arduino IDE, but the numbers are around 300. I guessed that it might has a conversion from the output values and the actual temperature. So I searched online, and find out that the values are something related to the voltage. I couldn't find a conversion between this value and the temperature so I printed the voltage directly.
 
 ![board](./images/michelle/temperature-sensor.jpg)
 

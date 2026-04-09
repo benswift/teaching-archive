@@ -29,9 +29,11 @@ Welcome drone musicians! This is an exciting day. Today you and your peers will 
 **do:** To start, open your template repo from last week. If you haven't yet worked through last week's lab, you'll need to fork and clone the [lab 10 template repo]().
 
 ## What is a Drone?
-A [drone in music](https://en.wikipedia.org/wiki/Drone_(sound)) is a musical piece which includes a sustained note or chord which is continuously sounded for the duration of the performance. The drone may be monophonic, polyphonic or harmonic. The drone may be an accompaniment or it may be the star instrumentation. Drones have a long history in music. In Australia, the [didjeridoo](https://en.wikipedia.org/wiki/Didgeridoo) has been a drone instrument used for at least 1500 years, but possibly much longer. In India there are a wide range of drone instruments used to accompany performances including the [ektara](https://en.wikipedia.org/wiki/Ektara), [dotara](https://en.wikipedia.org/wiki/Dotara), [shruti box](https://en.wikipedia.org/wiki/Shruti_box), [nadaswaram](https://en.wikipedia.org/wiki/Nadaswaram), [ottu](https://en.wikipedia.org/wiki/Ottu_(instrument)), [swarmandal](https://en.wikipedia.org/wiki/Swarmandal), [dakshinavarti](https://en.wikipedia.org/wiki/Dakshinavarti_shankha), and [tanpura](https://en.wikipedia.org/wiki/Tanpura). The [banjo](https://en.wikipedia.org/wiki/Banjo), [sitar](https://en.wikipedia.org/wiki/Sitar), [sarod](https://en.wikipedia.org/wiki/Sarod), [veena](https://en.wikipedia.org/wiki/Veena), [zither](https://en.wikipedia.org/wiki/Drone_zither), [hurdy-gurdy](https://en.wikipedia.org/wiki/Hurdy-gurdy) and [cwrth](https://en.wikipedia.org/wiki/Crwth) instruments include resonant strings that act as drones. [Bagpipes](https://en.wikipedia.org/wiki/Bagpipes) include drone pipes, and drone effects can be created using the [pedal point in pipe organs](https://en.wikipedia.org/wiki/Pedal_point). As can be seen, drone instruments include stringed instruments, wind instruments (woodwind, brass and other), but also include [many traditions of  vocalised drone singing](https://blog.chrisrowbury.com/2020/10/the-different-types-of-polyphonic_12.html). Electronic synthetic ([synth](https://schneidersladen.de/en/desktop-synthesizers/drone-noise/)) drone instruments were developed in the 20<sup>th</sup> century.  
+
+A [drone in music](<https://en.wikipedia.org/wiki/Drone_(sound)>) is a musical piece which includes a sustained note or chord which is continuously sounded for the duration of the performance. The drone may be monophonic, polyphonic or harmonic. The drone may be an accompaniment or it may be the star instrumentation. Drones have a long history in music. In Australia, the [didjeridoo](https://en.wikipedia.org/wiki/Didgeridoo) has been a drone instrument used for at least 1500 years, but possibly much longer. In India there are a wide range of drone instruments used to accompany performances including the [ektara](https://en.wikipedia.org/wiki/Ektara), [dotara](https://en.wikipedia.org/wiki/Dotara), [shruti box](https://en.wikipedia.org/wiki/Shruti_box), [nadaswaram](https://en.wikipedia.org/wiki/Nadaswaram), [ottu](<https://en.wikipedia.org/wiki/Ottu_(instrument)>), [swarmandal](https://en.wikipedia.org/wiki/Swarmandal), [dakshinavarti](https://en.wikipedia.org/wiki/Dakshinavarti_shankha), and [tanpura](https://en.wikipedia.org/wiki/Tanpura). The [banjo](https://en.wikipedia.org/wiki/Banjo), [sitar](https://en.wikipedia.org/wiki/Sitar), [sarod](https://en.wikipedia.org/wiki/Sarod), [veena](https://en.wikipedia.org/wiki/Veena), [zither](https://en.wikipedia.org/wiki/Drone_zither), [hurdy-gurdy](https://en.wikipedia.org/wiki/Hurdy-gurdy) and [cwrth](https://en.wikipedia.org/wiki/Crwth) instruments include resonant strings that act as drones. [Bagpipes](https://en.wikipedia.org/wiki/Bagpipes) include drone pipes, and drone effects can be created using the [pedal point in pipe organs](https://en.wikipedia.org/wiki/Pedal_point). As can be seen, drone instruments include stringed instruments, wind instruments (woodwind, brass and other), but also include [many traditions of vocalised drone singing](https://blog.chrisrowbury.com/2020/10/the-different-types-of-polyphonic_12.html). Electronic synthetic ([synth](https://schneidersladen.de/en/desktop-synthesizers/drone-noise/)) drone instruments were developed in the 20<sup>th</sup> century.
 
 ## What is drone music?
+
 Drone music is a minimalist musical genre, related to ambient music, that emphasizes the use of drones (usually synth drones). It is well covered in [this Wikipedia article](https://en.wikipedia.org/wiki/Drone_music).
 
 ## Part 1: fine tuning
@@ -43,15 +45,15 @@ From last week, you might remember that all of the sounds you've been making thr
 Recall that oscillators can be combined through additive synthesis (you can have 2 or more oscillators which will combine to create a more complex sound).
 
 ```js
-  // a sawtooth wave oscillator running at 440 Hz with 4 partials
-  osc = new Tone.Oscillator(440, "sawtooth4");
-  osc.toDestination(); // --> shorthand for "connect(Tone.Master)"
-  osc.start();
+// a sawtooth wave oscillator running at 440 Hz with 4 partials
+osc = new Tone.Oscillator(440, "sawtooth4");
+osc.toDestination(); // --> shorthand for "connect(Tone.Master)"
+osc.start();
 
-  // a sine wave oscillator running at 220 Hz with 2 partials
-  osc2 = new Tone.Oscillator(220, "sine2");
-  osc2.toDestination(); // --> shorthand for "connect(Tone.Master)"
-  osc2.start();
+// a sine wave oscillator running at 220 Hz with 2 partials
+osc2 = new Tone.Oscillator(220, "sine2");
+osc2.toDestination(); // --> shorthand for "connect(Tone.Master)"
+osc2.start();
 ```
 
 As we discussed at the start of class, your oscillators can be treated as audio processing nodes -- you can think of this as a unit (or box) which either produces or manipulates signals. While oscillators _produce_ an audio signal, other audio processing units can _manipulate_ signals.
@@ -83,16 +85,16 @@ Tone.Destination.chain(phase, verb);
 Remember also, you can use a [LFO (Low Frequency Oscillator)](https://tonejs.github.io/docs/14.7.77/LFO) to modulate your signal:
 
 ```js
-  // creates a low freq oscillator with freq 0.5hz and max - 55, min value - 440
-  lfo = new Tone.LFO("0.5hz", 55, 440);
-  lfo.connect(osc.frequency); // apply LFO to object (oscillator) 'osc' property 'frequency'
-  lfo.start(); // start the LFO
+// creates a low freq oscillator with freq 0.5hz and max - 55, min value - 440
+lfo = new Tone.LFO("0.5hz", 55, 440);
+lfo.connect(osc.frequency); // apply LFO to object (oscillator) 'osc' property 'frequency'
+lfo.start(); // start the LFO
 ```
 
 **do:** Explore some of the [audio effects](https://tonejs.github.io/docs/14.7.77/AutoFilter) Tone.js offers. This particular link takes you to the AutoFilter effect (the first effect alphabetically), but if you scroll down to "Effects" on the left-hand side panel, you'll find even more delicious effects to play with.
 
 :::tip
-**think or play:** Tone.js has some [examples](https://tonejs.github.io/examples/) to explore different ways you can make sounds. You can look here for ideas on how to use oscillators and effects. *Please limit your investigation to oscillators and effects this week!* If you want to find out the technical details, you can look into the [API (application programming interface)](https://tonejs.github.io/docs/15.0.4/index.html). 
+**think or play:** Tone.js has some [examples](https://tonejs.github.io/examples/) to explore different ways you can make sounds. You can look here for ideas on how to use oscillators and effects. _Please limit your investigation to oscillators and effects this week!_ If you want to find out the technical details, you can look into the [API (application programming interface)](https://tonejs.github.io/docs/15.0.4/index.html).
 :::
 
 ## Part 2: bringing the band together

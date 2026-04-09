@@ -11,7 +11,7 @@ In this lab you will:
 
 1. investigate techniques for visualising your audio
 2. explore other strategies for synchronising (triggering) visuals from audio
-2. create your own dynamic visualisation of your compositions
+3. create your own dynamic visualisation of your compositions
 
 ## Introduction
 
@@ -24,14 +24,14 @@ Putting together audio with sound through projected media has a history that goe
 Originally, this was through players of puppets and music working together, knowing their stories, and responding immediately to actions.
 
 Early motion pictures "silent films" were accompanied by a professional piano player to improve the audience experience of watching movies.
-In the 20th century, sound was added to motion pictures through the addition of a sound track to the audio. 
+In the 20th century, sound was added to motion pictures through the addition of a sound track to the audio.
 The history of television is similar: the first experiments transmitted visuals only. Broadcast television with audio as standard was released in the 1940s.
 
 Synchronising sound with visuals is complex and presents many challenges for different types of "physical media" and transmission systems. This has led to the development of sophisticated standards, such as [SMPTE timecode](https://en.wikipedia.org/wiki/SMPTE_timecode) ([SMPTE](https://www.smpte.org/) = The Society of Motion Picture Engineers).
 
 In our programming context, we are also faced with challenges when synchronising audio with visuals.
 
-Audio engineers need to see the sound visualised.  Sound and music operates in a time and frequency domain. Animated visuals operate in time, spatial and colour domains. How can we make these work together?  
+Audio engineers need to see the sound visualised. Sound and music operates in a time and frequency domain. Animated visuals operate in time, spatial and colour domains. How can we make these work together?
 
 ## What is Audio Visualisation
 
@@ -87,7 +87,7 @@ Should we use:
 
 ### FFTs
 
-One way of getting frequency data from a signal in which there are multiple "frequencies" combining simultaneously is to use a [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform). The name [Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier) refers to Joseph Fourier, who investigated a mathematical series. In his work exploring heat and the transfer of energy, he developed a theory that "any function of a variable, whether continuous or discontinuous, can be expanded in a series of sines of multiples of the variable." While not quite correct, it was a breakthrough, and opened the field of [Fourier Analysis](https://en.wikipedia.org/wiki/Fourier_analysis), which gave rise to FFTs. FFTs are useful in science, engineering, signals processing, and in computer science. FFTs are "fast" because they change the time complexity of a "naive" approach which is $$ O(n^2) $$  to a much more efficient time complexity of $$ O(n \log n) $$.
+One way of getting frequency data from a signal in which there are multiple "frequencies" combining simultaneously is to use a [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform). The name [Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier) refers to Joseph Fourier, who investigated a mathematical series. In his work exploring heat and the transfer of energy, he developed a theory that "any function of a variable, whether continuous or discontinuous, can be expanded in a series of sines of multiples of the variable." While not quite correct, it was a breakthrough, and opened the field of [Fourier Analysis](https://en.wikipedia.org/wiki/Fourier_analysis), which gave rise to FFTs. FFTs are useful in science, engineering, signals processing, and in computer science. FFTs are "fast" because they change the time complexity of a "naive" approach which is $$ O(n^2) $$ to a much more efficient time complexity of $$ O(n \log n) $$.
 
 FFTs take a signal and return an array showing the amplitude of the sine wave component at a range of frequencies from which that signal is composed.
 
@@ -110,21 +110,21 @@ A bar is a simple rectangle shape. It will be updated every "draw()" cycle.
 First, create a Tone.Meter object, and connect it to your Tone.Master. Do this in `function setup()`
 
 ```js
-    meter = new Tone.Meter();
-    Tone.Master.connect(meter);
+meter = new Tone.Meter();
+Tone.Master.connect(meter);
 ```
 
 Now lets use the meter to display a meter bar in `function draw()`:
 
 ```js
-    background(45);
-    fill(255);
-    let level = meter.getValue();
-    let ch1 = map(level,-100,0,0,height);
-    rect(0,0,99,ch1);
+background(45);
+fill(255);
+let level = meter.getValue();
+let ch1 = map(level, -100, 0, 0, height);
+rect(0, 0, 99, ch1);
 ```
 
-There is much we can do with this. 
+There is much we can do with this.
 
 - Should it display vertically or horizontally?
 - Colours?
@@ -140,53 +140,53 @@ Oh hai! We've been using Tone.Waveform every week already. You know what it look
 Creating a Tone.Waveform
 
 ```js
-  wave = new Tone.Waveform();
-  Tone.Master.connect(wave);
+wave = new Tone.Waveform();
+Tone.Master.connect(wave);
 ```
 
 Displaying a Tone.Waveform
 
 ```js
-    stroke(255);
-    let buffer = wave.getValue(0);
+stroke(255);
+let buffer = wave.getValue(0);
 
-    // look a trigger point where the samples are going from
-    // negative to positive
-    let start = 0;
-    for (let i = 1; i < buffer.length; i++) {
-      if (buffer[i - 1] < 0 && buffer[i] >= 0) {
-        start = i;
-        break; // interrupts a for loop
-      }
-    }
+// look a trigger point where the samples are going from
+// negative to positive
+let start = 0;
+for (let i = 1; i < buffer.length; i++) {
+  if (buffer[i - 1] < 0 && buffer[i] >= 0) {
+    start = i;
+    break; // interrupts a for loop
+  }
+}
 
-    // calculate a new end point such that we always
-    // draw the same number of samples in each frame
-    let end = start + buffer.length / 2;
+// calculate a new end point such that we always
+// draw the same number of samples in each frame
+let end = start + buffer.length / 2;
 
-    // drawing the waveform
-    for (let i = start; i < end; i++) {
-      let x1 = map(i - 1, start, end, 0, width);
-      let y1 = map(buffer[i - 1], -1, 1, 0, height);
-      let x2 = map(i, start, end, 0, width);
-      let y2 = map(buffer[i], -1, 1, 0, height);
-      line(x1, y1, x2, y2);
-    }
+// drawing the waveform
+for (let i = start; i < end; i++) {
+  let x1 = map(i - 1, start, end, 0, width);
+  let y1 = map(buffer[i - 1], -1, 1, 0, height);
+  let x2 = map(i, start, end, 0, width);
+  let y2 = map(buffer[i], -1, 1, 0, height);
+  line(x1, y1, x2, y2);
+}
 ```
 
-This representation explicitly looks for a point in the waveform where the values change from negative to positive - so the start of the wave will be near the "zero point". It calculates an end point to ensure the number of samples drawn is the same for each frame of the animation. Then it draws the waveform by mapping the waveform values to canvas size (width and height), and creates 2 points for a line using the values at  `buffer[i-1]` for the first point, and `buffer[i]` for the second point.
+This representation explicitly looks for a point in the waveform where the values change from negative to positive - so the start of the wave will be near the "zero point". It calculates an end point to ensure the number of samples drawn is the same for each frame of the animation. Then it draws the waveform by mapping the waveform values to canvas size (width and height), and creates 2 points for a line using the values at `buffer[i-1]` for the first point, and `buffer[i]` for the second point.
 
 A simpler version might use points or circles to draw the line:
 
 ```js
-    strokeWeight(4);
-    stroke(140,60,180);
-    // drawing the waveform
-    for (let i = start; i < end; i++) {
-      let x1 = map(i, start, end, 0, width);
-      let y1 = map(buffer[i], -1, 1, 0, height);
-      point(x1, y1);
-    }
+strokeWeight(4);
+stroke(140, 60, 180);
+// drawing the waveform
+for (let i = start; i < end; i++) {
+  let x1 = map(i, start, end, 0, width);
+  let y1 = map(buffer[i], -1, 1, 0, height);
+  point(x1, y1);
+}
 ```
 
 ### Tone.FFT
@@ -196,24 +196,24 @@ We can use a Tone.FFT to represent our audio signal. It is important to note tha
 Creating a Tone.FFT
 
 ```js
-  fft = new Tone.FFT();
-  Tone.Master.connect(fft);
+fft = new Tone.FFT();
+Tone.Master.connect(fft);
 ```
 
 And to draw our FFT:
 
 ```js
-    strokeWeight(4);
-    stroke(140,60,180);
-    fft_values = fft.getValue();
-    let fft_width = width/fft_values.length;
-    let xpos = 0;
-    // drawing the fft
-    for (let i = 0; i < fft_values.length; i++) {
-      let ypos = map(fft_values[i], -127, masterVol, height, 0);
-      line(xpos, height, xpos, ypos);
-      xpos += fft_width;
-    }
+strokeWeight(4);
+stroke(140, 60, 180);
+fft_values = fft.getValue();
+let fft_width = width / fft_values.length;
+let xpos = 0;
+// drawing the fft
+for (let i = 0; i < fft_values.length; i++) {
+  let ypos = map(fft_values[i], -127, masterVol, height, 0);
+  line(xpos, height, xpos, ypos);
+  xpos += fft_width;
+}
 ```
 
 What do you see?
@@ -226,7 +226,7 @@ What aspects of the FFT are useful to you?
 
 **do:** For this part of the lab we will use a different sketch. Edit the file `index.html` to change `sketch.js` to `sketch-funky.js` and save.
 
-[This example by polyrythmatic](https://tonejs.github.io/examples/funkyShape) plugs into the envelope values to represent what is happening with different instruments. This has been adapted for the lesson this week. 
+[This example by polyrythmatic](https://tonejs.github.io/examples/funkyShape) plugs into the envelope values to represent what is happening with different instruments. This has been adapted for the lesson this week.
 
 How should we represent:
 
@@ -244,7 +244,7 @@ What decisions would you make?
 
 ## Synchronising Visuals with Audio
 
-we have already seen in the sketch above that we can drive visuals based on different aspects of a signal through "reading" the value of the signal when the draw loop is executed.  This is great for visualisation.
+we have already seen in the sketch above that we can drive visuals based on different aspects of a signal through "reading" the value of the signal when the draw loop is executed. This is great for visualisation.
 
 What if we want to have something else animated as a result of a musical event? We might be OK with accessing data in the draw loop, but it might be hard to know what note is playing (for example) in an instrument.
 
@@ -261,23 +261,28 @@ We need to get the note being played from the loop (OK - we could possibly get i
 Create a Tone.Draw schedule in our bassPart:
 
 ```js
-    bassPart = new Tone.Part(((time, note) => {
-        // Draw.schedule takes a callback and a time to invoke the callback
-        Tone.Draw.schedule(() => {
-            // the callback synced to the animation frame at the given time
-            bassNotePlaying = note;
-            console.log(bassNotePlaying);
-            setTimeout(() => {
-                bassNotePlaying += "+";
-                console.log(bassNotePlaying);
-            }, 100);
-        }, time);        
-        bass.frequency.setValueAtTime(note, time);
-        bassEnvelope.triggerAttack(time);
-    }), [["0:0", "A1"],
+bassPart = new Tone.Part(
+  (time, note) => {
+    // Draw.schedule takes a callback and a time to invoke the callback
+    Tone.Draw.schedule(() => {
+      // the callback synced to the animation frame at the given time
+      bassNotePlaying = note;
+      console.log(bassNotePlaying);
+      setTimeout(() => {
+        bassNotePlaying += "+";
+        console.log(bassNotePlaying);
+      }, 100);
+    }, time);
+    bass.frequency.setValueAtTime(note, time);
+    bassEnvelope.triggerAttack(time);
+  },
+  [
+    ["0:0", "A1"],
     ["0:2", "G1"],
     ["0:2:2", "C2"],
-    ["0:3:2", "A1"]]).start(0);
+    ["0:3:2", "A1"],
+  ],
+).start(0);
 ```
 
 We get our `bassNotePlaying` from the `note` parameter.
@@ -287,20 +292,38 @@ I have added a modifier, to say _hey, we have been playing this for a while now_
 In our `function draw()` we can use the `bassNotePlaying` to determine the colour of the bass visualisation.
 
 ```js
-    const bassRadius = height/2 * log(1.0 - bassEnvelope.value) + 30;
-    fill(220,30,180,90);
-    switch(bassNotePlaying){
-        case "A1": stroke("red"); break;
-        case "A1+": stroke("# FACE2F"); fill(255,255,255,200); break;
-        case "C2": stroke("blue"); break;
-        case "C2+": stroke("#4224FC"); fill(60,80,90,150); break;
-        case "G1": stroke("green"); break;
-        case "G1+": stroke("#45BA54"); fill(120,120,120,200); break;
-        default: stroke(220,120,220); fill(40,40,220,120); console.log(bassNotePlaying);
-    }
-    const bassX = width/2 + sin(millis() / 1000) * width/4;
-    const bassY = height/2 + cos(phase / 100) * height/3;
-    circle(bassX, bassY, bassRadius);
+const bassRadius = (height / 2) * log(1.0 - bassEnvelope.value) + 30;
+fill(220, 30, 180, 90);
+switch (bassNotePlaying) {
+  case "A1":
+    stroke("red");
+    break;
+  case "A1+":
+    stroke("# FACE2F");
+    fill(255, 255, 255, 200);
+    break;
+  case "C2":
+    stroke("blue");
+    break;
+  case "C2+":
+    stroke("#4224FC");
+    fill(60, 80, 90, 150);
+    break;
+  case "G1":
+    stroke("green");
+    break;
+  case "G1+":
+    stroke("#45BA54");
+    fill(120, 120, 120, 200);
+    break;
+  default:
+    stroke(220, 120, 220);
+    fill(40, 40, 220, 120);
+    console.log(bassNotePlaying);
+}
+const bassX = width / 2 + (sin(millis() / 1000) * width) / 4;
+const bassY = height / 2 + (cos(phase / 100) * height) / 3;
+circle(bassX, bassY, bassRadius);
 ```
 
 In this example we have used the note playing to drive the colour of our visualised instrument.
@@ -321,4 +344,4 @@ Congratulations! In this lab you:
 
 - investigated techniques for visualising audio
 - explored a range of strategies for synchronising visuals with audio
-- created your own dynamic audio visualisation 
+- created your own dynamic audio visualisation

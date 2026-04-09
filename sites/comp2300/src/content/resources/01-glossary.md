@@ -11,7 +11,7 @@ entry yourself, then let us know on [the COMP2300 forum]({{site.forum_url}}) usi
 
 These glossary entries aren't meant to be exhaustive technical definitions,
 they're designed to illustrate things in a concrete manner (with examples where
-possible). They don't say *everything* that could be said about a topic, they
+possible). They don't say _everything_ that could be said about a topic, they
 just try and provide the key or essential ideas behind each concept.
 
 The entries won't be in alphabetical order, they'll be in (approximately) the
@@ -69,7 +69,7 @@ values from 0 to 15, and so can one hex character (e.g. `0xF` in hex is `15` in
 decimal). To convert from hex to binary (and vice-versa), just "expand" every
 hex digit out into four binary digits:
 
-``` ARM
+```ARM
 ldr r0, =0x    1    2    3    4
 ldr r1, =0b 0001 0010 0011 0100
 ; r0 and r1 now hold the exact same bit pattern
@@ -83,7 +83,7 @@ an issue, since the least-significant bit is always the rightmost one, and the
 most-significant bit is always the leftmost one. But once you start storing
 values to memory (or reading them from memory) then it matters. Here's an example:
 
-``` ARM
+```ARM
 ldr r0, =0xAABBCCDD ; the value
 ldr r1, =0x20000000 ; the address
 
@@ -99,7 +99,7 @@ Confusingly, though, on your **little-endian** discoboard the least significant
 byte of the value goes at the lowest memory address, which is the leftmost one
 in the Memory Viewer. As a result, in memory the above value will look
 "reversed": `0xDDCCBBAA`. Now, this isn't a problem as long as the system is
-always *consistent* when it loads and stores, but it's just something to be
+always _consistent_ when it loads and stores, but it's just something to be
 aware of when you're looking at multi-byte values in the memory viewer.
 
 ## Interrupt controller
@@ -123,17 +123,17 @@ for more information.
 ## Functions
 
 A function (sometimes called a subroutine) is a series of instructions which you
-branch *to*, execute the instructions, and then branch *back* when you're done.
+branch _to_, execute the instructions, and then branch _back_ when you're done.
 That's it. You go there with a `bl` (which saves the "next instruction" address
 into the link register `lr`) and you branch back with a `bx lr` when you're
-done. It *may* take arguments (input) or return values (output) but it doesn't
+done. It _may_ take arguments (input) or return values (output) but it doesn't
 have to.
 
 So here's a **simple** example of a program which contains a `square` function
 which squares (i.e. $$x^2$$) it's input value (passed in `r0`) and returns the
 result in `r0`.
 
-``` ARM
+```ARM
 .syntax unified
 .global main
 
@@ -147,16 +147,15 @@ main:
 ```
 
 There are lots of things this function doesn't do, but which a different
-function *might* need to do:
+function _might_ need to do:
 
 - it doesn't call any other functions (so it doesn't have to worry about saving
   `lr` onto the stack)
-  
 - it's not recursive (it doesn't call itself)
 
 Note that this definition of function is different from the mathematical
 definition (which is used in programming languages like Haskell)---in those
 cases it's talking about functional purity (no side effects). Our definition
 here doesn't really have anything to do with functional purity. It's kindof a
-shame that the word *function* has multiple meanings like this, but that
+shame that the word _function_ has multiple meanings like this, but that
 sometimes happens in life. Oh well.

@@ -17,7 +17,7 @@ At the moment I'm leaning towards building a low cost surveillance system, inste
 
 One of the more interesting lectures so far covered side channel leakage of user behaviour through [timing analysis of electricity consumption](https://en.wikipedia.org/wiki/Nonintrusive_load_monitoring). This has me thinking, maybe along with bog standard audio visual surveillance, maybe I could build something that taps said side channels.
 
-The most obvious option would be tapping into the data mobile phones already emit - wifi hotspots and so on. More interestingly, I could try [listening for footsteps](https://en.wikipedia.org/wiki/Sandworm_(Dune)) to track people. Perhaps add sensors to garbage cans to track people's buying habits (though I'm yet to figure out how to prevent them from occluded). I'm sure there are more possibilities, that I've not thought of yet.
+The most obvious option would be tapping into the data mobile phones already emit - wifi hotspots and so on. More interestingly, I could try [listening for footsteps](<https://en.wikipedia.org/wiki/Sandworm_(Dune)>) to track people. Perhaps add sensors to garbage cans to track people's buying habits (though I'm yet to figure out how to prevent them from occluded). I'm sure there are more possibilities, that I've not thought of yet.
 
 With these, there are multiple scales on which the artefact could work. What I would like to try is Minority Report-like ~~profiling~~ personalised advertising. We could perform some kind of correlation attack - for example recommending Water to somebody who just disposed of a packet of chips or a sports drink to someone who seems to have been running. If ethics is no boundary, we could also pipe mic input to a voice recognition service, and use that to find relevant advertisements.
 
@@ -27,7 +27,7 @@ Maybe this could be circumvented if I use the services of a megacorporation like
 
 ## Meshnets
 
-While adoption of technology typically strips away user freedoms, it doesn't *have* to be that way. The pervasive censorship in China (when not connected to a VPN) is something that bothers the hell out of me.
+While adoption of technology typically strips away user freedoms, it doesn't _have_ to be that way. The pervasive censorship in China (when not connected to a VPN) is something that bothers the hell out of me.
 
 The main reason the Great Firewall is as effective as it is, is the centralization of information - hosted by a few major companies like Google, Microsoft, or Facebook who either kowtow to the ruling jurisdiction or are blocked outright.
 

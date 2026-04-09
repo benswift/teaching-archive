@@ -4,6 +4,7 @@ date: 2019-01-14
 title: WWW of Iot Part 7
 week: 7
 ---
+
 ### Beginning Implementation
 
 Welcome back to the seventh installment in myblog series! A lot has happened since you were gone and not really on any one specific aspect of the project, so below I've divided everything into sections to address each field.
@@ -15,6 +16,7 @@ I was going to setup the framework from the roots up however I found that Platfo
 #### Addressing the Schedule
 
 To address the schedule I laid out before.
+
 1. The software analysis (which is a milestone due next week) has its plans laid out. Because we are using boolean data this will be very simple.
 
 ![Basic Control Flow of Note Transcription](./images/will/general_note_transcription.png)

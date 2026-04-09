@@ -38,16 +38,16 @@ you will receive the message and can remotely take actions.
 
 In short, you can monitor the other needed intelligent devices at home through
 the detected situations. And for the detection method, I think the analysis for
-the real-time camera monitor (*i.e. the real-time image analysis through
-comparison with big data library in every unit time*) is the core point.
+the real-time camera monitor (_i.e. the real-time image analysis through
+comparison with big data library in every unit time_) is the core point.
 
 ### Privacy Protection
 
 We also need to take privacy into consideration with design. Take
 **financial IoT** (my another interested area) as an example.
 
-For instance *(-> it is only a narrow extension)*, we can build *a customer credit
-evaluation system*, it will generally collect the customer's financial data from
+For instance _(-> it is only a narrow extension)_, we can build _a customer credit
+evaluation system_, it will generally collect the customer's financial data from
 some usual outstanding parts (emm... still a little ambiguous here...), and
 estimate the customer's credit and usual consumption levels.
 It will later produce a short-term / long-run customization banking plan for
@@ -57,20 +57,21 @@ high-credit people with some extra financial benefits.
 
 While the problem is, through the way, there always exist **privacy exposure
 concerns**. We can use methods such as anonymous collection to prevent
-the *outside-world* sections, while for the *bank inside* privacy problems,
+the _outside-world_ sections, while for the _bank inside_ privacy problems,
 it needs more detailed and complex analysis.
 
 ## Problems still concerned
 
-I think the main *framework* for IoT program is that we **collect data**
+I think the main _framework_ for IoT program is that we **collect data**
 from real life through **sensors**, **transfer these data through internet**
 and **deal with them in our intelligent interface**, finally have some
 **application reaction back to real world**.
 
 However, even if I have taken several practice project courses for "sensor" things,
-I am still confused *how* to realize my specific idea:
-- What will be the best corresponding "*sensor*" for it? Which kind of sensor?
-- What does the *transfer channel* look like?
+I am still confused _how_ to realize my specific idea:
+
+- What will be the best corresponding "_sensor_" for it? Which kind of sensor?
+- What does the _transfer channel_ look like?
 - What may our final IoT framework be like? In which kind of way?
 
 I think they may just link to some very basic definitions, while that is really
@@ -100,5 +101,5 @@ Eventually, as I visited most Beijing famous places of interest when I was only
 7 years old, it is also a mysterious tour for me! Cannot wait for more
 wonderful future life!
 
-*(p.s. Without other students' permission, I do not upload group photos
-as part of the blog~ While there are so many wonderful photos! )*
+_(p.s. Without other students' permission, I do not upload group photos
+as part of the blog~ While there are so many wonderful photos! )_

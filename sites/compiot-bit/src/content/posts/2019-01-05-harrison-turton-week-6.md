@@ -26,8 +26,8 @@ Instead of nodes on a board, can we place microcontrollers around the room, inte
 
 There are two main problems with this:
 
-* Long-ass, power-hungry LED strips
-* Mounting on walls
+- Long-ass, power-hungry LED strips
+- Mounting on walls
 
 Connecting nearby microcontrollers is easy. Connecting opposite corners of the room? That might be hard. Our Black Pill boards might not supply enough power for the longer lines. Perhaps we'll amplify our current with wall sockets, transistors and transformers.
 

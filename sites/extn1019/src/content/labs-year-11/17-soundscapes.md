@@ -34,20 +34,20 @@ repo](), open it in VSCode and start the live server.
 If you open your template repo for this week's lab, you should see that it includes a solution to the Dice Roll game and the Markov Chain within the `setup()` function. You'll also see that there is a new instrument in your `setup()` function called `sampler`. This `sampler` instrument has been loaded up with some audio files of sounds you might hear in nature.
 
 ```js
- sampler = new Tone.Sampler({
-    urls: {
-      "C1": "bees.wav",
-      "C2": "ocean_noise.wav",
-      "C3": "gentle_waves.wav",
-      "C4": "splashes.wav",
-      "C5": "whale_breath_wind.wav",
-      "C6": "butcherbird.wav",
-      "C7": "currawongs.wav",
-      "C8": "kookaburras.wav"
-    },
-    release: 1,
-    baseUrl: "/images/nature/",
-  }).toDestination();
+sampler = new Tone.Sampler({
+  urls: {
+    C1: "bees.wav",
+    C2: "ocean_noise.wav",
+    C3: "gentle_waves.wav",
+    C4: "splashes.wav",
+    C5: "whale_breath_wind.wav",
+    C6: "butcherbird.wav",
+    C7: "currawongs.wav",
+    C8: "kookaburras.wav",
+  },
+  release: 1,
+  baseUrl: "/images/nature/",
+}).toDestination();
 ```
 
 The code above creates a `sampler` instrument. You'll see that there is a section of this code which lists the following note values; `"C1"`, `"C2"`, `"C3"`, `"C4"`, `"C5"`, `"C6"`, `"C7"`, `"C8"`. You'll also see that there are file names next to each of these note values e.g. `"bees.wav"`, `"ocean_noise.wav"`; these are just audio files. Since the `sampler` instrument plays back audio files, it doesn't produce signals with frequencies (i.e. pitches) in the same way a `synth` instrument does. The Sampler will pitch-shift via interpolation in an attempt to make desired pitch, but we are not asking you to do this! So, by writing `"C1": "bees.wav"` in the code above, we are associating the note value `"C1"` with the audio file "bees.wav". Given the note `"C1"` it will play "bees.wav" without pitch shift.
@@ -56,7 +56,7 @@ If you scroll down to your `myLoop()` function, you'll see that the `triggerAtta
 
 If you prefer to use Tone.Sequence or Tone.Pattern, there are sketches including these coding techniques in the template.
 
-**do:** Change the pitch argument in `sampler.triggerAttackRelease()` to each of the note values in our sampler i.e. `"C1"`, `"C2"`, `"C3"`, `"C4"`, `"C5"`, `"C6"`, `"C7"`, `"C8"` and listen to the different audio files you have at your disposal. There are other audio files available in the `/images/nature` folder for you to explore or you can place your own audio files  in the `/images/nature` folder: (media types supported are those supported for playing from HTML in your browser). 
+**do:** Change the pitch argument in `sampler.triggerAttackRelease()` to each of the note values in our sampler i.e. `"C1"`, `"C2"`, `"C3"`, `"C4"`, `"C5"`, `"C6"`, `"C7"`, `"C8"` and listen to the different audio files you have at your disposal. There are other audio files available in the `/images/nature` folder for you to explore or you can place your own audio files in the `/images/nature` folder: (media types supported are those supported for playing from HTML in your browser).
 
 ## Part 2: Soundscape
 
@@ -79,10 +79,10 @@ Here are some steps for you to follow:
 
 ## Part 3: Visualisations
 
-To enhance the experience of the soundscape, it would be fantastic to add some visuals. 
+To enhance the experience of the soundscape, it would be fantastic to add some visuals.
 Last week we went through the process of creating visuals for sounds, through meters, waveforms, FFTs, and triggered drawing using Tone.Draw().
 
-Think about what might work well for your chosen soundscape. 
+Think about what might work well for your chosen soundscape.
 
 You will find sketches with visualisations using meters, waveforms, FFTs and triggered drawing in the template to use as starters.
 

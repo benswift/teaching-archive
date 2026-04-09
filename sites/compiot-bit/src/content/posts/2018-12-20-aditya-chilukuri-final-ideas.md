@@ -17,7 +17,7 @@ The device would essentially be a BlueTooth enabled microcontroller connected to
 
 ## Two Ideas, One Project
 
-From our ***[previous project ideas](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/07/aditya-chilukuri-Wk3/)*** , I was most interested in taking up the Smart Lock system for this project — I was intrigued by the security and privacy aspects of Smart Hotels and Smart Apartments (Idea 1). Chinmay was very passionate about the social alcohol monitoring device (Idea 2).
+From our **_[previous project ideas](https://cs.anu.edu.au/courses/china-study-tour/news/2018/12/07/aditya-chilukuri-Wk3/)_** , I was most interested in taking up the Smart Lock system for this project — I was intrigued by the security and privacy aspects of Smart Hotels and Smart Apartments (Idea 1). Chinmay was very passionate about the social alcohol monitoring device (Idea 2).
 
 We discussed these ideas with Ben to decide on the final idea and flesh out the details of our project. Ben pointed out that if we take up Idea 2, we would need to put in some careful thought about how we sense alcohol (passively or actively) and how our devices can be misused (more on this in the next section). Regarding Idea 1, Ben explained that we would have to make some tradeoffs between the security and privacy enabled by our smart lock, and the convenience afforded by these locks.
 
@@ -25,7 +25,7 @@ By the end of the discussion, we agreed to take up Idea 2 — for the main reaso
 
 ## BAC Sensing Technology — Humanised?
 
-Ideally for Idea 2 (the project idea), we would like to use a passive BAC monitoring system so that everyone can see each others' live BAC data. The system would also preferably need to work *regardless* of user compliance — attaching a pocket breathalyser style sensor is limited by the person wearing the device actively breathing into the alcohol sensor — based on some notification from the app, device, or otherwise. This doesn't cover the case of a user not being able to breath into the device — especially if he/she is too intoxicated to feel or comply with a notification to breath into the device.
+Ideally for Idea 2 (the project idea), we would like to use a passive BAC monitoring system so that everyone can see each others' live BAC data. The system would also preferably need to work _regardless_ of user compliance — attaching a pocket breathalyser style sensor is limited by the person wearing the device actively breathing into the alcohol sensor — based on some notification from the app, device, or otherwise. This doesn't cover the case of a user not being able to breath into the device — especially if he/she is too intoxicated to feel or comply with a notification to breath into the device.
 
 I discussed with Ben about the BAC sensing methodology and we discussed how it might be possible to measure BAC from the person's sweat. There are a few papers looking into sweat based passive BAC monitoring technology: [here](https://www.researchgate.net/publication/227956956_Evaluation_of_the_Alcopatch_a_Transdermal_Dosimeter_for_Monitoring_Alcohol_Consumption) is one from 1995 that described a patch that must be worn for a week before being sent for analysis; and [here](https://pubs.acs.org/doi/abs/10.1021/acssensors.6b00356) is another from 2016 that develops the first wearable patch that can measure BAC in close to real time.
 

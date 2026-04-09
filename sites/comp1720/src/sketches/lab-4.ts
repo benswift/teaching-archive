@@ -25,10 +25,8 @@ export function lab4Sketch(p: p5) {
       );
 
       p.fill(170, 100, 40);
-      const x =
-        p.width * 0.2 + p.width * 0.2 * (i % 4) - p.height * 0.05;
-      const y =
-        p.height * 0.35 + p.height * 0.2 * p.floor(i / 4) - p.height * 0.11;
+      const x = p.width * 0.2 + p.width * 0.2 * (i % 4) - p.height * 0.05;
+      const y = p.height * 0.35 + p.height * 0.2 * p.floor(i / 4) - p.height * 0.11;
       const w = p.height * 0.1;
       const h = p.height * 0.15;
 

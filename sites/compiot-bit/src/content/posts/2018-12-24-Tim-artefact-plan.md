@@ -8,6 +8,7 @@ week: 5
 ## Project Summary & Plan
 
 ### What am I going to build
+
 The artefact that I've decided to build is one in which allows a viewer to understand how messages propagate through a mesh network. I'll have an array of microcontrollers with each one connected to 2 - 4 other microcontrollers with wires and LED strips to form a mesh network. Those strips will light up as messages are passed along the wires between controllers. One of the microcontrollers will also be connected to a computer allowing for user input for different features.
 
 For example, if each microcontroller has an ID number and I have 10 controllers in the system, I could ask the microcontroller hooked up to the computer to send a message to controller 7. the system would then figure out the best route to take to get there, and then light up as the message travels along the route. I will be looking into how mesh networks are commonly used today and then try and figure out how to best represent that. I will also be working with Harrison Turton (Harry) on this project.
@@ -17,9 +18,11 @@ For example, if each microcontroller has an ID number and I have 10 controllers 
 Mesh networks are important for IoT as often in places like smart homes or a smart city, smart devices won't necessarily have direct communication access to a central or control node, if there even is one. Therefore, compatible devices may have to act as relays for each other to communicate instructions and data to far away devices. This forms a mesh network and the communication through the network is more complex than if all devices were in proximity to a central node. The aim of this project is to show people how networks like these could work.
 
 ### Hardware
+
 The microcontroller that we plan on using for this project is the [Black Pill](https://wiki.stm32duino.com/index.php?title=Black_Pill). This was chosen because it is a small, inexpensive microcontroller with a lot of GPIO pins, giving us more flexibility on what connections we could make. This board has also been used by William Cashman for a previous project, meaning that we'll be able to ask him for advice on how to use it if necessary. We will also be getting cables and LED strips, however at this time we aren't sure exactly which ones we will be getting. We may also investigate getting some breadboards as it may help reduce cable clutter around the microcontrollers making it easier to see.
 
 ### Software
+
 For this project we intend on using the programming language Rust. During our time in china, we spent a lot of time working with a language called NesC which is C with extra libraries to support embedded development for the TinyOS platform. This was quite an unpleasant experience because of the lack of documentation for NesC. On top of that most of the people in the group didn't have any prior C language experience, making it very difficult to figure out and debug our code. Thus, we decided to go with a newer language designed to help cover some of the pitfalls of C whilst also being easier to use and powerful. Harry and I have also been meaning to learn more about Rust for a while, so it seemed like a good fit.
 
 Whilst Rust is a new programming language, it already has a good amount of support for [embedded development](https://github.com/Rust-embedded/awesome-embedded-Rust). This includes thorough guides on how to do embedded programming using Rust, as well as converting from other languages. They have also generated hardware API crates (Rust's packages & libraries) for a variety of microcontrollers on different architectures. There are crates there for programming in Rust on thee cortex-m architecture, as well as specific crates for the STM32L4x6 series of boards. Using those I was able to do basic GPIO operations and blink the red and green LEDs on the STM32L476G-Discovery board, used in [COMP2300](https://cs.anu.edu.au/courses/comp2300/). Doing it this way meant that I didn't need to manually write bits to memory addresses. Instead I would assign the peripherals to a variable and call functions on that to do the operations. This should allow us to worry less about building functions to interface with the hardware easier and focus more on the artifact at large.
@@ -29,14 +32,15 @@ Additionally, it looks like there is a more developed crate for the black pill's
 However, given that Rust is a newer language, there is still risks that we will not be able to complete the project using it. I have not had the chance to test the usage of Timers & Interrupts on the STM32L476G-Discovery board, which will be crucial to the project. Additionally, the black pill may be slightly different to the other more commonly used blue pill, and such may take us a while to debug board specific issues. As such if we feel that Rust is not working out, we will likely switch to the Arduino Coding Environment as it has more support than Rust currently has. However, I do not think this will be necessary as there appears to be support for all of the above already in Rust.
 
 ### Timeline
+
 From the week of January 1st, we will have 7 weeks to complete the project. In that time, we will need to:
 
-A.  [Learn Rust](https://doc.Rust-lang.org/book/) up to at least the concurrency sections
-B.  Learn how to use GPIO, Timers & Interrupts on the STM32l476G-Discovery Board in Rust
-C.  Discuss and full outline artefact feature set + needed hardware
-D.  Buy the black pills & other hardware (Led strips & LEDs)
-E.  Learn how to use GPIO, Timers, Interrupts and interactions with external hardware (LED Strips) on the black pill board
-F.  Begin implementation & building of artefact
+A. [Learn Rust](https://doc.Rust-lang.org/book/) up to at least the concurrency sections
+B. Learn how to use GPIO, Timers & Interrupts on the STM32l476G-Discovery Board in Rust
+C. Discuss and full outline artefact feature set + needed hardware
+D. Buy the black pills & other hardware (Led strips & LEDs)
+E. Learn how to use GPIO, Timers, Interrupts and interactions with external hardware (LED Strips) on the black pill board
+F. Begin implementation & building of artefact
 &nbsp;&nbsp;&nbsp;Fi. Build the underlying communication and message passing framework
 &nbsp;&nbsp;&nbsp;Fii. Build additional features to show off at the exhibition.
 
@@ -53,13 +57,15 @@ Once the underlying framework is complete, the last two weeks of the project wil
 ![chart](./images/tim/gant_chart.png)
 
 #### Summary of Milestones
+
 All the dates for the milestones are approximate as the dates are more based on when different items or people arrive in Canberra
 
-| **Key Milestones** | **Start Date** | **Week** |
-|-------------------------------------------------|--------|--------|
-| Feature list finalise and Rust recap | 18 Jan | 3 |
-| Hardware checks complete for black pill | 25 Jan | 4 |
-| Underlying framework complete | 03 Feb | 6 |
+| **Key Milestones**                      | **Start Date** | **Week** |
+| --------------------------------------- | -------------- | -------- |
+| Feature list finalise and Rust recap    | 18 Jan         | 3        |
+| Hardware checks complete for black pill | 25 Jan         | 4        |
+| Underlying framework complete           | 03 Feb         | 6        |
 
 ### Distribution of Work
+
 Since most of the early work will be self-learning, it will be done mostly independently except for us asking each other from help. A lot of the early design work as well as the construction of the underlying framework will be done together. This is because framework construction will need to be done quickly and need to be reliable for us to build on top of. Once the framework is complete, we should be able to easily split the rest of the features between the two of us to complete, as well as having time to debug and refine it such that it will make for a great exhibition piece.

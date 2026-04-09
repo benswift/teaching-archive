@@ -5,8 +5,8 @@ templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-lab-5
 ---
 
 :::info
-This lab looks long, and it is *fairly* long. The reason there's so much detail
-here is to explain what's going on when you complete these exercises and *why*.
+This lab looks long, and it is _fairly_ long. The reason there's so much detail
+here is to explain what's going on when you complete these exercises and _why_.
 You also get to start putting together the skills you've learned so
 far---arithmetic, loads & stores, and setting/clearing individual bits in
 registers. Because of this, you'll get to work on this stuff in both **week 5
@@ -67,7 +67,7 @@ adventurous, but there's no shame in taking your time and working through the
 warm-up stuff---practice makes perfect!
 :::
 
-### Bit-shifting & logic ops 
+### Bit-shifting & logic ops
 
 You will need to use some logic operations in this lab, in particular, setting
 (set `1`) and clearing (set `0`) bits. This warm up exercise gives you a chance
@@ -75,7 +75,7 @@ to practice bit shifting and using logic operations to set and clear bits.
 
 Edit your `main.S` file so that it looks like this:
 
-``` ARM
+```ARM
 main:
   ldr r0, =0xcafe0000
   ldr r1, =0xffff
@@ -90,9 +90,9 @@ loop:
 
 <div class="push-box" markdown="1">
 
-Using *only* the instructions in the **Logic** and **Shift/Rotate** subsections
+Using _only_ the instructions in the **Logic** and **Shift/Rotate** subsections
 of the cheat sheet (but as many registers as you need) write a program which
-puts *all* of the following values into the listed registers. Use the cheat
+puts _all_ of the following values into the listed registers. Use the cheat
 sheet and the converter widget to help you out---draw "bit pattern" pictures on
 a piece of paper if it helps.
 
@@ -107,7 +107,7 @@ These shouldn't require heaps of code---just a couple of instructions for each.
 Remember the [stuff you've](/labs/02-first-machine-code/) [done in](/labs/03-maths-to-machine-code/) previous labs.
 
 :::tip
-Did you need *both* of the "starting" values (e.g. `0xcafe0000` and `0xffff`) or
+Did you need _both_ of the "starting" values (e.g. `0xcafe0000` and `0xffff`) or
 could you have got the job done with only some of them? Which ones are
 essential?
 :::
@@ -130,28 +130,28 @@ loop:
 In the [week 3 lab](/labs/03-maths-to-machine-code/) you even used conditional branches to only branch under certain conditions
 (i.e. if certain flags were set). And we covered this in the [week 4
 lectures](/_lectures/04-control-flow/#conditionals)
-as well---including how to turn "mathematical" conditional expressions 
+as well---including how to turn "mathematical" conditional expressions
 (e.g. `x >= -45`) into sequences of assembly instructions.
 
 But what are labels, really? Add this code to your program (under the `main`
 label):
 
-``` ARM
+```ARM
 ldr r0, =main
 ```
 
 After you step through this line, what's in `r0`? You might be wondering what
 the `=` sign is doing in your program. Remember from your week 2 lab that
 instructions are stored in memory with various encodings (some are 16-bit, some
-are 32-bit) and that when you use an *immediate value* constant (e.g. `42`) in
+are 32-bit) and that when you use an _immediate value_ constant (e.g. `42`) in
 an instruction which supports it then the twos-compliment bit pattern for `42`
-(which is `0b101010`) is stored *inside* that instruction.
+(which is `0b101010`) is stored _inside_ that instruction.
 
 This means that if you need to include a constant which is 32 bits long (e.g.
 `0xFFFFFFFF`) then you can't fit it in the instruction. You may have run into
-this problem already---the error message will be something like 
+this problem already---the error message will be something like
 
-``` text
+```text
 Error: invalid constant (0xFFFFFFFF) after fixup
 ```
 
@@ -160,7 +160,7 @@ bits) for the instruction you're trying to fit it inside.
 
 :::tip
 If you're interested in exactly the ARM instruction set deals with this problem,
-and which constants *can* be stored inside a 32-bit instruction, then
+and which constants _can_ be stored inside a 32-bit instruction, then
 [here's](https://alisdair.mcdiarmid.org/arm-immediate-value-encoding/) an
 interesting blog post.
 :::
@@ -175,16 +175,16 @@ we discussed in the [week 4 lectures](/_lectures/04-control-flow/#ldr-pseudo-ins
 
 Have a look at these two lines of assembly code:
 
-``` ARM
+```ARM
 mov r0, 0xFFF
 ldr r0, =0xFFF
 ```
 
 will they result in the same assembly instructions when uploaded & running on
-your discoboard? How might you check? *Hint:* the disassembler is your friend
+your discoboard? How might you check? _Hint:_ the disassembler is your friend
 😊, and remember when we talked about [pseudo-instructions](/_lectures/04-control-flow/#ldr-pseudo-instruction) in lectures.
 
-Can you think of any *other* lines of assembly code (apart from the two above)
+Can you think of any _other_ lines of assembly code (apart from the two above)
 which will be assembled into the same machine instruction(s)?
 
 </div>
@@ -195,13 +195,13 @@ addresses (in your board's memory space) of the instruction which occurs after
 them in the program. After the linker figures out exactly which address each
 label points to, it "replaces" them in the program, so that
 
-``` ARM
+```ARM
 ldr r0, =main
 ```
 
-becomes *something like*
+becomes _something like_
 
-``` ARM
+```ARM
 ldr r0, =0x80001c8
 ```
 
@@ -219,11 +219,11 @@ instruction and stores the result in `r0`.
 
 ### Sections
 
-[Sections](/_lectures/04-control-flow/#sections-in-an-assembly-code-file) your program are *directives* (so they
+[Sections](/_lectures/04-control-flow/#sections-in-an-assembly-code-file) your program are _directives_ (so they
 start with a `.`) to the assembler that the different parts of our program
 should go in different parts of the discoboard's memory space. Some parts of
 this address space are for instructions which the discoboard will execute, but
-other parts contain *data* that your program can use.
+other parts contain _data_ that your program can use.
 
 Your program can have as many sections as you like (with whatever names you
 like) but there are a couple of sections which the IDE & toolchain will do
@@ -241,7 +241,7 @@ When you create a new `main.s` file, any instructions you put are put in the
 
 Here's an example:
 
-``` ARM
+```ARM
 main:
   ldr r0, =main
   ldr r1, =storage
@@ -263,7 +263,7 @@ Try and find it in the [memory view](/labs/02-first-machine-code/#reverse-engine
 
 You can interleave the sections in your program if it makes sense:
 
-``` ARM
+```ARM
 .text
 program:
   @ ...
@@ -291,7 +291,7 @@ If you're interested in seeing how it's done, you can look at your project's
 linker script, located at
 :::
 
-``` text
+```text
 lib/bare_stm32l476/ldscripts/STM32L476VG_FLASH.ld
 ```
 
@@ -307,7 +307,7 @@ discoboard do useful work. The basic idea is this:
 
 ![load-twiddle-store](./images/lab-5/load-twiddle-store.jpg)
 
-``` ARM
+```ARM
 main:
   ldr r1, =storage
   @ your code starts here
@@ -357,14 +357,14 @@ exercise will explain all the details.
 Some of the ports on the discoboard are already connected to certain bits of
 hardware on the board. In the [discoboard **user**
 manual](/assets/manuals/stm32-L476G-discovery-user-manual.pdf)
-Section 7.5 *User interface: LCD, joystick, LEDs* it says:
+Section 7.5 _User interface: LCD, joystick, LEDs_ it says:
 
 > - LD4 user: the red LED is a user LED connected to the I/O PB2 of the STM32L476VGT6
 > - LD5 user: the green LED is a user LED connected to the I/O PE8 of the STM32L476VGT6
 
 The first bullet point says that the red LED is connected to GPIO pin **PB2**.
 This means that it's connected to **pin 2** of **port B**. Just a note that the
-*user* manual (short) is different from the *reference* manual (long &
+_user_ manual (short) is different from the _reference_ manual (long &
 detailed).
 
 :::tip
@@ -398,8 +398,8 @@ sometimes called memory-mapped registers). Read/write access to this register
 happens through load/store instructions to a specific memory address (as with
 pretty much everything in a [load/store architecture](/_lectures/03-memory-operations/#load-store-instructions)).
 
-The register for turning on the clock (step 1) is in the *Reset and Clock
-Control (RCC)* section of the address space, which on your discoboard starts at
+The register for turning on the clock (step 1) is in the _Reset and Clock
+Control (RCC)_ section of the address space, which on your discoboard starts at
 memory address `0x40021000`. The specific register which controls the clock for
 GPIO ports is the `RCC_AHB2ENR` 32-bit register, which lives at an offset of
 `0x4C` from the RCC base address and looks like this:
@@ -407,11 +407,11 @@ GPIO ports is the `RCC_AHB2ENR` 32-bit register, which lives at an offset of
 ![RCC_AHB2ENR](./images/lab-5/AHB2ENR.png)
 
 As you can see, the clock for GPIO port B (where your red LED is) is controlled
-through bit 1 (i.e. the *second* bit from the right, because the rightmost bit
+through bit 1 (i.e. the _second_ bit from the right, because the rightmost bit
 is bit 0). You can have a look at Section 6.4.17 of the reference manual for all
 the gory details.
 
-Note that in debug view you can conveniently see this information in the 
+Note that in debug view you can conveniently see this information in the
 **Cortex Peripherals** pane:
 ![Peripheral](./images/lab-5/peripheral-view.png)
 
@@ -435,7 +435,7 @@ and **clearing** a bit means it should be equal to `0`.
 
 So what does the code to perform these load-twiddle-store steps look like?
 
-``` ARM
+```ARM
 @ load r1 with the base address of RCC
 ldr r1, =0x40021000
 
@@ -463,8 +463,7 @@ load-twiddle-store pattern, except with different addresses and "twiddles".
 
 Now it's your turn: copy-paste a second copy of the code above as a starting
 point, but you'll need different load/store addresses and different twiddles. To
-set pin 2 of GPIO port B to output mode, you need to set the `MODE2` bits (4 and
-5) of the GPIO mode register `GPIOB_MODER`, which lives at an offset of `0x0`
+set pin 2 of GPIO port B to output mode, you need to set the `MODE2` bits (4 and 5) of the GPIO mode register `GPIOB_MODER`, which lives at an offset of `0x0`
 from the GPIO base address of `0x48000400` (see Section 7.4.1 of the manual for
 more info). Here's what the `GPIOB_MODER` looks like:
 
@@ -511,7 +510,7 @@ You should now feel a warm glow of satisfaction---let there be light! But you'll
 also notice that a few of the steps you had to go through were pretty
 repetitive. For every step you just did, you were really doing one of two things
 
-- **setting** a specific bit at an offset from a base address, *or*
+- **setting** a specific bit at an offset from a base address, _or_
 - **clearing** a specifc bit at an offset from a base address
 
 Wouldn't it be good if we could "factor out" the common parts of those two
@@ -531,7 +530,7 @@ choice that you get to make when you design your program.
 In this exercise you'll write some functions to help out with turning on the
 LEDs. The general pattern for functions look like this:
 
-``` ARM
+```ARM
 main:
   @ put arguments in registers
   @ mov r0, ...
@@ -555,7 +554,7 @@ labels are used to mark the start of functions.
 
 The only difference between a function and the "branch to label" code you've
 written already in this course (with `b` or perhaps a [conditional
-branch](/_lectures/03-memory-operations/#conditional-branch)) is that with a function we want to return *back* to the
+branch](/_lectures/03-memory-operations/#conditional-branch)) is that with a function we want to return _back_ to the
 **caller** (e.g. the `main` function) code; we branch with `bl` but we want to
 "come back" when we're done with the function instructions.
 
@@ -563,15 +562,17 @@ That's why `bl foo` and `bx lr` are used in the code template above instead of
 just `b foo`.
 
 The `bl foo` instruction:
+
 1. records the address of the next instruction (i.e. the next value of `pc`) in
    the **link register**, and
 2. branches to the label (`foo`)
 
 The `bx lr` instruction
+
 - branches to the memory address stored in the `lr` register
 
-So, together these two instructions enable branching *to* a function (`bl foo`)
-and branching *back* (`bx lr`) afterwards.
+So, together these two instructions enable branching _to_ a function (`bl foo`)
+and branching _back_ (`bx lr`) afterwards.
 
 :::info
 The `.type` and `.size` directive are optional---together they tell the compiler
@@ -582,7 +583,7 @@ essential for the disassembly view to work correctly for the function.
 
 ```ARM
 set_bit_0x48000400_0x14_2:
-  @ code to set bit 2 of word at offset 0x14 of 0x48000400 
+  @ code to set bit 2 of word at offset 0x14 of 0x48000400
   bx lr
 
 main:
@@ -614,7 +615,7 @@ One way of getting these input values "into" the functions is to leave the
 values in registers before making the `bl` branch. Consider the following
 `sum_x_y` function:
 
-``` ARM
+```ARM
 main:
   mov r0, 3   @ first argument, x
   mov r1, 2   @ second argument, y
@@ -640,6 +641,7 @@ finishes.
 
 Did you notice something "underhanded" going on between the caller (`main`) and
 the callee (`sum_x_y`)? There is an implicit contract/agreement as to
+
 - which registers hold the input arguments, and
 - which registers hold the result
 
@@ -653,7 +655,7 @@ hold for readability and clarity's sake.
 
 :::info
 Parameterise your `set_bit` and `clear_bit` functions so that they each take
-three arguments: *base address*, *offset* and *bit index*. Modify your `main`
+three arguments: _base address_, _offset_ and _bit index_. Modify your `main`
 function so that turning the LED on and off is as easy as calling your `set_bit`
 or `clear_bit` functions with the right arguments. Commit & push your
 newly-functional program to GitLab.
@@ -707,7 +709,7 @@ Modify your program to:
    time (use your delay function)
 3. if the number is divisible by `5`, blink the **green** light for some period of
    time
-4. if the number is divisible by both `3` *and* `5`, blink **both** lights
+4. if the number is divisible by both `3` _and_ `5`, blink **both** lights
 
 :::info
 Submit your final fizzblink program.
@@ -735,7 +737,7 @@ subtle effects with the LED using [pulse-width modulation
 this: if you want the LED to glow brightly, then (in a loop) leave it on for a
 long time, and turn it off for a short time. If you want it to glow dimly, do
 the opposite. Using this technique, can you make the LED look like it's
-*breathing*? Alternately, can you store some data in your program somewhere to
+_breathing_? Alternately, can you store some data in your program somewhere to
 blink a more complex pattern---can you program your discoboard to blink in
 [Morse Code](https://en.wikipedia.org/wiki/Morse_code)?
 :::

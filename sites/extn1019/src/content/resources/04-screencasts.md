@@ -15,4 +15,3 @@ you can come back to these screencasts and remind yourself how it works.
 ## How to commit {#commit}
 
 ## How to push {#push}
-

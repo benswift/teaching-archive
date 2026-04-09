@@ -46,11 +46,10 @@ I will try to add some more features to the toothbrush once I get the touch sens
 1. How will I get the app to display the received data instead of the terminal?
 
 2. Things I will be working on:
-
-	* Reading the ESP-IDF Programming Guide
-	* Working on the ReadMe file
-	* Design document
-	* Figuring out how to get the app started
+   - Reading the ESP-IDF Programming Guide
+   - Working on the ReadMe file
+   - Design document
+   - Figuring out how to get the app started
 
 Next week I will be exploring a store that I found close to where I live to try to find anything that I may find useful for my project. I'm hoping to find a smaller microcontroller and some motion sensors. Hopefully, I'll find what I need next week!
 

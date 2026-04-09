@@ -13,7 +13,7 @@ In this post I'll cover the work I've done so far in setting up the software dev
 
 I used the PlatformIO IDE for VSCode to start an ESP32-NodeMCU-32S project, using the ESP-IDF (There is a choice of ESP-IDF, the official ESP framework for the ESP32 boards, and the Arduino framework for software development for ESP32 boards — we used ESP-IDF because it's the official framework, and also because Arduino isn't really meant for serious code development). Upon testing a shell program, I found that the framework couldn't recognise my board. Here's the error message I found:
 
-````````````
+```
 Looking for upload port...
 Auto-detected: COM10
 Uploading .pioenvs\nodemcu-32s\firmware.bin
@@ -21,7 +21,7 @@ Serial port COM10
 Connecting........_____....._____....._____....._____....._____....._____....._____
 
 A fatal error occurred: Failed to connect to ESP32: Timed out waiting for packet header
-````````````
+```
 
 This error occurred regardless of the USB port I used on my computer. A cursory search for the cause of this error yielded nothing.
 
@@ -33,7 +33,7 @@ Following the steps, I found the hardest part was getting MSYS2 or MinGW working
 
 To ensure I'd covered all the avenues, I retried uploading the project using PlatformIO — only this time, expecting it to fail, I was fidgeting around with the buttons on the board. To my surprise, the error message changed!
 
-``````````````
+```
 Traceback (most recent call last):
 File "C:\Users\Aditya\.platformio\packages\tool-esptoolpy\esptool.py", line 2849, in <module>
 _main()
@@ -48,7 +48,7 @@ File "c:\users\aditya\.platformio\penv\lib\site-packages\serial\serialwin32.py",
 serial.serialutil.SerialException: Cannot configure port, something went wrong. Original message: WindowsError(5, 'Access is denied.')
 *** [upload] Error 1
 
-``````````````
+```
 
 I'm not sure why the Access Violation error is raised — in my experiences working with the STM32-Discovery board using PlatformIO, I faced no problems specifically to do with OS Access Violations. But with more digging on the upload problems, with the new knowledge that pressing the buttons on the board might be contributing to the errors, I [found]() that a single press on the Boot button is necessary before the programs can be flashed onto the board.
 

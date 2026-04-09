@@ -29,7 +29,7 @@ If I am going to stream my data to the cloud anyway, one option I'm considering 
 
 ### Drainage
 
-__Warning:__ Spoilers for There Will Be Blood.
+**Warning:** Spoilers for There Will Be Blood.
 
 Unfortunately, because of just how tiny the Raspberry Pi and Pi Cam are, the setup looks more adorable than creepy.
 
@@ -37,11 +37,11 @@ Unfortunately, because of just how tiny the Raspberry Pi and Pi Cam are, the set
 
 So I have been thinking of how I can amplify the impact.
 
- An often overlooked aspect of privacy is the powerlessness of an individual. Even if an individual holds out by not having Facebook accounts and by using DuckDuckGo, their data can end up in the hands of Corporations through surrounding people.
+An often overlooked aspect of privacy is the powerlessness of an individual. Even if an individual holds out by not having Facebook accounts and by using DuckDuckGo, their data can end up in the hands of Corporations through surrounding people.
 
- Much like the oil under Eli's lands draining through the surrounding lands, companies we have no direct relationship with still end up profiling us. I have no Facebook account, but I have shared my contact details with people who do. And in all likelihood, their devices came preconfigured to share data with Facebook. This strips out any ability for me to not "consent" to them gaining information about me, short of withdrawing from society altogether.
+Much like the oil under Eli's lands draining through the surrounding lands, companies we have no direct relationship with still end up profiling us. I have no Facebook account, but I have shared my contact details with people who do. And in all likelihood, their devices came preconfigured to share data with Facebook. This strips out any ability for me to not "consent" to them gaining information about me, short of withdrawing from society altogether.
 
- So, perhaps I could also investigate this theme. My idea would be to hook myself up with a microphone and/or add microphones to various points exhibition, and have them record conversations. I would have these conversations beamed to my companion robot, that would  look up advertisments related to what we were talking about.
+So, perhaps I could also investigate this theme. My idea would be to hook myself up with a microphone and/or add microphones to various points exhibition, and have them record conversations. I would have these conversations beamed to my companion robot, that would look up advertisments related to what we were talking about.
 
 I would attach a small screen to the robot, that would be able to display said information. Again, appearence wise, it wouldn't be much - the robot is barely shin height, but hopefully actually having conversations recorded and transcribed in near real time would have some effect of creeping people out,
 

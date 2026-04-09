@@ -20,10 +20,11 @@ This was motivated by a portable robotic toilet I saw on the campus tour of BIT 
 If a simple thing like a toilet could be modified so it is connected to a network and is a 'thing' in Internet of Things, then there's no reason I shouldn't be able to do the same with a bed. There's no doubt beds are an integral part of everyone's life as most people spend atleast about 40% of their lives on a bed, however, there has barely been any improvement in the type of beds in the past few decades.
 
 The features that could feasibly be implement might be
-* The ability to change sheets automatically when told to do so via a voice command and might require some robotics to be able to physically do it.
-* Ability to heat/cool the bed.
-* Embedded power points in the bed as a large amount of people use their electronics on their bed.
-* Sleep monitoring - can use motion sensor to detect movement, temperature sensor to detect body temperature during the sleep cycle and the data can be forwarded to an app which lets user monitor their sleeping habits.
+
+- The ability to change sheets automatically when told to do so via a voice command and might require some robotics to be able to physically do it.
+- Ability to heat/cool the bed.
+- Embedded power points in the bed as a large amount of people use their electronics on their bed.
+- Sleep monitoring - can use motion sensor to detect movement, temperature sensor to detect body temperature during the sleep cycle and the data can be forwarded to an app which lets user monitor their sleeping habits.
 
 ## Developing previous ideas
 

@@ -5,14 +5,16 @@ title: + Wishful Beginnings
 week: 1
 ---
 
-Hello all! I'm Ushini (thats *ooo-she-knee*) and this post marks the beginning of my work on an 'Internet of Things' (IoT) study tour at the Beijing Institute of Technology. My primary interests lie in the applications of IoT in music a.k.a the Internet of Musical Things a.k.a IoMUT. Specifically, in the context of live performance. This IoT stuff is all pretty new to me - I don't have any hands-on experience with IoT projects of my own. But, I'm excited to learn as much as I can and in Beijing, China of all places!
+Hello all! I'm Ushini (thats _ooo-she-knee_) and this post marks the beginning of my work on an 'Internet of Things' (IoT) study tour at the Beijing Institute of Technology. My primary interests lie in the applications of IoT in music a.k.a the Internet of Musical Things a.k.a IoMUT. Specifically, in the context of live performance. This IoT stuff is all pretty new to me - I don't have any hands-on experience with IoT projects of my own. But, I'm excited to learn as much as I can and in Beijing, China of all places!
 
-There are some exciting things going on in IoMUT which I recently came across. [Towards the Internet of Musical Things](http://smc2017.aalto.fi/media/materials/proceedings/SMC17_p13.pdf) gives a nice overview of the various applications of IoMUT. These include smart instruments, smart wearables and digital ecosystems/Networked Musical Perfomance Systems. Though there are some cool projects which are examples of smart instruments and wearable devices that enhance an audience's experience, (exhibits *a* and *b* follow) my interests are focussed on Networked Musical Perfomance Systems (NMPS).
+There are some exciting things going on in IoMUT which I recently came across. [Towards the Internet of Musical Things](http://smc2017.aalto.fi/media/materials/proceedings/SMC17_p13.pdf) gives a nice overview of the various applications of IoMUT. These include smart instruments, smart wearables and digital ecosystems/Networked Musical Perfomance Systems. Though there are some cool projects which are examples of smart instruments and wearable devices that enhance an audience's experience, (exhibits _a_ and _b_ follow) my interests are focussed on Networked Musical Perfomance Systems (NMPS).
 
 ### a) SENSUS Smart Guitar
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fqzEQnsSIoY/0.jpg)](https://www.youtube.com/watch?v=fqzEQnsSIoY)
 
 ### b) Mood Glove
+
 <iframe src="https://player.vimeo.com/video/164304163" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/164304163">Mood Glove: Haptic sensations to enhance mood music in Film</a> from <a href="https://vimeo.com/user4166728">Antonella Mazzoni</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 

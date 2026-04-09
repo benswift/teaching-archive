@@ -12,6 +12,7 @@ I look forward to our time together and to exchanging invaluable concepts. :)
 For **LIT** photos documenting this trip follow me on Instagram @despacitoflorescondezo
 
 ## Silk Street? more like Emotional Distress Street ...
+
 Don't get me wrong I scored 2 pairs of shoes, 1 Nike Airs & a pair of Gucci Shoes, however the amount of times I got called a stupid boy and hit was quite a lot. I expected the market to be a series of small vendors however it was a full on shopping mall where haggling was accepted. Hoever the haggling is very intense, as shop keepers were very firm in their prices and got angry if you bargained to a price too low. In my opinion the emotional toil is worth it as you can bargain to a very cheap price in the end if you keep at it.
 
 ## IBM & SAP, a glorious experience ...
@@ -21,32 +22,34 @@ On Wednesday we had to get up really early and be ready at the hotel lobby by 7:
 ![Sleep Deprived Meme](./images/david-flores/sleep.jpg)
 
 When we got to IBM we were greeted by a spokeswoman and took a photo at the main building and then headed to the building on the side. Once inside we got guest passes and then headed inside to a small classroom. Here we got a short presentation on
+
 ### Accelerating value in the API Economy with IBM Z.
+
 This presentation was very interesting and eye opening. Specially on the following topics:
 **What is IBM Z?**
-•	Have you talked to a mainframe today?
-o	Have you withdrawn cash at an ATM?
-o	Have you booked an airline ticket?
-•	Can you go 5 minutes without IBM Z?
-o	I check the weather on my phone
-o	At work I use mainframe for
-o	Even in vacation the mainframe helps me make my reservations
-•	Did you know?
-o	80% of all business data in the world are stored on a mainframe
-o	Mainframe run 68% of the worlds production workload capacity but at only 6.2% of total server spend
-•	Mainframe LPARs
-o	One mainframe CPC typically runs several servers and operating systems for several customers
+• Have you talked to a mainframe today?
+o Have you withdrawn cash at an ATM?
+o Have you booked an airline ticket?
+• Can you go 5 minutes without IBM Z?
+o I check the weather on my phone
+o At work I use mainframe for
+o Even in vacation the mainframe helps me make my reservations
+• Did you know?
+o 80% of all business data in the world are stored on a mainframe
+o Mainframe run 68% of the worlds production workload capacity but at only 6.2% of total server spend
+• Mainframe LPARs
+o One mainframe CPC typically runs several servers and operating systems for several customers
 **IBM Z Customers in China Mainland**
-•	China construction bank
-•	Bank of China
+• China construction bank
+• Bank of China
 **Participate in API Economy**
-•	API – A way of making information available to your:
-o	Colleagues
-o	Customers
+• API – A way of making information available to your:
+o Colleagues
+o Customers
 **Modern mainframe with z/OS Connect**
-•	IBM Z Platform- Connected to the..
-•	Rapid extension of core applications to the cloud
-•	Expose z Systems assets with IBM z/OS Connect EE
+• IBM Z Platform- Connected to the..
+• Rapid extension of core applications to the cloud
+• Expose z Systems assets with IBM z/OS Connect EE
 
 On Thursday again, we had to get up really early to go visit anothe company, SAP
 

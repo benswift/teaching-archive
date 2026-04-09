@@ -44,10 +44,10 @@ interpreted as **opcodes** (operation codes) which will instruct your CPU to do
 things (e.g. add two values).
 
 Even though this is a "first steps" type of lab, the things you'll do in this
-lab are essential for this course, so make sure you understand *everything* in
+lab are essential for this course, so make sure you understand _everything_ in
 your program what is happening in front of you. Anything you leave hanging here
 will probably haunt you in the coming weeks. Don't feel like everyone else is
-getting it and you're the only one that's lost---that's *definitely* not the
+getting it and you're the only one that's lost---that's _definitely_ not the
 case.
 
 ## Exercise 1: 2+2 {#two-plus-two}
@@ -71,6 +71,7 @@ the desired format. This will help you make sense of the value of a register.
 :::
 
 ### ARM assembly syntax
+
 This is probably the first time you've written any ARM assembly code, so for
 this course we've prepared a [cheat
 sheet](/assets/manuals/ARMv7-cheat-sheet.pdf) to help you out.
@@ -89,13 +90,13 @@ The first token on the line is the instruction name, and after that is the
 you understand the syntax you can read and understand the code. In fact, since
 it's a smaller language (there are only a couple of dozen instructions) it's
 probably easier to read than languages with a richer syntax (I'm looking at
-*you*, Haskell).
+_you_, Haskell).
 
-- anything in braces (`{}`) is *optional*, e.g. the `s` at the end of `sub{s}`
+- anything in braces (`{}`) is _optional_, e.g. the `s` at the end of `sub{s}`
   means that it can be either `sub` or `subs`
 
 - the `<c>` and `<q>` parts relate to the **condition codes** and **opcode
-  size** boxes on the second page of the cheat sheet - they're *also optional* and
+  size** boxes on the second page of the cheat sheet - they're _also optional_ and
   you probably won't need them for this first exercise
 
 - `{<Rd>,}` is the **d**estination register (e.g. `r3` or `r11`), which is
@@ -104,7 +105,7 @@ probably easier to read than languages with a richer syntax (I'm looking at
 
 - `<Rn>, <Rm>` are the two operands (arguments) for the `sub` instruction
 
-- finally, the *optional* `{,<shift>}` part is related to the barrel shifter
+- finally, the _optional_ `{,<shift>}` part is related to the barrel shifter
   (for bit-shifting operations) built alongside the discoboard's ALU - you don't
   have to worry about this too much for the moment but it'll come in handy later
 
@@ -148,13 +149,14 @@ a lot.
 ### The task
 
 To actually complete your "2 + 2" task, you'll need to
+
 1. get number `2` into a register
-2. add *another* `2` to it and put the result in `r1`
+2. add _another_ `2` to it and put the result in `r1`
 
 Look over the cheat sheet---which assembly instructions allow you to specify
 numeric constants/literals in a register? There are also a number of machine
 instructions which will implement an addition---which one do you want, and
-*why?*
+_why?_
 
 Once you've written a program which you think will do what you want, step
 through and make sure that the value which `r1` holds at the end is actually
@@ -193,8 +195,8 @@ This might look overwhelming, but the 2D "grid" layout is pretty simple: the hex
 numbers down the left hand side are the base memory addresses, and the
 hex numbers along the top represent the "offset" of that particular byte from
 the base address. So, to work out the exact address of a particular byte
-(remember: 2 hex digits == 1 byte) you read along the *row* to get the base
-address, and read down the *column* to get the offset, and add them together
+(remember: 2 hex digits == 1 byte) you read along the _row_ to get the base
+address, and read down the _column_ to get the offset, and add them together
 (base+offset) to get the address of the byte. Simples!
 
 :::tip
@@ -207,7 +209,7 @@ the (`pc`) register stood for `p`rogram `c`ounter?
 :::
 
 If you get stuck, here's a trick which is often helpful in reverse engineering
-things---try and put some *known* values into the program so that we know what
+things---try and put some _known_ values into the program so that we know what
 we're looking for when we're staring at the memory view.
 
 There's an assembler directive called
@@ -235,13 +237,13 @@ first instruction (or a bit before---as long as the number of bytes you display
 spans over the memory region you're interested in). You might need to re-size
 the different viewlets to make sure you can see all the columns of the memory
 view. Can you see the `0xdead` and `0xbeef` values you put into your program? If
-you can't see them *exactly*, can you see something which looks suspiciously
+you can't see them _exactly_, can you see something which looks suspiciously
 like them? What do you notice?
 
 ### Endianness
 
 To make sense of the numbers displayed in the memory view, we need to talk about
-*endianness*.
+_endianness_.
 
 Values are stored in memory as individual **bytes** (i.e. 8-bit numbers, which
 can be represented with two hex digits). **Endianness** refers to the order in
@@ -280,7 +282,7 @@ have a look at A5.1 in the [ARM®v7-M Architecture Reference Manual](/assets/man
 
 :::info
 According to [Wikipedia](https://en.wikipedia.org/wiki/Endianness#Etymology),
-Danny Cohen introduced the terms *Little-Endian* and *Big-Endian* for byte
+Danny Cohen introduced the terms _Little-Endian_ and _Big-Endian_ for byte
 ordering in an article from 1980. In this technical and political examination of
 byte ordering issues, the "endian" names were drawn from Jonathan
 Swift's[^no-relation] 1726 satire, Gulliver's Travels, in which civil war erupts
@@ -323,15 +325,15 @@ run your program and call the view memory command each time you do).
 
 :::tip
 Discuss with your neighbour: what do you think the different bits (and bytes) in
-the instruction encoding *mean*? How does the discoboard know what to do with
-them? And if you've figured that out, why doesn't your program actually *work*?
+the instruction encoding _mean_? How does the discoboard know what to do with
+them? And if you've figured that out, why doesn't your program actually _work_?
 :::
 
 To fully make sense of these instruction encodings you need more than just your
 cheat sheet, you need the [ARM®v7-M Architecture Reference
 Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)).
 You need to dig to the deepest levels, by going to **section A7.7**
-*Alphabetical list of ARMv7-M Thumb instructions* (page A7-184). Use the
+_Alphabetical list of ARMv7-M Thumb instructions_ (page A7-184). Use the
 bookmarks in your pdf viewer to navigate to the relevant instructions inside
 this huge 400 page section.
 
@@ -379,7 +381,7 @@ main:
 
 only this time instead of the `0xffff`s you need to figure out the actual values
 which will make the CPU load `3` into a `r1` and subtract `1` from it. Remember
-that it'll be *similar* to the words you looked at in the memory viewer earlier,
+that it'll be _similar_ to the words you looked at in the memory viewer earlier,
 but some of the bits will be different (since we're dealing with `-`, `3` and
 `1` instead of `+`, `2` and `2`).
 
@@ -437,7 +439,7 @@ Make a commit now that you've knocked down Exercise 3. Congrats!
 Load some new data into register `r1` by adding this assembly code to your
 program:
 
-``` arm
+```arm
 cope:
   .ascii "COPE"
 
@@ -523,7 +525,7 @@ Congratulations! In this week's lab you learned how to
 1. watch what happens in memory as your program executes
 2. use the `.hword` and `.ascii` assembler directives to insert bytes into your
    programs
-3. figure out the *exact* sequence of bits to get the discoboard to do what you want
+3. figure out the _exact_ sequence of bits to get the discoboard to do what you want
 4. use simple bit-shifting instructions to isolate and manipulate specific bits
    in a word
 5. read and write numbers in different bases: decimal, binary, hex

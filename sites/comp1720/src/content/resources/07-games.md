@@ -80,8 +80,9 @@ The assignment specifications are clear: don't make a game. But you might find y
 
 If any of the above applies to your work, consider talking to your tutor about whether it is actually a game.
 
-### But I really really *really* want to make a game
+### But I really really _really_ want to make a game
 
 There's a course for that! Check out:
+
 - [COMP3540 - Game Development](https://programsandcourses.anu.edu.au/2024/course/COMP3540)
 - [ARTV2059 - Immersive Media](https://programsandcourses.anu.edu.au/2024/course/artv2059)

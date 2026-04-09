@@ -22,7 +22,7 @@ walk you through how to create interactive artworks in javascript.
 
 :::info
 If you're on one of the ANU lab machines (either in the CSIT or Peter Karmel
-buildings) then most of this is already done, although you *may* have to install
+buildings) then most of this is already done, although you _may_ have to install
 the **extn1019** VSCode extension---jump to step 3.
 :::
 
@@ -32,8 +32,8 @@ To set this all up on a new machine (e.g. your own laptop) here are the steps:
    Linux & Windows)
 
 2. open VSCode, [open the **Extensions**
-   view](https://code.visualstudio.com/docs/editor/extension-gallery) (*View >
-   Extensions* in the menu)
+   view](https://code.visualstudio.com/docs/editor/extension-gallery) (_View >
+   Extensions_ in the menu)
 
 3. search for and install the [EXTN1019
    extension](https://marketplace.visualstudio.com/items?itemName=anucecsit.vscode-extn1019)
@@ -88,7 +88,6 @@ on your computer, in particular:
   shell](https://gitlab.cecs.anu.edu.au/help/gitlab-basics/start-using-git.md#command-shell)
   (you won't need to use this method once you've got your git<->VSCode
   integration sorted out, but it can be handy at the start)
-  
 - [installing
   git](https://gitlab.cecs.anu.edu.au/help/topics/git/how_to_install_git/index.md)
   (with different instructions for Windows, macOS and Linux)
@@ -96,7 +95,6 @@ on your computer, in particular:
 - [configuring
   git](https://gitlab.cecs.anu.edu.au/help/gitlab-basics/start-using-git.md#configure-git)
   (this can be handy if you're getting "git doesn't know your name" errors)
-  
 - [adding an SSH
   key](https://gitlab.cecs.anu.edu.au/help/ssh/README.md#adding-an-ssh-key-to-your-gitlab-account)
   (so that you don't have to type in your password every time you want to do git
@@ -154,7 +152,7 @@ Live** button down the bottom, or some other issue) then the most helpful place
 to check is the VSCode Developer Tools.
 
 These aren't super-easy to find, the best way to bring them up is to use the
-command pallette and search for the *Toggle Developer Tools* command (as shown
+command pallette and search for the _Toggle Developer Tools_ command (as shown
 in the screenshot below). Once you do this, you'll see a console window show up
 in your VSCode window (shown here on the right, but it might be on the left, or
 on the bottom depending on your settings---it doesn't matter).
@@ -188,7 +186,8 @@ statements. There are a few ways to open the developer console:
    there you select `Web Developer`, then select 'Web Console' from the list of
    items in the opened drawer[^drawer]
 
-[^drawer]: "drawer" is a word sometimes used to describe a window which "slides
+[^drawer]:
+    "drawer" is a word sometimes used to describe a window which "slides
     out" from the side
 
 You should now be able to see any errors or `console.log` statements.
@@ -208,7 +207,7 @@ Teams.
 
 from the [Commonmark Website](http://commonmark.org/help/):
 
-   > Markdown is a simple way to format text that looks great on any device. It doesn’t do anything fancy like change the font size, color, or type — just the essentials, using keyboard symbols you already know.
+> Markdown is a simple way to format text that looks great on any device. It doesn’t do anything fancy like change the font size, color, or type — just the essentials, using keyboard symbols you already know.
 
 [This tutorial](http://commonmark.org/help/tutorial/) takes you through the basics.
 
@@ -250,7 +249,7 @@ There are a few reasons:
    <kbd>ctrl</kbd>+<kbd>X</kbd> and paste with <kbd>ctrl</kbd>+<kbd>V</kbd> just
    like in Microsoft Word---and I think that if you approach things with the
    mindset of "I can do this" rather than "this is all just weird geek stuff and
-   I'll never get the hang of it" then you might even *enjoy* it
+   I'll never get the hang of it" then you might even _enjoy_ it
 
 ### Do I _have_ to install VSCode on my own machine?
 
@@ -282,11 +281,11 @@ This is a quick fix you'll only have to do once:
 1. click on the "Terminal" item in the top menubar, then "New Terminal" (don't
    be intimidated! this is going to be nice and easy)
 
-3. write `git config --global user.name "Your Name"` (replacing Your Name with
+2. write `git config --global user.name "Your Name"` (replacing Your Name with
    your actual name), then press enter. If nothing shows up, you did it
    correctly
 
-4. write `git config --global user.email "u1234567@anu.edu.au"` (replacing
+3. write `git config --global user.email "u1234567@anu.edu.au"` (replacing
    `u1234567` with your own university ID), and then press enter
 
 ### I'm getting an error when I try and push or clone---what do I do?

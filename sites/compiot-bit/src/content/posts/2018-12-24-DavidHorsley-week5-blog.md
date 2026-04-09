@@ -25,25 +25,25 @@ We have also started looking a bit at the music side of our project, specificall
 
 The start of O-Week (and hence the deadline for this project) is roughly 7 weeks away. During that time, there are a number of milestones we would like to reach, in order of importance:
 
-•	A functional prototype of a glowstick, which allows a user to select a genre of music and displays a colour based on this selection, whilst broadcasting this information in a way which could be understood by the speaker hub, and a functional prototype of the speaker, incorporating the inputs from the glowsticks and making music choices based on the preferences communicated to the speaker from nearby glowsticks. This represents the most basic iteration of this project, without any additional features or functionality.
+• A functional prototype of a glowstick, which allows a user to select a genre of music and displays a colour based on this selection, whilst broadcasting this information in a way which could be understood by the speaker hub, and a functional prototype of the speaker, incorporating the inputs from the glowsticks and making music choices based on the preferences communicated to the speaker from nearby glowsticks. This represents the most basic iteration of this project, without any additional features or functionality.
 
-•	A more advanced prototype, including more advanced communication such as communicating when a user likes or dislikes a song by pressing a button on their glowstick, and having a working prototype of the glowstick that supports this additional functionality, as well as possibly supporting more advanced display options for the glowstick rather than just displaying a single colour.
+• A more advanced prototype, including more advanced communication such as communicating when a user likes or dislikes a song by pressing a button on their glowstick, and having a working prototype of the glowstick that supports this additional functionality, as well as possibly supporting more advanced display options for the glowstick rather than just displaying a single colour.
 
-•	Thirdly, an even more advanced version of the system which supports multiple speaker hubs and can use proximity/distance estimation to decide which glowsticks will influence which speaker.
+• Thirdly, an even more advanced version of the system which supports multiple speaker hubs and can use proximity/distance estimation to decide which glowsticks will influence which speaker.
 
 We have also decided that we would rather have a “polished” project to present, at a level as close as possible to representing a finished product as opposed to presenting a project which attempts to do many things but does them all poorly. As such, we are defining a strict “tools-down” day; after which we will only focus on polishing, fixing and cleaning-up our existing project rather than adding additional features, in order to ensure our project is suitable refined upon completion and release.
 
 As such, the timeline we have set ourselves is:
 
-•	December 24th – January 1st: Research, preparing example code, collecting / purchasing hardware, etc. This phase is essentially waiting for our boards to arrive (which have been ordered), as well as giving ourselves some time for the holidays, while getting as much work done to ensure that when the hardware does arrive we can get thing moving as fast as possible, using the information, example code and other resources we gather during this time to speed up our initial development.
+• December 24th – January 1st: Research, preparing example code, collecting / purchasing hardware, etc. This phase is essentially waiting for our boards to arrive (which have been ordered), as well as giving ourselves some time for the holidays, while getting as much work done to ensure that when the hardware does arrive we can get thing moving as fast as possible, using the information, example code and other resources we gather during this time to speed up our initial development.
 
-•	January 1st – 14th: Basic Prototype. As described above, this involves the creation of the most basic version of the system, capable of basic networking between the glowsticks, having the speakers receive the preference information from the glowsticks and using this information to make basic music selections, as well as having the glowsticks glow a certain colour corresponding to the genre of music the user picks.
+• January 1st – 14th: Basic Prototype. As described above, this involves the creation of the most basic version of the system, capable of basic networking between the glowsticks, having the speakers receive the preference information from the glowsticks and using this information to make basic music selections, as well as having the glowsticks glow a certain colour corresponding to the genre of music the user picks.
 
-•	January 15th-28th: Incorporating responses, such as likes and dislikes from the glowsticks, and using this to inform music choices; as well as the possibility of more advances lighting displays on the glowsticks.
+• January 15th-28th: Incorporating responses, such as likes and dislikes from the glowsticks, and using this to inform music choices; as well as the possibility of more advances lighting displays on the glowsticks.
 
-•	January 28th-Febuary 7th: Adding more advanced networking features, such as allowing for multiple speaker hubs and for the system to decide which glowstick influences which speaker through distance/proximity estimation of the distance between various speakers and glowsticks.
+• January 28th-Febuary 7th: Adding more advanced networking features, such as allowing for multiple speaker hubs and for the system to decide which glowstick influences which speaker through distance/proximity estimation of the distance between various speakers and glowsticks.
 
-•	February 8th: Tools Down: From this point on, we won’t focus on adding new functionality; instead we will focus entirely on polishing the existing project so as to ensure it is of a high quality when we release it.
+• February 8th: Tools Down: From this point on, we won’t focus on adding new functionality; instead we will focus entirely on polishing the existing project so as to ensure it is of a high quality when we release it.
 
 If we have extra time before the tools down date, we may add some of the additional functionality mentioned in my previous blog post, such as supporting silent discos.
 

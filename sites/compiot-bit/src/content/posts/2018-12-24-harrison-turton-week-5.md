@@ -36,11 +36,11 @@ The base station will be connected to one or two nodes. It will have a button th
 
 In summary:
 
-* Button on node sends message to base station
-* Message passing is indicated by lighting LEDs strips
-* Switches on each node turns it on/off, which is indicated by another LED
-* Knob on each node changes its "data"
-* Button on base station collects the data from each node, and displays it
+- Button on node sends message to base station
+- Message passing is indicated by lighting LEDs strips
+- Switches on each node turns it on/off, which is indicated by another LED
+- Knob on each node changes its "data"
+- Button on base station collects the data from each node, and displays it
 
 ## The Display
 
@@ -68,9 +68,9 @@ Here are some resources (for future reference):
 
 **Embedded Rust**
 
-* [Intro to Embedded Rust](https://rust-embedded.github.io/book/)
-* [Embedded Rust in 2018](http://blog.japaric.io/embedded-rust-in-2018/)
-* [Realtime for the Masses (Crate)](https://docs.rs/cortex-m-rtfm/0.4.0/rtfm/)
+- [Intro to Embedded Rust](https://rust-embedded.github.io/book/)
+- [Embedded Rust in 2018](http://blog.japaric.io/embedded-rust-in-2018/)
+- [Realtime for the Masses (Crate)](https://docs.rs/cortex-m-rtfm/0.4.0/rtfm/)
 
 ## The Theme
 
@@ -83,15 +83,15 @@ I believe this embraces the theme of disconnecting together — no node is conne
 Starting from the first week of January. We can either do this per-week, or per-fortnight. There will definitely be overlap in these, especially if international shipping takes longer than expected.
 
 1. **Learn Rust**
-Especially the memory/ownership model (the "borrow checker") and approach to concurrency
+   Especially the memory/ownership model (the "borrow checker") and approach to concurrency
 2. **Learn embedded Rust (in the context of the Discoboard)**
-Figure out how to use GPIO, timers & interrupts
+   Figure out how to use GPIO, timers & interrupts
 3. **Purchase / Begin hardware development**
-Figure out how to run Rust on our preferred board — the Black Pill. If it doesn't arrive during the week, we can try learning soldering and basic electronics.
+   Figure out how to run Rust on our preferred board — the Black Pill. If it doesn't arrive during the week, we can try learning soldering and basic electronics.
 4. **Learn the Black Pill board**
-Learn to use GPIO, timers & interrupts on our final board. See if we can implement the cool LED-strip effects — perhaps write a small library for it?
+   Learn to use GPIO, timers & interrupts on our final board. See if we can implement the cool LED-strip effects — perhaps write a small library for it?
 5. **Begin software implementation & construction of the artefact**
-We should have the knowledge required to put everything together. Start wiring everything up, crafting the interactive display, and implementing the algorithms. This will continue until the artefact is built.
+   We should have the knowledge required to put everything together. Start wiring everything up, crafting the interactive display, and implementing the algorithms. This will continue until the artefact is built.
 
 There is a lot of time dedicated to "Learning Rust for xyz". Neither Tim nor I have used Rust before, and we certainly haven't used it for embedded programming. Except for the hand-held development with NesC and ARM ASM in COMP2300, we're brand new to this.
 

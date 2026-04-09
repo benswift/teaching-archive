@@ -17,7 +17,7 @@ going to use the forum, then that's ok as well.
 
 Finally, it's far from 100% certain that comp2300 will use Discourse this time
 around - that's up to Uwe, and he (rightly) has some reservations (especially
-since first semester starts *real soon*).
+since first semester starts _real soon_).
 
 Finally, you should create screenshots, but maybe wait until the real server is
 up and running (so that all the URLs are correct, etc. in the screenshots).
@@ -36,8 +36,8 @@ Basically, explain how we're using the categories/subcategories.
 
 the nuts & bolts stuff
 
-*note: you could also have some stuff in here about how to ask a good question -
-in fact, Josh has something like this on the COMP1110 page already I think*
+_note: you could also have some stuff in here about how to ask a good question -
+in fact, Josh has something like this on the COMP1110 page already I think_
 
 ## Notification settings
 
@@ -63,7 +63,7 @@ Tell them they can communicate with their classmates & tutors through this thing
 
 ## further reading
 
-perhaps just put together a few links with interesting tips and tricks 
+perhaps just put together a few links with interesting tips and tricks
 
 https://blog.discourse.org/2016/12/discourse-new-user-tips-and-tricks/
 

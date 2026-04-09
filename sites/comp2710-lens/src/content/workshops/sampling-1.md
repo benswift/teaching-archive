@@ -71,7 +71,6 @@ time, but I think it's still useful as a bunch of subheadings on a webpage.
 
 - in general, in an academic context, where there is no money flowing, use
   whatever you want, apart from:
-
   1. _cultural appropriation_; is the material you're working with culturally
      sensitive? do you have the right/permission to take those sounds out of
      context? what would
@@ -112,7 +111,6 @@ time, but I think it's still useful as a bunch of subheadings on a webpage.
 ### Some things you might consider when choosing a sample
 
 - are you coming from a musical or extramusical starting point?
-
   1. I want a particular kind of sound, e.g. short, sharp, unpitched attack
 
   2. I want a particular kind of feeling, e.g. warm, relaxed

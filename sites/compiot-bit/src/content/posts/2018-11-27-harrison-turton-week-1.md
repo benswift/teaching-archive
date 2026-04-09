@@ -8,12 +8,12 @@ week: 1
 
 I'm super pumped for this trip. There are two main things I want to explore while abroad:
 
-* What is the *internet of things*, how does it affect me, and can I see any entrepreneurial opportunities in this space?
-* What is China like, and how will I survive without the language? What does BIT do — are there any research opportunities I'm interested in? Is the "great firewall" *that* bad, or just different?
+- What is the _internet of things_, how does it affect me, and can I see any entrepreneurial opportunities in this space?
+- What is China like, and how will I survive without the language? What does BIT do — are there any research opportunities I'm interested in? Is the "great firewall" _that_ bad, or just different?
 
 ## Internet of Things
 
-I've heard a lot about the *Internet of Things*, but it feels like a buzzword. I've yet to understand the killer app for the
+I've heard a lot about the _Internet of Things_, but it feels like a buzzword. I've yet to understand the killer app for the
 concept.
 
 Wifi-enabled fridges (that restock themselves) sound like a great luxury item, but I can't imagine them becoming
@@ -22,7 +22,7 @@ ubiquitous in the near future.
 I've heard (but only shallowly understood) large visions of interconnected smart grids, decentralised payments (Iota)
 and automated power trading. I'm sure my vision is lacking, but I haven't internalised this "revolutionary" future.
 
-Internalising and understanding this vision is a big goal me. I'm quite entrepreneurial, and I *know* I'm misunderstanding
+Internalising and understanding this vision is a big goal me. I'm quite entrepreneurial, and I _know_ I'm misunderstanding
 a deep sea full of future opportunities.
 
 > The most successful businesses have an idea for the future that's very different from the present.
@@ -52,7 +52,7 @@ quite a fun deep-dive.
 
 ## Future Questions
 
-* What is the "killer app" for IoT? Are there any existing market gaps, or is it already filled? Can a new player survive in this space — one ruled by tech hegemonies and walled gardens?
-* Does it become easier living in a foreign country without knowing the language, or is it always chaos & charades?
-* Are there any interesting network-tech concepts inside IoT? Could I do a project on this?
-* What are the necessary skills for embedded development? It all seems very esoteric — how do I choose a board? How do I get my code onto it, and how do I discover this by myself? Can I configure other languages (maybe LLVM) to target this, or do I have to use `C`? What are the industry best-practices?
+- What is the "killer app" for IoT? Are there any existing market gaps, or is it already filled? Can a new player survive in this space — one ruled by tech hegemonies and walled gardens?
+- Does it become easier living in a foreign country without knowing the language, or is it always chaos & charades?
+- Are there any interesting network-tech concepts inside IoT? Could I do a project on this?
+- What are the necessary skills for embedded development? It all seems very esoteric — how do I choose a board? How do I get my code onto it, and how do I discover this by myself? Can I configure other languages (maybe LLVM) to target this, or do I have to use `C`? What are the industry best-practices?

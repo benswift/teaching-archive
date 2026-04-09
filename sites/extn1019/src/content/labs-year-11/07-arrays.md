@@ -17,7 +17,7 @@ In this lab you will:
 
 ## Introduction
 
-Welcome to another week of Creative Computing! We have already explored how to draw _lots of things_ using a few lines of code. To do this we used a programming construct which repeats instructions a certain number of times; this construct is called a `for-loop`. 
+Welcome to another week of Creative Computing! We have already explored how to draw _lots of things_ using a few lines of code. To do this we used a programming construct which repeats instructions a certain number of times; this construct is called a `for-loop`.
 
 This week, we will learn how to allow your program to _remember lots of things_. Things that are remembered can be used for other purposes later on. You'll recall that, up until now, we have used variables to _remember a single piece of information_. This information can be numeric data like the number `200` or string data like the text `"Hello Word!"`, but so far we have only stored one piece of data at a time. To _remember_ (or store) lots of information, we will introduce you to a concept called `arrays`.
 
@@ -31,7 +31,7 @@ This is a bigger question than you might imagine. Why do we call data _data_? Wh
 **think:** in 4 minutes: write down as many ideas, concepts, thoughts you have about data. What is the history of data? How do we record data? How do we share data. What forms does data take? What are the types of data we use in our data records? Where do you find data? How do we use data? What issues might occur through or use of data?
 :::
 
-**do:** in 4 minutes: pair and share your concepts and ideas with a neighbour. Do you have a consensus view, or are there different / conflicting ideas?  Are there concepts or views that you had not considered?
+**do:** in 4 minutes: pair and share your concepts and ideas with a neighbour. Do you have a consensus view, or are there different / conflicting ideas? Are there concepts or views that you had not considered?
 
 ### Data types and variables
 
@@ -39,15 +39,15 @@ This is a bigger question than you might imagine. Why do we call data _data_? Wh
 
 ### JavaScript Primitives
 
-type | typeof | Object Wrapper | Description 
-:--- | :--- | :--- | :---
-Null | object | | absence of an object
-Undefined | undefined | | absence of a value for the variable
-Boolean | boolean | Boolean | true / false
-Number | number | Number | [double precision 64-bit binary format IEEE 754 value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_encoding)
-BigInt | bigint | BigInt | integer with arbitrary magnitude
-String | string | String | text data encoded using [UTF-16 code units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#utf-16_characters_unicode_code_points_and_grapheme_clusters)
-Symbol | symbol | Symbol | A unique Symbol value (required for keys)
+| type      | typeof    | Object Wrapper | Description                                                                                                                                                                                      |
+| :-------- | :-------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Null      | object    |                | absence of an object                                                                                                                                                                             |
+| Undefined | undefined |                | absence of a value for the variable                                                                                                                                                              |
+| Boolean   | boolean   | Boolean        | true / false                                                                                                                                                                                     |
+| Number    | number    | Number         | [double precision 64-bit binary format IEEE 754 value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_encoding)                                  |
+| BigInt    | bigint    | BigInt         | integer with arbitrary magnitude                                                                                                                                                                 |
+| String    | string    | String         | text data encoded using [UTF-16 code units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#utf-16_characters_unicode_code_points_and_grapheme_clusters) |
+| Symbol    | symbol    | Symbol         | A unique Symbol value (required for keys)                                                                                                                                                        |
 
 **ALMOST** all other data objects are built from these elements. But we apply meaning to these values which can give them special capabilities.
 
@@ -56,13 +56,13 @@ Notice the word **Object** above? _Almost all_ contemporary programming language
 Objects are a collection of attributes (data) and methods (functions / capabilities). You may see elements of this in code examples.
 
 ```js
-  const max = 550;
-  // what type is max
-  console.log("The type of max is: ", typeof max);
-  console.log("Is max an integer? ", Number.isInteger(max));
-  console.log("Is max a finite number? ", Number.isFinite(max));
-  console.log("Is max NaN? ", Number.isNaN(max));
-  console.log("max is now " + max.toString());
+const max = 550;
+// what type is max
+console.log("The type of max is: ", typeof max);
+console.log("Is max an integer? ", Number.isInteger(max));
+console.log("Is max a finite number? ", Number.isFinite(max));
+console.log("Is max NaN? ", Number.isNaN(max));
+console.log("max is now " + max.toString());
 ```
 
 ## Part 2: Introducing Collections
@@ -75,7 +75,19 @@ is a list of other values. The syntax for arrays looks like:
 
 ```js
 let arrayOfNumbers = [100, 24, -2, 18, 106, 42, 1, 8];
-let arrayOfStrings = ["clap", "along","if", "you", "feel", "like", "a", "room", "without", "a", "roof"];
+let arrayOfStrings = [
+  "clap",
+  "along",
+  "if",
+  "you",
+  "feel",
+  "like",
+  "a",
+  "room",
+  "without",
+  "a",
+  "roof",
+];
 let arrayOfBooleans = [true, false, true, true, false];
 // the example below creates an empty array
 let yetToContainSomething = [];
@@ -108,7 +120,7 @@ If we wanted to access the first element in the array, we:
 The example below shows you how we might use elements from an array to draw with.
 
 ```js
-text(groceryList[0], 100, 100)
+text(groceryList[0], 100, 100);
 ```
 
 The example below shows you how we might update the value of the first element in the `groceryList` array to `sweet potato`.
@@ -147,9 +159,7 @@ Now, if we were to draw each of these strings using the `text()` function, we wo
 Nice work! Now we need to access the strings **and** the positions within a `for-loop`. You might remember from the last few weeks that `for-loops` repeat a set of instructions a certain number of times. This is all controlled by incrementing a variable which we conventionally call `i` (see the `for-loop` below for reference).
 
 ```js
-for(let i=0; i<8000; i++){
-
-}
+for (let i = 0; i < 8000; i++) {}
 ```
 
 If you increase the value of this `i` variable from zero up to the number of elements in our array, we can use `i` as the index to access elements in our array.
@@ -161,7 +171,11 @@ If you increase the value of this `i` variable from zero up to the number of ele
 Each element in an array can be of any data type. It could be a number, text, boolean and it can even be another array. The example below shows an example of an array where the elements of the array are themselves arrays.
 
 ```js
-let twoDArray = [[30, 35, 40], [45, 50, 55], [60, 65, 70]]
+let twoDArray = [
+  [30, 35, 40],
+  [45, 50, 55],
+  [60, 65, 70],
+];
 ```
 
 The second element of the `twoDArray` is `[45, 50, 55]` and the first element of this array is `45`. If I wanted to use this value to draw with, I would do the following:
@@ -171,7 +185,7 @@ The second element of the `twoDArray` is `[45, 50, 55]` and the first element of
 3. we must then include another set of square brackets `[]`. We include the index of the _inner_ element we want to access between the second set of square brackets. Since we want to access the first element of the inner array, we use the index `0`. See the example below.
 
 ```js
-circle(twoDArray[1][0], 200, 200)
+circle(twoDArray[1][0], 200, 200);
 ```
 
 **do:** Rewrite your code from the previous exercise so that it uses only **one** array. Your new array should still have 20 elements, but each element should be another array with exactly three elements. Once you've finished, commit and push your work to git.
@@ -185,7 +199,7 @@ For the next activity, we will be recreating the interactive sketch below.
 There are two keywords in p5.js that hold the current `x` and `y` position of your cursor. These keywords are called `mouseX` and `mouseY`. Copy the code below into your template repo so you can get a feel for how this works.
 
 ```js
-circle(mouseX, mouseY, 50)
+circle(mouseX, mouseY, 50);
 ```
 
 The sketch we are going to create in this activity will allow us to place a circle on your screen each time we click on it with our mouse.

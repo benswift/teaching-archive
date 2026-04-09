@@ -1,7 +1,6 @@
 ---
 title: LENS demo
-summary:
-  Show the rest of the LENS what you're working on for your end-of-semester
+summary: Show the rest of the LENS what you're working on for your end-of-semester
   performance.
 ---
 

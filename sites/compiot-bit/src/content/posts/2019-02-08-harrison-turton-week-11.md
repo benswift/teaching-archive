@@ -10,12 +10,12 @@ microcontrollers, and memory management in Rust. We explored the distance
 routing algorithm, and lamented over lengthy shipping times.
 
 Let's get out of the weeds and take a birds-eye view. What does this project
-represent? How does it relate to the theme, *(dis)connecting together?*
+represent? How does it relate to the theme, _(dis)connecting together?_
 
 ## Connecting Together
 
-*Decentralised (mesh) routing. Distance-vector routing. Routing information
-protocols.*
+_Decentralised (mesh) routing. Distance-vector routing. Routing information
+protocols._
 
 These are all dry names for dry solutions to dry technical problems<sup>1</sup>. The
 implications of these, however, are far-reaching.
@@ -40,7 +40,7 @@ entertainment)
 
 All in all, the internet connected the world.
 
-And the general population has *no idea* how the internet works. Some don't even
+And the general population has _no idea_ how the internet works. Some don't even
 appreciate the web, instead disparaging it's effects on society and glamorising
 the "good 'ol days".
 

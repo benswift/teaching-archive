@@ -5,15 +5,17 @@ date: 2019-01-11
 week: 7
 ---
 
-To quote Childish Gambino, "Stay woke, people creepin'. They sell broke cables,  gon' catch you weepin'". I have paraphrased a bit, but I get the feeling that 'Bino has flipped a few tables over one of these little suckers.
+To quote Childish Gambino, "Stay woke, people creepin'. They sell broke cables, gon' catch you weepin'". I have paraphrased a bit, but I get the feeling that 'Bino has flipped a few tables over one of these little suckers.
 
 ![Childish Arduino](./images/ushini/childish_arduino.jpg)
 
-Its a bit sad that it took me this long to realise I couldn't load any programs onto my board because the USB cable wasn't working. When I connected the board to my computer, it powered up and the in-built LED blinked once. But the device wasn't appearing in my device manager. So I suspected the USB cable only had power wires and no data wires. After a cable glow-up(buying one priced over $5), it was all good. I could see that the device driver was installed properly. I did however run into another problem when using the recommended upload rate of 9600baud for the Lolin NodeMCU ESP-12E. The error message I received was a series of "*.error: failed sending 1040 bytes*" followed by a "*error: espcomm_upload_mem failed*". This was fixed by using a higher upload rate. 57600baud worked for me.
+Its a bit sad that it took me this long to realise I couldn't load any programs onto my board because the USB cable wasn't working. When I connected the board to my computer, it powered up and the in-built LED blinked once. But the device wasn't appearing in my device manager. So I suspected the USB cable only had power wires and no data wires. After a cable glow-up(buying one priced over $5), it was all good. I could see that the device driver was installed properly. I did however run into another problem when using the recommended upload rate of 9600baud for the Lolin NodeMCU ESP-12E. The error message I received was a series of "_.error: failed sending 1040 bytes_" followed by a "_error: espcomm_upload_mem failed_". This was fixed by using a higher upload rate. 57600baud worked for me.
 Made the LED blink. Pretty flash stuff. Only the "LED_BUILTIN" pin in the example code I was using did not work. I believe it defaults to GPIO0. The built in LED is connected to GPIO2.
 
 ### Creating Problems to Solve Next Week:
+
 I had a skim over the ESP8266 Wifi docs and tried to connect the device to a Wifi network. There are a few steps to this procedure:
+
 - Establish a connection to the Wifi network
 - Creating a Wifi client
 - Sending a message to the server (a python script listening on the appriopriate port running on my laptop)

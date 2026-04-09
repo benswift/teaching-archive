@@ -6,6 +6,7 @@ week: 1
 ---
 
 Hey everyone, my name's David & welcome to
+
 # Ripples in The Red Dragon.
 
 This will follow my exciting journey in China as I explore the field **Internet of Things**,

@@ -47,33 +47,33 @@ extension (step 3 in the [VSCode setup instructions](/resources/02-software-setu
     this once---after that they'll be saved to your home directory and will be
     automatically detected when you log back in.
 
-### Task 2: forking the [lab template]()  {#forking}
+### Task 2: forking the [lab template]() {#forking}
 
 :::info
 From here, we'll use a few git-specific terms, and in general we'll explain
 everything along the way. If you're confused, though, there's a [section on git
 help](/resources/01-faq/#git) in the course FAQ or
 some extra installation help available in the [software setup
-FAQ](/resources/02-software-setup/#faq). In addition we also have some 
-(old but still relevant) [git screencasts](/resources/04-screencasts/) 
+FAQ](/resources/02-software-setup/#faq). In addition we also have some
+(old but still relevant) [git screencasts](/resources/04-screencasts/)
 which walk you through these steps.
 :::
 
 Once you've got the software you need, you have to log in to the GitLab server
 at using your normal ANU credentials (uni ID and password) and bring up the [lab
- repository](). A **repository** (often abbreviated to
+repository](). A **repository** (often abbreviated to
 "repo") is basically just a box which stores a bunch of files and their history
 (the changes they've been through over time). Whenever you hear the word
 repo/repository, think "a directory of files which Git is keeping track of".
 
 :::info
 You can read more about [repos](https://comp.anu.edu.au/docs/gitlab/git-and-gitlab/#repository)
-and [forking](https://comp.anu.edu.au/docs/gitlab/forking-and-cloning/#fork) 
+and [forking](https://comp.anu.edu.au/docs/gitlab/forking-and-cloning/#fork)
 on the dedicated SoCo Gitlab site.
 :::
 
 This template is a starting point for everyone who wants to complete the labs,
-so before *you* can start working on it you need to create your own "copy". This
+so before _you_ can start working on it you need to create your own "copy". This
 is called **forking**, and creates a new repo (your "fork").
 
 To fork the [lab template](), click the fork button on
@@ -85,29 +85,29 @@ After clicking Fork, you will be presented with another page:
 
 ![Fork Guide](./images/lab-1/fork-guide.png)
 
-There are a few things to note here, and these will also be important when it comes 
+There are a few things to note here, and these will also be important when it comes
 to forking your assignment so make sure you follow / understand them.
 
-1. This is the project name, by default it will be the same as the repo that you're 
-forking from. **Leave this as is (don't change it!)**.
-2. This is the namespace that you'll be forking the template to, make sure your name 
-or uid is displayed here (you may only have that option anyway).
-3. This is the path for the fork, by default it will be the same as the repo that you're 
-forking from. **Leave this as is (don't change it!)**.
-4. This is the visibility level of your fork, it is important that you ensure that private 
-is selected here. Once the fork is completed you can check that its private by looking at the 
-icon next to the title, if its a little lock then you're all good!
+1. This is the project name, by default it will be the same as the repo that you're
+   forking from. **Leave this as is (don't change it!)**.
+2. This is the namespace that you'll be forking the template to, make sure your name
+   or uid is displayed here (you may only have that option anyway).
+3. This is the path for the fork, by default it will be the same as the repo that you're
+   forking from. **Leave this as is (don't change it!)**.
+4. This is the visibility level of your fork, it is important that you ensure that private
+   is selected here. Once the fork is completed you can check that its private by looking at the
+   icon next to the title, if its a little lock then you're all good!
 5. This is the final step, click the Fork project button once you've checked and confirmed the above.
 
 Once you've done that, you should see a page like the one below---you now have
 your **own** fork (copy) of these files on the server, as indicated that it
 shows your name in the top-left-hand corner (circled in green). The files are
-exactly the same, but the repo is now attached to *your* GitLab account, rather
+exactly the same, but the repo is now attached to _your_ GitLab account, rather
 than the `comp1720/` GitLab account, so you can change the files and push
 things up to the GitLab server without messing up anyone else's starting point.
 
 :::info
-This part of the process is covered in the [*forking* screencast
+This part of the process is covered in the [_forking_ screencast
 video](/resources/04-screencasts/#fork).
 :::
 
@@ -118,11 +118,11 @@ actually work on these files, you need to **clone** (download) this repo to the
 computer you're working on.
 
 :::info
-Below are our steps, however general steps exist on the SoCo Gitlab website. 
+Below are our steps, however general steps exist on the SoCo Gitlab website.
 [Check them out if you want something more in-depth](https://comp.anu.edu.au/docs/gitlab/forking-and-cloning/#clone).
 :::
 
-1. In VSCode, open the *command palette* (*View > Command Palette*, or
+1. In VSCode, open the _command palette_ (_View > Command Palette_, or
    `Ctrl`+`Shift`+`P`/`Cmd`+`Shift`+`P` on macOS) and a prompt will appear in
    the top.
 
@@ -143,9 +143,9 @@ Below are our steps, however general steps exist on the SoCo Gitlab website.
    computer it might be a good idea to create a `comp1720` folder and clone all
    your repositories there. If this is a lab computer, make sure you save this
    to your university homedrive (it'll be called `u1234567`). When you've found
-   a good spot for you files hit *Enter* or click "Select Repository Location".
+   a good spot for you files hit _Enter_ or click "Select Repository Location".
 
-5. Now you'll be asked to enter your username and password. This will be the
+6. Now you'll be asked to enter your username and password. This will be the
    same uid and password you used to log into GitLab (your anu login).
 
 7. If you entered your uid and password correctly, a popup will appear in the
@@ -156,7 +156,7 @@ Below are our steps, however general steps exist on the SoCo Gitlab website.
 Great job! Now lets make that circle.
 
 :::info
-This part of the process is covered in the [*cloning* screencast
+This part of the process is covered in the [_cloning_ screencast
 video](/resources/04-screencasts/#clone).
 :::
 
@@ -164,41 +164,42 @@ video](/resources/04-screencasts/#clone).
 
 Now you've got the template files in VSCode you can get to work.
 
-In the sidebar on the left you can see all the files in the template folder, including 
+In the sidebar on the left you can see all the files in the template folder, including
 a folder for each of the weeks / labs, for this one you'll want to expand the `lab-01` folder.
 
 :::info
-If you don't like seeing all of the lab folders at once, you can also open the lab folder 
-for that lab directly in VSCode. In general it shouldn't matter, but if you have all of 
+If you don't like seeing all of the lab folders at once, you can also open the lab folder
+for that lab directly in VSCode. In general it shouldn't matter, but if you have all of
 the labs open, make sure you're working in the right lab!
 :::
 
 Throughout the course we'll explain what each of these files is for but for now
-the one we care about is `sketch.js` (located in the `lab-01` folder). Click on 
+the one we care about is `sketch.js` (located in the `lab-01` folder). Click on
 that one and VSCode will open it up.
 
 You're getting close to creating the circle you've been thinking about all
 along. In the `draw` function (immediately below `// your "draw loop" code goes
 here`) add the following lines:
 
-``` javascript
+```javascript
 background(30);
-ellipse(200,200,200,200);
+ellipse(200, 200, 200, 200);
 ```
 
 Now save the file.
 
 The final piece of the puzzle is to run/view the sketch. To do this, you need to
 start the live server:
+
 1. Open the command palette (`View > Command Palette`)
 2. Type "Open with live server"
-3. Hit *Enter*
+3. Hit _Enter_
 
 Your default browser will open up and should show a white circle on a charcoal
 background.
 
 :::info
-As stated on the [software setup page](/resources/02-software-setup/#chrome) you should use Chrome / Chromium 
+As stated on the [software setup page](/resources/02-software-setup/#chrome) you should use Chrome / Chromium
 as your web browser for the course, and (for convenience) you could set it to be
 your default browser (since that's what the live server extension will open the
 sketch in).
@@ -216,12 +217,12 @@ internet it's important that you save your work and push it up to GitLab. This
 process is important to learn because it's the way you'll submit all your
 assignments for this course!
 
-The first thing to do is save your `sketch.js` the usual way (i.e. *File > Save*
-or *Ctrl-S*/*Cmd-S* depending on your OS).
+The first thing to do is save your `sketch.js` the usual way (i.e. _File > Save_
+or _Ctrl-S_/_Cmd-S_ depending on your OS).
 
 Now you want to upload your changes to the `sketch.js` file back to gitlab so
 it's safe and sound. This involves some more VSCode commands so open up the
-command palette using *View > Command Palette*.
+command palette using _View > Command Palette_.
 
 Type in `git commit all` and press enter. You'll get a popup which says "There
 are no staged changes to commit. Would you like to automatically stage all your
@@ -243,8 +244,8 @@ on the dedicated SoCo Gitlab site.
 :::
 
 Now all you have to do is push (upload) these committed changes to GitLab with
-the **push** command. Open up the command palette using `View > Command Palette`, 
-type `git push` and hit *Enter*. You might need to put your UID &
+the **push** command. Open up the command palette using `View > Command Palette`,
+type `git push` and hit _Enter_. You might need to put your UID &
 password in again at the push step. If you get an unauthorised message, try once
 more and if it still doesn't work seek help from a tutor or friend.
 
@@ -254,7 +255,7 @@ on the dedicated SoCo Gitlab site.
 :::
 
 If everything worked successfully, then when you refresh the GitLab project page
-for your fork (i.e. `https://gitlab.cecs.anu.edu.au/uXXXXXXX/comp1720--labs`) 
+for your fork (i.e. `https://gitlab.cecs.anu.edu.au/uXXXXXXX/comp1720--labs`)
 you should see the first line of that commit message as shown:
 
 ![GitLab server after new commit is pushed](./images/lab-1/post-push.png)
@@ -265,7 +266,7 @@ version with your `ellipse` line in there. Hooray!
 ![GitLab server file view](./images/lab-1/sketch-file-view.png)
 
 :::info
-This part of the process is covered in the [*committing*](/resources/04-screencasts/#commit) and [*pushing*](/resources/04-screencasts/#push) screencast videos.
+This part of the process is covered in the [_committing_](/resources/04-screencasts/#commit) and [_pushing_](/resources/04-screencasts/#push) screencast videos.
 :::
 
 ### Task 6: putting your circle on the internet {#pushing}
@@ -291,7 +292,7 @@ If you can see your circle, great job, you're done!
 ## Extra Tasks
 
 In every lab you will have some extra tasks available
-if you have finished your main lab tasks. 
+if you have finished your main lab tasks.
 
 If you feel like you're completely exhausted after completing the
 tasks above---that's ok! We only expect you to complete the main tasks
@@ -303,7 +304,7 @@ important just to make a start early.
 
 If you like, there are some [extra steps you can take](/resources/01-faq/#setting-up-ssh-keys) so that you don't have to type in
 your uni ID and password every time, but it's not essential and you can also add
-that stuff later. 
+that stuff later.
 
 (If you're new to all this git stuff, probably just stick with
 the ID & password for now.)
@@ -312,13 +313,13 @@ the ID & password for now.)
 
 Now if you replace the code for drawing the circle in Task 4 to this:
 
-``` javascript
+```javascript
 ellipse(200,200,200 200);
 ```
 
 What happens? The circle and your entire sketch are gone! Does this mean there is an error in you code? How can you find out?
 
-Usually, we go to the [chrome developer console](/resources/02-software-setup/#chrome-developer-console) for troubleshooting. It provides a detailed description of error in your code. 
+Usually, we go to the [chrome developer console](/resources/02-software-setup/#chrome-developer-console) for troubleshooting. It provides a detailed description of error in your code.
 
 ### Changing the canvas size
 
@@ -326,13 +327,13 @@ What was the canvas size you used in Task 4? Is it a default one? How does it me
 
 (Hint: Check out the reference of the [`createCanvas`](https://p5js.org/reference/#/p5/createCanvas).)
 
-### Change the circle's colour 
+### Change the circle's colour
 
 Can you add some colour on your circle? You can start by using the `fill` (& `color`) function
 
-``` javascript
+```javascript
 fill(color(255, 204, 0)); //make my circle yellow
-ellipse(200,200,200,200);
+ellipse(200, 200, 200, 200);
 ```
 
 Don't know what the three parameters in the function mean? It's always good to check the [reference](https://p5js.org/reference/#/p5/color)!

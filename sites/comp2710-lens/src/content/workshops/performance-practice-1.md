@@ -22,4 +22,3 @@ If you're up for your practice performance this week, you'll get a chance to:
    ensemble configuration as possible
 
 3. get an idea of what works & what doesn't (while there's still time to make fixes)
-

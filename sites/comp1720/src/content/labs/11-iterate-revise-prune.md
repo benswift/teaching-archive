@@ -8,13 +8,13 @@ This lab is all about looking critically at your major project work so far and t
 
 For the rest of the lab you will have time to discuss your major project work-in-progress with your colleagues. The idea is to clarify your thoughts and plans so that you address the major project specification really well and create an engaging and satisfying piece of interactive art.
 
-This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab. 
+This lab is about ideas, not code, but you still need to submit something. You will find markdown files for each lab task in this week's folder in your lab repository. As you are completing your lab tasks, make sure that you actually write down your ideas and put them in these files to complete the lab.
 
 Form a group of three or four. You'll discuss things with them throughout this lab.
 
 ## Task 0: making the cut
 
-Creating an interactive artwork obviously involves a lot of designing and implementing different ideas; but it also involves _refinement_. Good artists and designers are always ready to _remove_ ideas that don't contribute enough to their artistic vision, that are not feasible to implement, or that just don't work for whatever reason.  
+Creating an interactive artwork obviously involves a lot of designing and implementing different ideas; but it also involves _refinement_. Good artists and designers are always ready to _remove_ ideas that don't contribute enough to their artistic vision, that are not feasible to implement, or that just don't work for whatever reason.
 
 For this task, it's time for you to consider those ideas that didn't work out, had to be removed, or were just plain _bad_.
 
@@ -38,7 +38,7 @@ Write a sentence to explain each of the following and share with the group:
 
 ## Task 2: Sharing your work-in-progress
 
-Now that you have another artist's sketch it's time to think about how it might be used in a **different artwork**. 
+Now that you have another artist's sketch it's time to think about how it might be used in a **different artwork**.
 
 Imagine another way that this sketch could be used in an interactive artwork. Write down answers to the following questions:
 

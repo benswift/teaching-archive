@@ -23,13 +23,13 @@ In this lab you will:
 We will continue working on your Final Project!
 
 You can find all the details about the final project assessment task by visiting the [final project
-deliverables](/deliverables-year-12/03-final-project/) page. 
+deliverables](/deliverables-year-12/03-final-project/) page.
 
 You can find the [template repository for your final project submission here.]()
 
-The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**. 
+The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**.
 
-But first, let's have a quick look at ***Cellular Automata*** and revisit ***Fractals!***
+But first, let's have a quick look at **_Cellular Automata_** and revisit **_Fractals!_**
 
 ## Part 1: Cellular Automata
 
@@ -67,8 +67,8 @@ git reset --hard
 
 ### Cellular Automata
 
-Cellular Automata are: 
-*a grid of cells, each in one of a finite number of states, such as on and off. The grid can be in any finite number of dimensions. Each cell of the grid has a set of cells called its neighborhood. An initial state (time t = 0) is selected by assigning a state for each cell. A new generation is created (advancing t by 1), according to some fixed rule (generally, a mathematical function) that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell and does not change over time, and is applied to the whole grid simultaneously, though exceptions are known, such as the stochastic cellular automaton and asynchronous cellular automaton*
+Cellular Automata are:
+_a grid of cells, each in one of a finite number of states, such as on and off. The grid can be in any finite number of dimensions. Each cell of the grid has a set of cells called its neighborhood. An initial state (time t = 0) is selected by assigning a state for each cell. A new generation is created (advancing t by 1), according to some fixed rule (generally, a mathematical function) that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell and does not change over time, and is applied to the whole grid simultaneously, though exceptions are known, such as the stochastic cellular automaton and asynchronous cellular automaton_
 
 Automata can be [one-dimensional](https://www.wolframalpha.com/input?i=rule+110), [two-dimensional](https://en.wikipedia.org/wiki/Cellular_automaton) or defined by higher dimensions.
 
@@ -82,9 +82,10 @@ Automata patterns can also be observed in nature:
 **DO:** Fork and clone the [lab template repo]().
 
 We will look at:
-* how [Conway's](http://www.ibiblio.org/lifepatterns/october1970.html) [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) works  (see the [Coding Train Challenge](https://thecodingtrain.com/challenges/85-the-game-of-life))
-* Interface design
-* Further Ideas
+
+- how [Conway's](http://www.ibiblio.org/lifepatterns/october1970.html) [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) works (see the [Coding Train Challenge](https://thecodingtrain.com/challenges/85-the-game-of-life))
+- Interface design
+- Further Ideas
 
 Follow the live demonstration and Q&A session with your instructor.
 
@@ -96,10 +97,11 @@ For those who are not physically present in class, here's a run-through of what 
 1. disconnect from all internet connected devices and all electronic user interfaces
 2. grab a notepad and pencil (yes, pencil is preferred)
 3. answer the questions:
-  - what is your final interpretation of the theme?
-  - how will this look/sound like in an artwork?
-  - how will users interact with the artwork (or how will it evolve over time)?
-  - how will the interaction/evolution strengthen your communication of the theme?
+
+- what is your final interpretation of the theme?
+- how will this look/sound like in an artwork?
+- how will users interact with the artwork (or how will it evolve over time)?
+- how will the interaction/evolution strengthen your communication of the theme?
 
 Now that you have completed your ideation and first part of your designs, let's think about planning out the tasks:
 
@@ -112,7 +114,7 @@ Now that you have completed your ideation and first part of your designs, let's 
    - you can break your coding tasks down into simpler elements
 2. we have 6 weeks remaining. Map the tasks to weeks.<br/>Some tasks may take more than 1 week.
 
-OK &ndash; Great work.  Now we can go back online.
+OK &ndash; Great work. Now we can go back online.
 
 If you haven't already, fork and clone the [final project repo]().
 
@@ -120,13 +122,13 @@ If you haven't already, fork and clone the [final project repo]().
 
 You should now have:
 
-* an interpretation of the theme to work with
-* some ideas for how this will work in code
-* some ideas for interacting with your artwork
-* a list of tasks you need to complete
-* a mapping of tasks to dates
+- an interpretation of the theme to work with
+- some ideas for how this will work in code
+- some ideas for interacting with your artwork
+- a list of tasks you need to complete
+- a mapping of tasks to dates
 
-This is **not just in your head**.  You have solid project documentation.
+This is **not just in your head**. You have solid project documentation.
 
 Make sure you add this evidence (even as photos of handwritten notes) to your repository.
 

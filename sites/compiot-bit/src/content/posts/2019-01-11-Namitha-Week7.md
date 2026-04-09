@@ -19,7 +19,7 @@ This week I have been going through and trying to learn the basics of the C prog
 
 When I went to the electronics store, the owner showed me a bunch of different sensors I could use such as temperature sensors, light sensors, motion detectors, etc. I decided to go with an accelerometer to attach to my toothbrush which will detect when a patient is brushing their teeth. I purchased an analog accelerometer which is compatible with the ESP 32. It has three axis(x, y, and z). I will most probably only need to use two to detect and changes in motion.
 
-	An accelerometer is an electromagnetic device that is used to measure acceleration forces.
+    An accelerometer is an electromagnetic device that is used to measure acceleration forces.
 
 This also means that I will not need to attach the accelerometer next to the bristles which would've been extremely uncomfortable. I can attach it to the handle because that will detect any movement as well. I was also in search of a smaller microcontroller to attach to the toothbrush so that it can optimise comfort. But, when I had a discussion with the store owner he recommended that I stick to the ESP 32 because it is much easier to use than the others and has more features as well. Thus, I decided to stick to it.
 

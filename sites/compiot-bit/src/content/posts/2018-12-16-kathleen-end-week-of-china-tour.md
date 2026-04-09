@@ -9,7 +9,7 @@ Here comes the final week of our IoT China Tour~ Overall, through the whole time
 
 As it is the end of our entire group activity, this week I plan to highlight our together sweet memories, and only talk a little bit about my IoT final project on blogs~
 
-***When it comes to the last moment, all amazing things happen.*** I think it is the key theme for the week~
+**_When it comes to the last moment, all amazing things happen._** I think it is the key theme for the week~
 
 ## Final Car Project Demo and Presentation
 
@@ -35,7 +35,7 @@ Especially when reviewing my three-week photos, I find the whole process is full
 
 3 weeks isn't a long time, while compared to common-semester 12 weeks that we actually have few chances to communicate in labs or just after lectures, the together Beijing period is really valuable! (^&^)
 
-Now, I am keen to share more details~~ Let's come to my ***birthday surprise***...
+Now, I am keen to share more details~~ Let's come to my **_birthday surprise_**...
 
 ## Happy Birthday
 
@@ -45,15 +45,15 @@ Go back on this Tuesday...
 
 At lunchtime, we have the together birthday party in Hai Di Lao Hotpot. Actually, it has an awkward beginning, I knew the surprising cake existence in advance because the waiter mistakenly thought me as one of the student helpers. I thought I am one of the celebrating targets because my birthday is on this Saturday, but I finally found BIT teacher did not take my birthday into consideration...
 
-Thanks for Yadong, as soon as he knew my situation, he helped use *tomato sauce* to add my name... I am the owner of the most outstanding name at last, lol~
+Thanks for Yadong, as soon as he knew my situation, he helped use _tomato sauce_ to add my name... I am the owner of the most outstanding name at last, lol~
 
-Happy to join the birthday game with other dudes: Namitha, Keagan, Oliver and another 2 unknowns! Love my *cake princess* toy~ Enjoy long-life noodle with candles and wishes as Chinese tradition. Finally, it becomes a sweet party!
+Happy to join the birthday game with other dudes: Namitha, Keagan, Oliver and another 2 unknowns! Love my _cake princess_ toy~ Enjoy long-life noodle with candles and wishes as Chinese tradition. Finally, it becomes a sweet party!
 
 ### Night Big Surprise
 
 I thought the group party would be the largest surprise for my 21st birthday, but it was not, the night birthday surprise is the most unforgettable experience...
 
-Well, I really want to keep the whole process mysterious~ ;)  ...
+Well, I really want to keep the whole process mysterious~ ;) ...
 
 ![surprising birthday](./images/kathleen/cake.jpg)
 
@@ -67,14 +67,10 @@ It finally comes to the IoT project part... After talking with Ben and Kieran, I
 
 Currently, I have a much clearer idea about how to deal with different sections for the whole process: sensing, checking corresponding commands, transferring data and finally making real reactions.
 
-I am also more familiar with the hardware parts:
-    - which micro-controller or sensors should be chosen
-    - brief idea to deal with water-proof problems
-    - which parts could be physically monitored
-    - ...
+I am also more familiar with the hardware parts: - which micro-controller or sensors should be chosen - brief idea to deal with water-proof problems - which parts could be physically monitored - ...
 
 I will try to explore more details about my project implementation part through further research... Good luck for myself~
 
 ---
 
-In summary, I really enjoy the whole Beijing section of the project~ Grateful for everyone who give me help through the process! Cannot thinking of a better way to spend the 3 weeks without you! (^_^*)
+In summary, I really enjoy the whole Beijing section of the project~ Grateful for everyone who give me help through the process! Cannot thinking of a better way to spend the 3 weeks without you! (^\_^\*)

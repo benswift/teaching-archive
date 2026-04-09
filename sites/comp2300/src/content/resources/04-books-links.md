@@ -9,7 +9,7 @@ Sometimes it's nice to not have to keep flipping back and forwards through the
 whole reference manual---this cheat sheet covers all you'll need for this
 course. It's a bit terse (so that everything fits on two pages), and don't
 stress out too much if you don't understand it all right at the beginning of the
-course. Still, it's really important that you learn to read and *understand*
+course. Still, it's really important that you learn to read and _understand_
 this cheat sheet (including what all the different special characters mean in
 the syntax & semantic sections). You'll get lots of practice doing this in the
 labs, so feel free to ask any questions you have there.
@@ -20,14 +20,14 @@ This is pretty readable as far as reference manuals go---and it's the official
 manual for the ARM Cortex-M4 CPU in your discoboard. Make sure you know how to
 search & bookmark this document in your pdf viewer of choice.
 
-## [STM32L476G Discovery *Reference* Manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf) {#discoboard-reference}
+## [STM32L476G Discovery _Reference_ Manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf) {#discoboard-reference}
 
 This **reference** manual contains all the nitty-gritty details about your
 discoboard. We'll step you gently through various parts of it as appropriate,
 but if you want to get the full picture then this reference manual is the place
 to go.
 
-## [STM32L476G Discovery *User* Manual](/assets/manuals/stm32-L476G-discovery-user-manual.pdf) {#discoboard-user}
+## [STM32L476G Discovery _User_ Manual](/assets/manuals/stm32-L476G-discovery-user-manual.pdf) {#discoboard-user}
 
 Surprisingly, the discoboard **user** manual isn't that helpful---it's more like
 an advertising pamphlet which just lists the features of the board, but in
@@ -53,7 +53,7 @@ the code samples in the book are for the 32-bit version of this instruction set
 understands, but whenever you're looking at that content it's worth keeping in
 mind that it might not work as-is on your discoboard.
 
-## [GNU Assembler documentation](https://sourceware.org/binutils/docs/as/index.html) {#gas} 
+## [GNU Assembler documentation](https://sourceware.org/binutils/docs/as/index.html) {#gas}
 
 The
 [System Workbench IDE](/labs/01-intro/index.html#system-workbench) that
@@ -68,7 +68,7 @@ find helpful are:
 - [Assembler directives](https://sourceware.org/binutils/docs/as/Pseudo-Ops.html#Pseudo-Ops)
 - [ARM-specific directives](https://sourceware.org/binutils/docs/as/ARM-Directives.html)
 
-## [*Patterson & Hennessy* - Computer Organization and Design (ARM edition)](https://www.amazon.com/Computer-Organization-Design-Interface-Architecture/dp/0128017333) {#patterson-hennessy}
+## [_Patterson & Hennessy_ - Computer Organization and Design (ARM edition)](https://www.amazon.com/Computer-Organization-Design-Interface-Architecture/dp/0128017333) {#patterson-hennessy}
 
 This textbook is a good one, the authors really know their stuff and this book
 has been a standard of university-level CS courses for a long time. However,
@@ -79,7 +79,7 @@ it's not the set textbook for this course for a couple of reasons:
   so the code examples would require some (or a lot) of tweaking to run on your
   discoboard
 
-Still, if you want to understand the *concepts* it covers then it's worth trying
+Still, if you want to understand the _concepts_ it covers then it's worth trying
 to find a copy in the library.
 
 ## [Davespace ARM tutorial](http://www.davespace.co.uk/arm/introduction-to-arm/) {#davespace}

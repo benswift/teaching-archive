@@ -65,11 +65,12 @@ reality, and thus enabled the lives we live today.
 ### What design criteria did we choose to prioritise? Which criteria did you have to sacrifice?
 
 There are 5 different design criteria:
-1.	Ambition
-2.	Technical quality
-3.	Demoability
-4.	Engagement with the theme
-5.	Wow factor
+
+1. Ambition
+2. Technical quality
+3. Demoability
+4. Engagement with the theme
+5. Wow factor
 
 We chose to prioritise “wow factor”. It’d be really cool to
 watch a dark network spring to life, with LEDs flashing and lights rolling
@@ -103,6 +104,7 @@ we needed to get the artefact out on time. If I were a real artist, I’d treat
 this as a test – a proof-of-concept MVP to improve upon.
 
 ### What was your design process? How did the project develop over time?
+
 Our design process was iterative and reductive. We started with something extremely
 practical (an actual sensor node, for use in sensor arrays). This would create
 a pretty lacklustre gallery display, so we quickly swapped to distributed
@@ -130,6 +132,7 @@ concept would have been a bit overwhelming (albeit interesting). A layman would
 potentially find it difficult to interact with, and to understand.
 
 ### What were the challenges faced in developing your ideas and prototypes?
+
 Ah, the challenges! We had many – development wasn’t a smooth process, but rather a
 streetfight with the vicissitudes of embedded development.
 
@@ -158,6 +161,7 @@ two types of boards – “hub” ones (which accepted connections from other bo
 and “spoke” boards (which connected to other boards).
 
 ### How has it changed the way you think about IoT?
+
 Coming into this course, I didn’t really understand IoT. Large corporations pushed this “technology of the
 future”, but I could only see smart watches & fridges. I had over-focused on
 products relating to me and failed to consider applications within different

@@ -19,7 +19,7 @@ The time has come to dive into [_algorithmic composition_](https://ccrma.stanfor
 Let's get into what we mean by the term _algorithmic composition_. Well, first of all, what's an algorithm? You can think of an algorithm as a limited set of _instructions_ to follow in order to perform a specific _task_. Since we are working with computers, these _instructions_ will be articulated in our code and the computer will perform the said _task_ by following the _instructions_ we give it.
 
 :::tip
-**Algorithms:** More formally, an algorithm is a finite sequence of precise instructions which are used to solve a class of problems. The word algorithm is a latinization of محمد بن موسى خوارزمی - (c780 - c850) or _al-Khwarizmi_, a Persian polymath, whose works also gave us الجبر  (al Jabr, latinized as _algebra_ - the Compendious Book on Calculation by Completing and Balancing), and the Indian numbering system, including decimal notation. The "recipes" in this compendious book are the source of our concept of algorithm. [Khwarazm](https://en.wikipedia.org/wiki/Khwarazm) is, clearly, the name of the region that _al Khwarizmi_ came from.
+**Algorithms:** More formally, an algorithm is a finite sequence of precise instructions which are used to solve a class of problems. The word algorithm is a latinization of محمد بن موسى خوارزمی - (c780 - c850) or _al-Khwarizmi_, a Persian polymath, whose works also gave us الجبر (al Jabr, latinized as _algebra_ - the Compendious Book on Calculation by Completing and Balancing), and the Indian numbering system, including decimal notation. The "recipes" in this compendious book are the source of our concept of algorithm. [Khwarazm](https://en.wikipedia.org/wiki/Khwarazm) is, clearly, the name of the region that _al Khwarizmi_ came from.
 :::
 
 Naturally, these _instructions_ are independent of the programming language we choose to use. When we talk about algorithms in the context of _composition_, the _tasks_ we want our computer to perform are related to generating changes in the music we compose. This means, the computer automatically generates changes in the music, but it does so based on _instructions_, rules or blueprints we specify through our code.
@@ -36,8 +36,7 @@ In this activity, we are going to follow in the steps of Mozart and create our o
 
 Now that we have a set of 6 sequences to choose from, let's create some instructions to follow which will help us build a composition using these 6 rhythmic sequences. One example of a set of instructions can be derived by assigning each face of the die to one of your sequences[^sequence-map].
 
-[^sequence-map]:
-    A dice has six faces and you've written six sequences -- how convenient.
+[^sequence-map]: A dice has six faces and you've written six sequences -- how convenient.
 
 The person next to you is now going to create a composition (i.e. a chain of four-beat sequences) using the 6 four-beat sequences you have created. You should assume they will have a die to roll and that they will select a sequences based on the number which appears on the dice. It's up to you to give them instructions on which sequence to pick when the die shows a `1`, which sequence to pick when the die shows a `2` and so on for each possible number which can appear on the die.
 
@@ -72,11 +71,11 @@ Awesome work! Now for something slightly different.
 When you roll a die, there is an equal chance that it will land on any of it's six faces. In other words, the probability of getting 1 = the probability of getting 2 = the probability of getting 3 = the probability of getting 4 = the probability of getting 5 = the probability of getting 6 = 1/6. What if we wanted to adjust these odds so that we have a higher chance of 'rolling' a 6, and therefore, have a higher chance of picking the rhythmic sequence associated with a die-roll of 6?
 
 ```js
-let S1 = ["B2", "0hz", "B2", "0hz"]
-let S2 = ["B2", "0hz", "0hz", "B2"]
-let S3 = ["B2", "B2", "0hz", "B2"]
+let S1 = ["B2", "0hz", "B2", "0hz"];
+let S2 = ["B2", "0hz", "0hz", "B2"];
+let S3 = ["B2", "B2", "0hz", "B2"];
 
-let sequences = [S1, S2, S3]
+let sequences = [S1, S2, S3];
 ```
 
 Let's suppose we have three sequences like the ones above; `S1`, `S2` and `S3`. If I want to pick one of these sequences at random, I could begin by using the `random()` function to select a number between `1` and `3`. The `random()` function will then give me either a `1`, a `2` or a `3` with equal probability. If I get a `1`, then I pick `S1` and if I get a `2` I pick `S2` and so on. There is an alternative way we can use the `random()` function to select one of these three sequences with equal probability.
@@ -86,7 +85,7 @@ If we give the `random()` function an _array_ e.g. `random([1,2,3,4])` instead o
 You'll see that there is another variable in the code snippet above called `sequences` which stores each of our sequence arrays within it. If we pass the `sequences` array to our `random()` function, it will directly select one of our sequence arrays at random. This is nice because we don't have to go through this business of picking a number first and then checking which sequence matches which number.
 
 ```js
-console.log(random(sequences))
+console.log(random(sequences));
 ```
 
 **do:** Copy the block of code above which contains the arrays `S1`, `S2`, `S3` and `sequences` and paste it into your template repo, where you would normally declare variables. Then copy the line of code above which calls `console.log` and paste it at the bottom of your `setup()` function. Open the console in your browser and watch how the result of `random(sequences)` changes as you refresh the page.
@@ -114,8 +113,10 @@ Since it's kind of a pain to keep updating our `sequences` array each time you m
 ![incomplete markov](./images/labs/lab-15/incomplete-markov.jpg)
 
 ```js
-markovChain = [[S1, S2, S3, S3, S3],
-               [S1, S2, S1, S3]]
+markovChain = [
+  [S1, S2, S3, S3, S3],
+  [S1, S2, S1, S3],
+];
 ```
 
 The first element of the Markov Chain above is the array `[S1, S2, S3, S3, S3]` and we can access it using the notation `markovChain[0]`. Based on the example above, if the previous sequence we chose was `S1`, we would only make our next selection based on `markovChain[0] = [S1, S2, S3, S3, S3]` and so, when we make our next selection, we use `random(markovChain[0])`. This is exactly the same as using `random([S1, S2, S3, S3, S3])`.

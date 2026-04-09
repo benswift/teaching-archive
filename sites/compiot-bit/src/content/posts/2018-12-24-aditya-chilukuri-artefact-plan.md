@@ -22,18 +22,19 @@ At its core, PS Band is about how we can make a difference to how all of us, as 
 ## And Now, Our Technical Requirements
 
 The project will require:
- - a microcontroller with:
-     - GPIO ports to communicate with an alcohol sensor
-     - Bluetooth capability to communicate to user's mobile phone.
-     - If battery requirements permit, a vibrator may be connected as a peripheral that can notify the user to use the alcohol sensor.
- - Phone app development to:
-     -  receive alcohol readings
-     -  get current location
-     -  keep in communication with the server
-     -  graphical user interface to display the intoxication of everyone in the friend group
- - Server development to:
-     - keep track of all app users' incoming messages
-     - collate and forward up to date information about everyone in each friend group to all the members' phones.
+
+- a microcontroller with:
+  - GPIO ports to communicate with an alcohol sensor
+  - Bluetooth capability to communicate to user's mobile phone.
+  - If battery requirements permit, a vibrator may be connected as a peripheral that can notify the user to use the alcohol sensor.
+- Phone app development to:
+  - receive alcohol readings
+  - get current location
+  - keep in communication with the server
+  - graphical user interface to display the intoxication of everyone in the friend group
+- Server development to:
+  - keep track of all app users' incoming messages
+  - collate and forward up to date information about everyone in each friend group to all the members' phones.
 
 For our project, the ESP32 chip looks like the best choice of microcontroller — it has inbuilt BlueTooth capability and most boards provide sufficient GPIO pins for this prototype. The Adafruit ESP32 Feather is reasonably priced (\$20) and is supported by [PlatformIO](https://docs.platformio.org/en/latest/boards/espressif32/featheresp32.html).
 
@@ -51,17 +52,17 @@ Chinmay and I are working together on this project, and we've decided that while
 
 We decided on the following timeline (list of deadlines) for our project:
 
-| date    | week | What We Will Achieve                                                                              |
-|---------|------|----------------------------------------------------------------------------------------------|
-| Dec 26 |    5 | Place Orders for Hardware                                                                |
-| Jan 4  |    6 | Familiarise with libraries, decide on software infrastructure (Rust/C/Arduino for the microcontroller)                                                         |
-| Jan 15 |    7 | Start building our app; Get communication between laptop and phone (IP based) working |
-| Jan 19 |    8 | Intermediate Deadline — Working communication between laptop <-> phone; basic implementation of the app             |
-| Jan 20 |    8 | Parts should have arrived                                            |
-| Jan 25 |    9 | Test out software on the board; Make changes if necessary and be able to flash the on-chip software to the board                     |
-| Feb 1  |   10 | Basic alcohol detection is working                               |
-| Feb 8  |   11 | Intermediate goal — App can receive data from esp32 and relay the message to the laptop which updates database                            |
-| Feb 15 |    12 | Finished app and product                                       |
-| Feb 18  |   12 | Finished the design rationale                                                                    |
+| date   | week | What We Will Achieve                                                                                             |
+| ------ | ---- | ---------------------------------------------------------------------------------------------------------------- |
+| Dec 26 | 5    | Place Orders for Hardware                                                                                        |
+| Jan 4  | 6    | Familiarise with libraries, decide on software infrastructure (Rust/C/Arduino for the microcontroller)           |
+| Jan 15 | 7    | Start building our app; Get communication between laptop and phone (IP based) working                            |
+| Jan 19 | 8    | Intermediate Deadline — Working communication between laptop <-> phone; basic implementation of the app          |
+| Jan 20 | 8    | Parts should have arrived                                                                                        |
+| Jan 25 | 9    | Test out software on the board; Make changes if necessary and be able to flash the on-chip software to the board |
+| Feb 1  | 10   | Basic alcohol detection is working                                                                               |
+| Feb 8  | 11   | Intermediate goal — App can receive data from esp32 and relay the message to the laptop which updates database   |
+| Feb 15 | 12   | Finished app and product                                                                                         |
+| Feb 18 | 12   | Finished the design rationale                                                                                    |
 
 That's all for this week. Merry Christmas (if you celebrate it) and have a Very Happy New Year!

@@ -43,7 +43,7 @@ Not sure which dataset to use? Here are some ideas:
 
 ### So you want to use _images_?
 
-Well, you're in luck! Your template repo for this week already has an example of how to use and draw with the pixel values of an image. 
+Well, you're in luck! Your template repo for this week already has an example of how to use and draw with the pixel values of an image.
 
 You will work with `sketch-image.js`.
 
@@ -63,6 +63,7 @@ Choice! P5.js already captures the position of your mouse in the `mouseX` and `m
 You will work with `sketch-interaction.js`.
 
 You will need to:
+
 1. Change `index.html` to use `sketch-interaction.js`
 2. Capture interaction data and store in an array
 3. Add data visualisation code to visually represent the captured interaction data
@@ -73,7 +74,7 @@ Awesome! Have a look at [Project Gutenberg](https://www.gutenberg.org/). This si
 
 Loading text data into p5.js uses the `loadStrings()` function. Have a look at the p5.js [references](https://p5js.org/reference/#/p5/loadStrings) to see how to use the `loadStrings()` function.
 
-You will work with `sketch-textual.js`. The function `preload()` has an example of how to load data from a text file using `loadStrings()`. 
+You will work with `sketch-textual.js`. The function `preload()` has an example of how to load data from a text file using `loadStrings()`.
 
 1. Change `index.html` to use `sketch-textual.js`
 2. Download a text file from Project Gutenberg (or elsewhere)
@@ -83,17 +84,17 @@ You will work with `sketch-textual.js`. The function `preload()` has an example 
 
 ### So you want to use _tabular data_?
 
-Excellent! Tabular data is just data which is represented as a table -- think excel `.xlsx` or comma separated value `.csv` file formats. [Kaggle](https://www.kaggle.com/datasets) is a great place to look for tabular datasets.  You will have to create a free account on Kaggle if you want to download their datasets.
+Excellent! Tabular data is just data which is represented as a table -- think excel `.xlsx` or comma separated value `.csv` file formats. [Kaggle](https://www.kaggle.com/datasets) is a great place to look for tabular datasets. You will have to create a free account on Kaggle if you want to download their datasets.
 
 There are also many Open Government Data Portals which also have tabular data you can use - including the [ACT Government Open Data Portal](https://www.data.act.gov.au/). No account is required to use this data.
 
 When we load tabular data into p5.js, we will need the `loadTable()` function. See the [references here](https://p5js.org/reference/#/p5/loadTable)
 
 :::tip
-**Note:** you can also load data using `loadJSON()` if you have JSON formatted data [reference here](https://p5js.org/reference/p5/loadJSON/). Your data will be loaded as a JavaScript Object. If your data is located on a remote web server, you might choose to use `loadData()` with a url (when working with csv tables) or `httpGet()` to load dat from a web API [reference here](https://p5js.org/reference/p5/httpGet/). 
+**Note:** you can also load data using `loadJSON()` if you have JSON formatted data [reference here](https://p5js.org/reference/p5/loadJSON/). Your data will be loaded as a JavaScript Object. If your data is located on a remote web server, you might choose to use `loadData()` with a url (when working with csv tables) or `httpGet()` to load dat from a web API [reference here](https://p5js.org/reference/p5/httpGet/).
 :::
 
-You will work with sketch `sketch-tabular.js`. The function `preload()` has an example of how to load data from a csv file using `loadTable()`. 
+You will work with sketch `sketch-tabular.js`. The function `preload()` has an example of how to load data from a csv file using `loadTable()`.
 
 1. Change `index.html` to use `sketch-tabular.js`
 2. Download a csv file from Kaggle (or elsewhere). Note - you can use a URL to the web address of the csv data file, but if you download it, you can expect faster load times.

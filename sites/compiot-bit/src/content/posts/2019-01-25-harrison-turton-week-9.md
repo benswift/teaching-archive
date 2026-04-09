@@ -10,8 +10,8 @@ I had a great discussion with my partner, and finally got Rust working on the di
 
 ## Small Rust fixes
 
-*Since writing this, I opened an [issue](https://github.com/rust-embedded/book/issues/118) on the [Rust embedded github](https://github.com/rust-embedded/book). Within a few hours,
-they'd created a [pull request](https://github.com/rust-embedded/book/pull/119) fixing the Mac-specific errors. Fantastic support!*
+_Since writing this, I opened an [issue](https://github.com/rust-embedded/book/issues/118) on the [Rust embedded github](https://github.com/rust-embedded/book). Within a few hours,
+they'd created a [pull request](https://github.com/rust-embedded/book/pull/119) fixing the Mac-specific errors. Fantastic support!_
 
 To get Rust running on our COMP2300 Discoboard, follow [Tims detailed blog post](https://cs.anu.edu.au/courses/china-study-tour/news/2019/11/01/Tim-Rust-Discoboard-guide/). If you are using a Mac, however,
 the brew instructions in the embedded rust ebook are quite outdated. Instead of simply running:
@@ -33,25 +33,25 @@ To flash your code onto the discboard.
 
 ## Core functionality
 
-We made concrete decisions on the *core* functionality of our artefact, and also enumerated some "stretch goals" if progress is going well:
+We made concrete decisions on the _core_ functionality of our artefact, and also enumerated some "stretch goals" if progress is going well:
 
 ### Core Functionality
 
-* Animated LED strips
-* Buttons for turning on/off each node (could potentially just unplug them)
-* Routing algorithm
-* Individually accessible nodes (send messsage from `node x` to `node y`)
+- Animated LED strips
+- Buttons for turning on/off each node (could potentially just unplug them)
+- Routing algorithm
+- Individually accessible nodes (send messsage from `node x` to `node y`)
 
 ### Cool Functionality
 
-* Connect board to a speaker
-* Send lambda functions across the wire. Have each node evaluate the lambda, and peform functions based on the output.
-* Base station with a UI for users to interact with
-* Use the discoboard LCD screen to display data
+- Connect board to a speaker
+- Send lambda functions across the wire. Have each node evaluate the lambda, and peform functions based on the output.
+- Base station with a UI for users to interact with
+- Use the discoboard LCD screen to display data
 
 ## Software Architecture
 
-We can view each node as a "router", which means our project is *very* similar to one of the old COMP2310 final assignments.
+We can view each node as a "router", which means our project is _very_ similar to one of the old COMP2310 final assignments.
 
 Each node will need to receieve messages, and either pass them along to its neighbours (as per the routing table, see my previous blog post) or
 handle the message itself.

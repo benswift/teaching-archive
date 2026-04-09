@@ -31,8 +31,8 @@ walk you through how to create interactive artworks in javascript.
 ### VSCode setup
 
 :::info
-If you're on one of the ANU lab machines (either in the CSIT or HN) then most 
-of this is already done, although you *may* have to install
+If you're on one of the ANU lab machines (either in the CSIT or HN) then most
+of this is already done, although you _may_ have to install
 the **comp1720** VSCode extension---jump to step 2.
 :::
 
@@ -42,12 +42,12 @@ To set this all up on a new machine (e.g. your own laptop) here are the steps:
    Linux & Windows)
 
 2. open VSCode, [open the **Extensions**
-   view](https://code.visualstudio.com/docs/editor/extension-gallery) (*View >
-   Extensions* in the menu)
+   view](https://code.visualstudio.com/docs/editor/extension-gallery) (_View >
+   Extensions_ in the menu)
 
 3. search for and install the **COMP1720** extension "{{site.extension.name}}"
-   (`{{site.extension.id}}`), if you have trouble finding it, you should be able 
-   to see it at [the VSCode Marketplace]({{site.extension.vscode_url}}) or the 
+   (`{{site.extension.id}}`), if you have trouble finding it, you should be able
+   to see it at [the VSCode Marketplace]({{site.extension.vscode_url}}) or the
    [VSCodium Marketplace]({{site.extension.vscodium_url}}).
 
 4. reload the VSCode window (using the [command
@@ -76,12 +76,13 @@ running javascript programs, they also have tools for inspecting and debugging
 them (in Chrome, they're called the [Chrome DevTools](https://developer.chrome.com/docs/devtools/)).
 
 You can access the Chrome developer tools through:
+
 - `View > Developer > Developer Tools`
 - `Ctrl+Alt+I` (on windows and linux)
 - `CMD+Opt+I` (on a mac)
 - right click on the page to open context menu -> Inspect -> Click Console
 
-In this course we'll use the `Console`and `Sources` tabs in particular. Don't worry 
+In this course we'll use the `Console`and `Sources` tabs in particular. Don't worry
 if this all seems confusing at the moment, we'll step you through it in the labs.
 
 ## git {#git}
@@ -98,9 +99,9 @@ section in the course FAQ about about [using Git in COMP1720](/resources/01-faq/
 Luckily, the people who make Git provide a couple of convenient ways to get everything installed on your computer:
 
 - If you're on Windows, you can install Git by going to the [Windows download section](https://git-scm.com/download/win) then downloading and running the `.exe` file.
-- If you're on macOS or linux you *might* already have it. Open up Terminal and type
+- If you're on macOS or linux you _might_ already have it. Open up Terminal and type
 
-    git --version
+  git --version
 
 and press enter, if it prints something like... (the exact version number doesn't matter)
 
@@ -133,8 +134,8 @@ If you are struggling to install Git you should [check out the relevant FAQ entr
 If you're having problems on your own laptop then there are lots of different
 things which might be causing it, and it's too hard to list them all.
 
-Here's a list of issues you *might* come across, depending on the specific
-details of your machine. As always, try to *understand* the problem first before
+Here's a list of issues you _might_ come across, depending on the specific
+details of your machine. As always, try to _understand_ the problem first before
 you try randomly copy-pasting the various solutions listed.
 
 ### VSCode {#troubleshooting-vscode-plugins}
@@ -147,7 +148,7 @@ to check is the VSCode Developer Tools.
 :::
 
 These aren't super-easy to find, the best way to bring them up is to use the
-command pallette and search for the *Toggle Developer Tools* command (as shown
+command pallette and search for the _Toggle Developer Tools_ command (as shown
 in the screenshot below). Once you do this, you'll see a console window show up
 in your VSCode window (shown here on the right, but it might be on the left, or
 on the bottom depending on your settings---it doesn't matter).
@@ -198,7 +199,7 @@ If you can [put a circle on the internet](/labs/01-intro/), you're golden :)
 
 ### Can I get help setting things up?
 
-Yep, we'll be running labs in week 1, so come along to your registered lab 
+Yep, we'll be running labs in week 1, so come along to your registered lab
 and get some help :)
 
 ### What web browser should I use for viewing my sketches?
@@ -224,12 +225,12 @@ There are a few reasons:
    macOS) and paste with `Ctrl+V` (`Cmd+V`) just like in Microsoft Word---and I
    think that if you approach things with the mindset of "I can do this" rather
    than "this is all just weird geek stuff and I'll never get the hang of it"
-   then you might even *enjoy* it
+   then you might even _enjoy_ it
 
 ### Do I _have_ to install VSCode on my own machine?
 
-Technically, *no*. But it will be extremely helpful to you to be able to work on 
-the labs and assignments in your own time. If you believe that using the lab machines 
+Technically, _no_. But it will be extremely helpful to you to be able to work on
+the labs and assignments in your own time. If you believe that using the lab machines
 only will be sufficient, then it isn't a requirement.
 
 ### VSCode is telling me it can't find git---what do I do?
@@ -253,10 +254,10 @@ This is a quick fix you'll only have to do once:
 
 1. click on the "Terminal" item in the top menubar, then "New Terminal" (don't
    be intimidated! this is going to be nice and easy)
-3. write `git config --global user.name "Your Name"` (replacing Your Name with
+2. write `git config --global user.name "Your Name"` (replacing Your Name with
    your actual name), then press enter. If nothing shows up, you did it
    correctly
-4. write `git config --global user.email "u1234567@anu.edu.au"` (replacing
+3. write `git config --global user.email "u1234567@anu.edu.au"` (replacing
    `u1234567` with your own university ID), and then press enter
 
 ### I'm getting an error when I try and push or clone---what do I do?
@@ -266,8 +267,8 @@ If that error is:
 1. a 500 error
 2. a "HTTP Basic: Invalid Token" error
 
-There is not much you can do, this is because the GitLab server at ANU is under 
-maintenence or having problems due to high usage (this happens sometimes, but 
+There is not much you can do, this is because the GitLab server at ANU is under
+maintenence or having problems due to high usage (this happens sometimes, but
 is much less common in ).
 
 However, if:

@@ -24,7 +24,7 @@ Your supplementary assessment task for COMP1720/6720 is to:
 1. **improve your major project** and
 2. **explain how your project meets the stated requirements**.
 
-Your improved major project is due by **23:59 Friday 17/2/2022 AEDT** and should be submitted on GitLab. 
+Your improved major project is due by **23:59 Friday 17/2/2022 AEDT** and should be submitted on GitLab.
 
 Your explanation of how your project meets the marking criteria should be [submitted on Wattle (link)]({{page.wattlelink}}).
 
@@ -36,7 +36,7 @@ Details of how to complete these tasks is below.
 
 Now is your chance to improve your major project and **clearly demonstrate** that you have met all of the learning outcomes. Your improved major project will need to gain a mark of **60 or above** to pass the supplementary assessment.
 
-If your mark for your major project is below 50, your current project will need a lot of improvement to be acceptable. It is likely that you have not created an "interactive p5 artwork" and that you do not have sufficient content to produce an "engaging experience of roughly three minutes". 
+If your mark for your major project is below 50, your current project will need a lot of improvement to be acceptable. It is likely that you have not created an "interactive p5 artwork" and that you do not have sufficient content to produce an "engaging experience of roughly three minutes".
 
 You will need to go back to the [major project page](/assessments/05-major-project/) and think about all the advice given to you about how to approach the project.
 
@@ -56,7 +56,7 @@ In **up to 200** words **explain** why your major project meets **all** of the f
 
 - **relate to the theme** in a meaningful way
 - **be interactive:** the viewer should be able to interact with the artwork using either the keyboard, mouse, microphone, camera, or some combination those input devices
-- **be engaging and coherent:** use what you know about drawing and interaction in p5 to make your submission an _artwork_ that grabs the viewer's attention and demands exploration for *roughly* three minutes
+- **be engaging and coherent:** use what you know about drawing and interaction in p5 to make your submission an _artwork_ that grabs the viewer's attention and demands exploration for _roughly_ three minutes
 - **use interaction to enhance experience:** this means that interacting with your work reveals aspects that are not available without interaction, and that deeper interaction leads to more engaging experiences
 
 If you do not submit an improvement to your project by the deadline above, your evaluation will not be graded and you will fail the supplementary assessment.
@@ -82,4 +82,3 @@ If your self-evaluation is not sufficient to explain why your improved major pro
 - Make sure you can commit and push to GitLab **well before** the deadline. Late submissions will not be accepted.
 
 - Make sure your `references.md` is absolutely correct. Any unlisted assets or code will likely result in a fail and a Potential Academic Misconduct investigation.
-

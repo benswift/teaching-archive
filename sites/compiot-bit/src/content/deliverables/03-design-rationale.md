@@ -25,8 +25,8 @@ to elaborate on [your artefact](/deliverables/04-IoT-artefact/). This means that
 examine your product in relation to existing work and current trends in IoT.
 
 A design rationale is also **not** a "nitty-gritty technical detail" type of
-document, so it shouldn't have heaps of code or *in-depth* information about how
-your artefact works. It shouldn't contain *all* the information required for the
+document, so it shouldn't have heaps of code or _in-depth_ information about how
+your artefact works. It shouldn't contain _all_ the information required for the
 reader to duplicate the setup---that's what the README in the [GitHub
 repo](/deliverables/02-public-github-repo/) is for.
 
@@ -35,7 +35,7 @@ what you built" in response to the design task (from the [artefact
 page](/deliverables/04-IoT-artefact/)):
 
 > to design and **build** a prototype IoT artefact exploring the theme
-> *(dis)connecting together*.
+> _(dis)connecting together_.
 
 ## Spec {#spec}
 
@@ -116,9 +116,9 @@ No.
 
 ### What's with the 50% penalty for going over 2000 words?
 
-Look, the spec says 1500, so 2000 is *way* over. There's no penalty up to that
+Look, the spec says 1500, so 2000 is _way_ over. There's no penalty up to that
 point, so this is a way of being generous with the "wiggle room", but still
-ensuring that we don't have to read any *War and Peace*-length rationales when
+ensuring that we don't have to read any _War and Peace_-length rationales when
 we're marking.
 
 ### What's the late penalty?

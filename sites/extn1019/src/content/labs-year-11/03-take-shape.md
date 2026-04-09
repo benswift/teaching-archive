@@ -14,6 +14,7 @@ image: ./images/year-11-lab-03.png
 5. blog posting
 
 ## Re-Introduction
+
 We'll start over this week: covering some essential items we've neglected or missed out on so far.
 
 ### Acknowledgements
@@ -22,6 +23,7 @@ We'll start over this week: covering some essential items we've neglected or mis
 Sovereignty of this land was never ceded.
 
 ### Unit Outline and ANU Course
+
 This course is designed to meet both ANU Course structures and ACT BSSS Unit requirements.
 
 There are subtle differences.
@@ -38,9 +40,9 @@ Assessment is covered in both the [course](/outline/) and [unit](../resources/im
 
 This year assessment will be comprised of:
 
-* 6 blog posts (worth 30% of the total mark)
-* a mini project to get you started with building creative computing projects (worth 30% of the total mark)
-* a final project which will be exhibited at the end of the year (worth 40% of the total mark)
+- 6 blog posts (worth 30% of the total mark)
+- a mini project to get you started with building creative computing projects (worth 30% of the total mark)
+- a final project which will be exhibited at the end of the year (worth 40% of the total mark)
 
 See the [deliverables page](/deliverables-year-11/) for full details!
 
@@ -60,9 +62,9 @@ You will then share something you made during class in your blog posts which are
 
 While you will write and post your blog post in teams, and push your code to GitLab, there is one more thing you **MUST** do to submit your blog post.
 
-[**Wattle**](https://wattlecourses.anu.edu.au) is ANU's implementation of [Moodle](https://moodle.org/), a [*Learning Management System*](https://en.wikipedia.org/wiki/Learning_management_system) for education institutions.
+[**Wattle**](https://wattlecourses.anu.edu.au) is ANU's implementation of [Moodle](https://moodle.org/), a [_Learning Management System_](https://en.wikipedia.org/wiki/Learning_management_system) for education institutions.
 
-Almost all courses delivered at ANU use Wattle. So &mdash; it is great to get some experience now.  Each blog post, the mini project, and the final project will have a place in Wattle for you to make a submission. You will have to login to Wattle, and paste a link to your Teams post, and a link to your gitlab repository for your wattle submission. You will receive your grades and feedback via Wattle.
+Almost all courses delivered at ANU use Wattle. So &mdash; it is great to get some experience now. Each blog post, the mini project, and the final project will have a place in Wattle for you to make a submission. You will have to login to Wattle, and paste a link to your Teams post, and a link to your gitlab repository for your wattle submission. You will receive your grades and feedback via Wattle.
 
 ### I have so many questions about the blog post gah!!
 
@@ -84,12 +86,13 @@ For the most part, you will have freedom to create whatever you like during the 
 
 During the live coding session, you saw how to [create and use variables](https://p5js.org/reference/#group-Shape). Now it's your turn!
 
-**do:**  Create a variable with an appropriate name to _store_ the name of your title by:
+**do:** Create a variable with an appropriate name to _store_ the name of your title by:
+
 1. declaring (create) a variable with the name `album_title` if you're making an album cover or `movie_title` if you're making a film poster.
 2. assign (give) your variable a value (some information/data). In this case, it will be some text which represents the title of your chosen film/album.
 3. use the value of your variable to write the title onto your canvas.
 4. typography is a key part of visual design. To express the feelings you wish to evoke you may want to use different fonts to the inbuilt font used by p5.js. Here is how you [load fonts](https://p5js.org/reference/#/p5/loadFont), [apply fonts](https://p5js.org/reference/#/p5/textFont), [set font size](https://p5js.org/reference/#/p5/textSize) and [draw text](https://p5js.org/reference/#/p5/text)! There is even more you can do with [typography](https://p5js.org/reference/#group-Typography).
-If you have any questions about how to do this, ask one of your instructors.
+   If you have any questions about how to do this, ask one of your instructors.
 
 ### Part 2: (re)designing your film poster/album art
 

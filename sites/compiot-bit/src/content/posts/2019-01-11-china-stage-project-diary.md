@@ -5,7 +5,7 @@ title: CHINA Stage Project Diary
 week: 7
 ---
 
-This is Kathleen's summary post for "*CHINA* stage" in my timeline.
+This is Kathleen's summary post for "_CHINA_ stage" in my timeline.
 
 ## Sensor Codes
 
@@ -15,15 +15,15 @@ This week, I have successfully read **photoresistor** data from the brightness s
 
 Although these codes will not be my final program codes, these components are my core part for the final project. Through these practise codes, I will be more confident for the future combination process.
 
-In special, for ***feeding*** part, I have tested my "steering gear" idea shown [last time](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/04/beginning-project-diary/): I wrote simple codes to control **micro servo** changing angle and also made the food container and hiding board (which connected the *micro servo*) by myself. The effect is quite similar to my design~ ;)
+In special, for **_feeding_** part, I have tested my "steering gear" idea shown [last time](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/04/beginning-project-diary/): I wrote simple codes to control **micro servo** changing angle and also made the food container and hiding board (which connected the _micro servo_) by myself. The effect is quite similar to my design~ ;)
 
 ## Physical Artefact
 
-During the last week in China, I focused more on the physical part~ The *feeding* device is just one part of it.
+During the last week in China, I focused more on the physical part~ The _feeding_ device is just one part of it.
 
-For ***land-water swap***, I finally chose *the 2nd idea* "raise up the board inside the tank" and *the 2nd design* in *W6* [project diary](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/04/beginning-project-diary/) -- separating the ladder and roof part.
+For **_land-water swap_**, I finally chose _the 2nd idea_ "raise up the board inside the tank" and _the 2nd design_ in _W6_ [project diary](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/04/beginning-project-diary/) -- separating the ladder and roof part.
 
-In detail, I'll use the *pulley* to move the ladder part up and down. If the ladder part is down, the tortoises will then be able to climb on the roof part, and enjoy the natural or artificial lighting.
+In detail, I'll use the _pulley_ to move the ladder part up and down. If the ladder part is down, the tortoises will then be able to climb on the roof part, and enjoy the natural or artificial lighting.
 
 I made the two boards by myself for quite a long time, while I also prepare a directly bought one~ (Two versions then.)
 
@@ -33,7 +33,7 @@ The lighting components and water pump have arrived as well~
 
 ## Process Summary
 
-Overall, for my *CHINA* stage, instead of finishing an entire function line as initial timeline, I tried hard to work on all parts especially preparing the physical things. While that also means when I come back to Australia, I still need to work hard on codes and the final artefact combination.
+Overall, for my _CHINA_ stage, instead of finishing an entire function line as initial timeline, I tried hard to work on all parts especially preparing the physical things. While that also means when I come back to Australia, I still need to work hard on codes and the final artefact combination.
 
 I have created a **public GitHub repo**: https://github.com/KathleenQ/tortoise-smart-home.
 

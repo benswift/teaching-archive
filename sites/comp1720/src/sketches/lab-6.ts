@@ -73,11 +73,7 @@ export function lab6Sketch(p: p5) {
     b.vel.sub(m);
 
     const n = p.noise(b.pos.x / 400, b.pos.y / 400);
-    b.vel.add(
-      p
-        .createVector(p.sin(n * p.TWO_PI * 400), p.cos(n * p.TWO_PI * 400))
-        .mult(100),
-    );
+    b.vel.add(p.createVector(p.sin(n * p.TWO_PI * 400), p.cos(n * p.TWO_PI * 400)).mult(100));
 
     b.vel.limit(1);
   }

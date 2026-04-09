@@ -5,7 +5,7 @@ summary: (hopefully) helpful feedback on some of the issues which came up in mar
 
 :::info
 If you didn't do as well as you'd liked in the mid-semester exam, don't panic.
-It's worth *much* less than the final exam, so take the wake-up call now and
+It's worth _much_ less than the final exam, so take the wake-up call now and
 focus on doing well in the final.
 :::
 
@@ -67,7 +67,7 @@ There's also some confusion about memory offsets.
 ldr r0, [r1, 8]
 ```
 
-that instruction will **not** load **bit 8** from the memory address, 
+that instruction will **not** load **bit 8** from the memory address,
 but rather **32 bits from offset of 8 bytes**. Offsets are in bytes (like all
 things to do with memory addresses).
 
@@ -130,7 +130,7 @@ Some answers showed a bit of confusion about how many bits are in a hexadecimal
 number (e.g. used `0x4141` as the mask rather than `0x4010401`).
 
 Some answers got confused about the direction to read the bit pattern, e.g.
-thinking bit *8* is at offset *24* (i.e. counting from the left instead of the
+thinking bit _8_ is at offset _24_ (i.e. counting from the left instead of the
 right).
 
 Another issue was the need to account for how many cycles a sequence of
@@ -146,8 +146,8 @@ number of cycles for the delay.
 
 If you forget to write `bx lr` at the end, it's not a function!
 
-When asked to write $f(x,y)$ as a function that has the parameters *passed to it
-by the caller*. It was incorrect to just `mov` some random numbers to represent
+When asked to write $f(x,y)$ as a function that has the parameters _passed to it
+by the caller_. It was incorrect to just `mov` some random numbers to represent
 $x$ and $y$ into registers inside the function `f`.
 
 <!-- It was unnecessary to handle the case of overflow, a lot of people -->
@@ -165,7 +165,7 @@ register-based CC would be ok.
 Similarly, if the function calls an inner function (i.e. a subroutine) it's
 necessary to `push {lr}` before calling the subroutine, and `pop {lr}`
 afterwards, otherwise you will lose the previous value in `lr`, which tells you
-where to branch back to after `f` is finished. But this isn't *necessary* if
+where to branch back to after `f` is finished. But this isn't _necessary_ if
 there's no inner function call.
 
 Not everyone noticed the critical instruction on the cheat sheet:
@@ -205,6 +205,7 @@ is perfectly valid, and will compute `r0 := r0^2`.
 register, you'll have to load it using `ldr r1, =-1255`.
 
 There was some confusion as to whether to use `b f` or `bl f`:
+
 - `b` will just jump to the label `f` and begin executing whatever is there,
   giving no hope of returning from the function (therefore it's not a proper
   function call)
@@ -236,7 +237,7 @@ the context of passing arguments (with example scenarios), so it's crucial that
 you answer that specific question.
 
 Subjective answers like "the stack is easier than registers" were not
-sufficient, especially with no justification as to *why* the stack is easier to
+sufficient, especially with no justification as to _why_ the stack is easier to
 use.
 
 The stack pointer `sp` itself is not a magic pit that you can toss data into, to
@@ -292,4 +293,3 @@ use the stack pointer as just another general purpose register, providing one
 more register for computations (note the stack pointer isn't fully compatible
 with all instructions, you can `sub`, but you can't `mul` with it, for
 instance).
-

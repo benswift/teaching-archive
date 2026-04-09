@@ -19,21 +19,21 @@ You goal in this assignment is to create some kind of interactive workstation in
 - **Assignment template:** [available on GitLab (link)]({{page.template_repo}})
 - **Specification:** keep reading 🙂
 - **Weighting:** {{ page.weighting }}
-- **Marked out of:** _ / {{ page.available_marks }}
+- **Marked out of:** \_ / {{ page.available_marks }}
 - **Submission:** submit your assignment through
   [Gitlab]() ([full instructions
   below](#submission-process))
 - **Policies:** no late submissions accepted; this is an individual assessment
 - **Rubric:** Please see the relevant assessment task on the class summary for your course:
-   - [COMP1720](https://programsandcourses.anu.edu.au/2024/course/COMP1720/Second20Semester/9174#assessmenttask-2)
-   - [COMP6720](https://programsandcourses.anu.edu.au/2024/course/COMP6720/Second20Semester/9213#assessmenttask-2)
+  - [COMP1720](https://programsandcourses.anu.edu.au/2024/course/COMP1720/Second20Semester/9174#assessmenttask-2)
+  - [COMP6720](https://programsandcourses.anu.edu.au/2024/course/COMP6720/Second20Semester/9213#assessmenttask-2)
 
 ## Requirements
 
 Your workstation submission **must**:
 
 - **be a workstation**: it can be real, imagined, electronic, natural, mechanical, fun, serious, creative, or anything else as long as it's a collection of objects that an entity interacts with to accomplish a task
-- **be interactive:** the viewer should be able ot interact with the workstation using the keyboard and mouse, this could mean triggering animations, changes in the workstation or "doing" the work task the work task 
+- **be interactive:** the viewer should be able ot interact with the workstation using the keyboard and mouse, this could mean triggering animations, changes in the workstation or "doing" the work task the work task
 - **be engaging and coherent:** use what you know about drawing and interaction in p5 to make your workstation an _artwork_ that grabs the viewer's attention and demands exploration
 - **be rewarding:** exploring and interactive with your artwork should be a rewarding experience for the viewer who should gain a deeper understanding of your workstation through interaction
 - **be** an 1280x800 p5.js sketch
@@ -41,14 +41,14 @@ Your workstation submission **must**:
 - **include** the code in the usual `sketch.js` file
 - **include** an artist statement (max 200 words) describing your artwork (see below)
 - **include** a `references.md` file with **at least two** references
-   - these can be from classmates, artworks, books, online sources, any reference is fine as long as there are two (or more) of them.
-   - _anything_ that is not your own work **must** be included in the `references.md` file
+  - these can be from classmates, artworks, books, online sources, any reference is fine as long as there are two (or more) of them.
+  - _anything_ that is not your own work **must** be included in the `references.md` file
 
 And a few "must nots":
 
 - **must not use `image`**: again, we want you to focus on p5's drawing functions, not using images. Do not use `loadImage` or `image()` in your assignment.
 - **must not use sound**: we haven't studied sound and music computing yet, wait until we have taught you the basics before trying to use sound.
-- **must not use camera, microphone or other sensors** for interaction, just the keyboard and mouse. 
+- **must not use camera, microphone or other sensors** for interaction, just the keyboard and mouse.
 - **must not be a game**: the specification is for an interactive workstation artwork, not a "workstation-themed game". If your artwork involves a "score" or a concept of winning or losing, you may actually be making a game.
 
 ### The artist statement
@@ -61,7 +61,7 @@ short document, written in the first person, which explains:
 
 The artist statement is your chance to tell us what is interesting and artistic about your submission---don't assume that we can guess. It's you chance to explain how and why your work is engaging, coherent, and rewarding.
 
-You won't receive a separate mark for the artist statement, but it will be used to judge how successful your submission is as a work of art and your abilty to design and construct a computer-based artwork. 
+You won't receive a separate mark for the artist statement, but it will be used to judge how successful your submission is as a work of art and your abilty to design and construct a computer-based artwork.
 
 ## Getting started
 
@@ -74,7 +74,7 @@ Here's the process for working on the assignment:
 3. when you run the sketch, hitting `spacebar` will save a still image of the
    sketch (as a `thumbnail.png` file in your Downloads folder)
 
-4. when you're happy with your `thumbnail.png`, copy it into your assignment 
+4. when you're happy with your `thumbnail.png`, copy it into your assignment
    folder (this will overwrite the previous version) and commit the new version
    to the repo (and push it up to the [GitLab server]({{site.gitlab_url}}))
 
@@ -88,7 +88,7 @@ spot-on) on the resources page.
 
 1. fork the assignment template repository from the [Gitlab server]()
 
-2. clone[^own-fork] & work on *your* fork of the assignment 1 repo, regularly
+2. clone[^own-fork] & work on _your_ fork of the assignment 1 repo, regularly
    committing & pushing your changes to the GitLab server
 
 3. at the submission deadline, the latest commit[^branch] [pushed to the GitLab
@@ -117,11 +117,11 @@ the FAQ](/resources/01-faq/#gitlab-ci).
 
 2. my completed assignment has been [pushed to the GitLab
    server](/resources/01-faq/#is-it-pushed), and
-   **all** the required files (*your* versions of `artist-statement.md`,
+   **all** the required files (_your_ versions of `artist-statement.md`,
    `references.md`, `thumbnail.png` and `sketch.js`) have made it to
    the server
 
-3. my `references.md` file includes at least two references, and *everything* not mentioned in there is my own work
+3. my `references.md` file includes at least two references, and _everything_ not mentioned in there is my own work
 
 4. i have viewed and tested my submission on the [test URL](/resources/01-faq/#test-url) and it displays / works correctly
 
@@ -139,7 +139,7 @@ Try adding `pixelDensity(1)` at the beginning of `setup()`. See [the reference](
 
 No.
 
-### Can I use *insert advanced p5 feature here*?
+### Can I use _insert advanced p5 feature here_?
 
 Yes, as long as it doesn't involve using images (see above). We may not be able to help with some advanced p5 and JavaScript that isn't included in the course so far.
 
@@ -149,7 +149,6 @@ The template repo contains "starter" files for both of these. You should
 change these files to put your own content in there, and commit & push the
 files up with the rest of your submission.
 
-Basically, *everything* you need to submit is in that Git repository---as
+Basically, _everything_ you need to submit is in that Git repository---as
 long as you make the changes in there, commit them and push them up to the
 GitLab server then you're all good.
-

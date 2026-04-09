@@ -17,9 +17,9 @@ All in all, it was a fantastic journey, and I learned significantly more than I 
 
 For an explanation on why I pushed this project, and how it was designed,
 
-For an explanation on *why* I did this project, and *what* it's support to signify, please read my [design rationale](https://cs.anu.edu.au/courses/china-study-tour/news/2019/02/18/harrison-turton-design-rationale/).
+For an explanation on _why_ I did this project, and _what_ it's support to signify, please read my [design rationale](https://cs.anu.edu.au/courses/china-study-tour/news/2019/02/18/harrison-turton-design-rationale/).
 
-*Interesting further reading:*
+_Interesting further reading:_
 
 - [Examples of my out-of-control ambitions (feature creep?)](https://cs.anu.edu.au/courses/china-study-tour/news/2019/01/05/harrison-turton-week-6/)
 - [Writing Rust on the Discoboard](https://cs.anu.edu.au/courses/china-study-tour/news/2019/11/01/Tim-Rust-Discoboard-guide/)

@@ -6,7 +6,7 @@ templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-lab-10
 
 :::info
 It's probably pretty obvious from the title of this lab, but it's worth saying
-right at the top in bold: **this lab content will be *really* helpful for doing
+right at the top in bold: **this lab content will be _really_ helpful for doing
 assignment 3**.
 :::
 
@@ -23,7 +23,7 @@ In this week's lab you will:
 
 2. connect the GPIO pins to one another with physical wires
 
-3. configure and write interrupt handlers to *do things* when stuff happens on
+3. configure and write interrupt handlers to _do things_ when stuff happens on
    these wires
 
 4. connect your discoboard to your lab partner's board with wires and turn their
@@ -35,7 +35,7 @@ This week you'll take a deeper dive into the GPIO & interrupt capability on your
 discoboard. The **GP** in **GP**IO stands for **G**eneral **P**urpose, which
 means that each pin (the pointy little gold-coloured bits of metal sticking up
 in rows along the sides of your discoboard) can be used for either digital input
-*or* output (or even other things). The mode (input mode, output mode, alternate
+_or_ output (or even other things). The mode (input mode, output mode, alternate
 mode) of a given pin is configured (you guessed it!) by writing certain bits to
 special GPIO configuration registers.
 
@@ -56,7 +56,7 @@ Today, you'll work in pairs for [Exercise 4](#exercise-4), so you need to say
 g'day to your lab neighbour right now. If you normally work with a particular
 partner in these labs, maybe today's a chance to work with someone else. To get
 the ball rolling, ask them this question: in the context of GPIO pins, what is a
-*signal*? Is there a difference between a signal which comes internally through
+_signal_? Is there a difference between a signal which comes internally through
 the discoboard (e.g. the joystick input you used in the [Week 8
 lab](/labs/08-input-through-interrupts/) and the
 signal which comes in through an external wire?
@@ -64,7 +64,7 @@ signal which comes in through an external wire?
 
 ## Exercise 1: click-to-blink recap {#exercise-1}
 
-This first exercise will *seem* like a re-hash of [stuff
+This first exercise will _seem_ like a re-hash of [stuff
 you've](/labs/05-blinky/) [done
 before](/labs/08-input-through-interrupts/)---clicking the joystick and turning on an LED.
 
@@ -77,12 +77,12 @@ and some bad news:
 
 - the **good news** is that you'll get to write it yourself and see exactly how
   it works (and there are still some helpful utility functions & macros in the
-  template---you don't have to start *completely* from scratch)
+  template---you don't have to start _completely_ from scratch)
 
 [^files]:
     obviously you've still got them on your computer, or you can find them in
     the lab 9 template, but resist the temptation to just go and use them and
-    you'll learn a *lot* more about how this all works
+    you'll learn a _lot_ more about how this all works
 
 As you re-do the LED & joystick configuration using a generic GPIO config
 process you'll get a better picture of how the GPIO infrastructure and NVIC/EXTI
@@ -94,7 +94,7 @@ To configure a pin in output mode, `src/libcomp2300/macros.S` has a handy `GPIO_
 macro. For example, to declare pin `PH0` as an output pin, you could call the
 macro like so:
 
-``` ARM
+```ARM
 GPIO_configure_output_pin H, 0
 ```
 
@@ -123,7 +123,7 @@ is connected on GPIO `PB2` and the green LED is on `PE8`. So you can turn on the
 LEDs by writing a `1` to their output data registers. Most of these helper
 macros have `set`, `clear` and `toggle` versions, which do what you'd expect.
 
-``` ARM
+```ARM
 GPIO_configure_output_pin B, 2 @ (red LED)
 GPIO_configure_output_pin E, 8 @ (green LED)
 
@@ -144,14 +144,14 @@ specific GPIO pins (`PA0`: centre, `PA1`: left, `PA5`: down, `PA2`: right,
 `PA3`: up) but this time it's an **input** device. There are some macros for
 this, too:
 
-``` ARM
+```ARM
 GPIO_configure_input_pin A, 0 @ (central joystick button)
 ```
 
 Here, you've declared the pin `PA0` as an input pin. The `GPIO_configure_input_pin`
 macro does a couple of things:
 
-- sets the *input* bit pattern into the appropriate mode register (it's `0b00`
+- sets the _input_ bit pattern into the appropriate mode register (it's `0b00`
   for input, just like it was `0b01` for output)
 
 - configures the input pin to use a [pull-down
@@ -172,13 +172,13 @@ You can do this as often as you like---reading data from the pin with
 also set the flags appropriately, and it doesn't change the signal on the pin.
 You can use this to "poll" a given pin in a loop:
 
-``` ARM
+```ARM
 poll_gpio:
   @ read PA0, set flags based on result
   GPIOx_IDR_read A, 0
-  
+
   @ do something based on the flags in here
-  
+
   b poll_gpio
 ```
 
@@ -215,11 +215,11 @@ all the configuration of `GPIO_configure_input_pin` and additionally registers
 the pin as a source for interrupts. There are two parts of the discoboard which
 are working together to do this:
 
-- the *Extended Interrupts and Events Controller* (EXTI) is the part of your
+- the _Extended Interrupts and Events Controller_ (EXTI) is the part of your
   discoboard which allows signals (either a rising or falling edge) on the GPIO
   pins to trigger an interrupt
 
-- the *Nested Vectored Interrupt Controller*[^nvic] (NVIC) is the hardware which
+- the _Nested Vectored Interrupt Controller_[^nvic] (NVIC) is the hardware which
   "receives" the interrupt, and (depending on the priority, what other
   interrupts are running, and a few other things) will interrupt the CPU and
   transfer control to the appropriate handler function in the vector table
@@ -234,7 +234,7 @@ determine whether the interrupt will be triggered on a **rising edge** (`0` to
 `1` transition) or a **falling edge** (`1` to `0` transition). Again, there are
 helper macros for this:
 
-``` ARM
+```ARM
 GPIO_configure_input_pin_it A, 0
 EXTI_set_rising_edge_trigger 0
 EXTI_set_falling_edge_trigger 0
@@ -244,19 +244,19 @@ There are a couple of quirks here: firstly, the EXTI controller can only listen
 to one port for a given pin number, so for example you can't have both `PA0` and
 `PB0` triggering an interrupt. This is because the pins are multiplexed in the
 EXTI controller (see the diagram below). This is to keep things simple---you
-probably don't *need* separate interrupt triggers on all the pins. Here's an
-example of what this looks like for EXTI0---pin zero from *all* ports goes in
+probably don't _need_ separate interrupt triggers on all the pins. Here's an
+example of what this looks like for EXTI0---pin zero from _all_ ports goes in
 there, and the EXTI controller can only listen to one at a time.
 
 ![GPIO](./images/lab-10/GPIO-EXTI-mapping.png)
 
 Secondly (and more confusingly) the EXTI controller only has 7 GPIO interrupt
 lines into the NVIC, and since there are more than 7 pins in each GPIO port
-(there are 16, in fact) this means that some of the pins have to *share* an
+(there are 16, in fact) this means that some of the pins have to _share_ an
 interrupt. The first 5 (`EXTI0` to `EXTI4`) get their own interrupts, but 5--9
 have to share the `EXTI9_5` interrupt, and 10--15 have to share the `EXTI15_10`
 interrupt. Here's a picture to make things clearer (the extra number in the NVIC
-column is the *position* of the interrupt in the NVIC vector table):
+column is the _position_ of the interrupt in the NVIC vector table):
 
 ![EXTI](./images/lab-10/EXTI-NVIC-mapping.png)
 
@@ -267,14 +267,14 @@ simplified version of that table which only contains the rows relevant to the
 EXTI controller:
 
 | position | interrupt   |
-|----------|-------------|
-|        6 | `EXTI0`     |
-|        7 | `EXTI1`     |
-|        8 | `EXTI2`     |
-|        9 | `EXTI3`     |
-|       10 | `EXTI4`     |
-|       23 | `EXTI9_5`   |
-|       40 | `EXTI15_10` |
+| -------- | ----------- |
+| 6        | `EXTI0`     |
+| 7        | `EXTI1`     |
+| 8        | `EXTI2`     |
+| 9        | `EXTI3`     |
+| 10       | `EXTI4`     |
+| 23       | `EXTI9_5`   |
+| 40       | `EXTI15_10` |
 
 For this reason, the `GPIO_configure_input_pin_it` macro doesn't enable the NVIC
 interrupt---you need to enable it yourself using the `NVIC_set` macro like so:
@@ -302,7 +302,6 @@ So, the full journey of a GPIO interrupt through your system is:
 2. the EXTI controller detects this (assuming the interrupt is enabled and it's
    watching the right port) and raises one of the `EXTIn` interrupt lines to the
    NVIC
-   
 3. if the `EXTIn` interrupt is enabled in the NVIC, your program is interrupted
    and the handler function (determined by the address in the vector table) is
    called
@@ -330,13 +329,13 @@ Commit & push your program to GitLab.
 
 <div id="disabling-interrupts" class="extension-box" markdown="1" style="margin-bottom: 20px;">
 
-The fact that the GPIO interrupts go though both the EXTI and the NVIC *is*
+The fact that the GPIO interrupts go though both the EXTI and the NVIC _is_
 complicated, and it also means there are several different ways of
 enabling/disabling/triggering these interrupts. What you've done in this
 exercise is to enable it in **both** places: the EXTI enabling happens in the
 `GPIO_configure_input_pin_it` macro, and the NVIC enabling in the `NVIC_set`
 macro. If you want to disable it in the EXTI, you disable the interrupt for pin
-*n* by **clearing** (setting to `0`) the *n*th bit in the `EXTI_IMR1` register
+_n_ by **clearing** (setting to `0`) the *n*th bit in the `EXTI_IMR1` register
 (base address `0x40010400`).
 
 To disable it in the NVIC, you **set** (to `1`) the correct bit (see mapping
@@ -348,8 +347,8 @@ use the `NVIC_set` macro for this, just use `ICER` where you used `ISER` in
 load-twiddle-store approach for this, though---as discussed in the [Week 8
 lab](/labs/08-input-through-interrupts/#clear-enable-gotcha).
 
-Just to recap: to disable an interrupt in the EXTI you *clear* a bit, and to
-disable it in the NVIC you *set* a bit, and it's a different bit in each case.
+Just to recap: to disable an interrupt in the EXTI you _clear_ a bit, and to
+disable it in the NVIC you _set_ a bit, and it's a different bit in each case.
 Don't ask me why things are so inconsistent, blame the people who designed the
 discoboard. The `macros.S` file should handle some of this stuff for you, but
 that's the full story if you're getting confused trying to disable/re-enable
@@ -362,7 +361,7 @@ interrupts in your program.
 So far this lab has been a bit of an information dump, and all you did was turn
 on the LEDs with the joystick (which you've known how to do for ages). In this
 exercise, you'll take your knowledge of general GPIO input and output and
-re-implement the click-to-blink program *again*, but this time sending the
+re-implement the click-to-blink program _again_, but this time sending the
 "click" signal over the wire.
 
 Grab one of your jumper leads and connect it to your board from pin `PB7` to
@@ -376,10 +375,9 @@ doesn't matter which. What you need to do in this exercise is:
 - write your joystick `EXTI0` interrupt handler so that instead of toggling the
   LED directly, it toggles the value on the sender data pin (using the ODR
   helper macro)
-  
 - write another interrupt handler function (have a careful think about what
   should it be [called](#input-with-interrupts)?) and enable it in the NVIC and
-  make *that* handler function toggle the LED
+  make _that_ handler function toggle the LED
 
 The info in the first two exercises will help you out---there are a few gotchas,
 so read it carefully and ask for help if you get stuck. Once you're done with
@@ -422,16 +420,16 @@ As you (hopefully) just figured out when chatting with your partner, the
 multiplayer part of this is super-easy because you already did all the hard work
 in [Exercise 3](#exercise-3). Once you're sending a signal over a wire, it
 doesn't matter whether both ends of the wire are connected to the same
-discoboard or *different* discoboards.
+discoboard or _different_ discoboards.
 
 There is one caveat here: voltages, such as the "low" and "high" voltages you've
-been setting and reading from your GPIO pins, are actually *relative*
+been setting and reading from your GPIO pins, are actually _relative_
 measurements. Think of it like the concepts of shortness/tallness: someone might
 say you're either tall or short depending on who you're standing next to. Even
-though you *might* say that a person is tall (or short) what you really mean is
+though you _might_ say that a person is tall (or short) what you really mean is
 that that person is taller (or shorter) than the average of the heights of all
 the other people you know. Well, voltage is similar---what you care about is the
-voltage *difference* between two places. When your wire is connected to your
+voltage _difference_ between two places. When your wire is connected to your
 board only, there's no problem---both ends have the same common reference or
 **ground**. But when two boards are connected to each other they need some way
 of agreeing on what the `0` voltage level is. This is achieved by connecting
@@ -444,8 +442,8 @@ To get back to the "multiplayer QuickClick" exercise, what you'll need to do is:
 1. connect one of the `GND` pins on your discoboard to one of the `GND` pins on
    your neighbour's discoboard
 
-2. take the wire connected to the **sender** end on *your neighbour's* board and
-   connect it to the **receiver** end of *your* board (you can switch your
+2. take the wire connected to the **sender** end on _your neighbour's_ board and
+   connect it to the **receiver** end of _your_ board (you can switch your
    sender and receiver pins around if it makes your life easier)
 
 3. figure out how the game is going to work:
@@ -456,7 +454,7 @@ To get back to the "multiplayer QuickClick" exercise, what you'll need to do is:
      what happens to each LED?
    - starting with the red LED on, can you set up a countdown on one of your boards which will turn
 
-To implement these games you'll need to work *with* with your partner---make
+To implement these games you'll need to work _with_ with your partner---make
 sure your programs work together. This is a good chance to practice your pair
 debugging skills.
 
@@ -479,7 +477,7 @@ Congratulations! In this week's lab you learned how to
 1. configure the GPIO pins on your board for both input and output---and connect
    them up with physical wires
 
-2. configure and write interrupt handlers to *do things* when stuff happens on
+2. configure and write interrupt handlers to _do things_ when stuff happens on
    these wires
 
 3. connect your discoboard to your neighbour's board with wires, and turn their

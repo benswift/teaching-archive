@@ -8,12 +8,12 @@ image: ./images/visual-diary/koushik-chowdavarapu-QNj_dwdljY8-unsplash.jpg
 
 ## Outline {#outline}
 
-* **Due:** assessed in two phases:
+- **Due:** assessed in two phases:
   1. 31 Jul
   2. 16 Oct
-* **Mark weighting:** 30% total
-* **Submission:** 6 Blog Posts &mdash; [refer to calendar for dates](/deliverables-year-11/) via Teams ([see below](#process))
-* **Policies:** see the [policies page](/policies/)
+- **Mark weighting:** 30% total
+- **Submission:** 6 Blog Posts &mdash; [refer to calendar for dates](/deliverables-year-11/) via Teams ([see below](#process))
+- **Policies:** see the [policies page](/policies/)
 
 ## Description
 
@@ -54,10 +54,10 @@ Here's the process for completing your blog post:
 
 4. Make a post in the MS Teams `CC blog` channel. You **should** include your screenshots/screen recordings, the blog number e.g. "Blog 3" and a short description of your work and process. The _text_ component of the blog should include:
 
-* a short description of your sketches
-* any sources of inspiration
-* a discussion of the process you adopted to implement your idea
-* a critical analysis of the contexts provided in the provocation
+- a short description of your sketches
+- any sources of inspiration
+- a discussion of the process you adopted to implement your idea
+- a critical analysis of the contexts provided in the provocation
 
 ## Marking criteria {#marking-criteria}
 
@@ -67,21 +67,21 @@ course and there are 10 blog submissions in total. These are marked in three sta
 
 The marking criteria are:
 
-* clarity of communication in your post descriptions
+- clarity of communication in your post descriptions
 
-* critical engagement with the specific topic, starter-code or provocation associated with the blog submission
+- critical engagement with the specific topic, starter-code or provocation associated with the blog submission
 
-* reflection on your creative process
+- reflection on your creative process
 
 ## Year 11 Assessment Rubric
 
-| | A Grade<br>(9-10) | B Grade<br>(7-8) | C Grade<br>(5-6) | D Grade<br>(3-4) | E Grade<br>(0-2) |
-| :---     | :---    |  :---    | :---     | :---     | :---    |
-| **Communication** <br>*20%* | insightfully investigates complex concepts, using advanced language, metalanguage, and supporting media | critically explores a range of concepts, theories and ideas, using appropriate language, metalanguage, and supporting media | communicates core concepts, theories and ideas, using appropriate language, metalanguage, and supporting media | represents some ideas, using some metalanguage and media| communicates basic ideas using minimal evidence |
-| **Reflection** <br>*20%* | reflects deeply with insight on their own thinking and that of others, evaluating inter and intra-personal skills | reflects  critically on their own thinking and analyses interactions with others | reflects on their own thinking and explains interactions with others | limited self-reflection on activities and lists interactions with others | very limited self-reflection |
-| **Engagement** <br>*20%* | deep and critical engagement with every topic, starter-code and provocation | engages effectively with almost every topic, starter-code and provocation | engages appropriately with topics, starter-code templates and provocations | engagement includes some references to topics, starter-code templates or provocations | very limited engagement with topics, starter-code templates or provocations |
-| **Creativity** <br>*20%* | always employs creative thinking, drawing on a wide range of sources/influences, to develop surprising and innovative responses to provocations | uses creative thinking, drawing on a range of sources/influences, to develop innovative responses to provocations | uses critical thinking, drawing on a range of sources, to develop design solutions to provocations | uses a limited range of sources to develop basic solutions to provocations | develops very limited responses to provocations |
-| **Contexts and Justification of Ideas** <br>*20%* | employs critical analysis of contexts *appropriate to the weekly provocations* (which may include: historical, social, cultural, ethical, and sustainability contexts), to justify their arguments effectively, rationally and coherently | demonstrates critical analysis of contexts *appropriate to the weekly provocations*, and justifies their arguments effectively and coherently | analyses contexts *appropriate to the weekly provocations*, and justifies their arguments coherently | describes contexts *appropriate to the weekly provocations*, and explains ideas | limited acknowledgement of contexts *for weekly provocations*. Describes basic ideas |
+|                                                   | A Grade<br>(9-10)                                                                                                                                                                                                                         | B Grade<br>(7-8)                                                                                                                              | C Grade<br>(5-6)                                                                                               | D Grade<br>(3-4)                                                                      | E Grade<br>(0-2)                                                                     |
+| :------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------- |
+| **Communication** <br>_20%_                       | insightfully investigates complex concepts, using advanced language, metalanguage, and supporting media                                                                                                                                   | critically explores a range of concepts, theories and ideas, using appropriate language, metalanguage, and supporting media                   | communicates core concepts, theories and ideas, using appropriate language, metalanguage, and supporting media | represents some ideas, using some metalanguage and media                              | communicates basic ideas using minimal evidence                                      |
+| **Reflection** <br>_20%_                          | reflects deeply with insight on their own thinking and that of others, evaluating inter and intra-personal skills                                                                                                                         | reflects critically on their own thinking and analyses interactions with others                                                               | reflects on their own thinking and explains interactions with others                                           | limited self-reflection on activities and lists interactions with others              | very limited self-reflection                                                         |
+| **Engagement** <br>_20%_                          | deep and critical engagement with every topic, starter-code and provocation                                                                                                                                                               | engages effectively with almost every topic, starter-code and provocation                                                                     | engages appropriately with topics, starter-code templates and provocations                                     | engagement includes some references to topics, starter-code templates or provocations | very limited engagement with topics, starter-code templates or provocations          |
+| **Creativity** <br>_20%_                          | always employs creative thinking, drawing on a wide range of sources/influences, to develop surprising and innovative responses to provocations                                                                                           | uses creative thinking, drawing on a range of sources/influences, to develop innovative responses to provocations                             | uses critical thinking, drawing on a range of sources, to develop design solutions to provocations             | uses a limited range of sources to develop basic solutions to provocations            | develops very limited responses to provocations                                      |
+| **Contexts and Justification of Ideas** <br>_20%_ | employs critical analysis of contexts _appropriate to the weekly provocations_ (which may include: historical, social, cultural, ethical, and sustainability contexts), to justify their arguments effectively, rationally and coherently | demonstrates critical analysis of contexts _appropriate to the weekly provocations_, and justifies their arguments effectively and coherently | analyses contexts _appropriate to the weekly provocations_, and justifies their arguments coherently           | describes contexts _appropriate to the weekly provocations_, and explains ideas       | limited acknowledgement of contexts _for weekly provocations_. Describes basic ideas |
 
 ## FAQ
 
@@ -114,8 +114,8 @@ No. The first post is due in Week 4.
 
 ### When are the blog posts "due"?
 
-Well, as stated [above](#description), you need to make a post **every three weeks** according to the 
-[blog post submission schedule](/deliverables-year-11/), and it's due on Fridays at 11:59pm. 
+Well, as stated [above](#description), you need to make a post **every three weeks** according to the
+[blog post submission schedule](/deliverables-year-11/), and it's due on Fridays at 11:59pm.
 The first blog post is due on Friday May 24th at 11:59pm.
 
 ### Do I need to include images/videos of my sketches for the blog?
@@ -145,7 +145,7 @@ I don't see why not :) You can absolutely look for sources of inspiration and re
 
 Generative AI is a new powerful tool. However, it will not help you learn and consolidate your knowledge.
 
-If you need to use generative AI - please discuss this with your teacher. There are potential _use cases_ for generative AI, but all 
+If you need to use generative AI - please discuss this with your teacher. There are potential _use cases_ for generative AI, but all
 use must be pre-approved.
 
 We will look more at generative AI in Year 12.

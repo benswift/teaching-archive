@@ -15,5 +15,5 @@ On the other hand, I am quite happy with the price of UHF RFID tags. They are ve
 
 So the plan for next week:
 
-* Investigate into potential way to communicate between the RFID Reader Module and mobile phone, either wirelessly or wiredly
-* Keep looking for an appropriate RFID Reader
+- Investigate into potential way to communicate between the RFID Reader Module and mobile phone, either wirelessly or wiredly
+- Keep looking for an appropriate RFID Reader

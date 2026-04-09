@@ -35,7 +35,7 @@ pattern, which can produce beautiful geometric patterns like the picture above.
 By the [end of today's lab](#break-it-down) you'll be able to use p5's built-in
 transformation functions to do the same sort of thing. But first, you'll do a
 couple of exercises to help you get your head around exactly what it means to
-*transform* the grid in p5.
+_transform_ the grid in p5.
 
 In this week's lab you will:
 
@@ -75,7 +75,7 @@ links to the references for:
 Beware, for the `rotate()` function p5 talks about angles in
 [radians](https://en.wikipedia.org/wiki/Radian) (where 360 degrees equals two
 pi radians). Also, it's important to remember that rotation happens around the
-`x=0`, `y=0` point (the *origin*), not the centre of the canvas.
+`x=0`, `y=0` point (the _origin_), not the centre of the canvas.
 :::
 
 Play around with the different code blocks and arguments to try and build an intuition about what they do to the canvas.
@@ -86,13 +86,13 @@ Did you discover anything cool? Show your discovery to your neighbour, and how t
 
 <h2 id="part-3-draw-function">Task 2: a draw functions</h2>
 
-Now we're going back to VSCode. Clone your fork of [the lab 
-repository]() repo if you haven't already, open it in VSCode, 
+Now we're going back to VSCode. Clone your fork of [the lab
+repository]() repo if you haven't already, open it in VSCode,
 navigate to the `week-05` folder and start the live server as usual.
 
 Write some code in your `draw()` loop that draws a simple shape using the
 primitive p5.js functions you've learnt so far (`rect`, `ellipse`, `line`,
-etc.).  Examples might be a house, a flower, a cross --- be creative, but don't
+etc.). Examples might be a house, a flower, a cross --- be creative, but don't
 spend too much time on it (simple is good!).
 
 Now we're going to write a function to draw this shape. Package up the "shape
@@ -100,8 +100,8 @@ drawing" code you just wrote into a function which takes `x` and `y`
 parameters, and then draws the thing at that location. It'll look something
 like this:
 
-``` javascript
-function drawShape(x, y){
+```javascript
+function drawShape(x, y) {
   // draw all the things using the x and y parameters
 }
 ```
@@ -117,7 +117,7 @@ the canvas. You want your sketch to have good coverage of the canvas, but also
 to leave some blank space (i.e. you don't want to paint the whole canvas with
 your shapes). The reasons for this will become clear in the next section.
 
-Exchange the code for your shape function with your neighbour. This is **very** 
+Exchange the code for your shape function with your neighbour. This is **very**
 important (read on to find out why)!
 
 :::tip
@@ -137,12 +137,12 @@ iterate the process many times (to simulate the multiple reflections which
 happen inside the kaleidoscope). To that end, we need to modify our draw loop
 so it looks like the following:
 
-``` javascript
+```javascript
 // put this in your draw loop
-translate(windowWidth/2, windowHeight/2);
+translate(windowWidth / 2, windowHeight / 2);
 var numRotations = 10;
-for(var i = 0; i < numRotations; i++) {
-  rotate(TWO_PI/numRotations);
+for (var i = 0; i < numRotations; i++) {
+  rotate(TWO_PI / numRotations);
   // put your cool shape drawing code in here
 }
 ```
@@ -165,7 +165,7 @@ Now, do one of the following things:
 4. Do something entirely different --- be creative!
 
 When you get a kaleidoscope sketch that you're happy with save your code into `week-05/sketch.js` in your lab repo and push it
-to your fork on the GitLab server. Check the CI jobs for a tick to see that your repo is working. 
+to your fork on the GitLab server. Check the CI jobs for a tick to see that your repo is working.
 
 Have a think (and play around!) to find out what shapes work best as a building
 block for this kaleidoscope process? What makes them work so well?
@@ -189,7 +189,7 @@ and
 that we talked about in the [week 4 lecture](/_lectures/week-04/#putting-elements-into-an-array). It's a bit annoying but names like **push** and **pop** are sometimes re-used in different ways across programming languages.
 :::
 
-Even though it looks complicated, this is a *relatively* simple extension to the
+Even though it looks complicated, this is a _relatively_ simple extension to the
 stuff you did in this lab, the only addition is that it uses an image
 [mask](https://p5js.org/reference/#/p5.Image/mask) to draw only one "pizza
 slice" shaped part of the canvas, but to re-draw it many times in a radial
@@ -197,4 +197,3 @@ pattern (just like a real kaleidoscope). There's a bit of stuff in there that we
 haven't covered in lectures yet (mostly the image masking stuff) so don't worry
 if you don't understand all of it just yet. Still, it's quite pretty---so
 definitely have a play with it and break it down if you get the chance.
-

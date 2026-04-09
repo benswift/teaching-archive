@@ -8,6 +8,7 @@ week: 8
 So here I am, innocently turning over rocks in the field of audience interaction with live music, looking for a decent way to aggregate the data I will collect from my devices, when I find this. [Experio: a Design for Novel Audience Participation in Club Settings](http://www.nime.org/proceedings/2014/nime2014_481.pdf). Someone stole my idea and did it better. Not cool Bastiaan van Hout. Now, its personal.
 
 ### Why my idea wants to be Experio when it grows up, but will remain its own person for now.
+
 ![I am artist](./images/ushini/kingGizzard.jpg)
 I joke, I kid of course. It was great to see the implementation details of an idea close to mine. The team that developed Experio had this cool idea of casting lasers across the floor of a club; 6 different sectors to be exact. Then, as people start dancing through the laser light, the changes in light intensity were used to either trigger preloaded MIDI tracks or control various parameters of tracks which are already playing. Each sector of light has a specific affect on the music and its up to the dancers to find out what it is. For example, one will trigger a certain instrument to sound, one controls the tempo or rhythm of one component of the music. The master control over the musicality and audio is governed by a moderator interface. This is likely operated by the DJ. After observing its use in a club setting, Hout and his team found that the best results came when only one person danced in a given sector. They also observed that audience members were more willing to participate if the their personal movements were distinguishable in the music.
 
@@ -28,6 +29,7 @@ I want the acceleration and the rate of rotation to affect two different compone
 The MPU6050 also comes with a 1024 byte FIFO buffer. I'm not sure if this will be necessary, but I can see it coming in handy if, for example, collect sensor data over time and map spikes in this data to a rhythm.
 
 ### Technical issues
+
 When I left you last time, I couldn't connect to the internet :( You'll be happy to know that I have now connected to the internet. The issue was that I was trying to connect an edu network which required an ID and password to gain access. If you just make your computer a mobile hotspot and connect to it using the password it should be good. So yes, whoops-a-daisy. Minor faux pas.
 
 ![I am artist](./images/ushini/connect_accelto_node.jpg)

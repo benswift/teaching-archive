@@ -7,7 +7,7 @@ week: 1
 
 # Intro
 
-Hello! I'm Adi and this is my blog for the *(Dis)Connecting Together* - China Study Tour. Look out for my weekly posts over the coming months, as I build a prototype using IoT concepts/technologies.
+Hello! I'm Adi and this is my blog for the _(Dis)Connecting Together_ - China Study Tour. Look out for my weekly posts over the coming months, as I build a prototype using IoT concepts/technologies.
 
 I'm excited to travel to China, particularly looking forward to all the famous sites, especially visiting the Great Wall. I look forward to meeting new people, trying Chinese cuisine and exploring Beijing City.
 

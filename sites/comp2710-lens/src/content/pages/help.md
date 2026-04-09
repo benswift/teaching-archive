@@ -12,7 +12,7 @@ The course reps for this course are:
 - TBC
 
 You can get in touch with them at any time with feedback about the course, and
-you'll be anonymous (I won't know *who* gave the feedback).
+you'll be anonymous (I won't know _who_ gave the feedback).
 
 ## CECS Student Services
 

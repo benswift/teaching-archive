@@ -46,6 +46,7 @@ As for the actual implementation of this, my GitHub repo will be up soon with so
 ### Hardware Status
 
 So far I a few of the components I ordered have been delivered, way sooner than I though which is great. As of today I have:
+
 - The water flow rate sensor.
 - The air solenoid I ordered by mistake because I can't read.
 - The small submersible pump.

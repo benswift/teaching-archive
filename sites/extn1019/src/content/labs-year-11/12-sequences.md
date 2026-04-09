@@ -41,7 +41,7 @@ synth = new Tone.Synth("sine");
 Each synth has an ADSR envelope. In Tone.js you have control over the duration of each section in the ADSR envelope. We can use the `.` operator on our synth's envelope `synth.envelope` to access and update the duration of each section. Here the duration is represented in seconds.
 
 ```js
-// sets the decay duration of the synth's 
+// sets the decay duration of the synth's
 // ADSR envelope to 0.8 seconds
 synth.envelope.decay = 0.8;
 ```
@@ -57,14 +57,14 @@ synth.triggerAttackRelease("440Hz", 0.5);
 Alternatively you can trigger the attack and release separately, which enables you to interact with your instrument in a sustained way (pun intended :-). You can see this in mousePressed() and mouseReleased().
 
 ```js
-  synth.triggerAttack("440Hz", Tone.now(), 0.8);
+synth.triggerAttack("440Hz", Tone.now(), 0.8);
 ```
 
 ```js
-  synth.triggerRelease();
+synth.triggerRelease();
 ```
 
-**do:** Following the example above, change the durations of each section in the ADSR envelope defined in *synthJSON* and observe the effects on the _timbre_ you hear. You can also head over to the [synthesizers](https://tonejs.github.io/docs/r13/Synth) reference page in Tone.js. You'll find an assortment of different synths on the left hand side panel under "Instrument". Try creating a few new synths using the reference. You can modify Pianoetta, or copy it to create your own.
+**do:** Following the example above, change the durations of each section in the ADSR envelope defined in _synthJSON_ and observe the effects on the _timbre_ you hear. You can also head over to the [synthesizers](https://tonejs.github.io/docs/r13/Synth) reference page in Tone.js. You'll find an assortment of different synths on the left hand side panel under "Instrument". Try creating a few new synths using the reference. You can modify Pianoetta, or copy it to create your own.
 
 **do:** A good way to design your own synthesizer is to start with the [Tone.js examples](https://tonejs.github.io/examples/). After choosing a Synth type, you can modify the parameters to create unique sounds that you enjoy. Once you are happy with a sound, you can click the **`"<>"`** link to show the JavaScript required to create the object.
 
@@ -102,10 +102,10 @@ Alrighty, that should hopefully give you enough music theory to get you started 
 
 ### Making sequences
 
-We will be playing a sequence of notes using `Tone.Loop`. This is sort of similar to `for-loops` which we covered last term, only instead of iterating through the loop using an index like `i` i.e. `(i=0; i<200; i++)`, we iterate based on two values; 
+We will be playing a sequence of notes using `Tone.Loop`. This is sort of similar to `for-loops` which we covered last term, only instead of iterating through the loop using an index like `i` i.e. `(i=0; i<200; i++)`, we iterate based on two values;
 
-1. the duration between iterations and 
-2. the exact time at which a given iteration begins. 
+1. the duration between iterations and
+2. the exact time at which a given iteration begins.
 
 We avoid using the variable name `loop`, as this is already taken by `p5.js` - that is why our Tone.loop is called `looper`. When we start the loop using `looper.start()`, the iterations immediately start...well...iterating. The example below is already in your template repo. When we create a `Tone.Loop` we have to specify a separate function `myLoop` which is where we do all the looping. You'll see in your template repo, the `myLoop` function is given a `time` value. This is like a variable which holds the time at which the current iteration occurs.
 
@@ -127,7 +127,7 @@ synth.triggerAttackRelease("C3", "16n", time);
 **talk:** How might you use _arrays_ to loop through the notes in a C major scale? The notes in a C major scale are `"C, D, E, F, G, A, B, C"`. _Hint:_ Your `myLoop` has an index which starts at zero and keeps incrementing by 1 with each iteration of the loop.
 :::
 
-**do:** Modify your code to loop through a C major scale! Hehe didn't **"C"**  that one coming, did you? Store the notes of your C major scale in an array called `notes`.
+**do:** Modify your code to loop through a C major scale! Hehe didn't **"C"** that one coming, did you? Store the notes of your C major scale in an array called `notes`.
 
 ## Part 3: Make your own sequence
 
@@ -181,4 +181,3 @@ Congratulations! In this lab you:
 2. had a brief intro to some music theory
 3. re-created a phrase from a song using loops and arrays of notes
 4. discovered a little more about JavaScript classes and objects
-  

@@ -16,9 +16,9 @@ In this lab you will:
 
 ## Introduction
 
-In the last few weeks, we have explored ml5 models that have focused on some sort of physical input. Today, we'll be looking at the ml5 sentiment model that has a text focus. 
+In the last few weeks, we have explored ml5 models that have focused on some sort of physical input. Today, we'll be looking at the ml5 sentiment model that has a text focus.
 
-Fork and Clone the [lab template]() for this week. 
+Fork and Clone the [lab template]() for this week.
 
 From the website:
 
@@ -27,39 +27,43 @@ Sentiment is a model trained to predict the sentiment of any given text. For exa
 :::
 
 ## Text Input
-There's a lot going on here so let's break it down. There's three main parts of this template---the `ml5.sentiment()` model, the text input code that tracks what you're typing, and a `drawFace()` function that conveniently draws a smile at position `x,y` with a smile or a frown depending on their `emotion` factor (scales from 0 to 1). 
 
-There are a few other ways to do text input in p5, namely with HTML DOM elements, but I thought it'd be nice to show you an instance of text input purely in p5. 
+There's a lot going on here so let's break it down. There's three main parts of this template---the `ml5.sentiment()` model, the text input code that tracks what you're typing, and a `drawFace()` function that conveniently draws a smile at position `x,y` with a smile or a frown depending on their `emotion` factor (scales from 0 to 1).
+
+There are a few other ways to do text input in p5, namely with HTML DOM elements, but I thought it'd be nice to show you an instance of text input purely in p5.
 
 Let's start with making a prediction. The method `sentiment.predict()` is used to predict the sentiment of a given text. It returns a confidence value between 0 ("negative") and 1 ("positive").
 
 ```js
-  {
-    confidence // value between 0 and 1
-  }
+{
+  confidence; // value between 0 and 1
+}
 ```
 
 Add code in the `keyPressed()` function to predict the sentiment of `userInput` when the user presses `ENTER`. Recall that ml5 models often have a customised callback function that will be called when the `predict` method makes a predicition. Once the sentiment is predicted, the output `prediction` will be passed to `gotResult`, and then log the confidence in the console.
 
 ## Let's turn that smile upside down
-As mentioned above, the `drawFace()` function draws a simple face where their mouth angle is determined by their `emotion` factor. 
 
-Add some functionality in your code that draws a face reflecting the sentiment of `userInput`. Hint: the `currentSentiment` variable has been declared but is unused. 
+As mentioned above, the `drawFace()` function draws a simple face where their mouth angle is determined by their `emotion` factor.
+
+Add some functionality in your code that draws a face reflecting the sentiment of `userInput`. Hint: the `currentSentiment` variable has been declared but is unused.
 
 ## Portfolio 3
-If you haven't already, go back and finish the tasks from last week's lab to get a start on your portfolio 3 work. 
+
+If you haven't already, go back and finish the tasks from last week's lab to get a start on your portfolio 3 work.
 
 You have now ideally done an introductory sketch in each of the following models:
-* [ImageClassifier](https://comp.anu.edu.au/courses/extn1019/labs-year-12/12-image-classifier/)
-* [NeuralNetwork](https://comp.anu.edu.au/courses/extn1019/labs-year-12/13-neural-network-noise/)
-* [HandPose](https://comp.anu.edu.au/courses/extn1019/labs-year-12/14-gestural-sounds/)
-* [Sentiment](https://docs.ml5js.org/#/reference/sentiment)
 
-It's time to consider how the differences in interaction type can help contribute to the overall experiences of your viewer. 
+- [ImageClassifier](https://comp.anu.edu.au/courses/extn1019/labs-year-12/12-image-classifier/)
+- [NeuralNetwork](https://comp.anu.edu.au/courses/extn1019/labs-year-12/13-neural-network-noise/)
+- [HandPose](https://comp.anu.edu.au/courses/extn1019/labs-year-12/14-gestural-sounds/)
+- [Sentiment](https://docs.ml5js.org/#/reference/sentiment)
+
+It's time to consider how the differences in interaction type can help contribute to the overall experiences of your viewer.
 
 Compare and contrast how users are intended to interact with each model. What other tools are needed to facilitate this interaction?
 
-Now consider your interpetation of the portfolio 3 theme. What models may complement your intended stories or scenes? What sorts of interactions can you create for your viewer to be immersed in your interpretation and stories? 
+Now consider your interpetation of the portfolio 3 theme. What models may complement your intended stories or scenes? What sorts of interactions can you create for your viewer to be immersed in your interpretation and stories?
 
 ## Summary
 

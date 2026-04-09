@@ -1,10 +1,12 @@
 ---
 author: Aditya Chilukuri
 date: 2018-12-16
-title : Last Week in Beijing, and Return to Canberra
+title: Last Week in Beijing, and Return to Canberra
 week: 4
 ---
+
 ## Travel
+
 Thus concludes our last week in Beijing. The Great Wall is a World Wonder, and I was so excited and very happy to visit it on Wednesday.
 
 ![Great Wall Photo](./images/aditya-chilukuri/Wk4/Great_Wall.jpeg)

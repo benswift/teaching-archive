@@ -13,18 +13,19 @@ image: ./images/year-11-lab-08.png
 
 ## Introduction
 
-Welcome back to another creative computing lab! 
+Welcome back to another creative computing lab!
 
 ### What are Patterns?
 
-Think about it. What drives you to call the visual data you are receiving with your eyes a "pattern"? Do patterns occur naturally, or are they a human construct? 
+Think about it. What drives you to call the visual data you are receiving with your eyes a "pattern"? Do patterns occur naturally, or are they a human construct?
 
 Patterns, [as understood conventionally](https://en.wikipedia.org/wiki/Pattern), consist of repeated design elements. Usually with a regularity that we can interpret holistically. We can also look for patterns in data.
 
 Geometric patterns are constructed from a repetition of geometric shapes.
 
 ### What we've already done
-We have already learned how to write code which repeats a set of instructions every frame (i.e. with each iteration of the `draw()` loop). 
+
+We have already learned how to write code which repeats a set of instructions every frame (i.e. with each iteration of the `draw()` loop).
 
 We have also learned how to repeat a set of instructions using a [programming construct called a](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) `for-loop`.
 
@@ -32,9 +33,10 @@ And we have learned how to use the data structure called an [array](). You shoul
 
 ```js
 for (let i = 0; i < myarray.length; i++) {
-    process(myarray[i]);
+  process(myarray[i]);
 }
 ```
+
 ### Aside - Alternative Iterations
 
 This is called "iterating over the elements of an array". There are alternative methods of iterating over the elements of an array in JavaScript. [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) operates on iterable objects, including arrays.
@@ -61,7 +63,7 @@ To start, fork and clone the [lab 8 template repo]().
 
 ## Part 1: Create your own Pattern
 
-For this activity, you are going to create your own pattern using `for-loops`. You can either use one of the patterns you made last week as a starting point. If you want to start from scratch, have a look at some of the patterns on [open processing](https://openprocessing.org/browse/?time=anytime&type=all&q=pattern#). Open Processing includes patterns that were created using the Java library from which p5.js was derived; that library is called _processing_.  The Open Processing site also includes patterns that were generated using p5.js :-).  You could also try using the search term [**"iteration"** on open processing](https://openprocessing.org/browse/?time=anytime&type=all&q=iteration#) if you are interested in patterns generated using repetition/iteration.
+For this activity, you are going to create your own pattern using `for-loops`. You can either use one of the patterns you made last week as a starting point. If you want to start from scratch, have a look at some of the patterns on [open processing](https://openprocessing.org/browse/?time=anytime&type=all&q=pattern#). Open Processing includes patterns that were created using the Java library from which p5.js was derived; that library is called _processing_. The Open Processing site also includes patterns that were generated using p5.js :-). You could also try using the search term [**"iteration"** on open processing](https://openprocessing.org/browse/?time=anytime&type=all&q=iteration#) if you are interested in patterns generated using repetition/iteration.
 
 Have a go at creating your own pattern and remember to ask your instructors if you have any questions. Your pattern can either be static or dynamic. Remember that a pattern is simply a sketch where certain visual elements are _repeated_.
 
@@ -101,7 +103,7 @@ Open your classmate's code and run the live server. While the live server is run
 
 ## Part 3: Arrays and Patterns
 
-It can be helpful to store data used for constructing patterns - such as position, size, orientation, colour, stroke, so that we can use these programmatically for animation and interaction. In other programming environments we might save and restore the data in a file. We can read data into arrays and interpret the data visually. 
+It can be helpful to store data used for constructing patterns - such as position, size, orientation, colour, stroke, so that we can use these programmatically for animation and interaction. In other programming environments we might save and restore the data in a file. We can read data into arrays and interpret the data visually.
 
 Have you used arrays in developing your patterns?
 

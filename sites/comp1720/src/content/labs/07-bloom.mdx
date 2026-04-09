@@ -22,7 +22,7 @@ In this week's lab you will:
 
 - use JavaScript objects to represent the elements of your sketch, and arrays to
   store all the elements
-- use *nested* iteration ([loops](/_lectures/week-03/#for-loop)) to compare all possible pairs of these elements (and do things
+- use _nested_ iteration ([loops](/_lectures/week-03/#for-loop)) to compare all possible pairs of these elements (and do things
   when certain conditions are met)
 - create a work of interactive sound-art using the p5.sound library
 
@@ -49,7 +49,7 @@ is a list of other values. The syntax for arrays looks like:
 
 ```js
 var arrayOfNumbers = [100, 24, -2, 18, 106, 42, 1, 8];
-var arrayOfStrings = ["hello", "darkness","my", "old", "friend"];
+var arrayOfStrings = ["hello", "darkness", "my", "old", "friend"];
 var arrayOfBooleans = [true, false, true, true, false];
 ```
 
@@ -74,7 +74,12 @@ you'd like to access.
 Can you complete the following if statement? Make it so that it checks if the
 third score in the array (42) is greater than 50 (ie. it passed).
 
-<FillInTheBlank client:load template={'let scores = [33, 100, 42, 30, 60];\n\nif (scores[<index:2>] >= 50) {\n  console.log("you passed!");\n}'} />
+<FillInTheBlank
+  client:load
+  template={
+    'let scores = [33, 100, 42, 30, 60];\n\nif (scores[<index:2>] >= 50) {\n  console.log("you passed!");\n}'
+  }
+/>
 
 It's also common to want to add elements to an array, we do this with the
 `push` function.
@@ -88,18 +93,23 @@ items.push("headphones");
 
 Can you fill in the blank so that the following code adds "jeff" to the array?
 
-<FillInTheBlank client:load template={'var people = ["james", "marge", "john"];\n\npeople.push("<name:jeff>");\n\nif (people[3] == "jeff") {\n  console.log("hello");\n}'} />
+<FillInTheBlank
+  client:load
+  template={
+    'var people = ["james", "marge", "john"];\n\npeople.push("<name:jeff>");\n\nif (people[3] == "jeff") {\n  console.log("hello");\n}'
+  }
+/>
 
 ## Task 2: a single bloomer
 
 Say hello to your neighbour and introduce yourself (if you don't know each other already!) There isn't going to be much actual
 pair-work today, but it'll still be nice to have someone to bounce ideas off of while you're working!
 
-Clone your fork of [the lab repository]() repo if you haven't 
-already, open it in VSCode, navigate to the `week-07` folder and start the live server 
-as usual. In addition, you'll need to add the p5.Sound library to your sketch 
-[just like in part 4 of the week 6 lab](/labs/06-pokegarden/#part-4), 
-and un-comment the `lab-sound.js` script tag in your `index.html` which contains 
+Clone your fork of [the lab repository]() repo if you haven't
+already, open it in VSCode, navigate to the `week-07` folder and start the live server
+as usual. In addition, you'll need to add the p5.Sound library to your sketch
+[just like in part 4 of the week 6 lab](/labs/06-pokegarden/#part-4),
+and un-comment the `lab-sound.js` script tag in your `index.html` which contains
 the rest of the helper code for this lab.
 
 :::tip
@@ -117,6 +127,7 @@ That means we will describe our bloomers as an array of JavaScript objects. Ask
 your partner or your tutor if you can't remember how these work.
 
 A **bloomer** is an circular entity which:
+
 1. when it's born, it grows (in size) from nothing
 2. when it reaches maturity, it "blooms" and plays a sound
 3. after reaching maturity, it stops growing.
@@ -129,6 +140,7 @@ for your bloomer object.
 :::
 
 Once you've got everything open, paste the following into the `sketch.js` file:
+
 ```js
 var bloomers = [];
 
@@ -145,8 +157,8 @@ function draw() {
   // map the "drawBloomer" and "updateBloomer" functions over the bloomer array
   // although these functions don't do anything yet - you need to write them (see below)
   for (var i = 0; i < bloomers.length; i++) {
-	drawBloomer(bloomers[i]);
-	updateBloomer(bloomers[i]);
+    drawBloomer(bloomers[i]);
+    updateBloomer(bloomers[i]);
   }
 }
 
@@ -162,12 +174,9 @@ function drawBloomer(b) {
 function updateBloomer(b) {
   // all code which updates parameters in the bloom goes in here
   // the bloomer object will be passed in as the `b` parameter
-
   // write some code that makes the bloomer grow
-
   // write a condition that makes the bloomer bloom
 }
-
 ```
 
 Now, at the top of your `sketch.js` there will be
@@ -185,7 +194,9 @@ method to add a single bloomer object to the array.
 ```js
 function setup() {
   // ...
-  bloomers.push({ /* your bloomer object goes in here - make sure it's got the right properties */ })
+  bloomers.push({
+    /* your bloomer object goes in here - make sure it's got the right properties */
+  });
 }
 ```
 
@@ -206,7 +217,7 @@ I know we've harped on about it a lot in labs & lectures, but it's really
 important to understand what's going on here. Conceptually it's quite simple:
 
 1. there's an array of bloomer objects (the array variable is called `bloomers`)
-2. you're writing a function which takes a *single* bloomer object as a
+2. you're writing a function which takes a _single_ bloomer object as a
    parameter (`drawBloomer(b)`)
 3. when you call `drawBloomer(b)` function inside the `for` loop, that's how you
    draw (or do whatever) to all the bloomers in the array
@@ -218,7 +229,7 @@ become more complex.
 
 You should now be able to see your bloomer in the browser. After that's working
 properly (ask your tutor or lab neighbour if you get stuck) lets update your
-`drawBloomer(b)` function so that it changes the colour of the bloomer *if* it
+`drawBloomer(b)` function so that it changes the colour of the bloomer _if_ it
 has bloomed (reached maturity). That sounds like a job for an conditional
 statement, don't you think?
 
@@ -266,7 +277,7 @@ Save your code and check if you can add a new bloomer by clicking on the screen.
 This should also grow, change colour and make a sound without you doing any
 additional work! Hooray for well-planned code!
 
-Make sure that your best bloom code is  saved to `week-07/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+Make sure that your best bloom code is saved to `week-07/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
 
 ## Extra Tasks
 

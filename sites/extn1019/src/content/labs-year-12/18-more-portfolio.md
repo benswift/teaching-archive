@@ -16,13 +16,12 @@ In this lab you will:
 
 ## Introduction
 
-Your portfolio 3 is due TONIGHT! Today's lab will be dedicated to continuing your work on the portfolio submission. Please reach out to me if you have any questions or concerns about your portfolio submission! 
+Your portfolio 3 is due TONIGHT! Today's lab will be dedicated to continuing your work on the portfolio submission. Please reach out to me if you have any questions or concerns about your portfolio submission!
 
-If you haven't already, Fork and Clone the [template repo]() for your project. There's still a few folks missing their own forks so please do so now! 
+If you haven't already, Fork and Clone the [template repo]() for your project. There's still a few folks missing their own forks so please do so now!
 
 ## Summary
 
 Congratulations! In this lab you:
 
 1. continued working on your portfolio
-

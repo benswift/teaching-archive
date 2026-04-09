@@ -17,7 +17,7 @@ In this lab we're going to talk about some big ideas. We'll be covering:
 We're still early in the course, and you probably feel like you haven't yet
 learned all the basic skills you need (or would like to have) to make the
 artworks you can see or imagine. That's ok---the purpose of this lab is to get
-you started thinking about *interpretation*. You might think that in an artistic
+you started thinking about _interpretation_. You might think that in an artistic
 context, that word is talking about the way that different people will have
 different responses to and preferences for the things that they see. Adele might
 like portraits, while CaiHeng prefers landscapes... that sort of thing.
@@ -25,7 +25,7 @@ like portraits, while CaiHeng prefers landscapes... that sort of thing.
 Actually, this lab also explores a different meaning for the word interpretation,
 which is equally important in a code art course. This lab is about the way that
 a work of art can be represented as an instruction (or a series of instructions)
-which must be *interpreted* (or executed, or realised, or performed) to make a
+which must be _interpreted_ (or executed, or realised, or performed) to make a
 complete artwork.
 
 In this week's lab you will:
@@ -48,8 +48,8 @@ Generative art is much older than computers. In the mid-20th century, the artist
 Sol LeWitt created a series of works where he would describe an artwork in
 words, and sometimes using a diagram. These instructions, which he called "wall
 drawings" would then be carried out by someone else. Here are the instructions
-for his [*Wall Drawing
-#118*](http://observer.com/2012/10/here-are-the-instructions-for-sol-lewitts-1971-wall-drawing-for-the-school-of-the-mfa-boston/):
+for his [_Wall Drawing
+#118_](http://observer.com/2012/10/here-are-the-instructions-for-sol-lewitts-1971-wall-drawing-for-the-school-of-the-mfa-boston/):
 
 ![*Wall drawing #118*, Sol LeWitt](./images/lab-3/lewitt-instructions.jpg)
 
@@ -63,7 +63,7 @@ care of by the computer.
 
 Another artist whose work follows a similar form is Casey Reas (one of the
 creators of Processing, which is the precursor to p5.js). Reas has created a
-large series of works which he called *Processes*. These works, like LeWitt's
+large series of works which he called _Processes_. These works, like LeWitt's
 wall drawings, were first composed in English. Here's one of Reas's Processes:
 
 ![*Process 10*, Casey Reas](./images/lab-3/process-10.png)
@@ -77,13 +77,13 @@ And here's a result of following the instructions:
 ### Task 2: following the instructions
 
 Ok, now it's your turn. Here's a new wall drawing instruction (let's call it
-*The COMP1720 Collective's wall drawing #1*)
+_The COMP1720 Collective's wall drawing #1_)
 
 > on a blue background, three not-quite-horizontal white lines of various
 > thickness next to a "breathing" circle
 
-Clone your fork of [the lab repository]() repo if you haven't 
-already. In VSCode, open the repo and navigate to the `week-03` folder, open `sketch.js`. 
+Clone your fork of [the lab repository]() repo if you haven't
+already. In VSCode, open the repo and navigate to the `week-03` folder, open `sketch.js`.
 Write a p5 sketch which realises the above wall drawing.
 
 :::tip
@@ -95,10 +95,10 @@ you'll give the commit a message to remind you what the code looked like at that
 point, something like "completed part 3 wall drawing". Don't move on to the next
 step until you've done this: you'll be submitting your assignments in the same way. Ask one of your tutors if you get stuck.
 
-Now that you've saved your interpretation, have a look around the room at what others have 
+Now that you've saved your interpretation, have a look around the room at what others have
 done, do they differ to yours? what other interpretations of a breathing circle might there be?
 
-### Task 3: composing your *own* instructions
+### Task 3: composing your _own_ instructions
 
 In the final part of this lab, you get to make your own wall drawing
 instruction. You can borrow ideas from the things you've seen already, but if
@@ -109,8 +109,9 @@ in p5.js. The rules are: (1) don't make it too complicated, and (2) try to
 imagine what your instructions will look like as you write them---the aim is to
 write instructions that will be interesting when drawn.
 
-Create a new file called `task-3.js` in your `week-03` folder. Then open the 
-`index.html` file and change the line that says: 
+Create a new file called `task-3.js` in your `week-03` folder. Then open the
+`index.html` file and change the line that says:
+
 ```html
 <script src="sketch.js"></script>
 ```
@@ -119,16 +120,16 @@ Create a new file called `task-3.js` in your `week-03` folder. Then open the
 <script src="task-3.js"></script>
 ```
 
-This will now make it so your live server is displaying the `task-3.js` file instead 
+This will now make it so your live server is displaying the `task-3.js` file instead
 of the `sketch.js` one.
 
 :::info
 This process above is how you can generally switch whatever file is being displayed.
-Please note that this should only be applied to labs, in assignments we want you all 
+Please note that this should only be applied to labs, in assignments we want you all
 to be using sketch.js so we know where to mark.
 :::
 
-Copy the below template code into the blank `task-3.js` file and save it. 
+Copy the below template code into the blank `task-3.js` file and save it.
 Your live server should now be displaying a black background.
 
 ```js
@@ -137,13 +138,13 @@ function setup() {
 }
 
 function draw() {
-  background(0);  
+  background(0);
   // put drawing code here
 }
 ```
 
 Exchange your drawing instructions with your lab partner, you should now attempt to realise your interpretation of the instructions.
-Once you and your partner have both finished, reveal your interpretations to each other. Discuss how you both had originally envisioned the 
+Once you and your partner have both finished, reveal your interpretations to each other. Discuss how you both had originally envisioned the
 artwork to turn out and comment on what you like about them.
 
 Once you've finished, save the code from your instruction-co-coding session to `week-03/task-3.js` in your lab repo and push it
@@ -152,7 +153,7 @@ to your fork on the GitLab server. Check the CI jobs for a tick to see that your
 ### Task 4: break it down!
 
 As in every lab, we've provided some code for you to mess with and make your own.
-This code is based on Casey Reas' *Process 10* from above? **With your partner from
+This code is based on Casey Reas' _Process 10_ from above? **With your partner from
 the previous exercise**, play around with parameters to see how it works, add colour
 or change the drawing style. Break it down and make it your own.
 
@@ -188,7 +189,7 @@ Time to make some art: use `randomGaussian` to create an art work where random n
 
 Think about Jackson Pollock's process for creating _Blue Poles_ that we discussed in lectures: loading up a brush with thin paint and dripping it purposely, but with a lot of variation, across a canvas.
 
-For this task you are going to **create a Jackson Pollock-like painting artwork in p5**. We've already worked on making smooth accurate paintings in p5 with `mouseX` and `mouseY`. Now it's time to add some randomness and variation to that process. 
+For this task you are going to **create a Jackson Pollock-like painting artwork in p5**. We've already worked on making smooth accurate paintings in p5 with `mouseX` and `mouseY`. Now it's time to add some randomness and variation to that process.
 
 Think about what you might have to add to get good paint-splatter effects in p5. You'll have to add variation to the thinkness of lines but also add some extra drips either side of your mouse position. You might also want to add extra dimensions of control, e.g., you could use the `mousePressed` Boolean variable to "activate" applying paint. How can you give the user control to change paint colour?
 

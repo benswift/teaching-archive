@@ -12,7 +12,7 @@ image: ./images/year-11-lab-05.png
 
 ## Introduction
 
-Another week, another creative code class :) This week we will be exploring _repetition_, or more technically **[iteration](https://en.wikipedia.org/wiki/Iteration)**. 
+Another week, another creative code class :) This week we will be exploring _repetition_, or more technically **[iteration](https://en.wikipedia.org/wiki/Iteration)**.
 No time to waste! Let's make a start on the first activity.
 
 Fork and clone the [Lab 5 template repo]().
@@ -26,15 +26,14 @@ NOTE: Making mistakes in writing computer programs has a long history. There are
 :::
 
 :::tip
+
 1. syntax errors
+   :::
+
+:::tip 2. runtime errors
 :::
 
-:::tip
-2. runtime errors
-:::
-
-:::tip
-3. logic errors
+:::tip 3. logic errors
 :::
 
 :::tip
@@ -49,7 +48,7 @@ For-loops are no exception. There are some parts of the syntax in a for-loop whi
 **do: Q1** The diagram above shows a deconstructed for-loop with certain sections labeled `a)`, `b)` and so on. For each section in the diagram, write down whether 1) you need to write it the same way each time you write a for-loop, or whether you can modify it, 2) in your own words, describe the purpose of each section, 3) if you can modify the section, state whether there are any _restrictions_ on the types of modifications you can make (i.e. can you replace that section with any code you like?). Write your answer in the `exercises.md` file in your template repo.
 
 :::tip
-As mentioned before, there is a _built in_ repetition in [p5.js](https://p5js.org/reference/#/p5/draw), 
+As mentioned before, there is a _built in_ repetition in [p5.js](https://p5js.org/reference/#/p5/draw),
 ... and [Processing](https://processing.org/reference/draw_.html), ... and [Arduino](https://www.arduino.cc/reference/en/language/structure/sketch/loop/).
 The draw() function is looped automatically by the p5.js code engine/platform/system. It's important to keep this in mind when writing loops.
 Always let the draw() function handle the screen rendering! Otherwise interaction functions might break.
@@ -74,8 +73,8 @@ Let's assume the variable `i` represents the index of any circle. Your task in t
 Now it's time to start coding. To help you out a bit, we've written a for-loop for you. Unfortunately, it doesn't quite do what we expect it to: it doesn't generate anything that looks like the row of circles above.
 
 ```js
-for(let i=0; i<200; i++){
-    circle(60, 100, 60)
+for (let i = 0; i < 200; i++) {
+  circle(60, 100, 60);
 }
 ```
 
@@ -115,18 +114,18 @@ Our columns have now lost all sense of camaraderie and have dispersed in a radia
 
 **do:** Recreate the sketch above. Make sure you `commit` and `push` your work to git when you've finished. Again, pen and paper can be your friend here :)
 Notes: rotating a rectangle around a point is shown [in this example](https://editor.p5js.org/kjhollen/sketches/ryDpkpvjQ). HOWEVER - if you try this in a for loop
-you will combine transformations as you progress through the loop - creating unexpected behaviours. You will have to use `resetMatrix()` ([ref here](https://p5js.org/reference/#/p5/resetMatrix)) to reset transformations back to "no transformations" as the first thing in your for-loop. 
+you will combine transformations as you progress through the loop - creating unexpected behaviours. You will have to use `resetMatrix()` ([ref here](https://p5js.org/reference/#/p5/resetMatrix)) to reset transformations back to "no transformations" as the first thing in your for-loop.
 
 ## Part 6: variation
 
 Now, let's go back to the familiar 'row of circles' sketch. The for-loop below will draw a row of six circles. Replace any code you currently have inside your `draw()` loop with the code below.
 
 ```js
-background(210)
-noStroke()
-fill(50)
-for(let i = 0; i < 6; i++){
-    circle(i*60+30,100,50)
+background(210);
+noStroke();
+fill(50);
+for (let i = 0; i < 6; i++) {
+  circle(i * 60 + 30, 100, 50);
 }
 ```
 

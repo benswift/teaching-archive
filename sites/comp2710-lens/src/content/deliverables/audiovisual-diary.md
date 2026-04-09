@@ -47,7 +47,6 @@ in week 2 you'll submit your first AV diary video in response to the
 Each week's submission must include:
 
 - a 60 second video of your own work exploring the week's theme, which
-
   - has the filename `week-N.mp4`, `week-N.mov` or `week-N.mkv` (with `N`
     replaced by the week number of the submission date, so the _first_
     submission is `week-2`)

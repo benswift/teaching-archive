@@ -16,25 +16,25 @@ template_repo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assign
 This assignment has two parts: in Part 1, you need to generate a specific
 (simple) signal to be output through your discoboard's headphone jack. In Part
 2, you get to be creative and program your discoboard to make a more interesting
-sound. Your discoboard has a standard 3.5mm headphone jack, which means that any 
-3.5mm headphones will work.  
+sound. Your discoboard has a standard 3.5mm headphone jack, which means that any
+3.5mm headphones will work.
 
 {% asset deliverables/01-synth/headphone-jack.jpg alt:'3.5mm Headphone Jack' style="width:40%;" %}
 
 :::warning
-To complete this assignment you will need to have a solid understanding of the 
-course material provided in the 
-[week 1](/labs/01-intro/), 
-[week 2](/labs/02-first-machine-code/) and 
-[week 3](/labs/03-maths-to-machine-code/) labs. 
-If you have not completed these or do not understand the content then it is 
-*strongly* recommended that you go and complete these labs before starting 
+To complete this assignment you will need to have a solid understanding of the
+course material provided in the
+[week 1](/labs/01-intro/),
+[week 2](/labs/02-first-machine-code/) and
+[week 3](/labs/03-maths-to-machine-code/) labs.
+If you have not completed these or do not understand the content then it is
+_strongly_ recommended that you go and complete these labs before starting
 on the assignment.
 :::
 
 ## Background
 
-A [synthesizer](https://en.wikipedia.org/wiki/Synthesizer) (or *synth* for
+A [synthesizer](https://en.wikipedia.org/wiki/Synthesizer) (or _synth_ for
 short) is an electronic device which produces a musical sound. It's called a
 **synth**esizer because while an acoustic instrument uses a resonating cavity or
 string to produce "natural" sound waves, the synth uses digital logic to
@@ -43,8 +43,8 @@ and turned into a soundwave through a loudspeaker.
 
 Although computers have been used for making music since they were first
 invented, it was in the 70s that improvements in technology led to an explosion
-of digital devices like synths in popular music---check out Kraftwerk's *The
-Robots*.
+of digital devices like synths in popular music---check out Kraftwerk's _The
+Robots_.
 
 <YouTubeEmbed id="okhQtoQFG5s" />
 
@@ -54,8 +54,8 @@ in simple patterns and writing them to a special register one-after-the-other.
 The key part is that it involves **controlling the execution of your program in
 time**. This might be a fairly new idea---you might not be used to worrying
 about exactly how fast your program runs, and if you do care about it you only
-care about making it run *faster*, not about making sure that the instructions
-run at *specific* times.
+care about making it run _faster_, not about making sure that the instructions
+run at _specific_ times.
 
 ## Getting started {#getting-started}
 
@@ -74,22 +74,22 @@ code:
    1](#part-1) code on the `part-1` branch, and your [Part 2](#part-2) code on
    the `part-2` branch.
 
-2. Although *your* code still goes in `main.S`, the template includes a couple
+2. Although _your_ code still goes in `main.S`, the template includes a couple
    of functions for you to call from your code: `init` and
    `BSP_AUDIO_OUT_Play_Sample`.
    - When you `bl` (branch with link) to the `init` function your program will
      execute the setup code to turn on your discoboard's headphone jack. Your
      code should call this function **once** at the start.
    - When you `bl` to the `BSP_AUDIO_OUT_Play_Sample` function, whatever is in
-     the *lowest* (least-significant) 16 bits of `r0` will be "played" through
+     the _lowest_ (least-significant) 16 bits of `r0` will be "played" through
      the headphone jack (treated as a **signed** 16-bit number as shown in the
-     picture). Your code should call this function **repeatedly** to generate 
-     the audio signal. Calculating exactly what that data in `r0` should be to 
+     picture). Your code should call this function **repeatedly** to generate
+     the audio signal. Calculating exactly what that data in `r0` should be to
      generate the right signal is up to you!
 
 If this is a bit confusing, head down to the [FAQ section](#faq) on this
-page---there's a lot of answers which should help you understand. Furthermore, 
-check out the [sitewide FAQ](/resources/01-faq/) 
+page---there's a lot of answers which should help you understand. Furthermore,
+check out the [sitewide FAQ](/resources/01-faq/)
 for answers that apply more generally to all 3 assignments.
 
 ## Part 1 (50%) {#part-1}
@@ -115,7 +115,7 @@ to make the music come out of the headphones.
 You can see the "sample-by-sample" nature of digital audio in the picture---the
 square wave signal is acually just a sequence of dots---these are the values
 which you'll output through your `r0` register and `BSP_AUDIO_OUT_Play_Sample` function.
-Remember that the value in `r0` *immediately* before this branch will be the one
+Remember that the value in `r0` _immediately_ before this branch will be the one
 that comes out the headphone jack.
 
 How will you know if you're doing it right? You'll need to plug your headphones
@@ -125,7 +125,7 @@ in and listen! Your square wave should sound like a constant-pitch, slightly
 
 Square waves (and similar waveforms) are quite popular in music
 as "lead" sounds, since they cut through the accompaniment so well---just listen
-to the opening square wave synth line in Van Halen's *Jump*.
+to the opening square wave synth line in Van Halen's _Jump_.
 
 <YouTubeEmbed id="SwYN7mTi6HM" />
 
@@ -133,24 +133,24 @@ For Part 1, marks will be awarded for:
 
 - making a sound
 - whether the sound has the correct frequency
-- whether the sound has a peak-to-peak [amplitude](https://en.wikipedia.org/wiki/Amplitude) 
-of at least *half* the full `0x8000`--`0x7FFF` 
-[dynamic range](https://en.wikipedia.org/wiki/Dynamic_range#Electronics) 
-(as depicted in the [picture](#part-1))
+- whether the sound has a peak-to-peak [amplitude](https://en.wikipedia.org/wiki/Amplitude)
+  of at least _half_ the full `0x8000`--`0x7FFF`
+  [dynamic range](https://en.wikipedia.org/wiki/Dynamic_range#Electronics)
+  (as depicted in the [picture](#part-1))
 - how "clean" the square wave signal is (i.e. how close is it to the picture
   above)
-- how close the frequency of the wave is to 440Hz (to achieve the closest frequency, 
+- how close the frequency of the wave is to 440Hz (to achieve the closest frequency,
   **and possibility of full marks for this part**, you will need to average over many periods)
 - code structure & readability (including comments)
 
-If you would like to view a plot of your output, then you can follow the instructions 
-on the resources page to use the 
+If you would like to view a plot of your output, then you can follow the instructions
+on the resources page to use the
 [sample plotter](/resources/01-faq/#sample-plotter).
 
 :::info
 Be careful generating signals with your earphones in your ears---the discoboard
 can make a pretty loud signal. It's a good idea to hit "run" on your program
-with your headphones *out* of your ears, and then carefully put them in your
+with your headphones _out_ of your ears, and then carefully put them in your
 ears afterwards.
 :::
 
@@ -158,7 +158,7 @@ ears afterwards.
 
 In the second part, you need to generate a different signal (i.e. not a
 constant-frequency square wave). You can pick any periodic signal you like,
-but here are a few ideas, in *approximate* order of increasing difficulty:
+but here are a few ideas, in _approximate_ order of increasing difficulty:
 
 - a different base waveform from the square wave you made in Part 1 (e.g.
   [sawtooth](https://en.wikipedia.org/wiki/Sawtooth_wave),
@@ -170,7 +170,7 @@ but here are a few ideas, in *approximate* order of increasing difficulty:
 - the weighted sum of multiple simpler waveforms (this is
   called [additive synthesis](https://en.wikipedia.org/wiki/Additive_synthesis))
 
-- the *n*-sample
+- the _n_-sample
   [moving-average filter](http://www.gaussianwaves.com/2010/11/moving-average-filter-ma-filter-2/) of
   a simple signal
 
@@ -196,14 +196,14 @@ Here's the process for working on & submitting your assignment:
 1. fork the [assignment 1 template
    repository]()
 
-2. clone[^own-fork] & work on *your* fork of the major project repo
+2. clone[^own-fork] & work on _your_ fork of the major project repo
 
 3. regularly commit & [push](/resources/01-faq/#push-all-branches) your changes to the GitLab
    server
 
 4. the last commits on the `part-1` and `part-2` branches [on the GitLab
-   server](/resources/01-faq/#is-it-pushed) (not on your local machine!) *before the submission
-   deadline* will count as your submission
+   server](/resources/01-faq/#is-it-pushed) (not on your local machine!) _before the submission
+   deadline_ will count as your submission
 
 [^own-fork]:
     make sure you clone **your own fork** (i.e. the one with your uni ID in the
@@ -221,11 +221,11 @@ Here's the process for working on & submitting your assignment:
 
 3. my `statement-of-originality.yml` files for both Part 1 and Part 2 include
    [all the necessary references/acknowledgements](/resources/01-faq/#statement-of-originality),
-   and *everything* not mentioned in there is my own work
+   and _everything_ not mentioned in there is my own work
 
-4. [both branches](/resources/01-faq/#push-all-branches) 
-of my completed project have been
-   [pushed](/resources/01-faq/#is-it-pushed) 
+4. [both branches](/resources/01-faq/#push-all-branches)
+   of my completed project have been
+   [pushed](/resources/01-faq/#is-it-pushed)
    to the GitLab server
 
 5. [both branches](/resources/01-faq/#push-all-branches) pass the Gitlab CI test (the pipeline does not fail)
@@ -260,7 +260,7 @@ right things happen in the correct sequence?
 
 Here's some pseudo-code to help you out:
 
-``` arm
+```arm
 main:
 @ do any once-off initialisation stuff first
 
@@ -280,14 +280,14 @@ You can use as many labels as you like, there can be other loops within your
 1. make sure you're correctly using the provided initialisation and playback
    functions [described above](#getting-started) properly
 
-2. you'll only *hear* the signal if it changes over time, so you might be
+2. you'll only _hear_ the signal if it changes over time, so you might be
    sending a sequence of zeroes (or any other constant value) to the headphone
    jack---that's a signal (a really boring one) but you won't hear it as sound!
 
-3. sound is a vibration which happens over time, so if your program is *paused*
+3. sound is a vibration which happens over time, so if your program is _paused_
    (e.g. when you're stepping through your program in the debugger) it's not
    generating the thousands of successive samples required to make an audible
-   sound---so make sure your program is *running*
+   sound---so make sure your program is _running_
 
 #### How can I see exactly what signal my program is generating?
 
@@ -307,12 +307,12 @@ can easily "come back" when it's done.
 
 This is exactly what you want to happen with both the `init` and
 `BSP_AUDIO_OUT_Play_Sample` functions---your program goes off, does some useful
-stuff, and then comes back and continues executing *your* code.
+stuff, and then comes back and continues executing _your_ code.
 
 #### Should I treat the `init` and `BSP_AUDIO_OUT_Play_Sample` functions differently?
 
 As [described above](#getting-started) the main difference (from your
-perspective) is that the `init` function should only be called *once* at the
+perspective) is that the `init` function should only be called _once_ at the
 start of your program, but the `BSP_AUDIO_OUT_Play_Sample` function needs to be
 called repeatedly to generate the output signal.
 
@@ -323,19 +323,19 @@ called repeatedly to generate the output signal.
 If you generate a 440Hz square wave which satisfies the [criteria
 above](#part-1), then yes! The first part is meant to be (relatively)
 straightforward, so that you can get through it and use your creative energies
-in Part 2. However, to achieve full marks for this part then you will need 
+in Part 2. However, to achieve full marks for this part then you will need
 to look in to averaging as the criteria mention.
 
-#### How close to *exactly* 440Hz does my square wave have to be?
+#### How close to _exactly_ 440Hz does my square wave have to be?
 
-As close as you can get it! You can probably make it *fairly* close without too
+As close as you can get it! You can probably make it _fairly_ close without too
 much effort, but to get that last bit of precision might require some extra
 work. If you're wondering how to do this, think about the problem from the other
-direction: what would the sequence of samples look like if you *recorded* a
+direction: what would the sequence of samples look like if you _recorded_ a
 440Hz wave into a digital audio signal at a sample rate of 48kHz?
 
 However you manage it, make sure your assembly code is still well-organised &
-understandable (comments can help a *lot*).
+understandable (comments can help a _lot_).
 
 #### If I generate a square wave, then I get 100% for Part 1, right?
 
@@ -345,7 +345,7 @@ readability are part of the marking criteria as well.
 #### Do I need an oscilloscope (or Audacity, etc.) to know that I've done it right? {#need-oscilloscope}
 
 No, you don't. Part 1 is meant to be simple---if you're confident you're
-generating the right signal (e.g. if it *sounds* the same to your ears) then
+generating the right signal (e.g. if it _sounds_ the same to your ears) then
 you've probably done enough. If you want to really be sure, set a breakpoint at
 `BSP_AUDIO_OUT_Play_Sample` and manually write down a few successive values of
 the signal (i.e. the value in `r0` at those times). If those values will "trace
@@ -388,12 +388,12 @@ patient :)
 
 #### Can I use the FPU (or some other peripheral on the discoboard we haven't covered in class)?
 
-Your program can use *any* part of the discoboard---as long as it generates the
+Your program can use _any_ part of the discoboard---as long as it generates the
 signal you describe in your design document. However, if you decide to use any
 features we haven't yet covered (or don't cover at all) in the course (e.g. the
 floating-point unit, the timers, the accelerometer, etc.) then you're on your
 own to make it work.
 
-If you're up for a challenge then doing that can be a *great* learning
+If you're up for a challenge then doing that can be a _great_ learning
 experience, but you need to know what you're getting yourself in for---and you
 need to give yourself plenty of time (in case things don't work out as planned).

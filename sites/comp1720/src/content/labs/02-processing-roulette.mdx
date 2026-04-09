@@ -14,7 +14,7 @@ assignments. If you are feeling a bit lost---that's ok! It's just week one and t
 
 In this week's lab you will:
 
-1. make new friends (well, at least *one* new friend) as you work in pairs
+1. make new friends (well, at least _one_ new friend) as you work in pairs
 
 2. spin the p5 roulette wheel---where will it land?
 
@@ -25,7 +25,7 @@ In this week's lab you will:
 ### Task 0: Artwork Discussion
 
 :::info
-From time to time, labs will have a _Task **0**_. These are an optional task 
+From time to time, labs will have a _Task **0**_. These are an optional task
 and give the opportunity for you to meet and chat with your fellow lab goers and tutors.
 :::
 
@@ -42,20 +42,20 @@ activities in these labs during the semester, but you won't have a specific lab
 partner for the whole course.
 
 :::info
-If the people next to you are already in groups, feel free to ask your tutor to find 
+If the people next to you are already in groups, feel free to ask your tutor to find
 you a partner somewhere else in the room (or form a 3!)
 :::
 
 Ask your partner a bit about themselves (where did they grow up? what are they
 studying at uni? what are they hoping to learn in this course?).
 
-You'll be using the same tools you setup in [lab 1](/labs/01-intro/). 
+You'll be using the same tools you setup in [lab 1](/labs/01-intro/).
 So open VSCode and dive in.
 
-Open [the lab repository folder for lab 2]() 
-(Remember we will be using the same repo for every single lab, just a different 
-folder in the repo). In VSCode, open the repo and navigate to the week-02 folder, 
-open `sketch.js`; this is where you'll write your code today. Finally, start the 
+Open [the lab repository folder for lab 2]()
+(Remember we will be using the same repo for every single lab, just a different
+folder in the repo). In VSCode, open the repo and navigate to the week-02 folder,
+open `sketch.js`; this is where you'll write your code today. Finally, start the
 p5 live server.
 
 ### Task 2: let's play p5 roulette.
@@ -82,7 +82,7 @@ The rules of p5 roulette are:
   ignore that and spin it again
 - make sure you talk through the options (e.g. parameter choices) with your
   partner
-  
+
 Here's the wheel!
 
 ### Task 3: Break it down!
@@ -141,7 +141,7 @@ Then you'll see a big diagram of all the jobs in the pipeline.
 
 ![GitLab repo view with failed commit](./images/lab-2/week-2-CI-jobs.png)
 
-You should see some ❌s for weeks that you haven't completed yet, this indicates that the CI job for that week has failed (so far). Hopefully you do see a green tick for week 1 and week 2. 
+You should see some ❌s for weeks that you haven't completed yet, this indicates that the CI job for that week has failed (so far). Hopefully you do see a green tick for week 1 and week 2.
 
 If you want to know _why_ the CI tests failed, then you should click on the ❌
 itself, then keep clicking the ❌s until you see a black screen full of text (you can
@@ -171,6 +171,7 @@ they are designed to give you directions for further exploration!
 ### Painting with Smooth Lines
 
 If you've been paying attention in lectures, you might have seen the `mouseX` and `mouseY` variables used to follow the mouse cursor. You can use this technique to quickly create a p5 sketch for "painting" as follows:
+
 ```
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -183,6 +184,7 @@ function draw() {
   ellipse(mouseX,mouseY,50,50);
 }
 ```
+
 You might have noticed that the when you move the mouse quickly, a trail of circles are left along the screen instead of a smooth line. Your task is to make a painting sketch that solves this problem and can draw smoothly across the screen however you move the mouse. (Hint: you might need to use _variables_ in addition to some new drawing commands from the p5 reference).
 
 ### Colour with HSB
@@ -193,7 +195,7 @@ Have a look at the [colour mode page](https://p5js.org/reference/#/p5/colorMode)
 
 One of the great things about HSB is that you can change colours smoothly forever by cycling through different _hue_ values while keeping the other parameters static. We usually represent _hue_ as a number between 0 and 360.
 
-Use the modulo (`%`) operator and `frameCount` to smoothly change some of your colours as your sketch runs. You might like to change the speed and alter the saturation and value of some colours as well. 
+Use the modulo (`%`) operator and `frameCount` to smoothly change some of your colours as your sketch runs. You might like to change the speed and alter the saturation and value of some colours as well.
 
 ### Draw with Arcs
 

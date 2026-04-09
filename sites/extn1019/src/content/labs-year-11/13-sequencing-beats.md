@@ -27,7 +27,7 @@ Before you attend your lab session, make sure:
 Welcome to the fourth week of the computer music section of this course. Let's get stuck in to laying down some beats.
 
 In today's lab, we will introduce you to some important concepts in Tone.js,
-which are actually fundamental to any form of computer music. 
+which are actually fundamental to any form of computer music.
 
 We will finish off with a brief introduction to the theory and practice of beats & rhythm, after
 which you will go on to make your own beats.
@@ -75,7 +75,7 @@ more precisely.
 
 Now that we have a way of keeping time, we can make some music. Say I wanted to play a rhythmic sequence on a loop; something like a "boom ka boom ka". Last week we used Tone.js Loops to do this. This week we will use the Tone.js sequencer to play a sequence of notes, or beats.
 
-You will find a function in your lab template which helps us do this. At the very top of the sketch.js file in your lab template, you'll see a function called `createSequence()`. This function utilizes a Tone.js object called [Sequence](https://tonejs.github.io/docs/15.0.4/classes/Sequence.html)  ([example Step Sequencer](https://tonejs.github.io/examples/stepSequencer)). Don't worry if you don't quite understand how the Sequence object is being used at this stage. All you need to know is the `createSequence()` function will play a sequence on loop as long as you specify _which 'instrument' to use, which 'notes' to play_, _the duration of the sequence_ and _when it should start playing_. Since we are going to create a rhythm on a drum, the 'notes' will refer to the timbre of the drum i.e. hihat, kick, tom, snare.
+You will find a function in your lab template which helps us do this. At the very top of the sketch.js file in your lab template, you'll see a function called `createSequence()`. This function utilizes a Tone.js object called [Sequence](https://tonejs.github.io/docs/15.0.4/classes/Sequence.html) ([example Step Sequencer](https://tonejs.github.io/examples/stepSequencer)). Don't worry if you don't quite understand how the Sequence object is being used at this stage. All you need to know is the `createSequence()` function will play a sequence on loop as long as you specify _which 'instrument' to use, which 'notes' to play_, _the duration of the sequence_ and _when it should start playing_. Since we are going to create a rhythm on a drum, the 'notes' will refer to the timbre of the drum i.e. hihat, kick, tom, snare.
 
 :::tip
 **Aside:** The beats are played using a [Tone.js Sampler](https://tonejs.github.io/docs/15.0.4/classes/Sampler.html) ([example sampler](https://tonejs.github.io/examples/sampler))created from samples of drum beats from the [808 kit](https://en.wikipedia.org/wiki/Roland_TR-808). A sampler allows 'notes' to be played which do not have matching samples - the Sampler will extrapolate from the information provided to _guess_ what the sound you are looking for should sound like. Your instructor has an issue with this: the drum map used cannot be extrapolate to other instruments!!!
@@ -84,29 +84,44 @@ You will find a function in your lab template which helps us do this. At the ver
 Copy this line of code below into your lab template, at the bottom of your `setup()` function (the comments will help you find exactly where to put it) and run your sketch. You'll notice that the first argument of this function is an instrument, and the second is an array of drum timbres; `[drumMap.kick, drumMap.snare, drumMap.kick, drumMap.snare]`. At the moment it's only using the kick drum and the snare. At the top of your sketch you'll see that there is a large list of drum timbres for you to choose from. This might look familiar if you remember the lab on _Objects in p5.js_. Each timbre is a property of the _drumMap_ object.
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, drumMap.snare, drumMap.kick, drumMap.snare], "4n", 0);
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, drumMap.snare, drumMap.kick, drumMap.snare],
+  "4n",
+  0,
+);
 ```
 
 Try to change the timbres in your sequence. Replace the elements in the array of drum timbres with different properties of the drumMap object. e.g. `drumMap.splash`.
 
-The third argument of the `createSequence()` function is set to "4n". This argument specifies how long each note is played for and, in this case, it represents 1/4 note. As you can probably imagine, a half note is represented by "2n", a whole note by "1n" and so on. 
+The third argument of the `createSequence()` function is set to "4n". This argument specifies how long each note is played for and, in this case, it represents 1/4 note. As you can probably imagine, a half note is represented by "2n", a whole note by "1n" and so on.
 
 Try to make the sequence play twice as fast by changing the second argument of the `createSequence()` function.
 
-So far, each note has had the same duration. What if we want some notes to have a shorter duration than others? This is easily done by replacing one of the notes in our array of drum timbres with another array of drum timbres. Take the example below. 
+So far, each note has had the same duration. What if we want some notes to have a shorter duration than others? This is easily done by replacing one of the notes in our array of drum timbres with another array of drum timbres. Take the example below.
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, drumMap.snare, [drumMap.splash, drumMap.snare], drumMap.kick], "4n", 0);
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, drumMap.snare, [drumMap.splash, drumMap.snare], drumMap.kick],
+  "4n",
+  0,
+);
 ```
 
 The first two elements in this array are drum timbres, while the last element is another array with two drum timbres. In this example, the first kick and the first snare will still be played for a 1/4 note, but the last kick and snare will each last for an 1/8 note. Try replacing the call to `createSequence()` in your lab template with the line above and save your code. Can you hear the change when you start the sound in your browser? Your sketch will likely ask you to start the sound engine by pressing the space bar and toggle the sound by pressing the mouse.
 
-Experiment with the different ways you can give the notes in your sequence different durations. You might want to start by recreating some swing beats. 
+Experiment with the different ways you can give the notes in your sequence different durations. You might want to start by recreating some swing beats.
 
-What is sound without silence? You can use rests in your rhythm by adding empty arrays to your array of drum timbres. Take the example below. 
+What is sound without silence? You can use rests in your rhythm by adding empty arrays to your array of drum timbres. Take the example below.
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare], "4n", 0);
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare],
+  "4n",
+  0,
+);
 ```
 
 Here the first kick and last snare are each held for 1/4 note. There is a snare and a splash for 1/8n followed by a rest which is held for a 1/4n. Try replacing the call to `createSequence()` in your lab template with the line above and save your code.
@@ -114,26 +129,31 @@ Here the first kick and last snare are each held for 1/4 note. There is a snare 
 Try to recreate the iconic _"boom boom ka"_ rhythm from "We will rock you" by Queen.
 
 :::tip
-If you blazed through this section, try to recreate a rhythm from a song you like. 
+If you blazed through this section, try to recreate a rhythm from a song you like.
 :::
 
-## Part 3: Call and response 
+## Part 3: Call and response
 
-Now that you have had a play around with creating sequences, it's time for you to collaborate. 
+Now that you have had a play around with creating sequences, it's time for you to collaborate.
 
 :::tip
-Pair up with someone you don't usually sit next to or work with. Introduce yourselves in a COVID safe manner. You'll be working together to come up with a call and response rhythm. 
+Pair up with someone you don't usually sit next to or work with. Introduce yourselves in a COVID safe manner. You'll be working together to come up with a call and response rhythm.
 :::
 
 You and your partner will create a rhythm sequence worth 2 bars. For example, the sequence below will repeat every 2 bars where each note is a kick drum which is held for 2 whole notes. If you're not sure why, ask your instructor.
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, drumMap.kick, drumMap.kick, drumMap.kick], "2n", 0);
-``` 
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, drumMap.kick, drumMap.kick, drumMap.kick],
+  "2n",
+  0,
+);
+```
 
-Since you will be creating a call and response rhythm, one of you will be creating the rhythm for the first bar and the other will be creating the rhythm for the second bar. Think about what we covered in Part 2 of this lab. How can you create some interesting rhythms. You might even find that you have similar taste in music with your partner and recreate a rhythm from a song you like. 
+Since you will be creating a call and response rhythm, one of you will be creating the rhythm for the first bar and the other will be creating the rhythm for the second bar. Think about what we covered in Part 2 of this lab. How can you create some interesting rhythms. You might even find that you have similar taste in music with your partner and recreate a rhythm from a song you like.
 
-Once you are happy with the rhythm you've created, we'll give each of you some time to share what you've created with the class. 
+Once you are happy with the rhythm you've created, we'll give each of you some time to share what you've created with the class.
 
 ## Part 4: Starting Later, Stopping Sooner
 
@@ -142,9 +162,9 @@ In the sequence creation, we said above that you can say "when to start". Our cr
 In the `function keyTyped()` add the following code:
 
 ```js
-  if (key === "1") {
-    startStopSequence(my_sequence);
-  }
+if (key === "1") {
+  startStopSequence(my_sequence);
+}
 ```
 
 Add interaction to your sketch to start and stop a sequence as shown above.
@@ -156,8 +176,13 @@ How can you use the **start time** for your sequence?
 You could try changing to a value greater than 0, such as:
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare], "4n", 2.0);
-``` 
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare],
+  "4n",
+  2.0,
+);
+```
 
 What happens? Does it work? Did it start after a delay?
 
@@ -167,14 +192,34 @@ By default, Tone.js will interpret this number as the number of seconds. If we h
 Quantizing time can help synchronise our beats. Compare the following two ways of delaying the start time:
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare], "4n", 0);
-let second_sequence = createSequence(sampler, [drumMap.lowFloorTom, [], [drumMap.hiFloorTom, drumMap.hiFloorTom], []], "4n", 3.0);
-``` 
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare],
+  "4n",
+  0,
+);
+let second_sequence = createSequence(
+  sampler,
+  [drumMap.lowFloorTom, [], [drumMap.hiFloorTom, drumMap.hiFloorTom], []],
+  "4n",
+  3.0,
+);
+```
 
 ```js
-my_sequence = createSequence(sampler, [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare], "4n", 0);
-let second_sequence = createSequence(sampler, [drumMap.lowFloorTom, [], [drumMap.hiFloorTom, drumMap.hiFloorTom], []], "4n", Tone.Time(3.0).quantize("4n"));
-``` 
+my_sequence = createSequence(
+  sampler,
+  [drumMap.kick, [drumMap.snare, drumMap.splash], [], drumMap.snare],
+  "4n",
+  0,
+);
+let second_sequence = createSequence(
+  sampler,
+  [drumMap.lowFloorTom, [], [drumMap.hiFloorTom, drumMap.hiFloorTom], []],
+  "4n",
+  Tone.Time(3.0).quantize("4n"),
+);
+```
 
 Why might you want to start later? Do you always want to start later? Can you start later dynamically? There are a lot of creative decisions to be made.
 
@@ -185,19 +230,19 @@ You may have noticed that the first argument to our helper function `createSeque
 You may have also noticed that there is another JavaScript file in the template code. `pianoetta.js` contains the `Pianoetta` class from last week. You can create a synth, or an oscillator, or any other Tone.js instrument, and sequence the playing of its notes. Pianoetta is available to use, because in index.html it has been helpfully loaded into our browser context:
 
 ```html
-  <script src="pianoetta.js"></script>
+<script src="pianoetta.js"></script>
 ```
 
 To create a Pianoetta synth you can use the same code as last week (and we have already setup the synth for you as a global variable in the `setup()` function):
 
 ```js
-  synth = new Pianoetta(Tone.Master);
+synth = new Pianoetta(Tone.Master);
 ```
 
 To create a sequence of notes for a synth you just list the notes in an array. The patterns/syntax for timing are the same as for our drum sequence, but the notes can simply be listed as string values:
 
 ```js
-  let synth_sequence = createSequence(synth, ["C4", ["C5", "B4"], ["G4", [], "G4"], "A4"], "4n", 0);
+let synth_sequence = createSequence(synth, ["C4", ["C5", "B4"], ["G4", [], "G4"], "A4"], "4n", 0);
 ```
 
 Create a synth_sequence, and a second drum sequence. Offset start times. Play with dynamically starting and stopping sequences separately (using the code shown above, but triggered with different keys).

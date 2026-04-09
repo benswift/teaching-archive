@@ -14,10 +14,10 @@ Most local networks cover a small area, or have their signals distributed by str
 
 We'd compensate for weak signals by increasing the number of nodes — the density in a particular area. There are multiple issues we'd need to deal with, on both hardware and protocol levels:
 
-* Conserving power (Maybe solar power? What if in shadow?)
-* Conserve power by minimising message passing (But the protocol must be decentralised)
-* Minimise network "hot spots" near the base station. Rather than pulling in all data from a single node, potentially pull it from multiple nearby ones. Maybe the base station should have a wider range?
-* Sensors must be distributed evenly, but must also be able to (indirectly) access all other sensors. What is the best geometry for this? The best pattern? (Explore "optimisation of circles within squares")
+- Conserving power (Maybe solar power? What if in shadow?)
+- Conserve power by minimising message passing (But the protocol must be decentralised)
+- Minimise network "hot spots" near the base station. Rather than pulling in all data from a single node, potentially pull it from multiple nearby ones. Maybe the base station should have a wider range?
+- Sensors must be distributed evenly, but must also be able to (indirectly) access all other sensors. What is the best geometry for this? The best pattern? (Explore "optimisation of circles within squares")
 
 ## Why I decided against it
 
@@ -35,18 +35,18 @@ Instead of embracing pure practicality in my artifact, I've decided to demonstra
 
 I envision a set of nodes, connected by LED strips. When a message is passed between two nodes, the LED strip lights up. The user can:
 
-* Turn on/off individual nodes, and see how the routing topology changes in realtime.
-* Click a button to send a message, and see how it is routed to the base station.
-* Click the base station, and see how all data is collected.
-* Twiddle a knob to change the "data" collected by a single node.
+- Turn on/off individual nodes, and see how the routing topology changes in realtime.
+- Click a button to send a message, and see how it is routed to the base station.
+- Click the base station, and see how all data is collected.
+- Twiddle a knob to change the "data" collected by a single node.
 
 Hardware-wise, each node will need:
 
-* A switch (to turn on/off)
-* A button
-* A potentiometer (or similar knob-like device)
-* A few LED strips connect to other nodes
-* Wires to connect to other nodes.
+- A switch (to turn on/off)
+- A button
+- A potentiometer (or similar knob-like device)
+- A few LED strips connect to other nodes
+- Wires to connect to other nodes.
 
 I've heard good things about the Black Pill board, which has an STM32 ARM M3 microcontroller. According to my last blog post, we could potentially use Rust!
 

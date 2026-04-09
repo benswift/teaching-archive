@@ -15,21 +15,21 @@ In this lab you will:
 2. create your own data set and train a model
 3. make a cool interactive drone synthesizer using machine learning
 
-## Part 1: Portfolio 3 is out! 
+## Part 1: Portfolio 3 is out!
 
-Congratulations on getting Portfolio 2 in! It's now time for Portfolio 3. Make sure to have a read of the specification page and let me know if you have any questions about what is expected. We'll spend the first portion of today's lab doing some work in interpretation. 
+Congratulations on getting Portfolio 2 in! It's now time for Portfolio 3. Make sure to have a read of the specification page and let me know if you have any questions about what is expected. We'll spend the first portion of today's lab doing some work in interpretation.
 
 :::tip
-This portfolio's theme is *"Natural Intelligence / Biological Learning"*. What do those words mean separately? How does the meaning change when they're together? 
+This portfolio's theme is _"Natural Intelligence / Biological Learning"_. What do those words mean separately? How does the meaning change when they're together?
 :::
 
-We'll start with a brainstorming activity. Get a piece of paper and something to write with. 
+We'll start with a brainstorming activity. Get a piece of paper and something to write with.
 
-In 2 minutes, write down as many words that capture any associations/synonyms/reminders/interpretations to the theme. They don't have to make sense to anyone else but yourself. 
+In 2 minutes, write down as many words that capture any associations/synonyms/reminders/interpretations to the theme. They don't have to make sense to anyone else but yourself.
 
-Now consider the words individually. What do the words 'natural', 'biological', 'intelligence', 'learning' make you think about? 
+Now consider the words individually. What do the words 'natural', 'biological', 'intelligence', 'learning' make you think about?
 
-In groups of 2-3, share your responses and any stories that may have come to mind during your brain storm. 
+In groups of 2-3, share your responses and any stories that may have come to mind during your brain storm.
 
 ## Part 2: neural network
 
@@ -161,7 +161,7 @@ goes into more detail and explains saving data and saving models.
 
 <div class="extension-box" markdown="1">
 
-As an extension exercise, try explore one or more of the following: 
+As an extension exercise, try explore one or more of the following:
 
 1. Instead of using a p5 oscillator, try using mp3 files to as sound sources.
    This might be from a instrument sample pack so you can play instead of an

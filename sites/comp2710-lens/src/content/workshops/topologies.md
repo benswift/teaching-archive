@@ -20,7 +20,6 @@ _noun_
 
 2. _[mass noun]_ Mathematics the study of geometrical properties and spatial
    relations unaffected by the continuous change of shape or size of figures.
-
    - _[count noun]_ a family of open subsets of an abstract space such that the
      union and the intersection of any two of them are members of the family,
      and which includes the space itself and the empty set.

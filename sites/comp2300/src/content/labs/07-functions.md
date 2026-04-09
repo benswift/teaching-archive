@@ -52,8 +52,8 @@ As an example, here's the marks for one student which your friend found written
 on a banana on the floor of his lounge room:
 
 | student id | assignment 1 | assignment 2 | final exam |
-|------------|--------------|--------------|------------|
-| s1         |           66 |           73 |         71 |
+| ---------- | ------------ | ------------ | ---------- |
+| s1         | 66           | 73           | 71         |
 
 Your job in this exercise is to write a `calculate_total_mark` function which
 takes **three parameters** (assignment 1 score, assignment 2 score and exam
@@ -87,7 +87,7 @@ remember where you branched **from**, and the `bx lr` instruction to jump
 Here's a partial template (although you'll have to replace the `??`s with actual
 assembly code for it to run:
 
-``` ARM
+```ARM
 main:
   @ set up the arguments
   mov r0, ?? @ ass1 mark
@@ -127,8 +127,8 @@ to give a letter (**A** to **F**) grade to each student based on the following
 formula:
 
 | 90--100 | 80--89 | 70--79 | 60--69 | 50--59 | 0--49 |
-|---------|--------|--------|--------|--------|-------|
-|       A |      B |      C |      D |      E |     F |
+| ------- | ------ | ------ | ------ | ------ | ----- |
+| A       | B      | C      | D      | E      | F     |
 
 You tell your friend to relax---you can write another function which can do
 this.
@@ -136,8 +136,8 @@ this.
 In this exercise you need to write a second function called `grade_from_mark`
 which
 
-- *takes* a numerical mark (0--100) as input parameter
-- *returns* a value represending a letter grade (you can encode the "grade"
+- _takes_ a numerical mark (0--100) as input parameter
+- _returns_ a value represending a letter grade (you can encode the "grade"
   however you like, but the hex values `0xA` to `0xF` might be a nice choice)
 
 :::tip
@@ -177,12 +177,12 @@ Write a `calculate_grade` function which calls (i.e. `bl`s) the
 following students:
 
 | student id | assignment 1 | assignment 2 | final exam |
-|------------|--------------|--------------|------------|
+| ---------- | ------------ | ------------ | ---------- |
 | s2         | 58           | 51           | 41         |
 | s3         | 68           | 81           | 71         |
 | s4         | 88           | 91           | 91         |
 
-Combining these two functions is not too complicated, but remember to save your 
+Combining these two functions is not too complicated, but remember to save your
 link register!
 
 :::info
@@ -193,7 +193,7 @@ Submit a program which uses `calculate_grade` to calculate the mark of student
 ## Exercise 4: recursive functions
 
 Another way to implement the `grade_from_mark` function is using
-recursion---where a function calls *itself* over and over. Each time the
+recursion---where a function calls _itself_ over and over. Each time the
 function calls itself it (usually) passes itself different arguments to the time
 before. Still confused? [Let this jolly englishman walk you through
 it](https://www.youtube.com/watch?v=Mv9NEXX1VHc").
@@ -206,7 +206,7 @@ The basic logic for a `grade_from_mark_recursive` function is this:
 2. otherwise, decrement the mark and recursively call the function passing in
    the new mark.
 
-This recursive pattern will ultimately round the mark down until it hits the 
+This recursive pattern will ultimately round the mark down until it hits the
 base case (1). After this it will then move up through the grades as the function
 works its way back out of the recursive calls.
 
@@ -238,22 +238,22 @@ original `grade_from_mark` function?
 
 In a new initiative, the students get to self-assess their work in the course
 (give themselves a final mark for the course). The only catch here is that the
-student's mark is compared with the teacher's mark. If the student mark is no 
-more than 10 marks better than the teacher's mark, they get the average of the 
+student's mark is compared with the teacher's mark. If the student mark is no
+more than 10 marks better than the teacher's mark, they get the average of the
 two marks (i.e. theirs, and the teacher's). If the discrepancy is more than
 that, they get the teacher's mark **minus** the difference. This should stop any
-cheating---if the student's mark is too high, they'll actually be *worse* off 
+cheating---if the student's mark is too high, they'll actually be _worse_ off
 than before.
 
 Write a `self_assessment` function and incorporate it into the overall
 `calculate_grade_sa` function.  
 The `self_assessment` function should return the students self-assessed grade in `r0`.
 
-Try it with a few different versions of `self_assessment`---some which pass 
-the "no more than 10 marks better than the teacher's mark" criteria, and some that 
+Try it with a few different versions of `self_assessment`---some which pass
+the "no more than 10 marks better than the teacher's mark" criteria, and some that
 don't. Does your program handle all the cases properly?
 
-Now imagine that *you're* the student---so you provide your own
+Now imagine that _you're_ the student---so you provide your own
 `self_assessment` function. Can you think of a way to cheat? Can you craft the
 assembly instructions inside the `self_assessment` function in such a way that
 you can get a better mark than you deserve (without touching the rest of the
@@ -276,8 +276,8 @@ calculate_grade_sa:
   bl self_assessment  @ cheat in here
   ldr r1, [sp], 4
 
-  @ TODO: calculate final grade from: 
-  @ - student grade (r0) 
+  @ TODO: calculate final grade from:
+  @ - student grade (r0)
   @ - teacher grade (r1)
   @ ...
   bx lr
@@ -291,7 +291,7 @@ self_assessment:
 :::tip
 Think about the values on the stack---can you break "outside" and mess with
 things outside of the `self_assessment` function? How could this allow you to
-cheat? *hint*: when we are using the stack pointer `sp` to store things in
+cheat? _hint_: when we are using the stack pointer `sp` to store things in
 memory, can you figure out an offset for reading/writing values "outside" that
 function's part of the stack?  
 :::
@@ -312,7 +312,7 @@ have just learned are being applied to reverse engineering things like the
 
 ## Exercise 6: arrays as arguments
 
-One of the tutors has heard about the good work you've been doing for your teacher friend 
+One of the tutors has heard about the good work you've been doing for your teacher friend
 and they have asked you to help them. Fortunately, they are more organized than the teacher
 and have provided you with a collection of the students results in an array.
 
@@ -335,7 +335,7 @@ main:
 calculate_lab_grades:
   @ ...
   bx lr
-  
+
 @ ...
 
 .data
@@ -357,32 +357,35 @@ results:
 ```
 
 Write the `calculate_lab_grades` function to iterate over the students `results` array
+
 1. load the students results in to the registers
-2. calculate their final grade using your `calculate_grade` function (the original one, 
-not the self assessment version)
-3. store the final grade in the empty word at the end of each entry, eg.  
+2. calculate their final grade using your `calculate_grade` function (the original one,
+   not the self assessment version)
+3. store the final grade in the empty word at the end of each entry, eg.
+
 ```ARM
 @SX
 .word 20, 40, 58, 0 @ <--- here
 ```
+
 4. repeat for the length of the array
 5. return using `bx lr`
 
-If you've implemented it correctly, your memory at the results array should 
-look like this afterwards:  
+If you've implemented it correctly, your memory at the results array should
+look like this afterwards:
 
 ![final](./images/lab-7/array-in-memory.png)
 
-*note: the final grades are stored in the 00 offset 
-column, starting from 20000010*
+_note: the final grades are stored in the 00 offset
+column, starting from 20000010_
 
 :::info
 Commit & push your program to add the grades to the array.
 :::
 
 :::tip
-The values in this code are stored in memory using `.word`s which are 32 bits 
-*(4 bytes)* in size, yet no entry needs more than a byte, can you rework your code and 
+The values in this code are stored in memory using `.word`s which are 32 bits
+_(4 bytes)_ in size, yet no entry needs more than a byte, can you rework your code and
 the array to reduce its size in memory?
 :::
 

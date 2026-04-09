@@ -9,11 +9,11 @@ week: 3
 
 ## Study
 
-The "Study" part of the "Study Tour" has been rather disappointing overall. And that's *inspite* of already low expectations caused by my experience in other ANU CS courses[^logic]. There has been almost zero technical content in the lectures, and whenever there is a possibility of going in depth, it's quickly handwaved over.  Instead we have been given very high level overviews that can be gained from Wikipedia. One could argue that the Privacy Issues in IoT lecture did contain more information than Wikipedia, but at it's very core it's about side channel attacks, which I assume anyone even remotely technical will be familiar with in the light of [Spectre](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)).
+The "Study" part of the "Study Tour" has been rather disappointing overall. And that's _inspite_ of already low expectations caused by my experience in other ANU CS courses[^logic]. There has been almost zero technical content in the lectures, and whenever there is a possibility of going in depth, it's quickly handwaved over. Instead we have been given very high level overviews that can be gained from Wikipedia. One could argue that the Privacy Issues in IoT lecture did contain more information than Wikipedia, but at it's very core it's about side channel attacks, which I assume anyone even remotely technical will be familiar with in the light of [Spectre](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>) and [Meltdown](<https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)>).
 
 The "major project" of making an IoT smart vehicle has to be the worst offender. We are given code templates that we need to fill in. The content we need to fill in are present in power point slides that have been handed to us. So the project is effectively reduced to retyping code. Fortunately (for me), we only have 3 nodes with five people in the group, with other people willing to retype, so I could focus on other things.
 
-Other than that, we have been fed a bunch of marketing spiel, for BiT itself (we are already here. Stop marketing to us) and the megacorporations IBM and SAP. The IBM company visit consisted of marketing for IBM Z platform and a "workshop" on said platform where we learnt how to create/edit APIs. Except once again, the workshop didn't really teach us anything that we wouldn't get by reading the *furnished* manual. While the IBM visit atlest pretended to be relevant, the SAP visit was entirely marketing spiel, hilighting how they are essential~~ly an Lovecraftian entity~~. Almost nobody notices that they are present, but their ~~tendrils extend~~ technology is used across almost all aspects of modern ~~consumerism~~ life.
+Other than that, we have been fed a bunch of marketing spiel, for BiT itself (we are already here. Stop marketing to us) and the megacorporations IBM and SAP. The IBM company visit consisted of marketing for IBM Z platform and a "workshop" on said platform where we learnt how to create/edit APIs. Except once again, the workshop didn't really teach us anything that we wouldn't get by reading the _furnished_ manual. While the IBM visit atlest pretended to be relevant, the SAP visit was entirely marketing spiel, hilighting how they are essential~~ly an Lovecraftian entity~~. Almost nobody notices that they are present, but their ~~tendrils extend~~ technology is used across almost all aspects of modern ~~consumerism~~ life.
 
 It wasn't total disappointemnt though. The "culture" classes, consisting of Paper Cutting and Calligraphy, were actually pretty fun.
 
@@ -31,13 +31,13 @@ The Forbidden City on the other hand was quite interesting. Especially it's Hall
 
 While I was admiring replicas of the mechanism, the group left without me, so I used this opportunity to visit Tiananmen Square and pay my respects to the victims of the [1989 massacare](https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests). There were a shocking number of cameras (even by modern (and China) standards), so I just mourned them silently before moving on.
 
-Unfortunately, due to the cold, the group chickened out (damn aussies *shakes fist*) in our visit to the Temple of Heaven, so I plan to visit again this Sunday.
+Unfortunately, due to the cold, the group chickened out (damn aussies _shakes fist_) in our visit to the Temple of Heaven, so I plan to visit again this Sunday.
 
 Other than that, the food and tea have been highlights. The food on campus is incredibly cheap, but greasy to the point of being inedible. However, if we venture off campus to Zhongguancun and Wangfujing, the food there is absolutely incredible. Not as cheap as campus (lunch might cost you a whole 30RMB (~$6)) but much better that anything I've had anywhere. (As I remarked to a friend, some of the dishes are basically out of [Shokugeki no Souma](https://www.youtube.com/watch?v=uyLH_5iJuIQ)).
 
 There have also been so many wierd combinations in the Tea. Most of them quite nice. I've had quite the range, going from Oolong Cheese Tea to Tomato Jasamine Tea.
 
-I nearly forgot to mention - Silk Street has some incredible haggling. I expected the 10-30% discounts standard across Asia, so my first purchases involved initial offers at ~40% of the asking price. When those were a bit *too* easy, I realised I could negotiate for 70%+ discounts. Unfortunately, my biggest purchase was my first, but oh well.
+I nearly forgot to mention - Silk Street has some incredible haggling. I expected the 10-30% discounts standard across Asia, so my first purchases involved initial offers at ~40% of the asking price. When those were a bit _too_ easy, I realised I could negotiate for 70%+ discounts. Unfortunately, my biggest purchase was my first, but oh well.
 
 # Additional Artefact Ideation
 
@@ -51,7 +51,7 @@ In fact, this is even worse in China, where WeChat is widely adopted and used fo
 
 Given how little people seem to care, I doubt that straight forward collections of cameras and other sensors will be able to extract information that people don't mind megacorporations and governments having.
 
-I shouldn't *really* be surprised, given the (lack of) any change since the PRISM leaks, but actually thinking about it, and observing the world around me makes me feel that whatever I do would be pointless.
+I shouldn't _really_ be surprised, given the (lack of) any change since the PRISM leaks, but actually thinking about it, and observing the world around me makes me feel that whatever I do would be pointless.
 
 On the meshnet side, unfortunately, it looks like it won't be a very interesting project because it has by and large [already been done](https://hyperboria.net/), and in fact IoT devices already [provide implementations](https://www.espressif.com/en/products/software/esp-mesh/overview), so there isn't much for me to do.
 

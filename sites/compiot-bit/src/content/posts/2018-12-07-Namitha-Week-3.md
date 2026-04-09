@@ -1,11 +1,11 @@
 ---
 author: Namitha Sara John
 date: 2018-12-07
-title : Week 3 Blog Post
+title: Week 3 Blog Post
 week: 3
 ---
 
-This is my blog post for our second week in Beijing.  I will be discussing what I learned this week, some of the activities we did and the development of my ideas for the artefact.
+This is my blog post for our second week in Beijing. I will be discussing what I learned this week, some of the activities we did and the development of my ideas for the artefact.
 
 ## What Did We Do?
 

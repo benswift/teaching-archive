@@ -30,17 +30,17 @@ In terms of software & databases & Api's i'm deciding whether to use C# & MySQL 
 
 ### Milestones
 
-| **Key Milestones** | **Start Date** | **Projected End Date** |
-|-------------------------------------------------|--------|--------|
-| Experiment with MicroController | 27 Dec | 02 Jan |
-| Programming MicroController/Sensor | 02 Jan |  08 Jan |
-| **Pre-Minimum Viable Product** | 08 Jan | 08 Jan |
-| Hooking it up to the database | 08 Jan | 15 Jan |
-| Connecting the database with basic front-end UI | 22 Jan | 29 Jan |
-| **Minimum Viable Product** | 29 Jan | 29 Jan |
-| Developing/Designing the front-end UI | 29 Jan | 05 Feb |
-| Polishing/Garbage Collection | 29 Jan | 05 Feb |
-| **Live Version** | 06 Feb | 06 Feb |
+| **Key Milestones**                              | **Start Date** | **Projected End Date** |
+| ----------------------------------------------- | -------------- | ---------------------- |
+| Experiment with MicroController                 | 27 Dec         | 02 Jan                 |
+| Programming MicroController/Sensor              | 02 Jan         | 08 Jan                 |
+| **Pre-Minimum Viable Product**                  | 08 Jan         | 08 Jan                 |
+| Hooking it up to the database                   | 08 Jan         | 15 Jan                 |
+| Connecting the database with basic front-end UI | 22 Jan         | 29 Jan                 |
+| **Minimum Viable Product**                      | 29 Jan         | 29 Jan                 |
+| Developing/Designing the front-end UI           | 29 Jan         | 05 Feb                 |
+| Polishing/Garbage Collection                    | 29 Jan         | 05 Feb                 |
+| **Live Version**                                | 06 Feb         | 06 Feb                 |
 
 ## Warm Regards
 

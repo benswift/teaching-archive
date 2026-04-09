@@ -13,7 +13,9 @@ image: ../deliverables-year-11/images/prototype/alvaro-reyes-qWwpHwip31M-unsplas
 - **Due:** 18 June 2025, 23:55
 - **Mark weighting:** 25%
 - **Templates:** [template repo1](), [template repo 2](), [template repo 3]()
+
 * **Submission:** PDF upload in Wattle with code in GitLab.
+
 - **Policies:** see the [policies page](/policies/)
 
 ## Description
@@ -23,6 +25,7 @@ The portfolio will be an ongoing assessment item for term 2. It's purpose is to 
 ### Theme one is: **a better world**.
 
 For this theme we would like you to explore the concept of better worlds: not necessarily utopias, but worlds which would better meet the needs of its inhabitants. You can consider people, or the more-than-human world. Your exploration of the theme should include:
+
 - who is this world better for?
 - in which aspect is the world better?
 - what does _better_ even mean?
@@ -45,7 +48,7 @@ You are expected to commit code to your repository at least once a fortnight.
 
 [AI for Good](https://aiforgood.itu.int/), [AI Safety](https://www.australiansforaisafety.com.au/), [AI Fairness](https://theconversation.com/building-fairness-into-ai-is-crucial-and-hard-to-get-right-220271), [AI for All](https://ai-4-all.org/) and [AI Ethics](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence) are all different attempts to explore ways of safely using artificial intelligence for the benefit of humanity.
 What is **good**, **right** and **fair**? Good for whom, right for whom, fair for whom? Who has the power to make these decisions, and who is included in the decision-making process?
-Don't forget the more-than-human world in determining "who to include"! 
+Don't forget the more-than-human world in determining "who to include"!
 
 We do ask that your project meets the following requirements:
 
@@ -102,11 +105,11 @@ The portfolio entries should be in the style of an informal blog. Any photos rel
 ## Submission process {#submission-process}
 
 You must submit each portfolio entry _and_ the corresponding code by **committing and pushing it to GitLab
-by 11:59pm** for each deadline above. 
+by 11:59pm** for each deadline above.
 You must push it to _your fork_ of the template repo (the same process we use every week in the labs).
 
 Remember: a markdown file is just a file like all the other files (e.g. `.js`,
-`.html`) you've had in your template repository every week. 
+`.html`) you've had in your template repository every week.
 You just need to modify the relevant file and commit, then push it up to GitLab as usual.
 
 Once you've done that, it's a good idea to log into the [GitLab web interface](https://gitlab.cecs.anu.edu.au/users/sign_in) and
@@ -156,25 +159,25 @@ The marking criteria are connected to the [course learning outcomes (LOs)](/outl
 
 - To what degree have you explored and engaged with the technical contexts and approaches we have encountered over the 2 years of the course (including 3D, shaders and artificial intelligence approaches). YOU ARE NOT EXPECTED TO ENGAGE WITH ALL TECHNIQUES FOR EACH PORTFOLIO SUBMISSION.
 - To what degree have you developed your own code? Including code from other sources is fine - but you need to acknowledge all sources. You should try to modify, adapt, or evolve the code to fit your interpretation of the theme. Building something new and unexpected from multiple sources also represents creativity.
-- Portfolio 1 is looking for 3D or virtual world creation. 
+- Portfolio 1 is looking for 3D or virtual world creation.
 - Portfolio 2 is looking for the incorporation of AI-generation of artistic content
 - Portfolio 3 is open-ended: you may include any aspect of coding covered over the course.
 
 :::info
-Note: the mark is for your portfolio entry, not the code itself. 
-However, you must `commit` and `push` the code associated with each portfolio entry as well (as [stated above](#submission-process)) 
+Note: the mark is for your portfolio entry, not the code itself.
+However, you must `commit` and `push` the code associated with each portfolio entry as well (as [stated above](#submission-process))
 to show us the work that your portfolio entry is based on---if you don't push the code that will be
 considered a submission which does not [conform to the spec](#spec-conformance).
 :::
 
 ## Year 12 Portfolio Assessment Rubric
 
-| | A Grade<br>(9-10) | B Grade<br>(7-8) | C Grade<br>(5-6) | D Grade<br>(3-4) | E Grade<br>(0-2) |
-| :---     | :---    |  :---    | :---     | :---     | :---    |
-| **D1 [25%]<br/>Interaction Design<br/>LO #1 and #2** | considers interaction/evolution as a feedback loop between user input and visuals/sound. Uses this feedback to design an engaging experience for the user/audience (relates to D3 and D4) | explores several interactions/modes of evolution over time, includes critical reflection of design (selection of appropriate interaction/responsiveness) | explores several interactions/modes of evolution over time designs, but no critical reflection of alignment with theme | minimal exploration of interaction and/or evolution over time (only explores one interaction type) | no exploration of interaction or responsiveness or evolution over time |
-| **D2 [25%]<br/>Artistic Output<br/>LO #2** | clear evolution of visual outcomes with well justified decision making in relation and critical exploration of theme (below). (relates to D3 and D4) | clear evolution of visual outcomes with well justified decision making | satisfactory artistic output which includes several variations or stages of evolution | some visual output considered, but not much variation or evolution | very limited output, or no output |
-| **D3 [25%]<br/>Critical Exploration of Theme<br/>LO #1 and #4** | interacting with the work makes the viewer think differently about the theme---wow factor  | theme is explored through the artefact/experience, including references to prior art | theme is clearly presented, but is not deeply integrated into the overall artefact/experience | very superficial mention of the theme (e.g. theme is only represented by text on screen) | the theme is not represented in the artistic output or interaction design |
-| **D4 [25%]<br/>Technical Quality<br/>LO #1 and #3** | no major bugs, significant evidence of work by the student including something right at the edge (or beyond) the techniques we covered in this course, good abstraction.| no major bugs, significant evidence of work by the student and engagement with techniques we covered in this course | no major bugs, but lacks significant ambition on the technical side _or_, strong engagement with techniques through combining three (or fewer) code sources  without significant changes | it _sort of_ works, but it's super janky _or_ it works, but represents very limited changes to prior work | it doesn't work at all _or_ it is not the student's work |
+|                                                                 | A Grade<br>(9-10)                                                                                                                                                                         | B Grade<br>(7-8)                                                                                                                                         | C Grade<br>(5-6)                                                                                                                                                                        | D Grade<br>(3-4)                                                                                          | E Grade<br>(0-2)                                                          |
+| :-------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ |
+| **D1 [25%]<br/>Interaction Design<br/>LO #1 and #2**            | considers interaction/evolution as a feedback loop between user input and visuals/sound. Uses this feedback to design an engaging experience for the user/audience (relates to D3 and D4) | explores several interactions/modes of evolution over time, includes critical reflection of design (selection of appropriate interaction/responsiveness) | explores several interactions/modes of evolution over time designs, but no critical reflection of alignment with theme                                                                  | minimal exploration of interaction and/or evolution over time (only explores one interaction type)        | no exploration of interaction or responsiveness or evolution over time    |
+| **D2 [25%]<br/>Artistic Output<br/>LO #2**                      | clear evolution of visual outcomes with well justified decision making in relation and critical exploration of theme (below). (relates to D3 and D4)                                      | clear evolution of visual outcomes with well justified decision making                                                                                   | satisfactory artistic output which includes several variations or stages of evolution                                                                                                   | some visual output considered, but not much variation or evolution                                        | very limited output, or no output                                         |
+| **D3 [25%]<br/>Critical Exploration of Theme<br/>LO #1 and #4** | interacting with the work makes the viewer think differently about the theme---wow factor                                                                                                 | theme is explored through the artefact/experience, including references to prior art                                                                     | theme is clearly presented, but is not deeply integrated into the overall artefact/experience                                                                                           | very superficial mention of the theme (e.g. theme is only represented by text on screen)                  | the theme is not represented in the artistic output or interaction design |
+| **D4 [25%]<br/>Technical Quality<br/>LO #1 and #3**             | no major bugs, significant evidence of work by the student including something right at the edge (or beyond) the techniques we covered in this course, good abstraction.                  | no major bugs, significant evidence of work by the student and engagement with techniques we covered in this course                                      | no major bugs, but lacks significant ambition on the technical side _or_, strong engagement with techniques through combining three (or fewer) code sources without significant changes | it _sort of_ works, but it's super janky _or_ it works, but represents very limited changes to prior work | it doesn't work at all _or_ it is not the student's work                  |
 
 ## FAQ
 
@@ -188,6 +191,7 @@ Your Markdown should looks like this:
 Raji, et al[^Raji_2021], discuss the dangers of Artificial Intelligence ..
 
 ---
+
 **Bibliography**
 
 [^Raji_2021]: Raji, Inioluwa Deborah, Emily M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna. “AI and the Everything in the Whole Wide World Benchmark.” arXiv:2111.15366 [Cs], November 26, 2021. http://arxiv.org/abs/2111.15366.
@@ -198,6 +202,7 @@ Jekyll will render this as follows:
 Raji, et al[^Raji_2021], discuss the dangers of Artificial Intelligence ..
 
 ---
+
 **Bibliography**
 
 [^Raji_2021]: Raji, Inioluwa Deborah, Emily M. Bender, Amandalynne Paullada, Emily Denton, and Alex Hanna. “AI and the Everything in the Whole Wide World Benchmark.” arXiv:2111.15366 [Cs], November 26, 2021. http://arxiv.org/abs/2111.15366.

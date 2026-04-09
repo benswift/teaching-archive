@@ -27,7 +27,7 @@ The information will be categorised and displayed in a basic and intuitive way a
 
 For demonstration purposes, we might use a laptop to act as the server as it could be easier to set up.
 
-* Insert Diagram *
+- Insert Diagram \*
 
 ### Hardware
 

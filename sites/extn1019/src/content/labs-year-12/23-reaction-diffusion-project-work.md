@@ -15,7 +15,7 @@ In this lab you will:
    - you can sketch using code
    - you can sketch using pencil and paper
    - you may need to engage with further brainstorming to clarify/solidify your ideas
-3. Write about what you have done (update your project documentation and project progress) 
+3. Write about what you have done (update your project documentation and project progress)
 4. investigate (briefly) the concept of **reaction-diffusion**
 
 ## Introduction
@@ -23,11 +23,11 @@ In this lab you will:
 We will continue working on your Final Project!
 
 You can find all the details about the final project assessment task by visiting the [final project
-deliverables](/deliverables-year-12/03-final-project/) page. 
+deliverables](/deliverables-year-12/03-final-project/) page.
 
-**NOTE:** You **must Must MUST fork and clone** the project template repository. A number of students are still to fork and clone, and it is now Week 4 of 9 weeks for working on your project!!! You can find the [template repository for your final project submission here.]().  If there are [**blockers**](https://www.atlassian.com/blog/project-management/most-common-project-blockers) for working on your project we will work on identifying and [getting around these](https://services.unimelb.edu.au/counsel/resources/study-related-issues).
+**NOTE:** You **must Must MUST fork and clone** the project template repository. A number of students are still to fork and clone, and it is now Week 4 of 9 weeks for working on your project!!! You can find the [template repository for your final project submission here.](). If there are [**blockers**](https://www.atlassian.com/blog/project-management/most-common-project-blockers) for working on your project we will work on identifying and [getting around these](https://services.unimelb.edu.au/counsel/resources/study-related-issues).
 
-The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**. 
+The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**.
 
 ## Part 1: Confirming your project implementation plan [15-30 minutes]
 
@@ -53,12 +53,12 @@ When you have finished your sketching for today, make sure you stage, commit and
 
 ## Part 3: Documenting [10 minutes]
 
-Write a short piece reflecting on the progress you have made. 
+Write a short piece reflecting on the progress you have made.
 
-* What did you achieve today?
-* How are you tracking against your plan?
-* What is working? 
-* What is not working/needs to be changed, scrapped, or tweaked?
+- What did you achieve today?
+- How are you tracking against your plan?
+- What is working?
+- What is not working/needs to be changed, scrapped, or tweaked?
 
 Adapt your plan if necessary.
 
@@ -70,11 +70,11 @@ This will be completed offline following your instructors prompts.
 
 [Reaction Diffusion Systems](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) are a mathematical model of a dynamic system where 2 or more components interact through a process of "reaction" (a substance transformative process) and "diffusion" (a spatially transformative process with the effect of "spreading").
 
-Originally developed as a [mathematical model for analysing the spread of biological phenomena](https://www.sciencedirect.com/science/article/abs/pii/B9780080925233500149), Reaction-Diffusion models have been found applications in Chemistry, Geology, Physics and Ecology. 
+Originally developed as a [mathematical model for analysing the spread of biological phenomena](https://www.sciencedirect.com/science/article/abs/pii/B9780080925233500149), Reaction-Diffusion models have been found applications in Chemistry, Geology, Physics and Ecology.
 
 The mathematics is complex (literally involving complex numbers), and so this is beyond the scope of this lesson.
 
-However, the algorithm for a reaction-diffusion system involving 2 substances using the Gray-Scott model is relatively straightforward and has been covered a a [coding challenge in The Coding Train by Dan Schiffman](https://thecodingtrain.com/challenges/13-reaction-diffusion) based on a [description of the process by Karl Sims](https://karlsims.com/rd.html). 
+However, the algorithm for a reaction-diffusion system involving 2 substances using the Gray-Scott model is relatively straightforward and has been covered a a [coding challenge in The Coding Train by Dan Schiffman](https://thecodingtrain.com/challenges/13-reaction-diffusion) based on a [description of the process by Karl Sims](https://karlsims.com/rd.html).
 
 The lab template repository contains an example of the code with a few changes.
 
@@ -84,13 +84,13 @@ Follow the live demonstration and Q&A session with your instructor.
 
 One thing to note is the speed of this implementation - it is incredibly slow. This could be an example of "slow art". :-)
 
-However, you can find much faster implementations, including those using [shaders for faster processing speeds](https://www.shadertoy.com/results?query=reaction+diffusion). 
+However, you can find much faster implementations, including those using [shaders for faster processing speeds](https://www.shadertoy.com/results?query=reaction+diffusion).
 
 High-speed reaction-diffusion systems can be used to
 
-* create beautiful, organic-like shapes
-* transformative animations seeded from any digital image
-* 3D surface deformations, generative geometry, and amazing textures
+- create beautiful, organic-like shapes
+- transformative animations seeded from any digital image
+- 3D surface deformations, generative geometry, and amazing textures
 
 You may wish to consider how reaction-diffusion systems might be used in an artwork.
 

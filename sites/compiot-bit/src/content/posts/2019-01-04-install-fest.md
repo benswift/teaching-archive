@@ -14,9 +14,9 @@ Here is a run down of what I have accomplished so far:
 #### on the server (my laptop)
 
 - Installed and configured [mosquitto](https://mosquitto.org)
-![mosquitto setup](./images/sam/mosquitto_setup.png)
+  ![mosquitto setup](./images/sam/mosquitto_setup.png)
 - Reserved a local ip address on my network so it doesn't change later
-![ip reservation](./images/sam/reserved_ip.png)
+  ![ip reservation](./images/sam/reserved_ip.png)
 - setup a basic MQTT client ([paho MQTT](https://pypi.org/project/paho-mqtt/)) to view (subscribe to) messages sent from the raspberry pi.
 
 #### on the IoT device (rapsberry pi)
@@ -30,7 +30,8 @@ Here is a run down of what I have accomplished so far:
 I've written two simple scripts to test the broker, one called `client.py` the other `monitor.py`. For the time being, the `client` just listens and prints out any messages it receives on a testing channel I set up `testing/heartbeat`. The `monitor`, as a sensor device would, constantly publishes messages to the channel.
 
 #### client
-``` python
+
+```python
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     client.subscribe("testing/heartbeat")
@@ -48,7 +49,8 @@ client.loop_forever() # send/recv loop
 ```
 
 #### monitor
-``` python
+
+```python
 
 client = mqtt.Client()
 client.on_connect = on_connect

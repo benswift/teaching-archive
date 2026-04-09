@@ -14,8 +14,7 @@ function p5SsrStub() {
       if (id === "p5" && options?.ssr) return virtualId;
     },
     load(id) {
-      if (id === virtualId)
-        return "export default class p5 {}; export { p5 };";
+      if (id === virtualId) return "export default class p5 {}; export { p5 };";
     },
   };
 }
@@ -47,8 +46,7 @@ export default defineConfig({
           id: "anucecsit.comp1720-extension-pack",
           vscode_url:
             "https://marketplace.visualstudio.com/items?itemName=anucecsit.comp1720-extension-pack",
-          vscodium_url:
-            "https://open-vsx.org/extension/anucecsit/comp1720-extension-pack",
+          vscodium_url: "https://open-vsx.org/extension/anucecsit/comp1720-extension-pack",
         },
         contacts: {
           page_contact: { email: "COMP1720@anu.edu.au" },

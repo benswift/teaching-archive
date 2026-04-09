@@ -21,21 +21,21 @@ In this lab you will:
 We will continue working on your Final Project!
 
 You can find all the details about the final project assessment task by visiting the [final project
-deliverables](/deliverables-year-12/03-final-project/) page. 
+deliverables](/deliverables-year-12/03-final-project/) page.
 
 You can find the [template repository for your final project submission here.]()
 
-The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**. 
+The theme for the final project this year is **"&#8230; endings &#8230; beginnings &#8230;"**.
 
-But first, let's have a quick look at ***Fractals!***
+But first, let's have a quick look at **_Fractals!_**
 
 ## Part 1: Fractals
 
-First up - what is a Fractal?  Where did this name come from? What does it mean?
+First up - what is a Fractal? Where did this name come from? What does it mean?
 
 In [Lab 8]() one option for investigating shaders was:
 
-**Self Similarity**: Fractal objects are self-similar across a range of scales. The "similarity" means that there are differences &mdash; and this different/same nature gives rise to incredible complexity and beauty.  Many natural objects have a fractal aspect.
+**Self Similarity**: Fractal objects are self-similar across a range of scales. The "similarity" means that there are differences &mdash; and this different/same nature gives rise to incredible complexity and beauty. Many natural objects have a fractal aspect.
 
 Take a few minutes to explore the definitions of fractals. What does the term mean? Where did it come from?
 What types of fractal are there?
@@ -45,9 +45,10 @@ As an example we can look at the [Mandelbrot Set](https://mathworld.wolfram.com/
 **DO:** Fork and clone the [lab template repo]().
 
 We will look at:
-* how you can code a visualisation of the Mandelbrot set
-* how to use layers (and what this means for interfaces)
-* how to set the cursor (and how this is useful in interfaces)
+
+- how you can code a visualisation of the Mandelbrot set
+- how to use layers (and what this means for interfaces)
+- how to set the cursor (and how this is useful in interfaces)
 
 Follow the live demonstration and Q&A session with your instructor.
 
@@ -59,25 +60,26 @@ For those who are not physically present in class, here's a run-through of what 
 1. disconnect from all internet connected devices and all electronic user interfaces
 2. grab a notepad and pencil (yes, pencil is preferred)
 3. answer the questions:
-  - what does an ending look like, feel like, taste like?
-  - are endings final, or part of a cycle?
-     * subnote: in our universe matter/energy cannot be created or destroyed
-     * subquestion: was the beginning of our universe an exception to that rule?
-  - in which ways might endings be connected to beginnings?
-  - antithesis: in which ways are endings final, or beginnings isolated/enduring
-  - write examples of important, significant or dramatic endings (you can make this personal)
-  - can these been seen as connected to new beginnings? examples please!
-  - how might this be represented in a digital art work? 
 
-OK &ndash; Great work.  Now we can go back online.
+- what does an ending look like, feel like, taste like?
+- are endings final, or part of a cycle?
+  - subnote: in our universe matter/energy cannot be created or destroyed
+  - subquestion: was the beginning of our universe an exception to that rule?
+- in which ways might endings be connected to beginnings?
+- antithesis: in which ways are endings final, or beginnings isolated/enduring
+- write examples of important, significant or dramatic endings (you can make this personal)
+- can these been seen as connected to new beginnings? examples please!
+- how might this be represented in a digital art work?
+
+OK &ndash; Great work. Now we can go back online.
 
 If you haven't already, fork and clone the [final project repo]().
 
-You will see that the template repo for this week has a folder called `assets\` 
-with a powerpoint file `brainstorm.ppt` in it. 
+You will see that the template repo for this week has a folder called `assets\`
+with a powerpoint file `brainstorm.ppt` in it.
 
-While you do not ***need*** to write any code in this lab, you can do so after 
-completing your initial brainstorming. Right now, you should open up the powerpoint file. 
+While you do not **_need_** to write any code in this lab, you can do so after
+completing your initial brainstorming. Right now, you should open up the powerpoint file.
 You will see that there are several slides
 already in there, each with a heading. These headings are there to help you
 interpret the theme from different perspectives.
@@ -132,31 +134,31 @@ There are, instead, requirements for documentation.
 
 The spec for the final project asks for an `Interpretation.md` and a `README.md`
 
-* `README.md` should be completed later (you need to describe how it works and how to interact with your artefact).
-* `Interpretation.md` will contain the information which might be presented on a little card beside your artwork. It must include a brief [400 words] explanation of your interpretation of the theme and how your creative code artefact expresses this. Include the artist name, the title of the work (does not have to be the same as the theme), year, theme, interpretation [400 words], and credits (if you incorporate additional material generated by others including AI)
+- `README.md` should be completed later (you need to describe how it works and how to interact with your artefact).
+- `Interpretation.md` will contain the information which might be presented on a little card beside your artwork. It must include a brief [400 words] explanation of your interpretation of the theme and how your creative code artefact expresses this. Include the artist name, the title of the work (does not have to be the same as the theme), year, theme, interpretation [400 words], and credits (if you incorporate additional material generated by others including AI)
 
 You also are required to generate a PDf `project-documentation.pdf` which contains thorough documentation of your project.
 
 Project documentation may include:
 
-* Statement of project goals, objectives or outputs
-* Declaration of start and end times
-* Project inputs and required resources
-* Scope of work (what is included and what is excluded)
-* Plan of work and delivery schedule
-* Critical or influential decisions and decision points
-* Designs, sketches, brain-storming, doodles
-* Screen shots of work-in-progress
-* Reflections on project progress, changes and outcomes
-* Your GitLab commit history
+- Statement of project goals, objectives or outputs
+- Declaration of start and end times
+- Project inputs and required resources
+- Scope of work (what is included and what is excluded)
+- Plan of work and delivery schedule
+- Critical or influential decisions and decision points
+- Designs, sketches, brain-storming, doodles
+- Screen shots of work-in-progress
+- Reflections on project progress, changes and outcomes
+- Your GitLab commit history
 
 ## Part 6: Planning
 
 We have 9 weeks to build our project. Today you should have developed an interpretation of the theme.
 
-* What else do you need to do?  
-* What do you need in order to do it?
-* When will you do each _thing_ you just identified?
+- What else do you need to do?
+- What do you need in order to do it?
+- When will you do each _thing_ you just identified?
 
 Take some time to define your schedule. Pay attention to commitments at College, home, work, sport, and any other activities which cannot be changed by you.
 
@@ -166,10 +168,10 @@ It is time to make some decisions about which aspects of our coding journey you 
 
 You may wish to also draw some designs or plans for:
 
-* look and feel
-* modes and systems of interaction
-* evolution
-* dynamic transformation
+- look and feel
+- modes and systems of interaction
+- evolution
+- dynamic transformation
 
 ## Summary
 

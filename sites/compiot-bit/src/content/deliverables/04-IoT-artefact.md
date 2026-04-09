@@ -19,20 +19,22 @@ date: 2019-02-22
 - **Submission:** at [the exhibition](/deliverables/04-IoT-artefact/#the-exhibition)
 
 Throughout the course you get to design and **build** a prototype IoT
-[artefact](#why-is-it-called-an-artefact) exploring the theme *(dis)connecting
-together*.
+[artefact](#why-is-it-called-an-artefact) exploring the theme _(dis)connecting
+together_.
 
 This artefact can be as creative or conventional and as use(ful/less) as you
 like, but you should use it to think through the wider context of IoT systems.
 
 Some creative examples:
-- [*Being Radiotropic* (wifi networks in sync with nature), Tega Brain](http://www.tegabrain.com/Being-Radiotropic)
-- [*Six Monkeys* (physical interactions with email), Brendan Dawes](http://brendandawes.com/projects/sixmonkeys/)
-- [*Re-Wired / Re-Mixed: Event for Dismembered Body*, Stelarc](http://stelarc.org/?catID=20353)
+
+- [_Being Radiotropic_ (wifi networks in sync with nature), Tega Brain](http://www.tegabrain.com/Being-Radiotropic)
+- [_Six Monkeys_ (physical interactions with email), Brendan Dawes](http://brendandawes.com/projects/sixmonkeys/)
+- [_Re-Wired / Re-Mixed: Event for Dismembered Body_, Stelarc](http://stelarc.org/?catID=20353)
 
 Some more traditional examples:
-- [*Solar Freakin' Roadways*](https://youtu.be/qlTA3rnpgzU)
-- [*Toymail, wirelessly-networked toys*](https://youtu.be/Onb6Gqtf41Y)
+
+- [_Solar Freakin' Roadways_](https://youtu.be/qlTA3rnpgzU)
+- [_Toymail, wirelessly-networked toys_](https://youtu.be/Onb6Gqtf41Y)
 
 If you see more interesting (and inspiring) projects, you should
 [blog](/deliverables/01-design-blog/) about them.
@@ -46,15 +48,15 @@ community is building and see what interests you.
 
 However, as discussed below in the [FAQ](#faq) your artefact must at least
 
-- be a *thing*
-- be connected to the *internet* (or at least to other devices)
+- be a _thing_
+- be connected to the _internet_ (or at least to other devices)
 - have sensors and/or actuators to sense, process and act on the world in some way
 - be suitable for public exhibition
 
 If you're unsure if your project ideas satisfy any of the above criteria (i.e.
 is it a thing? is it connected to the internet?) then you need to discuss with
 the course convenor. It's inevitable that some projects will fall more on the
-*internet* side and others more on the *things* side of the IoT spectrum, and
+_internet_ side and others more on the _things_ side of the IoT spectrum, and
 that's ok---we want to give you heaps of freedom to build the thing you want to
 build. But if there's any debate about whether your project satisfies the spec,
 the course convenor's decision is final. So if you're in doubt, have a
@@ -128,7 +130,7 @@ will help the assessors understand what you've done and assess it accordingly.
 
 ## FAQ {#faq}
 
-### Does it have to be connected to the *internet*?
+### Does it have to be connected to the _internet_?
 
 Well, yeah---it's the **I** in **I**oT. Or at least, it must be networked in
 some way. Your artefact can have plenty of parts which don't connect, but there
@@ -140,7 +142,7 @@ We want to be accommodating here, so there are probably ways to take what you're
 interested in and add some networked dimension, so have a chat about your ideas
 on the forum.
 
-### Does it have to be a *thing*?
+### Does it have to be a _thing_?
 
 Well, yeah---it's the **T** in Io**T**. If the ideas you're interested in are
 conceptual/mathematical rather than physical things then you'll have to figure
@@ -150,14 +152,14 @@ We want to be accommodating here, so there are probably ways to do it well
 (perhaps a physical game/sculpture which represents the concepts you're
 interested in) but you'll need to discuss with us first.
 
-### Why is it called an *artefact*? {#why-is-it-called-an-artefact}
+### Why is it called an _artefact_? {#why-is-it-called-an-artefact}
 
-The word *artefact* comes from the Latin phrase *arte factum*, combining ars
+The word _artefact_ comes from the Latin phrase _arte factum_, combining ars
 (skill) + facere (to make). That seems like a nice, highfalutin' description of
 what we're trying to do here.
 
-However, it could easily have been called a *prototype*, or a *system*, or some
-other word like that. So don't worry that in using the term *artefact* we're
+However, it could easily have been called a _prototype_, or a _system_, or some
+other word like that. So don't worry that in using the term _artefact_ we're
 looking for something in particular that's not a prototype or a system---it'll
 be both those things as well.
 
@@ -170,10 +172,10 @@ group of technologies", so you're not just building widgets to sell and make a
 profit---you need to [reflect](/deliverables/03-design-rationale/) on what your design means in that
 broader context.
 
-Still, if you wanna design & build something which *could* turn into a product,
+Still, if you wanna design & build something which _could_ turn into a product,
 then that's great.
 
-### Does the artefact have to be *good*?
+### Does the artefact have to be _good_?
 
 Yes, of course! However, "goodness" is a multifaceted quantity, and so you may
 get the opportunity to choose certain notions of "good" over others. For
@@ -182,7 +184,7 @@ with many always-on network-connected IoT devices, and it might choose to "lean
 in" to this lack of privacy by violating user privacy in some really heinous
 way.
 
-From a privacy standpoint this isn't a good artefact, but it might be *good*
+From a privacy standpoint this isn't a good artefact, but it might be _good_
 from a commercial one ($$$). Finally, it might be a good artefact if it
 highlights the invasion of privacy and starts conversations about the pros and
 cons of IoT stuff, or how to mitigate these risks, or something like that.
@@ -196,7 +198,7 @@ accompany your artefact.
 
 Not necessarily---if you've got an idea for something that's really big, or
 geographically distributed over a large area, or some other thing which wouldn't
-fit in a gallery space, then you can present the *concept* and other
+fit in a gallery space, then you can present the _concept_ and other
 documentation (e.g. videos) at the exhibition. You'll still have to build the
 artefact and figure out a way for us to assess it, but I don't want you to be
 limited (necessarily) to room-size things.
@@ -235,7 +237,7 @@ Still, there are a couple of things to consider in terms of getting into pairs:
 - if you're not going to be in Canberra over the summer then it'd be a good idea
   to choose a partner nearby
 
-### Ok, but do we *have* to work in pairs?
+### Ok, but do we _have_ to work in pairs?
 
 Look, I'm not gonna force you. But just remember that working together is a
 great opportunity to collaborate, and so if you go it alone you're missing out

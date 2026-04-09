@@ -32,9 +32,11 @@ I enjoyed the Tranfer Learning in IoT lecture. Some topics that were discussed i
 ## Artefact Ideation
 
 ### Past Smart Toothbrushes that have already been developed
+
 There have been some Smart Toothbrushes which have already been made such as the Colgate E1 and Playbrush. They have game nodes for little kids to make brushing a more enjoyable experience. The DiamondClean Smart is for adults only which contain bluetooth connections that is connected to an app which will guide users to brush properly for the right amount of time. This helps to promote better dental hygiene.
 
 ### Properties of The Smart Toothbrush
+
 1. Smart toothbrush that will contain motion sensors and ph level sensor ( or heat and light ) to detect cavities in the mouth or other irregulatirites. The motion sensors will keep track of how often a person brushes their teeth and their dental hygiene.
 
 The link below gives some information on how sensors have been developed to detect cavities using pH levels.

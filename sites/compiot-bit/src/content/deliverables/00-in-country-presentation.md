@@ -43,7 +43,6 @@ Well, there are a couple of things:
 
 2. it's an opportunity to meet some new people---especially to get to know your
    co-travellers from UTS and Swinburne
-   
 3. it's part of the content that your hosts at BIT provide, so it'll still be a
    worthwhile learning experience
 

@@ -16,9 +16,10 @@ In this lab you will:
 ## Introduction
 
 Welcome back! So far this term, we have explored ml5's following models:
-* [ImageClassifier](https://comp.anu.edu.au/courses/extn1019/labs-year-12/12-image-classifier/)
-* [NeuralNetwork](https://comp.anu.edu.au/courses/extn1019/labs-year-12/13-neural-network-noise/)
-* [HandPose](https://docs.ml5js.org/#/reference/handpose)
+
+- [ImageClassifier](https://comp.anu.edu.au/courses/extn1019/labs-year-12/12-image-classifier/)
+- [NeuralNetwork](https://comp.anu.edu.au/courses/extn1019/labs-year-12/13-neural-network-noise/)
+- [HandPose](https://docs.ml5js.org/#/reference/handpose)
 
 You only have one task today and that's to get started on a sketch for portfolio 3 using one of the above models. It doesn't have to be too complicated, just getting a start on representing your interpretations.
 
@@ -31,18 +32,19 @@ If you have missed the Week 6 (4/06/2025) lab, there are a few minor changes to 
 If you haven't already, go back and do the brainstorming activity in [lab 13](https://comp.anu.edu.au/courses/extn1019/labs-year-12/13-neural-network-noise/#part-1-portfolio-3-is-out).
 
 Here are some other questions you might like to consider when gathering your interpretation of the theme:
+
 - What stories or experiences do you have related to the theme (or related words you have come up with?)
 - What are some visual representations of these experiences that you could create in p5? (either figurative or abstract)
-- How will you share this experience through an interactive audio-visual work? 
-- What role does the ml5 model have in this interaction? What does it add to the overall experience? 
+- How will you share this experience through an interactive audio-visual work?
+- What role does the ml5 model have in this interaction? What does it add to the overall experience?
 
 ## Interaction Design
 
-Now that you have a planned sketch, consider what interactions you might want to include to invite the audience into this experience/story. 
+Now that you have a planned sketch, consider what interactions you might want to include to invite the audience into this experience/story.
 
-Consider the questions posed in [lab 11](https://comp.anu.edu.au/courses/extn1019/labs-year-12/11-interaction-reflection/#part-1-reviewing-interaction-design). How will your work be rewarding for the audience to engage with? How will they know how to engage? 
+Consider the questions posed in [lab 11](https://comp.anu.edu.au/courses/extn1019/labs-year-12/11-interaction-reflection/#part-1-reviewing-interaction-design). How will your work be rewarding for the audience to engage with? How will they know how to engage?
 
-If you haven't already, Fork and Clone the [template repo]() for your project. I think I made sure everyone did last week but just in case. 
+If you haven't already, Fork and Clone the [template repo]() for your project. I think I made sure everyone did last week but just in case.
 
 ## Summary
 

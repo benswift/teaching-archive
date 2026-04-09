@@ -15,30 +15,36 @@ Of course not! We all know that the best projects are the ones that take some pa
 Enough silly questions, Let's get into it!
 
 #### Project Aim (Recap of last weeks post)
+
 The aim of this project is to design and develop a low-cost convenient IoT artefact which will transcribe a drummer's music in real time and upload the musical score to a centralised database via wifi.
 The artefact will use vibration sensors attached to each of the drums to identify: which drum was hit and how it was hit. A small micro-controller will process the sensor data into a musical score which it will then upload to a centralised server on the internet.
-This I believe explores the theme of *(dis)connecting together* by:
-* *disconnecting together* by having the device wireless and allowing the device to be completely operated by the musician
-* *connecting together* as the device can upload the musical score to a centralised server for others to see and collaborate.
+This I believe explores the theme of _(dis)connecting together_ by:
+
+- _disconnecting together_ by having the device wireless and allowing the device to be completely operated by the musician
+- _connecting together_ as the device can upload the musical score to a centralised server for others to see and collaborate.
 
 #### Hardware and Software
+
 I have already discussed the hardware and software in the previous blog post, but more developments have been made in the mean time:
 
-*Sensors*: Though the simple boolean sensors would be the most convenient to use, they are unable to detect HOW the drum was hit, as different sounds can be made on the same drum. There are two main options here:
-* Have multiple boolean sensors to detect the different kinds of sounds (if they can)
-* Record a continuous stream of the vibration information then perform some sort of analysis on the data.
-These both seem like reasonable options but they have their pros and cons
+_Sensors_: Though the simple boolean sensors would be the most convenient to use, they are unable to detect HOW the drum was hit, as different sounds can be made on the same drum. There are two main options here:
+
+- Have multiple boolean sensors to detect the different kinds of sounds (if they can)
+- Record a continuous stream of the vibration information then perform some sort of analysis on the data.
+  These both seem like reasonable options but they have their pros and cons
 
 Advantages in using multiple boolean sensors:
-* Analysis is very simple, and could use fewer micro-controllers because of it.
+
+- Analysis is very simple, and could use fewer micro-controllers because of it.
 
 Advantages in using continuous stream data
-* Less wires, and is therefore cheaper as only one device is needed
-* Might get a more accurate result as a more comprehensive analysis can be performed
+
+- Less wires, and is therefore cheaper as only one device is needed
+- Might get a more accurate result as a more comprehensive analysis can be performed
 
 Since the sensor model suggested in last weeks post could perform both functions I will order several of those and test which method is more effective.
 
-*Microcontroller*
+_Microcontroller_
 As the the micro-controller itself, I considering two different micro-controllers, one with which I have had experience with before but requires a separate wifi module to connect to the internet (The 'Black Pill'), and one which I don't have experience with but has wifi capabilities built in (ESP32).
 At the moment I am now strongly considering using just the Black Pill. Simply because I have realised that we will likely need to use multiple micro-controllers regardless of which type of sensor network we decide to use. If we decide to use the boolean sensors, then we will need to run many cables into the micro-controller, many more than what the device can accomodate, so we will need more controllers. If we decide to use the continuous stream of data, then we will probably need perform the musical analysis using multiple controllers in parallel to meet the data processing needs.
 Also if we use multiple controllers it is more convenient to use only one type of controller so that we can keep all the software configurations the same.
@@ -52,23 +58,23 @@ Internet Upload: This is something that we wold definitely want to use the inbui
 
 #### Timeline
 
-*ASAP:*
+_ASAP:_
 Order things
 
-*Now - 1 week:*
+_Now - 1 week:_
 Plan software design: find libraries and determine the control flow of the overall device.
 
-*1 week - 2 weeks:*
+_1 week - 2 weeks:_
 Decide to use either the continuous data or boolean data (or a mixture of both)
 
-*2 week - 4 weeks:*
+_2 week - 4 weeks:_
 (**Milestone 1**) Get the data analysis software working well
 Have a good idea of how to connect with the centralised sever through the device and have the foundations of the software.
 
-*4 weeks - 5 weeks:*
+_4 weeks - 5 weeks:_
 (**Milestone 2**) Get the device to convey the information to the centralised server well
 
-*5 weeks - Finish time*
+_5 weeks - Finish time_
 Refine and debug
 Implement a social aspect to the online server where users can share their musical scores with others and give feedback.
 

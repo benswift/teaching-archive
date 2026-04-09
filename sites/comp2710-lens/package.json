@@ -15,8 +15,8 @@
     "@astrojs/svelte": "catalog:",
     "astro": "catalog:",
     "astro-theme-anu": "*",
-    "sharp": "catalog:",
     "astromotion": "catalog:",
+    "sharp": "catalog:",
     "svelte": "catalog:"
   },
   "devDependencies": {

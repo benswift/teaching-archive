@@ -54,7 +54,7 @@ for what we're looking for:
 - **documentation**
   - does your [project have a
     `README.md`](https://guides.github.com/features/wikis/#creating-a-readme)?
-  - does it clearly say what your artefact *is* and why people should care?
+  - does it clearly say what your artefact _is_ and why people should care?
   - does it include any visual elements? (screenshots, diagrams or videos are
     great to grab people's attention)
   - does it say how to contact you?
@@ -64,7 +64,7 @@ for what we're looking for:
 
 - **software**
   - is there a clear description of the software development environment
-	required to build your project (OS, toolchains, etc.), and how to set it up?
+    required to build your project (OS, toolchains, etc.), and how to set it up?
   - does it have **complete** instructions on how to build and deploy the
     software for your IoT artefact?
   - have you used Git (good commit hygeine; not just a giant single commit at
@@ -73,7 +73,7 @@ for what we're looking for:
     problems)
 
 - **hardware**
-  - is there a list of the required parts (e.g. a *Bill of Materials*) & tools
+  - is there a list of the required parts (e.g. a _Bill of Materials_) & tools
     to re-create your artefact?
   - are there **complete** instructions on how to configure/build the hardware
     required for your artefact?
@@ -103,7 +103,7 @@ worth a million words (or something).
 It doesn't mean that you have to list all the steps in your documentation in
 exhaustive and excruciating detail. For example, if the software toolchain
 you're using has some great docs on how to get it set up, it's fine for you to
-just say "for documentation on setting up the toolchain, see *link goes here*".
+just say "for documentation on setting up the toolchain, see _link goes here_".
 But the reader shouldn't have to guess what toolchain your using and find the
 docs themselves.
 
@@ -120,7 +120,7 @@ start.
 Sure, as long as the final GH repo still has the full commit history of your
 project. This should happen automatically; when you create and push an existing
 repo to a new "host" like GH all the history of the repo is pushed up as well.
-Such is the way with *distributed* version control.
+Such is the way with _distributed_ version control.
 
 Although I'm not 100% sure why you'd want to do this. Open source software is
 gloriously messy, so you shouldn't stress too much about having the "work in

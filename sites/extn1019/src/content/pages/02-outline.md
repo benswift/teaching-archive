@@ -133,11 +133,11 @@ and Digital Technologies in the Australian Curriculum.
 ## EXTN1019B: Creative Computing
 
 :::info
-2024 is the last year of intake for EXTN1019 Creative Computing. 
+2024 is the last year of intake for EXTN1019 Creative Computing.
 Students commencing in 2024 will be able to complete their studies,
 without disruption, in 2025. EXTN1019 will not be offered for new intake from 2025.
 Read more about the end of the ANU Extension program [here](https://extension.anu.edu.au/)
-and [here.](https://www.education.act.gov.au/about-us/all-news-and-news-alerts/news-items/march-2024/changes-to-anu-extension-program-from-2025) 
+and [here.](https://www.education.act.gov.au/about-us/all-news-and-news-alerts/news-items/march-2024/changes-to-anu-extension-program-from-2025)
 :::
 
 :::info
@@ -224,9 +224,9 @@ continuing to the next unit.
 1. **process (i)**: students will submit a regular process blog containing
    examples of both their own work and the work of others (with appropriate
    referencing) (30) [LO 2,3,4]
-   
+
    **process (ii)**: at the half-way point of the course, the students will
-   submit a prototype/mini-project in response to a specific provocation, 
+   submit a prototype/mini-project in response to a specific provocation,
    including a code-based music/visual artwork for assessment & feedback (30) [LO 1,2,3]
 
 2. **solution**: the student's final works will be performed/exhibited and
