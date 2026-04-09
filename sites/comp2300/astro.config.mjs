@@ -3,22 +3,29 @@ import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import anuTheme from "astro-theme-anu";
 import { astromotion, deckPreprocessor } from "astromotion";
+import remarkTemplate from "../../plugins/remark-template.ts";
 
 export default defineConfig({
   site: "https://teaching.benswift.me",
   base: "/comp2300/",
+  markdown: {
+    remarkPlugins: [
+      [
+        remarkTemplate,
+        {
+          site: {
+            baseurl: "/comp2300",
+            gitlab_url: "https://gitlab.cecs.anu.edu.au/comp2300/2019/",
+            forum_url: "https://piazza.com/class/js9iyij0aiy637",
+            streams_url: "https://cs.anu.edu.au/streams/",
+          },
+        },
+      ],
+    ],
+  },
   integrations: [
     svelte({ extensions: [".svelte"], preprocess: [deckPreprocessor()] }),
-    anuTheme({
-      checkLinks: false,
-      checkA11y: false,
-      site: {
-        baseurl: "/comp2300",
-        gitlab_url: "https://gitlab.cecs.anu.edu.au/comp2300/2019/",
-        forum_url: "https://piazza.com/class/js9iyij0aiy637",
-        streams_url: "https://cs.anu.edu.au/streams/",
-      },
-    }),
+    anuTheme({ checkLinks: false, checkA11y: false }),
     astromotion({ theme: "./src/decks/theme.css" }),
     sitemap(),
   ],

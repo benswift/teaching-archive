@@ -4,6 +4,7 @@ import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
 import anuTheme from "astro-theme-anu";
 import { astromotion, deckPreprocessor } from "astromotion";
+import remarkTemplate from "../../plugins/remark-template.ts";
 
 function p5SsrStub() {
   const virtualId = "\0p5-ssr-stub";
@@ -25,34 +26,40 @@ export default defineConfig({
   vite: {
     plugins: [p5SsrStub()],
   },
+  markdown: {
+    remarkPlugins: [
+      [
+        remarkTemplate,
+        {
+          site: {
+            gitlab_url: "https://gitlab.cecs.anu.edu.au/comp1720/2024",
+            year: "2024",
+            forum: {
+              name: "Ed",
+              url: "https://edstem.org/au/join/dswwXs",
+            },
+            extension: {
+              name: "COMP1720 Extension Pack",
+              id: "anucecsit.comp1720-extension-pack",
+              vscode_url:
+                "https://marketplace.visualstudio.com/items?itemName=anucecsit.comp1720-extension-pack",
+              vscodium_url: "https://open-vsx.org/extension/anucecsit/comp1720-extension-pack",
+            },
+            contacts: {
+              page_contact: { email: "COMP1720@anu.edu.au" },
+            },
+          },
+        },
+      ],
+    ],
+  },
   integrations: [
     mdx(),
     svelte({
       extensions: [".svelte"],
       preprocess: [deckPreprocessor()],
     }),
-    anuTheme({
-      checkLinks: false,
-      checkA11y: false,
-      site: {
-        gitlab_url: "https://gitlab.cecs.anu.edu.au/comp1720/2024",
-        year: "2024",
-        forum: {
-          name: "Ed",
-          url: "https://edstem.org/au/join/dswwXs",
-        },
-        extension: {
-          name: "COMP1720 Extension Pack",
-          id: "anucecsit.comp1720-extension-pack",
-          vscode_url:
-            "https://marketplace.visualstudio.com/items?itemName=anucecsit.comp1720-extension-pack",
-          vscodium_url: "https://open-vsx.org/extension/anucecsit/comp1720-extension-pack",
-        },
-        contacts: {
-          page_contact: { email: "COMP1720@anu.edu.au" },
-        },
-      },
-    }),
+    anuTheme({ checkLinks: false, checkA11y: false }),
     astromotion({ theme: "./src/decks/theme.css" }),
     sitemap(),
   ],
