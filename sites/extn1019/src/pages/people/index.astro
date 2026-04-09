@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+
+const people = await getCollection("people");
+const visible = people.sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="People">
+  <h1>People</h1>
+  <p class="lead">The teaching team.</p>
+
+  <CardGrid columns={3}>
+    {
+      visible.map((person) => (
+        <Card
+          title={person.data.name}
+          href={`${import.meta.env.BASE_URL}people/${person.id}/`}
+          image={person.data.image}
+        >
+          {person.data.position && <p>{person.data.position.join(", ")}</p>}
+        </Card>
+      ))
+    }
+  </CardGrid>
+</SiteLayout>

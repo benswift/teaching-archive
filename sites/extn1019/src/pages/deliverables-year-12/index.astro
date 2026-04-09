@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+
+const deliverables = await getCollection("deliverables-year-12");
+const visible = deliverables
+  .filter((d) => !d.data.hidden)
+  .sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="Year 12 Deliverables">
+  <h1>Year 12 Deliverables</h1>
+  <p class="lead">Assignments for EXTN1019B.</p>
+
+  <CardGrid columns={2}>
+    {
+      visible.map((item) => (
+        <Card title={item.data.title} href={`${import.meta.env.BASE_URL}deliverables-year-12/${item.id}/`}>
+          {item.data.tagline && <p>{item.data.tagline}</p>}
+        </Card>
+      ))
+    }
+  </CardGrid>
+</SiteLayout>

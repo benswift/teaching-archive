@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+import Callout from "astro-theme-anu/components/Callout.astro";
+
+const workshops = await getCollection("workshops");
+const sorted = workshops.sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="Workshops" description="Weekly workshop sessions for LENS">
+  <h1>Workshops</h1>
+
+  <Callout type="warning">
+    <p>
+      These dates/times are all from S1 2021. The content will be similar in 2022 but
+      the times won't be, because LENS'22 is scheduled to run in Semester 2.
+    </p>
+  </Callout>
+
+  <p>
+    The primary weekly contact hours are the 2hr workshop session from <strong>3pm–5pm
+    Thursday</strong> in <a href="https://www.anu.edu.au/maps#show=108136">Marie Reay 4.04</a>.
+    If you're enrolled in the class, you must be there (in person) every week.
+  </p>
+
+  <p>
+    <em>Before</em> you attend the workshop you must have read the corresponding lecture
+    material (see below) and have submitted your weekly
+    <a href={`${import.meta.env.BASE_URL}deliverables/audiovisual-diary/`}>AV diary video</a>.
+  </p>
+
+  <p>Each week's content includes:</p>
+  <ul>
+    <li>a description of the "creative provocation" for that week's <a href={`${import.meta.env.BASE_URL}deliverables/audiovisual-diary/`}>AV diary</a> entry</li>
+    <li>videos to watch</li>
+    <li>code to read</li>
+    <li>other reading material (papers, blog posts, etc.)</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr><th>Time</th><th>Activity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>14:45</td><td>chance for pre-class questions</td></tr>
+      <tr><td>15:10</td><td>listen to that week's AV diary submissions</td></tr>
+      <tr><td>15:30</td><td>crit discussion</td></tr>
+      <tr><td>15:50</td><td>small group jam activity</td></tr>
+      <tr><td>16:20</td><td>group performances</td></tr>
+      <tr><td>16:40</td><td>discussion, feedback, questions on notice</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Weekly workshops</h2>
+  <CardGrid>
+    {sorted.map((w) => (
+      <Card title={w.data.title} href={`${import.meta.env.BASE_URL}workshops/${w.id}/`}>
+        {w.data.summary && <p>{w.data.summary}</p>}
+      </Card>
+    ))}
+  </CardGrid>
+</SiteLayout>

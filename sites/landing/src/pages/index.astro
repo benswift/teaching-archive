@@ -1,0 +1,32 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+---
+
+<SiteLayout title="Home" description="Archived ANU course websites by Ben Swift.">
+  <h1>Teaching archive</h1>
+
+  <p>
+    Archived course websites from the Australian National University. These sites
+    are no longer actively maintained but are preserved here for reference.
+  </p>
+
+  <CardGrid columns={2}>
+    <Card title="COMP1720" href="/comp1720/">
+      <p>Art & Interaction Computing</p>
+    </Card>
+    <Card title="COMP2300" href="/comp2300/">
+      <p>Computer Organisation & Program Execution</p>
+    </Card>
+    <Card title="COMP2710 LENS" href="/comp2710-lens/">
+      <p>Laptop Ensemble</p>
+    </Card>
+    <Card title="COMPIOT BIT" href="/compiot-bit/">
+      <p>Computing IoT China Study Tour</p>
+    </Card>
+    <Card title="EXTN1019" href="/extn1019/">
+      <p>Creative Computing</p>
+    </Card>
+  </CardGrid>
+</SiteLayout>

@@ -1,0 +1,35 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { parseDeckFrontmatter } from "astromotion";
+import fs from "node:fs";
+import path from "node:path";
+
+const decksDir = path.resolve("src/decks");
+const decks = [];
+
+for (const entry of fs.readdirSync(decksDir, { withFileTypes: true })) {
+  if (!entry.isFile()) continue;
+  const match = entry.name.match(/^(.+)\.deck\.svx$/);
+  if (!match) continue;
+  const raw = fs.readFileSync(path.join(decksDir, entry.name), "utf-8");
+  const { data } = parseDeckFrontmatter(raw, match[1]);
+  decks.push({
+    slug: match[1],
+    title: data.title ?? match[1],
+    description: data.description,
+  });
+}
+
+decks.sort((a, b) => a.slug.localeCompare(b.slug));
+---
+
+<SiteLayout title="Lectures" description="COMP1720 lecture slides">
+  <h1>Lectures</h1>
+  <ul>
+    {decks.map((deck) => (
+      <li>
+        <a href={`${import.meta.env.BASE_URL}decks/${deck.slug}/`}>{deck.title}</a>
+      </li>
+    ))}
+  </ul>
+</SiteLayout>

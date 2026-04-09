@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+
+const resources = await getCollection("resources");
+const sorted = resources.sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="Resources" description="Helpful resources for LENS students">
+  <h1>Resources</h1>
+
+  <p>
+    If you have any problems/suggestions for these resources pages (or you want to
+    write a new one on a topic that you think could do with one) then get in touch
+    and we can make it happen.
+  </p>
+
+  <h2>All resources</h2>
+
+  <CardGrid>
+    {sorted.map((r) => (
+      <Card title={r.data.title} href={`${import.meta.env.BASE_URL}resources/${r.id}/`}>
+        {r.data.summary && <p>{r.data.summary}</p>}
+      </Card>
+    ))}
+  </CardGrid>
+</SiteLayout>

@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+import Callout from "astro-theme-anu/components/Callout.astro";
+
+const deliverables = await getCollection("deliverables");
+const sorted = deliverables.sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="Deliverables" description="Assessment items for LENS">
+  <h1>Deliverables</h1>
+
+  <Callout type="warning">
+    <p>These due dates are all from S1 2021, although they will be similar next year.</p>
+  </Callout>
+
+  <p>
+    Half of your assessment for this course is based on your analysis &amp; reflection
+    on the key computer music concepts presented in the course, as demonstrated
+    through your <a href={`${import.meta.env.BASE_URL}deliverables/audiovisual-diary/`}>portfolio</a> (30%)
+    and your <a href={`${import.meta.env.BASE_URL}deliverables/demo-day/`}>LENS demo</a> (20%). The other
+    half is based on your <a href={`${import.meta.env.BASE_URL}deliverables/lens-performance/`}>final performance &amp; artefact</a>
+    at the end of semester.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>Deliverable</th><th>Due</th><th>Weighting</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href={`${import.meta.env.BASE_URL}deliverables/audiovisual-diary/#weekly-videos`}>Weekly AV diary videos</a></td>
+        <td>11am every Thursday in weeks 2–9</td>
+        <td>0%, but required for portfolio</td>
+      </tr>
+      <tr>
+        <td><a href={`${import.meta.env.BASE_URL}deliverables/audiovisual-diary/#portfolio`}>AV diary portfolio</a></td>
+        <td>Monday of week 6 (Mar 29) &amp; week 10 (May 14)</td>
+        <td>15% + 15% = 30%</td>
+      </tr>
+      <tr>
+        <td><a href={`${import.meta.env.BASE_URL}deliverables/demo-day/`}>LENS demo day</a></td>
+        <td>Thursday May 6 (week 9)</td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td><a href={`${import.meta.env.BASE_URL}deliverables/lens-performance/`}>LENS performance</a></td>
+        <td>Sunday June 6</td>
+        <td>50%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Assessment items</h2>
+  <CardGrid>
+    {sorted.map((d) => (
+      <Card title={d.data.title} href={`${import.meta.env.BASE_URL}deliverables/${d.id}/`}>
+        {d.data.summary && <p>{d.data.summary}</p>}
+      </Card>
+    ))}
+  </CardGrid>
+</SiteLayout>

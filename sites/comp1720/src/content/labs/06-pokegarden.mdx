@@ -1,0 +1,428 @@
+---
+title: "Week 6: Creating a PokéGarden of objects"
+templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-labs
+---
+
+import P5Sketch from "astro-theme-anu/components/P5Sketch.svelte";
+import FillInTheBlank from "astro-theme-anu/components/FillInTheBlank.svelte";
+import { lab6Sketch } from "../../sketches/lab-6";
+
+Before you attend your lab session, make sure:
+
+- you can fork, pull & push to GitLab
+- you've watched the [week 5 lecture](/_lectures/week-05/) on objects
+
+## Task 0:
+
+This week's task 0 is about **affordances** and **interfaces** from Week 5's lecture. Your job 
+is to create  a "mock-up" of an interface, i.e., a picture of an interface, not the actual working 
+program (although you can make it work too if you want to).
+
+> Create a mock-up for an _unexpected_ interface for changing the background colour of a p5 sketch. 
+  You can use `p5` or any other method to make your mock-up. Show the mockup to your neighbour / tutor and
+  explain why it's _unexpected_ and what the affordances are of your interface.
+
+## Introduction
+
+This week's lab is about creating an environment in `p5` using **objects** and all the programming concepts you've learned so far. It's a really important set of skills as this will allow you to keep track of different parts of a `p5` sketch and control them over time. This lab is a **big one** that will challenge you if you're new to programming. On the other hand, we aren't introducing any _new_ programming concepts after this point in the course, so once you complete this lab, you can feel pretty confident in your knowledge!
+
+In this week's lab you will:
+
+- think about how to "model" a simple environment using objects
+- practice storing & manipulating data (variables) whose values are objects
+- make some noise using the built-in [p5.sound
+  library](https://p5js.org/reference/#/libraries/p5.sound)
+
+:::info
+This is an important lab---you probably have a busy week 6 schedule
+with mid-sem exams etc, but it's important to work through the lab
+tasks, and ask lots of questions if you're stuck. Remember to push up
+your PokeGarden (with working sound effects) at the end. Good luck!
+:::
+
+This week's lab uses a lot of concepts from the [objects](/_lectures/week-05/#objects) part of the week 5 lectures, so if
+you're unsure about it then go and watch the video.
+
+## Task 1: objects and functions
+
+Before we get to the lab content today, we're going to do a quick review of
+objects and functions. These concepts are all super important---so make sure
+you've nailed this section before you start the lab! If you have any problems,
+ask your tutor.
+
+### Objects
+
+We use objects when we're coding because they allow us to group a bunch of variables (or, as we call them in the context of an object: fields) together.
+
+The following code describes a variable called "toast", with a value which is an object. This object contains three fields:
+
+- 'slicesOfCheese': a number
+- 'spread': a string (any selection of characters put between quotation marks)
+- 'buttered': a boolean (a special kind of value that can only be true or false)
+
+```js
+let toast = {
+  slicesOfCheese: 2,
+  buttered: true,
+  spread: 'vegemite'
+};
+```
+
+Edit the following code to add a field called 'milk' which has the value
+'almond' to the mug object.
+
+<FillInTheBlank client:load template={"var mug = {\n  size: 300,\n  filled: 200,\n  coffee: 1,\n  <name:milk>: '<value:almond>',\n};"} />
+
+It's important to remember that objects can have any fields in them---no one is
+going to tell you not to put a 'pineapple' field in your 'pizza' object while
+you're writing JavaScript! An object is just a collection of any old properties
+& their values, and it's up to the programmer (i.e. you!) to create & use
+objects which are *useful*.
+
+Obviously having all of these fields is great, but what if we want to do
+something with them? Well, we can access fields in objects using "dot
+notation". This looks like the following:
+
+```js
+if (toast.spread == 'vegemite') {
+  cutASliceOfCheeseAndPutOnToast(toast);
+}
+```
+
+The dot allows us to get a value out of an object --- the text before the dot
+is the name of the variable containing the object, and the text after is the
+name of the field within the object.
+
+Can you edit the following code so it fills up partially drunk mugs? If you
+can't remember all the fields in the mug object, that's okay---take a look at
+the previous widget, it has the definition in it.
+
+<FillInTheBlank client:load template={"if (<var:mug>.<field:filled> < mug.size) {\n  fillMug(mug);\n}"} />
+
+We can use this syntax, along with the assignment operator ('=') we've been
+using to set variables to update the values of objects after they've been
+created.
+
+```js
+toast.spread = 'jam';
+```
+
+Can you fix the following code so it sets the `'milk'` field of the `mug` object to the value `'dairy'`.
+
+<FillInTheBlank client:load template={"<object:mug>.<field:milk> = 'dairy';"} />
+
+You haven't quite completed all the activities yet. Keep going, you're almost there! Ask your tutor if you need some help.
+
+### Functions
+
+Functions are great because we can use them to simplify our code: instead of
+writing out the same code over and over again, we can store it in a function
+and save ourselves some typing!
+
+In the following code we declare a function 'doAssignment'. Note that we've
+only declared the function here, we haven't actually used it yet (or as we say
+in the business, "called it"). This function has three parameters: title,
+topic, and deadline. These parameters are variables which only exist inside the
+function, and are set when we call it.
+
+```js
+function doAssignment(title, topic, deadline) {
+  // hello world
+}
+```
+
+To call our function, we need to make sure we provide values for each of the
+parameters we declared earlier.
+
+```js
+doAssignment('The relationship between blue and red: a PhD thesis', 'blue and red', 'next monday');
+doAssignment('What I did on the weekend', 'blog post about my life', 'before next weekend');
+```
+
+Edit the following code to declare a function called `ringDoorbell` with two
+parameters, one named `address` and another named `time`.
+
+<FillInTheBlank client:load template={"function <name:ringDoorbell>(<p1:address>, <p2:time>) {\n  // code to ring the doorbell\n}"} />
+
+Now, fix this code so it calls the function we just wrote.
+
+<FillInTheBlank client:load template={'<name:ringDoorbell>("221B Baker St", "Nine in the afternoon");'} />
+
+In p5.js especially, it's handy to combine objects and functions together. It means we can do things like:
+
+1. Use the dot syntax mentioned previously to use a field from an object object as a value in a function call
+    ```js
+    let shape = {
+      x: 100,
+      y: 200,
+    };
+
+    function drawShape(x, y) {
+      rect(shape.x, shape.y, 100);
+    }
+    ```
+2. Use objects themselves as values in a function call:
+    ```js
+    function clean(thing) {
+      thing.dirty = false;
+    }
+
+    let potato = {
+      weight: 300,
+      dirty: true,
+    };
+
+    clean(potato);
+    ```
+
+Now, can you fix this code so it calls the sayHiTo function, with the 'name' field of the 'doggo' object as the first parameter?
+
+<FillInTheBlank client:load template={"var doggo = {\n  name: 'Slinky',\n  age: 25,\n};\n\nsayHiTo(<object:doggo>.<field:name>);"} />
+
+And now, finally, let's put it all together. Edit the following code so it draws the blob in the correct location with the correct size.
+
+<FillInTheBlank client:load template={"var aBlob = {\n  x: 200,\n  y: 150,\n  size: 50,\n};\n\nfunction draw() {\n  background(0);\n  drawBlob(aBlob);\n}\n\nfunction drawBlob(blob) {\n  fill(255);\n  ellipse(blob.<x:x>, blob.<y:y>, blob.<size:size>);\n}"} />
+
+You haven't quite finished the exercises yet --- finish them off before you continue. If you're stuck, ask your tutor (they really really want to help you)!
+
+## Task 2: welcome to the PokeGarden
+
+Say hello to your neighbour and introduce yourself (if you don't know each other already!) There isn't going to be much actual
+pair-work today, but it'll still be nice to have someone to bounce ideas off of while you're working!
+
+<figure>
+  <img style="width:100%;" src="/images/labs/lab-6/pikalikes_by_happip_d4x2eor.jpg" alt=""/>
+  <figcaption>["Pikalikes" by happip](https://www.deviantart.com/happip/art/Pikalikes-297404379) on DeviantArt is licensed under CC BY-NC-ND 3.0</figcaption>
+</figure>
+
+Now, for the actual content of this lab we're going to make a simple Pokemon
+"world" where your Pokemon roam free... until you capture them.
+
+:::tip
+Before we start coding, think with your partner: what sort of fields might a
+Pokemon object have? Come up with some examples and discuss them with your neighbour / tutor.
+:::
+
+Clone your fork of [the lab repository]() repo if you 
+haven't already, open it in VSCode, navigate to the week-06 folder. 
+
+For this week we'll be providing you with some code to get you started, go ahead 
+and copy the following into the week-06 `sketch.js` file:
+
+```javascript
+let sally; // declare a variable called sally
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+  // initialise the sally variable here
+  // ...
+}
+
+function draw() {
+  background(60, 128, 25);
+
+  // what function(s) do you need to call in here, and with what parameters?
+  // ...
+}
+
+function drawPokemon(aPokemon) {
+  noStroke();
+  fill(0);
+  ellipse(aPokemon.x, aPokemon.y, 50, 50);
+}
+
+function updatePokemon(aPokemon) {
+  // this is just a bit of controlled randomness to make the pokemon move around the canvas
+  aPokemon.x += 0.05*width*cos(frameCount*0.01)*randomGaussian(0, 0.1);
+  aPokemon.y += 0.05*height*cos(frameCount*0.011)*randomGaussian(0, 0.1);
+}
+```
+
+Now, when you start the live server and open the sketch you'll see the green 
+grass of the PokeGarden. This is the beginnings of the code for one Pokemon 
+in the garden---her name is Sally (see the variable declaration at the top of 
+the `sketch.js` file).
+
+Often in these labs you've started out with some *values* (e.g. numbers) and
+you've had to figure out which *functions* to call, passing the values in as
+parameters. In this part of the lab, the pattern is flipped around---the
+`drawPokemon()` *function* is already written, and your job is to give `sally`
+the right *value* (hint: it should be a javascript object) so that the
+`drawPokemon()` function does something useful.
+
+To complete this part of the lab, you'll need to modify `sketch.js` in two places:
+
+1. initialise the `sally` variable in the `setup()` function
+
+2. call the `drawPokemon()` function in the draw loop to draw sally
+
+To do this, you need to look at the `drawPokemon()` function to figure out what
+properties it expects its `aPokemon` parameter to have---can you initialise
+`sally` so that it's got the right properties?
+
+Once you've got that working, you'll see that the `drawPokemon()` function isn't
+very sophisticated. If you like, you can modify it so that it does a nicer job
+of drawing `sally`.
+
+## Task 3: adding "catch 'em all" functionality
+
+Pokemon don't just sit still, though---they're always on the move. You might
+have noticed that there's an `updatePokemon()` function in the template repo.
+Can you guess what it does?
+
+Add the line `updatePokemon(sally);` to your draw loop---this should make Sally
+move around (once you've got the drawing code working in part 2).
+
+Your job in this part is to implement "catching" functionality to the PokeGarden
+sketch, so that when you click on Sally she:
+
+1. turns into a Pokeball
+2. stops moving around
+
+You can break this down into three main steps---you need to:
+
+1. add a new property to the `sally` variable to keep track of whether Sally is
+   captured or not (what's the best way to store a true/false value in
+   javascript?)
+
+2. modify the `updatePokemon()` function so that it moves Sally if she's free,
+   but does nothing if she's been captured
+
+3. modify the `drawPokemon()` function so that it draws Sally as normal if she's
+   free, but draws a pokeball if she's been captured
+
+4. add a [`mousePressed()`](https://p5js.org/reference/#/p5/mousePressed)
+   function (it has to have *exactly* that name) which contains some [hit
+   detection](/labs/04-interface/) code to figure
+   out if Sally has been captured (and modify her properties if necessary)
+
+This might seem really daunting, but remember to think about Sally as just an
+object with a bunch of properties, and update the functions to check the values
+of these properties and behave accordingly.
+
+:::tip
+Are there any other ways I could have added this functionality to my PokeGarden
+sketch?
+:::
+
+<h2 id="part-4">Task 4: adding sound effects</h2>
+
+As a final step, it'd be really cool if we could play a "pokeball capture" sound
+effect when the user manages to capture Sally. Luckily, there's a
+[p5.sound](https://p5js.org/reference/#/libraries/p5.sound) library which makes
+it easy to do just that.
+
+To use the p5.sound library, you need to include it in your sketch file. The
+code to do this is already in the template's
+[`index.html`](https://gitlab.cecs.anu.edu.au/comp1720/2019/comp1720-2019-lab-6/blob/master/index.html)
+file, but it's commented out.
+
+If you open up the `index.html` file in VSCode you'll see the following lines (or similar as urls / versions change, the important part is the line that ends in `p5.sound.js`):
+
+```html
+<!-- this is the p5 sound library -->
+<!-- <script src="https://link.to.sound.website/p5.sound.js"></script> -->
+```
+
+to enable the p5 sound library, you need to un-comment out the second of those
+lines so that it looks like this:
+
+```html
+<!-- this is the p5 sound library -->
+<script src="https://link.to.sound.website/p5.sound.js"></script>
+```
+
+One of the objects that this sound libraries provides is a
+[`p5.SoundFile`](https://p5js.org/reference/#/p5.SoundFile) object, which you
+can create using the
+[`loadSound()`](https://p5js.org/reference/#/p5.SoundFile/loadSound) function.
+
+To create a `p5.SoundFile` object, call the `loadSound()` function with one
+parameter: the path (as a string) to an audio file. Since there's already a
+soundfile in the template repo (check the `/images/` folder) you can modify the
+"initialisation" code in your `setup()` function to something like this:
+
+``` javascript
+sally = {
+  // some properties
+
+  captureSound: loadSound("/images/pokeball-catch.mp3")
+}
+```
+
+Have a think about what you've done here: you've created a new `p5.SoundFile`
+object inside your `sally` object. There's nothing wrong with doing this
+"objects inside objects" thing---just remember that now you'll need *two*
+"levels" of dots (or square brackets) to get at the properties of this "inner"
+object.
+
+The [`p5.SoundFile`](https://p5js.org/reference/#/p5.SoundFile) object has a few
+built-in methods (remember that a [method is just a property of an object which
+happens to be a function](/_lectures/week-05/#methods-what-if-the-property-is-a-function)). There are methods for e.g. for
+setting the playback volume/speed/location/mode. But probably the one you're
+most interested in at the moment is the
+[`.play()`](https://p5js.org/reference/#/p5.SoundFile/play) method.
+
+:::info
+Don't worry if this p5.sound stuff made you feel like you copied and pasted some
+stuff, and it seemed to work, but you didn't really understand it. We'll cover
+the p5.sound library in more depth in the week 7 lecture.
+:::
+
+Modify your "pokemon captured" code from part 3 to call the `.play()` method on
+the pokeball soundfile. Remember that you'll need two dots, because it's a
+property of a property!
+
+:::tip
+What does your `sally` object "look like" now? What properties does it have, and
+what types of values make sense for those properties? Could you draw a
+representation of your final Pokemon object on a piece of paper (not a picture
+of the Pokemon itself, but some sort of diagram to explain the javascript
+object)?
+:::
+
+Make sure that your best pokegarden code is  saved to `week-06/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+
+## Task 5: Break it down!
+
+This pattern of mapping functions over arrays of objects is extremely useful!
+You can do all sorts of things with it! Above we've practiced making a simple
+interactive game. In the break it down this week I was inspired by the amazing
+painting [*Sydney Sun* by John
+Olsen](https://artsearch.nga.gov.au/Detail.cfm?IRN=26102) which can be seen in
+this very city to show how this pattern can be applied to modern art.
+
+:::info
+In your pair, open up a cocoding session on
+[p5live](https://teddavis.org/p5live/). Copy and paste the code below in so
+you can work on it together --- try and make it your own, be creative!
+:::
+
+<P5Sketch client:only="svelte" sketch={lab6Sketch} />
+
+As always, the break it down section contains things that you might not have
+seen before, but don't worry, the aim of this section is to learn by tweaking
+and experimenting. If you're lost, try changing the colours in the `palette`
+variable or changing the number of brushes.
+
+## Summary
+
+Congratulations! In this lab you:
+
+- thought about how to "model" a simple environment using objects
+- practice storing & manipulating data (variables) whose values are objects
+- made some noise using the built-in [p5.sound
+  library](https://p5js.org/reference/#/libraries/p5.sound)
+
+Now that you've learned about objects, you have all the tools you need to write
+p5 programs---there's no more new javascript concepts in the course. So don't
+panic if you found this stuff difficult, you'll get lots of chances to practice
+it in the coming weeks. Still, it's really important that you give things a go
+now and ask for help if you get stuck---the tutors would love to help
+you out, but you need to ask :)
+
+:::tip
+If you're really feeling adventurous, try and add multi-pokemon support to your
+PokeGarden by looping over an array of Pokemon (as we did in the week 5 praxis).
+:::

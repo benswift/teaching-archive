@@ -1,0 +1,17 @@
+---
+import SiteLayout from "./SiteLayout.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  tagline?: string | null;
+}
+
+const { title, description, tagline } = Astro.props;
+---
+
+<SiteLayout title={title} description={description}>
+  <h1>{title}</h1>
+  {tagline && <p class="lead">{tagline}</p>}
+  <slot />
+</SiteLayout>

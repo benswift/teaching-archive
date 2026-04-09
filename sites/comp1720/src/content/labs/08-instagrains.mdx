@@ -1,0 +1,347 @@
+---
+title: "Week 8: An artwork with images"
+templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-labs
+---
+
+import P5Sketch from "astro-theme-anu/components/P5Sketch.svelte";
+import { scintillatingPixelsSketch } from "../../sketches/scintillating-pixels";
+
+## Admin Update
+
+:::warning
+The following is super important for future labs, so make sure you read it and make a note to complete the 
+task 0 for next weeks lab some time before the lab.
+:::
+
+The task 0s so far haven't been much more than discussion points. However, 
+[starting next week](/labs/09-major-project-storyboard/#task-0) they will 
+be a much more integral part of the lab (and your major project) that we assume you have done **before-hand**.
+
+Have a read of the task 0 for next week and add it to your schedule so that you complete it before your 
+lab next week! 
+
+## Lab Tasks
+
+We (humans) are visual creatures. We drew [pictures of
+antelopes](https://en.wikipedia.org/wiki/Cave_painting) on cave walls for a
+*long* time, and then we invented the internet and now we have
+[instagram](http://instagram.com)[^timeline]. And you know another thing that humans like doing? Eating breakfast cereal. 
+
+This week you will combine these two traditions by creating a new social-networking platform for **sharing pictures of cereal**.
+
+But seriously, you'll:
+
+- keep practising your "loop a function over some objects" skills
+
+- learn about image processing in p5
+
+Before you attend your lab session, make sure:
+
+- you can fork, pull & push to GitLab
+
+- you understand the basics of objects: especially what properties and methods
+  are (as covered in [the week 5 lecture](/_lectures/week-05/))
+
+- you're aware that all the p5 functionality to do with images is bundled
+  together inside the [`p5.Image`](https://p5js.org/reference/#/p5.Image) object
+  (see the [reference](https://p5js.org/reference/#/p5.Image) for a refresher)
+
+[^timeline]:
+    I think a few things happened in the middle as well, but hey---this isn't a
+    history course. You'll have to [go somewhere
+    else](https://history.cass.anu.edu.au/) to learn that stuff :)
+
+## Task 0: Sound
+
+This week's pre-lab task relates to the use of _sound_ in interactive art.
+
+> Make a mock-up for an _abstract_ interactive artwork that includes sound. Explain the affordances of your artwork in your text and explain what kind of sounds are created.
+
+## Task 1: setting the scene
+
+Clone your fork of [the lab repository]() repo if you haven't 
+already, open it in VSCode, navigate to the week-08 folder and start the live server 
+as usual. 
+
+Once you've got the repo open in VSCode, paste the following into the week-08 `sketch.js`
+file:
+
+```js
+var pictureFilenames = [
+  "/images/alex-mccarthy-250127.jpg",
+  "/images/daria-nepriakhina-340852.jpg",
+  "/images/elizabeth-lies-6698.jpg",
+  "/images/federica-diliberto-17923.jpg",
+  "/images/jennifer-pallian-322024.jpg",
+  "/images/milada-vigerova-348433.jpg",
+  "/images/nirzar-pangarkar-28869.jpg",
+  "/images/ryan-pouncy-52372.jpg",
+  "/images/yvens-banatte-71993.jpg"
+]
+
+// this is the array we'll store our grains in
+var grains = [];
+
+function preload() {
+  // put the image loading stuff in here (because it's slow)
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  // any additional setup code goes here
+}
+
+function draw() {
+  // your background code goes here
+
+  // your "draw all the grains" code goes here
+
+  // every second, create a new grain (if there are any pictures left)
+  if(frameCount%60==1 && pictureFilenames.length > 0){
+	grains.push(createGrain(pictureFilenames.pop(), random(width), random(height)));
+  }
+  // call this function at the end of the draw loop to draw the fps speedo in the bottom-right corner
+  drawSpeedo();
+}
+
+function createGrain(filename, x, y) {
+  // your grain creation code goes here
+
+  // make sure you return the grain object at the end
+}
+
+// just a helper function - no need to understand it all today
+function drawSpeedo() {
+  let fr = round(frameRate());
+  let fractionOfMaxSpeed = fr/60;
+  // start a new drawing context (colours, etc.)
+  push();
+  // draw the coloured "speedo" bar
+  noStroke();
+  // make it red when we're fast, grey when we're slow
+  fill(255*fractionOfMaxSpeed, 50, 50);
+  rect(width-150, height-100, 100*fractionOfMaxSpeed, 50);
+  // draw the framerate number
+  stroke(0);
+  fill(255);
+  strokeWeight(3);
+  textSize(50);
+  textAlign(CENTER, CENTER);
+  text(fr, width-100, height-75);
+  // restore the previous drawing context (colours, etc.)
+  pop();
+}
+```
+
+Once you've updated the `sketch.js` file, you'll notice there's a number in the 
+bottom-right corner of your sketch. It's showing the current frames per second 
+reading (FPS) so it's an indication of how smoothly your sketch is running. If 
+everything's going fine, it'll hover around 60.
+
+Say hello to your neighbour and introduce yourself (if you don't know each other already!) There isn't going to be much actual
+pair-work today, but it'll still be nice to have someone to bounce ideas off of while you're working! --- Discuss how could you exploit people's love
+of pictures and eating cereal to make **1 billion dollars**?
+
+### The task
+
+Yep, that's right, we're going to create a new social network (or at least the
+interface for one). This social network is called **Instagrains** and the motto
+is:
+
+> Bringing people together. Through cereal.
+
+Inspiring stuff. Because the motto is about bringing people together, you're
+going to need a way to show where the people *are*---i.e. a map.
+
+Using [Creative Commons Image Search](https://search.creativecommons.org), find
+a map of Canberra/Australia/the world (your choice) to use as a "backdrop" for
+your Instagrains sketch. Make sure that the image is available under a suitable
+licence (e.g., [CC-BY](https://creativecommons.org/licenses/by/4.0/)). Once you've found one, save it into your
+`/images/` folder (you'll notice there are bunch of other image files in there as
+well---you'll use them soon but just ignore them for the moment).
+
+You know the [`background()`](https://p5js.org/reference/#/p5/background)
+function you've been using all along? Well, you can use an image as your
+background (instead of just a plain colour).
+
+In your sketch, create a new [p5.Image](https://p5js.org/reference/#/p5.Image)
+object using [`loadImage()`](https://p5js.org/reference/#/p5/loadImage) and pass
+it as the argument to
+[`background()`](https://p5js.org/reference/#/p5/background). Remember to
+declare a variable (call it whatever you like) to keep track of this image
+object.
+
+Here's a hot tip---try creating the image object inside the
+[`preload()`](https://p5js.org/reference/#/p5/preload) function instead of the
+usual [`setup()`](https://p5js.org/reference/#/p5/setup) one. They both happen
+just once at the start of the sketch, but the `preload()` function is a bit
+nicer for things which take a bit of time---they present the viewer with a
+"loading..." message, which is better than a blank screen.
+
+Once you've got your background image filling your whole canvas, remember that
+it's a *background* image, so you don't want it to stand out too much. One way
+to deal with this is to do a bit of image processing using one of p5's built-in
+[image filters](https://p5js.org/reference/#/p5.Image/filter). These are
+*methods* (functions which are properties of the object itself) so you'll need
+to use the dot syntax to access them, e.g.
+
+``` javascript
+bgImage.filter(BLUR, 10);
+```
+
+There are a few different filters available (and the parameters mean different
+things for each one). Have a look at the
+[reference](https://p5js.org/reference/#/p5/filter) for the full list, although
+remember that you want to call the filter *method* on a
+[p5.Image](https://p5js.org/reference/#/p5.Image) object (e.g.
+`bgImage.filter()`), not the plain `filter()` function (which applies the filter
+to the whole canvas)
+
+Once you've got a subtle, not-too-distracting background for the Instagrains
+interface it's time to move on to the next part.
+
+## Task 2: share your cereal with the world
+
+The *basic* component of Instagrains v1.0 is called a **grain**, which is just:
+
+- a photo of some cereal
+- the location of the person who's eating it
+
+That's it---pretty simple, hey. It's all about the
+[MVP](https://en.wikipedia.org/wiki/Minimum_viable_product).
+
+:::tip
+Discuss with your neighbour---what can you tell about how the
+interface is going to work when you're done? What parts do you think you'll be
+implementing in today's lab?
+:::
+
+Someone else on the Instagrain team has already implemented the "upload the
+photo" functionality, so the image files are already in the `/images/` folder (as
+`.jpg` files). Your job in this part is to write the code to draw these photos
+on the map background you made in part 1.
+
+If you look at the top of `sketch.js`, you'll notice an array of strings---each
+of these is the filename of a "cereal bowl" image in your `/images/` folder.
+
+### `createGrain()`
+
+You'll notice that there's a `createGrain()` function "skeleton" provided in the
+template---it doesn't do anything at first, but your job in this part is to
+write the code so that it:
+
+1. takes a `filename` and `x` and `y` parameters as input (this is already there
+   in the skeleton)
+
+2. loads that image from the `/images/` folder
+
+3. **returns** an object which contains all the stuff essential to using the
+   grain in the future
+
+The template contains code to call `createGrain()` every second to create a new
+grain (as long as there are still new pictures of grain bowls).
+
+Fill out the `createGrain()` function in the template so that it actually does
+something useful (although you won't see it on the screen until you write the
+`drawGrain()` function---which you'll do next).
+
+### `drawGrain()`
+
+The `createGrain()` function doesn't _draw_ the grain on the map. That's
+`drawGrain()`'s job. This time there's no skeleton---you get to write the full
+function yourself.
+
+:::tip
+What arguments should the `drawGrain()` function take?
+:::
+
+Write the `drawGrain()` function. Once `createGrain()` and `drawGrain()` are
+working together, use a for loop over the `grains` array to draw them _all_ on
+the map.
+
+Once you're drawing your grain bowl pictures on the map, then Instagrain v1.0 is
+done. Congratulations!
+
+## Task 3: make it interesting
+
+You can probably think of lots of ways to make this better, though. Here are a
+few ideas, but don't feel limited to this list. If you come up with some other
+cool idea then you should try to build it---ask your tutor for ideas on how to
+make it happen if you're not sure how you'd do it.
+
+1. make each grain show up in a particular place that **you choose**
+
+2. make the interface change over time (so it's not so static)
+
+3. add _filters_ (i.e. can you do some image processing on the grains)
+
+4. make it so that when you click on a grain bowl, something happens?
+
+5. add captions (maybe even hashtags) for each grain bowl
+
+6. cycle through multiple images for each Instagrain user (i.e. make a
+   [gif](https://en.wikipedia.org/wiki/GIF))
+
+7. add sound to the sketch (if you do, remember to [add the p5.Sound library to
+   your sketch](/labs/06-pokegarden/#part-4)
+
+8. re-design the interface to make a statement about how _ridiculous_ it is that
+   we spend so much time and energy looking at pictures of food on our phones
+
+As you try things, watch the "speedo" in the bottom left-hand corner---are there
+some things in particular which make the frame rate drop?
+
+Make sure that your best instagrain code is  saved to `week-08/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+
+## Extra Tasks
+
+### Scintillating pixels
+
+An alternate way to do image processing is to get and set the colours of the
+individual pixels directly. [`p5.Image`](https://p5js.org/reference/#/p5.Image)
+provides two methods for doing this:
+
+- [`.get(x, y)`](https://p5js.org/reference/#/p5.Image/get) *returns* the colour
+  of the pixel at position `x`, `y`
+
+- [`.set(x, y, color)`](https://p5js.org/reference/#/p5.Image/set) allows you to
+  *set* the colour of the pixel at position `x`, `y`
+
+**Scintillating Pixels** is a famous[^famous] sketch by Tim Brook which uses a couple of nested
+loops to create interesting pixel patterns:
+
+Don't be fooled by the simplicity of this code. I've seen people do amazing
+things with it. In fact it was run as a contest in previous versions of COMP1720/6720.
+
+<P5Sketch client:only="svelte" sketch={scintillatingPixelsSketch} />
+
+[^famous]: famous by COMP1720 standards, anyway
+
+:::tip
+What are the advantages/disadvantages of this "direct pixel manipulation"
+approach vs the built-in image filters you used earlier in the lab?
+:::
+
+### Sketch Dimensions at Preload
+
+One of the challenges with image loading (or other heavy processing in p5) is
+that from a responsiveness perspective you want to do all the time-consuming
+"loading" work at the start (so that once the sketch is running then it runs
+smoothly). 
+
+One problem with the
+[`preload()`](https://p5js.org/reference/#/p5/preload) and
+[`setup()`](https://p5js.org/reference/#/p5/setup) functions is that they're
+called *before* p5 knows the [`width`](https://p5js.org/reference/#/p5/width)
+and [`height`](https://p5js.org/reference/#/p5/height) of the canvas, so those
+variables are set to `0` at that time (this may have caused you problems in the
+past). One way around this is to use
+[`windowWidth`](https://p5js.org/reference/#/p5/windowWidth) and
+[`windowHeight`](https://p5js.org/reference/#/p5/windowHeight), which *are*
+defined in `preload()` and `setup()`. 
+
+Can you think of other solutions?
+
+### Make your interactive sound-art work
+
+For the task 0 you designed a mockup for an interactive sound artwork. Time to actually make it! Have a go at creating your work, or some simpler version of it.

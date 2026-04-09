@@ -1,0 +1,30 @@
+{
+  "name": "comp1720",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "oxlint",
+    "lint:css": "stylelint 'src/**/*.css'"
+  },
+  "dependencies": {
+    "@animotion/core": "catalog:",
+    "@astrojs/mdx": "catalog:",
+    "@astrojs/sitemap": "catalog:",
+    "@astrojs/svelte": "catalog:",
+    "astro": "catalog:",
+    "astro-theme-anu": "*",
+    "astromotion": "catalog:",
+    "p5": "catalog:",
+    "svelte": "catalog:"
+  },
+  "devDependencies": {
+    "lightningcss": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "stylelint": "catalog:",
+    "stylelint-config-standard": "catalog:"
+  }
+}

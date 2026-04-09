@@ -1,0 +1,25 @@
+{
+  "name": "landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "oxlint",
+    "lint:css": "stylelint 'src/**/*.css'"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "catalog:",
+    "astro": "catalog:",
+    "astro-theme-anu": "*",
+    "svelte": "catalog:"
+  },
+  "devDependencies": {
+    "lightningcss": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "stylelint": "catalog:",
+    "stylelint-config-standard": "catalog:"
+  }
+}

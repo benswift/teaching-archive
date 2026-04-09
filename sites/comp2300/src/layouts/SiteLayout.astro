@@ -1,0 +1,25 @@
+---
+import BaseLayout from "astro-theme-anu/layouts/BaseLayout.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const links = [
+  { text: "Labs", href: `${import.meta.env.BASE_URL}labs/` },
+  { text: "Deliverables", href: `${import.meta.env.BASE_URL}deliverables/` },
+  { text: "Resources", href: `${import.meta.env.BASE_URL}resources/` },
+];
+
+const { title, description } = Astro.props;
+---
+
+<BaseLayout
+  title={`${title} — COMP2300`}
+  description={description}
+  name="COMP2300"
+  links={links}
+>
+  <slot />
+</BaseLayout>

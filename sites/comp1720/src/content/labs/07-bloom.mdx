@@ -1,0 +1,292 @@
+---
+title: "Week 7: Making a sound artwork"
+templateRepo: https://gitlab.cecs.anu.edu.au/comp1720/2024/comp1720-2024-labs
+---
+
+import P5Sketch from "astro-theme-anu/components/P5Sketch.svelte";
+import FillInTheBlank from "astro-theme-anu/components/FillInTheBlank.svelte";
+import { lab7Sketch } from "../../sketches/lab-7";
+
+## Lab Tasks
+
+In this lab, we're going to be making an interface for generative music. We'll
+be taking inspiration from an iPhone app called
+[Bloom](http://www.generativemusic.com/bloom.html) by [Brian
+Eno](https://en.wikipedia.org/wiki/Brian_Eno) and Peter Chilvers. Don't
+worry if you're not familiar with it, the concept is really simple and explained in the tasks below. Again, what you're doing in this lab is figuring out
+what _things_ (objects) exist in the world, writing functions to do stuff to
+those things, and then finally applying those functions to all the things in the
+world using a loop.
+
+In this week's lab you will:
+
+- use JavaScript objects to represent the elements of your sketch, and arrays to
+  store all the elements
+- use *nested* iteration ([loops](/_lectures/week-03/#for-loop)) to compare all possible pairs of these elements (and do things
+  when certain conditions are met)
+- create a work of interactive sound-art using the p5.sound library
+
+:::tip
+A friendly caution: this lab is hard compared to the others so far. Ask your tutor if you get stuck.
+:::
+
+## Task 0: a2 reflection
+
+Today's task 0 is about your assignnment 2 submission and the interactive elements that you designed.
+
+> Post a thumbnail of your assignment 2 submission and a link to it on the test server in the assignment 2 thread on the forum. Identify _one interactive element_ in your assignment and discuss how you accomplished your goal. Think of another _interactive element_ that you **didn't** include in your assignment (but wish you did) - discuss how this element could improve your artwork.
+
+## Task 1: arrays
+
+Before we start working on our Bloom clone, let's do a bit of
+revision---this time on arrays, since it's been a while since they were
+[covered in week 4](/_lectures/week-04/). It's okay to skip this
+section if you're already comfortable with arrays.
+
+An array is a different type of variable, just like a string (`"hello"`), a
+number (`1.0`), a boolean (`true`), or an object. Except, the value it stores
+is a list of other values. The syntax for arrays looks like:
+
+```js
+var arrayOfNumbers = [100, 24, -2, 18, 106, 42, 1, 8];
+var arrayOfStrings = ["hello", "darkness","my", "old", "friend"];
+var arrayOfBooleans = [true, false, true, true, false];
+```
+
+Everything in between the `[` and matching `]` makes up the elements of the
+array. An element is an item inside the list that is an array.
+
+Each element has a position in the array, we call this the index. The first
+element has an index of `0`, the second has an index of `1`, etc.
+
+We can access the elements inside an array using an "indexing" syntax.
+
+```js
+let groceryList = ["potato", "panko", "capsicum"];
+
+groceryList[0] = "sweet potato"; // change "potato" to "sweet potato"
+```
+
+This indexing syntax uses `[` and `]` again, but this time it's following the
+name of the variable and contains the previously mentioned index of the element
+you'd like to access.
+
+Can you complete the following if statement? Make it so that it checks if the
+third score in the array (42) is greater than 50 (ie. it passed).
+
+<FillInTheBlank client:load template={'let scores = [33, 100, 42, 30, 60];\n\nif (scores[<index:2>] >= 50) {\n  console.log("you passed!");\n}'} />
+
+It's also common to want to add elements to an array, we do this with the
+`push` function.
+
+```js
+var items = ["keyboard", "mouse", "monitor"];
+items.push("headphones");
+
+// items is now ["keyboard", "mouse", "monitor", "headphones"]
+```
+
+Can you fill in the blank so that the following code adds "jeff" to the array?
+
+<FillInTheBlank client:load template={'var people = ["james", "marge", "john"];\n\npeople.push("<name:jeff>");\n\nif (people[3] == "jeff") {\n  console.log("hello");\n}'} />
+
+## Task 2: a single bloomer
+
+Say hello to your neighbour and introduce yourself (if you don't know each other already!) There isn't going to be much actual
+pair-work today, but it'll still be nice to have someone to bounce ideas off of while you're working!
+
+Clone your fork of [the lab repository]() repo if you haven't 
+already, open it in VSCode, navigate to the `week-07` folder and start the live server 
+as usual. In addition, you'll need to add the p5.Sound library to your sketch 
+[just like in part 4 of the week 6 lab](/labs/06-pokegarden/#part-4), 
+and un-comment the `lab-sound.js` script tag in your `index.html` which contains 
+the rest of the helper code for this lab.
+
+:::tip
+Remember, un-commenting in HTML means to remove the
+`<!--` and `-->` before and after the `<script>` tag respectively!
+:::
+
+For this sketch, we're going to use the same code pattern as the [week 6
+lab](/labs/06-pokegarden/)---except to have multiple bloomers on
+the screen, we'll use an array to hold our objects. For a review on objects
+[see last weeks lab content](/labs/06-pokegarden/), for a review on arrays
+see the start of this weeks lab.
+
+That means we will describe our bloomers as an array of JavaScript objects. Ask
+your partner or your tutor if you can't remember how these work.
+
+A **bloomer** is an circular entity which:
+1. when it's born, it grows (in size) from nothing
+2. when it reaches maturity, it "blooms" and plays a sound
+3. after reaching maturity, it stops growing.
+
+:::tip
+Think back to the [week 6 lab](/labs/06-pokegarden/) (wow, such a
+long time ago!), where we thought about what fields a Pokémon might have. Discuss
+with your neighbour what some ideas are for what properties you will need
+for your bloomer object.
+:::
+
+Once you've got everything open, paste the following into the `sketch.js` file:
+```js
+var bloomers = [];
+
+function setup() {
+  createCanvas(displayWidth, displayHeight);
+
+  // set up the sound stuff
+  setupSound();
+}
+
+function draw() {
+  background(0);
+
+  // map the "drawBloomer" and "updateBloomer" functions over the bloomer array
+  // although these functions don't do anything yet - you need to write them (see below)
+  for (var i = 0; i < bloomers.length; i++) {
+	drawBloomer(bloomers[i]);
+	updateBloomer(bloomers[i]);
+  }
+}
+
+function mouseReleased() {
+  // write some code here that pushes a new bloomer to the array
+}
+
+function drawBloomer(b) {
+  // code which draws the bloomer goes in here
+  // the bloomer object will be passed in as the `b` parameter
+}
+
+function updateBloomer(b) {
+  // all code which updates parameters in the bloom goes in here
+  // the bloomer object will be passed in as the `b` parameter
+
+  // write some code that makes the bloomer grow
+
+  // write a condition that makes the bloomer bloom
+}
+
+```
+
+Now, at the top of your `sketch.js` there will be
+variable declaration for `bloomers` (initialised as an empty array). This is
+where you'll store the bloomer objects in your sketch "world".
+
+```js
+var bloomers = [];
+```
+
+In the setup function use the
+[`.push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+method to add a single bloomer object to the array.
+
+```js
+function setup() {
+  // ...
+  bloomers.push({ /* your bloomer object goes in here - make sure it's got the right properties */ })
+}
+```
+
+## Task 3: drawing the bloomers
+
+In the `draw()` function your will find that there's a `for` loop which calls
+two functions inside the loop: `drawBloomer()` and `updateBloomer(b)`. Remember
+that this is a common pattern for just calling one (or more) functions on each
+element of the `bloomers` array (one at a time). So, for now, this code is just
+like calling `drawBloomer` on the object we pushed to the array in the last
+step.
+
+Scroll to the `drawBloomer(b)` function in the `sketch.js` file and write some
+code which draws the bloomer object as an ellipse. Remember that you can use the
+dot syntax to get a property from an object.
+
+I know we've harped on about it a lot in labs & lectures, but it's really
+important to understand what's going on here. Conceptually it's quite simple:
+
+1. there's an array of bloomer objects (the array variable is called `bloomers`)
+2. you're writing a function which takes a *single* bloomer object as a
+   parameter (`drawBloomer(b)`)
+3. when you call `drawBloomer(b)` function inside the `for` loop, that's how you
+   draw (or do whatever) to all the bloomers in the array
+
+Don't get confused and try to make your `drawBloomer(b)` function draw all the
+bloomers---it only has to draw one. Breaking the problem down like this is super
+helpful, especially as the things you want to do to each "thing" in the world
+become more complex.
+
+You should now be able to see your bloomer in the browser. After that's working
+properly (ask your tutor or lab neighbour if you get stuck) lets update your
+`drawBloomer(b)` function so that it changes the colour of the bloomer *if* it
+has bloomed (reached maturity). That sounds like a job for an conditional
+statement, don't you think?
+
+Add an `if`-statement to the `drawBloomer` function which draws the bloomer with a different colour if the bloomer's `hasBloomed` property is `true`.
+
+## Task 4: updating the bloomers
+
+The second function you need to define is `updateBloomer(b)`. This is where you
+should modify any parameters in your bloomer objects.
+
+First up, you want to make your bloomer grow.
+
+Discuss with your neighbour / tutor ---how many different
+ways could you represent this notion of "growth" in a p5 sketch?
+
+In the `updateBloomer` function, write some code which modifies the bloomer to
+make it "grow".
+
+Next, you need to add a condition to make your bloomer "bloom". You can just
+use its size for now and make it more fun a bit later.
+
+Write an if statement in the `updateBloomer` function which checks if the
+bloomer has not already bloomed and (`&&`) if it is larger than 250. If **both**
+of these are true, set the bloomer's `hasBloomed` value to true and call the
+`playBoop()` function.
+
+The template repo sets up all the necessary infrastructure for playing sounds in
+the `lab-sound.js` file. Feel free to look at it if you're interested in seeing
+how it works---but don't worry about understanding it today, just calling the
+`playBoop()` function will be enough.
+
+Save your code, and check now that your bloomer grows and then plays a sound as
+the colour changes.
+
+## Task 5: all the bloomers!
+
+To make this interactive, we just need to let the user create more bloomers.
+We can do this by using the `.push()` method again.
+
+In the `mouseReleased()` function, make another call to `.push()` which adds a
+new bloomer to the `bloomers` array, but this time set it's position to `mouseX`
+and `mouseY`.
+
+Save your code and check if you can add a new bloomer by clicking on the screen.
+This should also grow, change colour and make a sound without you doing any
+additional work! Hooray for well-planned code!
+
+Make sure that your best bloom code is  saved to `week-07/sketch.js` in your lab repo and pushed to the GitLab server. Check the CI jobs for a tick to see that your repo is working.
+
+## Extra Tasks
+
+### Break it down!
+
+For this week's break it down, let's have a look at what other effects can be
+achieved with the bloomers code.
+
+<P5Sketch client:only="svelte" sketch={lab7Sketch} />
+
+:::info
+In your pair, open up a cocoding session on
+[p5live](https://teddavis.org/p5live/). Copy and paste the code below in so
+you can work on it together --- try and make it your own, be creative!
+:::
+
+### Make some different sounds
+
+If you want to dive deeper into generating music with p5 read and edit the
+`lab-sound.js` file. The template is setup to use the `p5.TriOsc()` object so
+why not start by changing that to another oscillator. As always you can learn
+all about these in the [p5
+reference](https://p5js.org/reference/#/libraries/p5.sound).

@@ -1,0 +1,73 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import YouTubeEmbed from "astro-theme-anu/components/YouTubeEmbed.astro";
+import Callout from "astro-theme-anu/components/Callout.astro";
+---
+
+<SiteLayout
+  title="LENS — The ANU Laptop Ensemble"
+  description="Homepage of the ANU Laptop Ensemble (COMP2710/COMP6470)"
+>
+  <h1>LENS</h1>
+  <p class="lead">The ANU Laptop Ensemble</p>
+
+  <p>
+    Do you want to make music with your computer? Do you want create new kinds of
+    musical instruments? Do you want to be a part of a laptop band? This is the
+    course for you!
+  </p>
+
+  <p>
+    If you're an ANU student and you'd like to be part of LENS in the future, then
+    bookmark this page and come back around June 2022 — the course will be starting
+    up again in Semester 2 2022 (note: not in Semester 1 as it ran in 2021).
+  </p>
+
+  <p>
+    If you've got other questions about the Laptop Ensemble, e.g. upcoming gigs or
+    booking LENS for your next event, then email
+    <a href="mailto:ben.swift@anu.edu.au">Dr. Ben Swift</a> or
+    <a href="mailto:charles.martin@anu.edu.au">Dr. Charles Martin</a>.
+  </p>
+
+  <Callout type="warning">
+    <p>
+      The LENS course (LENS'21) has finished for the year — check out the student's
+      performances in the <a href="https://www.youtube.com/watch?v=A0NG-T8y7gM">final gig video</a>
+      (hot off the <a href="https://www.youtube.com/channel/UCIU6SqIS02GJlnLOPqlwmpA">LENS Youtube Channel</a>).
+    </p>
+  </Callout>
+
+  <YouTubeEmbed id="A0NG-T8y7gM" title="LENS 2021 final gig" />
+
+  <h2>Who is this for?</h2>
+
+  <p>
+    In this course you'll learn fundamental skills of music computing, including
+    <strong>digital synthesis</strong>, <strong>algorithmic composition</strong>, and
+    <strong>musical interface design</strong>. You'll put these skills to use
+    creating a <strong>computer musical instrument</strong>,
+    <strong>composition</strong>, or <strong>interactive media work</strong> to
+    perform — at a live gig — at the end of the course.
+  </p>
+
+  <p>
+    This course is open to students in computer science, music, art, and elsewhere
+    at ANU. You should have a strong interest in making music using computers, a
+    willingness to learn new approaches to music and computer programming, and must
+    be able to attend the <a href={`${import.meta.env.BASE_URL}workshops/`}>weekly workshop session</a> and
+    perform at the <a href={`${import.meta.env.BASE_URL}deliverables/lens-performance/`}>end-of-semester LENS gig</a>.
+  </p>
+
+  <p>
+    If you've got any questions (including <a href={`${import.meta.env.BASE_URL}resources/faq/#how-to-enrol`}>how to enrol</a>),
+    the <a href={`${import.meta.env.BASE_URL}resources/faq/`}>course FAQ</a> might answer them for you.
+  </p>
+</SiteLayout>
+
+<style>
+  .lead {
+    font-size: 1.25rem;
+    color: var(--at-text-secondary);
+  }
+</style>

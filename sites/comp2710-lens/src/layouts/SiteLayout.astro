@@ -1,0 +1,27 @@
+---
+import BaseLayout from "astro-theme-anu/layouts/BaseLayout.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  wide?: boolean;
+}
+
+const links = [
+  { text: "Workshops", href: `${import.meta.env.BASE_URL}workshops/` },
+  { text: "Deliverables", href: `${import.meta.env.BASE_URL}deliverables/` },
+  { text: "Resources", href: `${import.meta.env.BASE_URL}resources/` },
+];
+
+const { title, description, wide } = Astro.props;
+---
+
+<BaseLayout
+  title={`${title} — LENS`}
+  description={description}
+  name="COMP2710 LENS"
+  links={links}
+  wide={wide}
+>
+  <slot />
+</BaseLayout>

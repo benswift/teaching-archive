@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+
+const labs = await getCollection("labs");
+const visible = labs
+  .filter((l) => !l.data.hidden)
+  .sort((a, b) => a.id.localeCompare(b.id));
+---
+
+<SiteLayout title="Labs">
+  <h1>Labs</h1>
+  <p class="lead">Weekly hands-on exercises with the discoboard.</p>
+
+  <CardGrid columns={2}>
+    {
+      visible.map((lab) => (
+        <Card title={lab.data.title} href={`${import.meta.env.BASE_URL}labs/${lab.id}/`}>
+          {lab.data.summary && <p>{lab.data.summary}</p>}
+        </Card>
+      ))
+    }
+  </CardGrid>
+</SiteLayout>

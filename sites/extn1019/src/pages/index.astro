@@ -1,0 +1,42 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+---
+
+<SiteLayout title="Home">
+  <h1>Creative Computing Extension</h1>
+  <h2>EXTN1019</h2>
+
+  <p>
+    In <em>Creative Computing</em> you'll learn the fundamentals of computer
+    programming through the creative process of making music and visual art.
+  </p>
+
+  <p>
+    This isn't <em>just</em> a creative arts course, and it's not <em>just</em>{" "}
+    a "coding" course: you'll be working in both of those domains at the same
+    time, and (we hope) you'll have a lot of fun in the process.
+  </p>
+
+  <CardGrid columns={3}>
+    <Card title="Year 11 Labs" href={`${import.meta.env.BASE_URL}labs-year-11/`}>
+      <p>Weekly hands-on exercises for EXTN1019A.</p>
+    </Card>
+    <Card title="Year 12 Labs" href={`${import.meta.env.BASE_URL}labs-year-12/`}>
+      <p>Weekly hands-on exercises for EXTN1019B.</p>
+    </Card>
+    <Card title="Year 11 Deliverables" href={`${import.meta.env.BASE_URL}deliverables-year-11/`}>
+      <p>Assignments for EXTN1019A.</p>
+    </Card>
+    <Card title="Year 12 Deliverables" href={`${import.meta.env.BASE_URL}deliverables-year-12/`}>
+      <p>Assignments for EXTN1019B.</p>
+    </Card>
+    <Card title="Resources" href={`${import.meta.env.BASE_URL}resources/`}>
+      <p>FAQ, software setup, and reference materials.</p>
+    </Card>
+    <Card title="People" href={`${import.meta.env.BASE_URL}people/`}>
+      <p>The teaching team.</p>
+    </Card>
+  </CardGrid>
+</SiteLayout>

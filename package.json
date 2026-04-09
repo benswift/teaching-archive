@@ -1,0 +1,31 @@
+{
+  "name": "teaching-archive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --filter './sites/*' build",
+    "build:assemble": "pnpm run build && node scripts/assemble.mjs",
+    "dev:landing": "pnpm --filter landing dev",
+    "dev:comp1720": "pnpm --filter comp1720 dev",
+    "dev:comp2300": "pnpm --filter comp2300 dev",
+    "dev:comp2710-lens": "pnpm --filter comp2710-lens dev",
+    "dev:compiot-bit": "pnpm --filter compiot-bit dev",
+    "dev:extn1019": "pnpm --filter extn1019 dev",
+    "lint": "oxlint --ignore-pattern 'submodules/**'",
+    "lint:css": "pnpm -r --filter './sites/*' lint:css",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "preview": "pnpm run build:assemble && serve dist"
+  },
+  "devDependencies": {
+    "oxfmt": "latest",
+    "oxlint": "^1.58.0",
+    "serve": "^14.2.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "astro-theme-anu": "file:./submodules/astro-theme-anu/packages/astro-theme-anu"
+    },
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  }
+}

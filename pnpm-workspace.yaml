@@ -1,0 +1,26 @@
+packages:
+  - "sites/*"
+
+catalog:
+  # Framework
+  astro: "^6.1.1"
+  svelte: "^5.55.1"
+
+  # Astro integrations
+  "@astrojs/mdx": "^5.0.3"
+  "@astrojs/sitemap": "^3.3.1"
+  "@astrojs/svelte": "^8.0.4"
+
+  # Deck support
+  "@animotion/core": "^1.2.2"
+  astromotion: "github:benswift/astromotion"
+
+  # Runtime deps
+  p5: "^2.2.3"
+
+  # Dev tools
+  lightningcss: "^1.32.0"
+  oxfmt: "latest"
+  oxlint: "^1.58.0"
+  stylelint: "^17.6.0"
+  stylelint-config-standard: "^40.0.0"

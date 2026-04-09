@@ -1,0 +1,36 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Card from "astro-theme-anu/components/Card.astro";
+import CardGrid from "astro-theme-anu/components/CardGrid.astro";
+---
+
+<SiteLayout title="Home">
+  <h1>Art and Interaction Computing</h1>
+  <h2>COMP1720/6720</h2>
+
+  <p>
+    Welcome to COMP1720/6720 Art and Interaction Computing. In this course
+    you'll learn to create expressive and interactive art with code. It's not
+    <em>just</em> an art course, and it's not <em>just</em> a code course:
+    you'll have to do both, and you'll have a lot of fun along the way.
+    <strong>No previous coding or artistic experience is required</strong>: the
+    COMP1720 team will teach you everything from the ground up.
+  </p>
+
+  <p>
+    This site contains all the course content: the lab content, assessments, and
+    other resources.
+  </p>
+
+  <CardGrid columns={3}>
+    <Card title="Labs" href={`${import.meta.env.BASE_URL}labs/`}>
+      <p>Weekly hands-on exercises exploring art and code.</p>
+    </Card>
+    <Card title="Assessments" href={`${import.meta.env.BASE_URL}assessments/`}>
+      <p>Assignments and project information.</p>
+    </Card>
+    <Card title="Resources" href={`${import.meta.env.BASE_URL}resources/`}>
+      <p>FAQ, software setup, and reference materials.</p>
+    </Card>
+  </CardGrid>
+</SiteLayout>

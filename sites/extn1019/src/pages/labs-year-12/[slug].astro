@@ -1,0 +1,16 @@
+---
+import { getCollection, render } from "astro:content";
+import ContentLayout from "../../layouts/ContentLayout.astro";
+
+export async function getStaticPaths() {
+  const labs = await getCollection("labs-year-12");
+  return labs.map((lab) => ({ params: { slug: lab.id }, props: { lab } }));
+}
+
+const { lab } = Astro.props;
+const { Content } = await render(lab);
+---
+
+<ContentLayout title={lab.data.title} tagline={lab.data.tagline}>
+  <Content />
+</ContentLayout>
