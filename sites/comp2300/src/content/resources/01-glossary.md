@@ -1,7 +1,6 @@
 ---
 title: Glossary
 summary: Short definitions & examples for key concepts in the course
-hidden: true
 ---
 
 This glossary provides short definitions & examples for some of the key concepts

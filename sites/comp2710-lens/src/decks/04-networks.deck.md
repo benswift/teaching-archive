@@ -50,7 +50,7 @@ network messages might...
 
 ## Creativity Support Tools
 
-![](/assets/lectures/network/creative-support-tools.gif)
+![](./assets/network/creative-support-tools.gif)
 
 Design Principles (Schneiderman 2007):
 
@@ -63,7 +63,7 @@ Design Principles (Schneiderman 2007):
 
 ## Beyond windows, icons, menus, pointers
 
-![](/assets/lectures/network/hci-support-creativity.jpg)
+![](./assets/network/hci-support-creativity.jpg)
 
 - Integrating intelligence into existing tools (hyper-instruments)
 - Tangible interfaces
@@ -71,32 +71,32 @@ Design Principles (Schneiderman 2007):
 
 ## Collaboration: Time-Space Matrix
 
-![](/assets/lectures/network/diagram-time-space-quadrants.png)
+![](./assets/network/diagram-time-space-quadrants.png)
 
 ## Collaborating across space and time
 
-![](/assets/lectures/network/diagram-time-space-examples.png)
+![](./assets/network/diagram-time-space-examples.png)
 
 ## Same Time - Different Location
 
-![](/assets/lectures/network/skype-ensemble.jpg)
-![](/assets/lectures/network/gibber-ensemble.png)
+![](./assets/network/skype-ensemble.jpg)
+![](./assets/network/gibber-ensemble.png)
 
 ## Same Time - Same Location
 
-![](/assets/lectures/network/slork.jpg)
-![](/assets/lectures/network/ableton-link.png)
+![](./assets/network/slork.jpg)
+![](./assets/network/ableton-link.png)
 
 ## Different Time - Same Location
 
-![](/assets/lectures/network/rjdj-screenshots.jpg)
-![](/assets/lectures/network/locative-pda-concept.jpg)
+![](./assets/network/rjdj-screenshots.jpg)
+![](./assets/network/locative-pda-concept.jpg)
 
 ## Different Time - Different Location
 
-![](/assets/lectures/network/microjam-replay.gif)
-![](/assets/lectures/network/microjam-browse-perform-reply.png)
-![](/assets/lectures/network/roli-create-and-share.jpg)
+![](./assets/network/microjam-replay.gif)
+![](./assets/network/microjam-browse-perform-reply.png)
+![](./assets/network/roli-create-and-share.jpg)
 
 ## Collaborative creativity in SMC...
 
@@ -109,7 +109,7 @@ You **need** to do synchronous and colocated performances, you _can_ explore oth
 
 # MIDI
 
-![](//assets/nimes/Synth_rack_Choking_Sun_Studio.jpg)
+![](./assets/nimes/Synth_rack_Choking_Sun_Studio.jpg)
 
 Default way to get information in and out of Pd
 
@@ -127,7 +127,7 @@ MIDI can be hardware (RS232 serial, USB, Bluetooth) or software (RTP-MIDI over a
   bits)
 - Data byte is a `0` followed by a 7 bit number.
 
-![](//assets/nimes/midi-message.png)
+![](./assets/nimes/midi-message.png)
 
 ## MIDI status byte
 
@@ -171,7 +171,7 @@ Other messages have different formats, e.g.,
 
 ## MIDI in Pd
 
-![](//assets/nimes/midi-in-pd.png)
+![](./assets/nimes/midi-in-pd.png)
 
 Pd has lots of MIDI objects for interchanging MIDI with a hardware or software port.
 
@@ -181,11 +181,11 @@ Pd has lots of MIDI objects for interchanging MIDI with a hardware or software p
 
 ## Receiving from controllers...
 
-![](//assets/nimes/korg-controller-pd.png)
+![](./assets/nimes/korg-controller-pd.png)
 
 ## Making MIDI notes
 
-![](//assets/nimes/makenote-pd.png)
+![](./assets/nimes/makenote-pd.png)
 
 `makenote` can handle timing for notes with duration
 
@@ -197,7 +197,7 @@ You can combine _pitch_, _velocity_ and _duration_ in one message as shown if yo
 
 ## A bit about lists...
 
-![](//assets/nimes/list-packing-pd.png)
+![](./assets/nimes/list-packing-pd.png)
 
 - messages in Pd can contain multiple values (as you know!)
 - you can `append` or `prepend` values to a `list`...
@@ -211,7 +211,7 @@ How else are you going to handle the 12-stage envelopes you want to create?
 
 ## Advanced list packing...
 
-![](//assets/nimes/list-packing-pd2.png)
+![](./assets/nimes/list-packing-pd2.png)
 
 Use `list append` and `list prepend` to add items to a list.
 
@@ -220,7 +220,7 @@ note...
 
 ## MIDI over a network
 
-![](/assets/lectures/network/macos-network-midi.png)
+![](./assets/network/macos-network-midi.png)
 
 MacOS has built-in support for network MIDI (look in the "Audio MIDI Setup" application, open the "MIDI Studio" from the Window menu, then click the little globe icon on the window title bar.
 
@@ -238,7 +238,7 @@ We can create our own protocols that go beyond MIDI or use the more flexible Ope
 
 ## netsend and netreceive
 
-![](/assets/lectures/network/pd-netsend-netreceive.png)
+![](./assets/network/pd-netsend-netreceive.png)
 
 `netsend` and `netreceive` are the basic objects for making network connections and sending messages.
 
@@ -262,7 +262,7 @@ Computer music networks _often_ rely on UDP for simplicity and speed, possible f
 - normally UDP messages
 - one message can have many pieces of data, both numbers and text
 
-![](//assets/nimes/osc-message-structure.png)
+![](./assets/nimes/osc-message-structure.png)
 
 Simple packing: address and type are ASCII text, each section padded to 4-byte boundaries. The "address" tells you what the message is supposed to do (defined by you).
 
@@ -272,11 +272,11 @@ Simple packing: address and type are ASCII text, each section padded to 4-byte b
 - address chunks and all arguments end up in a list: up to you to do what you
   want with them.
 
-![](//assets/nimes/osc-in-pd.png)
+![](./assets/nimes/osc-in-pd.png)
 
 ## Routing Messages
 
-![](/assets/lectures/network/pd-route.png)
+![](./assets/network/pd-route.png)
 
 How do you parse and handle network messages? 
 

@@ -1,7 +1,6 @@
 ---
 title: "Final exam"
 summary: ""
-hidden: true
 ---
 
 ## Outline

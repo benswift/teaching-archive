@@ -23,8 +23,8 @@ In this week's lab you will:
 
 Useful reference material:
 
-- [ARM assembly cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf/)
-- [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/)
+- [ARM assembly cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf)
+- [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)
 
 And here's the conversion widget again, because it always comes in handy:
 
@@ -189,7 +189,7 @@ destination register, but `adds` will update the flags to leave some
 "breadcrumbs" about the result (which can be helpful, as you'll soon see).
 
 In addition to this, if you look at the *Tests* section of the 
-[cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf/) then 
+[cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf) then 
 you can see that there are some instructions specifically used to update the flags without 
 changing the values in the general purpose registers (`r0` - `r12`).  
 For example, `cmp r0, 10` is the same as `subs, r0, 10` except that the value in r0 is left 

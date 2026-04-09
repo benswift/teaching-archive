@@ -18,7 +18,7 @@ In this lab you will:
 
 ### BSSS Unit Outline
 
-The Unit Outline has been [published on this site](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf/) and on our [Wattle page](https://wattlecourses.anu.edu.au/course/view.php?id=44702).
+The Unit Outline has been [published on this site](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf) and on our [Wattle page](https://wattlecourses.anu.edu.au/course/view.php?id=44702).
 
 It contains the:
 * unit goals 
@@ -27,7 +27,7 @@ It contains the:
 * assessment tasks
 * unit planner / calendar  
 
-Please read through the [Unit Outline](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf/) and ask questions.
+Please read through the [Unit Outline](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf) and ask questions.
 
 ### ANU Course Outline
 
@@ -62,7 +62,7 @@ There are 2 possibilities for 3D coordinate systems based on which way the Z-axi
 
 ![The 2 alternatives for z-axis orientation](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cartesian_coordinate_system_handedness.svg/1280px-Cartesian_coordinate_system_handedness.svg.png)
 
-![Using hands](/images/labs/year-12-lab-2/coordinate-system-rules.jpeg/)
+![Using hands](/images/labs/year-12-lab-2/coordinate-system-rules.jpeg)
 
 When you use models imported from other systems, you need to be aware of the sizes (how big is the model in units in the original system), the handedness, and the fact that Y points down. You will need to scale and reflect or rotate your imported model to match p5.js.
 

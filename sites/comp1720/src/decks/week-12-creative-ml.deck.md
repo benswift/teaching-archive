@@ -109,7 +109,7 @@ So we had **enough** `if`s and `else`s then maybe we could make a _doggo classif
 
 ## Simplifying inputs
 
-![perceptron](/assets/lectures/week-12/perceptron.png)
+![perceptron](./assets/week-12/perceptron.png)
 
 One trick we often use is to design a **configurable algorithm** which can:
 
@@ -124,7 +124,7 @@ One example is a ["perceptron" (1958)](https://en.wikipedia.org/wiki/Perceptron)
 
 ## Fast forward 50 years.
 
-![perceptron network](/assets/lectures/week-12/perceptron-network.png)
+![perceptron network](./assets/week-12/perceptron-network.png)
 
 Trick 1: feed the outputs of perceptrons into **more** perceptrons in a kind of _network_
 
@@ -248,7 +248,7 @@ classifier.classifyStart(video,gotResult); // classify video stream
 
 Let's make _our own_ custom image classifier with [Teachable Machine](https://teachablemachine.withgoogle.com/)
 
-![Teachable Charles](/assets/lectures/week-12/teachablecharles.jpg)
+![Teachable Charles](./assets/week-12/teachablecharles.jpg)
 
 ---
 

@@ -66,7 +66,7 @@ _interfaces_ can be based in hardware as well:
 - ...new kinds of music making...
 - ...and new kinds of music?
 
-![](//assets/nimes/nime.jpg)
+![](./assets/nimes/nime.jpg)
 
 ---
 
@@ -106,12 +106,12 @@ _interfaces_ can be based in hardware as well:
 
 # Software Interfaces
 
-![some software GUI interfaces](/assets/lectures/interfaces/computermusic-screen.jpg)
+![some software GUI interfaces](./assets/interfaces/computermusic-screen.jpg)
 
 
 ## Pd GUI Objects
 
-![the GUI objects in Pd](/assets/lectures/interfaces/pd-gui-objects.png)
+![the GUI objects in Pd](./assets/interfaces/pd-gui-objects.png)
 
 - Buttons: `bang`, `toggle`, `message`
 - Sliders/Faders: `vslider`, `hslider`
@@ -122,7 +122,7 @@ Try right-clicking sliders, bang or toggle to customise size, change colour, add
 
 ## Subpatches and Graph-on-Parent
 
-![basic and advanced sub patches in Pd](/assets/lectures/interfaces/pd-subpatch.png)
+![basic and advanced sub patches in Pd](./assets/interfaces/pd-subpatch.png)
 
 To make sufficiently complicated Pd programs "neat", you need to use subpatches and/or define your own objects.
 
@@ -135,7 +135,7 @@ Use "graph-on-parent" (right-click properties) to make parts of a patch show up 
 
 ## Cool Pd Interfaces are Good
 
-![a cool pd interface](/assets/lectures/interfaces/xtouch-interface.png)
+![a cool pd interface](./assets/interfaces/xtouch-interface.png)
 
 It's worth spending time on your Pd interfaces!
 
@@ -145,7 +145,7 @@ This is crucial for _ensemble performance_.
 
 ## Graphical Interface in Processing
 
-![](/assets/lectures/interfaces/processing-pd-demo.png)
+![](./assets/interfaces/processing-pd-demo.png)
 
 [Processing](https://processing.org) is a good way to create a quick custom graphical interface.
 
@@ -157,7 +157,7 @@ N.B., this is highly related to, but not the same as `p5.js`.
 
 ## Live Code Interfaces
 
-![](/assets/lectures/interfaces/2014-live-coding.jpg)
+![](./assets/interfaces/2014-live-coding.jpg)
 
 Just as we used Processing to control Pd over OSC, we could just use any programming environment with real-time execution. E.g.,:
 
@@ -176,11 +176,11 @@ Use graph-on-parent and subpatching to hide the DSP components, lets see the sli
 
 # Hardware Interfaces
 
-![students with hardware interfaces](/assets/photos/2019-laptop-setup.jpg)
+![students with hardware interfaces](./assets/photos/2019-laptop-setup.jpg)
 
 ## Human Interface Devices in Pd
 
-![](/assets/lectures/interfaces/pd-keyboard-mouse.png)
+![](./assets/interfaces/pd-keyboard-mouse.png)
 
 Keyboard is easy: `key`, `keyup`, `keyname`.
 
@@ -195,7 +195,7 @@ Used to be an external called `hid` but it's _very_ old.
 
 ## Interfacing with audio...
 
-![](//assets/nimes/fiddle-bonk-pd.png)
+![](./assets/nimes/fiddle-bonk-pd.png)
 
 - easy way to get some NOISE into your system, try interfacing with audio.
 - pitch detection: `fiddle`
@@ -205,7 +205,7 @@ Used to be an external called `hid` but it's _very_ old.
 
 ## Camera
 
-![](/assets/lectures/setups/bigscreen-strikeonstage2.jpg)
+![](./assets/setups/bigscreen-strikeonstage2.jpg)
 
 Pd can't access a computer camera, but Processing can.
 
@@ -239,7 +239,7 @@ Remember that in computer music:
 
 ## Connecting interfaces
 
-![](//assets/nimes/in2change-setup.jpg)
+![](./assets/nimes/in2change-setup.jpg)
 
 - most commercial interfaces use MIDI over _USB_
 - some modern devices use MIDI over _Bluetooth_
@@ -249,7 +249,7 @@ Remember that in computer music:
 
 ## Phones and OSC interfaces
 
-![](/assets/lectures/interfaces/phone-gui-demo.jpg)
+![](./assets/interfaces/phone-gui-demo.jpg)
 
 A mobile device is a _great_ controller:
 
@@ -265,11 +265,11 @@ Options:
 
 ## NIME Microcontroller Workflow...
 
-![](//assets/nimes/nime-workflow.png)
+![](./assets/nimes/nime-workflow.png)
 
 ## Best practices for DIY interfaces
 
-![](/assets/lectures/interfaces/diy-wearable-interface.jpg)
+![](./assets/interfaces/diy-wearable-interface.jpg)
 
 The best way to control Pd with a microcontroller is to make it speak MIDI.
 
@@ -280,8 +280,8 @@ Alternatively, you can use a serial connection and [translate to MIDI](https://p
 
 ## Interfaces and Ensembles
 
-![](//assets/nimes/ensemble-feedback-diagram.png)
-![](//assets/nimes/ensemble-feedback-instruments.png)
+![](./assets/nimes/ensemble-feedback-diagram.png)
+![](./assets/nimes/ensemble-feedback-instruments.png)
 
 Interfaces for one are fun, but what about collaborating with interface data on a network (of some kind).
 

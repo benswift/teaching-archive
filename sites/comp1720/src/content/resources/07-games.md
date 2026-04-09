@@ -1,7 +1,6 @@
 ---
 title: Don't make a game
 summary: Seriously... don't
-hidden: true
 ---
 
 If you're reading this page it's because you've just found out the course policy "don't make a game". You might be feeling upset or confused about this rule. This page is just to set out our reasons for this policy and to help you find a better way forward in the course.

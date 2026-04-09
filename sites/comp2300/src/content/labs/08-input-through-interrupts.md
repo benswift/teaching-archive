@@ -81,7 +81,7 @@ different timers, all with different names and configuration options, and
 multiple timers can be used simultaneously.
 
 Your discoboard has a timer called the **SysTick** timer, described in the [ARM
-reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/) in *Section B3.3*.
+reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) in *Section B3.3*.
 As with all things on your discoboard, you configure the SysTick timer by
 reading and writing to special hardware registers. To configure and use the
 SysTick timer your program needs to:
@@ -104,7 +104,7 @@ zero. How long this takes in wall-clock time depends on the CPU frequency
 To configure the SysTick timer you'll need to use the
 [load-twiddle-store](/labs/05-blinky/#load-twiddle-store) pattern from lab 5 all over again. This time, the
 relevant information (addresses, offsets, bits) starts at *Section B3.3.2* on
-page 677 of the [ARMv7 reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/) and includes the
+page 677 of the [ARMv7 reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) and includes the
 next couple of sections as well.
 
 We're in week 8 now, so you now have the tools to read the manual and figure it
@@ -141,7 +141,7 @@ Commit and push your program to GitLab.
 
 You may have noticed that there's another bit in the `SYST_CSR` configuration
 register which you didn't set in the last exercise, but which looks interesting:
-the **TICKINT** bit. The [ARMv7 refernce manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/) says that this
+the **TICKINT** bit. The [ARMv7 refernce manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) says that this
 particular bit:
 
 > indicates whether counting to 0 causes the status of the SysTick exception to
@@ -295,7 +295,7 @@ pretty much the same way).
 
 On your discoboard, the GPIO pins are managed through the Extended Interrupts
 and Events Controller (EXTI), which is described in detail in **Section 12** of
-the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/). From that
+the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf). From that
 section:
 
 > The extended interrupts and events controller (EXTI) manages the external and
@@ -517,7 +517,7 @@ light on? if so, then clicking the button will turn on the green" logic:
      enable register `NVIC_ISER0` (address: `0xE000E100`) The bit you are
      looking to set can be found in the position column of the interrupt vector
      table in section 11.3 of the [discoboard reference
-     manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/)
+     manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf)
 
    - You may also want to clear **both** EXTI and NVIC interrupt pending bits
      **before** enabling the EXTI interrupt.
@@ -541,7 +541,7 @@ disable the interrupt in position 6 of the NVIC you write a `1` to the 7th bit
 from the right in `NVIC_ICER0`).
 
 However, you might have noticed something if you were reading Sections B3.4.5
-(p684) and B3.4.7 (p685) the [ARM reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/) really closely. In
+(p684) and B3.4.7 (p685) the [ARM reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf) really closely. In
 the description for those registers it says:
 
 > **1**: On reads, interrupt enabled
@@ -594,7 +594,7 @@ There are *heaps* of things you can do to stretch yourself further:
 
 - can you turn on the discoboard's random number generator (RNG) and use it so
   that the red LED blinks on randomly, rather than at regular intervals? Hint:
-  *Section 24* of the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/) is the place to
+  *Section 24* of the [discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf) is the place to
   find the configuration steps required to get the RNG working---it's not too
   difficult.
 </div>

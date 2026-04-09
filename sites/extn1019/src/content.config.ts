@@ -7,7 +7,7 @@ const labsYear11 = defineCollection({
     .object({
       title: z.string(),
       tagline: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
       templateRepo: z.string().nullish(),
       image: z.string().nullish(),
     })
@@ -20,7 +20,7 @@ const labsYear12 = defineCollection({
     .object({
       title: z.string(),
       tagline: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
       templateRepo: z.string().nullish(),
       image: z.string().nullish(),
     })
@@ -37,7 +37,7 @@ const deliverablesYear11 = defineCollection({
       title: z.string(),
       tagline: z.string().nullish(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });
@@ -52,7 +52,7 @@ const deliverablesYear12 = defineCollection({
       title: z.string(),
       tagline: z.string().nullish(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });
@@ -63,7 +63,7 @@ const resources = defineCollection({
     .object({
       title: z.string(),
       tagline: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });

@@ -96,7 +96,7 @@ The origin point is represented by the coordinates (0,0,0). This **may** be in t
 
 ### Visualising the Environment
 
-![P5.js 3D Debug Mode Default View](/images/labs/year-12-lab-1/debugModeDefault.png/)
+![P5.js 3D Debug Mode Default View](/images/labs/year-12-lab-1/debugModeDefault.png)
 
 ```js
 debugMode();
@@ -104,7 +104,7 @@ debugMode();
 Turns on debugMode. This places a ground grid in the scene, and also a set of coordinate axes (you may need to move objects or the camera to see these). This is to help you understand how things are positioned.
 Once you have turned it on, you need to call `noDebugMode()` to turn it off.  See [`debugMode()`](https://p5js.org/reference/p5/debugMode/) for more information.
 
-![P5.js 3D Debug Mode After Orbit Rotation](/images/labs/year-12-lab-1/debugModeOrbit.png/)
+![P5.js 3D Debug Mode After Orbit Rotation](/images/labs/year-12-lab-1/debugModeOrbit.png)
 
 ```js
 orbitControl();
@@ -222,7 +222,7 @@ Add another object type (box, sphere, cylinder, cone or ellipsoid). Add a transf
 ## Making it Real
 
 Does your 3D world look like this:
-![basic torus](/images/labs/year-12-lab-1/torus_image.png/)
+![basic torus](/images/labs/year-12-lab-1/torus_image.png)
 
 Let's try to make it a little smoother.
 

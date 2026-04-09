@@ -152,7 +152,7 @@ in the screenshot below). Once you do this, you'll see a console window show up
 in your VSCode window (shown here on the right, but it might be on the left, or
 on the bottom depending on your settings---it doesn't matter).
 
-![VSCode developer tools view](/images/resources/vscode-developer-tools-view.png/)
+![VSCode developer tools view](/images/resources/vscode-developer-tools-view.png)
 
 In the screenshot (taken on my machine) there's a bunch of log messages from
 VSCode which you don't need to understand, and that's normal. What might be a

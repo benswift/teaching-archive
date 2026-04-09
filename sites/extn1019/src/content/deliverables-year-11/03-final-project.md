@@ -201,7 +201,7 @@ coursework portfolio from Amanda Zheng &mdash; a highschool painting student fro
 Zealand. The portfolio documents their exploration of a theme. A discussion of their work can be found
 [here](https://www.studentartguide.com/featured/top-in-new-zealand-2021-a-level-art).
 
-![Example portfolio](/images/deliverables/final-project-thumbnail-placeholders/portfolio-example-1.jpeg/)
+![Example portfolio](/images/deliverables/final-project-thumbnail-placeholders/portfolio-example-1.jpeg)
 
 ### Can I use some of the information I used in my Mini Project when explaining my project in the portfolio?
 

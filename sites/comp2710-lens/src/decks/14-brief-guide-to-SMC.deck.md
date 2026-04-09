@@ -79,7 +79,7 @@ see these slides: <https://bit.ly/coding-music-slides>
 
 ## Gibber
 
-![](/assets/lectures/gibber-screen.png)
+![](./assets/gibber-screen.png)
 
 Free tool for making computer music---in your web browser.
 

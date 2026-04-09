@@ -44,7 +44,7 @@ Fixing errors is known as debugging. Debugging is as much an art as writing code
 
 For-loops are no exception. There are some parts of the syntax in a for-loop which you have to write the same way each time you write a for-loop. There are other parts of the for-loop which you can/should modify to the specific programming task you're working on.
 
-![Deconstructed for-loop](/images/labs/lab-6/for-loop.png/)
+![Deconstructed for-loop](/images/labs/lab-6/for-loop.png)
 
 **do: Q1** The diagram above shows a deconstructed for-loop with certain sections labeled `a)`, `b)` and so on. For each section in the diagram, write down whether 1) you need to write it the same way each time you write a for-loop, or whether you can modify it, 2) in your own words, describe the purpose of each section, 3) if you can modify the section, state whether there are any _restrictions_ on the types of modifications you can make (i.e. can you replace that section with any code you like?). Write your answer in the `exercises.md` file in your template repo.
 
@@ -61,7 +61,7 @@ Always let the draw() function handle the screen rendering! Otherwise interactio
 
 In this section, we are going to recreate the sketch below using for-loops. You'll notice that each circle has been labelled with an index. The first is labelled `0`. This is a convention in computing -- we **usually** start indexing from zero. [JavaScript uses zero indexing for arrays and objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections).
 
-![Row of circles](/images/labs/lab-6/row-circles.png/)
+![Row of circles](/images/labs/lab-6/row-circles.png)
 
 Let's assume the variable `i` represents the index of any circle. Your task in this activity is to come up with a general rule which determines the position of a circle, based on its index. We will do this just with pen and paper first and will move on to writing code in the next section.
 
@@ -89,7 +89,7 @@ Now let's modify the sketch to draw a row of circles.
 
 Here we have another row of circles, but it's intensity is decreasing as we move from the left to the right.
 
-![circle gradients](/images/labs/lab-6/circles-gradient.png/)
+![circle gradients](/images/labs/lab-6/circles-gradient.png)
 
 **do:** Modify the for-loop you created from Part 2 so that the intensity of your circles' colour reduces towards the right. Make sure you `commit` and `push` your work to git.
 
@@ -97,13 +97,13 @@ Here we have another row of circles, but it's intensity is decreasing as we move
 
 The sketch below shows a set of contiguous (meaning _touching_), rectangular columns with varying heights.
 
-![dark bars](/images/labs/lab-6/dark-bars.png/)
+![dark bars](/images/labs/lab-6/dark-bars.png)
 
 **do:** Recreate the sketch above. Remember that the heights of each bar increases towards the right. Make sure you `commit` and `push` your work to git when you've finished. If you need some help, ask one of your instructors.
 
 Modify your code to create the sketch below. You should already have some code which creates the dark grey bars, we just need to add the light grey bars. Notice that there are more light grey bars than there are dark grey bars.
 
-![overlapping bars](/images/labs/lab-6/overlapping-bars.png/)
+![overlapping bars](/images/labs/lab-6/overlapping-bars.png)
 
 **do:** Recreate the sketch above. Make sure you `commit` and `push` your work to git when you've finished. If you need some help, ask one of your instructors :)
 
@@ -111,7 +111,7 @@ Modify your code to create the sketch below. You should already have some code w
 
 Our columns have now lost all sense of camaraderie and have dispersed in a radial fashion (see the sketch below).
 
-![radial](/images/labs/lab-6/radial.png/)
+![radial](/images/labs/lab-6/radial.png)
 
 **do:** Recreate the sketch above. Make sure you `commit` and `push` your work to git when you've finished. Again, pen and paper can be your friend here :)
 Notes: rotating a rectangle around a point is shown [in this example](https://editor.p5js.org/kjhollen/sketches/ryDpkpvjQ). HOWEVER - if you try this in a for loop
@@ -130,7 +130,7 @@ for(let i = 0; i < 6; i++){
 }
 ```
 
-![circ-square](/images/labs/lab-6/circ-square.png/)
+![circ-square](/images/labs/lab-6/circ-square.png)
 
 **do:** Modify the code above so that every other circle becomes a square (see image above). Make sure you `commit` and `push` your work to git when you've finished. If you need help, ask one of your instructors.
 
@@ -144,7 +144,7 @@ When we were drawing just a single row of circles, we only needed one index; we 
 
 In the image below, you'll see each circle is labelled with two numbers; something like `0,4`. The first number is the `i` index; this tells you which circle we are drawing in the current row. The second number is the `j` index; this tells you which row we are currently in.
 
-![grid](/images/labs/lab-6/grid.png/)
+![grid](/images/labs/lab-6/grid.png)
 
 :::tip
 **talk:** Call over an instructor and discuss with them what you would need to do to draw a grid of circles like the sketch above (using your knowledge of how for-loops work). After a bit of discussion, your instructors will ask you to write your approach in your `exercises.md` file.

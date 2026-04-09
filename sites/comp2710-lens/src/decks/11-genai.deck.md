@@ -79,7 +79,7 @@ Create _new kinds of music!_
 
 ## Performance data is diverse
 
-![](/assets/lectures/genai/imps-nimes-examples.jpg)
+![](./assets/genai/imps-nimes-examples.jpg)
 
 | **Music Systems**               | **Data**                           |
 |---------------------------------|------------------------------------|
@@ -91,12 +91,12 @@ Create _new kinds of music!_
 
 ## Predicting sequences
 
-![](/assets/lectures/genai/sequence-learning.png)
+![](./assets/genai/sequence-learning.png)
 
 
 ## Interacting with predictions
 
-![](/assets/lectures/genai/predictive-interaction-motivation.png)
+![](./assets/genai/predictive-interaction-motivation.png)
 
 
 # creating an orchestra of intelligent instruments...
@@ -107,7 +107,7 @@ Create _new kinds of music!_
 
 ## Interactive RNN Instrument
 
-![Physical Intelligent Instrument](/assets/lectures/genai/physical-intelligent-instrument2.png)
+![Physical Intelligent Instrument](./assets/genai/physical-intelligent-instrument2.png)
 
 
 - Generates endless music with a melody RNN.
@@ -118,7 +118,7 @@ Create _new kinds of music!_
 
 ## GestureRNN
 
-![Gesture RNN](/assets/lectures/genai/gesture-rnn.png)
+![Gesture RNN](./assets/genai/gesture-rnn.png)
 
 - Predicts 1 of 9 "gestures" for three AI performers.
 - Trained on labelled data from 5 hours of quartet performances.
@@ -130,7 +130,7 @@ Create _new kinds of music!_
 
 ## Robojam and Microjam
 
-![Robojam Interaction](/assets/lectures/genai/robojam-interaction.png)
+![Robojam Interaction](./assets/genai/robojam-interaction.png)
 
 - Predicts next touch location in screen (x, y, dt).
 - Trained on ~1500 5s performances.
@@ -139,13 +139,13 @@ Create _new kinds of music!_
 
 ## Mixture Density Network
 
-![](/assets/lectures/genai/mdn-motivation.png)
+![](./assets/genai/mdn-motivation.png)
 
 <!-- IMPS -->
 
 ## IMPS System
 
-![](/assets/lectures/genai/IMPS_connection_example.png)
+![](./assets/genai/IMPS_connection_example.png)
 
 - Opinionated Neural Network for interacting with NIMES.
 - Automatically collects data and trains.
@@ -168,19 +168,19 @@ Create _new kinds of music!_
 
 ## Test Systems
 
-![Test computers](/assets/lectures/genai/imps-test-computers.jpg)
+![Test computers](./assets/genai/imps-test-computers.jpg)
 
 
 ## Results: Time per prediction
 
-![Time per prediction vs LSTM units](/assets/lectures/genai/prediction_time_against_units.png)
+![Time per prediction vs LSTM units](./assets/genai/prediction_time_against_units.png)
 
 Time per prediction (ms) with different sizes of LSTM layers.
 
 
 ## Results: Time per prediction
 
-![Time per prediction vs MDN dimension](/assets/lectures/genai/prediction_time_against_dimension_64units.png)
+![Time per prediction vs MDN dimension](./assets/genai/prediction_time_against_dimension_64units.png)
 
 Time per prediction (ms) with different MDN output dimensions. (64
 LSTM units)
@@ -188,7 +188,7 @@ LSTM units)
 
 ## Results: Training Error vs Validation Set Error
 
-![](/assets/lectures/genai/training_loss_12K_lightpad_model.png)
+![](./assets/genai/training_loss_12K_lightpad_model.png)
 
 12K sample dataset (15 minutes of performance)
 
@@ -198,7 +198,7 @@ too long.
 
 ## Results: Training Error vs Validation Set Error
 
-![](/assets/lectures/genai/training_loss_100K_lightpad_model.png)
+![](./assets/genai/training_loss_100K_lightpad_model.png)
 
 100K sample dataset (120 minutes of performance)
 
@@ -207,7 +207,7 @@ Takeaway: **64- and 128-unit model still best!**
 
 ## Results: Exploring Generation
 
-![](/assets/lectures/genai/robojam_temperature_sampling_0.png)
+![](./assets/genai/robojam_temperature_sampling_0.png)
 
 Takeaway: Make Gaussians **less diverse**, make categorical **more diverse**.
 
@@ -216,7 +216,7 @@ Takeaway: Make Gaussians **less diverse**, make categorical **more diverse**.
 
 ## Embodied Predictive Musical Instrument (EMPI)
 
-![](/assets/lectures/genai/EMPI-system-diagram.jpg)
+![](./assets/genai/EMPI-system-diagram.jpg)
 
 - Predicts next movement and time, represents physically.
 - Experiments with interaction mappings; mainly focussed on call-response
@@ -225,17 +225,17 @@ Takeaway: Make Gaussians **less diverse**, make categorical **more diverse**.
 
 ## Training Data
 
-![Human Data](/assets/lectures/genai/training_human.png)
-![Sine Data](/assets/lectures/genai/training_sine.png)
-![Square Data](/assets/lectures/genai/training_square.png)
-![Saw Data](/assets/lectures/genai/training_saw.png)
-![Noise Data](/assets/lectures/genai/training_noise.png)
+![Human Data](./assets/genai/training_human.png)
+![Sine Data](./assets/genai/training_sine.png)
+![Square Data](./assets/genai/training_square.png)
+![Saw Data](./assets/genai/training_saw.png)
+![Noise Data](./assets/genai/training_noise.png)
 
 ## Generated Data
 
-![Human Generation](/assets/lectures/genai/generation_human_4500points.png)
-![Synth Generation](/assets/lectures/genai/generation_synth.png)
-![Noise Generation](/assets/lectures/genai/generation_noise.png)
+![Human Generation](./assets/genai/generation_human_4500points.png)
+![Synth Generation](./assets/genai/generation_synth.png)
+![Noise Generation](./assets/genai/generation_noise.png)
 
 ---
 
@@ -253,7 +253,7 @@ Takeaway: Make Gaussians **less diverse**, make categorical **more diverse**.
 
 ## Results: Survey
 
-![](/assets/lectures/genai/survey_boxplot_results.jpg)
+![](./assets/genai/survey_boxplot_results.jpg)
 
 Change of ML model had significant effect: Q2, Q4, Q5, Q6, Q7
 
@@ -271,7 +271,7 @@ Participants generally preferred human or synth, but not always!
 
 ## Results: Performance Length
 
-![](/assets/lectures/genai/performance_length.jpg)
+![](./assets/genai/performance_length.jpg)
 
 Human and synth: **more range** of performance lengths with motor on.
 
@@ -331,7 +331,7 @@ What does a intelligent instrument **album / concert** sound like?
 
 ## Thanks!
 
-![](/assets/lectures/genai/charlesgif.gif) 
+![](./assets/genai/charlesgif.gif) 
 
 - IMPS on [GitHub](https://github.com/cpmpercussion/imps)
 - creative ML: [creativeprediction.xyz](https://creativeprediction.xyz/)

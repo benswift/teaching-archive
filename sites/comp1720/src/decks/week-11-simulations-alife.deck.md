@@ -348,7 +348,7 @@ What's the simplest way to do that?
 
 ## Conway's Game of Life
 
-![A little game of life game](/assets/lectures/week-11/gospersglidergun-vieira.gif)
+![A little game of life game](./assets/week-11/gospersglidergun-vieira.gif)
 
 John Conway was a mathematician with many contributions including to "recreational mathematics".
 
@@ -360,7 +360,7 @@ John Conway was a mathematician with many contributions including to "recreation
 
 ## Cellular Automaton
 
-![Some Cells](/assets/lectures/week-11/ca.png)
+![Some Cells](./assets/week-11/ca.png)
 
 - Cells live on a grid
 
@@ -373,7 +373,7 @@ John Conway was a mathematician with many contributions including to "recreation
 ## Rules of life
 
 
-![Some Cells](/assets/lectures/week-11/ca.png)
+![Some Cells](./assets/week-11/ca.png)
 
 Each cell is updated in each frame.
 
@@ -413,7 +413,7 @@ Let's look at another classic artificial life concept..
 
 ## Boids
 
-![a flock](/assets/lectures/week-11/flock.png)
+![a flock](./assets/week-11/flock.png)
 
 A simulation of coordinated animal motions (e.g., birds, fish) by [Craig Reynolds in 1986](https://www.red3d.com/cwr/boids/). [(original paper)](https://dl.acm.org/doi/10.1145/37402.37406)
 
@@ -425,7 +425,7 @@ Three simple steering behaviours: **separation**, **alignment**, and **cohesion*
 
 ## A Boid
 
-![a boid](/assets/lectures/week-11/boid.png)
+![a boid](./assets/week-11/boid.png)
 
 Has a **direction** and a **velocity**.
 
@@ -435,7 +435,7 @@ Can **steer** left and right by angle.
 
 ## Separation
 
-![](/assets/lectures/week-11/separation.gif)
+![](./assets/week-11/separation.gif)
 
 **Don't crowd**.
 
@@ -445,7 +445,7 @@ Adjust heading to **avoid** nearby boids.
 
 ## Alignment
 
-![](/assets/lectures/week-11/alignment.gif)
+![](./assets/week-11/alignment.gif)
 
 **Move in the same direction**
 
@@ -455,7 +455,7 @@ Calculate the average velocity vector of nearby boids and adjust our velocity to
 
 ## Cohesion
 
-![](/assets/lectures/week-11/cohesion.gif)
+![](./assets/week-11/cohesion.gif)
 
 **Move to the center of the group**
 

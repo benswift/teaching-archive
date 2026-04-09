@@ -247,7 +247,7 @@ push your program to GitLab.
 
 [^msr-instruction]:
     The documentation for `msr` is in Section A7.7.82 on p323 of the [ARMv7-M
-    reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/),
+    reference manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf),
     also see Table B5-2 on page 729 for the bit mask.
 
 You may have noticed that the interrupt handling procedure only preserves

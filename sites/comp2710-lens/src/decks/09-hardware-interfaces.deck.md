@@ -20,7 +20,7 @@ description: "Creating physical computer instruments"
 - Keyboard: `key`, `mouse`, `joystick`, etc.
 - External library: Processing
 
-![](/assets/lectures/hardware-interface/yichen-pd-processing-interface.jpg)
+![](./assets/hardware-interface/yichen-pd-processing-interface.jpg)
 
 
 More interaction options beyond your computer?
@@ -38,7 +38,7 @@ More interaction options beyond your computer?
 
 ## Recap: A Simple Workflow
 
-![](//assets/nimes/nime-workflow.png)
+![](./assets/nimes/nime-workflow.png)
 
 ---
 
@@ -269,7 +269,7 @@ midi.setTransport(function (data: Buffer) &#123;
 
 ## MIDI and sound process in Pd
 
-![](/assets/lectures/hardware-interface/microbit-midi-example.png)
+![](./assets/hardware-interface/microbit-midi-example.png)
 
 - Read MIDI data
 - Transform it to other forms ...

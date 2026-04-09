@@ -141,7 +141,7 @@ and [here.](https://www.education.act.gov.au/about-us/all-news-and-news-alerts/n
 :::
 
 :::info
-The BSSS Unit Outline can be found on the [Wattle Page for this course](https://wattlecourses.anu.edu.au/course/view.php?id=44702) &mdash; or you can [access it here](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf/).
+The BSSS Unit Outline can be found on the [Wattle Page for this course](https://wattlecourses.anu.edu.au/course/view.php?id=44702) &mdash; or you can [access it here](/images/docs/Creative-Computing-EXTN1019B-ANU-Ext-Yr12-2025-Unit-Outline.pdf).
 :::
 
 :::info

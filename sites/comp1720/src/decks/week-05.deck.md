@@ -526,7 +526,7 @@ How do we know that interaction will **enhance** the experience?
 ## Affordances
 
 
-![Design of Everyday Things](/assets/lectures/week-5-interactiveart/design-of-everyday-things.jpg)
+![Design of Everyday Things](./assets/week-5-interactiveart/design-of-everyday-things.jpg)
 
 An "affordance" is a property of a _thing_ such that it supports an action.
 

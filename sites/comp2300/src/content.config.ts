@@ -7,7 +7,7 @@ const labs = defineCollection({
     .object({
       title: z.string(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
       templateRepo: z.string().nullish(),
     })
     .passthrough(),
@@ -19,7 +19,7 @@ const deliverables = defineCollection({
     .object({
       title: z.string(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
       templateRepo: z.string().nullish(),
     })
     .passthrough(),
@@ -31,7 +31,7 @@ const resources = defineCollection({
     .object({
       title: z.string(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });

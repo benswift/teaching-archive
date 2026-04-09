@@ -1,6 +1,5 @@
 ---
 title: Website style guide
-published: false
 ---
 
 This is a style guide for authors of the website, it's not visible to students

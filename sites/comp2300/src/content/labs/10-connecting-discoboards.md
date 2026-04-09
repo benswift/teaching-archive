@@ -198,7 +198,7 @@ interrupt when the value changes.
 Before you can enable and configure the interrupts, you need to enable the
 System Configuration Controller (`SYSCFG`) clock so that you can modify the
 system configuration (see Chaper 8 and 8.2.3 in the [discoboard reference
-manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/)).
+manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf)).
 
 ```ARM
 @ enable SYSCFG clock
@@ -207,7 +207,7 @@ RCC_APB2ENR_set 0
 
 This code is included in the [template](), you can see the
 relevant configuration register in Section 6.4.21 on p233 of the [discoboard
-reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/).
+reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf).
 
 There's one other macro in `macros.S` which is helpful when setting up GPIO pins
 as input: `GPIO_configure_input_pin_it`---note the `_it` suffix. This macro does
@@ -262,7 +262,7 @@ column is the *position* of the interrupt in the NVIC vector table):
 
 This is all shown (along with the names, positions & priorities) of all the
 other interrupts in your discoboard in Table 42, Section 11.3 on p321 of the
-[discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/). Here's a
+[discoboard reference manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf). Here's a
 simplified version of that table which only contains the rows relevant to the
 EXTI controller:
 

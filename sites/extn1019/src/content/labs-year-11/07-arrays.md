@@ -136,7 +136,7 @@ If we continue to _add_ elements to an array, the total number of elements in th
 
 Now that you've been introduced to arrays, let's have a go at using them in a sketch.
 
-![Text sketch](/images/labs/lab-8/text-sketch.png/)
+![Text sketch](/images/labs/lab-8/text-sketch.png)
 
 **do:** Create a variable called `my_texts` which holds an array of 20 `strings`. Remember `strings` are just text data. The strings can be anything you want; single characters or phrases and quotes from literature or media. Once you've created your array, `commit` and `push` your code to git.
 
@@ -180,7 +180,7 @@ circle(twoDArray[1][0], 200, 200)
 
 For the next activity, we will be recreating the interactive sketch below.
 
-![Interactive](/images/labs/lab-8/interactive-sketch.png/)
+![Interactive](/images/labs/lab-8/interactive-sketch.png)
 
 There are two keywords in p5.js that hold the current `x` and `y` position of your cursor. These keywords are called `mouseX` and `mouseY`. Copy the code below into your template repo so you can get a feel for how this works.
 

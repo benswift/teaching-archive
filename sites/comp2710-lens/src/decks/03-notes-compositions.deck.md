@@ -32,7 +32,7 @@ today we look at methods for _organising_ sound in time, allowing us to start to
 
 What defines a "note"?  A beginning, an end, and a shape over time.
 
-![](/assets/digital-synthesis/envelope-sound.png)
+![](./assets/digital-synthesis/envelope-sound.png)
 
 The shape can be made by changing amplitude, but in computer music we can adjust other properties as well.
 
@@ -46,7 +46,7 @@ Now we want _dynamic_ numbers that are _scheduled_ to change in specific ways.
 
 ## shapes over time
 
-![](/assets/lectures/pd-line.png)
+![](./assets/pd-line.png)
 
 `line`, `line~`, and `vline~`
 
@@ -78,7 +78,7 @@ Messages boxes are actually _programmable_: they can receive arguments and incor
 
 ## line and `line~`
 
-![](/assets/lectures/pd-smooth-volume.png)
+![](./assets/pd-smooth-volume.png)
 
 - `line`: outputs numbers as _messages_ at a (default) rate of one ever 20ms (slow!)
 - `line~`: outputs an audio rate signal.
@@ -87,7 +87,7 @@ If you make a volume control with `line` you will have audible clicks as the vol
 
 ## An envelope has more than one slope!
 
-![](/assets/lectures/adsr.png)
+![](./assets/adsr.png)
 
 Note envelopes typically have:
 
@@ -103,7 +103,7 @@ You could call the whole thing an "ADSR" envelope.
 
 ## `vline~`: deluxe `line~`
 
-![](/assets/digital-synthesis/pd-envelope.png)
+![](./assets/digital-synthesis/pd-envelope.png)
 
 `vline~` can be programmed with a comma-separated sequence of ramps of the form `value ramp-time initial-delay`
 
@@ -115,7 +115,7 @@ You could call the whole thing an "ADSR" envelope.
 
 ## vline envelope
 
-![](/assets/digital-synthesis/pd-using-vline.png)
+![](./assets/digital-synthesis/pd-using-vline.png)
 
 Source: Puckette, M. [Theory and Technique of Electronic Music (2007).](http://msp.ucsd.edu/techniques.htm)
 
@@ -131,7 +131,7 @@ keep triggering your envelope generator.
 
 # Sequencing
 
-![](/assets/lectures/pd-sequenced-music.png)
+![](./assets/pd-sequenced-music.png)
 
 _Sequencing_ in electronic music means scheduling events (e.g., notes) to happen in the future.
 
@@ -143,7 +143,7 @@ If you were patient enough you can use the tools you have already to organise a 
  
 ## `delay` and `metro`
 
-![](/assets/lectures/pd-delay-metro.png)
+![](./assets/pd-delay-metro.png)
 
 - `delay` is an object that repeats whatever message it receives after a certain number of milliseconds.
 
@@ -171,7 +171,7 @@ This is how most _drum machines_ work; it's a convenient way to make loop-based 
 
 ## Counters and Select
 
-![](/assets/lectures/pd-counter-select.png)
+![](./assets/pd-counter-select.png)
 
 - We need a counter to make a step sequencer
 - You can make one in pd with `metro`, `f` (a nameless float variable) and `+ 1`
@@ -183,7 +183,7 @@ This is how most _drum machines_ work; it's a convenient way to make loop-based 
 
 ## A basic step sequencer
 
-![](/assets/lectures/pd-step-sequencer.png)
+![](./assets/pd-step-sequencer.png)
 
 What's new here?
 
@@ -204,7 +204,7 @@ Even better: hide drum synth in sub-patch, use graph-on-parent to hide sequencer
 
 ## Modulation Effects: Vibrato and Tremolo
 
-![](/assets/lectures/pd-vibrato-tremolo.png)
+![](./assets/pd-vibrato-tremolo.png)
 
 Let's make some digital effects, vibrato and tremolo.
 
@@ -226,7 +226,7 @@ We can use this to make interesting sounds _without_ lots of oscillators for add
 
 ## Amplitude Modulation: AM Synthesis
 
-![](/assets/lectures/pd-am-synthesis.png)
+![](./assets/pd-am-synthesis.png)
 
 AM synthesis results in _two tones_.
 
@@ -236,7 +236,7 @@ This is called "ring modulation" and the metallic sound is quite striking.
 
 ## Frequency Modulation: FM Synthesis
 
-![](/assets/lectures/pd-fm-synth.png)
+![](./assets/pd-fm-synth.png)
 
 - Three parameters: _C_ the carrier frequency, _M_ the modulation frequency and _D_ the depth of modulation.
 
@@ -246,7 +246,7 @@ This is called "ring modulation" and the metallic sound is quite striking.
 
 ## Better FM Synthesis
 
-![](/assets/lectures/pd-better-fm.png)
+![](./assets/pd-better-fm.png)
 
 Better to have timbre separate from (fundamental) pitch. We want the shape of the spectrum to stay the same as we change carrier frequency.
 
@@ -258,7 +258,7 @@ Better to have timbre separate from (fundamental) pitch. We want the shape of th
 
 ## Phase Modulation
 
-![](/assets/lectures/pd-phase-mod.png)
+![](./assets/pd-phase-mod.png)
 
 In practice, many "FM" algorithms actually use _phase modulation_ 
 
@@ -282,7 +282,7 @@ We can emulate an acoustic space (smooth out the sound), get the sound a bit _di
 
 ## Delay (the audio kind)
 
-![](/assets/lectures/pd-delread.png)
+![](./assets/pd-delread.png)
 
 To _delay_ some audio means to hold it back from playing for a certain amount of time.
 
@@ -294,7 +294,7 @@ imagine rolling marbles down a pipe and cutting a hole in it to access ones you 
 
 ## Delay Effect Parameters
 
-![A typical digital delay pedal](/assets/lectures/digital-delay.jpg)
+![A typical digital delay pedal](./assets/digital-delay.jpg)
 
 typical "delay" effects probably have controls for: 
 
@@ -308,7 +308,7 @@ sometimes we call the non-effected sound _dry_ and the effected sound _wet_
 
 ## Reverb
 
-![](/assets/digital-synthesis/pd-reverb.png)
+![](./assets/digital-synthesis/pd-reverb.png)
 
 Reverberation is (more or less) lots of little echoes in a room or space that add up to smear out a sound.
 
@@ -322,7 +322,7 @@ There's a _completely different_ approach to reverb using _convolution_, but tha
 
 ## Distortion
 
-![](/assets/digital-synthesis/pd-distortion.png)
+![](./assets/digital-synthesis/pd-distortion.png)
 
 Distortion is when a signal is "clipped" resulting in _undesirable_ extra
 sounds.
@@ -338,7 +338,7 @@ Remember to boost the input gain a LOT for sweet distorted goodness.
 
 ## Compression
 
-![](/assets/digital-synthesis/pd-compression.png)
+![](./assets/digital-synthesis/pd-compression.png)
 
 A compressor turns down the volume if a signal rises above a threshold.
 
@@ -349,7 +349,7 @@ A compressor turns down the volume if a signal rises above a threshold.
 ## Filters
 
 
-![](/assets/digital-synthesis/pd-filter.png)
+![](./assets/digital-synthesis/pd-filter.png)
 
 Filters "remove" parts of a sound that correspond to certain frequencies.
 
@@ -365,7 +365,7 @@ Lots of filters---Must be important. ([read (a lot) more...](http://msp.ucsd.edu
 
 ## Shaping a sound with filters
 
-![](/assets/digital-synthesis/pd-subtractive-chime.png)
+![](./assets/digital-synthesis/pd-subtractive-chime.png)
 
 1. Start with `noise~`
 2. Add filters to remove lots of sound

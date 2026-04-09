@@ -9,7 +9,7 @@ const posts = defineCollection({
       date: z.coerce.date(),
       author: z.string().nullish(),
       week: z.number().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });
@@ -20,7 +20,7 @@ const deliverables = defineCollection({
     .object({
       title: z.string(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
       date: z.coerce.date().nullish(),
     })
     .passthrough(),
@@ -32,7 +32,7 @@ const resources = defineCollection({
     .object({
       title: z.string(),
       summary: z.string().nullish(),
-      hidden: z.coerce.boolean().default(false),
+      published: z.coerce.boolean().default(true),
     })
     .passthrough(),
 });

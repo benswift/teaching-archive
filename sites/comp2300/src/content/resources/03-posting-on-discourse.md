@@ -3,7 +3,6 @@ title: Posting on Discourse
 summary: >-
   If you're having trouble asking your question on the forum, then here's
   a guide to help you out.
-hidden: true
 ---
 
 Ok Benny, here's a place to put this stuff - and some headings which might be a

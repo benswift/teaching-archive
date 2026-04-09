@@ -1,7 +1,6 @@
 ---
 title: Mid-Semester Exam Feedback
 summary: (hopefully) helpful feedback on some of the issues which came up in marking the mid-sem exams
-hidden: true
 ---
 
 :::info

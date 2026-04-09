@@ -27,8 +27,8 @@ In this week's lab you will:
 Useful references (no need to look at these just yet, we'll step you through
 when you'll need each one):
 
-- [ARM assembly cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf/)
-- [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/)
+- [ARM assembly cheat sheet](/assets/manuals/ARMv7-cheat-sheet.pdf)
+- [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)
 
 ## Introduction {#introduction}
 
@@ -275,7 +275,7 @@ might be painful and confusing at the start, but you'll get used to it.
 :::tip
 How might you figure out on your discoboard's Cortex-M4 CPU whether a 32-bit
 instruction is read as one 32-bit word or as two 16-bit half-words? (hint:
-have a look at A5.1 in the [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf/)).
+have a look at A5.1 in the [ARM®v7-M Architecture Reference Manual](/assets/manuals/ARMv7-M-architecture-reference-manual.pdf)).
 :::
 
 :::info

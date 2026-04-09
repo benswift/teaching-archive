@@ -6,7 +6,7 @@ import CardGrid from "astro-theme-anu/components/CardGrid.astro";
 
 const labs = await getCollection("labs-year-12");
 const visible = labs
-  .filter((l) => !l.data.hidden)
+  .filter((l) => l.data.published)
   .sort((a, b) => a.id.localeCompare(b.id));
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Lab 21: Finishing Mini Projects + JS Expressions"
-tagline: "Week 2, Term 4 &ndash; Finalising Mini Projects"
+tagline: "Week 2, Term 4 – Finalising Mini Projects"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-mini-project
 image: /images/banners/remainders-by-jason-xu.jpg
 ---
@@ -176,7 +176,7 @@ Once we assign a value (or object, or function) to a variable, this can be used 
 
 ```js 
 let x = 10;
-let y = x // the expression is the variable "x". The value of x will be put into y (if x is an object, then the pointer to x will be assigned to y &ndash; x and y will then point to the same object instance);
+let y = x // the expression is the variable "x". The value of x will be put into y (if x is an object, then the pointer to x will be assigned to y – x and y will then point to the same object instance);
 ```
 
 #### numeric operators
@@ -186,7 +186,7 @@ We can combine literals, variables, and expressions, using operators to perform 
 * subtraction `-`
 * multiplication `*`
 * division `/`
-* remainder `%` &ndash; returns the remainder after integer division
+* remainder `%` – returns the remainder after integer division
 * exponentiation `**` 
 * grouping `()` imposes order of operation
 * postfix increment/decrement `x++`
@@ -210,7 +210,7 @@ Strings can be concatenated using the `+` operator. It has the same operator pre
 
 #### logical operators
 
-For flow control in programs we need to ask questions and make decisions about which path of a branch to follow. This includes conditional branching using if+else, and conditional looping using for, while and do..while. For this purpose we construct logical expressions &ndash; expressions which evaluate to `true` or `false`.
+For flow control in programs we need to ask questions and make decisions about which path of a branch to follow. This includes conditional branching using if+else, and conditional looping using for, while and do..while. For this purpose we construct logical expressions – expressions which evaluate to `true` or `false`.
 
 Usually, with datatype which are numeric, we can compare the values using:
 
@@ -221,25 +221,25 @@ Usually, with datatype which are numeric, we can compare the values using:
 
 We also test for equivalence. Do two expressions evaluate to the same value? Do they point to the same object?
 
-* `==` [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality) &ndash; expressions are cast to the same type before comparison: `"1" == 1` evaluates to `true`
-* `!=` [inequality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality) &ndash; expressions are cast to the same type before comparison: `"1" != 1` evaluates to `false`
-* `===` [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) &ndash; compares values of 2 operands. Different types cannot be equal. `"1" === 1` evaluates to `false`
-* `!==` [strict inequality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/strict_inequality) &ndash; compares values of 2 operands. Different types cannot be equal. `"1" !== 1` evaluates to `true`
+* `==` [equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality) – expressions are cast to the same type before comparison: `"1" == 1` evaluates to `true`
+* `!=` [inequality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality) – expressions are cast to the same type before comparison: `"1" != 1` evaluates to `false`
+* `===` [strict equality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality) – compares values of 2 operands. Different types cannot be equal. `"1" === 1` evaluates to `false`
+* `!==` [strict inequality](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/strict_inequality) – compares values of 2 operands. Different types cannot be equal. `"1" !== 1` evaluates to `true`
 
 We can combine multiple logical expressions using logical operators.
 
-* `&&` &ndash; Logical AND. evaluates to `true` if and only if both operands evaluate to `true` 
-* `||` &ndash; Logical OR. evaluates to `false` if the left and/or the right operand evaluate to `true`.
-* `!` &ndash; Logical NOT. A unary operator placed before its operand. evaluates to `false` if the operand evaluates to `true`, and `false` if the operand evaluates to `true`. It flips `true` to `false` and vice-versa.  
+* `&&` – Logical AND. evaluates to `true` if and only if both operands evaluate to `true` 
+* `||` – Logical OR. evaluates to `false` if the left and/or the right operand evaluate to `true`.
+* `!` – Logical NOT. A unary operator placed before its operand. evaluates to `false` if the operand evaluates to `true`, and `false` if the operand evaluates to `true`. It flips `true` to `false` and vice-versa.  
 
 #### bitwise logical expressions
 
-Bitwise operators combine values at the bit level. This only works with numeric datatypes. You can use these on Number with Number or BigInt with BigInt. A bit value of 1 is regarded as `true` and 0 as `false`. Working with Number type &ndash; the result is a 32-bit value. For BigInt, the return value is the size of the larger BigInt.
+Bitwise operators combine values at the bit level. This only works with numeric datatypes. You can use these on Number with Number or BigInt with BigInt. A bit value of 1 is regarded as `true` and 0 as `false`. Working with Number type – the result is a 32-bit value. For BigInt, the return value is the size of the larger BigInt.
 
-* `&` &ndash; bitwise AND
-* `|` &ndash; bitwise OR
-* `^` &ndash; bitwise XOR
-* `~` &ndash; bitwise NOT (unary operator)
+* `&` – bitwise AND
+* `|` – bitwise OR
+* `^` – bitwise XOR
+* `~` – bitwise NOT (unary operator)
 
 #### function expressions
 
@@ -304,13 +304,13 @@ The assessment rubric for your Final Project will be introduced next week.
 
 As your Mini Project is **due on Friday 25 October**, it is inappropriate to start working on your Final Project before you submit your Mini Project.
 
-Some of you may be keen to get started on the Final Project. At this stage &ndash; do not start constructing. But you can start your planning and ideation for the project.
+Some of you may be keen to get started on the Final Project. At this stage – do not start constructing. But you can start your planning and ideation for the project.
 
 The project theme for your Final Project will be **Other Minds**. This is inspired by the book [***"Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness"***](https://www.harpercollins.com.au/9780008226299/other-minds/) by [Peter Godfrey-Smith](https://en.wikipedia.org/wiki/Peter_Godfrey-Smith).
 
-You are not expected to make a work about Octopuses!  You are expected to engage with ideas that all living beings have minds &ndash; minds which are different to yours.  
+You are not expected to make a work about Octopuses!  You are expected to engage with ideas that all living beings have minds – minds which are different to yours.  
 
-This can possibly link to your Mini Project &ndash; as an extension, branching, or re-imagining of the concept of "More Than Human".
+This can possibly link to your Mini Project – as an extension, branching, or re-imagining of the concept of "More Than Human".
 
 ---
 

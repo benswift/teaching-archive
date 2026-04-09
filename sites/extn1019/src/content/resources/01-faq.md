@@ -238,7 +238,7 @@ $5k scholarship to continue their studies in Computing at the ANU.
 
 ### I'm _really_ into formal BSSS course descriptions, does this course have one?
 
-Weird flex, but ok. [Here you go](/images/resources/ANU_H_Course_-_Creative_Computing_2021-2022.pdf/).
+Weird flex, but ok. [Here you go](/images/resources/ANU_H_Course_-_Creative_Computing_2021-2022.pdf).
 
 ### I'm still a bit unsure about this whole thing---can you help?
 

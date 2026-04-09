@@ -1,7 +1,6 @@
 ---
 title: "Mid-semester exam"
 summary: ""
-hidden: true
 ---
 
 ## Outline

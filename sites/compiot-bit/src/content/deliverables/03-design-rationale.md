@@ -1,6 +1,6 @@
 ---
 title: "Design rationale"
-summary: "A chance to reflect on what the thing you built *means* in the world."
+summary: "A chance to reflect on what the thing you built means in the world."
 date: 2019-02-18
 ---
 

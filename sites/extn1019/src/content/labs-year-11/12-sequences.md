@@ -27,7 +27,7 @@ Throughout the lab, we will be using synthesizers as our primary instrument for 
 
 The amplitude of the oscillator in a synth is modulated using something called an [_ADSR envelope_](https://github.com/Tonejs/Tone.js/wiki/Envelope). ADSR stands for Attack, Decay, Sustain, Release. The ADSR envelope has four distinct parts. The `Attack` section raises the amplitude from zero to some maximum value, this is immediately followed by a `Decay` section which reduces the amplitude to some value. The `Sustain` section keeps the amplitude constant for a certain amount of time and the `Release` section brings the amplitude back to zero over a certain amount of time. Usually these changes in amplitude in the `Attack`, `Decay` and `Release` sections are _linear_, but can also be [_exponential_, _cosine_, _sine_, _step_, _ripple_, and _bounce_](https://github.com/Tonejs/Tone.js/wiki/Envelope#curves).
 
-![ADSR envelope](/images/labs/lab-12/ADSR.png/)
+![ADSR envelope](/images/labs/lab-12/ADSR.png)
 
 You'll notice that we have already created a synthesizer in your template repo for this week. Synthesizer (and other instruments like oscillators) are represented as a special type of data in Tone.js called _Objects_. Just like other types of data such as Numbers `4.3` and Strings `"Hello world!"`, we can assign Objects like synthesizers to a variable. In the example below, we create a variable called `synth` and assign it to a synthesizer object which has a sine wave oscillator under the hood. Objects are just a bit more complex than Numbers and Strings. We'll cover _Objects_ in more detail in coming weeks.
 
@@ -68,11 +68,11 @@ Alternatively you can trigger the attack and release separately, which enables y
 
 **do:** A good way to design your own synthesizer is to start with the [Tone.js examples](https://tonejs.github.io/examples/). After choosing a Synth type, you can modify the parameters to create unique sounds that you enjoy. Once you are happy with a sound, you can click the **`"<>"`** link to show the JavaScript required to create the object.
 
-![FMSynth Example](/images/labs/lab-12/fmsynth-example.png/)
+![FMSynth Example](/images/labs/lab-12/fmsynth-example.png)
 
 After clicking **`<>`**:
 
-![FMSynth Options](/images/labs/lab-12/fmsynth-options.png/)
+![FMSynth Options](/images/labs/lab-12/fmsynth-options.png)
 
 You can copy the code to build your own synth (in the same way as the Pianoetta synth).
 
@@ -96,7 +96,7 @@ With oscillators, we controlled the pitch of each oscillation by specifying the 
 
 It just so happens that `440Hz` is the pitch of the note `A3`. In most Western music, if we start at `A3` and move through 12 notes (following a certain interval pattern of pitches), we return at another A note `A4` which still sounds like an A, but a bit higher. The number after the A tells you how high or low the A note is. `A4` has a frequency of `880Hz` and is an _octave_ higher than `A3`. I find this stuff much easier to comprehend if we pick a specific instrument and notate the pitches and note names on that instrument so check out this diagram of a keyboard notated with frequencies and note names.
 
-![Pitches](/images/labs/lab-12/piano.png/)
+![Pitches](/images/labs/lab-12/piano.png)
 
 Alrighty, that should hopefully give you enough music theory to get you started on creating your own sequences.
 
@@ -135,7 +135,7 @@ In this section we are going to follow an example to recreate a phrase from [Red
 
 The diagram below maps out the melody of Redbone, showing the pitch of each note and when the note is played.
 
-![redbone](/images/labs/lab-12/redbone.png/)
+![redbone](/images/labs/lab-12/redbone.png)
 
 With the help of that diagram, change the `notes` array you created to include the notes from the Redbone melody. Some things to keep in mind when doing this:
 

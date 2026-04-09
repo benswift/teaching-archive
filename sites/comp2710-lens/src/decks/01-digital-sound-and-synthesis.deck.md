@@ -15,11 +15,11 @@ We acknowledge and celebrate the First Australians on whose traditional lands we
 
 # Sound
 
-![](/assets/lectures/sound-diagram.png)
+![](./assets/sound-diagram.png)
 
 # Digital Sound
 
-![](/assets/lectures/diagram-digital-sound.png)
+![](./assets/diagram-digital-sound.png)
 
 ## Why does digital sound work?
 
@@ -53,7 +53,7 @@ We hear sound up to ~20KHz, therefore most DACs operate a bit above 40Khz: 44.1K
 
 Yep. Check out these demonstrations:
 
-![](/assets/digital-synthesis/digital-sound.png)
+![](./assets/digital-synthesis/digital-sound.png)
 
 - Monty Montgomery (Xiph.org) [Youtube](https://youtu.be/cIQ9IXSUzuM)
   [Original Video](https://xiph.org/video/vid2.shtml)
@@ -63,13 +63,13 @@ Yep. Check out these demonstrations:
 
 Computer music algorithms are usually built from a network of modules that we often call "unit generators".
 
-![](/assets/lectures/diagram-ugens.png)
+![](./assets/diagram-ugens.png)
 
 The point here is that sound and music programming involves organising modules so that a signals flow through each part. This can be done with text or graphically.
 
 ## Pure Data (Pd)
 
-![](/assets/digital-synthesis/pd-blankscreen.png)
+![](./assets/digital-synthesis/pd-blankscreen.png)
 
 Free tool for making computer music
 
@@ -88,7 +88,7 @@ Graphical programming environment.
 
 ## Gibber
 
-![](/assets/lectures/gibber-screen.png)
+![](./assets/gibber-screen.png)
 
 Free tool for making computer music---in your web browser.
 
@@ -108,13 +108,13 @@ Let's make a Pd patch. I'll use the "Put" menu to create an object and type in t
 
 this is the bit that turns "dots" into sounds... let's try it.
 
-![](/assets/digital-synthesis/pd-messing-with-dac.png)
+![](./assets/digital-synthesis/pd-messing-with-dac.png)
 
 ## Making a Sound
 
 this is the "hello world" of computer music
 
-![](/assets/digital-synthesis/pd-hellosine.png)
+![](./assets/digital-synthesis/pd-hellosine.png)
 
 `osc~` here is a ugen that outputs a cosine wave at the frequency given by its argument.
 
@@ -124,14 +124,14 @@ this is the "hello world" of computer music
 
 Multiplying a sound by a constant changes the volume (amplitude).
 
-![](/assets/digital-synthesis/pd-hellosine-volume.png)
+![](./assets/digital-synthesis/pd-hellosine-volume.png)
 
 For making different kinds of boxes, try the "put" menu, and **try the key
 combinations...**
 
 ## Pd has lots of "things"
 
-![](/assets/lectures/pd-kinds-of-things.png)
+![](./assets/pd-kinds-of-things.png)
 
 "Objects" are the primary element of programming in Pd, you can find a list of built-in objects in "Help" menu.
 
@@ -205,7 +205,7 @@ Pd and Gibber are good at different things (if not, I wouldn't explain both!)
 
 To play two notes at once, just plug both outputs into one input.
 
-![](/assets/digital-synthesis/pd-twonotes.png)
+![](./assets/digital-synthesis/pd-twonotes.png)
 
 Q: How do our brains know there are two sounds even though the waves get mixed together?
 
@@ -213,7 +213,7 @@ Q: How do our brains know there are two sounds even though the waves get mixed t
 
 We can mix simple sounds to create a complex sound.
 
-![](/assets/digital-synthesis/pd-additive.png)
+![](./assets/digital-synthesis/pd-additive.png)
 
 ## Sound/Music terminology
 
@@ -229,7 +229,7 @@ In general acoustic music, the best way to change _timbre_ is to change instrume
 
 "These frequencies are just sounds. I want to play **NOTES**"
 
-![](/assets/digital-synthesis/pd-additive-notes.png)
+![](./assets/digital-synthesis/pd-additive-notes.png)
 
 ## Overtones and Harmonics
 
@@ -260,7 +260,7 @@ Inharmonic overtones are a super important part of great sounds like bells, cymb
 
 # Frequency Domain
 
-![](/assets/lectures/spectrogram.png)
+![](./assets/spectrogram.png)
 
 So far, we have represented sounds as a waveform---this is also known as the "time domain" representation.
 
@@ -272,7 +272,7 @@ To obtain frequency domain we use a technique called Fourier analysis (more on t
 
 # Waveforms
 
-![](/assets/lectures/pd-waveforms.png)
+![](./assets/pd-waveforms.png)
 
 Synthesisers often have different "waveforms" or wave shapes that can provide different timbres. Here are some classics. The "harshness" of these reflects more harmonic overtones.
 

@@ -162,7 +162,7 @@ old CRT monitor or a laptop.
 This means that your submission should still look great even if 
 the aspect ratio changes, eg: (vertical, square, widescreen)
 
-![Reactive Design Example](/images/assessments/example-reactive-design.png/)
+![Reactive Design Example](/images/assessments/example-reactive-design.png)
 
 ### Can I use images or sounds from the internet? {#using-images}
 

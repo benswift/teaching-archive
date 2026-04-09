@@ -1,7 +1,6 @@
 ---
 title: Study Event 2
 summary: Questions and other content from Study Event 2
-published: false
 ---
 
 # Functions

@@ -219,7 +219,7 @@ A table of data and an array of objects are very similar
 you can think about each rows of your spreadsheet as an object and each column
 of your table as property
 
-![](/assets/lectures/week-8/spreadsheet.png)
+![](./assets/week-8/spreadsheet.png)
 
 ---
 

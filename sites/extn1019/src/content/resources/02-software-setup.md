@@ -119,19 +119,19 @@ homepage](https://services.anu.edu.au/information-technology/software-systems/mi
 just click "Login to Office 365" on that page and sign in with you uni ID and
 password.
 
-![accessing Office 365](/images/resources/online-labs/1-office365-login.jpg/)
+![accessing Office 365](/images/resources/online-labs/1-office365-login.jpg)
 
 You can go to the Teams app right in Office 365. While you're in Office 365, why
 not [**update your
 avatar**](https://support.microsoft.com/en-us/office/add-your-profile-photo-to-microsoft-365-2eaf93fd-b3f1-43b9-9cdc-bdcd548435b7)
 to a friendly picture of yourself so we know who you are?
 
-![accessing Teams](/images/resources/online-labs/2-choose-teams.jpg/)
+![accessing Teams](/images/resources/online-labs/2-choose-teams.jpg)
 
 If your MS Teams account is subscribed to more than one channel, you can always
 find EXTN1019 in your Teams main screen:
 
-![accessing EXTN1019 in Teams](/images/resources/online-labs/3-choose-group.png/)
+![accessing EXTN1019 in Teams](/images/resources/online-labs/3-choose-group.png)
 
 Microsoft Teams works best as an application installed on your computer. Hit the
 "Download app" button to get it installed.
@@ -160,7 +160,7 @@ in the screenshot below). Once you do this, you'll see a console window show up
 in your VSCode window (shown here on the right, but it might be on the left, or
 on the bottom depending on your settings---it doesn't matter).
 
-![VSCode developer tools view](/images/resources/vscode-developer-tools-view.png/)
+![VSCode developer tools view](/images/resources/vscode-developer-tools-view.png)
 
 In the screenshot (taken on my machine) there's a bunch of log messages from
 VSCode which you don't need to understand, and that's normal. What might be a

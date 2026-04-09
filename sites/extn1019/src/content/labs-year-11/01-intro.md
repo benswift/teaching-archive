@@ -211,7 +211,7 @@ sketch in).
 It might not look like much, but you've made your first p5 sketch, and you
 should take a moment to enjoy your success.
 
-![success!](/images/labs/lab-1/success-kid.jpg/)
+![success!](/images/labs/lab-1/success-kid.jpg)
 
 ## Part 5: committing & pushing the changes {#committing}
 

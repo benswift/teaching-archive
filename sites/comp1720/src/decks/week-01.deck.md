@@ -479,9 +479,9 @@ Dr Tony Curran (2020) (friend of comp1720)
 
 ## which of these is _"art"_?
 
-![latte art?](/assets/lectures/week-1/latte-1.jpg)
+![latte art?](./assets/week-1/latte-1.jpg)
 
-![latte art?](/assets/lectures/week-1/latte-2.jpg)
+![latte art?](./assets/week-1/latte-2.jpg)
 
 <!-- this is an open question
 

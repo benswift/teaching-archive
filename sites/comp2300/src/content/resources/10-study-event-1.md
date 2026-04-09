@@ -1,7 +1,6 @@
 ---
 title: Study Event 1
 summary: Questions and other content from Study Event 1
-published: false
 ---
 
 ### Digital Logic

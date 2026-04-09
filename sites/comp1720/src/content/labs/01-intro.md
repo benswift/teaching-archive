@@ -79,11 +79,11 @@ is called **forking**, and creates a new repo (your "fork").
 To fork the [lab template](), click the fork button on
 the GitLab page in your web browser (I've pointed to it below).
 
-![Fork Template](/images/labs/lab-1/fork-template.png/)
+![Fork Template](/images/labs/lab-1/fork-template.png)
 
 After clicking Fork, you will be presented with another page:
 
-![Fork Guide](/images/labs/lab-1/fork-guide.png/)
+![Fork Guide](/images/labs/lab-1/fork-guide.png)
 
 There are a few things to note here, and these will also be important when it comes 
 to forking your assignment so make sure you follow / understand them.
@@ -133,11 +133,11 @@ Below are our steps, however general steps exist on the SoCo Gitlab website.
    hand side, click that box and select it. Now click on the right hand side box
    to copy the URL to your clipboard.)
 
-   ![Url Box](/images/labs/lab-1/gitlab-url-box.png/)
+   ![Url Box](/images/labs/lab-1/gitlab-url-box.png)
 
 4. Back in VSCode, paste the url into the prompt box and hit enter --- making sure that the "Clone from URL" option is highlighted.
 
-   ![Don't click "Clone in GitHub"](/images/labs/lab-1/clone.png/)
+   ![Don't click "Clone in GitHub"](/images/labs/lab-1/clone.png)
 
 5. A window will open asking you where to save the files. If this is your own
    computer it might be a good idea to create a `comp1720` folder and clone all
@@ -207,7 +207,7 @@ sketch in).
 It might not look like much, but you've made your first p5 sketch, and you
 should take a moment to enjoy your success.
 
-![success!](/images/labs/lab-1/success-kid.jpg/)
+![success!](/images/labs/lab-1/success-kid.jpg)
 
 ### Task 5: committing & pushing the changes {#committing}
 
@@ -257,12 +257,12 @@ If everything worked successfully, then when you refresh the GitLab project page
 for your fork (i.e. `https://gitlab.cecs.anu.edu.au/uXXXXXXX/comp1720--labs`) 
 you should see the first line of that commit message as shown:
 
-![GitLab server after new commit is pushed](/images/labs/lab-1/post-push.png/)
+![GitLab server after new commit is pushed](/images/labs/lab-1/post-push.png)
 
 And if you click on the `sketch.js` filename further down you should see the new
 version with your `ellipse` line in there. Hooray!
 
-![GitLab server file view](/images/labs/lab-1/sketch-file-view.png/)
+![GitLab server file view](/images/labs/lab-1/sketch-file-view.png)
 
 :::info
 This part of the process is covered in the [*committing*](/resources/04-screencasts/#commit) and [*pushing*](/resources/04-screencasts/#push) screencast videos.

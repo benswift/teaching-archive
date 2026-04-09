@@ -1,6 +1,6 @@
 ---
 title: "Lab 22: Final Project Ideation"
-tagline: "Week 3, Term 4 &ndash; Starting Your Final Project"
+tagline: "Week 3, Term 4 – Starting Your Final Project"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-final-project
 image: /images/banners/remainders-by-jason-xu.jpg
 ---
@@ -29,11 +29,11 @@ Repo]() and open it in VSCode.
 
 The project theme for your Final Project is **Other Minds**. This is inspired by the book [***"Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness"***](https://www.harpercollins.com.au/9780008226299/other-minds/) by [Peter Godfrey-Smith](https://en.wikipedia.org/wiki/Peter_Godfrey-Smith).
 
-You are not expected to make a work about Octopuses!  You are expected to engage with ideas that all living beings have minds &ndash; minds which are different to yours.  
+You are not expected to make a work about Octopuses!  You are expected to engage with ideas that all living beings have minds – minds which are different to yours.  
 
 You may wish to consider ideas around cognition, consciousness, free will, intelligence, agency (to act) and autonomy (to act). It is especially about cognitive complexity of beings other than yourself. It is about seeing the world through different eyes, ears, and unimaginable sense organs.
 
-This can possibly link to your Mini Project &ndash; as an extension, branching, or re-imagining of the concept of "More Than Human".
+This can possibly link to your Mini Project – as an extension, branching, or re-imagining of the concept of "More Than Human".
 
 ### Ideation / Brainstorming
 
@@ -44,13 +44,13 @@ This can possibly link to your Mini Project &ndash; as an extension, branching, 
 5. How might you incorporate some ideas from the works you identified when building your project artefact?
 6. Document this journey in `portfolio/portfolio-entry-1.md` or `portfolio/portfolio.pptx`, or in any other document format of your choice (save as PDF so that I can read it ;-) )
 
-**do:** Once you’ve finished with your documentation for today, I respectfully ask that you save your work, stage the changes, commit the changes and push your work to gitlab so that its safe and sound on the ANU servers.  You should be stage&rarr;commit&rarr;push regularly &ndash; to get in the habit &ndash; to ensure that you do not lose work &ndash; and to demonstrate that you are making constant progress towards your project goal.
+**do:** Once you’ve finished with your documentation for today, I respectfully ask that you save your work, stage the changes, commit the changes and push your work to gitlab so that its safe and sound on the ANU servers.  You should be stage&rarr;commit&rarr;push regularly – to get in the habit – to ensure that you do not lose work – and to demonstrate that you are making constant progress towards your project goal.
 
 ### Start Coding
 
 Is it too soon to start experimenting with code ideas?
 
-I don't think so! But this is entirely optional. You can start implementing your ideas &ndash; experimenting and sketching with code!
+I don't think so! But this is entirely optional. You can start implementing your ideas – experimenting and sketching with code!
 
 If you do start sketching, remember to stage, commit and push your changes.
 

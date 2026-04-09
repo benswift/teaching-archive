@@ -478,7 +478,7 @@ inspired by pixels...
 
 ## Using evolution and interaction together
 
-![](/assets/lectures/week-8-hooks/picbreeder.jpg)
+![](./assets/week-8-hooks/picbreeder.jpg)
 
 Can an interactive artwork evolve itself?
 

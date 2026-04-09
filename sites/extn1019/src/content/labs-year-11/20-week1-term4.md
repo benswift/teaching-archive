@@ -1,6 +1,6 @@
 ---
 title: "Lab 20: Mini Project Completion  + JS Review"
-tagline: "Week 1, Term 4 &ndash; Getting it all together"
+tagline: "Week 1, Term 4 – Getting it all together"
 templateRepo: https://gitlab.cecs.anu.edu.au/extn1019/2024-2025/year-11/extn1019-2024-year-11-mini-project
 image: /images/banners/remainders-by-jason-xu.jpg
 ---

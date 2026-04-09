@@ -21,7 +21,7 @@ Choosing is hard!
 
 ## How do we choose the next sound?
 
-![](/assets/lectures/algocomp/formalized-music.jpg)
+![](./assets/algocomp/formalized-music.jpg)
 
 Can we get some help making all these choices?
 
@@ -55,7 +55,7 @@ Variation
 
 ## Low frequency oscillators
 
-![](/assets/lectures/algocomp/lfo.png)
+![](./assets/algocomp/lfo.png)
 
 Counters and `cos`, a quick LFO.
 
@@ -69,7 +69,7 @@ Try _randomising_ LFO speeds or controlling the LFO with an LFO.
 
 ## Euclidean patterns
 
-![](/assets/lectures/algocomp/euclidean-rhythms.png)
+![](./assets/algocomp/euclidean-rhythms.png)
 
 Eurodance in a box: 
 [Algorithm](https://en.wikipedia.org/wiki/Euclidean_rhythm) to space notes evenly in a sequence of fixed duration spaces.
@@ -95,7 +95,7 @@ We’ve touched on random previously, now we’re going to process random values
 
 ## Random Numbers
 
-![](/assets/lectures/algocomp/random-notes.png)
+![](./assets/algocomp/random-notes.png)
 
 you can use `random` numbers to create frequencies for a synth.
 
@@ -106,7 +106,7 @@ want to trigger different things randomly? try `select`
 
 ## Random sequences
 
-![](/assets/lectures/algocomp/random-sequence.png)
+![](./assets/algocomp/random-sequence.png)
 
 Try using `random` to control the steps of a sequencer. 
 
@@ -146,7 +146,7 @@ Other schemes are possible, used in practice and sound super cool, e.g.:
 
 ## Random MIDI Pitches
 
-![](/assets/lectures/algocomp/random-pitch-class.png)
+![](./assets/algocomp/random-pitch-class.png)
 
 Using the same `random` object, but with different values, we can create MIDI pitch numbers (0-127).
 
@@ -159,7 +159,7 @@ Let's abstract things a bit by using two random choices one to choose pitch, one
 
 ## Rhythms with `metro`
 
-![](/assets/lectures/algocomp/metro-and-random.png)
+![](./assets/algocomp/metro-and-random.png)
 
 You know how to schedule repeating notes with `metro`
 
@@ -167,7 +167,7 @@ you have to supply the number of milliseconds in between bangs.
 
 ## Random rhythms
 
-![](/assets/lectures/algocomp/random-metronome.png)
+![](./assets/algocomp/random-metronome.png)
 
 How about randomising the `metro`'s time after each bang?
 
@@ -176,7 +176,7 @@ We can make a "random" metronome with a maximum and minimum time.
 
 ## Making a composition with random `metro`
 
-![](/assets/lectures/algocomp/random-composition.png)
+![](./assets/algocomp/random-composition.png)
 
 This composition uses additive synthesis to create:
 
@@ -199,7 +199,7 @@ This can let us:
 
 ## Using pitch collections
 
-![](/assets/lectures/algocomp/pd-scale-table.png)
+![](./assets/algocomp/pd-scale-table.png)
 
 It can sound nice to use a subset of the 12 pitches.
 
@@ -228,7 +228,7 @@ Scales have lots of interesting patterns and properties but we won't go into fur
 
 ## Scale objects
 
-![](/assets/lectures/algocomp/pd-aeolian.png)
+![](./assets/algocomp/pd-aeolian.png)
 
 Pd doesn't have any built in knowledge about scales.
 
@@ -239,7 +239,7 @@ It's straightforward to create objects for scales you might want to use, see the
 
 ## Composing with scales
 
-![](/assets/lectures/algocomp/pd-fmcomp.png)
+![](./assets/algocomp/pd-fmcomp.png)
 
 Here's an example with `aeolian` generating FM pad sounds.
 
@@ -254,7 +254,7 @@ Copy `5-Scales.pd` from the board and use it as the basis for a composition.
 
 # Harmony
 
-![](/assets/lectures/algocomp/diagram-interval-resolution.png)
+![](./assets/algocomp/diagram-interval-resolution.png)
 
 We've talked about _consonant_ and _dissonant_ combinations of frequencies before.
 
@@ -266,7 +266,7 @@ Structured changes between combinations of frequencies is called _harmony_. It's
 
 ## Root notes
 
-![](/assets/lectures/algocomp/pd-comp-root.png)
+![](./assets/algocomp/pd-comp-root.png)
 
 Now that we understand scales, we can call the _first_ note of a scale the "root".
 
@@ -298,7 +298,7 @@ So our chord progression `[1, 2, 6, 5]` on a major scale would be: `I, ii, vi, V
 
 ## Composition with Bass and Chords
 
-![](/assets/lectures/algocomp/pd-comp-chords.png)
+![](./assets/algocomp/pd-comp-chords.png)
 
 Here's something simple:
 
@@ -323,7 +323,7 @@ What about some higher level decision making:
 
 ## Controlled randomness
 
-![](/assets/lectures/algocomp/weighted-random.png)
+![](./assets/algocomp/weighted-random.png)
 
 Suppose you want to take one action 20% of the time, and another 80% of the
 time?
@@ -340,7 +340,7 @@ My hardware synth and drum machine have this feature!
 
 ## Markov Process
 
-![](/assets/lectures/algocomp/pd-markov-sequence.png)
+![](./assets/algocomp/pd-markov-sequence.png)
 
 What about having a different weighted decision depending on what the last
 decision was?
@@ -352,13 +352,13 @@ Maybe try `c_markov.pd` in `rjlib`.
 
 ## Fader jam
 
-![](//assets/lectures/algocomp/fader-jam-screen.png)
+![](./assets/algocomp/fader-jam-screen.png)
 
 <video controls style="width:20%; float:right;">
-    <source data-src="//assets/lectures/algocomp/faderjam-demo.mp4" type="video/mp4"/>
+    <source data-src="./assets/algocomp/faderjam-demo.mp4" type="video/mp4"/>
 </video>
 
-![](/assets/lectures/algocomp/faderjam-action.jpg)
+![](./assets/algocomp/faderjam-action.jpg)
 
 
 ## Go do it: make an algorithmic composition

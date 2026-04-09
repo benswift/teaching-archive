@@ -2,7 +2,6 @@
 title: Networked instrument
 summary: "Wire up your discoboard to build a networked instrument"
 templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-3
-hidden: true
 ---
 
 ## Outline
@@ -907,7 +906,7 @@ And some pins to avoid:
 If you want to add a fourth (or fifth, etc.) wire, you can either:
 
 1. read the startup code (and perhaps the [discoboard reference
-   manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf/)) to see which
+   manual](/assets/manuals/stm32-L476G-discovery-reference-manual.pdf)) to see which
    pins are required by the audio output hardware, and avoid those pins
 
 2. write some abstractions in your code which allow you to quickly and easily

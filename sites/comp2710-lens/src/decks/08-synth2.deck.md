@@ -24,7 +24,7 @@ description: "Getting deeper into sutractive and modulation synthesis"
 
 Let's take a complex sound and **remove** some content.
 
-![](/assets/digital-synthesis/pd-filterfm.png)
+![](./assets/digital-synthesis/pd-filterfm.png)
 
 
 ## Popular Subtractive Synths
@@ -43,7 +43,7 @@ It's good for _analogue_ designs because you can get a lot of timbral variation 
 
 ## Subtractive Synth Layout
 
-![](/assets/lectures/synth-design/diagram-subtractive-synth.png)
+![](./assets/synth-design/diagram-subtractive-synth.png)
 
 - Sound is produced by 1+ summed oscillators and/or noise generator, processed by filter
 - Two envelope generators: output volume and to change the filter cut-off frequency
@@ -51,7 +51,7 @@ It's good for _analogue_ designs because you can get a lot of timbral variation 
 
 ## Minimoog in Pd
 
-![](/assets/lectures/synth-design/subtractive-design.png)
+![](./assets/synth-design/subtractive-design.png)
 
 Here's a basic design for an analogue synthesiser with two sawtooth oscillators.
 
@@ -69,7 +69,7 @@ N.B.: the _synthesis_ part here is quite simple, but processing note information
 
 ## Simple two-oscillator FM
 
-![](/assets/lectures/synth-design/simple-fmsynth.png)
+![](./assets/synth-design/simple-fmsynth.png)
 
 We introduced FM synthesis earlier in the course as a way to make interesting sounds with just two oscillators.
 
@@ -82,7 +82,7 @@ This allows us to create a consistent timbre for any frequency input. Can we do 
 
 ## Revision: Phase Modulation 
 
-![](/assets/lectures/pd-phase-mod.png)
+![](./assets/pd-phase-mod.png)
 
 Let's just revise how "frequency modulation" works.
 
@@ -92,7 +92,7 @@ Let's just revise how "frequency modulation" works.
 
 ## FM Operators
 
-![](/assets/lectures/synth-design/diagram-fm-algorithm.png)
+![](./assets/synth-design/diagram-fm-algorithm.png)
 
 We can take the concept of a phase-modulation oscillator and abstract to a reuseable unit: an FM operator.
 
@@ -105,7 +105,7 @@ In FM lingo, the wiring diagram between operators is called an _algorithm_.
 
 ## Implementing 6-op FM
 
-![](/assets/lectures/synth-design/fm-operator.png)
+![](./assets/synth-design/fm-operator.png)
 
 Each operator needs:
 
@@ -120,7 +120,7 @@ Volca FM has 23 parameters per operator, and 16 global parameters, that's 154 pa
 
 ## Operator Layout
 
-![](/assets/lectures/synth-design/6op-synth.png)
+![](./assets/synth-design/6op-synth.png)
 
 And here's how you could wire them together...
 
@@ -132,7 +132,7 @@ This is a fixed configuration, could you design a way to control the FM _algorit
 
 ## Commercial FM Synths
 
-![](/assets/lectures/synth-design/dexed.png)
+![](./assets/synth-design/dexed.png)
 
 Op-based FM is _very popular_. The Yamaha DX7 was the first **successful** digital synthesiser in 1983 and Yamaha's FM sound chips were found in computers and video game consoles throughout the late 80s and 90s.
 
@@ -154,7 +154,7 @@ K-S synthesis is quite common in digital synthesisers (e.g., Arturia Microfreak)
 
 ## Pd String Synthesis
 
-![](/assets/lectures/synth-design/pd-string-synth.png)
+![](./assets/synth-design/pd-string-synth.png)
 
 Here's a simple Karplus-Strong implementation.
 
@@ -172,7 +172,7 @@ Have a look at Julius O Smith's [Stanford Courses (Music 420A)](https://ccrma.st
 
 # Fourier Resynthesis
 
-![](/assets/lectures/synth-design/fft-resynthesis-puckette.png)
+![](./assets/synth-design/fft-resynthesis-puckette.png)
 
 One form of synthesis that is usually limited to computers involves modifying the frequency domain of a sound and recreating new versions.
 
@@ -213,7 +213,7 @@ N.B.: the frequency "resolution" is limited by the length of the signal we are a
 
 ## FFT on a long signal
 
-![](/assets/lectures/diagram-STDFT-windowing.png)
+![](./assets/diagram-STDFT-windowing.png)
 
 Typically we want to apply FFT to a "chunk" of a signal rather than the whole thing.
 
@@ -248,17 +248,17 @@ In Pd, `N` is the same as the "block size" (number of samples processed at once)
 ## Basic Resynthesis
 
 
-![](/assets/lectures/synth-design/pd-fourier-resynthesis-fft.png)
+![](./assets/synth-design/pd-fourier-resynthesis-fft.png)
 
 Here's a fun way to modify the spectrum of "noise".
 
 
-![](/assets/lectures/synth-design/pd-fourier-resynthesis.png)
+![](./assets/synth-design/pd-fourier-resynthesis.png)
 
 
 ## Timbre Stamp
 
-![](/assets/lectures/synth-design/timbre-stamp-fft.png)
+![](./assets/synth-design/timbre-stamp-fft.png)
 
 The "timbre stamp" algorithm modulates a signal by the spectral envelope of another sound.
 
@@ -266,7 +266,7 @@ see `I06.timbre.stamp.pd`
 
 ## Phase Vocoder
 
-![](/assets/lectures/synth-design/phase-vocoder-fft.png)
+![](./assets/synth-design/phase-vocoder-fft.png)
 
 The "phase vocoder" is an algorithm for stretching or compressing the time and frequency axes of a recorded sound.
 

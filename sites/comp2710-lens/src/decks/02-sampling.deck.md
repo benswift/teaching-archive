@@ -42,7 +42,7 @@ first explored in the analogue era, e.g., [Études de bruits (1948)](https://you
 
 # Musique Concrète
 
-![](/assets/lectures/phonogene-manning-2003.jpg)
+![](./assets/phonogene-manning-2003.jpg)
 
 - Musique Concrète was an artistic movement focussed on using recorded sounds.
 - Pierre Schaeffer (and team) in France, Post WW2 (1945-1960)
@@ -75,7 +75,7 @@ How do _we_ get some sounds?
 
 # Sampling Theory
 
-![](/assets/lectures/example-bouncing-ball.png)
+![](./assets/example-bouncing-ball.png)
 
 What is the possible path that the ball can take?
 
@@ -89,7 +89,7 @@ remember the Nyquist-Shannon Theorem:
 
 ## What does it mean for a sound to have frequencies in it?
 
-![](/assets/lectures/spectrogram.png)
+![](./assets/spectrogram.png)
 
 - We can think of complex sounds as combinations of basic sounds.
 
@@ -101,7 +101,7 @@ remember the Nyquist-Shannon Theorem:
 
 ## Defining a sinusoid: the _most basic sound_
 
-![](/assets/lectures/diagram-phasor.png)
+![](./assets/diagram-phasor.png)
 
 Imagine fixing a point on a spoke of a bicycle wheel as it spins. The _height_ of the moving point from the centre follows a sine wave.
 
@@ -121,7 +121,7 @@ This formulation is called a _phasor_.
 
 ## Changing sinusoids
 
-![](/assets/lectures/diagram-sinusoids.png)
+![](./assets/diagram-sinusoids.png)
 
 `h(t) = A * sin(v * 2pi t + phi)`
 
@@ -168,7 +168,7 @@ See Dannenberg Chapter 3 for reference.
 
 ## Sampling and the Frequency Domain
 
-![](/assets/lectures/diagram-sampling.png)
+![](./assets/diagram-sampling.png)
 
 You can look at sampling as a time domain operation.
 
@@ -180,7 +180,7 @@ _We hope_ that in the frequency domain the spectrum of our sound has been preser
 
 ## Spectrum of a sampled signal
 
-![](/assets/lectures/diagram-sampling-spectrum-overlap.png)
+![](./assets/diagram-sampling-spectrum-overlap.png)
 
 The frequency domain of the sampled signal is _really weird_.
 
@@ -236,7 +236,7 @@ other options: record a sound on your phone
 
 You can use `readsf~` to open and play back a sound file. Is that enough??
 
-![pd-soundfile-open](//assets/digital-synthesis/pd-soundfile-open.png)
+![pd-soundfile-open](./assets/digital-synthesis/pd-soundfile-open.png)
 
 - `readsf~` is easy and convenient, but limited
 
@@ -259,7 +259,7 @@ need to use other objects (e.g., `phasor~` or `line~`) to "move" `tabread4~` up 
 
 ## Musique Conrète with `tabread4~`
 
-![](//assets/digital-synthesis/pd-soundfile-perform.png)
+![](./assets/digital-synthesis/pd-soundfile-perform.png)
 
 1. load file into an _array_ with `soundfiler`
 2. set up a `tabread4~` object to access the table
@@ -270,7 +270,7 @@ need to use other objects (e.g., `phasor~` or `line~`) to "move" `tabread4~` up 
 
 making an _oscillator_ from a soundfile
 
-![](/assets/digital-synthesis/pd-wavetable.png)
+![](./assets/digital-synthesis/pd-wavetable.png)
 
 - `tabosc4~` scrolls through a (whole) array at a certain frequency.
 - this is a _basic_ way of doing [wavetable synthesis](https://en.wikipedia.org/wiki/Wavetable_synthesis) which includes the idea of _evolving_ the array over time (in some way)
@@ -278,11 +278,11 @@ making an _oscillator_ from a soundfile
 
 ## Looping Grains of Audio
 
-![](/assets/lectures/diagram-granular-synthesis.png)
+![](./assets/diagram-granular-synthesis.png)
 
 ## Granular Synthesis in Pd
 
-![](/assets/digital-synthesis/pd-grains.png)
+![](./assets/digital-synthesis/pd-grains.png)
 
 - Loop a _bit_ of a soundfile over and over to make a continuous sound.
 - Note the `cos~` bit here to avoid clicks at the start and end of the looped section.

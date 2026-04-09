@@ -2,7 +2,6 @@
 title: Sequencer
 summary: "Structure your code to play a song!"
 templateRepo: https://gitlab.cecs.anu.edu.au/comp2300/2019/comp2300-2019-assignment-2
-hidden: true
 ---
 
 ## Outline

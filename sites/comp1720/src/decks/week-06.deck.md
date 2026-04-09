@@ -125,13 +125,13 @@ in computer music (and in `p5.sound`), there are two ways to make a sound:
 
 ## Synthesis
 
-![](/assets/lectures/week-7/waveforms.png)
+![](./assets/week-7/waveforms.png)
 
 [Image: Wikipedia](https://en.wikipedia.org/wiki/Waveform)
 
 ## Sampling
 
-![](/assets/lectures/week-7/tascam-sound-recorder.jpg)
+![](./assets/week-7/tascam-sound-recorder.jpg)
 
 [Image: Tascam](http://fr.tascam-ca.com/product/dr-100/images/)
 
@@ -398,7 +398,7 @@ Let's look at a bit of synth theory...
 
 ## Amplitude Envelope
 
-![An enveloped sound](/assets/lectures/week-7/envelope-sound.png)
+![An enveloped sound](./assets/week-7/envelope-sound.png)
 
 - **Amplitude** is the "volume" of our note.
 - **Envelope** is the chunk of time for our note to exist in.
@@ -407,14 +407,14 @@ Let's look at a bit of synth theory...
 
 ## ADSR Envelope
 
-![The ADSR Envelope](/assets/lectures/week-7/adsr.png)
+![The ADSR Envelope](./assets/week-7/adsr.png)
 
 - The **adsr** shape is often used for pitched sounds.
 - ADSR: attack, decay, sustain, release
 
 ## Additive Synthesis
 
-![Adding two sine waves together](/assets/lectures/week-7/additive-synth.png)
+![Adding two sine waves together](./assets/week-7/additive-synth.png)
 
 - Take multiple oscillators and add them together!
 - Need [lots of oscillators](https://www.youtube.com/watch?v=q45FHZLVz2U
@@ -423,7 +423,7 @@ Let's look at a bit of synth theory...
 
 ## Subtractive Synthesis
 
-![Applying a low pass filter to a square wave](/assets/lectures/week-7/subtractive-synth.png)
+![Applying a low pass filter to a square wave](./assets/week-7/subtractive-synth.png)
 
 - Use one oscillator and _take sound away_.
 - We use a [filter to remove sound](https://ccrma.stanford.edu/~jos/filters/filters.html).
@@ -431,7 +431,7 @@ Let's look at a bit of synth theory...
 
 ## FM synthesis
 
-![An frequency modulated sound](/assets/lectures/week-7/fm-synth.png)
+![An frequency modulated sound](./assets/week-7/fm-synth.png)
 
 - "frequency modulation"
 - Use one oscillator to control the frequency of another.

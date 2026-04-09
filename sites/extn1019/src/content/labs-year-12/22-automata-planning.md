@@ -36,7 +36,7 @@ But first, let's have a quick look at ***Cellular Automata*** and revisit ***Fra
 ### Part 1A: Revisiting Fractals from Lab 21
 
 Here's a Romanesco Broccoli spotted in Canberra over the weekend (fractals in the wild):
-![Broccoli](/images/resources/romanesco_broccoli.jpg/)
+![Broccoli](/images/resources/romanesco_broccoli.jpg)
 
 Follow the demonstration. Try some changes.
 
