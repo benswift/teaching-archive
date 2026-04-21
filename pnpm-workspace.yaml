@@ -16,8 +16,8 @@ catalog:
 
   # Dev tools
   lightningcss: "^1.32.0"
-  oxfmt: "latest"
-  oxlint: "^1.58.0"
+  oxfmt: "^0.46.0"
+  oxlint: "^1.61.0"
 
   # Runtime deps
   p5: "^2.2.3"

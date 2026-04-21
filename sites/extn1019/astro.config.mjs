@@ -25,12 +25,7 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [
-    svelte(),
-    mdx(),
-    anuTheme({ checkLinks: false, checkA11y: false }),
-    sitemap(),
-  ],
+  integrations: [svelte(), mdx(), anuTheme({ checkLinks: false, checkA11y: false }), sitemap()],
   fonts: [
     {
       name: "Public Sans",

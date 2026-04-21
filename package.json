@@ -21,8 +21,8 @@
     "sharp": "catalog:"
   },
   "devDependencies": {
-    "oxfmt": "latest",
-    "oxlint": "^1.58.0",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
     "serve": "^14.2.4",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0"
