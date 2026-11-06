@@ -31,6 +31,8 @@ catalog:
 overrides:
   astro-theme-anu: file:./submodules/astro-theme-anu/packages/astro-theme-anu
 
+# Skip sharp's install script: with a system libvips (Homebrew) it tries to
+# build from source. The prebuilt @img/sharp-* binary covers runtime.
 allowBuilds:
   esbuild: true
-  sharp: true
+  sharp: false
