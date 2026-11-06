@@ -26,14 +26,5 @@
     "serve": "^14.2.4",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "astro-theme-anu": "file:./submodules/astro-theme-anu/packages/astro-theme-anu"
-    },
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
   }
 }
